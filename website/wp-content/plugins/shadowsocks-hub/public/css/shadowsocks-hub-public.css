@@ -1,0 +1,128 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .sshub-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+
+ .sshub-flex-item {
+    background: #e0e0e0;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .sshub-table {
+    margin: 0%;
+    width: 50%;
+    /*margin: 10%;*/
+ }
+
+ table tbody tr:nth-child(2n) td{
+    background-color: #fefefe !important;
+ }
+
+ .sshub-table-head {
+    padding: 0%;
+    text-align: left;
+    /*background: #fefefe;*/
+}
+
+.sshub-table-value {
+    padding: 0%;
+    text-align: right;
+    /*background: #fefefe;*/
+}
+
+.sshub-account-title-container {
+    margin-bottom: 20px;
+}
+
+.sshub-account-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    display: inline-block;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    width: 80%;
+}
+
+#close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vertical-center-container {
+    display: inline-block;
+}
+
+.qrcode-container {
+    display: block;
+    text-align: center;
+}
+
+.qrcode-div {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sshub-table-container {
+    display: block;
+}
+
+.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--shadowsocks-account a::before {
+    content: attr(menu-icon);
+}
+
+.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard a::before {
+    content: attr(menu-icon) !important;
+}
+
+.woocommerce-button.qrcode::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    line-height: inherit;
+    vertical-align: baseline;
+    content: attr(menu-icon);
+    margin-left: 0.54em;
+}

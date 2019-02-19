@@ -1,0 +1,88 @@
+version: '3.3'
+
+services:
+    https-portal:
+      image: steveltn/https-portal:1.5.0
+      volumes:
+        - reverse_proxy_data:/var/lib/https-portal
+      ports:
+        - 80:80
+        - 443:443
+      depends_on:
+        - wordpress
+        - sshub
+      # restart option is ignored in swarm mode.
+      restart: always
+      # deploy is only effective in swarm mode.
+      #deploy:
+      #  restart_policy:
+      #    condition: on-failure
+      #    delay: 5s
+      #    max_attempts: 20
+      #    window: 60s
+      environment:
+        DOMAINS: "${DOMAIN_NAME} -> http://wordpress, api.opensesame.vip -> http://sshub"
+        STAGE: "${STAGE}"
+        #STAGE: "local" or "production"
+
+    db:
+      image: mysql:8.0.14
+      command: --default-authentication-plugin=mysql_native_password
+      volumes:
+        - db_data:/var/lib/mysql
+        - ./backup/database/database_backup.sql.gz:/docker-entrypoint-initdb.d/a_database_backup.sql.gz
+      # restart option is ignored in swarm mode.
+      restart: always
+      # deploy is only effective in swarm mode.
+      #deploy:
+      #  restart_policy:
+      #    condition: on-failure
+      #    delay: 5s
+      #    max_attempts: 20
+      #    window: 60s
+      environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+        MYSQL_DATABASE: wordpress
+
+    wordpress:
+      depends_on:
+        - db
+      image: wordpress:5.0.3-php7.1-apache
+      # restart option is ignored in swarm mode.
+      restart: always
+      # deploy is only effective in swarm mode.
+      #deploy:
+      #  restart_policy:
+      #    condition: on-failure
+      #    delay: 5s
+      #    max_attempts: 20
+      #    window: 60s
+      environment:
+        WORDPRESS_DB_HOST: db:3306
+        WORDPRESS_DB_USER: root
+        WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      volumes:
+        - ./website:/var/www/html
+
+    sshub:
+      image: sshub/ssshop:1.1.0
+      depends_on:
+        - db
+      environment:
+        NODE_ENV: production
+        DATABASE_HOST: db
+        DATABASE_USER: root
+        DATABASE_PORT: 3306
+        DATABASE_PASSWORD: ${MYSQL_PASSWORD}
+      # restart option is ignored in swarm mode.
+      restart: always
+      # deploy is only effective in swarm mode.
+      #deploy:
+      #  restart_policy:
+      #    condition: any
+      #    delay: 5s
+      #    max_attempts: 20
+
+volumes:
+    db_data:
+    reverse_proxy_data:
