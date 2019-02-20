@@ -14,7 +14,9 @@ A website selling shadowsocks services, using Wordpress and WooCommerce.
     cd ~/shadow-shop
     sudo sh init.sh
     ```
-    Note: In this step, you may choose to run your website either in `development` or `production` state. If you choose `production` state, then you have to point a domain name to the server before this step.
+    During this step, you have to specify the `state` and `doamin name` of your website. You may choose to run your website either in `development` or `production` state. Then you need input the `domain name` to be used by the your website. 
+    
+    Before proceeding to this step, if you plan to choose `production` state, then you have to make sure that the `domain name` you are going to input indeed points to the IP address of the server that is running this software. Otherwise, the sofeware will NOT be able to get a valid digital certificate for you website later on.
 
 ## Website Maintainence 
 
