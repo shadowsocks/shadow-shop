@@ -234,6 +234,9 @@ sudo usermod -aG docker "$ME"
 # adding $ME user to www-data group and vice-versa
 sudo usermod -aG www-data "$ME"
 sudo usermod -aG "$ME" www-data
+
+sudo chmod g+w website/ --recursive
+
 if [ "$ME" != "root" ]
 then
     sudo chmod g-w "/home/$ME"
