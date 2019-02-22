@@ -65,7 +65,7 @@ services:
         - ./website:/var/www/html
 
     sshub:
-      image: sshub/ssshop:1.1.0
+      image: sshub/ssshop:1.2.0
       depends_on:
         - db
       environment:
