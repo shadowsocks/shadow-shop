@@ -363,7 +363,6 @@ class Shadowsocks_Hub_Admin
 		foreach($attributes as $attribute) {
 
 			if ( ! taxonomy_exists ( 'pa_' . $attribute[ 'name' ] )) {
-				error_log( "create " . $attribute[ 'name' ] );
 				$this->create_attribute( $attribute[ 'label' ], $attribute[ 'name' ] );
 			};
 
