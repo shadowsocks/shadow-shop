@@ -242,7 +242,6 @@ if ( ! empty($messages) ) {
 			$ping_response = $ping_return['body'];
 
 			$node_state = "";
-			error_log("ping_http_code = " . $ping_http_code);
 			if ( $ping_http_code === 200 ) {
 				$node_state = "ok";
 			} elseif ( $ping_http_code === 400 ) {
