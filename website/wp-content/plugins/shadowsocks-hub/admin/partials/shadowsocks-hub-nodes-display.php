@@ -217,6 +217,8 @@ if ( ! empty($messages) ) {
 		<a href="<?php echo admin_url('admin.php?page=shadowsocks_hub_add_node'); ?>" class="page-title-action"><?php echo esc_html_x('Add New', 'node'); ?></a>
 	</h2>
 	<?php
+	$error_messages = array();
+	$error_occurred = false;
 	$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/all", false);
 
     $error = $return['error'];
@@ -229,42 +231,54 @@ if ( ! empty($messages) ) {
 
         for ($i = 0; $i < $arr_length; $i++) {
 
-			$ping_return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/ping", false);
+			$data_array = array (
+				"id" => $response[$i]['id'],
+			);
+
+			$ping_return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/ping", $data_array);
 
     		$ping_error = $ping_return['error'];
     		$ping_http_code = $ping_return['http_code'];
 			$ping_response = $ping_return['body'];
 
 			$node_state = "";
+			error_log("ping_http_code = " . $ping_http_code);
 			if ( $ping_http_code === 200 ) {
 				$node_state = "ok";
 			} elseif ( $ping_http_code === 400 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, invalid input)";
+				$error_messages[] = "Backend system error (pingNodeById, invalid input)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 404 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, id does not exist)";
+				$error_messages[] = "Backend system error (pingNodeById, id does not exist)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 522 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
+				$error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 523 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
+				$error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 526 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
+				$error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 504 ) {
 				$node_state = "shadowsocks restful api offline";
 			} elseif ( $ping_http_code === 523 ) {
 				$node_state = "system error";
-				$error_message = "Backend system error (pingNodeById, authentication to shadowsocks restful api failed)";
+				$error_messages[] = "Backend system error (pingNodeById, authentication to shadowsocks restful api failed)";
+				$error_occurred = true;
 			} elseif ( $ping_http_code === 524 ) {
 				$node_state = "shadowsocks-libev offline";
 			} elseif ( $ping_http_code === 525 ) {
 				$node_state = "shadowsocks-libev no response";
 			} else {
 				$node_state = "system error";
-				$error_message = "Backend system error undetected error.";
+				$error_messages[] = "Backend system error undetected error.";
+				$error_occurred = true;
 			};
 			
             $data[] = array(
@@ -283,21 +297,26 @@ if ( ! empty($messages) ) {
             );
 		}
 	} elseif ($http_code === 500) {
-		$error_message = "Backend system error (getAllNodes)";
+		$error_messages[] = "Backend system error (getAllNodes)";
+		$error_occurred = true;
 	} elseif ($error) {
-		$error_message = "Backend system error: ".$error;
+		$error_messages[] = "Backend system error: ".$error;
+		$error_occurred = true;
 	} else {
-		$error_message = "Backend system error undetected error.";
+		$error_messages[] = "Backend system error undetected error.";
+		$error_occurred = true;
 	}; 
 
-	if ($http_code === 200) {
+	if ( $http_code === 200 ) {
 		$this->nodes_obj->set_table_data($data);
-	} else { ?>
+	};
+	if ( $error_occurred ) { ?>
 		<div class="error">
 		<ul>
-		<?php
-			echo "<li>$error_message</li>\n";
-		?>
+			<?php
+				foreach ( $error_messages as $err )
+					echo "<li>$err</li>\n";
+			?>
 		</ul>
 	</div>
 	<?php
