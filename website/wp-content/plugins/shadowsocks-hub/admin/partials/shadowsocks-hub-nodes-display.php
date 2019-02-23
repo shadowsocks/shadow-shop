@@ -270,6 +270,7 @@ if ( ! empty($messages) ) {
             $data[] = array(
 				'id' => $response[$i]['id'],
 				'name' => $response[$i]['name'],
+				'node_state' => $node_state,
 				'host' => $response[$i]['server']['ipAddressOrDomainName'],
 				'protocol' => $response[$i]['protocol'],
 				'password' => $response[$i]['password'],

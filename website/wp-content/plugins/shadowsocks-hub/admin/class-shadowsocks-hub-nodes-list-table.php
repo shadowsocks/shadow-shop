@@ -82,6 +82,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
         $columns = array(
             'cb'       => '<input type="checkbox" />',
             'name' => 'Name',
+            'node_state' => "State",
             'host' => 'Host',
             'protocol' => 'Protocol',
             'password' => 'Password',
@@ -110,6 +111,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $c = array(
             'name' => array('name', true),
+            'node_state' => array('node_state', false),
             'host' => array('host', false),
             'protocol' => array('protocol', false),
 			'ip_address_or_domain_name' => array('ip_address_or_domain_name', false),
