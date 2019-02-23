@@ -240,12 +240,24 @@ sudo chmod g+w website/ --recursive
 if [ "$ME" != "root" ]
 then
     sudo chmod g-w "/home/$ME"
-    sudo chmod 700 "/home/$ME/.ssh"
-    sudo chmod 600 "/home/$ME/.ssh/authorized_keys"
+    if [ -d "/home/$ME/.ssh" ]
+    then
+        sudo chmod 700 "/home/$ME/.ssh"
+        if [ -f "/home/$ME/.ssh/authorized_keys" ]
+        then
+            sudo chmod 600 "/home/$ME/.ssh/authorized_keys"
+        fi
+    fi
 else
     sudo chmod g-w "/root"
-    sudo chmod 700 "/root/.ssh"
-    sudo chmod 600 "/root/.ssh/authorized_keys"
+    if [ -d "/root/.ssh" ]
+    then
+        sudo chmod 700 "/root/.ssh"
+        if [ -f "/root/.ssh/authorized_keys" ]
+        then
+            sudo chmod 600 "/root/.ssh/authorized_keys"
+        fi
+    fi
 fi
 
 if [ -f "website/wp-config.php" ]
