@@ -260,11 +260,6 @@ else
     fi
 fi
 
-if [ -f "website/wp-config.php" ]
-then
-    sudo rm website/wp-config.php -f
-fi
-
 /bin/echo -e "${GREEN}Sucess!${NC}"
 /bin/echo -e "Please restart the server and login as ${GREEN} ${ME} ${NC}"
 exit 0
