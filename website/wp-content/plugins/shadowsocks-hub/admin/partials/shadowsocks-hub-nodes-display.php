@@ -228,6 +228,45 @@ if ( ! empty($messages) ) {
         $arr_length = count($response);
 
         for ($i = 0; $i < $arr_length; $i++) {
+
+			$ping_return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/ping", false);
+
+    		$ping_error = $ping_return['error'];
+    		$ping_http_code = $ping_return['http_code'];
+			$ping_response = $ping_return['body'];
+
+			$node_state = "";
+			if ( $ping_http_code === 200 ) {
+				$node_state = "ok";
+			} elseif ( $ping_http_code === 400 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, invalid input)";
+			} elseif ( $ping_http_code === 404 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, id does not exist)";
+			} elseif ( $ping_http_code === 522 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
+			} elseif ( $ping_http_code === 523 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
+			} elseif ( $ping_http_code === 526 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
+			} elseif ( $ping_http_code === 504 ) {
+				$node_state = "shadowsocks restful api offline";
+			} elseif ( $ping_http_code === 523 ) {
+				$node_state = "system error";
+				$error_message = "Backend system error (pingNodeById, authentication to shadowsocks restful api failed)";
+			} elseif ( $ping_http_code === 524 ) {
+				$node_state = "shadowsocks-libev offline";
+			} elseif ( $ping_http_code === 525 ) {
+				$node_state = "shadowsocks-libev no response";
+			} else {
+				$node_state = "system error";
+				$error_message = "Backend system error undetected error.";
+			};
+			
             $data[] = array(
 				'id' => $response[$i]['id'],
 				'name' => $response[$i]['name'],
