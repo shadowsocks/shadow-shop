@@ -121,11 +121,13 @@ When a user has made a payment for a product, an order will be created. The syst
 
 Note the system currently does not backtrack previous orders. When a new node is added into the system, no new shadowsocks account will be created from this new node for previously created orders.
 
-## Unregistered Users
+## Guest Users
 
-Currently, the system does NOT support orders made by unregistered users. Even if you have configured the Wordpress and WooCommerce to allow unregistered users to make a payment, the orders paid by unregistered users will not be honored -- meaning no shadowsocks accounts will be created for these orders.
+Currently, the system does NOT support orders made by guest users. Even if you have configured the Wordpress and WooCommerce to allow guest users to make a payment, the orders paid by Guest users will not be honored -- meaning no shadowsocks accounts will be created for these orders.
 
-So it is advised no to allow unregistered users to make a payment, at least for now. New features enabling unregistered users will be developed in the near future.
+So go to **WooCommerce** > **Settings** > **Accounts & Privacy**, then disable **Allow customers to place orders without an account** option.
+
+In the near future, new feature will be developed to support payments by guest users.
 
 ## Languages
 
