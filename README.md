@@ -72,7 +72,7 @@ Once you have installed wordpress, you may go to its admin panel by typing in th
   ```
 Then use the admin username and password that you set up during the Wordpress 5-minute install process to login as the admin user.
 
-After that, you may perform any admin tasks, including setting up WooCommerce, in the admin panel. Just google if you need help. There are loads of good online tutorials.
+After that, you may perform any admin tasks, including setting up and configuring WooCommerce, in the admin panel. Official documentation for configuring WooCommerce settings can be found [here](https://docs.woocommerce.com/document/configuring-woocommerce-settings/).
 
 ## Theme and Customization
 
