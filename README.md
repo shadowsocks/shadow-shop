@@ -127,11 +127,9 @@ Note the system currently does not backtrack previous orders. When a new node is
 
 ## Guest Users
 
-Currently, the system does NOT support orders made by guest users. Even if you have configured the Wordpress and WooCommerce to allow guest users to make a payment, the orders paid by Guest users will not be honored -- meaning no shadowsocks accounts will be created for these orders.
+In order to support guest user payment, go to **WooCommerce** > **Settings** > **Accounts & Privacy**, then configure the settings as the following screen shot:
 
-So go to **WooCommerce** > **Settings** > **Accounts & Privacy**, then disable **Allow customers to place orders without an account** option.
-
-In the near future, new feature will be developed to support payments by guest users.
+![account_configuration](https://github.com/shadowsocks/shadow-shop/blob/master/screen_shots/account_configuration.png)
 
 ## Languages
 
