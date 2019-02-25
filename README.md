@@ -65,16 +65,17 @@ Once you have brought up your website for the first time, you may install Wordpr
 
 If you selected `development` state during the `Initialize` step, the website digital certificate is self-signed. Thus your website will show you a warning. You have to accept the digital certificate before proceeding.
 
-Then the famous Wordpress 5-minute install process will guide you to customize the installation of Wordpress as you like. There are plenty of good online tutorials if you are new to Wordpress. Just google!
+Then the famous Wordpress 5-minute install process will guide you to customize the installation of Wordpress as you like.
+
+1. Select the language you want to use;
+2. Enter your site details: the site title, admin username, password and email address. If you want search engines, such as Google, to find your site, leave the Privacy box unchecked.
 
 ## Setup WooCommerce
 
-Once you have installed wordpress, you may go to its admin panel by typing in the web browser the url:
+Now you can log in to your site by clicking the **Log In** button and entering the admin credentials you provided when you were installing WordPress. Then you may go to its admin panel by typing in the web browser the url:
   ```
   https://your-domain-name/wp-admin
   ```
-Then use the admin username and password that you set up during the Wordpress 5-minute install process to login as the admin user.
-
 After that, you may perform any admin tasks, including setting up and configuring WooCommerce, in the admin panel. Official documentation for configuring WooCommerce settings can be found [here](https://docs.woocommerce.com/document/configuring-woocommerce-settings/).
 
 ## Theme and Customization
