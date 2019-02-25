@@ -1,5 +1,8 @@
 # Shadow Shop
-A website selling shadowsocks services, using Wordpress and WooCommerce. 
+A website selling shadowsocks services, using Wordpress and WooCommerce.
+
+## Environment
+Mainstream Linux distributions are supported. Mac OS and Windows are not supported yet.
 
 ## Initialization
 
