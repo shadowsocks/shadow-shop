@@ -1,4 +1,4 @@
-![logo](https://github.com/shadowsocks/shadow-shop/blob/master/screen_shots/logo.png =48x48)
+<img src="https://github.com/shadowsocks/shadow-shop/blob/master/screen_shots/logo.png" width="48" height="48">
 
 # Shadow Shop
 A website selling shadowsocks services, using Wordpress and WooCommerce.
