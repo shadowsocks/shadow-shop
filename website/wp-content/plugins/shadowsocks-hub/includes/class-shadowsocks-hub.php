@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       london.opensesame.vip
+ * @link       www.shadowshop.org
  * @since      1.0.0
  *
  * @package    Shadowsocks_Hub

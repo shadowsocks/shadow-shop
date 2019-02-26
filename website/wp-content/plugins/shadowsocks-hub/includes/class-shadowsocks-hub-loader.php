@@ -3,7 +3,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       london.opensesame.vip
+ * @link       www.shadowshop.org
  * @since      1.0.0
  *
  * @package    Shadowsocks_Hub

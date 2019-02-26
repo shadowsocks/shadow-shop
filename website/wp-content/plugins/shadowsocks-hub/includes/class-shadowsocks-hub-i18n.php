@@ -6,7 +6,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       london.opensesame.vip
+ * @link       www.shadowshop.org
  * @since      1.0.0
  *
  * @package    Shadowsocks_Hub

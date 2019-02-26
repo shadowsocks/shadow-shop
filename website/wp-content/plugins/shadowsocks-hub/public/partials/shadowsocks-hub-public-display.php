@@ -5,7 +5,7 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       london.opensesame.vip
+ * @link       www.shadowshop.org
  * @since      1.0.0
  *
  * @package    Shadowsocks_Hub

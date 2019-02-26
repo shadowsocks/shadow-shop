@@ -3,7 +3,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       london.opensesame.vip
+ * @link       www.shadowshop.org
  * @since      1.0.0
  *
  * @package    Shadowsocks_Hub
