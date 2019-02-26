@@ -1,6 +1,6 @@
-<div style="display: flex; justify-content: center;">
+<p align="center">
   <img src="https://github.com/shadowsocks/shadow-shop/blob/master/screen_shots/logo.png">
-</div>
+</p>
 
 # Shadow Shop
 A website selling shadowsocks services, using Wordpress and WooCommerce.
