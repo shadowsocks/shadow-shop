@@ -30,6 +30,7 @@ check_command touch
 check_command find
 check_command git
 check_command chown
+check_command touch
 
 WHOAMI=$(whoami)
 if [ "$WHOAMI" != "root" ]
@@ -258,6 +259,12 @@ else
             sudo chmod 600 "/root/.ssh/authorized_keys"
         fi
     fi
+fi
+
+if [ ! -f "backup/database/database_backup.sql.gz" ]
+then
+    sudo -u "$ME" touch "backup/database/database_backup.sql.gz"
+    sudo chmod g+w "backup/database/database_backup.sql.gz"
 fi
 
 /bin/echo -e "${GREEN}Sucess!${NC}"
