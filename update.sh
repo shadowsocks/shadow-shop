@@ -109,7 +109,7 @@ then
     exit 4
 fi
 
-git stash  # hide local change before git merge
+git stash --include-untracked  # hide local change before git merge
 
 git merge --strategy-option theirs origin/master # git merge favouring origin/mster
 EXIT_CODE=$?
