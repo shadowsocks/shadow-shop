@@ -1,0 +1,785 @@
+# Translation of Plugins - WooCommerce Blocks - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WooCommerce Blocks - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-01-25 07:24:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WooCommerce Blocks - Stable (latest release)\n"
+
+#: languages/woo-gutenberg-products-block.php:14 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:142
+msgid "Show price"
+msgstr "価格を表示"
+
+#: languages/woo-gutenberg-products-block.php:11 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:137
+msgid "Show description"
+msgstr "説明を表示"
+
+#: languages/woo-gutenberg-products-block.php:174 build/product-on-sale.js:1
+#: assets/js/blocks/product-on-sale/index.js:21
+msgid "Display a grid of on sale products."
+msgstr "セール商品をグリッドで表示。"
+
+#: languages/woo-gutenberg-products-block.php:171 build/product-on-sale.js:1
+#: assets/js/blocks/product-on-sale/block.js:158
+#: assets/js/blocks/product-on-sale/index.js:17
+msgid "On Sale Products"
+msgstr "セール商品"
+
+#: languages/woo-gutenberg-products-block.php:111
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/index.js:21
+msgid "Display a selection of hand-picked products in a grid."
+msgstr "厳選された商品の選択をグリッドに表示します。"
+
+#: languages/woo-gutenberg-products-block.php:85 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:209
+msgid "No products are selected."
+msgstr "対象の商品がありません。"
+
+#: languages/woo-gutenberg-products-block.php:78 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:138
+msgid "Display a selection of hand-picked products in a grid"
+msgstr "厳選された商品の選択をグリッドに表示する"
+
+#: languages/woo-gutenberg-products-block.php:82 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:135
+#: assets/js/blocks/handpicked-products/block.js:201
+#: assets/js/blocks/handpicked-products/index.js:17
+msgid "Hand-picked Products"
+msgstr "厳選された商品"
+
+#: languages/woo-gutenberg-products-block.php:75 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:125
+msgid "Showing Hand-picked Products block preview."
+msgstr "厳選商品ブロックのプレビューを表示。"
+
+#: languages/woo-gutenberg-products-block.php:181 build/product-top-rated.js:1
+#: assets/js/blocks/product-top-rated/index.js:21
+msgid "Display a grid of your top rated products."
+msgstr "評価の高い商品のグリッドを表示します。"
+
+#: languages/woo-gutenberg-products-block.php:178 build/product-top-rated.js:1
+#: assets/js/blocks/product-top-rated/block.js:144
+#: assets/js/blocks/product-top-rated/index.js:17
+msgid "Top Rated Products"
+msgstr "評価の高い商品"
+
+#: languages/woo-gutenberg-products-block.php:147 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:197
+msgid "Select at least one category to display its products."
+msgstr "商品を表示するには、少なくとも1つのカテゴリーを選択してください。"
+
+#: languages/woo-gutenberg-products-block.php:141 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:143
+msgid "Showing Products by Category block preview."
+msgstr "カテゴリー別に商品を表示するブロックのプレビュー。"
+
+#: languages/woo-gutenberg-products-block.php:167 build/product-new.js:1
+#: assets/js/blocks/product-new/index.js:21
+msgid "Display a grid of your newest products."
+msgstr "最新商品のグリッドを表示します。"
+
+#: languages/woo-gutenberg-products-block.php:164 build/product-new.js:1
+#: assets/js/blocks/product-new/block.js:144
+#: assets/js/blocks/product-new/index.js:17
+msgid "Newest Products"
+msgstr "最新商品"
+
+#: languages/woo-gutenberg-products-block.php:63 build/featured-product.js:1
+#: assets/js/blocks/featured-product/index.js:21
+msgid "Visually highlight a product and encourage prompt action."
+msgstr "視覚的に商品を強調し、販促します。"
+
+#: languages/woo-gutenberg-products-block.php:51 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:320
+msgid "No product is selected."
+msgstr "商品が選ばれていません。"
+
+#: languages/woo-gutenberg-products-block.php:44 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:268
+msgid "Edit media"
+msgstr "メディアを編集"
+
+#: languages/woo-gutenberg-products-block.php:29 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:188
+msgid "Visually highlight a product and encourage prompt action"
+msgstr "視覚的に商品を強調し、販促"
+
+#: languages/woo-gutenberg-products-block.php:48 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:185
+#: assets/js/blocks/featured-product/block.js:315
+#: assets/js/blocks/featured-product/index.js:17
+msgid "Featured Product"
+msgstr "おすすめ商品"
+
+#: languages/woo-gutenberg-products-block.php:26 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:175
+msgid "Showing Featured Product block preview."
+msgstr "おすすめ商品ブロックのプレビューを表示"
+
+#: languages/woo-gutenberg-products-block.php:23 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:158
+msgid "Background Opacity"
+msgstr "背景の不透明度"
+
+#: languages/woo-gutenberg-products-block.php:20 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:153
+msgid "Overlay Color"
+msgstr "オーバーレイの色"
+
+#: languages/woo-gutenberg-products-block.php:17 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:148
+msgid "Overlay"
+msgstr "オーバーレイ"
+
+#: languages/woo-gutenberg-products-block.php:8 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:135
+msgid "Content"
+msgstr "コンテンツ"
+
+#: languages/woo-gutenberg-products-block.php:5 build/featured-product.js:1
+#: assets/js/blocks/featured-product/block.js:124
+msgid "Product"
+msgstr "商品"
+
+#: languages/woo-gutenberg-products-block.php:138
+#: build/product-best-sellers.js:1
+#: assets/js/blocks/product-best-sellers/index.js:21
+msgid "Display a grid of your all-time best selling products."
+msgstr "これまでで最も売れている商品をグリッドに表示します。"
+
+#: languages/woo-gutenberg-products-block.php:121
+#: build/product-best-sellers.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: assets/js/blocks/product-top-rated/block.js:149
+#: assets/js/blocks/product-new/block.js:149
+#: assets/js/blocks/product-on-sale/block.js:163
+#: assets/js/blocks/product-best-sellers/block.js:156
+msgid "No products found."
+msgstr "該当商品がありません。"
+
+#: languages/woo-gutenberg-products-block.php:115
+#: build/product-best-sellers.js:1
+#: assets/js/blocks/product-best-sellers/block.js:148
+#: assets/js/blocks/product-best-sellers/index.js:17
+msgid "Best Selling Products"
+msgstr "最も売れている商品"
+
+#: languages/woo-gutenberg-products-block.php:135
+#: build/product-best-sellers.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: assets/js/blocks/product-top-rated/block.js:96
+#: assets/js/blocks/product-new/block.js:96
+#: assets/js/blocks/product-on-sale/block.js:110
+#: assets/js/blocks/product-best-sellers/block.js:97
+msgid "Filter by Product Category"
+msgstr "商品カテゴリーによってフィルター"
+
+#: assets/js/components/product-attribute-control/index.js:115
+msgid "Product attribute search results updated."
+msgstr "商品属性の検索結果が更新されました。"
+
+#: assets/js/components/product-attribute-control/index.js:107
+msgid "%d attribute selected"
+msgid_plural "%d attributes selected"
+msgstr[0] "選択された%d属性"
+
+#: assets/js/components/product-attribute-control/index.js:101
+msgid "Search for product attributes"
+msgstr "商品属性を検索"
+
+#: assets/js/components/product-attribute-control/index.js:97
+msgid "Your store doesn't have any product attributes."
+msgstr "あなたの店は商品の属性を持っていません。"
+
+#: assets/js/components/product-attribute-control/index.js:96
+msgid "Product Attributes"
+msgstr "商品属性"
+
+#: assets/js/components/product-attribute-control/index.js:95
+msgid "Clear all product attributes"
+msgstr "すべての商品属性をクリア"
+
+#: languages/woo-gutenberg-products-block.php:221 build/featured-product.js:1
+#: assets/js/components/product-control/index.js:49
+msgid "Search for a product to display"
+msgstr "表示する商品を検索する"
+
+#: languages/woo-gutenberg-products-block.php:196
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:133
+msgid "All selected categories"
+msgstr "選択したすべてのカテゴリー"
+
+#: languages/woo-gutenberg-products-block.php:193
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:129
+msgid "Any selected categories"
+msgstr "選択したカテゴリー"
+
+#: languages/woo-gutenberg-products-block.php:190
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:124
+msgid "Pick at least two categories to use this setting."
+msgstr "この設定を使用するには、少なくとも2つのカテゴリーを選びます。"
+
+#: languages/woo-gutenberg-products-block.php:187
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:123
+msgid "Display products matching"
+msgstr "表示する商品をマッチング"
+
+#: languages/woo-gutenberg-products-block.php:225 build/featured-product.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:62
+#: assets/js/components/product-control/index.js:53
+msgid "Product search results updated."
+msgstr "商品検索結果が更新されました。"
+
+#: languages/woo-gutenberg-products-block.php:269
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:54
+msgid "%d product selected"
+msgid_plural "%d products selected"
+msgstr[0] "%d 商品が選択されました"
+
+#: languages/woo-gutenberg-products-block.php:218 build/featured-product.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:44
+#: assets/js/components/product-control/index.js:45
+msgid "Your store doesn't have any products."
+msgstr "店には商品がありません。"
+
+#: languages/woo-gutenberg-products-block.php:262
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:42
+msgid "Clear all products"
+msgstr "すべての商品をクリア"
+
+#. Translators: %1$s is the install command, %2$s is the build command, %3$s is
+#. the watch command.
+#: woocommerce-gutenberg-products-block.php:49
+msgid "WooCommerce Blocks development mode requires files to be built. From the plugin directory, run %1$s to install dependencies, %2$s to build the files or %3$s to build the files and watch for changes."
+msgstr "WooCommerce Blocks　開発モードではファイルをビルドする必要があります。プラグインディレクトリから、プラグインディレクトリから、%1$sを実行して依存関係をインストールするか、%2$sを実行してファイルを構築するか、%3$sを実行してファイルを構築して変更を監視します。"
+
+#. translators: %s is product name
+#: includes/blocks/class-wc-block-featured-product.php:76
+msgid "View product %s"
+msgstr "商品%sを表示"
+
+#: languages/woo-gutenberg-products-block.php:66
+#: includes/blocks/class-wc-block-featured-product.php:54
+#: build/featured-product.js:1 assets/js/blocks/featured-product/index.js:88
+msgid "Shop now"
+msgstr "今すぐ購入"
+
+#: includes/class-wgpb-product-attribute-terms-controller.php:159
+msgid "An alphanumeric identifier for the resource unique to its type."
+msgstr "そのタイプに固有のリソースの英数字 ID 。"
+
+#: includes/class-wgpb-product-attribute-terms-controller.php:151
+msgid "Attribute group name."
+msgstr "属性グループ名"
+
+#: includes/class-wgpb-products-controller.php:339
+msgid "Map of attributes to selected terms."
+msgstr "選択した用語への属性のマップ"
+
+#: includes/class-wgpb-products-controller.php:324
+msgid "Operator to compare product attribute terms."
+msgstr "商品属性用語を比較するための演算子。"
+
+#: includes/class-wgpb-products-controller.php:317
+msgid "Operator to compare product category terms."
+msgstr "商品属性用語を比較するための演算子"
+
+#: includes/class-wgpb-product-categories-controller.php:93
+#: includes/class-wgpb-product-attributes-controller.php:96
+#: includes/class-wgpb-product-attributes-controller.php:126
+#: includes/class-wgpb-product-attribute-terms-controller.php:93
+msgid "Resource does not exist."
+msgstr "リソースが存在しません。"
+
+#: includes/class-wgpb-product-categories-controller.php:84
+#: includes/class-wgpb-product-attributes-controller.php:117
+#: includes/class-wgpb-product-attribute-terms-controller.php:84
+msgid "Taxonomy does not exist."
+msgstr "タクソノミーは存在しません。"
+
+#: includes/class-wgpb-products-controller.php:95
+#: includes/class-wgpb-product-attributes-controller.php:100
+msgid "Sorry, you cannot view this resource."
+msgstr "申し訳ありませんが、このリソースを表示することはできません。"
+
+#: includes/class-wgpb-products-controller.php:81
+#: includes/class-wgpb-product-attributes-controller.php:81
+msgid "Sorry, you cannot list resources."
+msgstr "申し訳ありませんが、リソースをリストすることはできません。"
+
+#: languages/woo-gutenberg-products-block.php:157 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:91
+msgid "Product Category"
+msgstr "商品カテゴリー"
+
+#: languages/woo-gutenberg-products-block.php:160 build/product-category.js:1
+#: assets/js/blocks/product-category/index.js:24
+msgid "Display a grid of products from your selected categories."
+msgstr "選択したカテゴリーの商品のグリッドを表示します。"
+
+#: languages/woo-gutenberg-products-block.php:60
+#: woocommerce-gutenberg-products-block.php:69 build/product-best-sellers.js:1
+#: build/featured-product.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/product-top-rated/index.js:20
+#: assets/js/blocks/handpicked-products/index.js:20
+#: assets/js/blocks/product-category/index.js:23
+#: assets/js/blocks/featured-product/index.js:20
+#: assets/js/blocks/product-new/index.js:20
+#: assets/js/blocks/product-on-sale/index.js:20
+#: assets/js/blocks/product-best-sellers/index.js:20
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: languages/woo-gutenberg-products-block.php:154 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:153
+#: assets/js/blocks/product-category/block.js:234
+#: assets/js/blocks/product-category/index.js:20
+msgid "Products by Category"
+msgstr "カテゴリー別商品"
+
+#: languages/woo-gutenberg-products-block.php:150 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:201
+msgid "No products in this category."
+msgid_plural "No products in these categories."
+msgstr[0] "このカテゴリーには商品はありません。"
+
+#: languages/woo-gutenberg-products-block.php:144 build/product-category.js:1
+#: assets/js/blocks/product-category/block.js:156
+msgid "Display a grid of products from your selected categories"
+msgstr "選択したカテゴリーの商品のグリッドを表示する"
+
+#: languages/woo-gutenberg-products-block.php:255 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:42
+msgid "Menu Order"
+msgstr "メニュー順序"
+
+#: languages/woo-gutenberg-products-block.php:108 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:96
+#: assets/js/blocks/product-category/block.js:126
+#: assets/js/blocks/product-on-sale/block.js:101
+msgid "Order By"
+msgstr "順序 "
+
+#: languages/woo-gutenberg-products-block.php:401
+msgid "Selected products"
+msgstr "選択された商品"
+
+#: languages/woo-gutenberg-products-block.php:398
+msgid "Products list"
+msgstr "商品一覧"
+
+#: languages/woo-gutenberg-products-block.php:266
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:48
+msgid "Search for products to display"
+msgstr "表示する商品を検索する"
+
+#: languages/woo-gutenberg-products-block.php:395
+msgid "No categories found"
+msgstr "カテゴリーがありません"
+
+#: languages/woo-gutenberg-products-block.php:392
+msgid "Search for categories"
+msgstr "カテゴリーを検索する"
+
+#: languages/woo-gutenberg-products-block.php:389
+msgid "No terms found"
+msgstr "項目がありません"
+
+#: languages/woo-gutenberg-products-block.php:386
+msgid "No attributes found"
+msgstr "属性がありません"
+
+#: languages/woo-gutenberg-products-block.php:383
+msgid "Search for attributes"
+msgstr "属性を検索する"
+
+#: languages/woo-gutenberg-products-block.php:380
+msgid "Display a grid of products from a variety of sources."
+msgstr "さまざまなソースからの商品のグリッドを表示します。"
+
+#: languages/woo-gutenberg-products-block.php:72 build/featured-product.js:1
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:105
+#: assets/js/components/products-control/index.js:43
+#: assets/js/components/product-control/index.js:44
+msgid "Products"
+msgstr "商品"
+
+#: languages/woo-gutenberg-products-block.php:377
+msgid "Current Source"
+msgstr "現在のソース"
+
+#: languages/woo-gutenberg-products-block.php:41 build/featured-product.js:1
+#: build/product-category.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:182
+#: assets/js/blocks/product-category/block.js:215
+#: assets/js/blocks/featured-product/block.js:251
+msgid "Edit"
+msgstr "編集"
+
+#: languages/woo-gutenberg-products-block.php:94
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/product-top-rated/block.js:77
+#: assets/js/blocks/handpicked-products/block.js:84
+#: assets/js/blocks/product-category/block.js:107
+#: assets/js/blocks/product-new/block.js:77
+#: assets/js/blocks/product-on-sale/block.js:82
+#: assets/js/blocks/product-best-sellers/block.js:78
+msgid "Layout"
+msgstr "レイアウト"
+
+#: languages/woo-gutenberg-products-block.php:129
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 assets/js/blocks/product-top-rated/block.js:88
+#: assets/js/blocks/product-category/block.js:118
+#: assets/js/blocks/product-new/block.js:88
+#: assets/js/blocks/product-on-sale/block.js:93
+#: assets/js/blocks/product-best-sellers/block.js:89
+msgid "Rows"
+msgstr "行"
+
+#: languages/woo-gutenberg-products-block.php:252 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:38
+msgid "Title - alphabetical"
+msgstr "タイトル - アルファベット順"
+
+#: languages/woo-gutenberg-products-block.php:248 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:34
+msgid "Sales - most first"
+msgstr "売上 - 高い順"
+
+#: languages/woo-gutenberg-products-block.php:244 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:30
+msgid "Rating - highest first"
+msgstr "評価 - 高い順"
+
+#: languages/woo-gutenberg-products-block.php:240 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:26
+msgid "Price - high to low"
+msgstr "価格 - 高い順"
+
+#: languages/woo-gutenberg-products-block.php:236 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:22
+msgid "Price - low to high"
+msgstr "価格 - 安い順"
+
+#: languages/woo-gutenberg-products-block.php:232 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:18
+msgid "Newness - newest first"
+msgstr "新しさ - 新しい順"
+
+#: languages/woo-gutenberg-products-block.php:103
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/product-top-rated/block.js:81
+#: assets/js/blocks/handpicked-products/block.js:88
+#: assets/js/blocks/product-category/block.js:111
+#: assets/js/blocks/product-new/block.js:81
+#: assets/js/blocks/product-on-sale/block.js:86
+#: assets/js/blocks/product-best-sellers/block.js:82
+msgid "Columns"
+msgstr "列"
+
+#: languages/woo-gutenberg-products-block.php:371
+msgid "Display all products ordered chronologically, alphabetically, by price, by rating or by sales"
+msgstr "時間順、アルファベット順、価格順、評価順、または販売順に並べられたすべての商品を表示します。"
+
+#: languages/woo-gutenberg-products-block.php:368
+msgid "All products"
+msgstr "すべての商品"
+
+#: languages/woo-gutenberg-products-block.php:365
+msgid "Terms: "
+msgstr "項目:"
+
+#: languages/woo-gutenberg-products-block.php:362
+msgid "Attribute: "
+msgstr "属性:"
+
+#: languages/woo-gutenberg-products-block.php:359
+msgid "Product categories: "
+msgstr "商品カテゴリー:"
+
+#: languages/woo-gutenberg-products-block.php:356
+msgid "Attribute"
+msgstr "属性"
+
+#: languages/woo-gutenberg-products-block.php:353
+msgid "Top rated"
+msgstr "高い評価"
+
+#: languages/woo-gutenberg-products-block.php:350
+msgid "Best sellers"
+msgstr "ベストセラー"
+
+#: languages/woo-gutenberg-products-block.php:347
+msgid "No products found"
+msgstr "商品がありません"
+
+#: languages/woo-gutenberg-products-block.php:343
+msgid "Loading"
+msgstr "読み込み中"
+
+#: languages/woo-gutenberg-products-block.php:338
+msgid "On sale"
+msgstr "セール中"
+
+#: languages/woo-gutenberg-products-block.php:332
+msgid "E.g. featured products, or products with a specific attribute like size or color"
+msgstr "例: おすすめ商品、またはサイズや色などの特定の属性を持つ商品"
+
+#: languages/woo-gutenberg-products-block.php:329
+msgid "Filter products"
+msgstr "商品フィルター"
+
+#: languages/woo-gutenberg-products-block.php:35 build/featured-product.js:1
+#: build/product-category.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:151
+#: assets/js/blocks/product-category/block.js:173
+#: assets/js/blocks/featured-product/block.js:201
+msgid "Done"
+msgstr "完了"
+
+#: languages/woo-gutenberg-products-block.php:326
+msgid "Please select an attribute"
+msgstr "属性を選択してください"
+
+#: languages/woo-gutenberg-products-block.php:323
+msgid "Please select at least one category to display"
+msgstr "表示するカテゴリーを少なくとも1つ選択してください"
+
+#: languages/woo-gutenberg-products-block.php:320
+msgid "Please search for and select products to display"
+msgstr "表示する商品を検索して選択してください"
+
+#: languages/woo-gutenberg-products-block.php:317
+msgid "Please select which products you'd like to display"
+msgstr "表示したい商品を選択してください"
+
+#: languages/woo-gutenberg-products-block.php:314
+msgid "Displaying "
+msgstr "表示中"
+
+#: languages/woo-gutenberg-products-block.php:311
+msgid "Display products from a specific category or multiple categories"
+msgstr "特定のカテゴリーまたは複数のカテゴリーの商品を表示する"
+
+#: languages/woo-gutenberg-products-block.php:308
+msgid "Display different products"
+msgstr "異なる商品を表示する"
+
+#: languages/woo-gutenberg-products-block.php:305
+msgid "Product category"
+msgstr "商品カテゴリー"
+
+#: languages/woo-gutenberg-products-block.php:302
+msgid "Hand-pick which products to display"
+msgstr "表示する商品を厳選してください"
+
+#: languages/woo-gutenberg-products-block.php:299
+msgid "Individual products"
+msgstr "個別商品"
+
+#: languages/woo-gutenberg-products-block.php:296
+msgid "Choose which products you'd like to display:"
+msgstr "表示したい商品を選択してください:"
+
+#: languages/woo-gutenberg-products-block.php:293
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:34
+msgid "Search results updated."
+msgstr "検索結果を更新しました。"
+
+#: languages/woo-gutenberg-products-block.php:290
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:33
+msgid "%d item selected"
+msgid_plural "%d items selected"
+msgstr[0] "%d 商品が選択されました。"
+
+#: languages/woo-gutenberg-products-block.php:287
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:31
+msgid "Search for items"
+msgstr "項目を検索する"
+
+#: languages/woo-gutenberg-products-block.php:284
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:30
+msgid "No results for %s"
+msgstr "%s の結果はありません"
+
+#: languages/woo-gutenberg-products-block.php:281
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:29
+msgid "No items found."
+msgstr "項目がありません。"
+
+#: languages/woo-gutenberg-products-block.php:278
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:28
+msgid "Results"
+msgstr "結果"
+
+#: languages/woo-gutenberg-products-block.php:275
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:27
+msgid "Clear all selected items"
+msgstr "選択した項目をすべてクリア"
+
+#: languages/woo-gutenberg-products-block.php:272
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:186
+msgid "Clear all"
+msgstr "すべてクリア"
+
+#: languages/woo-gutenberg-products-block.php:259
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-preview/index.js:31
+msgid "Add to cart"
+msgstr "カートに追加"
+
+#: languages/woo-gutenberg-products-block.php:184
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:101
+msgid "Category search results updated."
+msgstr "カテゴリー検索結果を更新しました。"
+
+#: languages/woo-gutenberg-products-block.php:214
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:93
+msgid "%d category selected"
+msgid_plural "%d categories selected"
+msgstr[0] "%d 個のカテゴリーが選択されました"
+
+#: languages/woo-gutenberg-products-block.php:211
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:87
+msgid "Search for product categories"
+msgstr "商品カテゴリーを検索する"
+
+#: languages/woo-gutenberg-products-block.php:208
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:83
+msgid "Your store doesn't have any product categories."
+msgstr "ストアには商品カテゴリーがありません。"
+
+#: languages/woo-gutenberg-products-block.php:205
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:82
+msgid "Product Categories"
+msgstr "商品カテゴリー"
+
+#: languages/woo-gutenberg-products-block.php:202
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:81
+msgid "Clear all product categories"
+msgstr "すべての商品カテゴリーをクリア"
+
+#. Description of the plugin
+msgid "WooCommerce blocks for the Gutenberg editor."
+msgstr "Gutenberg エディター用の WooCommerce ブロック。"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Blocks"
+msgstr "WooCommerce Blocks"
+
+#: languages/woo-gutenberg-products-block.php:335
+msgid "Featured products"
+msgstr "おすすめ商品"
+
+#: includes/class-wgpb-products-controller.php:52
+#: includes/class-wgpb-product-categories-controller.php:52
+#: includes/class-wgpb-product-attributes-controller.php:52
+#: includes/class-wgpb-product-attribute-terms-controller.php:52
+msgid "Unique identifier for the resource."
+msgstr "リソースの一意の識別子。"
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#. Author of the plugin
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/woocommerce/woocommerce-gutenberg-products-block"
+msgstr "https://github.com/woocommerce/woocommerce-gutenberg-products-block"

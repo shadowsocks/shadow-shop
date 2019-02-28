@@ -1,0 +1,653 @@
+# Translation of Plugins - WooCommerce Blocks - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WooCommerce Blocks - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-02-13 16:51:43+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WooCommerce Blocks - Stable (latest release)\n"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:211
+msgid "Pick at least two attributes to use this setting."
+msgstr "Elige al menos dos atributos para usar este ajuste."
+
+#: build/products-attribute.js:1
+#: assets/js/blocks/products-by-attribute/block.js:156
+#: assets/js/blocks/products-by-attribute/index.js:21
+msgid "Display a grid of products from your selected attributes."
+msgstr "Muestra una cuadrícula de productos a partir de los atributos que selecciones."
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:219
+msgid "Any selected attributes"
+msgstr "Cualquier atributo seleccionado"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:226
+msgid "All selected attributes"
+msgstr "Todos los atributos seleccionados"
+
+#: build/products-attribute.js:1
+#: assets/js/blocks/products-by-attribute/block.js:103
+msgid "Filter by Product Attribute"
+msgstr "Filtrar por atributo de producto"
+
+#: includes/class-wgpb-product-attributes-controller.php:178
+msgid "Number of terms in the attribute taxonomy."
+msgstr "Número de términos en la taxonomía del atributo."
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:122
+msgid "%s, has %d term"
+msgid_plural "%s, has %d terms"
+msgstr[0] "%s, tiene %d término"
+msgstr[1] "%s, tiene %d términos"
+
+#: build/products-attribute.js:1
+#: assets/js/blocks/products-by-attribute/block.js:153
+#: assets/js/blocks/products-by-attribute/block.js:225
+#: assets/js/blocks/products-by-attribute/index.js:17
+msgid "Products by Attribute"
+msgstr "Productos por atributo"
+
+#: build/products-attribute.js:1
+#: assets/js/blocks/products-by-attribute/block.js:143
+msgid "Showing Products by Attribute block preview."
+msgstr "Viendo la vista previa del bloque de productos por atributo."
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:136
+msgid "Show price"
+msgstr "Mostrar precio"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:131
+msgid "Show description"
+msgstr "Mostrar descipción"
+
+#: build/product-on-sale.js:1 assets/js/blocks/product-on-sale/index.js:21
+msgid "Display a grid of on sale products."
+msgstr "Muestra una cuadrícula de productos rebajados."
+
+#: build/product-on-sale.js:1 assets/js/blocks/product-on-sale/block.js:145
+#: assets/js/blocks/product-on-sale/index.js:17
+msgid "On Sale Products"
+msgstr "Productos rebajados"
+
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/index.js:21
+msgid "Display a selection of hand-picked products in a grid."
+msgstr "Muestra una selección de productos elegidos manualmente en una cuadrícula."
+
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:209
+msgid "No products are selected."
+msgstr "No se ha seleccionado ningún producto."
+
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:138
+msgid "Display a selection of hand-picked products in a grid"
+msgstr "Muestra una selección de productos elegidos manualmente en una cuadrícula"
+
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:135
+#: assets/js/blocks/handpicked-products/block.js:201
+#: assets/js/blocks/handpicked-products/index.js:17
+msgid "Hand-picked Products"
+msgstr "Productos elegidos manualmente"
+
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:125
+msgid "Showing Hand-picked Products block preview."
+msgstr "Mostrando la vista previa del bloque de productos elegidos manualmente."
+
+#: build/product-top-rated.js:1 assets/js/blocks/product-top-rated/index.js:21
+msgid "Display a grid of your top rated products."
+msgstr "Muestra una cuadrícula de tus productos más valorados."
+
+#: build/product-top-rated.js:1 assets/js/blocks/product-top-rated/block.js:131
+#: assets/js/blocks/product-top-rated/index.js:17
+msgid "Top Rated Products"
+msgstr "Productos más valorados"
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:188
+msgid "Select at least one category to display its products."
+msgstr "Elige al menos una categoría para mostrar sus productos."
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:134
+msgid "Showing Products by Category block preview."
+msgstr "Mostrando la vista previa del bloque de productos por categoría."
+
+#: build/product-new.js:1 assets/js/blocks/product-new/index.js:21
+msgid "Display a grid of your newest products."
+msgstr "Muestra una cuadrícula de tus productos más recientes."
+
+#: build/product-new.js:1 assets/js/blocks/product-new/block.js:131
+#: assets/js/blocks/product-new/index.js:17
+msgid "Newest Products"
+msgstr "Productos recientes"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/index.js:22
+msgid "Visually highlight a product and encourage prompt action."
+msgstr "Destaca visualmente un producto y anima a llevar a cabo una acción."
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:324
+msgid "No product is selected."
+msgstr "No se ha seleccionado ningún producto."
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:257
+msgid "Edit media"
+msgstr "Editar medios"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:182
+msgid "Visually highlight a product and encourage prompt action"
+msgstr "Destaca visualmente un producto y anima a llevar a cabo una acción"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:179
+#: assets/js/blocks/featured-product/block.js:319
+#: assets/js/blocks/featured-product/index.js:18
+msgid "Featured Product"
+msgstr "Producto destacado"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:169
+msgid "Showing Featured Product block preview."
+msgstr "Mostrando la vista previa del bloque de producto destacado."
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:152
+msgid "Background Opacity"
+msgstr "Opacidad del fondo"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:147
+msgid "Overlay Color"
+msgstr "Color de superposición"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:142
+msgid "Overlay"
+msgstr "Superposición"
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:129
+msgid "Content"
+msgstr "Contenido"
+
+#: build/product-best-sellers.js:1
+#: assets/js/blocks/product-best-sellers/index.js:21
+msgid "Display a grid of your all-time best selling products."
+msgstr "Muestra una cuadrícula de tus productos más vendidos de todos los tiempos."
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/blocks/products-by-attribute/block.js:233
+#: assets/js/blocks/product-top-rated/block.js:136
+#: assets/js/blocks/product-new/block.js:136
+#: assets/js/blocks/product-on-sale/block.js:150
+#: assets/js/blocks/product-best-sellers/block.js:143
+msgid "No products found."
+msgstr "No se han encontrado productos."
+
+#: build/product-best-sellers.js:1
+#: assets/js/blocks/product-best-sellers/block.js:135
+#: assets/js/blocks/product-best-sellers/index.js:17
+msgid "Best Selling Products"
+msgstr "Productos más vendidos"
+
+#: build/product-best-sellers.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: assets/js/blocks/product-top-rated/block.js:83
+#: assets/js/blocks/product-new/block.js:83
+#: assets/js/blocks/product-on-sale/block.js:97
+#: assets/js/blocks/product-best-sellers/block.js:84
+msgid "Filter by Product Category"
+msgstr "Filtrar por categoría de producto"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:183
+msgid "Product attribute search results updated."
+msgstr "Actualización de los resultados de la búsqueda de atributos del producto."
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:175
+msgid "%d attribute selected"
+msgid_plural "%d attributes selected"
+msgstr[0] "%d atributo seleccionado"
+msgstr[1] "%d atributos seleccionados"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:169
+msgid "Search for product attributes"
+msgstr "Buscar atributos de producto"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:165
+msgid "Your store doesn't have any product attributes."
+msgstr "Tu tienda no tiene ningún atributo de producto."
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:164
+msgid "Product Attributes"
+msgstr "Atributos de producto"
+
+#: build/products-attribute.js:1
+#: assets/js/components/product-attribute-control/index.js:163
+msgid "Clear all product attributes"
+msgstr "Vaciar todos los atributos de producto"
+
+#: build/featured-product.js:1 assets/js/components/product-control/index.js:49
+msgid "Search for a product to display"
+msgstr "Buscar un producto a mostrar"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:133
+msgid "All selected categories"
+msgstr "Todas las categorías seleccionadas"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:129
+msgid "Any selected categories"
+msgstr "Cualquier categoría seleccionada"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:124
+msgid "Pick at least two categories to use this setting."
+msgstr "Elige al menos dos categorías para usar este ajuste."
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: assets/js/components/product-attribute-control/index.js:207
+#: assets/js/components/product-category-control/index.js:123
+msgid "Display products matching"
+msgstr "Muestra productos coincidentes"
+
+#: build/featured-product.js:1 build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:62
+#: assets/js/components/product-control/index.js:53
+msgid "Product search results updated."
+msgstr "Actualización de los resultados de la búsqueda de productos."
+
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:54
+msgid "%d product selected"
+msgid_plural "%d products selected"
+msgstr[0] "%d producto seleccionado"
+msgstr[1] "%d productos seleccionados"
+
+#: build/featured-product.js:1 build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:44
+#: assets/js/components/product-control/index.js:45
+msgid "Your store doesn't have any products."
+msgstr "Tu tienda no tiene ningún producto,"
+
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:42
+msgid "Clear all products"
+msgstr "Vaciar todos los productos"
+
+#. Translators: %1$s is the install command, %2$s is the build command, %3$s is
+#. the watch command.
+#: woocommerce-gutenberg-products-block.php:49
+msgid "WooCommerce Blocks development mode requires files to be built. From the plugin directory, run %1$s to install dependencies, %2$s to build the files or %3$s to build the files and watch for changes."
+msgstr "El modo de desarrollo de WooCommerce Blocks necesita que se creen archivos. Desde el directorio de plugins, ejecuta %1$s para instalar dependencias, %2$s para crear los archivos o %3$s para crear los archivos y estar atento a los cambios."
+
+#: build/featured-product.js:1 assets/js/blocks/featured-product/block.js:304
+#: assets/js/blocks/featured-product/index.js:97
+msgid "Shop now"
+msgstr "Comprar ahora"
+
+#: includes/class-wgpb-product-attribute-terms-controller.php:159
+msgid "An alphanumeric identifier for the resource unique to its type."
+msgstr "Un identificador alfanumérico para el recurso único de su tipo."
+
+#: includes/class-wgpb-product-attribute-terms-controller.php:151
+msgid "Attribute group name."
+msgstr "Nombre del grupo de atributos."
+
+#: includes/class-wgpb-products-controller.php:308
+msgid "Operator to compare product attribute terms."
+msgstr "Operador para comparar los términos de los atributos del producto."
+
+#: includes/class-wgpb-products-controller.php:301
+msgid "Operator to compare product category terms."
+msgstr "Operador para comparar los términos de categorías de producto."
+
+#: includes/class-wgpb-product-categories-controller.php:93
+#: includes/class-wgpb-product-attributes-controller.php:96
+#: includes/class-wgpb-product-attributes-controller.php:126
+#: includes/class-wgpb-product-attribute-terms-controller.php:93
+msgid "Resource does not exist."
+msgstr "El recurso no existe."
+
+#: includes/class-wgpb-product-categories-controller.php:84
+#: includes/class-wgpb-product-attributes-controller.php:117
+#: includes/class-wgpb-product-attribute-terms-controller.php:84
+msgid "Taxonomy does not exist."
+msgstr "La taxonomía no existe."
+
+#: includes/class-wgpb-products-controller.php:95
+#: includes/class-wgpb-product-attributes-controller.php:100
+msgid "Sorry, you cannot view this resource."
+msgstr "Lo siento, no puedes ver este recurso."
+
+#: includes/class-wgpb-products-controller.php:81
+#: includes/class-wgpb-product-attributes-controller.php:81
+msgid "Sorry, you cannot list resources."
+msgstr "Lo siento, no puedes listar recursos."
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:91
+msgid "Product Category"
+msgstr "Categoría de productos"
+
+#: build/product-category.js:1 assets/js/blocks/product-category/index.js:24
+msgid "Display a grid of products from your selected categories."
+msgstr "Muestra una cuadrícula de productos de la categorías que elijas."
+
+#: woocommerce-gutenberg-products-block.php:69 build/product-best-sellers.js:1
+#: build/featured-product.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/blocks/products-by-attribute/index.js:20
+#: assets/js/blocks/product-top-rated/index.js:20
+#: assets/js/blocks/handpicked-products/index.js:20
+#: assets/js/blocks/product-category/index.js:23
+#: assets/js/blocks/featured-product/index.js:21
+#: assets/js/blocks/product-new/index.js:20
+#: assets/js/blocks/product-on-sale/index.js:20
+#: assets/js/blocks/product-best-sellers/index.js:20
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:144
+#: assets/js/blocks/product-category/block.js:225
+#: assets/js/blocks/product-category/index.js:20
+msgid "Products by Category"
+msgstr "Productos por categoría"
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:192
+msgid "No products in this category."
+msgid_plural "No products in these categories."
+msgstr[0] "No hay productos en esta categoría."
+msgstr[1] ""
+
+#: build/product-category.js:1 assets/js/blocks/product-category/block.js:147
+msgid "Display a grid of products from your selected categories"
+msgstr "Muestra una cuadrícula de productos de las categorías que elijas."
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:42
+msgid "Menu Order"
+msgstr "Orden en el menú"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:14
+msgid "Order products by"
+msgstr "Ordenar productos por"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/products-by-attribute/block.js:125
+#: assets/js/blocks/handpicked-products/block.js:96
+#: assets/js/blocks/product-category/block.js:117
+#: assets/js/blocks/product-on-sale/block.js:88
+msgid "Order By"
+msgstr "Ordernar por"
+
+#: build/handpicked-products.js:1
+#: assets/js/components/products-control/index.js:48
+msgid "Search for products to display"
+msgstr "Busca productos a mostrar"
+
+#: build/featured-product.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:105
+#: assets/js/components/products-control/index.js:43
+#: assets/js/components/product-control/index.js:44
+msgid "Products"
+msgstr "Productos"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/handpicked-products.js:1
+#: assets/js/blocks/products-by-attribute/block.js:206
+#: assets/js/blocks/handpicked-products/block.js:182
+#: assets/js/blocks/product-category/block.js:206
+msgid "Edit"
+msgstr "Editar"
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/blocks/products-by-attribute/block.js:93
+#: assets/js/blocks/product-top-rated/block.js:73
+#: assets/js/blocks/handpicked-products/block.js:84
+#: assets/js/blocks/product-category/block.js:107
+#: assets/js/blocks/product-new/block.js:73
+#: assets/js/blocks/product-on-sale/block.js:78
+#: assets/js/blocks/product-best-sellers/block.js:74
+msgid "Layout"
+msgstr "Diseño"
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: assets/js/components/grid-layout-control/index.js:31
+msgid "Rows"
+msgstr "Filas"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:38
+msgid "Title - alphabetical"
+msgstr "Apilados - alfabéticamente"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:34
+msgid "Sales - most first"
+msgstr "Rebajados - primero los más rebajados"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:30
+msgid "Rating - highest first"
+msgstr "Valoración - primero los más valorados"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:26
+msgid "Price - high to low"
+msgstr "Precio - de mayor a menor"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:22
+msgid "Price - low to high"
+msgstr "Precio - de menor a mayor"
+
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/product-orderby-control/index.js:18
+msgid "Newness - newest first"
+msgstr "Novedad - primero los más novedosos"
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/blocks/handpicked-products/block.js:88
+#: assets/js/components/grid-layout-control/index.js:17
+msgid "Columns"
+msgstr "Columnas"
+
+#: build/featured-product.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/handpicked-products.js:1
+#: assets/js/blocks/products-by-attribute/block.js:176
+#: assets/js/blocks/handpicked-products/block.js:151
+#: assets/js/blocks/product-category/block.js:164
+#: assets/js/blocks/featured-product/block.js:195
+msgid "Done"
+msgstr "Hecho"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:34
+msgid "Search results updated."
+msgstr "Resultados de búsqueda actualizados."
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:33
+msgid "%d item selected"
+msgid_plural "%d items selected"
+msgstr[0] "%d producto seleccionado"
+msgstr[1] "%d productos seleccionados"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:31
+msgid "Search for items"
+msgstr "Buscar productos"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:30
+msgid "No results for %s"
+msgstr "Ningún resultado para %s"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:29
+msgid "No items found."
+msgstr "Ningún producto encontrado."
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:28
+msgid "Results"
+msgstr "Resultados"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:27
+msgid "Clear all selected items"
+msgstr "Vaciar todos los productos seleccionados"
+
+#: build/product-best-sellers.js:1 build/featured-product.js:1
+#: build/products-attribute.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1 build/handpicked-products.js:1
+#: assets/js/components/search-list-control/index.js:186
+msgid "Clear all"
+msgstr "Vaciar todo"
+
+#: build/product-best-sellers.js:1 build/products-attribute.js:1
+#: build/product-category.js:1 build/product-new.js:1
+#: build/product-top-rated.js:1 build/product-on-sale.js:1
+#: build/handpicked-products.js:1
+#: assets/js/components/product-preview/index.js:35
+msgid "Add to cart"
+msgstr "Añadir al carrito"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:63
+msgid "%s, has %d product"
+msgid_plural "%s, has %d products"
+msgstr[0] "%s, tiene %d producto"
+msgstr[1] "%s, tiene %d productos"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:101
+msgid "Category search results updated."
+msgstr "Resultados de la búsqueda de categoría actualizados."
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:93
+msgid "%d category selected"
+msgid_plural "%d categories selected"
+msgstr[0] "%d categoría seleccionada"
+msgstr[1] "%d categorías seleccionadas"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:87
+msgid "Search for product categories"
+msgstr "Buscar categorías de producto"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:83
+msgid "Your store doesn't have any product categories."
+msgstr "Tu tienda aún no tiene ninguna categoría de producto."
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:82
+msgid "Product Categories"
+msgstr "Categorías de producto"
+
+#: build/product-best-sellers.js:1 build/product-category.js:1
+#: build/product-new.js:1 build/product-top-rated.js:1
+#: build/product-on-sale.js:1
+#: assets/js/components/product-category-control/index.js:81
+msgid "Clear all product categories"
+msgstr "Vaciar todas las categorías de productos"
+
+#. Description of the plugin
+msgid "WooCommerce blocks for the Gutenberg editor."
+msgstr "Bloques WooCommerce para el editor Gutenberg."
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Blocks"
+msgstr "WooCommerce Blocks"
+
+#: includes/class-wgpb-products-controller.php:52
+#: includes/class-wgpb-product-categories-controller.php:52
+#: includes/class-wgpb-product-attributes-controller.php:52
+#: includes/class-wgpb-product-attribute-terms-controller.php:52
+msgid "Unique identifier for the resource."
+msgstr "Identificador único del recurso."
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#. Author of the plugin
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/woocommerce/woocommerce-gutenberg-products-block"
+msgstr "https://github.com/woocommerce/woocommerce-gutenberg-products-block"

@@ -1,0 +1,508 @@
+# Translation of Themes - Storefront in Chinese (Taiwan)
+# This file is distributed under the same license as the Themes - Storefront package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-12 09:04:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Themes - Storefront\n"
+
+#. Theme Name of the plugin/theme
+msgid "Storefront"
+msgstr "Storefront"
+
+#. Description of the plugin/theme
+msgid "Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love it's lean and extensible codebase making it a joy to customise and extend. Looking for a WooCommerce theme? Look no further!"
+msgstr "Storefront 是我們建議作為您下一個 WooCommerce 專案的完美主題。它是由 WooCommerce 核心開發者所設計開發的，它是為 WooCommerce 量身訂作的主題，外加許多受歡迎的 WooCommerce 延伸功能。它有數種的版型和色彩選項，供你設定個人化的賣場，支援數個小工具版位，再加上響應式設計及許多優點。 開發者們將會愛上它精巧及可擴充的程式庫，這些都讓開發和擴充工作變得令人愉快。你正在尋找 WooCommerce 的主題嗎？不需要再看別的囉！"
+
+#: inc/class-storefront.php:145
+msgid "Widgets added to this region will appear beneath the header and above the main content."
+msgstr "加入此區域的小工具會顯示在頁首下方和主要內容的上方。"
+
+#: inc/admin/welcome-screen/component-contribute.php:15
+msgid "Download Theme Customisations"
+msgstr "下載 Theme Customisations"
+
+#: inc/admin/welcome-screen/component-contribute.php:11
+msgid "We highly encourage you to make %s all yours. If you need to make a CSS tweak or add some custom JS or PHP, please use our Theme Customisations Plugin. Simply Click the button below, install as normal, and start Customizing today!"
+msgstr "我們非常建議您全面使用 %s。如果您需要調整 CSS 或新增一些自訂 JS 或 PHP，請使用 Theme Customisations 外掛程式。只要按以下按鈕並照平常步驟安裝，立即可開始自訂！"
+
+#: inc/admin/welcome-screen/component-contribute.php:10
+msgid "Customise Storefront"
+msgstr "自訂 Storefront"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:327
+msgid "My Account"
+msgstr "我的帳號"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:300
+msgid "Search"
+msgstr "搜尋"
+
+#: inc/storefront-template-functions.php:738
+msgid "Best Sellers"
+msgstr "最暢銷"
+
+#: inc/storefront-template-functions.php:662
+msgid "Fan Favorites"
+msgstr "粉絲最愛"
+
+#: inc/storefront-template-functions.php:621
+msgid "We Recommend"
+msgstr "我們建議使用"
+
+#: inc/storefront-template-functions.php:580
+msgid "New In"
+msgstr "剛到貨"
+
+#: inc/storefront-template-functions.php:539
+msgid "Shop by Category"
+msgstr "依類別購買"
+
+#: inc/storefront-template-functions.php:443
+msgid "Comments"
+msgstr "評論"
+
+#: inc/storefront-template-functions.php:433
+msgid "Tagged"
+msgstr "已標記"
+
+#: inc/storefront-template-functions.php:420
+msgid "Posted in"
+msgstr "發佈於 "
+
+#: inc/storefront-template-functions.php:409
+msgid "Written by"
+msgstr "作者："
+
+#: inc/storefront-template-functions.php:231
+msgid "Menu"
+msgstr "功能表"
+
+#: inc/admin/welcome-screen/component-intro.php:66
+msgid "Stay up to date with Storefront developments on the %sdev blog%s."
+msgstr "瀏覽 %sdev blog%s，隨時得知 Storefront 最新開發消息。"
+
+#: inc/admin/welcome-screen/component-enhance.php:39
+#: inc/admin/welcome-screen/component-enhance.php:81
+#: inc/admin/welcome-screen/component-enhance.php:111
+msgid "We're currently unable to retrieve these products. Please double check your internet connection or try back later."
+msgstr "我們目前無法擷取這些產品。請仔細查看您的網際網路是否連線，或請稍後再試。"
+
+#: inc/admin/welcome-screen/component-contribute.php:32
+msgid "You can find a wide range of information on how to use and customise %s in our %sdocumentation%s. If you're a customer you can get support in our %sHelpdesk%3$s. Otherwise you can try posting on the WordPress.org %ssupport forums%3$s."
+msgstr "您可在我們的%s文件%s中找到如何使用和自訂 %s 的各類資訊。如果您是客戶，您可在我們的%s服務台%3$s獲得支援服務。否則，您可嘗試在 WordPress.org 的%s支援論壇%3$s中貼文。"
+
+#: inc/admin/welcome-screen/component-contribute.php:31
+msgid "Get support"
+msgstr "取得支援"
+
+#: inc/class-storefront.php:143
+msgid "Below Header"
+msgstr "標題下面"
+
+#: inc/admin/welcome-screen/component-intro.php:58
+msgid "Customizer settings"
+msgstr "自訂器設定"
+
+#: inc/customizer/class-storefront-customizer-control-more.php:31
+msgid "Enjoying %s?"
+msgstr "喜歡 %s?"
+
+#: inc/admin/welcome-screen/component-intro.php:57
+msgid "FAQ"
+msgstr "問與答"
+
+#: inc/admin/welcome-screen/component-intro.php:56
+msgid "Installation &amp; configuration"
+msgstr "安裝與設定"
+
+#: inc/admin/welcome-screen/component-intro.php:54
+msgid "Featured Docs"
+msgstr "精選文件"
+
+#: inc/admin/welcome-screen/component-intro.php:34
+msgid "Recent News"
+msgstr "最近的消息"
+
+#: inc/admin/welcome-screen/component-intro.php:31
+msgid "Latest %s news"
+msgstr "%s 最新消息"
+
+#: inc/admin/welcome-screen/component-intro.php:26
+msgid "Install %s"
+msgstr "安裝 %s"
+
+#: inc/admin/welcome-screen/component-intro.php:19
+msgid "Built to enrich your %s store"
+msgstr "為了豐富您的 %s 商店服務"
+
+#: inc/admin/welcome-screen/component-intro.php:14
+msgid "%sEnjoying %s?%s Why not %sleave a review%s on WordPress.org? We'd really appreciate it!"
+msgstr "%s對 %s？ 滿意嗎？%s請在 WordPress.org %s留言評論%s，好嗎？非常感謝！"
+
+#: inc/admin/welcome-screen/component-enhance.php:86
+msgid "View all %s child themes &rarr;"
+msgstr "瀏覽所有 %s 子主題&rarr;"
+
+#: inc/admin/welcome-screen/component-enhance.php:53
+msgid "Take a look at our range of child themes for %s that allow you to easily change the look of your store to suit a specific industry."
+msgstr "請看我們各類 %s 子主題，可讓您輕鬆變更店面外觀，適合特定產業的需求。"
+
+#: inc/admin/welcome-screen/component-enhance.php:52
+msgid "Child themes"
+msgstr "子主題"
+
+#: inc/admin/welcome-screen/component-enhance.php:94
+msgid "There are a number of free plugins available for %s on the WordPress.org %splugin repository%s. Here's a few we made earlier:"
+msgstr "WordPress.org %s外掛程式庫%s中有許多 %s 可用的免費外掛程式。以下是我們以前設計的一些程式："
+
+#: inc/admin/welcome-screen/component-enhance.php:46
+msgid "View all %s extensions &rarr;"
+msgstr "瀏覽所有 %s 延伸功能&rarr;"
+
+#: inc/admin/welcome-screen/component-enhance.php:22
+msgid "Take a look at our range of extensions that extend and enhance %s functionality."
+msgstr "看看我們各類延伸服務為 %s 延伸和加強的功能。"
+
+#: inc/admin/welcome-screen/component-enhance.php:20
+msgid "Enhance %s"
+msgstr "加強 %s"
+
+#: inc/admin/welcome-screen/component-contribute.php:38
+msgid "An %s project"
+msgstr "%s 專案"
+
+#: inc/admin/welcome-screen/component-contribute.php:27
+msgid "Please suggest and vote on ideas at the %s%s Ideas board%s. The most popular ideas will see prioritised development."
+msgstr "請對%s%s創意板%s的創意想法提出建議並投票。最受歡迎的創意想法將優先獲得開發。"
+
+#: inc/admin/welcome-screen/component-contribute.php:26
+msgid "Suggest a feature"
+msgstr "功能建議"
+
+#: inc/admin/welcome-screen/component-contribute.php:21
+msgid "Contribute to Storefront"
+msgstr "貢獻給Storefront"
+
+#: inc/admin/welcome-screen/component-intro.php:24
+msgid "%s is activated"
+msgstr "%s 已啟用"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:225
+msgid "On Sale Now"
+msgstr "折扣中"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:233
+msgid "New In Store"
+msgstr "新上架商品"
+
+#: inc/admin/welcome-screen/component-enhance.php:62
+#: inc/admin/welcome-screen/component-enhance.php:106
+msgid "Free!"
+msgstr "免費!"
+
+#: inc/admin/welcome-screen/component-enhance.php:92
+msgid "Install free plugins"
+msgstr "安裝免費外掛程式"
+
+#: inc/customizer/class-storefront-customizer.php:234
+msgid "Header background image"
+msgstr "頁首背景圖片"
+
+#: inc/storefront-template-functions.php:461
+msgctxt "Next post"
+msgid "Next"
+msgstr "下一頁"
+
+#: inc/storefront-template-functions.php:462
+msgctxt "Previous post"
+msgid "Previous"
+msgstr "前一頁"
+
+#: 404.php:58
+msgid "Popular Products"
+msgstr "熱門商品"
+
+#: 404.php:22
+msgid "Nothing was found at this location. Try searching, or check out the links below."
+msgstr "在此位置中找不到。請搜尋看看，或請查看以下連結。"
+
+#. Template Name of the plugin/theme
+msgid "Homepage"
+msgstr "Homepage"
+
+#. Template Name of the plugin/theme
+msgid "Full width"
+msgstr "Full width"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:75
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d 件"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "關於 <strong>%s</strong> 的搜尋結果"
+
+#: 404.php:47
+msgid "Product Categories"
+msgstr "商品目錄"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:217
+msgid "Featured Products"
+msgstr "特色商品"
+
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:74
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:313
+msgid "View your shopping cart"
+msgstr "查看購物車"
+
+#: inc/storefront-template-functions.php:701
+msgid "On Sale"
+msgstr "特價"
+
+#: inc/storefront-template-functions.php:500
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "發佈於 %s"
+
+#: inc/storefront-template-functions.php:444
+msgid "% Comments"
+msgstr "% 則迴響"
+
+#: inc/storefront-template-functions.php:444
+msgid "1 Comment"
+msgstr "1 則迴響"
+
+#: inc/storefront-template-functions.php:444
+msgid "Leave a comment"
+msgstr "發表迴響"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/storefront-template-functions.php:415
+#: inc/storefront-template-functions.php:428
+msgid ", "
+msgstr "、"
+
+#: inc/storefront-template-functions.php:377
+msgid "Continue reading %s"
+msgstr "繼續閱讀 %s"
+
+#: inc/storefront-template-functions.php:322
+#: inc/storefront-template-functions.php:385
+msgid "Pages:"
+msgstr "頁次："
+
+#: inc/storefront-template-functions.php:286
+msgid "Skip to navigation"
+msgstr "略過導覽"
+
+#: inc/storefront-template-functions.php:262
+msgid "Secondary Navigation"
+msgstr "次選單"
+
+#: inc/storefront-template-functions.php:287
+msgid "Skip to content"
+msgstr "跳至內容"
+
+#: inc/storefront-template-functions.php:128
+msgid "%1$s designed by %2$s."
+msgstr "%1$s 是由 %2$s 所設計."
+
+#: inc/storefront-template-functions.php:230
+msgid "Primary Navigation"
+msgstr "主導覽列"
+
+#: inc/storefront-template-functions.php:64
+msgid "Edit"
+msgstr "編輯"
+
+#: inc/class-storefront.php:154
+msgid "Footer %d"
+msgstr "頁尾 %d"
+
+#: inc/class-storefront.php:156
+msgid "Widgetized Footer Region %d."
+msgstr "小工具可用的尾頁位置 %d."
+
+#: inc/storefront-template-functions.php:48
+msgid "Your comment is awaiting moderation."
+msgstr "你的評論正在等候審核。"
+
+#: inc/class-storefront.php:88
+msgid "Handheld Menu"
+msgstr "手持裝置介面選單"
+
+#: inc/class-storefront.php:137
+msgid "Sidebar"
+msgstr "邊欄"
+
+#: inc/class-storefront.php:87
+msgid "Secondary Menu"
+msgstr "次要選單"
+
+#: inc/customizer/class-storefront-customizer.php:460
+msgid "Looking for more options?"
+msgstr "需要更多選項?"
+
+#: inc/class-storefront.php:86
+msgid "Primary Menu"
+msgstr "主選單"
+
+#: inc/customizer/class-storefront-customizer.php:437
+msgid "General Layout"
+msgstr "一般版面型式"
+
+#: inc/customizer/class-storefront-customizer.php:450
+msgid "More"
+msgstr "更多"
+
+#: inc/customizer/class-storefront-customizer.php:289
+msgid "Customise the look & feel of your web site footer."
+msgstr "客製化你網站上的頁尾樣貌."
+
+#: inc/customizer/class-storefront-customizer.php:358
+msgid "Customise the look & feel of your web site buttons."
+msgstr "客製化你網站上的按鈕樣式."
+
+#: inc/customizer/class-storefront-customizer.php:356
+msgid "Buttons"
+msgstr "按鈕"
+
+#: inc/customizer/class-storefront-customizer.php:415
+msgid "Alternate button text color"
+msgstr "取代按鈕上的文字顏色"
+
+#: inc/customizer/class-storefront-customizer.php:400
+msgid "Alternate button background color"
+msgstr "取代按鈕的顏色"
+
+#: inc/customizer/class-storefront-customizer.php:425
+msgid "Layout"
+msgstr "版面形式"
+
+#: inc/customizer/class-storefront-customizer.php:287
+msgid "Footer"
+msgstr "頁尾"
+
+#: inc/customizer/class-storefront-customizer.php:277
+#: inc/customizer/class-storefront-customizer.php:346
+msgid "Link color"
+msgstr "鏈結顏色"
+
+#: inc/customizer/class-storefront-customizer.php:247
+#: inc/customizer/class-storefront-customizer.php:301
+#: inc/customizer/class-storefront-customizer.php:370
+msgid "Background color"
+msgstr "背景顏色"
+
+#: inc/customizer/class-storefront-customizer.php:195
+#: inc/customizer/class-storefront-customizer.php:316
+msgid "Heading color"
+msgstr "標題顏色"
+
+#: inc/customizer/class-storefront-customizer.php:225
+msgid "Link / accent color"
+msgstr "連結 / 主要強調色"
+
+#: inc/customizer/class-storefront-customizer.php:210
+#: inc/customizer/class-storefront-customizer.php:262
+#: inc/customizer/class-storefront-customizer.php:331
+#: inc/customizer/class-storefront-customizer.php:385
+msgid "Text color"
+msgstr "文字顏色"
+
+#: inc/customizer/class-storefront-customizer.php:182
+msgid "Typography"
+msgstr "字型"
+
+#: inc/customizer/class-storefront-customizer.php:144
+msgid "Header"
+msgstr "頁首"
+
+#: inc/admin/welcome-screen/component-contribute.php:22
+msgid "Found a bug? Want to contribute a patch or create a new feature? %sGitHub is the place to go!%s Or would you like to translate %s into your language? %sGet involved on WordPress.org%s."
+msgstr "發現任何錯誤？想幫助修補或創造新功能？%sGitHub 是最佳選擇！%s或者，想要將 %s 翻譯為您的語言版本？%s前往並加入 WordPress.org%s。"
+
+#: inc/admin/class-storefront-admin.php:57
+msgid "Get started with Storefront"
+msgstr "開始使用 Storefront"
+
+#: inc/admin/class-storefront-admin.php:56
+msgid "Thanks for choosing Storefront! You can read hints and tips on how get the most out of your new theme on the %swelcome screen%s."
+msgstr "感謝您選擇了 Storefront! 您可以在 %s歡迎頁面%s 中, 獲得關於如何最有效地使用你的新主題的提示和說明."
+
+#: inc/customizer/class-storefront-customizer-control-more.php:28
+msgid "There's a range of %s extensions available to put additional power in your hands. Check out the %s%s%s page in your dashboard for more information."
+msgstr "我們有各類 %s 延伸功能，可讓您一手掌握更多強大力量。請在您的儀表板內查看 %s%s%s 頁面以了解更多資訊。"
+
+#: inc/customizer/class-storefront-customizer-control-more.php:34
+msgid "Why not leave us a review on %sWordPress.org%s?  We'd really appreciate it!"
+msgstr "何不在 %sWordPress.org%s 上寫個評論? 我們一定會非常感謝你的! :-)"
+
+#: inc/customizer/class-storefront-customizer.php:140
+msgid "Background"
+msgstr "背景"
+
+#: inc/admin/welcome-screen/component-intro.php:21
+msgid "Although %s works fine as a regular WordPress theme, it really shines when used for an online store. Install %s and start selling now."
+msgstr "雖然 %s 當成一般 WordPress 主題也很好，但用在網路商店時更加出色。安裝 %s 並立即開始銷售。"
+
+#: content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "沒有找到你要的內容。也許你可以搜尋一下看看。"
+
+#: content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "抱歉，沒東西符合你的搜尋條件。請試試其他不同關鍵字。"
+
+#: content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "準備好發表你的第一篇文章了嗎？<a href=\"%1$s\">從這裡開始</a>。"
+
+#: content-none.php:14
+msgid "Nothing Found"
+msgstr "找不到"
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr "迴響已被關閉。"
+
+#: comments.php:39 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "較新評論 &rarr;"
+
+#: comments.php:38 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; 較早評論"
+
+#: comments.php:37 comments.php:55
+msgid "Comment navigation"
+msgstr "評論導航列"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; 有 %1$s 則迴響"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "糟糕！找不到該頁面。"
+
+#. Author URI of the plugin/theme
+msgid "https://woocommerce.com/"
+msgstr "https://woocommerce.com/"
+
+#. Theme URI of the plugin/theme
+msgid "https://woocommerce.com/storefront"
+msgstr "https://woocommerce.com/storefront"
+
+#. Author of the plugin/theme
+msgid "WooThemes"
+msgstr "WooThemes"
