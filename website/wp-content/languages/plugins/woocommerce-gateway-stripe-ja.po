@@ -1,0 +1,1220 @@
+# Translation of Plugins - WooCommerce Stripe Payment Gateway - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WooCommerce Stripe Payment Gateway - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-02-12 02:18:55+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WooCommerce Stripe Payment Gateway - Stable (latest release)\n"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:808
+msgid "Product with the ID (%d) cannot be found."
+msgstr "ID (%d) の商品が見つかりません。"
+
+#. translators: 1) int version 2) int version
+#: includes/admin/class-wc-stripe-admin-notices.php:118
+msgid "WooCommerce Stripe - We recently made changes to Stripe that may impact the appearance of your checkout. If your checkout has changed unexpectedly, please follow these <a href=\"https://docs.woocommerce.com/document/stripe/#section-45\" target=\"_blank\">instructions</a> to fix."
+msgstr "WooCommerce Stripe  - 最近、チェックアウトの外観に影響を与える可能性があるStripeを変更しました。 チェックアウトが予想外に変化した場合は、以下の<a href=\"https://docs.woocommerce.com/document/stripe/#section-45\" target=\"_blank\">手順</a>に従って修正してください。"
+
+#: includes/class-wc-gateway-stripe.php:486
+#: includes/class-wc-gateway-stripe.php:701
+msgid "Sorry, we're not accepting prepaid cards at this time. Your credit card has not been charged. Please try with alternative payment method."
+msgstr "申し訳ありませんが、現在プリペイドカードは受け付けておりません。 あなたのクレジットカードは請求されていません。 別のお支払い方法でお試しください。"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:97
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:97
+msgid "Update the Payment Method used for all of my active subscriptions (optional)."
+msgstr "すべての有効な定期購入に使用されている支払い方法を更新します（オプション）。"
+
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:981
+msgid "There was a problem adding the payment method."
+msgstr "支払い方法の追加中に問題が発生しました。"
+
+#. translators: 1: product name 2: quantity in stock
+#: includes/payment-methods/class-wc-stripe-payment-request.php:835
+msgid "You cannot add that amount of \"%1$s\"; to the cart because there is not enough stock (%2$s remaining)."
+msgstr " 在庫が足りないため（残り%2$s ）カートに \"%1$s\"の量を追加することはできません。"
+
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:228
+msgid "IBAN."
+msgstr "IBAN."
+
+#: includes/class-wc-gateway-stripe.php:507
+msgid "Billing First Name and Last Name are required."
+msgstr "請求先の名と姓が必要です。"
+
+#: includes/class-wc-stripe-customer.php:119
+msgid "Username"
+msgstr "Username"
+
+#: includes/class-wc-stripe-customer.php:119
+msgid "Name"
+msgstr "名前"
+
+#. translators: %d Order ID
+#: includes/admin/class-wc-stripe-privacy.php:339
+msgid "Order ID %d contains an active Subscription. Personal data retained. (Stripe)"
+msgstr "注文 ID %d には有効な定期購入が含まれています。 個人データは保持されます。 (Stripe)"
+
+#. translators: %d Order ID
+#: includes/admin/class-wc-stripe-privacy.php:334
+#: includes/admin/class-wc-stripe-privacy.php:371
+msgid "Order ID %d is less than set retention days. Personal data retained. (Stripe)"
+msgstr "注文 ID %d は、設定された保持日数未満です。 個人データは保持されます。 (Stripe)"
+
+#: includes/admin/class-wc-stripe-privacy.php:38
+msgid "Retains any Stripe data such as Stripe customer ID, source ID."
+msgstr "Stripe 顧客 ID、ソース ID などの Stripe データを保持します。"
+
+#: includes/admin/class-wc-stripe-privacy.php:37
+msgid "Retain Stripe Data"
+msgstr "Stripe データを保持"
+
+#. translators: 1) link
+#: includes/admin/class-wc-stripe-admin-notices.php:188
+msgid "Stripe is enabled, but a SSL certificate is not detected. Your checkout may not be secure! Please ensure your server has a valid <a href=\"%1$s\" target=\"_blank\">SSL certificate</a>"
+msgstr "Stripe は有効ですが、SSL 証明書は検出されません。 あなたのチェックアウトは安全ではないかもしれません！ ご使用のサーバーに有効な <a href=\"%1$s\" target=\"_blank\">SSL 証明書</a>があることを確認してください。"
+
+#: includes/admin/class-wc-stripe-privacy.php:382
+msgid "Stripe personal data erased."
+msgstr "Stripe 個人データを削除しました。"
+
+#: includes/admin/class-wc-stripe-privacy.php:354
+msgid "Stripe Subscription Data Erased."
+msgstr "Stripe 定期購入データを削除しました。"
+
+#: includes/admin/class-wc-stripe-privacy.php:258
+msgid "Stripe User Data Erased."
+msgstr "Stripe ユーザーデータを削除しました。"
+
+#: includes/admin/class-wc-stripe-privacy.php:212
+msgid "Customer Data"
+msgstr "顧客データ"
+
+#: includes/admin/class-wc-stripe-privacy.php:172
+msgid "Subscriptions"
+msgstr "定期購入"
+
+#: includes/admin/class-wc-stripe-privacy.php:115
+#: includes/admin/class-wc-stripe-privacy.php:180
+#: includes/admin/class-wc-stripe-privacy.php:220
+msgid "Stripe customer id"
+msgstr "Stripe 顧客 id"
+
+#: includes/admin/class-wc-stripe-privacy.php:111
+#: includes/admin/class-wc-stripe-privacy.php:176
+#: includes/admin/class-wc-stripe-privacy.php:216
+msgid "Stripe payment id"
+msgstr "Stripe 支払い id"
+
+#: includes/admin/class-wc-stripe-privacy.php:107
+msgid "Orders"
+msgstr "注文"
+
+#. translators: %s URL to docs
+#: includes/admin/class-wc-stripe-privacy.php:84
+msgid "By using this extension, you may be storing personal data or sharing data with an external service. <a href=\"%s\" target=\"_blank\">Learn more about how this works, including what you may want to include in your privacy policy.</a>"
+msgstr "この拡張機能を使用すると、個人データを保存したり、外部サービスとデータを共有したりすることができます。<a href=\"%s\" target=\"_blank\">プライバシーポリシーに含めることができるものを含め、これがどのように機能するかについて詳しく学んでください。</a>"
+
+#: includes/admin/class-wc-stripe-privacy.php:23
+msgid "WooCommerce Stripe Data"
+msgstr "WooCommerce Stripe データ"
+
+#: includes/admin/class-wc-stripe-privacy.php:20
+#: includes/admin/class-wc-stripe-privacy.php:22
+msgid "WooCommerce Stripe Customer Data"
+msgstr "WooCommerce Stripe 顧客データ"
+
+#: includes/admin/class-wc-stripe-privacy.php:17
+msgid "WooCommerce Stripe Subscriptions Data"
+msgstr "WooCommerce Stripe 定期購入データ"
+
+#: includes/admin/class-wc-stripe-privacy.php:14
+msgid "WooCommerce Stripe Order Data"
+msgstr "WooCommerce Stripe 注文データ"
+
+#: includes/admin/stripe-settings.php:106
+msgid "If enabled, this option shows a \"pay\" button and modal credit card form on the checkout, instead of credit card fields directly on the page. We recommend you leave this disabled and use the embedded form as that is the preferred method."
+msgstr "このオプションを有効にすると、ページに直接表示されるクレジットカードのフィールドではなく、チェックアウトの「支払い」ボタンとモーダルクレジットカードのフォームが表示されます。 これを無効にしておくことをお勧めします。埋め込みフォームを使用することをお勧めします。"
+
+#: includes/admin/stripe-settings.php:103
+msgid "Stripe Modal Checkout"
+msgstr "Stripe Modal 決済"
+
+#. translators: 1. URL link.
+#: woocommerce-gateway-stripe.php:32
+msgid "Stripe requires WooCommerce to be installed and active. You can download %s here."
+msgstr "Stripe は、WooCommerce をインストールしてアクティブにする必要があります。 ここで %s をダウンロードできます。"
+
+#. translators: partial captured amount
+#: includes/class-wc-stripe-webhook-handler.php:309
+msgid "This charge was partially captured via Stripe Dashboard in the amount of: %s"
+msgstr "この費用は、部分的にストライプダッシュボードを介して以下の額で取り込まれました: %s"
+
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:366
+msgid "Awaiting Multibanco payment"
+msgstr "Multibanco の支払いを待つ"
+
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:250
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:265
+msgid "Referencia:"
+msgstr "参照(Referencia):"
+
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:247
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:261
+msgid "Entidade:"
+msgstr "Entidade:"
+
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:244
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:257
+msgid "Montante:"
+msgstr "金額(Montante):"
+
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:242
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:254
+msgid "MULTIBANCO INFORMAÇÕES DE ENCOMENDA:"
+msgstr "MULTIBANCO 注文情報:"
+
+#: woocommerce-gateway-stripe.php:254
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:60
+msgid "Stripe Multibanco"
+msgstr "Stripe Multibanco"
+
+#: woocommerce-gateway-stripe.php:249
+#: includes/payment-methods/class-wc-gateway-stripe-eps.php:60
+msgid "Stripe EPS"
+msgstr "Stripe EPS"
+
+#. translators: 1) last 4 digits of SEPA Direct Debit
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:479
+msgid "Via SEPA Direct Debit ending in %1$s"
+msgstr "SEPA 口座振替（%1$sで終了）"
+
+#. translators: 1) dollar amount 2) transaction id 3) refund message
+#: includes/class-wc-stripe-webhook-handler.php:480
+msgid "Refunded %1$s - Refund ID: %2$s - %3$s"
+msgstr "%1$sは払い戻しされました - 払い戻しID: %2$s - %3$s"
+
+#: includes/class-wc-gateway-stripe.php:926
+msgid "Stripe Payout:"
+msgstr "Stripe ペイアウト:"
+
+#: includes/class-wc-gateway-stripe.php:925
+msgid "This represents the net total that will be credited to your Stripe bank account. This may be in the currency that is set in your Stripe account."
+msgstr "これは、あなたの Stripe 銀行口座に入金される合計を表します。 これはあなたの Stripe アカウントで設定されている通貨である可能性があります。"
+
+#: includes/class-wc-gateway-stripe.php:889
+msgid "Stripe Fee:"
+msgstr "Stripe 手数料:"
+
+#: includes/class-wc-gateway-stripe.php:888
+msgid "This represents the fee Stripe collects for the transaction."
+msgstr "この取引に対して Stripe が取得する手数料を表します。"
+
+#: includes/class-wc-stripe-webhook-handler.php:206
+#: includes/class-wc-gateway-stripe.php:811
+#: includes/compat/class-wc-stripe-subs-compat.php:253
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:272
+#: includes/class-wc-stripe-order-handler.php:162
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:373
+msgid "Sorry, we are unable to process your payment at this time. Please retry later."
+msgstr "申し訳ありませんが、現時点ではお支払いを処理できません。 後で再試行してください。"
+
+#: includes/class-wc-gateway-stripe.php:591
+msgid "Place Order"
+msgstr "注文する"
+
+#: includes/class-wc-gateway-stripe.php:291
+msgid "Change Payment Method"
+msgstr "支払い方法を変更する"
+
+#. translators: 1) Opening anchor tag 2) closing anchor tag
+#: includes/class-wc-gateway-stripe.php:224
+msgid "If your billing address has been changed for saved payment methods, be sure to remove any %1$ssaved payment methods%2$s on file and re-add them."
+msgstr "保存されたお支払い方法の請求先住所が変更された場合は、ファイルに%1$s保存されているお支払い方法%2$sをすべて削除して、再追加してください。"
+
+#: includes/admin/stripe-multibanco-settings.php:35
+msgid "You will be redirected to Multibanco."
+msgstr "Multibanco にリダイレクトされます。"
+
+#: includes/admin/stripe-multibanco-settings.php:28
+msgid "Multibanco"
+msgstr "Multibanco"
+
+#: includes/admin/stripe-multibanco-settings.php:19
+msgid "Enable Stripe Multibanco"
+msgstr "Stripe Multibanco を有効"
+
+#: includes/admin/stripe-multibanco-settings.php:10
+msgid "Relevant Payer Geography: Portugal"
+msgstr "関連する支払人地域：ポルトガル"
+
+#: includes/admin/stripe-eps-settings.php:39
+msgid "Webhook Enpoints"
+msgstr "Webhook エンドポイント"
+
+#: includes/admin/stripe-eps-settings.php:35
+msgid "You will be redirected to EPS."
+msgstr "EPS にリダイレクトされます。"
+
+#: includes/admin/stripe-eps-settings.php:28
+msgid "EPS"
+msgstr "EPS"
+
+#: includes/admin/stripe-eps-settings.php:19
+msgid "Enable Stripe EPS"
+msgstr "Stripe EPS を有効にする"
+
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:39
+msgid "Save payment information to my account for future purchases."
+msgstr "今後の購入のために、支払い情報をアカウントに保存してください。"
+
+#: includes/admin/stripe-eps-settings.php:10
+msgid "Relevant Payer Geography: Austria"
+msgstr "関連する支払人地域：オーストリア"
+
+#. translators: 1) webhook url
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:24
+msgid "You must add the following webhook endpoint <strong style=\"background-color:#ddd;\">&nbsp;%s&nbsp;</strong> to your <a href=\"https://dashboard.stripe.com/account/webhooks\" target=\"_blank\">Stripe account settings</a>. This will enable you to receive notifications on the charge statuses."
+msgstr "次の webhook エンドポイント<strong style=\"background-color:#ddd;\">&nbsp;%s&nbsp;</strong>を<a href=\"https://dashboard.stripe.com/account/webhooks\" target=\"_blank\">Stripe アカウントの設定</a>に追加する必要があります。 これにより、料金ステータスに関する通知を受け取ることができます。"
+
+#: includes/admin/stripe-settings.php:120
+msgid "Shows a description of your store on Stripe Modal Checkout."
+msgstr "Stripe Modal Checkout の店舗の説明を表示します。"
+
+#: includes/admin/stripe-settings.php:118
+msgid "Stripe Checkout Description"
+msgstr "Stripe Checkout 説明"
+
+#. translators: 1) The reason type.
+#: includes/class-wc-stripe-webhook-handler.php:526
+msgid "The opened review for this order is now closed. Reason: (%s)"
+msgstr "この注文の開封済みのレビューは現在閉鎖されています。理由 : (%s)"
+
+#. translators: 1) The URL to the order. 2) The reason type.
+#: includes/class-wc-stripe-webhook-handler.php:502
+msgid "A review has been opened for this order. Action is needed. Please go to your <a href=\"%1$s\" title=\"Stripe Dashboard\" target=\"_blank\">Stripe Dashboard</a> to review the issue. Reason: (%2$s)"
+msgstr "この注文のレビューが開かれました。 行動が必要です。 <a href=\"%1$s\" title=\"Stripe Dashboard\" target=\"_blank\">Stripe ダッシュボード</a>にアクセスして問題を確認してください。理由 : (%2$s)"
+
+#. translators: 1) The URL to the order.
+#: includes/class-wc-stripe-webhook-handler.php:264
+msgid "A dispute was created for this order. Response is needed. Please go to your <a href=\"%s\" title=\"Stripe Dashboard\" target=\"_blank\">Stripe Dashboard</a> to review this dispute."
+msgstr "この注文の紛争が作成されました。 対応が必要です。 <a href=\"%s\" title=\"Stripe Dashboard\" target=\"_blank\">Stripe ダッシュボード</a>にアクセスしてこの紛争を確認してください。"
+
+#. translators: 1) dollar amount 2) transaction id 3) refund message
+#: includes/class-wc-stripe-webhook-handler.php:452
+#: includes/class-wc-stripe-webhook-handler.php:480
+msgid "Pre-Authorization Released via Stripe Dashboard"
+msgstr "Stripe ダッシュボードによる事前承認"
+
+#. translators: 1) dollar amount 2) transaction id 3) refund message
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:963
+msgid "Pre-Authorization Released"
+msgstr "事前承認済み"
+
+#. translators: 1) link
+#: includes/admin/class-wc-stripe-admin-notices.php:179
+msgid "Stripe is in live mode however your test keys may not be valid. Live keys start with pk_live and sk_live or rk_live. Please go to your settings and, <a href=\"%s\">set your Stripe account keys</a>."
+msgstr "Stripe は本番環境になっていますが、テストキーが有効でない可能性があります。 本番環境キーは、 pk_live と sk_live または rk_live で始まります。 あなたの設定に行き、<a href=\"%s\">Stripe のアカウントキーを設定してください。</a>"
+
+#. translators: 1) link
+#: includes/admin/class-wc-stripe-admin-notices.php:170
+msgid "Stripe is in test mode however your test keys may not be valid. Test keys start with pk_test and sk_test or rk_test. Please go to your settings and, <a href=\"%s\">set your Stripe account keys</a>."
+msgstr "Stripe はテストモードですが、テストキーが有効ではない可能性があります。 テストキーは、 pk_test と sk_test または rk_test で始まります。 あなたの設定に行き、<a href=\"%s\">Stripe のアカウントキーを設定してください。</a>"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:418
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:406
+msgid "Invalid source ID. A valid source \"Stripe Source ID\" must begin with \"src_\" or \"card_\"."
+msgstr "ソース ID が無効です。 有効なソース\"Stripe Source ID\"は、\"src_\"または\"card_\"で始まる必要があります。"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:409
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:397
+msgid "Invalid customer ID. A valid \"Stripe Customer ID\" must begin with \"cus_\"."
+msgstr "顧客 ID が無効です。 有効なソース\"Stripe Customer ID\"は、\"cus_\"で始まる必要があります。"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:407
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:395
+msgid "A \"Stripe Customer ID\" value is required."
+msgstr "\"Stripe Customer ID\"が必要です。"
+
+#: includes/class-wc-stripe-helper.php:225
+msgid "The billing country is not accepted by SOFORT. Please try another country."
+msgstr "請求先国は SOFORT に受け入れられません。 別の国にお試しください。"
+
+#: includes/class-wc-gateway-stripe.php:390
+msgid "Card Code (CVC)"
+msgstr "セキュリティコード(CVC)"
+
+#: includes/class-wc-gateway-stripe.php:382
+msgid "Expiry Date"
+msgstr "有効期限"
+
+#: includes/class-wc-gateway-stripe.php:371
+msgid "Card Number"
+msgstr "カード番号"
+
+#: includes/class-wc-stripe-helper.php:220
+msgid "The card's expiration year is in the past"
+msgstr "有効期限に誤りがあります。"
+
+#: includes/class-wc-stripe-helper.php:216
+msgid "The card's expiration date is incomplete."
+msgstr "有効期限に誤りがあります。"
+
+#: includes/class-wc-stripe-helper.php:215
+msgid "The card's security code is incomplete."
+msgstr "セキュリティコード(CVC)に誤りがあります。"
+
+#: includes/class-wc-stripe-helper.php:214
+msgid "The card number is incomplete."
+msgstr "カード番号に誤りがあります。"
+
+#: includes/admin/stripe-settings.php:137
+msgid "Select the button type you would like to show."
+msgstr "表示するボタンの種類を選択します。"
+
+#: includes/admin/class-wc-stripe-admin-notices.php:226
+msgid "Action failed. Please refresh the page and retry."
+msgstr "アクションは失敗しました。 ページを更新して再試行してください。"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:632
+msgid "OR"
+msgstr "もしくは"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:284
+#: includes/payment-methods/class-wc-stripe-payment-request.php:867
+msgid "Pending"
+msgstr "保留"
+
+#: woocommerce-gateway-stripe.php:247
+#: includes/payment-methods/class-wc-gateway-stripe-sofort.php:60
+msgid "Stripe SOFORT"
+msgstr "Stripe SOFORT"
+
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:269
+msgid "TEST MODE ENABLED. In test mode, you can use IBAN number DE89370400440532013000."
+msgstr ""
+"テストモードが有効になります。 テストモードでは、IBAN 番号\n"
+" DE89370400440532013000 を使用できます。"
+
+#. translators: statement descriptor
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:212
+msgid "By providing your IBAN and confirming this payment, you are authorizing %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited."
+msgstr "IBAN を提供し、この支払いを確認すると、 %s と支払いサービスプロバイダである Stripe が銀行に命令を送って、口座から引き落とし、それらの指示に従って口座から引き落としを行うことを承認しています。 あなたは、あなたの銀行との契約の条件に基づいて、あなたの銀行から払い戻しを受ける権利があります。 払い戻しは、アカウントの引き落とし日から8週間以内に請求されなければなりません。"
+
+#: woocommerce-gateway-stripe.php:253
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:75
+msgid "Stripe SEPA Direct Debit"
+msgstr "Stripe SEPA 口座振替"
+
+#: woocommerce-gateway-stripe.php:251
+#: includes/payment-methods/class-wc-gateway-stripe-p24.php:60
+msgid "Stripe P24"
+msgstr "Stripe P24"
+
+#: woocommerce-gateway-stripe.php:250
+#: includes/payment-methods/class-wc-gateway-stripe-ideal.php:60
+msgid "Stripe iDeal"
+msgstr "Stripe iDeal"
+
+#: woocommerce-gateway-stripe.php:248
+#: includes/payment-methods/class-wc-gateway-stripe-giropay.php:60
+msgid "Stripe Giropay"
+msgstr "Stripe Giropay"
+
+#: woocommerce-gateway-stripe.php:246
+#: includes/payment-methods/class-wc-gateway-stripe-bancontact.php:60
+msgid "Stripe Bancontact"
+msgstr "Stripe Bancontact"
+
+#: includes/payment-methods/class-wc-gateway-stripe-giropay.php:179
+#: includes/payment-methods/class-wc-gateway-stripe-bancontact.php:179
+#: includes/payment-methods/class-wc-gateway-stripe-eps.php:179
+#: includes/payment-methods/class-wc-gateway-stripe-ideal.php:179
+#: includes/payment-methods/class-wc-gateway-stripe-alipay.php:186
+#: includes/payment-methods/class-wc-gateway-stripe-p24.php:180
+#: includes/payment-methods/class-wc-gateway-stripe-sofort.php:179
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:183
+msgid "Add Payment"
+msgstr "支払いを追加"
+
+#. translators: %1$s Payment method, %2$s List of supported currencies
+#: includes/admin/class-wc-stripe-admin-notices.php:212
+msgid "%1$s is enabled - it requires store currency to be set to %2$s"
+msgstr "%1$s が有効になっています - ストア通貨を %2$s に設定する必要があります"
+
+#. translators: link
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:77
+#: includes/payment-methods/class-wc-gateway-stripe-giropay.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-bancontact.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-eps.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-ideal.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-alipay.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-p24.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-sofort.php:62
+#: includes/payment-methods/class-wc-gateway-stripe-multibanco.php:62
+msgid "All other general Stripe settings can be adjusted <a href=\"%s\">here</a>."
+msgstr "他のすべての一般的な Stripe 設定は<a href=\"%s\">ここ</a>で調整できます。"
+
+#: woocommerce-gateway-stripe.php:252
+#: includes/payment-methods/class-wc-gateway-stripe-alipay.php:60
+msgid "Stripe Alipay"
+msgstr "Stripe Alipay"
+
+#. translators: 1) card brand 2) last 4 digits
+#: includes/admin/class-wc-stripe-privacy.php:41
+#: includes/compat/class-wc-stripe-subs-compat.php:484
+#: includes/compat/class-wc-stripe-subs-compat.php:499
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:472
+msgid "N/A"
+msgstr "該当なし"
+
+#: includes/class-wc-stripe-webhook-handler.php:452
+msgid "Refunded via Stripe Dashboard"
+msgstr "Stripe ダッシュボード経由で払い戻し"
+
+#: includes/class-wc-stripe-webhook-handler.php:417
+msgid "This payment has cancelled."
+msgstr "この支払いはキャンセルされました。"
+
+#: includes/class-wc-stripe-webhook-handler.php:390
+msgid "This payment failed to clear."
+msgstr "この支払いはクリアされませんでした。"
+
+#. translators: last 4 digits of IBAN account
+#: includes/class-wc-stripe-sepa-payment-token.php:41
+msgid "SEPA IBAN ending in %s"
+msgstr "%s で終了する SEPA IBAN"
+
+#: includes/class-wc-stripe-payment-tokens.php:175
+msgid "SEPA IBAN"
+msgstr "SEPA IBAN"
+
+#. translators: error message
+#: includes/class-wc-stripe-order-handler.php:194
+msgid "Stripe payment failed: %s"
+msgstr "Stripe 支払いが失敗しました : %s"
+
+#: includes/class-wc-stripe-helper.php:224
+#: includes/class-wc-stripe-order-handler.php:95
+msgid "Unable to process this payment, please try again or use alternative method."
+msgstr "この支払いを処理できません。もう一度お試しいただくか、代替方法をご利用ください。"
+
+#: includes/class-wc-stripe-customer.php:203
+msgid "Unable to add payment source."
+msgstr "支払い元を追加できません。"
+
+#: includes/class-wc-stripe-api.php:138 includes/class-wc-stripe-api.php:172
+msgid "There was a problem connecting to the Stripe API endpoint."
+msgstr "Stripe API エンドポイントに接続する際に問題が発生しました。"
+
+#: includes/class-wc-gateway-stripe.php:488
+msgid "Please enter your IBAN account number."
+msgstr "IBAN アカウント番号を入力してください。"
+
+#: includes/class-wc-gateway-stripe.php:487
+msgid "Please enter your IBAN account name."
+msgstr "IBAN アカウント名を入力してください。"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:140
+msgid "Sorry, we're not accepting prepaid cards at this time. Your credit card has not been charge. Please try with alternative payment method."
+msgstr "申し訳ありませんが、現時点ではプリペイドカードは受け付けていません。クレジットカードに請求されていません。 代替のお支払い方法でお試しください。"
+
+#: includes/class-wc-gateway-stripe.php:363
+msgid "Credit or debit card"
+msgstr "クレジット/デビットカード"
+
+#: includes/admin/stripe-sofort-settings.php:39
+msgid "You will be redirected to SOFORT."
+msgstr "SOFORT にリダイレクトされます。"
+
+#: includes/admin/stripe-sofort-settings.php:32
+msgid "SOFORT"
+msgstr "SOFORT"
+
+#: includes/admin/stripe-sofort-settings.php:23
+msgid "Enable Stripe SOFORT"
+msgstr "Stripe SOFORT 有効"
+
+#: includes/admin/stripe-sofort-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#sofort\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#sofort\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-sofort-settings.php:10
+msgid "Relevant Payer Geography: Germany, Austria"
+msgstr "関連支払地域 : ドイツ、オーストリア"
+
+#: includes/admin/stripe-settings.php:163
+msgid "Enter the height you would like the button to be in pixels. Width will always be 100%."
+msgstr "ボタンの高さをピクセルで入力します。 幅は常に100％になります。"
+
+#: includes/admin/stripe-settings.php:161
+msgid "Button Height"
+msgstr "ボタンの高さ"
+
+#: includes/admin/stripe-settings.php:160
+msgid "Payment Request Button Height"
+msgstr "Payment Request ボタンの高さ"
+
+#: includes/admin/stripe-settings.php:156
+msgid "Light-Outline"
+msgstr "ライトアウトライン"
+
+#: includes/admin/stripe-settings.php:155
+msgid "Light"
+msgstr "明るい"
+
+#: includes/admin/stripe-settings.php:154
+msgid "Dark"
+msgstr "暗い"
+
+#: includes/admin/stripe-settings.php:148
+msgid "Button Theme"
+msgstr "ボタンテーマ"
+
+#: includes/admin/stripe-settings.php:147
+msgid "Payment Request Button Theme"
+msgstr "Payment Request ボタンテーマ"
+
+#: includes/admin/stripe-settings.php:143
+msgid "Donate"
+msgstr "寄付する"
+
+#: includes/admin/stripe-settings.php:142
+msgid "Buy"
+msgstr "購入"
+
+#: includes/admin/stripe-settings.php:141
+msgid "Default"
+msgstr "初期値"
+
+#: includes/admin/stripe-settings.php:135
+msgid "Button Type"
+msgstr "ボタンタイプ"
+
+#: includes/admin/stripe-settings.php:134
+msgid "Payment Request Button Type"
+msgstr "Payment Request ボタンタイプ"
+
+#. translators: 1) br tag 2) opening anchor tag 3) closing anchor tag
+#: includes/admin/stripe-settings.php:127
+msgid "Enable Payment Request Buttons. (Apple Pay/Chrome Payment Request API) %1$sBy using Apple Pay, you agree to %2$s and %3$s's terms of service."
+msgstr "Payment Request ボタンを有効にする。 （Apple Pay / Chrome Payment Request API）%1$sApple Payを使用すると、 %2$s および %3$s の利用規約に同意したことになります。"
+
+#: includes/admin/stripe-settings.php:125
+msgid "Payment Request Buttons"
+msgstr "Payment Request ボタン"
+
+#: includes/admin/stripe-settings.php:98
+msgid "Some payment methods have 3D Secure feature. This is an extra security layer for your store. Choose how to handle payments when 3D Secure is recommended. Enabling would require customers to use 3D Secure when recommended."
+msgstr "一部の支払い方法に 3D セキュア機能があります。 これはあなたの店のための余分なセキュリティ層です。  3D セキュアが推奨されている場合の支払い処理方法を選択します。有効にすると、顧客は推奨されるときに 3D セキュアを使用する必要があります。"
+
+#: includes/admin/stripe-settings.php:96
+msgid "Require 3D Secure when applicable"
+msgstr "適用可能であれば 3D セキュアを要求する"
+
+#: includes/admin/stripe-settings.php:95
+msgid "3D Secure"
+msgstr "3D セキュア"
+
+#: includes/admin/stripe-settings.php:82
+msgid "This may be up to 22 characters. The statement description must contain at least one letter, may not include ><\"' characters, and will appear on your customer's statement in capital letters."
+msgstr "これは最大22文字です。 明細書表記には少なくとも1文字は含まれていなければならず、 ><\"' 文字は含まれていない可能性があり、お客様の明細書に大文字で表示されます。日本語は対応しておりませんので、半角英数字で入力してください。"
+
+#: includes/admin/stripe-settings.php:75
+msgid "Choose the style you want to show for your credit card form. When unchecked, the credit card form will display separate credit card number field, expiry date field and cvc field."
+msgstr "クレジットカードフォームに表示するスタイルを選択してください。 チェックを外すと、クレジットカードフォームに別のクレジットカード番号フィールド、有効期限フィールド、 cvc フィールドが表示されます。"
+
+#: includes/admin/stripe-settings.php:73
+msgid "Inline Credit Card Form"
+msgstr "インラインクレジットカードフォーム"
+
+#: includes/admin/stripe-sepa-settings.php:39
+msgid "Mandate Information."
+msgstr "委任情報。"
+
+#: includes/admin/stripe-sepa-settings.php:32
+msgid "SEPA Direct Debit"
+msgstr "SEPA 口座振替"
+
+#: includes/admin/stripe-sepa-settings.php:23
+msgid "Enable Stripe SEPA Direct Debit"
+msgstr "Stripe SEPA Direct Debit を有効化"
+
+#: includes/admin/stripe-sepa-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#sepa-direct-debit\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#sepa-direct-debit\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-sepa-settings.php:10
+msgid "Relevant Payer Geography: France, Germany, Spain, Belgium, Netherlands, Luxembourg, Italy, Portugal, Austria, Ireland"
+msgstr "関連支払地域 : フランス、ドイツ、スペイン、ベルギー、オランダ、ルクセンブルク、イタリア、ポルトガル、オーストリア、アイルランド"
+
+#: includes/admin/stripe-p24-settings.php:35
+msgid "You will be redirected to P24."
+msgstr "P24 にリダイレクトされます。"
+
+#: includes/admin/stripe-p24-settings.php:28
+msgid "Przelewy24 (P24)"
+msgstr "Przelewy24 (P24)"
+
+#: includes/admin/stripe-p24-settings.php:19
+msgid "Enable Stripe P24"
+msgstr "Stripe P24 を有効化"
+
+#: includes/admin/stripe-p24-settings.php:10
+msgid "Relevant Payer Geography: Poland"
+msgstr "関連支払地域 : ポーランド"
+
+#: includes/admin/stripe-ideal-settings.php:39
+msgid "You will be redirected to iDeal."
+msgstr "iDeal にリダイレクトされます。"
+
+#: includes/admin/stripe-ideal-settings.php:32
+msgid "iDeal"
+msgstr "iDeal"
+
+#: includes/admin/stripe-ideal-settings.php:23
+msgid "Enable Stripe iDeal"
+msgstr "Stripe iDeal を有効化"
+
+#: includes/admin/stripe-ideal-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#ideal\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#ideal\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-ideal-settings.php:10
+msgid "Relevant Payer Geography: The Netherlands"
+msgstr "関連支払地域 : オランダ"
+
+#: includes/admin/stripe-giropay-settings.php:39
+msgid "You will be redirected to Giropay."
+msgstr "Giropay にリダイレクトされます。"
+
+#: includes/admin/stripe-giropay-settings.php:32
+msgid "Giropay"
+msgstr "Giropay"
+
+#: includes/admin/stripe-giropay-settings.php:23
+msgid "Enable Stripe Giropay"
+msgstr "Stripe Giropay を有効化"
+
+#: includes/admin/stripe-giropay-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#giropay\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#giropay\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-giropay-settings.php:10
+msgid "Relevant Payer Geography: Germany"
+msgstr "関連支払地域 : ドイツ"
+
+#: includes/admin/stripe-bancontact-settings.php:39
+msgid "You will be redirected to Bancontact."
+msgstr "Bancontact にリダイレクトされます。"
+
+#: includes/admin/stripe-bancontact-settings.php:32
+msgid "Bancontact"
+msgstr "Bancontact"
+
+#: includes/admin/stripe-bancontact-settings.php:23
+msgid "Enable Stripe Bancontact"
+msgstr "Stripe Bancontact を有効化"
+
+#: includes/admin/stripe-bancontact-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#bancontact\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#bancontact\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-bancontact-settings.php:10
+msgid "Relevant Payer Geography: Belgium"
+msgstr "関連支払地域 : ベルギー"
+
+#: includes/admin/stripe-sofort-settings.php:43
+#: includes/admin/stripe-multibanco-settings.php:39
+#: includes/admin/stripe-settings.php:31
+#: includes/admin/stripe-ideal-settings.php:43
+#: includes/admin/stripe-bancontact-settings.php:43
+#: includes/admin/stripe-giropay-settings.php:43
+#: includes/admin/stripe-p24-settings.php:39
+#: includes/admin/stripe-alipay-settings.php:43
+#: includes/admin/stripe-sepa-settings.php:43
+msgid "Webhook Endpoints"
+msgstr "Webhook エンドポイント"
+
+#: includes/admin/stripe-alipay-settings.php:39
+msgid "You will be redirected to Alipay."
+msgstr "Alipay にリダイレクトされます。"
+
+#: includes/admin/stripe-alipay-settings.php:32
+msgid "Alipay"
+msgstr "Alipay"
+
+#: includes/admin/stripe-alipay-settings.php:23
+msgid "Enable Stripe Alipay"
+msgstr "Stripe Alipay を有効化"
+
+#: includes/admin/stripe-sofort-settings.php:18
+#: includes/admin/stripe-multibanco-settings.php:14
+#: includes/admin/stripe-ideal-settings.php:18
+#: includes/admin/stripe-bancontact-settings.php:18
+#: includes/admin/stripe-giropay-settings.php:18
+#: includes/admin/stripe-p24-settings.php:14
+#: includes/admin/stripe-alipay-settings.php:18
+#: includes/admin/stripe-eps-settings.php:14
+#: includes/admin/stripe-sepa-settings.php:18
+msgid "Must be activated from your Stripe Dashboard Settings <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">here</a>"
+msgstr "<a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">Stripe ダッシュボードの設定</a>から有効にする必要があります。"
+
+#: includes/admin/stripe-alipay-settings.php:14
+msgid "<a href=\"https://stripe.com/payments/payment-methods-guide#alipay\" target=\"_blank\">Payment Method Guide</a>"
+msgstr "<a href=\"https://stripe.com/payments/payment-methods-guide#alipay\" target=\"_blank\">決済方法ガイド</a>"
+
+#: includes/admin/stripe-alipay-settings.php:10
+msgid "Relevant Payer Geography: China"
+msgstr "関連支払地域 : 中華人民共和国"
+
+#: includes/class-wc-gateway-stripe.php:706
+#: includes/compat/class-wc-stripe-subs-compat.php:145
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:182
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:469
+msgid "Payment processing failed. Please retry."
+msgstr "支払い処理に失敗しました。 再試行してください。"
+
+#. translators: transaction id
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:457
+msgid "Stripe charge awaiting payment: %s."
+msgstr "支払を待っている Stripe チャージ : %s."
+
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:382
+msgid "customer_name"
+msgstr "customer_name"
+
+#. translators: 1) link to Stripe register page 2) link to Stripe api keys page
+#: includes/class-wc-gateway-stripe.php:118
+msgid "Stripe works by adding payment fields on the checkout and then sending the details to Stripe for verification. <a href=\"%1$s\" target=\"_blank\">Sign up</a> for a Stripe account, and <a href=\"%2$s\" target=\"_blank\">get your Stripe account keys</a>."
+msgstr ""
+"Stripe は、決済時にクレジットカードのフィールドを追加してから、詳細を\n"
+" Stripe に送信して検証します。Stripe アカウントを<a href=\"%1$s\" target=\"_blank\">登録</a>して、 <a href=\"%2$s\" target=\"_blank\">Stripe account keys を取得</a> してください。"
+
+#. translators: 1) HTML anchor open tag 2) HTML anchor closing tag
+#: includes/class-wc-stripe-apple-pay-registration.php:246
+msgid "Apple Pay domain verification failed. Please check the %1$slog%2$s to see the issue. (Logging must be enabled to see recorded logs)"
+msgstr "Apple Pay ドメインの確認に失敗しました。 問題を確認するには、%1$sログ%2$sを確認してください。 （ログを記録するにはログを有効にする必要があります）"
+
+#: includes/admin/stripe-settings.php:150
+msgid "Select the button theme you would like to show."
+msgstr "表示したいボタンテーマを選択します。"
+
+#: includes/admin/stripe-settings.php:129
+msgid "If enabled, users will be able to pay using Apple Pay or Chrome Payment Request if supported by the browser."
+msgstr "有効にすると、ブラウザでサポートされている場合、Apple Pay や Payment Request API を使用して支払いを行うことができます。"
+
+#: includes/admin/stripe-settings.php:80
+msgid "Statement Descriptor"
+msgstr "明細書表記 (英文字)"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:989
+msgid "Empty cart"
+msgstr "空のカート"
+
+#. translators: Do not translate the [option] placeholder
+#: includes/payment-methods/class-wc-stripe-payment-request.php:506
+msgid "Unknown shipping option \"[option]\"."
+msgstr "不明な発送オプション \"[option]\"。"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:1164
+msgid "Discount"
+msgstr "割引"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:277
+#: includes/payment-methods/class-wc-stripe-payment-request.php:860
+#: includes/payment-methods/class-wc-stripe-payment-request.php:1157
+msgid "Shipping"
+msgstr "配送"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:269
+#: includes/payment-methods/class-wc-stripe-payment-request.php:852
+#: includes/payment-methods/class-wc-stripe-payment-request.php:1150
+msgid "Tax"
+msgstr "税"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:726
+#: includes/payment-methods/class-wc-stripe-payment-request.php:739
+msgid "Unable to find shipping method for address."
+msgstr "その住所への配送方法が見つかりません。"
+
+#: includes/admin/class-wc-stripe-admin-notices.php:230
+msgid "Cheatin&#8217; huh?"
+msgstr "間違いましたか ?"
+
+#. translators: 1) dollar amount 2) transaction id 3) refund message
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:963
+msgid "Refunded %1$s - Refund ID: %2$s - Reason: %3$s"
+msgstr "払い戻しされた %1$s  - Refund ID: %2$s - 理由: %3$s"
+
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:383
+msgid "customer_email"
+msgstr "customer_email"
+
+#. translators: 1) blog name 2) order number
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:355
+msgid "%1$s - Order %2$s"
+msgstr "%1$s - 注文 %2$s"
+
+#: includes/class-wc-stripe-apple-pay-registration.php:189
+msgid "Unable to copy domain association file to domain root."
+msgstr "ドメイン関連ファイルをドメインルートにコピーできません。"
+
+#: includes/class-wc-stripe-apple-pay-registration.php:183
+msgid "Unable to create domain association folder to domain root."
+msgstr "ドメインの関連付けフォルダをドメインルートに作成できません。"
+
+#. translators: error message
+#: includes/class-wc-stripe-apple-pay-registration.php:151
+#: includes/class-wc-stripe-apple-pay-registration.php:160
+msgid "Unable to verify domain - %s"
+msgstr "ドメインを確認できません - %s"
+
+#: includes/class-wc-stripe-apple-pay-registration.php:127
+msgid "Unable to verify domain - missing secret key."
+msgstr "ドメインを確認できません - 秘密鍵がありません。"
+
+#. Author of the plugin
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com/"
+msgstr "https://woocommerce.com/"
+
+#: includes/admin/class-wc-stripe-admin-notices.php:149
+msgid "WooCommerce Stripe - cURL is not installed."
+msgstr "WooCommerce Stripe - cURL がインストールされていません。"
+
+#. translators: 1) int version 2) int version
+#: includes/admin/class-wc-stripe-admin-notices.php:139
+msgid "WooCommerce Stripe - The minimum WooCommerce version required for this plugin is %1$s. You are running %2$s."
+msgstr "WooCommerce Stripe - このプラグインの最低必須 WooCommerce バージョンは %1$s です。現在バージョン %2$s をお使いです。"
+
+#. translators: 1) int version 2) int version
+#: includes/admin/class-wc-stripe-admin-notices.php:128
+msgid "WooCommerce Stripe - The minimum PHP version required for this plugin is %1$s. You are running %2$s."
+msgstr "WooCommerce Stripe - このプラグインの最低必須 PHP バージョンは %1$s です。現在バージョン %2$s をお使いです。"
+
+#: includes/class-wc-stripe-helper.php:223
+msgid "An error occurred while processing the card."
+msgstr "カードの処理中にエラーが発生しました。"
+
+#: includes/class-wc-stripe-helper.php:222
+msgid "There is no card on a customer that is being charged."
+msgstr "請求先顧客には登録カードがありません。"
+
+#: includes/class-wc-stripe-helper.php:221
+msgid "The card was declined."
+msgstr "カードが拒否されました。"
+
+#: includes/class-wc-stripe-helper.php:219
+msgid "The card's zip code failed validation."
+msgstr "カードの郵便番号の検証に失敗しました。"
+
+#: includes/class-wc-stripe-helper.php:218
+msgid "The card's security code is incorrect."
+msgstr "カードのセキュリティコードが正しくありません。"
+
+#: includes/class-wc-stripe-helper.php:217
+msgid "The card has expired."
+msgstr "カードの有効期限が切れています。"
+
+#: includes/class-wc-stripe-helper.php:213
+msgid "The card number is incorrect."
+msgstr "カード番号が正しくありません。"
+
+#: includes/class-wc-stripe-helper.php:212
+msgid "The card's security code is invalid."
+msgstr "カードのセキュリティコードは無効です。"
+
+#: includes/class-wc-stripe-helper.php:211
+msgid "The card's expiration year is invalid."
+msgstr "カードの有効期限の年が不正です。"
+
+#: includes/class-wc-stripe-helper.php:210
+msgid "The card's expiration month is invalid."
+msgstr "カードの有効期限の月が不正です。"
+
+#: includes/class-wc-stripe-helper.php:209
+msgid "The card number is not a valid credit card number."
+msgstr "カード番号が有効なクレジットカード番号ではありません。"
+
+#: includes/payment-methods/class-wc-stripe-payment-request.php:504
+msgid "Sorry, we're not accepting prepaid cards at this time."
+msgstr "現在プリペイドカードはご利用いただけません。"
+
+#. Description of the plugin
+msgid "Take credit card payments on your store using Stripe."
+msgstr "Stripe を使用して、ショップでのクレジットカード支払いに対応します。"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/woocommerce-gateway-stripe/"
+msgstr "https://ja.wordpress.org/plugins/woocommerce-gateway-stripe/"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Stripe Gateway"
+msgstr "WooCommerce Stripe ゲートウェイ"
+
+#. translators: transaction id
+#: includes/class-wc-stripe-webhook-handler.php:314
+#: includes/class-wc-stripe-webhook-handler.php:361
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:464
+#: includes/class-wc-stripe-order-handler.php:267
+msgid "Stripe charge complete (Charge ID: %s)"
+msgstr "Stripe 請求手続き完了 (請求ID: %s)"
+
+#. translators: error message
+#: includes/class-wc-stripe-order-handler.php:245
+#: includes/class-wc-stripe-order-handler.php:257
+msgid "Unable to capture charge! %s"
+msgstr "請求手続きを完了できませんでした! %s"
+
+#: woocommerce-gateway-stripe.php:195
+msgid "Support"
+msgstr "サポート"
+
+#: woocommerce-gateway-stripe.php:194
+msgid "Docs"
+msgstr "ドキュメント"
+
+#: woocommerce-gateway-stripe.php:193
+msgid "Settings"
+msgstr "設定"
+
+#. translators: 1) link
+#: includes/admin/class-wc-stripe-admin-notices.php:159
+msgid "Stripe is almost ready. To get started, <a href=\"%s\">set your Stripe account keys</a>."
+msgstr "Stripe は間もなく準備完了です。開始するには、<a href=\"%s\">お持ちの Stripe アカウントキーを設定してください</a>。"
+
+#: includes/admin/stripe-settings.php:179
+msgid "Save debug messages to the WooCommerce System Status log."
+msgstr "WooCommerce システムステータスログにデバッグメッセージを保存します。"
+
+#: includes/admin/stripe-settings.php:177
+msgid "Log debug messages"
+msgstr "デバッグメッセージのログを取得"
+
+#: includes/admin/stripe-settings.php:176
+msgid "Logging"
+msgstr "ログ取得中"
+
+#: includes/admin/stripe-settings.php:171
+msgid "If enabled, users will be able to pay with a saved card during checkout. Card details are saved on Stripe servers, not on your store."
+msgstr "有効にすると、ユーザーは購入手続きの際に登録済みのカードで支払うことができます。 カード情報はあなたのショップではなく Stripe サーバーに保存されます。"
+
+#: includes/admin/stripe-settings.php:169
+msgid "Enable Payment via Saved Cards"
+msgstr "登録済みカードでの支払いを有効化"
+
+#: includes/admin/stripe-settings.php:168
+msgid "Saved Cards"
+msgstr "登録済みカード"
+
+#: includes/admin/stripe-settings.php:112
+msgid "Optionally enter the URL to a 128x128px image of your brand or product. e.g. <code>https://yoursite.com/wp-content/uploads/2013/09/yourimage.jpg</code>"
+msgstr "オプションとして、ブランドまたは商品の画像 (128x128px) の URL を入力できます。例: <code>https://yoursite.com/wp-content/uploads/2013/09/yourimage.jpg</code>"
+
+#: includes/admin/stripe-settings.php:111
+msgid "Stripe Checkout Image"
+msgstr "Stripe チェックアウトの画像"
+
+#: includes/admin/stripe-settings.php:104
+msgid "Enable Stripe Checkout"
+msgstr "Stripe チェックアウトを有効化"
+
+#: includes/admin/stripe-settings.php:90
+msgid "Whether or not to immediately capture the charge. When unchecked, the charge issues an authorization and will need to be captured later. Uncaptured charges expire in 7 days."
+msgstr "すぐに料金を回収するかどうかを設定します。 無効化すると、まず請求への承認が発行され、後ほど回収する必要があります。 未回収の請求は7日間で有効期限切れとなります。"
+
+#: includes/admin/stripe-settings.php:88
+msgid "Capture charge immediately"
+msgstr "すぐに料金を回収"
+
+#: includes/admin/stripe-settings.php:87
+msgid "Capture"
+msgstr "即時売上"
+
+#: includes/admin/stripe-settings.php:45
+msgid "Test Publishable Key"
+msgstr "テスト用公開鍵"
+
+#: includes/admin/stripe-settings.php:52
+msgid "Test Secret Key"
+msgstr "テスト用秘密キー"
+
+#: includes/admin/stripe-settings.php:59
+msgid "Live Publishable Key"
+msgstr "ライブ公開可能な鍵"
+
+#: includes/admin/stripe-settings.php:47 includes/admin/stripe-settings.php:54
+#: includes/admin/stripe-settings.php:61 includes/admin/stripe-settings.php:68
+msgid "Get your API keys from your stripe account."
+msgstr "お持ちの Stripe アカウントから API キーを取得してください。"
+
+#: includes/admin/stripe-settings.php:66
+msgid "Live Secret Key"
+msgstr "ライブ秘密鍵"
+
+#: includes/admin/stripe-settings.php:40
+msgid "Place the payment gateway in test mode using test API keys."
+msgstr "テスト API キーを使用し、ペイメントゲートウェイをテストモードにします。"
+
+#: includes/admin/stripe-settings.php:38
+msgid "Enable Test Mode"
+msgstr "テストモードを有効化"
+
+#: includes/admin/stripe-settings.php:37
+msgid "Test mode"
+msgstr "テストモード"
+
+#: includes/admin/stripe-settings.php:27
+msgid "Pay with your credit card via Stripe."
+msgstr "Stripe 経由でクレジットカードで支払う。"
+
+#: includes/admin/stripe-sofort-settings.php:38
+#: includes/admin/stripe-multibanco-settings.php:34
+#: includes/admin/stripe-settings.php:26
+#: includes/admin/stripe-ideal-settings.php:38
+#: includes/admin/stripe-bancontact-settings.php:38
+#: includes/admin/stripe-giropay-settings.php:38
+#: includes/admin/stripe-p24-settings.php:34
+#: includes/admin/stripe-alipay-settings.php:38
+#: includes/admin/stripe-eps-settings.php:34
+#: includes/admin/stripe-sepa-settings.php:38
+msgid "This controls the description which the user sees during checkout."
+msgstr "ここで、ユーザーがチェックアウト時に見る説明を設定します。"
+
+#: includes/admin/stripe-sofort-settings.php:36
+#: includes/admin/stripe-multibanco-settings.php:32
+#: includes/admin/stripe-settings.php:24
+#: includes/admin/stripe-ideal-settings.php:36
+#: includes/admin/stripe-bancontact-settings.php:36
+#: includes/admin/stripe-giropay-settings.php:36
+#: includes/admin/stripe-p24-settings.php:32
+#: includes/admin/stripe-alipay-settings.php:36
+#: includes/admin/stripe-eps-settings.php:32
+#: includes/admin/stripe-sepa-settings.php:36
+msgid "Description"
+msgstr "説明"
+
+#: includes/admin/stripe-settings.php:20
+msgid "Credit Card (Stripe)"
+msgstr "クレジットカード (Stripe)"
+
+#: includes/admin/stripe-sofort-settings.php:31
+#: includes/admin/stripe-multibanco-settings.php:27
+#: includes/admin/stripe-settings.php:19
+#: includes/admin/stripe-ideal-settings.php:31
+#: includes/admin/stripe-bancontact-settings.php:31
+#: includes/admin/stripe-giropay-settings.php:31
+#: includes/admin/stripe-p24-settings.php:27
+#: includes/admin/stripe-alipay-settings.php:31
+#: includes/admin/stripe-eps-settings.php:27
+#: includes/admin/stripe-sepa-settings.php:31
+msgid "This controls the title which the user sees during checkout."
+msgstr "ここで、ユーザーがチェックアウト時に見るタイトルを設定します。"
+
+#: includes/admin/stripe-sofort-settings.php:29
+#: includes/admin/stripe-multibanco-settings.php:25
+#: includes/admin/stripe-settings.php:17
+#: includes/admin/stripe-ideal-settings.php:29
+#: includes/admin/stripe-bancontact-settings.php:29
+#: includes/admin/stripe-giropay-settings.php:29
+#: includes/admin/stripe-p24-settings.php:25
+#: includes/admin/stripe-alipay-settings.php:29
+#: includes/admin/stripe-eps-settings.php:25
+#: includes/admin/stripe-sepa-settings.php:29
+msgid "Title"
+msgstr "タイトル"
+
+#: includes/admin/stripe-settings.php:11
+msgid "Enable Stripe"
+msgstr "Stripe を有効化"
+
+#: includes/admin/stripe-sofort-settings.php:22
+#: includes/admin/stripe-multibanco-settings.php:18
+#: includes/admin/stripe-settings.php:10
+#: includes/admin/stripe-ideal-settings.php:22
+#: includes/admin/stripe-bancontact-settings.php:22
+#: includes/admin/stripe-giropay-settings.php:22
+#: includes/admin/stripe-p24-settings.php:18
+#: includes/admin/stripe-alipay-settings.php:22
+#: includes/admin/stripe-eps-settings.php:18
+#: includes/admin/stripe-sepa-settings.php:22
+msgid "Enable/Disable"
+msgstr "有効化 / 無効化"
+
+#. translators: transaction id
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:481
+msgid "Stripe charge authorized (Charge ID: %s). Process order to take payment, or cancel to remove the pre-authorization."
+msgstr "Stripe の請求が承認されました (請求ID: %s)。 注文を処理して支払いを受けるか、キャンセルして事前承認を削除してください。"
+
+#: includes/class-wc-stripe-webhook-handler.php:187
+#: includes/class-wc-gateway-stripe.php:792
+#: includes/class-wc-stripe-order-handler.php:144
+#: includes/payment-methods/class-wc-gateway-stripe-sepa.php:353
+msgid "This card is no longer available and has been removed."
+msgstr "このカードは利用できなくなったため削除しました。"
+
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:712
+msgid "Invalid payment method. Please input a new card number."
+msgstr "無効な支払方法です。新しいカード番号を入力してください。"
+
+#: includes/class-wc-gateway-stripe.php:466
+msgid "Please fill in required checkout fields first"
+msgstr "初めに購入手続きの必須フィールドに入力してください"
+
+#: includes/class-wc-gateway-stripe.php:465
+msgid "Please accept the terms and conditions first"
+msgstr "初めに利用規約に同意してください"
+
+#: includes/class-wc-gateway-stripe.php:285
+msgid "Add Card"
+msgstr "カードを追加"
+
+#. translators: link to Stripe testing page
+#: includes/class-wc-gateway-stripe.php:318
+msgid "TEST MODE ENABLED. In test mode, you can use the card number 4242424242424242 with any CVC and a valid expiration date or check the <a href=\"%s\" target=\"_blank\">Testing Stripe documentation</a> for more card numbers."
+msgstr "テストモードが有効になっています。 テストモードでは、カード番号「4242424242424242」と、任意のセキュリティーコードおよび有効な有効期限を使用できます。または「<a href=\"%s\" target=\"_blank\">Stripe のテスト方法</a>」ドキュメンテーションに記載されている他のカード番号もご覧ください。"
+
+#: includes/class-wc-gateway-stripe.php:162
+msgid "Continue to payment"
+msgstr "支払いに進む"
+
+#: includes/admin/class-wc-stripe-privacy.php:12
+#: includes/class-wc-gateway-stripe.php:116
+msgid "Stripe"
+msgstr "Stripe"
+
+#. translators: 1) card brand 2) last 4 digits
+#: includes/compat/class-wc-stripe-subs-compat.php:499
+msgid "Via %1$s card ending in %2$s"
+msgstr "%1$s カード (末尾 %2$s) を使用"
+
+#. translators: error message
+#: includes/compat/class-wc-stripe-pre-orders-compat.php:120
+msgid "Stripe Transaction Failed (%s)"
+msgstr "Stripe のトランザクションに失敗しました (%s)"
+
+#: includes/compat/class-wc-stripe-pre-orders-compat.php:61
+msgid "Unable to store payment details. Please try again."
+msgstr "支払い情報を保存できません。 もう一度お試しください。"
+
+#: includes/compat/class-wc-stripe-subs-compat.php:216
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:235
+msgid "Customer not found"
+msgstr "顧客が見つかりません"
+
+#. translators: minimum amount
+#. translators: 1) dollar amount
+#: includes/compat/class-wc-stripe-subs-compat.php:206
+#: includes/compat/class-wc-stripe-sepa-subs-compat.php:225
+#: includes/abstracts/abstract-wc-stripe-payment-gateway.php:259
+msgid "Sorry, the minimum allowed order total is %1$s to use this payment method."
+msgstr "この支払い方法を使用するには、最低注文合計が%1$sです。"
