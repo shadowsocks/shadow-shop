@@ -32,7 +32,7 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
      */
     public function no_items()
     {
-        _e('No server found.');
+        _e( 'No server found.' );
     }
 
 
@@ -81,8 +81,8 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $columns = array(
             'cb'       => '<input type="checkbox" />',
-            'ip_address_or_domain_name' => 'Host',
-            'created_date' => 'Created On'
+            'ip_address_or_domain_name' => __( 'Host' ),
+            'created_date' => __( 'Created On' ),
         );
         return $columns;
     }
