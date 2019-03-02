@@ -82,7 +82,7 @@ default:
 
 <?php if ( isset($_GET['updated']) ) : ?>
 <div id="message" class="updated notice is-dismissible">
-	<p><strong><?php _e('Node updated.') ?></strong></p>
+	<p><strong><?php _e('Node updated.', 'shadowsocks-hub') ?></strong></p>
 </div>
 <?php endif; ?>
 <?php if ( isset($_REQUEST['error']) ) : ?>
@@ -153,36 +153,36 @@ if ($http_code !== 200) { ?>
 
 <table class="form-table">
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Name'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Name', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="name" type="text" id="name" value="<?php echo $name; ?>" class="regular-text"/></td>
 	</tr>
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="role"><?php _e('Server'); ?></label></th>
+		<th scope="row"><label for="role"><?php _e('Server', 'shadowsocks-hub'); ?></label></th>
 		<td>
-			<input type="text" name="serverId" id="serverId" value="<?php echo $serverName; ?>" disabled="disabled" class="regular-text"/> <span class="description"><?php _e('Server cannot be changed.'); ?></span>
+			<input type="text" name="serverId" id="serverId" value="<?php echo $serverName; ?>" disabled="disabled" class="regular-text"/> <span class="description"><?php _e('Server cannot be changed.', 'shadowsocks-hub'); ?></span>
 		</td>
 	</tr>
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Password'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Password', 'shadowsocks-hub'); ?></label></th>
 		<td><input type="text" name="password" id="password" value="<?php echo $password; ?>" class="regular-text"/></td>
 	</tr>
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Port'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Port', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="port" type="number" id="port" value="<?php echo $port; ?>" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Lower Bound'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Lower Bound', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="lowerBound" type="number" id="lowerBound" value="<?php echo $lowerBound; ?>" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Upper Bound'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Upper Bound', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="upperBound" type="number" id="upperBound" value="<?php echo $upperBound; ?>" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-name-wrap">
 		<th scope="row">
 			<label for="addnode-host">
-				<?php echo __('Comment'); ?>
-				<span class="description"><?php _e( '(optional)' ); ?></span>
+				<?php echo __('Comment', 'shadowsocks-hub'); ?>
+				<span class="description"><?php _e( '(optional)', 'shadowsocks-hub' ); ?></span>
 			</label></th>
 		<td><input name="comment" type="text" id="comment" value="<?php echo $comment; ?>" class="regular-text"/></td>
 	</tr>
@@ -192,7 +192,7 @@ if ($http_code !== 200) { ?>
 <input type="hidden" name="serverId" id="serverId" value="<?php echo esc_attr($serverId); ?>" />
 <input type="hidden" name="node_id" id="node_id" value="<?php echo esc_attr($node_id); ?>" />
 
-<?php submit_button( 'Update Node' ); ?>
+<?php submit_button( 'Update Node', 'shadowsocks-hub' ); ?>
 
 </form>
 </div>

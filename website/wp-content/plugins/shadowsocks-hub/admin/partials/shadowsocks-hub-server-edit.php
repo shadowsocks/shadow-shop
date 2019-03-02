@@ -139,7 +139,7 @@ if ($http_code !== 200) { ?>
 
 <table class="form-table">
 	<tr class="server-host-wrap">
-		<th><label for="ip_address_or_domain_name"><?php _e('Host') ?></label></th>
+		<th><label for="ip_address_or_domain_name"><?php _e('Host', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="ip_address_or_domain_name" id="ip_address_or_domain_name" value="<?php echo esc_attr($ip_address_or_domain_name); ?>" class="regular-text" /></td>
 	</tr>
 </table>
@@ -147,7 +147,7 @@ if ($http_code !== 200) { ?>
 <input type="hidden" name="action" value="update" />
 <input type="hidden" name="server_id" id="server_id" value="<?php echo esc_attr($server_id); ?>" />
 
-<?php submit_button( 'Update Server' ); ?>
+<?php submit_button( __('Update Server', 'shadowsocks-hub') ); ?>
 
 </form>
 </div>

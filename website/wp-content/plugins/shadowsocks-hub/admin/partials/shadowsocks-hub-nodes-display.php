@@ -107,14 +107,14 @@ switch ($current_action) {
 <h1><?php _e('Delete Nodes'); ?></h1>
 <?php if (isset($_REQUEST['error'])) : ?>
 	<div class="error">
-		<p><strong><?php _e('ERROR:'); ?></strong> <?php _e('Please select an option.'); ?></p>
+		<p><strong><?php _e('ERROR:', 'shadowsocks-hub'); ?></strong> <?php _e('Please select an option.', 'shadowsocks-hub'); ?></p>
 	</div>
 <?php endif; ?>
 
 <?php if (1 == count($nodeids)) : ?>
-	<p><?php _e('You have specified this node for deletion:'); ?></p>
+	<p><?php _e('You have specified this node for deletion:', 'shadowsocks-hub'); ?></p>
 <?php else : ?>
-	<p><?php _e('You have specified these nodes for deletion:'); ?></p>
+	<p><?php _e('You have specified these nodes for deletion:', 'shadowsocks-hub'); ?></p>
 <?php endif; ?>
 
 <ul>
@@ -158,9 +158,9 @@ foreach ($nodeids as $id) {
 <?php if ($go_delete) :
 ?>
 	<input type="hidden" name="action" value="dodelete" />
-	<?php submit_button(__('Confirm Deletion'), 'primary'); ?>
+	<?php submit_button(__('Confirm Deletion', 'shadowsocks-hub'), 'primary'); ?>
 <?php else : ?>
-	<p><?php _e('There are no valid nodes selected for deletion.'); ?></p>
+	<p><?php _e('There are no valid nodes selected for deletion.', 'shadowsocks-hub'); ?></p>
 <?php endif; ?>
 </div>
 </form>
@@ -184,11 +184,11 @@ $messages = array();
 		case 'add':
 			if ( isset( $_GET['id'] ) && ( $user_id = $_GET['id'] ) && current_user_can( 'edit_user', $user_id ) ) {
 				/* translators: %s: edit page url */
-				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . sprintf( __( 'New node added.' ),
+				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . sprintf( __( 'New node added.', 'shadowsocks-hub' ),
 					esc_url( add_query_arg( 'wp_http_referer', urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ),
 						self_admin_url( 'user-edit.php?user_id=' . $user_id ) ) ) ) . '</p></div>';
 			} else {
-				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'New node added.' ) . '</p></div>';
+				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'New node added.', 'shadowsocks-hub' ) . '</p></div>';
 			}
 			break;
 		}

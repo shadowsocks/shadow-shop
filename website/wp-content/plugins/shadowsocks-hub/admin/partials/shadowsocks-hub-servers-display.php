@@ -104,17 +104,17 @@ switch ($current_action) {
 <?php wp_nonce_field('delete-servers') ?>
 
 <div class="wrap">
-<h1><?php _e('Delete Servers'); ?></h1>
+<h1><?php _e('Delete Servers', 'shadowsocks-hub'); ?></h1>
 <?php if (isset($_REQUEST['error'])) : ?>
 	<div class="error">
-		<p><strong><?php _e('ERROR:'); ?></strong> <?php _e('Please select an option.'); ?></p>
+		<p><strong><?php _e('ERROR:', 'shadowsocks-hub'); ?></strong> <?php _e('Please select an option.', 'shadowsocks-hub'); ?></p>
 	</div>
 <?php endif; ?>
 
 <?php if (1 == count($serverids)) : ?>
-	<p><?php _e('You have specified this server for deletion:'); ?></p>
+	<p><?php _e('You have specified this server for deletion:', 'shadowsocks-hub'); ?></p>
 <?php else : ?>
-	<p><?php _e('You have specified these servers for deletion:'); ?></p>
+	<p><?php _e('You have specified these servers for deletion:', 'shadowsocks-hub'); ?></p>
 <?php endif; ?>
 
 <ul>
@@ -158,9 +158,9 @@ foreach ($serverids as $id) {
 <?php if ($go_delete) :
 ?>
 	<input type="hidden" name="action" value="dodelete" />
-	<?php submit_button(__('Confirm Deletion'), 'primary'); ?>
+	<?php submit_button(__('Confirm Deletion', 'shadowsocks-hub'), 'primary'); ?>
 <?php else : ?>
-	<p><?php _e('There are no valid servers selected for deletion.'); ?></p>
+	<p><?php _e('There are no valid servers selected for deletion.', 'shadowsocks-hub'); ?></p>
 <?php endif; ?>
 </div>
 </form>
@@ -175,20 +175,20 @@ $messages = array();
 		case 'del_many':
 			$delete_count = isset($_GET['delete_count']) ? (int) $_GET['delete_count'] : 0;
 			if ( 1 == $delete_count ) {
-				$message = __( 'Server deleted.' );
+				$message = __( 'Server deleted.', 'shadowsocks-hub' );
 			} else {
-				$message = _n( '%s servers deleted.', '%s servers deleted.', $delete_count );
+				$message = _n( '%s servers deleted.', '%s servers deleted.', $delete_count, 'shadowsocks-hub' );
 			}
 			$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . sprintf( $message, number_format_i18n( $delete_count ) ) . '</p></div>';
 			break;
 		case 'add':
 			if ( isset( $_GET['id'] ) && ( $user_id = $_GET['id'] ) && current_user_can( 'edit_user', $user_id ) ) {
 				/* translators: %s: edit page url */
-				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . sprintf( __( 'New server added.' ),
+				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . sprintf( __( 'New server added.', 'shadowsocks-hub' ),
 					esc_url( add_query_arg( 'wp_http_referer', urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ),
 						self_admin_url( 'user-edit.php?user_id=' . $user_id ) ) ) ) . '</p></div>';
 			} else {
-				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'New server added.' ) . '</p></div>';
+				$messages[] = '<div id="message" class="updated notice is-dismissible"><p>' . __( 'New server added.', 'shadowsocks-hub' ) . '</p></div>';
 			}
 			break;
 		}
@@ -260,7 +260,7 @@ if ( ! empty($messages) ) {
 		<input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>" />
 		<?php
 			$this->servers_obj->prepare_items();
-			$this->servers_obj->search_box(__('Search Servers'), 'shadowsocks-hub-server-find');
+			$this->servers_obj->search_box(__('Search Servers', 'shadowsocks-hub'), 'shadowsocks-hub-server-find');
 			$this->servers_obj->display();
 	?>					
 	</form>

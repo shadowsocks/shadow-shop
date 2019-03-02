@@ -49,7 +49,7 @@ if ( isset($_REQUEST['action']) && 'addaccount' == $_REQUEST['action'] ) {
 }
 ?>
 <div class="wrap">
-<h1 id="add-new-account"><?php _e( 'Add New Account' ); ?>
+<h1 id="add-new-account"><?php _e( 'Add New Account', 'shadowsocks-hub' ); ?>
 </h1>
 
 <?php if ( isset($_REQUEST['error']) ) : ?>
@@ -109,7 +109,7 @@ if ( ! empty( $messages ) ) {
 
 <table class="form-table">
 	<tr class="account-userId-wrap">
-		<th scope="row"><label for="addaccount-userId"><?php _e('User'); ?></label></th>
+		<th scope="row"><label for="addaccount-userId"><?php _e('User', 'shadowsocks-hub'); ?></label></th>
 		<td><select name="userId" id="user">
 			<?php
 			foreach($allUsers as $user) {
@@ -120,7 +120,7 @@ if ( ! empty( $messages ) ) {
 		</td>
 	</tr>
 	<tr class="account-nodeId-wrap">
-		<th scope="row"><label for="addaccount-nodeId"><?php _e('Node'); ?></label></th>
+		<th scope="row"><label for="addaccount-nodeId"><?php _e('Node', 'shadowsocks-hub'); ?></label></th>
 		<td><select name="nodeId" id="node">
 			<?php
 			foreach($allNodes as $node) {
@@ -131,7 +131,7 @@ if ( ! empty( $messages ) ) {
 		</td>
 	</tr>
 	<tr class="account-lifeSpan-wrap">
-		<th scope="row"><label for="addaccount-lifeSpan"><?php _e('Life Span'); ?></label></th>
+		<th scope="row"><label for="addaccount-lifeSpan"><?php _e('Life Span', 'shadowsocks-hub'); ?></label></th>
 		<td>
 			<select name="lifeSpan" id="lifeSpan">
 				<option value ="month" selected="selected">one month</option>
@@ -143,7 +143,7 @@ if ( ! empty( $messages ) ) {
 		</td>
 	</tr>
 	<tr class="account-method-wrap">
-		<th scope="row"><label for="addaccount-method"><?php _e('Encryption'); ?></label></th>
+		<th scope="row"><label for="addaccount-method"><?php _e('Encryption', 'shadowsocks-hub'); ?></label></th>
 		<td>
 			<select name="method" id="method">
 				<option value ="aes-128-gcm">aes-128-gcm</option>
@@ -168,10 +168,10 @@ if ( ! empty( $messages ) ) {
 		</td>
 	</tr>
 	<tr class="account-traffic-wrap">
-		<th scope="row"><label for="addaccount-traffic"><?php echo __('Traffic'); ?></label></th>
+		<th scope="row"><label for="addaccount-traffic"><?php echo __('Traffic', 'shadowsocks-hub'); ?></label></th>
 		<td><input type="number" name="traffic" id="traffic" value="" class="regular-text"/></td>
 	</tr>
 </table>
 
-<?php submit_button( __( 'Add Account' )); ?>
+<?php submit_button( __( 'Add Account', 'shadowsocks-hub' )); ?>
 </form>

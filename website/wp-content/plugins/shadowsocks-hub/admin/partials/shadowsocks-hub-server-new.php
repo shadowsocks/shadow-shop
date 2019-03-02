@@ -42,7 +42,7 @@ if ( isset($_REQUEST['action']) && 'addserver' == $_REQUEST['action'] ) {
 }
 ?>
 <div class="wrap">
-<h1 id="add-new-server"><?php _e( 'Add New Server' ); ?>
+<h1 id="add-new-server"><?php _e( 'Add New Server', 'shadowsocks-hub' ); ?>
 </h1>
 
 <?php if ( isset($_REQUEST['error']) ) : ?>
@@ -67,10 +67,10 @@ if ( ! empty( $messages ) ) {
 
 <table class="form-table">
 	<tr class="server-host-wrap">
-		<th scope="row"><label for="addserver-host"><?php echo __('Host'); ?></label></th>
+		<th scope="row"><label for="addserver-host"><?php _e('Host', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="ip_address_or_domain_name" type="text" id="ip_address_or_domain_name" value="" class="regular-text"/></td>
 	</tr>
 </table>
 
-<?php submit_button( __( 'Add Server' )); ?>
+<?php submit_button( __( 'Add Server', 'shadowsocks-hub' )); ?>
 </form>

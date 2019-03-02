@@ -32,7 +32,7 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
      */
     public function no_items()
     {
-        _e( 'No server found.' );
+        _e( 'No server found.', 'shadowsocks-hub' );
     }
 
 
@@ -81,8 +81,8 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $columns = array(
             'cb'       => '<input type="checkbox" />',
-            'ip_address_or_domain_name' => __( 'Host' ),
-            'created_date' => __( 'Created On' ),
+            'ip_address_or_domain_name' => __( 'Host', 'shadowsocks-hub' ),
+            'created_date' => __( 'Created On', 'shadowsocks-hub' ),
         );
         return $columns;
     }
@@ -153,7 +153,7 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
 	 */
 	protected function get_bulk_actions() {
         $actions = array();
-        $actions['delete'] = __( 'Delete' );
+        $actions['delete'] = __( 'Delete', 'shadowsocks-hub' );
         return $actions;
     }
     
@@ -179,7 +179,7 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
 
 		// Set up the hover actions for this server
 		$actions = array();
-        $checkbox = '<label class="screen-reader-text" for="server_' . $server_id . '">' . sprintf( __( 'Select %s' ), $server_object['ip_address_or_domain_name'] ) . '</label>'
+        $checkbox = '<label class="screen-reader-text" for="server_' . $server_id . '">' . sprintf( __( 'Select %s', 'shadowsocks-hub' ), $server_object['ip_address_or_domain_name'] ) . '</label>'
 						. "<input type='checkbox' name='servers[]' id='server_{$server_id}' value='{$server_id}' />";
 
         
@@ -188,8 +188,8 @@ class Shadowsocks_Hub_Servers_List_Table extends Shadowsocks_Hub_WP_List_Table
             'server_id' => $server_id,
         ), admin_url('admin.php') );
 
-		$actions['edit'] = '<a href="' . $edit_link . '">' . __( 'Edit' ) . '</a>';
-        $actions['delete'] = "<a class='submitdelete' href='" . wp_nonce_url( "admin.php?page=shadowsocks_hub_servers&amp;action=delete&amp;server=$server_id", 'delete-servers' ) . "'>" . __( 'Delete' ) . "</a>";
+		$actions['edit'] = '<a href="' . $edit_link . '">' . __( 'Edit', 'shadowsocks-hub' ) . '</a>';
+        $actions['delete'] = "<a class='submitdelete' href='" . wp_nonce_url( "admin.php?page=shadowsocks_hub_servers&amp;action=delete&amp;server=$server_id", 'delete-servers' ) . "'>" . __( 'Delete', 'shadowsocks-hub' ) . "</a>";
 
 		$r = "<tr id='server-$server_id'>";
 

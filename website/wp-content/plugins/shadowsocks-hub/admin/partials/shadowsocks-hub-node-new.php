@@ -51,7 +51,7 @@ if ( isset($_REQUEST['action']) && 'addnode' == $_REQUEST['action'] ) {
 }
 ?>
 <div class="wrap">
-<h1 id="add-new-node"><?php _e( 'Add New Node' ); ?>
+<h1 id="add-new-node"><?php _e( 'Add New Node', 'shadowsocks-hub' ); ?>
 </h1>
 
 <?php if ( isset($_REQUEST['error']) ) : ?>
@@ -106,11 +106,11 @@ if ( ! empty( $messages ) ) {
 
 <table class="form-table">
 	<tr class="node-name-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Name'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Name', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="name" type="text" id="name" value="" class="regular-text"/></td>
 	</tr>
 	<tr class="node-serverId-wrap">
-		<th scope="row"><label for="role"><?php _e('Server'); ?></label></th>
+		<th scope="row"><label for="role"><?php _e('Server', 'shadowsocks-hub'); ?></label></th>
 		<td><select name="serverId" id="server">
 			<?php
 			foreach($allServers as $server) {
@@ -121,31 +121,31 @@ if ( ! empty( $messages ) ) {
 		</td>
 	</tr>
 	<tr class="node-password-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Password'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Password', 'shadowsocks-hub'); ?></label></th>
 		<?php $initial_password = wp_generate_password( 15 ); ?>
 		<td><input type="text" name="password" id="password" value="<?php echo esc_attr( $initial_password ); ?>" class="regular-text"/></td>
 	</tr>
 	<tr class="node-port-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Port'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Port', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="port" type="number" id="port" value="" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-lowerBound-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Lower Bound'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Lower Bound', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="lowerBound" type="number" id="lowerBound" value="" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-upperBound-wrap">
-		<th scope="row"><label for="addnode-host"><?php echo __('Upper Bound'); ?></label></th>
+		<th scope="row"><label for="addnode-host"><?php echo __('Upper Bound', 'shadowsocks-hub'); ?></label></th>
 		<td><input name="upperBound" type="number" id="upperBound" value="" min="1" max="65535" class="regular-text"/></td>
 	</tr>
 	<tr class="node-comment-wrap">
 		<th scope="row">
 			<label for="addnode-host">
-				<?php echo __('Comment'); ?>
-				<span class="description"><?php _e( '(optional)' ); ?></span>
+				<?php echo __('Comment', 'shadowsocks-hub'); ?>
+				<span class="description"><?php _e( '(optional)', 'shadowsocks-hub' ); ?></span>
 			</label></th>
 		<td><input name="comment" type="text" id="comment" value="" class="regular-text"/></td>
 	</tr>
 </table>
 
-<?php submit_button( __( 'Add Node' )); ?>
+<?php submit_button( __( 'Add Node', 'shadowsocks-hub' )); ?>
 </form>

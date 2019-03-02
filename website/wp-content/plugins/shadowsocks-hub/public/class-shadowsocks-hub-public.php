@@ -75,7 +75,7 @@ class Shadowsocks_Hub_Public {
 
 	function add_shadowsocks_account_link_my_account($items)
 	{
- 		$items['shadowsocks-account'] = 'Shadowsocks';
+ 		$items['shadowsocks-account'] = __( 'Shadowsocks', 'shadowsocks-hub' );
 	    return $items;
 	}
 
@@ -86,7 +86,7 @@ class Shadowsocks_Hub_Public {
 	
 		if ( $is_endpoint && ! is_admin() && is_main_query() && in_the_loop() && is_account_page() ) {
 			// New page title.
-			$title = __( 'My shadowsocks accounts', 'woocommerce' );
+			$title = __( 'My shadowsocks accounts', 'shadowsocks-hub' );
 	
 			remove_filter( 'the_title', 'shadowsocks_account_title' );
 		}
@@ -106,7 +106,7 @@ class Shadowsocks_Hub_Public {
 	
 		if ( $is_endpoint && ! is_admin() && is_main_query() && in_the_loop() && is_account_page() ) {
 			// New page title.
-			$title = __( 'My usage', 'woocommerce' );
+			$title = __( 'My usage', 'shadowsocks-hub' );
 	
 			remove_filter( 'the_title', 'dashboard_title' );
 		}
@@ -116,11 +116,11 @@ class Shadowsocks_Hub_Public {
 
 	function my_account_menu_order() {
 		$menuOrder = array(
-			'dashboard'			=> __( 'Usage', 'woocommerce' ),
-			'shadowsocks-account' => __('Shadowsocks', 'woocommerce'),
-			'orders'             => __( 'Orders', 'woocommerce' ),
-			'edit-account'    	=> __( 'Account Details', 'woocommerce' ),
-			'customer-logout'    => __( 'Logout', 'woocommerce' ),
+			'dashboard'			=> __( 'Usage', 'shadowsocks-hub' ),
+			'shadowsocks-account' => __('Shadowsocks', 'shadowsocks-hub' ),
+			'orders'             => __( 'Orders', 'shadowsocks-hub' ),
+			'edit-account'    	=> __( 'Account Details', 'shadowsocks-hub' ),
+			'customer-logout'    => __( 'Logout', 'shadowsocks-hub' ),
 		);
 		return $menuOrder;
 	}

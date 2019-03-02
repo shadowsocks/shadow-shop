@@ -32,7 +32,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
      */
     public function no_items()
     {
-        _e( 'No node found.' );
+        _e( 'No node found.', 'shadowsocks-hub' );
     }
 
 
@@ -81,15 +81,15 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $columns = array(
             'cb'       => '<input type="checkbox" />',
-            'name' => __( 'Name' ),
-            'node_state' => __( 'State' ),
-            'host' => __( 'Host' ),
-            'protocol' => __( 'Protocol' ),
-            'password' => __( 'Password' ),
-            'port' => __( 'Post' ),
-            'lower_bound' => __( 'Lower Bound' ),
-            'upper_bound' => __( 'Upper Bound' ),
-            'created_date' => __( 'Created On' )
+            'name' => __( 'Name', 'shadowsocks-hub' ),
+            'node_state' => __( 'State', 'shadowsocks-hub' ),
+            'host' => __( 'Host', 'shadowsocks-hub' ),
+            'protocol' => __( 'Protocol', 'shadowsocks-hub' ),
+            'password' => __( 'Password', 'shadowsocks-hub' ),
+            'port' => __( 'Port', 'shadowsocks-hub' ),
+            'lower_bound' => __( 'Lower Bound', 'shadowsocks-hub' ),
+            'upper_bound' => __( 'Upper Bound', 'shadowsocks-hub' ),
+            'created_date' => __( 'Created On', 'shadowsocks-hub' )
         );
         return $columns;
     }
@@ -163,7 +163,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
 	 */
 	protected function get_bulk_actions() {
         $actions = array();
-        $actions['delete'] = __( 'Delete' );
+        $actions['delete'] = __( 'Delete', 'shadowsocks-hub' );
         return $actions;
     }
     
@@ -189,7 +189,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
 
 		// Set up the hover actions for this node
 		$actions = array();
-        $checkbox = '<label class="screen-reader-text" for="node_' . $node_id . '">' . sprintf( __( 'Select %s' ), $node_object['name'] ) . '</label>'
+        $checkbox = '<label class="screen-reader-text" for="node_' . $node_id . '">' . sprintf( __( 'Select %s', 'shadowsocks-hub' ), $node_object['name'] ) . '</label>'
 						. "<input type='checkbox' name='nodes[]' id='node_{$node_id}' value='{$node_id}' />";
 
         
@@ -198,8 +198,8 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
             'node_id' => $node_id,
         ), admin_url('admin.php') );
 
-		$actions['edit'] = '<a href="' . $edit_link . '">' . __( 'Edit' ) . '</a>';
-        $actions['delete'] = "<a class='submitdelete' href='" . wp_nonce_url( "admin.php?page=shadowsocks_hub_nodes&amp;action=delete&amp;node=$node_id", 'delete-nodes' ) . "'>" . __( 'Delete' ) . "</a>";
+		$actions['edit'] = '<a href="' . $edit_link . '">' . __( 'Edit', 'shadowsocks-hub' ) . '</a>';
+        $actions['delete'] = "<a class='submitdelete' href='" . wp_nonce_url( "admin.php?page=shadowsocks_hub_nodes&amp;action=delete&amp;node=$node_id", 'delete-nodes' ) . "'>" . __( 'Delete', 'shadowsocks-hub' ) . "</a>";
 
 		$r = "<tr id='node-$node_id'>";
 
