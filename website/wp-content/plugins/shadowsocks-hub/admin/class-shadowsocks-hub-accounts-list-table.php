@@ -32,7 +32,7 @@ class Shadowsocks_Hub_Accounts_List_Table extends Shadowsocks_Hub_WP_List_Table
      */
     public function no_items()
     {
-        _e('No account found.');
+        _e( 'No account found.' );
     }
 
 
@@ -81,15 +81,15 @@ class Shadowsocks_Hub_Accounts_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $columns = array(
             'cb'       => '<input type="checkbox" />',
-            'host' => 'Host',
-            'port' => 'Port',
-            'protocol' => 'Protocol',
-            'encryption' => 'Encryption',
-            'password' => 'Password',
-            'user' => 'User',
-            'orderId' => 'Order ID',
-            'lifeSpan' => 'Life Span',
-            'created_date' => 'Created On'
+            'host' => __( 'Host' ),
+            'port' => __( 'Port' ),
+            'protocol' => __( 'Protocol' ),
+            'encryption' => __( 'Encryption' ),
+            'password' => __( 'Password' ),
+            'user' => __( 'User' ),
+            'orderId' => __( 'Order ID' ),
+            'lifeSpan' => __( 'Life Span' ),
+            'created_date' => __( 'Created On' )
         );
         return $columns;
     }
