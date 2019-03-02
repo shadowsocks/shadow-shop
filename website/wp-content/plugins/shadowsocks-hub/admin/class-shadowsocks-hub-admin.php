@@ -87,8 +87,8 @@ class Shadowsocks_Hub_Admin
 	{
 		add_submenu_page(
 			'shadowsocks_hub_plugin',
-			'Dashboard',
-			'Dashboard',
+			__('Dashboard', 'shadowsocks-hub'),
+			__('Dashboard', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_plugin'
 		);
