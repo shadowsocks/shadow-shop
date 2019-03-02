@@ -98,8 +98,8 @@ class Shadowsocks_Hub_Admin
 	{
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			'Servers',
-			'Servers',
+			__('Servers', 'shadowsocks-hub'),
+			__('Servers', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_servers',
 			array($this, 'server_sub_menu_init')
@@ -112,7 +112,7 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __('Servers Per Page'),
+			'label' => __('Servers Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'servers_per_page'
 		);
@@ -138,8 +138,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Add Server',
-			'Add Server',
+			__('Add Server', 'shadowsocks-hub'),
+			__('Add Server', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_server',
 			array($this, 'add_server_page')
@@ -157,8 +157,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Edit Server',
-			'Edit Server',
+			__('Edit Server', 'shadowsocks-hub'),
+			__('Edit Server', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_server',
 			array($this, 'edit_server_page')
@@ -176,8 +176,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			'Nodes',
-			'Nodes',
+			__('Nodes', 'shadowsocks-hub'),
+			__('Nodes', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_nodes',
 			array($this, 'node_sub_menu_init')
@@ -190,7 +190,7 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __('Nodes Per Page'),
+			'label' => __('Nodes Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'nodes_per_page'
 		);
@@ -216,8 +216,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Add Node',
-			'Add Node',
+			__('Add Node',  'shadowsocks-hub'),
+			__('Add Node',  'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_node',
 			array($this, 'add_node_page')
@@ -235,8 +235,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Edit Node',
-			'Edit Node',
+			__('Edit Node', 'shadowsocks-hub'),
+			__('Edit Node', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_node',
 			array($this, 'edit_node_page')
@@ -254,8 +254,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			'Accounts',
-			'Accounts',
+			__('Accounts', 'shadowsocks-hub'),
+			__('Accounts', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_accounts',
 			array($this, 'account_sub_menu_init')
@@ -268,7 +268,7 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __('Accounts Per Page'),
+			'label' => __('Accounts Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'accounts_per_page'
 		);
@@ -294,8 +294,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Add Account',
-			'Add Account',
+			__('Add Account', 'shadowsocks-hub'),
+			__('Add Account', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_account',
 			array($this, 'add_account_page')
@@ -313,8 +313,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			'Edit Account',
-			'Edit Account',
+			__('Edit Account', 'shadowsocks-hub'), 
+			__('Edit Account', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_account',
 			array($this, 'edit_account_page')
