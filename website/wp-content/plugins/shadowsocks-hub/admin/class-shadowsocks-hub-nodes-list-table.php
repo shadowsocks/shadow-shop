@@ -32,7 +32,7 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
      */
     public function no_items()
     {
-        _e('No node found.');
+        _e( 'No node found.' );
     }
 
 
@@ -81,15 +81,15 @@ class Shadowsocks_Hub_Nodes_List_Table extends Shadowsocks_Hub_WP_List_Table
     {
         $columns = array(
             'cb'       => '<input type="checkbox" />',
-            'name' => 'Name',
-            'node_state' => 'State',
-            'host' => 'Host',
-            'protocol' => 'Protocol',
-            'password' => 'Password',
-            'port' => 'Post',
-            'lower_bound' => 'Lower Bound',
-            'upper_bound' => 'Upper Bound',
-            'created_date' => 'Created On'
+            'name' => __( 'Name' ),
+            'node_state' => __( 'State' ),
+            'host' => __( 'Host' ),
+            'protocol' => __( 'Protocol' ),
+            'password' => __( 'Password' ),
+            'port' => __( 'Post' ),
+            'lower_bound' => __( 'Lower Bound' ),
+            'upper_bound' => __( 'Upper Bound' ),
+            'created_date' => __( 'Created On' )
         );
         return $columns;
     }
