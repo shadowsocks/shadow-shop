@@ -22,6 +22,70 @@ msgstr ""
 msgid "No account found."
 msgstr ""
 
+#: admin/class-shadowsocks-hub-accounts-list-table.php:84
+#: admin/class-shadowsocks-hub-nodes-list-table.php:86
+#: admin/class-shadowsocks-hub-servers-list-table.php:84
+#: admin/partials/shadowsocks-hub-account-edit.php:150
+#: admin/partials/shadowsocks-hub-server-edit.php:142
+#: admin/partials/shadowsocks-hub-server-new.php:70
+#: public/partials/shadowsocks-accounts.php:48
+msgid "Host"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:85
+#: admin/class-shadowsocks-hub-nodes-list-table.php:89
+#: admin/partials/shadowsocks-hub-account-edit.php:158
+#: admin/partials/shadowsocks-hub-node-edit.php:170
+#: admin/partials/shadowsocks-hub-node-new.php:129
+#: public/partials/shadowsocks-accounts.php:49
+msgid "Port"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:86
+#: admin/class-shadowsocks-hub-nodes-list-table.php:87
+#: admin/partials/shadowsocks-hub-account-edit.php:154
+msgid "Protocol"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:87
+#: admin/partials/shadowsocks-hub-account-edit.php:166
+#: admin/partials/shadowsocks-hub-account-new.php:146
+#: public/partials/shadowsocks-accounts.php:51
+msgid "Encryption"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:88
+#: admin/class-shadowsocks-hub-nodes-list-table.php:88
+#: admin/partials/shadowsocks-hub-account-edit.php:162
+#: admin/partials/shadowsocks-hub-node-edit.php:166
+#: admin/partials/shadowsocks-hub-node-new.php:124
+#: public/partials/shadowsocks-accounts.php:50
+msgid "Password"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:89
+#: admin/partials/shadowsocks-hub-account-edit.php:170
+#: admin/partials/shadowsocks-hub-account-new.php:112
+msgid "User"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:90
+#: admin/partials/shadowsocks-hub-account-edit.php:174
+msgid "Order ID"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:91
+#: admin/partials/shadowsocks-hub-account-edit.php:178
+#: admin/partials/shadowsocks-hub-account-new.php:134
+msgid "Life Span"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-accounts-list-table.php:92
+#: admin/class-shadowsocks-hub-nodes-list-table.php:92
+#: admin/class-shadowsocks-hub-servers-list-table.php:85
+msgid "Created On"
+msgstr ""
+
 #: admin/class-shadowsocks-hub-accounts-list-table.php:167
 #: admin/class-shadowsocks-hub-accounts-list-table.php:203
 #: admin/class-shadowsocks-hub-nodes-list-table.php:166
@@ -49,20 +113,93 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
+#: admin/class-shadowsocks-hub-admin.php:101
+#: admin/class-shadowsocks-hub-admin.php:102
+#: admin/partials/shadowsocks-hub-servers-display.php:216
+msgid "Servers"
+msgstr ""
+
 #: admin/class-shadowsocks-hub-admin.php:115
 msgid "Servers Per Page"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:141
+#: admin/class-shadowsocks-hub-admin.php:142
+#: admin/partials/shadowsocks-hub-server-new.php:75
+msgid "Add Server"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:160
+#: admin/class-shadowsocks-hub-admin.php:161
+msgid "Edit Server"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:179
+#: admin/class-shadowsocks-hub-admin.php:180
+#: admin/partials/shadowsocks-hub-nodes-display.php:216
+msgid "Nodes"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:193
 msgid "Nodes Per Page"
 msgstr ""
 
+#: admin/class-shadowsocks-hub-admin.php:219
+#: admin/class-shadowsocks-hub-admin.php:220
+#: admin/partials/shadowsocks-hub-node-new.php:150
+msgid "Add Node"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:238
+#: admin/class-shadowsocks-hub-admin.php:239
+msgid "Edit Node"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:257
+#: admin/class-shadowsocks-hub-admin.php:258
+#: admin/partials/shadowsocks-hub-accounts-display.php:224
+msgid "Accounts"
+msgstr ""
+
 #: admin/class-shadowsocks-hub-admin.php:271
 msgid "Accounts Per Page"
 msgstr ""
 
+#: admin/class-shadowsocks-hub-admin.php:297
+#: admin/class-shadowsocks-hub-admin.php:298
+#: admin/partials/shadowsocks-hub-account-new.php:176
+msgid "Add Account"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-admin.php:316
+#: admin/class-shadowsocks-hub-admin.php:317
+msgid "Edit Account"
+msgstr ""
+
 #: admin/class-shadowsocks-hub-nodes-list-table.php:35
 msgid "No node found."
+msgstr ""
+
+#: admin/class-shadowsocks-hub-nodes-list-table.php:84
+#: admin/partials/shadowsocks-hub-node-edit.php:156
+#: admin/partials/shadowsocks-hub-node-new.php:109
+msgid "Name"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-nodes-list-table.php:85
+msgid "State"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-nodes-list-table.php:90
+#: admin/partials/shadowsocks-hub-node-edit.php:174
+#: admin/partials/shadowsocks-hub-node-new.php:133
+msgid "Lower Bound"
+msgstr ""
+
+#: admin/class-shadowsocks-hub-nodes-list-table.php:91
+#: admin/partials/shadowsocks-hub-node-edit.php:178
+#: admin/partials/shadowsocks-hub-node-new.php:137
+msgid "Upper Bound"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-servers-list-table.php:35
@@ -74,61 +211,20 @@ msgstr ""
 msgid "Server updated."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-account-edit.php:150
-#: admin/partials/shadowsocks-hub-server-edit.php:142
-#: admin/partials/shadowsocks-hub-server-new.php:70
-msgid "Host"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-account-edit.php:151
 msgid "Host cannot be changed."
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-edit.php:154
-msgid "Protocol"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:155
 msgid "Protocol cannot be changed."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-account-edit.php:158
-#: admin/partials/shadowsocks-hub-node-edit.php:170
-#: admin/partials/shadowsocks-hub-node-new.php:129
-msgid "Port"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-edit.php:162
-#: admin/partials/shadowsocks-hub-node-edit.php:166
-#: admin/partials/shadowsocks-hub-node-new.php:124
-msgid "Password"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-edit.php:166
-#: admin/partials/shadowsocks-hub-account-new.php:146
-msgid "Encryption"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-edit.php:170
-#: admin/partials/shadowsocks-hub-account-new.php:112
-msgid "User"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-account-edit.php:171
 msgid "User cannot be changed."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-account-edit.php:174
-msgid "Order ID"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-account-edit.php:175
 msgid "Order ID cannot be changed."
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-edit.php:178
-#: admin/partials/shadowsocks-hub-account-new.php:134
-msgid "Life Span"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:179
@@ -145,10 +241,6 @@ msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-new.php:171
 msgid "Traffic"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-account-new.php:176
-msgid "Add Account"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:113
@@ -217,10 +309,6 @@ msgstr[1] ""
 msgid "New account added."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-accounts-display.php:224
-msgid "Accounts"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-accounts-display.php:225
 msgctxt "account"
 msgid "Add New"
@@ -234,11 +322,6 @@ msgstr ""
 msgid "Node updated."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-node-edit.php:156
-#: admin/partials/shadowsocks-hub-node-new.php:109
-msgid "Name"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-node-edit.php:160
 #: admin/partials/shadowsocks-hub-node-new.php:113
 msgid "Server"
@@ -246,16 +329,6 @@ msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:162
 msgid "Server cannot be changed."
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-node-edit.php:174
-#: admin/partials/shadowsocks-hub-node-new.php:133
-msgid "Lower Bound"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-node-edit.php:178
-#: admin/partials/shadowsocks-hub-node-new.php:137
-msgid "Upper Bound"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:184
@@ -270,10 +343,6 @@ msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-new.php:54
 msgid "Add New Node"
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-node-new.php:150
-msgid "Add Node"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:107
@@ -308,10 +377,6 @@ msgstr[1] ""
 msgid "New node added."
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-nodes-display.php:216
-msgid "Nodes"
-msgstr ""
-
 #: admin/partials/shadowsocks-hub-nodes-display.php:217
 msgctxt "node"
 msgid "Add New"
@@ -321,12 +386,12 @@ msgstr ""
 msgid "Search Nodes"
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-server-new.php:45
-msgid "Add New Server"
+#: admin/partials/shadowsocks-hub-server-edit.php:150
+msgid "Update Server"
 msgstr ""
 
-#: admin/partials/shadowsocks-hub-server-new.php:75
-msgid "Add Server"
+#: admin/partials/shadowsocks-hub-server-new.php:45
+msgid "Add New Server"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:107
@@ -359,10 +424,6 @@ msgstr[1] ""
 #: admin/partials/shadowsocks-hub-servers-display.php:187
 #: admin/partials/shadowsocks-hub-servers-display.php:191
 msgid "New server added."
-msgstr ""
-
-#: admin/partials/shadowsocks-hub-servers-display.php:216
-msgid "Servers"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:217
@@ -510,6 +571,11 @@ msgstr[1] ""
 msgid "yyyy-mm-dd"
 msgstr ""
 
+#: public/class-shadowsocks-hub-public.php:78
+#: public/class-shadowsocks-hub-public.php:120
+msgid "Shadowsocks"
+msgstr ""
+
 #: public/class-shadowsocks-hub-public.php:89
 msgid "My shadowsocks accounts"
 msgstr ""
@@ -520,10 +586,6 @@ msgstr ""
 
 #: public/class-shadowsocks-hub-public.php:119
 msgid "Usage"
-msgstr ""
-
-#: public/class-shadowsocks-hub-public.php:120
-msgid "Shadowsocks"
 msgstr ""
 
 #: public/class-shadowsocks-hub-public.php:121
@@ -540,4 +602,12 @@ msgstr ""
 
 #: public/partials/shadowsocks-accounts.php:37 public/partials/usage.php:41
 msgid "Go shop"
+msgstr ""
+
+#: public/partials/shadowsocks-accounts.php:52
+msgid "Actions"
+msgstr ""
+
+#: public/partials/shadowsocks-accounts.php:70
+msgid "QR Code"
 msgstr ""
