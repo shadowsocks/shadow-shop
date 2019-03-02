@@ -34,7 +34,7 @@ if ($http_code !== 200) { ?>
 if ( empty($accounts) ) { ?>
     <div class="woocommerce-message woocommerce-message--info woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php _e( 'Go shop', 'woocommerce' ) ?>
+			<?php _e( 'Go shop', 'shadowsocks-hub' ) ?>
 		</a>
 	</div>
     <?php
@@ -45,11 +45,11 @@ if ( empty($accounts) ) { ?>
 <table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 	<thead>
 		<tr>
-            <th class="woocommerce-orders-table__header"><span class="nobr">Host</span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr">Port</span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr">Password</span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr">Encryption</span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr">Actions</span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Host', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Port', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Password', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Encryption', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Actions', 'shadowsocks-hub'); ?></span></th>
 		</tr>
 	</thead>
 
@@ -67,7 +67,7 @@ if ( empty($accounts) ) { ?>
                 <td class="woocommerce-orders-table__cell" data-title="Password"><?php echo $password?></td>
                 <td class="woocommerce-orders-table__cell" data-title="Encryption"><?php echo $method?></td>
                 <td class="woocommerce-orders-table__cell" data-title="Actions">
-                    <button class="woocommerce-button button qrcode" url="<?php echo $url?>">QR code</button>
+                    <button class="woocommerce-button button qrcode" url="<?php echo $url?>"><?php __('QR Code', 'shadowsocks-hub'); ?></button>
                 </td>
 			<?php endforeach; ?>
 	</tbody>
