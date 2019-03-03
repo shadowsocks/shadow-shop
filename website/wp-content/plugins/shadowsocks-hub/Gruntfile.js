@@ -17,6 +17,7 @@ module.exports = function (grunt) { //The wrapper function
             options:{
                 text_domain: 'shadowsocks-hub', //Your text domain. Produces shadowsocks-hub.pot
                 dest: 'languages/', //directory to place the pot file
+                overwrite: false,
                 keywords: [ //WordPress localisation functions
                   '__:1',
                   '_e:1',
