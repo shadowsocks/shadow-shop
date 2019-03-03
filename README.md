@@ -137,7 +137,21 @@ In order to support guest user payment, go to **WooCommerce** > **Settings** > *
 
 ## Languages
 
-Despite the fact that Wordpress and WooCommerce support many languages, Shadow Shop currently supports only English. In the near future, multi-language support for Shadow Shop will be brought to life.
+Wordpress, WooCommerce, and Storefront support multi-language, and have been translated into many languages. Shadow Shop supports multi-language but has not been translated into other languages (due to my lack of language skills). So if you want to use other languages, you may contribute some translation as follows:
+
+1. Create a fork of this repository.
+
+2. Locate the language file in your forked repository. The file is located in `website/wp-content/plugins/shadowsocks-hub/languages` directory. This directory contains several `.po` files with each file corresponding to a language. The names of `.po` files have a pattern of `shadowsocks-hub-{locale}.po` where `locale` is the language code of the file. Find the `.po` file corresponding to the language of your interest. If your language file does not exist in the directory, please feel free to [create an issue](https://github.com/shadowsocks/shadow-shop/issues/new) to let me know the language you want to translate. I will add the corresponding `.po` file.
+
+3. Translate the `.po` file. The file contains all the strings for translation. Each translatable string is formatted like this:
+    ```
+    #: admin/class-shadowsocks-hub-accounts-list-table.php:35
+    msgid "No account found."
+    msgstr ""
+    ```
+    The translated string should be put into `msgstr` section.
+
+4. Create a `pull request` and I will merge your translation into the project.
 
 ## Update and Backup
 
