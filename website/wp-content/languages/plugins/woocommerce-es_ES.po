@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-20 16:52:42+0000\n"
+"PO-Revision-Date: 2019-03-01 19:00:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17594,10 +17594,6 @@ msgstr "Guardar webhook"
 msgid "Webhook actions"
 msgstr "Acciones de webhook"
 
-#: includes/admin/settings/views/html-webhooks-edit.php:101
-msgid "Enter the action that will trigger this webhook."
-msgstr "Introduce la acción que activará esta webhook."
-
 #: includes/admin/settings/views/html-webhooks-edit.php:100
 msgid "Action event"
 msgstr "Evento de la acción"
@@ -17936,6 +17932,10 @@ msgstr "Estas páginas tienen que definirse para que WooCommerce sepa dónde env
 #: includes/admin/settings/class-wc-settings-products.php:366
 msgid "Measurements"
 msgstr "Medidas"
+
+#: includes/admin/settings/views/html-webhooks-edit.php:101
+msgid "Enter the action that will trigger this webhook."
+msgstr "Introduce la acción que activará este webhook."
 
 #: templates/single-product/product-attributes.php:28
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:83

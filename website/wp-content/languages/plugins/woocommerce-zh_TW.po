@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-29 08:54:09+0000\n"
+"PO-Revision-Date: 2019-03-03 06:59:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8880,7 +8880,7 @@ msgstr "已上傳至此商品"
 
 #: includes/class-wc-post-types.php:322
 msgid "Insert into product"
-msgstr "插入商品"
+msgstr "插入至商品"
 
 #. translators: %s: attribute name
 #: includes/class-wc-post-types.php:232

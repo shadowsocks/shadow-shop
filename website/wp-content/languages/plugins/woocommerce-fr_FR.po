@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-25 15:18:23+0000\n"
+"PO-Revision-Date: 2019-03-05 12:10:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -860,7 +860,7 @@ msgstr "Client payant"
 
 #: includes/api/class-wc-rest-report-coupons-totals-controller.php:133
 msgid "Amount of coupons."
-msgstr "Nombre de promotions."
+msgstr "Nombre de codes promos"
 
 #: includes/api/class-wc-rest-report-coupons-totals-controller.php:127
 msgid "Coupon type name."
@@ -2055,7 +2055,7 @@ msgstr "Paiements"
 
 #: includes/admin/settings/class-wc-settings-general.php:200
 msgid "Enable coupons"
-msgstr "Activer les code promos"
+msgstr "Activer les codes promos"
 
 #: includes/admin/settings/class-wc-settings-general.php:196
 msgid "Rates will be configurable and taxes will be calculated during checkout."
@@ -6287,7 +6287,7 @@ msgstr "Adresse de messagerie non valide"
 
 #: includes/class-wc-coupon.php:693
 msgid "Invalid email address restriction"
-msgstr "Restriction de l&rsquo;adresse de messagerie non valide"
+msgstr "Restriction de l’adresse de messagerie non valide"
 
 #: includes/class-wc-coupon.php:494
 msgid "Invalid discount type"
@@ -7507,7 +7507,7 @@ msgstr "Cela vous permet de choisir les produits qui font partie de ce groupe."
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:699
 #: includes/export/class-wc-product-csv-exporter.php:137
 msgid "Grouped products"
-msgstr "Produits groupés"
+msgstr "Groupes de produits"
 
 #. translators: 1: refund id 2: refund date
 #: includes/admin/meta-boxes/views/html-order-refund.php:36
@@ -9379,7 +9379,7 @@ msgstr "Ordre du menu, utilisé pour le tri personnalisé des produits."
 #: includes/api/class-wc-rest-products-controller.php:1256
 #: includes/api/v1/class-wc-rest-products-controller.php:2555
 msgid "List of grouped products ID."
-msgstr "Liste des IDs de produits groupés."
+msgstr "Liste des ID des groupes de produits."
 
 #: includes/api/class-wc-rest-product-variations-controller.php:638
 #: includes/api/v2/class-wc-rest-product-variations-v2-controller.php:885
@@ -11984,7 +11984,7 @@ msgstr "ID d&rsquo;article non valide."
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:260
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:421
 msgid "ID is invalid."
-msgstr "L&rsquo;ID n&rsquo;est pas valide."
+msgstr "L’ID n’est pas valide."
 
 #. translators: %s: post type
 #: includes/api/class-wc-rest-order-notes-controller.php:73
@@ -18411,7 +18411,7 @@ msgstr "Année"
 #. translators: %s: coupons amount
 #: includes/admin/reports/class-wc-report-coupon-usage.php:121
 msgid "%s coupons used in total"
-msgstr "%s coupons utilisés au total"
+msgstr "%s codes promo utilisés au total"
 
 #. translators: %s: discount amount
 #: includes/admin/reports/class-wc-report-coupon-usage.php:114
@@ -19636,11 +19636,11 @@ msgstr "Type de remise"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:57
 msgid "Usage limits"
-msgstr "Limites d&rsquo;utilisation"
+msgstr "Limites d’utilisation"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:52
 msgid "Usage restriction"
-msgstr "Restriction d&rsquo;usage"
+msgstr "Restriction d’usage"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:87
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:47
@@ -20851,7 +20851,7 @@ msgstr "Et enfin, les produits externes sont pour des liens hors site."
 
 #: includes/admin/class-wc-admin-pointers.php:92
 msgid "Grouped products are for grouping several simple products into one."
-msgstr "Les produits groupés sont faits pour rassembler plusieurs produits uniques en un seul."
+msgstr "Les groupes de produits sont faits pour rassembler plusieurs produits uniques en un seul."
 
 #: includes/admin/class-wc-admin-pointers.php:91
 msgid "Variable is for more complex products such as t-shirts with multiple sizes."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-26 14:21:59+0000\n"
+"PO-Revision-Date: 2019-03-02 17:44:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -924,7 +924,7 @@ msgstr "Non puoi installare un network di siti con l'indirizzo del tuo server"
 
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
-msgstr "Inserisci le informazioni di seguito e sarai sulla tua strada nel creare un network si siti WordPress. Creeremo i file di configurazione nel passaggio succesivo"
+msgstr "Inserisci le informazioni qui di seguito e sarai sulla strada nel creare un network di siti WordPress. Creeremo i file di configurazione nel passaggio successivo."
 
 #: wp-admin/includes/network.php:433
 msgid "Complete the following steps to enable the features for creating a network of sites."

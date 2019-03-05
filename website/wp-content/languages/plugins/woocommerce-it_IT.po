@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-25 22:02:51+0000\n"
+"PO-Revision-Date: 2019-03-04 21:42:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21827,17 +21827,9 @@ msgstr "Breve descrizione del prodotto"
 msgid "Product data"
 msgstr "Dati prodotto"
 
-#: includes/admin/class-wc-admin-meta-boxes.php:129
-msgid "%s notes"
-msgstr "%s note"
-
 #: includes/admin/class-wc-admin-meta-boxes.php:130
 msgid "Downloadable product permissions"
 msgstr "Permessi per i prodotti scaricabili"
-
-#: includes/admin/class-wc-admin-meta-boxes.php:131
-msgid "%s actions"
-msgstr "%s azioni"
 
 #: includes/admin/class-wc-admin-meta-boxes.php:135
 msgid "Coupon data"
@@ -21996,6 +21988,14 @@ msgstr "Sei sicuro di voler eliminare questo rimborso? Questa azione non è reve
 #: includes/admin/class-wc-admin-assets.php:290
 msgid "Are you sure you wish to process this refund? This action cannot be undone."
 msgstr "Sei sicuro di voler effettuare questo rimborso? Questa azione non è reversibile."
+
+#: includes/admin/class-wc-admin-meta-boxes.php:129
+msgid "%s notes"
+msgstr "Note %s"
+
+#: includes/admin/class-wc-admin-meta-boxes.php:131
+msgid "%s actions"
+msgstr "Azioni %s"
 
 #: i18n/states/PH.php:18
 msgid "Albay"

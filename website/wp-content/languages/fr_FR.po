@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-04 15:08:46+0000\n"
+"PO-Revision-Date: 2019-03-05 11:07:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -521,11 +521,11 @@ msgstr "Créer"
 
 #: wp-includes/js/dist/block-library.js:12500
 msgid "Row Count"
-msgstr "Compteur de lignes"
+msgstr "Nombre de lignes"
 
 #: wp-includes/js/dist/block-library.js:12494
 msgid "Column Count"
-msgstr "Compteur de colonnes"
+msgstr "Nombre de colonnes"
 
 #: wp-includes/js/dist/block-library.js:12405
 msgid "Delete Column"
