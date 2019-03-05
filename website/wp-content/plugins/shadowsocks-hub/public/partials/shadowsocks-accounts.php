@@ -45,11 +45,11 @@ if ( empty($accounts) ) { ?>
 <table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 	<thead>
 		<tr>
-            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Host', 'shadowsocks-hub'); ?></span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Port', 'shadowsocks-hub'); ?></span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Password', 'shadowsocks-hub'); ?></span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Encryption', 'shadowsocks-hub'); ?></span></th>
-            <th class="woocommerce-orders-table__header"><span class="nobr"><?php __('Actions', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php _e('Host', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php _e('Port', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php _e('Password', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php _e('Encryption', 'shadowsocks-hub'); ?></span></th>
+            <th class="woocommerce-orders-table__header"><span class="nobr"><?php _e('Actions', 'shadowsocks-hub'); ?></span></th>
 		</tr>
 	</thead>
 
