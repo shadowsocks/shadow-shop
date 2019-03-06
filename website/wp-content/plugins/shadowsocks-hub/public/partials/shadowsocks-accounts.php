@@ -40,7 +40,29 @@ if ( empty($accounts) ) { ?>
     <?php
     die();
 }
+
+$subscriptionUrl = "https://test.com";
 ?>
+
+<div class="qrcode-container">
+    <div class="qrcode-div">
+        <span id="sshub-subscription-qr-code"></span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var subscriptionQrcode = new QRCode(document.getElementById("sshub-subscription-qr-code"), {
+                        width : '200',
+                        height : '200',
+                        colorDark: "#000000",
+                        colorLight: "#ffffff",
+                        correctLevel : QRCode.CorrectLevel.H
+                        });
+
+    jQuery( document ).ready(function() {
+        subscriptionQrcode.makeCode( "<?php echo $subscriptionUrl; ?>" );
+            });
+</script>
 
 <table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 	<thead>
