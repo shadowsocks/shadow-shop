@@ -103,6 +103,12 @@
     padding-bottom: 10px;
 }
 
+.button-div {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .sshub-table-container {
     display: block;
 }

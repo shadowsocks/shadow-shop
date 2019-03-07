@@ -34,7 +34,7 @@ if ($http_code !== 200) { ?>
 if ( empty($accounts) ) { ?>
     <div class="woocommerce-message woocommerce-message--info woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php _e( 'Go shop', 'shadowsocks-hub' ) ?>
+			<?php esc_html_e( 'Go shop', 'shadowsocks-hub' ) ?>
 		</a>
 	</div>
     <?php
@@ -44,9 +44,14 @@ if ( empty($accounts) ) { ?>
 $subscriptionUrl = "https://test.com";
 ?>
 
+<h3> <?php esc_html_e( 'Subscription:', 'shadowsocks-hub' ) ?></h3>
+
 <div class="qrcode-container">
     <div class="qrcode-div">
         <span id="sshub-subscription-qr-code"></span>
+        <div class="button-div">
+            <button class="woocommerce-button"><?php esc_html_e('Reset', 'shadowsocks-hub'); ?></button>
+        </div>
     </div>
 </div>
 
@@ -63,6 +68,8 @@ $subscriptionUrl = "https://test.com";
         subscriptionQrcode.makeCode( "<?php echo $subscriptionUrl; ?>" );
             });
 </script>
+
+<h3> <?php esc_html_e( 'Accounts:', 'shadowsocks-hub' ) ?></h3>
 
 <table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 	<thead>
@@ -89,7 +96,7 @@ $subscriptionUrl = "https://test.com";
                 <td class="woocommerce-orders-table__cell" data-title="Password"><?php echo $password?></td>
                 <td class="woocommerce-orders-table__cell" data-title="Encryption"><?php echo $method?></td>
                 <td class="woocommerce-orders-table__cell" data-title="Actions">
-                    <button class="woocommerce-button button qrcode" url="<?php echo $url?>"><?php __('QR Code', 'shadowsocks-hub'); ?></button>
+                    <button class="woocommerce-button button qrcode" url="<?php echo $url?>"><?php esc_html_e('QR Code', 'shadowsocks-hub'); ?></button>
                 </td>
 			<?php endforeach; ?>
 	</tbody>
