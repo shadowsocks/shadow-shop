@@ -36,7 +36,10 @@ module.exports = function (grunt) { //The wrapper function
                  ],
             },
             files:{
-                src:  [ '**/*.php' ], //Parse all php files
+                src:  [
+                    '**/*.php', //Parse all php files
+                    '!node_modules/**', // Exclude node_modules directory
+                ], 
                 expand: true,
             }
       },
