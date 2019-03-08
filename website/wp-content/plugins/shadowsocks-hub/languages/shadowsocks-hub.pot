@@ -551,26 +551,6 @@ msgstr ""
 msgid "Select All"
 msgstr ""
 
-#: node_modules/grunt-pot/test/fixtures/some-file.php:3
-msgid "I'm a translatable string."
-msgstr ""
-
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
-msgid "Me too"
-msgstr ""
-
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
-#, php-format
-msgid "I have %d apple"
-msgid_plural "I have %d apples"
-msgstr[0] ""
-msgstr[1] ""
-
-#. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
-#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
-msgid "yyyy-mm-dd"
-msgstr ""
-
 #: public/class-shadowsocks-hub-public.php:78
 #: public/class-shadowsocks-hub-public.php:120
 msgid "Shadowsocks"
