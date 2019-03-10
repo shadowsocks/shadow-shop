@@ -181,7 +181,7 @@ class Shadowsocks_Hub {
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_edit_account_page' );
 		$this->loader->add_filter('set-screen-option', $plugin_admin, 'set_account_list_table_screen_options', 10, 3);
 		$this->loader->add_action( 'woocommerce_after_register_taxonomy', $plugin_admin, 'add_sshub_product_attributes' );
-		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'prefix_register_example_routes' );
+		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'register_subscription_route' );
 	}
 
 	/**
