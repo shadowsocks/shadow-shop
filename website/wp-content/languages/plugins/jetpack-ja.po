@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-15 07:38:34+0000\n"
+"PO-Revision-Date: 2019-03-08 06:29:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -482,13 +482,13 @@ msgstr "サイトの{{portfolioLink}}ポートフォリオ{{/portfolioLink}}を�
 msgid "Portfolios shortcode: [portfolio]"
 msgstr "ポートフォリオショートコード: [portfolio]"
 
-#: _inc/jetpack-strings.php:405
-msgid "Testimonials shortcode: [testimonials]"
-msgstr "推薦文のショートコード:[推薦文]"
-
 #: _inc/jetpack-strings.php:403
 msgid "Add {{testimonialLink}}testimonials{{/testimonialLink}} to your website to attract new customers. If your theme doesn’t support Jetpack Testimonials, you can still use a simple shortcode to display them on your site."
 msgstr "サイトに{{testimonialLink}}推薦文{{/testimonialLink}}を追加して、新規顧客を引き付けます。テーマが Jetpack 推薦文をサポートしていない場合は、引き続きシンプルなショートコードを使用してサイトに表示することができます。"
+
+#: _inc/jetpack-strings.php:405
+msgid "Testimonials shortcode: [testimonials]"
+msgstr "推薦文のショートコード: [testimonials]"
 
 #: _inc/jetpack-strings.php:368
 msgid "Search engines can't access your site at the moment. If you'd like to make your site accessible, check your {{a}}Reading settings{{/a}} and switch \"Search Engine Visibility\" on."
