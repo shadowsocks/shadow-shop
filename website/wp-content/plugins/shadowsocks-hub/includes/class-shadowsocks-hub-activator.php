@@ -30,7 +30,17 @@ class Shadowsocks_Hub_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-		
+
+		/**
+		 * activate pretty permalinks
+		 */
+		global $wp_rewrite; 
+		//Write the rule
+		$wp_rewrite->set_permalink_structure('/%postname%/'); 
+		//Set the option
+		update_option( "rewrite_rules", FALSE ); 
+		//Flush the rules and tell it to write htaccess
+		$wp_rewrite->flush_rules( true );	
 	}
 
 }
