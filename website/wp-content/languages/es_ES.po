@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-09 19:37:45+0000\n"
+"PO-Revision-Date: 2019-03-08 20:25:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,14 @@ msgstr "."
 msgid "number_format_decimal_point"
 msgstr ","
 
+#: wp-includes/functions.php:6882
+msgid "Update PHP"
+msgstr "Actualizar PHP"
+
+#: wp-includes/ms-site.php:67
+msgid "Could not retrieve site data."
+msgstr "No se pudieron recuperar los datos del sitio."
+
 #: wp-includes/js/dist/block-library.js:2253
 msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "Incrusta contenido de Crowdsignal (anteriormente Polldaddy)."
@@ -66,65 +74,65 @@ msgid "Your comment is awaiting moderation. This is a preview, your comment will
 msgstr "Tu comentario está pendiente de moderación. Esto es una vista previa, tu comentario estará visible cuando se apruebe."
 
 #. translators: %s: database table name
-#: wp-includes/ms-site.php:1297
+#: wp-includes/ms-site.php:1311
 msgid "The %s table is not installed. Please run the network database upgrade."
 msgstr "La tabla %s no se ha instalado. Por favor, ejecuta la actualización de la base de datos de la red."
 
-#: wp-includes/ms-site.php:784
+#: wp-includes/ms-site.php:798
 msgid "The site appears to be already uninitialized."
 msgstr "Parece que ya se ha cancelado la inicialización del sitio."
 
 #. translators: %d: site ID
-#: wp-includes/ms-site.php:666
+#: wp-includes/ms-site.php:680
 msgid "Site %d"
 msgstr "%d del sitio"
 
-#: wp-includes/ms-site.php:653
+#: wp-includes/ms-site.php:667
 msgid "The site appears to be already initialized."
 msgstr "Parece que este sitio ya está inicializado."
 
-#: wp-includes/ms-site.php:649 wp-includes/ms-site.php:780
+#: wp-includes/ms-site.php:663 wp-includes/ms-site.php:794
 msgid "Site with the ID does not exist."
 msgstr "No existe un sitio con este ID."
 
-#: wp-includes/ms-site.php:593
+#: wp-includes/ms-site.php:607
 msgid "Both registration and last updated dates must be valid dates."
 msgstr "La fecha de registro y de última actualización deben tener un formato válido."
 
-#: wp-includes/ms-site.php:582
+#: wp-includes/ms-site.php:596
 msgid "Both registration and last updated dates must be provided."
 msgstr "Hay que facilitar tanto las fechas de registro como la de la última actualización."
 
-#: wp-includes/ms-site.php:575
+#: wp-includes/ms-site.php:589
 msgid "Site network ID must be provided."
 msgstr "Hay que indicar el ID de red del sitio."
 
-#: wp-includes/ms-site.php:570
+#: wp-includes/ms-site.php:584
 msgid "Site path must not be empty."
 msgstr "La ruta del sitio no debe estar vacía."
 
-#: wp-includes/ms-site.php:565
+#: wp-includes/ms-site.php:579
 msgid "Site domain must not be empty."
 msgstr "El dominio del sitio no debe estar vacío."
 
-#: wp-includes/ms-site.php:240
+#: wp-includes/ms-site.php:254
 msgid "Could not delete site from the database."
 msgstr "No se pudo borrar el sitio de la base de datos."
 
-#: wp-includes/ms-site.php:151
+#: wp-includes/ms-site.php:165
 msgid "Could not update site in the database."
 msgstr "No se puede actualizar el sitio en la base de datos"
 
-#: wp-includes/ms-site.php:137 wp-includes/ms-site.php:190
+#: wp-includes/ms-site.php:151 wp-includes/ms-site.php:204
 msgid "Site does not exist."
 msgstr "El sitio no existe."
 
-#: wp-includes/ms-site.php:132 wp-includes/ms-site.php:185
-#: wp-includes/ms-site.php:644 wp-includes/ms-site.php:775
+#: wp-includes/ms-site.php:146 wp-includes/ms-site.php:199
+#: wp-includes/ms-site.php:658 wp-includes/ms-site.php:789
 msgid "Site ID must not be empty."
 msgstr "El ID del sitio no debe estar vacío."
 
-#: wp-includes/ms-site.php:67
+#: wp-includes/ms-site.php:61
 msgid "Could not insert site into the database."
 msgstr "No se pudo insertar el sitio en la base de datos."
 
@@ -2691,6 +2699,7 @@ msgstr "Tamaño de fuente personalizado"
 #. translators: accessibility text
 #: wp-includes/widgets/class-wp-widget-custom-html.php:310
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
+#: wp-includes/functions.php:6884
 #: wp-includes/class-wp-customize-manager.php:4270
 #: wp-includes/class-wp-customize-manager.php:5572
 #: wp-includes/class-wp-customize-manager.php:5593
@@ -13014,7 +13023,7 @@ msgstr ""
 "%2$s"
 
 #: wp-includes/ms-functions.php:679 wp-includes/ms-functions.php:1307
-#: wp-includes/ms-site.php:610
+#: wp-includes/ms-site.php:624
 msgid "Sorry, that site already exists!"
 msgstr "Lo siento, ¡ese sitio ya existe!"
 

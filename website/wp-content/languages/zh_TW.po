@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-31 15:41:42+0000\n"
+"PO-Revision-Date: 2019-03-07 19:09:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,10 @@ msgstr ","
 msgid "number_format_decimal_point"
 msgstr "."
 
+#: wp-includes/ms-site.php:67
+msgid "Could not retrieve site data."
+msgstr "無法讀取網站資料。"
+
 #: wp-includes/js/dist/block-library.js:2253
 msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "嵌入 Crowdsignal (先前的 Polldaddy) 內容。"
@@ -65,65 +69,65 @@ msgid "Your comment is awaiting moderation. This is a preview, your comment will
 msgstr "你的留言正在等候審閱。目前顯示的是留言內容的預覽，留言核准後所有人都會看到這則留言。"
 
 #. translators: %s: database table name
-#: wp-includes/ms-site.php:1297
+#: wp-includes/ms-site.php:1311
 msgid "The %s table is not installed. Please run the network database upgrade."
 msgstr "%s 資料表尚未建立。請執行多站網路資料庫升級。"
 
-#: wp-includes/ms-site.php:784
+#: wp-includes/ms-site.php:798
 msgid "The site appears to be already uninitialized."
 msgstr "這個網站已解除初始化。"
 
 #. translators: %d: site ID
-#: wp-includes/ms-site.php:666
+#: wp-includes/ms-site.php:680
 msgid "Site %d"
 msgstr "網站 %d"
 
-#: wp-includes/ms-site.php:653
+#: wp-includes/ms-site.php:667
 msgid "The site appears to be already initialized."
 msgstr "這個網站已完成初始化。"
 
-#: wp-includes/ms-site.php:649 wp-includes/ms-site.php:780
+#: wp-includes/ms-site.php:663 wp-includes/ms-site.php:794
 msgid "Site with the ID does not exist."
 msgstr "指定 ID 的網站不存在。"
 
-#: wp-includes/ms-site.php:593
+#: wp-includes/ms-site.php:607
 msgid "Both registration and last updated dates must be valid dates."
 msgstr "註冊日期及最近更新日期都必須是有效日期。"
 
-#: wp-includes/ms-site.php:582
+#: wp-includes/ms-site.php:596
 msgid "Both registration and last updated dates must be provided."
 msgstr "註冊日期及最近更新日期都必須提供。"
 
-#: wp-includes/ms-site.php:575
+#: wp-includes/ms-site.php:589
 msgid "Site network ID must be provided."
 msgstr "必須提供網站多站網路 ID。"
 
-#: wp-includes/ms-site.php:570
+#: wp-includes/ms-site.php:584
 msgid "Site path must not be empty."
 msgstr "網站路徑不能留空。"
 
-#: wp-includes/ms-site.php:565
+#: wp-includes/ms-site.php:579
 msgid "Site domain must not be empty."
 msgstr "網站網域名稱不能留空。"
 
-#: wp-includes/ms-site.php:240
+#: wp-includes/ms-site.php:254
 msgid "Could not delete site from the database."
 msgstr "無法從資料庫中刪除網站。"
 
-#: wp-includes/ms-site.php:151
+#: wp-includes/ms-site.php:165
 msgid "Could not update site in the database."
 msgstr "無法在資料庫中更新網站。"
 
-#: wp-includes/ms-site.php:137 wp-includes/ms-site.php:190
+#: wp-includes/ms-site.php:151 wp-includes/ms-site.php:204
 msgid "Site does not exist."
 msgstr "網站不存在。"
 
-#: wp-includes/ms-site.php:132 wp-includes/ms-site.php:185
-#: wp-includes/ms-site.php:644 wp-includes/ms-site.php:775
+#: wp-includes/ms-site.php:146 wp-includes/ms-site.php:199
+#: wp-includes/ms-site.php:658 wp-includes/ms-site.php:789
 msgid "Site ID must not be empty."
 msgstr "網站 ID 不可留空。"
 
-#: wp-includes/ms-site.php:67
+#: wp-includes/ms-site.php:61
 msgid "Could not insert site into the database."
 msgstr "無法將網站新增至資料庫。"
 
@@ -626,7 +630,7 @@ msgstr "段落引用"
 
 #: wp-includes/js/dist/block-library.js:4346
 msgid "Give quoted text visual emphasis. \"In quoting others, we cite ourselves.\" — Julio Cortázar"
-msgstr "賦予引文視覺強調效果。<br/>「引用他人的說法，是為了加強自己的論述。」－胡利奧·科塔薩爾"
+msgstr "賦予引文視覺強調效果。「引用他人的說法，是為了加強自己的論述。」－胡利奧·科塔薩爾"
 
 #: wp-includes/js/dist/block-library.js:11052
 msgid "Solid Color"
@@ -2082,7 +2086,7 @@ msgstr "發佈時間:"
 
 #: wp-includes/js/dist/editor.js:26940
 msgid "Visibility:"
-msgstr "可見度:"
+msgstr "可見度："
 
 #: wp-includes/js/dist/editor.js:26933
 msgid "Double-check your settings before publishing."
@@ -12973,7 +12977,7 @@ msgstr ""
 "%2$s"
 
 #: wp-includes/ms-functions.php:679 wp-includes/ms-functions.php:1307
-#: wp-includes/ms-site.php:610
+#: wp-includes/ms-site.php:624
 msgid "Sorry, that site already exists!"
 msgstr "抱歉，該網站已存在！"
 
