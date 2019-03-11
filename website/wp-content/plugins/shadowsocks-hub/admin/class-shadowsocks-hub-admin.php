@@ -61,7 +61,6 @@ class Shadowsocks_Hub_Admin
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-
 	}
 
 	public function add_top_level_menu()
@@ -87,8 +86,8 @@ class Shadowsocks_Hub_Admin
 	{
 		add_submenu_page(
 			'shadowsocks_hub_plugin',
-			__( 'Dashboard', 'shadowsocks-hub' ),
-			__( 'Dashboard', 'shadowsocks-hub' ),
+			__('Dashboard', 'shadowsocks-hub'),
+			__('Dashboard', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_plugin'
 		);
@@ -98,8 +97,8 @@ class Shadowsocks_Hub_Admin
 	{
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			__( 'Servers', 'shadowsocks-hub' ),
-			__( 'Servers', 'shadowsocks-hub' ),
+			__('Servers', 'shadowsocks-hub'),
+			__('Servers', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_servers',
 			array($this, 'server_sub_menu_init')
@@ -112,13 +111,13 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __( 'Servers Per Page', 'shadowsocks-hub' ),
+			'label' => __('Servers Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'servers_per_page'
 		);
 
 		add_screen_option('per_page', $arguments);
-		
+
 		// instantiate the Server List Table
 		$this->servers_obj = new Shadowsocks_Hub_Servers_List_Table();
 	}
@@ -129,8 +128,9 @@ class Shadowsocks_Hub_Admin
 		include_once('partials/shadowsocks-hub-servers-display.php');
 	}
 
-	public function set_server_list_table_screen_options($status, $option, $value) {
-		if ( 'servers_per_page' == $option ) return $value;
+	public function set_server_list_table_screen_options($status, $option, $value)
+	{
+		if ('servers_per_page' == $option) return $value;
 	}
 
 	public function add_add_server_page()
@@ -138,13 +138,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Add Server', 'shadowsocks-hub' ),
-			__( 'Add Server', 'shadowsocks-hub' ),
+			__('Add Server', 'shadowsocks-hub'),
+			__('Add Server', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_server',
 			array($this, 'add_server_page')
 		);
-
 	}
 
 	public function add_server_page()
@@ -157,13 +156,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Edit Server', 'shadowsocks-hub' ),
-			__( 'Edit Server', 'shadowsocks-hub' ),
+			__('Edit Server', 'shadowsocks-hub'),
+			__('Edit Server', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_server',
 			array($this, 'edit_server_page')
 		);
-
 	}
 
 	public function edit_server_page()
@@ -176,8 +174,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			__( 'Nodes', 'shadowsocks-hub' ),
-			__( 'Nodes', 'shadowsocks-hub' ),
+			__('Nodes', 'shadowsocks-hub'),
+			__('Nodes', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_nodes',
 			array($this, 'node_sub_menu_init')
@@ -190,13 +188,13 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __( 'Nodes Per Page', 'shadowsocks-hub' ),
+			'label' => __('Nodes Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'nodes_per_page'
 		);
 
 		add_screen_option('per_page', $arguments);
-		
+
 		// instantiate the Node List Table
 		$this->nodes_obj = new Shadowsocks_Hub_Nodes_List_Table();
 	}
@@ -207,8 +205,9 @@ class Shadowsocks_Hub_Admin
 		include_once('partials/shadowsocks-hub-nodes-display.php');
 	}
 
-	public function set_node_list_table_screen_options($status, $option, $value) {
-		if ( 'nodes_per_page' == $option ) return $value;
+	public function set_node_list_table_screen_options($status, $option, $value)
+	{
+		if ('nodes_per_page' == $option) return $value;
 	}
 
 	public function add_add_node_page()
@@ -216,13 +215,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Add Node', 'shadowsocks-hub' ),
-			__( 'Add Node', 'shadowsocks-hub' ),
+			__('Add Node', 'shadowsocks-hub'),
+			__('Add Node', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_node',
 			array($this, 'add_node_page')
 		);
-
 	}
 
 	public function add_node_page()
@@ -235,13 +233,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Edit Node', 'shadowsocks-hub' ),
-			__( 'Edit Node', 'shadowsocks-hub' ),
+			__('Edit Node', 'shadowsocks-hub'),
+			__('Edit Node', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_node',
 			array($this, 'edit_node_page')
 		);
-
 	}
 
 	public function edit_node_page()
@@ -254,8 +251,8 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'shadowsocks_hub_plugin',
-			__( 'Accounts', 'shadowsocks-hub' ),
-			__( 'Accounts', 'shadowsocks-hub' ),
+			__('Accounts', 'shadowsocks-hub'),
+			__('Accounts', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_accounts',
 			array($this, 'account_sub_menu_init')
@@ -268,13 +265,13 @@ class Shadowsocks_Hub_Admin
 	{
 
 		$arguments = array(
-			'label' => __( 'Accounts Per Page', 'shadowsocks-hub' ),
+			'label' => __('Accounts Per Page', 'shadowsocks-hub'),
 			'default' => 5,
 			'option' => 'accounts_per_page'
 		);
 
 		add_screen_option('per_page', $arguments);
-		
+
 		// instantiate the Node List Table
 		$this->accounts_obj = new Shadowsocks_Hub_Accounts_List_Table();
 	}
@@ -285,8 +282,9 @@ class Shadowsocks_Hub_Admin
 		include_once('partials/shadowsocks-hub-accounts-display.php');
 	}
 
-	public function set_account_list_table_screen_options($status, $option, $value) {
-		if ( 'accounts_per_page' == $option ) return $value;
+	public function set_account_list_table_screen_options($status, $option, $value)
+	{
+		if ('accounts_per_page' == $option) return $value;
 	}
 
 	public function add_add_account_page()
@@ -294,13 +292,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Add Account', 'shadowsocks-hub' ),
-			__( 'Add Account', 'shadowsocks-hub' ),
+			__('Add Account', 'shadowsocks-hub'),
+			__('Add Account', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_add_account',
 			array($this, 'add_account_page')
 		);
-
 	}
 
 	public function add_account_page()
@@ -313,13 +310,12 @@ class Shadowsocks_Hub_Admin
 
 		$hook = add_submenu_page(
 			'_doesnt_exist',
-			__( 'Edit Account', 'shadowsocks-hub' ), 
-			__( 'Edit Account', 'shadowsocks-hub' ),
+			__('Edit Account', 'shadowsocks-hub'),
+			__('Edit Account', 'shadowsocks-hub'),
 			'manage_categories',
 			'shadowsocks_hub_edit_account',
 			array($this, 'edit_account_page')
 		);
-
 	}
 
 	public function edit_account_page()
@@ -327,19 +323,20 @@ class Shadowsocks_Hub_Admin
 		include_once('partials/shadowsocks-hub-account-edit.php');
 	}
 
-	public function add_sshub_product_attributes() {
+	public function add_sshub_product_attributes()
+	{
 
 		$attributes = array(
 			"life_span" => array(
 				"label" => "Life Span",
 				"name" => "life_span",
-				"terms" => array( 'Annually', 'Semiannually', 'Quarterly', 'Bimonthly', 'Monthly' )
+				"terms" => array('Annually', 'Semiannually', 'Quarterly', 'Bimonthly', 'Monthly')
 			),
 			"traffic" => array(
 				"label" => "Traffic",
 				"name" => "traffic",
 				"terms" => array(
-					'10T', '9T', '8T', '7T', '6T', '5T', '4T', '3T', '2T', '1T', 
+					'10T', '9T', '8T', '7T', '6T', '5T', '4T', '3T', '2T', '1T',
 					'900G', '800G', '700G', '600G', '500G', '400G', '300G', '200G', '100G',
 					'90G', '80G', '70G', '60G', '50G', '40G', '30G', '20G', '10G',
 					'9G', '8G', '7G', '6G', '5G', '4G', '3G', '2G', '1G',
@@ -349,7 +346,7 @@ class Shadowsocks_Hub_Admin
 			"encryption_method" => array(
 				"label" => "Encryption Method",
 				"name" => "encryption_method",
-				"terms" => array (
+				"terms" => array(
 					"chacha20-ietf", "chacha20", "salsa20",
 					"xchacha20-ietf-poly1305", "chacha20-ietf-poly1305", "bf-cfb",
 					"camellia-256-cfb", "camellia-192-cfb", "camellia-128-cfb",
@@ -359,18 +356,19 @@ class Shadowsocks_Hub_Admin
 				)
 			),
 		);
-		
-		foreach($attributes as $attribute) {
 
-			if ( ! taxonomy_exists ( 'pa_' . $attribute[ 'name' ] )) {
-				$this->create_attribute( $attribute[ 'label' ], $attribute[ 'name' ] );
+		foreach ($attributes as $attribute) {
+
+			if (!taxonomy_exists('pa_' . $attribute['name'])) {
+				$this->create_attribute($attribute['label'], $attribute['name']);
 			};
 
-			$this->add_terms_to_attribute( $attribute[ 'name' ], $attribute[ 'terms' ] );
+			$this->add_terms_to_attribute($attribute['name'], $attribute['terms']);
 		};
 	}
 
-	private function create_attribute( $label, $slug ) {
+	private function create_attribute($label, $slug)
+	{
 		$args      = array(
 			'name'         => $label,
 			'slug'         => $slug,
@@ -379,20 +377,21 @@ class Shadowsocks_Hub_Admin
 			'has_archives' => '1',
 		);
 
-		$id = wc_create_attribute( $args );
+		$id = wc_create_attribute($args);
 
-		if ( is_wp_error( $id ) ) {
-			error_log( "add product attribute error " . " slug = " . $slug );
-			error_log("\$id = " . print_r($id, true) );
+		if (is_wp_error($id)) {
+			error_log("add product attribute error " . " slug = " . $slug);
+			error_log("\$id = " . print_r($id, true));
 		}
 
 		return $id;
 	}
 
-	private function add_terms_to_attribute ( $attribute_slug, $terms ) {
+	private function add_terms_to_attribute($attribute_slug, $terms)
+	{
 
-		foreach ( $terms as $term ) {
-			$result = wp_insert_term( $term, 'pa_' . $attribute_slug );
+		foreach ($terms as $term) {
+			$result = wp_insert_term($term, 'pa_' . $attribute_slug);
 		}
 
 		return;
@@ -401,21 +400,23 @@ class Shadowsocks_Hub_Admin
 	/**
  * This is our callback function that embeds our phrase in a WP_REST_Response
  */
-function get_endpoint_subscription() {
-    // rest_ensure_response() wraps the data we want to return into a WP_REST_Response, and ensures it will be properly returned.
-    return rest_ensure_response( 'Hello World, this is the WordPress REST API' );
-}
+	function get_endpoint_subscription()
+	{
+		// rest_ensure_response() wraps the data we want to return into a WP_REST_Response, and ensures it will be properly returned.
+		return rest_ensure_response('Hello World, this is the WordPress REST API');
+	}
 
 	/**
  * This function is where we register our routes for our subscription endpoint.
  */
-public function register_subscription_route() {
-    // register_rest_route() handles more arguments but we are going to stick to the basics for now.
-    register_rest_route( 'shadow-shop/v1', '/subscription', array(
-        'methods'  => 'GET',
-        'callback' => array($this, 'get_endpoint_subscription'),
-    ) );
-}
+	public function register_subscription_route()
+	{
+		// register_rest_route() handles more arguments but we are going to stick to the basics for now.
+		register_rest_route('shadow-shop/v1', '/subscription', array(
+			'methods'  => 'GET',
+			'callback' => array($this, 'get_endpoint_subscription'),
+		));
+	}
 
 	/**
 	 * Register the stylesheets for the admin area.
@@ -438,7 +439,6 @@ public function register_subscription_route() {
 		 */
 
 		wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/shadowsocks-hub-admin.css', array(), $this->version, 'all');
-
 	}
 
 	/**
@@ -462,7 +462,5 @@ public function register_subscription_route() {
 		 */
 
 		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/shadowsocks-hub-admin.js', array('jquery'), $this->version, false);
-
 	}
-
 }
