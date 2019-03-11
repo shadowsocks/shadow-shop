@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-21 15:50:01+0000\n"
+"PO-Revision-Date: 2019-03-06 20:22:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,10 @@ msgstr "."
 msgid "number_format_decimal_point"
 msgstr ","
 
+#: wp-includes/ms-site.php:73
+msgid "Could not retrieve site data."
+msgstr "Não foi possível obter os dados do site."
+
 #: wp-includes/js/dist/block-library.js:2253
 msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "Incorporar conteúdos do Crowdsignal (antigo Polldaddy)."
@@ -66,61 +70,61 @@ msgid "Your comment is awaiting moderation. This is a preview, your comment will
 msgstr "O seu comentário aguarda moderação. Esta é uma pré-visualização, o seu comentário será visível depois de ter sido aprovado."
 
 #. translators: %s: database table name
-#: wp-includes/ms-site.php:1297
+#: wp-includes/ms-site.php:1301
 msgid "The %s table is not installed. Please run the network database upgrade."
 msgstr "A tabela %s não está instalada. Por favor execute a actualização da base de dados da rede."
 
-#: wp-includes/ms-site.php:784
+#: wp-includes/ms-site.php:788
 msgid "The site appears to be already uninitialized."
 msgstr "O site parece já estar não inicializado."
 
 #. translators: %d: site ID
-#: wp-includes/ms-site.php:666
+#: wp-includes/ms-site.php:670
 msgid "Site %d"
 msgstr "Site %d"
 
-#: wp-includes/ms-site.php:653
+#: wp-includes/ms-site.php:657
 msgid "The site appears to be already initialized."
 msgstr "O site parece já estar inicializado."
 
-#: wp-includes/ms-site.php:649 wp-includes/ms-site.php:780
+#: wp-includes/ms-site.php:653 wp-includes/ms-site.php:784
 msgid "Site with the ID does not exist."
 msgstr "Não existe nenhum site com este ID."
 
-#: wp-includes/ms-site.php:593
+#: wp-includes/ms-site.php:597
 msgid "Both registration and last updated dates must be valid dates."
 msgstr "As datas de registo e da última actualização têm de ser válidas."
 
-#: wp-includes/ms-site.php:582
+#: wp-includes/ms-site.php:586
 msgid "Both registration and last updated dates must be provided."
 msgstr "As datas de registo e da última actualização têm de ser fornecidas."
 
-#: wp-includes/ms-site.php:575
+#: wp-includes/ms-site.php:579
 msgid "Site network ID must be provided."
 msgstr "O ID de rede do site tem de ser fornecido."
 
-#: wp-includes/ms-site.php:570
+#: wp-includes/ms-site.php:574
 msgid "Site path must not be empty."
 msgstr "O caminho do site não pode estar vazio."
 
-#: wp-includes/ms-site.php:565
+#: wp-includes/ms-site.php:569
 msgid "Site domain must not be empty."
 msgstr "O domínio do site não pode estar vazio."
 
-#: wp-includes/ms-site.php:240
+#: wp-includes/ms-site.php:244
 msgid "Could not delete site from the database."
 msgstr "Não foi possível eliminar o site da base de dados."
 
-#: wp-includes/ms-site.php:151
+#: wp-includes/ms-site.php:155
 msgid "Could not update site in the database."
 msgstr "Não foi possível actualizar o site na base de dados."
 
-#: wp-includes/ms-site.php:137 wp-includes/ms-site.php:190
+#: wp-includes/ms-site.php:141 wp-includes/ms-site.php:194
 msgid "Site does not exist."
 msgstr "O site não existe."
 
-#: wp-includes/ms-site.php:132 wp-includes/ms-site.php:185
-#: wp-includes/ms-site.php:644 wp-includes/ms-site.php:775
+#: wp-includes/ms-site.php:136 wp-includes/ms-site.php:189
+#: wp-includes/ms-site.php:648 wp-includes/ms-site.php:779
 msgid "Site ID must not be empty."
 msgstr "O ID do site não pode estar vazio."
 
@@ -13005,7 +13009,7 @@ msgstr ""
 "%2$s"
 
 #: wp-includes/ms-functions.php:679 wp-includes/ms-functions.php:1307
-#: wp-includes/ms-site.php:610
+#: wp-includes/ms-site.php:614
 msgid "Sorry, that site already exists!"
 msgstr "Esse site já existe!"
 

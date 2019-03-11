@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-28 09:41:17+0000\n"
+"PO-Revision-Date: 2019-03-06 05:56:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -196,7 +196,7 @@ msgstr "Vous ne pouvez pas poursuivre l’installation car <a href=\"%1$s\">Word
 msgid "You cannot install because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "Vous ne pouvez pas poursuivre l’installation car <a href=\"%1$s\">WordPress %2$s</a> nécessite PHP version %3$s ou plus. Vous utilisez la version %4$s."
 
-#: wp-admin/includes/dashboard.php:1709
+#: wp-admin/includes/dashboard.php:1710
 msgid "Set up your homepage"
 msgstr "Mettre en place votre page d’accueil"
 
@@ -273,11 +273,11 @@ msgid "My Network"
 msgstr "Mon réseau"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:670
-msgid "This plugin doesn&#8217;t work with your version of PHP. "
+msgid "This plugin doesn&#8217;t work with your version of PHP."
 msgstr "Cette extension ne fonctionne pas avec votre version de PHP."
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:661
-msgid "This plugin doesn&#8217;t work with your version of WordPress. "
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr "Cette extension ne fonctionne pas avec votre version de WordPress."
 
 #. translators: %s: "Update PHP" page URL
@@ -298,8 +298,8 @@ msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">l
 msgstr "<a href=\"%1$s\">Veuillez mettre à jour WordPress</a> puis <a href=\"%2$s\">apprenez-en davantage sur la mise à jour de PHP</a>."
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:637
-msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP. "
-msgstr "Cette extension ne fonctionne pas avec votre version de WordPress et de PHP. "
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Cette extension ne fonctionne pas avec vos versions de WordPress et de PHP."
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:532
 #: wp-admin/includes/plugin-install.php:823
@@ -3600,7 +3600,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Revision_Management\">Gestion des 
 msgid "You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. Please refer to the Codex to <a href=\"https://codex.wordpress.org/Embeds\">learn more about embeds</a>."
 msgstr "Vous pouvez également insérer des contenus en provenance de nombreux sites populaires, comme Twitter, YouTube, Flickr et d’autres, simplement en collant l’adresse web du contenu dans sa propre ligne dans le texte de votre publication. Référez-vous au Codex pour <a href=\"https://codex.wordpress.org/Embeds\">en apprendre plus sur les contenu insérés</a>."
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "https://codex.wordpress.org/First_Steps_With_WordPress"
 msgstr "https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress"
 
@@ -4575,11 +4575,11 @@ msgstr "Modifier la visibilité"
 msgid "Edit status"
 msgstr "Modifier l’état"
 
-#: wp-admin/includes/dashboard.php:1729
+#: wp-admin/includes/dashboard.php:1730
 msgid "Manage menus"
 msgstr "Gérer les menus"
 
-#: wp-admin/includes/dashboard.php:1727
+#: wp-admin/includes/dashboard.php:1728
 msgid "Manage widgets"
 msgstr "Gérer les widgets"
 
@@ -5673,7 +5673,7 @@ msgstr "La rotation d’image n’est pas disponible avec cet hébergeur."
 msgid "If you are looking to use the link manager, please install the <a href=\"%s\">Link Manager</a> plugin."
 msgstr "Si vous souhaitez utiliser le gestionnaire de liens, veuillez installer l’extension <a href=\"%s\">Link Manager</a>."
 
-#: wp-admin/includes/dashboard.php:1722
+#: wp-admin/includes/dashboard.php:1723
 msgid "Manage <a href=\"%1$s\">widgets</a> or <a href=\"%2$s\">menus</a>"
 msgstr "Gérez vos <a href=\"%1$s\">widgets</a> ou vos <a href=\"%2$s\">menus</a>"
 
@@ -5749,15 +5749,15 @@ msgstr "Vous pouvez également choisir une couleur pour ce texte en cliquant sur
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
 msgstr "Vous pouvez choisir si votre site est parcouru par les robots et autres logiciels automatisés ou non. Si vous préférez que ces services ignorent votre site, cochez l’option « Demander aux moteurs de recherche de ne pas indexer ce site » et cliquez sur le bouton « Enregistrer les modifications » en bas de l’écran. Notez bien que cette confidentialité n’est pas assurée : votre site reste potentiellement visible de tous sur le Web."
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "Learn more about getting started"
 msgstr "Plus d’informations pour bien démarrer"
 
-#: wp-admin/includes/dashboard.php:1735
+#: wp-admin/includes/dashboard.php:1736
 msgid "Turn comments on or off"
 msgstr "Activez ou désactivez les commentaires"
 
-#: wp-admin/includes/dashboard.php:1715
+#: wp-admin/includes/dashboard.php:1716
 msgid "More Actions"
 msgstr "Plus d’actions"
 
@@ -5853,47 +5853,47 @@ msgstr "Votre identifiant WordPress.org :"
 msgid "If you have marked plugins as favorites on WordPress.org, you can browse them here."
 msgstr "Si vous avez mis des extensions en favoris sur WordPress.org, vous pouvez les voir ici."
 
-#: wp-admin/includes/dashboard.php:1711
+#: wp-admin/includes/dashboard.php:1712
 msgid "View your site"
 msgstr "Affichez votre site"
 
-#: wp-admin/includes/dashboard.php:1708
+#: wp-admin/includes/dashboard.php:1709
 msgid "Add an About page"
 msgstr "Ajoutez une page « À propos »"
 
-#: wp-admin/includes/dashboard.php:1707
+#: wp-admin/includes/dashboard.php:1708
 msgid "Write your first blog post"
 msgstr "Écrivez votre premier article"
 
-#: wp-admin/includes/dashboard.php:1705
+#: wp-admin/includes/dashboard.php:1706
 msgid "Add a blog post"
 msgstr "Écrivez un article"
 
-#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
+#: wp-admin/includes/dashboard.php:1702 wp-admin/includes/dashboard.php:1705
 msgid "Add additional pages"
 msgstr "Ajoutez de nouvelles pages"
 
-#: wp-admin/includes/dashboard.php:1700 wp-admin/includes/dashboard.php:1703
+#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
 msgid "Edit your front page"
 msgstr "Modifiez votre page d’accueil"
 
-#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1697
+#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1698
 msgid "Next Steps"
 msgstr "Étapes suivantes"
 
-#: wp-admin/includes/dashboard.php:1693
+#: wp-admin/includes/dashboard.php:1694
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "ou alors, <a href=\"%s\">changez complètement de thème</a>"
 
-#: wp-admin/includes/dashboard.php:1687
+#: wp-admin/includes/dashboard.php:1688
 msgid "Get Started"
 msgstr "Lancez-vous !"
 
-#: wp-admin/includes/dashboard.php:1683
+#: wp-admin/includes/dashboard.php:1684
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "Voici quelques liens pour vous aider à démarrer :"
 
-#: wp-admin/includes/dashboard.php:1682
+#: wp-admin/includes/dashboard.php:1683
 msgid "Welcome to WordPress!"
 msgstr "Bienvenue sur WordPress !"
 
@@ -6943,7 +6943,7 @@ msgstr "Aller sur l’accueil"
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "WordPress est créé par une équipe de personnes passionnées, réparties sur toute la planète."
 
-#: wp-admin/includes/dashboard.php:1688 wp-admin/includes/dashboard.php:1690
+#: wp-admin/includes/dashboard.php:1689 wp-admin/includes/dashboard.php:1691
 msgid "Customize Your Site"
 msgstr "Personnalisez votre site"
 
