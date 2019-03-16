@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-06 20:22:11+0000\n"
+"PO-Revision-Date: 2019-03-11 12:11:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +36,11 @@ msgstr "."
 msgid "number_format_decimal_point"
 msgstr ","
 
-#: wp-includes/ms-site.php:73
+#: wp-includes/functions.php:6882
+msgid "Update PHP"
+msgstr "Actualizar o PHP"
+
+#: wp-includes/ms-site.php:67
 msgid "Could not retrieve site data."
 msgstr "Não foi possível obter os dados do site."
 
@@ -70,65 +74,65 @@ msgid "Your comment is awaiting moderation. This is a preview, your comment will
 msgstr "O seu comentário aguarda moderação. Esta é uma pré-visualização, o seu comentário será visível depois de ter sido aprovado."
 
 #. translators: %s: database table name
-#: wp-includes/ms-site.php:1301
+#: wp-includes/ms-site.php:1311
 msgid "The %s table is not installed. Please run the network database upgrade."
 msgstr "A tabela %s não está instalada. Por favor execute a actualização da base de dados da rede."
 
-#: wp-includes/ms-site.php:788
+#: wp-includes/ms-site.php:798
 msgid "The site appears to be already uninitialized."
 msgstr "O site parece já estar não inicializado."
 
 #. translators: %d: site ID
-#: wp-includes/ms-site.php:670
+#: wp-includes/ms-site.php:680
 msgid "Site %d"
 msgstr "Site %d"
 
-#: wp-includes/ms-site.php:657
+#: wp-includes/ms-site.php:667
 msgid "The site appears to be already initialized."
 msgstr "O site parece já estar inicializado."
 
-#: wp-includes/ms-site.php:653 wp-includes/ms-site.php:784
+#: wp-includes/ms-site.php:663 wp-includes/ms-site.php:794
 msgid "Site with the ID does not exist."
 msgstr "Não existe nenhum site com este ID."
 
-#: wp-includes/ms-site.php:597
+#: wp-includes/ms-site.php:607
 msgid "Both registration and last updated dates must be valid dates."
 msgstr "As datas de registo e da última actualização têm de ser válidas."
 
-#: wp-includes/ms-site.php:586
+#: wp-includes/ms-site.php:596
 msgid "Both registration and last updated dates must be provided."
 msgstr "As datas de registo e da última actualização têm de ser fornecidas."
 
-#: wp-includes/ms-site.php:579
+#: wp-includes/ms-site.php:589
 msgid "Site network ID must be provided."
 msgstr "O ID de rede do site tem de ser fornecido."
 
-#: wp-includes/ms-site.php:574
+#: wp-includes/ms-site.php:584
 msgid "Site path must not be empty."
 msgstr "O caminho do site não pode estar vazio."
 
-#: wp-includes/ms-site.php:569
+#: wp-includes/ms-site.php:579
 msgid "Site domain must not be empty."
 msgstr "O domínio do site não pode estar vazio."
 
-#: wp-includes/ms-site.php:244
+#: wp-includes/ms-site.php:254
 msgid "Could not delete site from the database."
 msgstr "Não foi possível eliminar o site da base de dados."
 
-#: wp-includes/ms-site.php:155
+#: wp-includes/ms-site.php:165
 msgid "Could not update site in the database."
 msgstr "Não foi possível actualizar o site na base de dados."
 
-#: wp-includes/ms-site.php:141 wp-includes/ms-site.php:194
+#: wp-includes/ms-site.php:151 wp-includes/ms-site.php:204
 msgid "Site does not exist."
 msgstr "O site não existe."
 
-#: wp-includes/ms-site.php:136 wp-includes/ms-site.php:189
-#: wp-includes/ms-site.php:648 wp-includes/ms-site.php:779
+#: wp-includes/ms-site.php:146 wp-includes/ms-site.php:199
+#: wp-includes/ms-site.php:658 wp-includes/ms-site.php:789
 msgid "Site ID must not be empty."
 msgstr "O ID do site não pode estar vazio."
 
-#: wp-includes/ms-site.php:67
+#: wp-includes/ms-site.php:61
 msgid "Could not insert site into the database."
 msgstr "Não foi possível inserir o site na base de dados."
 
@@ -2695,6 +2699,7 @@ msgstr "Tamanho de letra personalizado"
 #. translators: accessibility text
 #: wp-includes/widgets/class-wp-widget-custom-html.php:310
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
+#: wp-includes/functions.php:6884
 #: wp-includes/class-wp-customize-manager.php:4270
 #: wp-includes/class-wp-customize-manager.php:5572
 #: wp-includes/class-wp-customize-manager.php:5593
@@ -6399,7 +6404,7 @@ msgstr "Tem de definir um termo de pesquisa para ordenar por relevância."
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1509
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:86
 msgid "The password for the post if it is password protected."
-msgstr "A senha para o conteúdo, se este for protegido por senha."
+msgstr "A senha para o conteúdo, caso esteja protegido por senha."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:303
 msgid "Human-readable labels for the taxonomy for various contexts."
@@ -7733,7 +7738,7 @@ msgstr "Publicado"
 #: wp-includes/post-template.php:1685
 msgctxt "post password form"
 msgid "Enter"
-msgstr "Iniciar sessão"
+msgstr "Aceder"
 
 #: wp-includes/pluggable.php:544
 msgid "<strong>ERROR</strong>: Invalid username, email address or incorrect password."
@@ -11020,7 +11025,7 @@ msgstr "a,ao,as,à,às,com,como,da,das,de,do,dos,e,em,eu,ela,ele,eles,esse,está
 
 #: wp-includes/post-template.php:1684
 msgid "This content is password protected. To view it please enter your password below:"
-msgstr "Este conteúdo está protegido com uma senha. Para o visualizar, por favor insira a sua senha abaixo:"
+msgstr "Este conteúdo está protegido. Para aceder, por favor insira a senha:"
 
 #: wp-includes/functions.php:1384
 msgid "ERROR: This is not a valid feed template."
@@ -12732,7 +12737,7 @@ msgstr "O seu servidor está a correr o PHP na versão %1$s mas o WordPress %2$s
 
 #: wp-includes/theme-compat/comments.php:24
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Este conteúdo está protegido por senha. Introduza a senha para ver os comentários."
+msgstr "Este conteúdo está protegido. Insira a senha para aceder aos comentários."
 
 #: wp-includes/theme-compat/sidebar.php:46
 msgid "You are currently browsing the archives for the %s category."
@@ -13009,7 +13014,7 @@ msgstr ""
 "%2$s"
 
 #: wp-includes/ms-functions.php:679 wp-includes/ms-functions.php:1307
-#: wp-includes/ms-site.php:614
+#: wp-includes/ms-site.php:624
 msgid "Sorry, that site already exists!"
 msgstr "Esse site já existe!"
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-05 00:56:07+0000\n"
+"PO-Revision-Date: 2019-03-11 06:24:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,14 @@ msgstr "number_format_thousands_sep"
 msgid "number_format_decimal_point"
 msgstr "number_format_decimal_point"
 
+#: wp-includes/functions.php:6882
+msgid "Update PHP"
+msgstr "PHP を更新"
+
+#: wp-includes/ms-site.php:67
+msgid "Could not retrieve site data."
+msgstr "サイトデータを取得できませんでした。"
+
 #: wp-includes/js/dist/block-library.js:2253
 msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "Crowdsignal (旧 Polldaddy) コンテンツを埋め込みます。"
@@ -65,65 +73,65 @@ msgid "Your comment is awaiting moderation. This is a preview, your comment will
 msgstr "あなたのコメントは管理者の承認待ちです。これはプレビューで、コメントは承認後に表示されます。"
 
 #. translators: %s: database table name
-#: wp-includes/ms-site.php:1297
+#: wp-includes/ms-site.php:1311
 msgid "The %s table is not installed. Please run the network database upgrade."
 msgstr "%s テーブルはインストールされていません。サイトネットワークのデータベースをアップグレードしてください。"
 
-#: wp-includes/ms-site.php:784
+#: wp-includes/ms-site.php:798
 msgid "The site appears to be already uninitialized."
 msgstr "サイトはすでに未初期化されているようです。"
 
 #. translators: %d: site ID
-#: wp-includes/ms-site.php:666
+#: wp-includes/ms-site.php:680
 msgid "Site %d"
 msgstr "サイト%d"
 
-#: wp-includes/ms-site.php:653
+#: wp-includes/ms-site.php:667
 msgid "The site appears to be already initialized."
 msgstr "サイトはすでに初期化されているようです。"
 
-#: wp-includes/ms-site.php:649 wp-includes/ms-site.php:780
+#: wp-includes/ms-site.php:663 wp-includes/ms-site.php:794
 msgid "Site with the ID does not exist."
 msgstr "この ID のサイトは存在しません。"
 
-#: wp-includes/ms-site.php:593
+#: wp-includes/ms-site.php:607
 msgid "Both registration and last updated dates must be valid dates."
 msgstr "登録日と最終更新日は有効な日付である必要があります。"
 
-#: wp-includes/ms-site.php:582
+#: wp-includes/ms-site.php:596
 msgid "Both registration and last updated dates must be provided."
 msgstr "登録日と最終更新日は入力必須項目です。"
 
-#: wp-includes/ms-site.php:575
+#: wp-includes/ms-site.php:589
 msgid "Site network ID must be provided."
 msgstr "サイトネットワーク ID は入力必須項目です。"
 
-#: wp-includes/ms-site.php:570
+#: wp-includes/ms-site.php:584
 msgid "Site path must not be empty."
 msgstr "サイトパスは空欄にできません。"
 
-#: wp-includes/ms-site.php:565
+#: wp-includes/ms-site.php:579
 msgid "Site domain must not be empty."
 msgstr "サイトドメインは空欄にできません。"
 
-#: wp-includes/ms-site.php:240
+#: wp-includes/ms-site.php:254
 msgid "Could not delete site from the database."
 msgstr "データベースからサイトを削除できませんでした。"
 
-#: wp-includes/ms-site.php:151
+#: wp-includes/ms-site.php:165
 msgid "Could not update site in the database."
 msgstr "データベースでサイトを更新できませんでした。"
 
-#: wp-includes/ms-site.php:137 wp-includes/ms-site.php:190
+#: wp-includes/ms-site.php:151 wp-includes/ms-site.php:204
 msgid "Site does not exist."
 msgstr "サイトが存在しません。"
 
-#: wp-includes/ms-site.php:132 wp-includes/ms-site.php:185
-#: wp-includes/ms-site.php:644 wp-includes/ms-site.php:775
+#: wp-includes/ms-site.php:146 wp-includes/ms-site.php:199
+#: wp-includes/ms-site.php:658 wp-includes/ms-site.php:789
 msgid "Site ID must not be empty."
 msgstr "サイト ID は空欄にできません。"
 
-#: wp-includes/ms-site.php:67
+#: wp-includes/ms-site.php:61
 msgid "Could not insert site into the database."
 msgstr "データベースにサイトを挿入できませんでした。"
 
@@ -2680,6 +2688,7 @@ msgstr "カスタムフォントサイズ"
 #. translators: accessibility text
 #: wp-includes/widgets/class-wp-widget-custom-html.php:310
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
+#: wp-includes/functions.php:6884
 #: wp-includes/class-wp-customize-manager.php:4270
 #: wp-includes/class-wp-customize-manager.php:5572
 #: wp-includes/class-wp-customize-manager.php:5593
@@ -2889,7 +2898,7 @@ msgstr "新規ブロック"
 
 #: wp-includes/post.php:264
 msgid "Add New Block"
-msgstr "ブロックを新規追加"
+msgstr "新規ブロックを追加"
 
 #: wp-includes/post.php:263
 msgctxt "Block"
@@ -12969,7 +12978,7 @@ msgstr ""
 "%2$s"
 
 #: wp-includes/ms-functions.php:679 wp-includes/ms-functions.php:1307
-#: wp-includes/ms-site.php:610
+#: wp-includes/ms-site.php:624
 msgid "Sorry, that site already exists!"
 msgstr "このサイト名はすでに使用されています !"
 

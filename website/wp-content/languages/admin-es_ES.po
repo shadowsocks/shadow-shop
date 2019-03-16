@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-06 08:49:30+0000\n"
+"PO-Revision-Date: 2019-03-11 17:19:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5055,16 +5055,6 @@ msgstr "La actualización de la traducción ha fallado."
 msgid "Translation updated successfully."
 msgstr "Traducción actualizada con éxito."
 
-#. translators: %s: Theme name
-#: wp-admin/includes/class-wp-automatic-updater.php:320
-msgid "Updating theme: %s"
-msgstr "Actualizando tema: %s"
-
-#. translators: %s: Plugin name
-#: wp-admin/includes/class-wp-automatic-updater.php:327
-msgid "Updating plugin: %s"
-msgstr "Actualizando plugin: %s"
-
 #: wp-admin/includes/update-core.php:1080
 msgid "There is not enough free disk space to complete the update."
 msgstr "No hay suficiente espacio en disco para completar la actualización."
@@ -5072,6 +5062,16 @@ msgstr "No hay suficiente espacio en disco para completar la actualización."
 #: wp-admin/includes/class-language-pack-upgrader.php:114
 msgid "The translations are up to date."
 msgstr "Las traducciones están al día."
+
+#. translators: %s: Plugin name
+#: wp-admin/includes/class-wp-automatic-updater.php:327
+msgid "Updating plugin: %s"
+msgstr "Actualizando el plugin: %s"
+
+#. translators: %s: Theme name
+#: wp-admin/includes/class-wp-automatic-updater.php:320
+msgid "Updating theme: %s"
+msgstr "Actualizando el tema: %s"
 
 #: wp-admin/options-discussion.php:179
 msgid "Comment must be manually approved"
@@ -7089,6 +7089,10 @@ msgstr "Puedes usar los controles siguientes para organizar tu escritorio de mod
 msgid "Navigation"
 msgstr "Navegación"
 
+#: wp-admin/index.php:49
+msgid "The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
+msgstr "El menú de navegación de la izquierda proporciona enlaces a todas las pantallas de administración de WordPress, con elementos de submenú que aparecen al pasar el ratón sobre ellos. Puedes minimizar este menú para que sea una barra estrecha de iconos haciendo clic en la flecha del menú Cerrar en la parte inferior."
+
 #: wp-admin/options-reading.php:24 wp-admin/edit-tags.php:261
 #: wp-admin/link-manager.php:53 wp-admin/options-writing.php:22
 #: wp-admin/includes/ms.php:1148 wp-admin/includes/class-wp-screen.php:801
@@ -7109,10 +7113,6 @@ msgstr "Navegación"
 #: wp-admin/export.php:49 wp-admin/custom-header.php:97
 msgid "Overview"
 msgstr "Vista previa"
-
-#: wp-admin/index.php:49
-msgid "The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
-msgstr "El menú de navegación de la izquierda proporciona enlaces a todas las pantallas de administración de WordPress, con elementos de submenú que aparecen al pasar el ratón sobre ellos. Puedes minimizar este menú para que sea una barra estrecha de iconos haciendo clic en la flecha del menú Cerrar en la parte inferior."
 
 #: wp-admin/index.php:62
 msgid "<strong>Drag and Drop</strong> &mdash; To rearrange the boxes, drag and drop by clicking on the title bar of the selected box and releasing when you see a gray dotted-line rectangle appear in the location you want to place the box."
@@ -8637,7 +8637,7 @@ msgstr "Guardar menú"
 #. 3: total number of themes being updated
 #: wp-admin/includes/class-bulk-theme-upgrader-skin.php:24
 msgid "Updating Theme %1$s (%2$d/%3$d)"
-msgstr "Actualizando tema %1$s (%2$d/%3$d)"
+msgstr "Actualizando el tema %1$s (%2$d/%3$d)"
 
 #: wp-admin/includes/schema.php:981
 msgid "You must provide a domain name."
@@ -8672,16 +8672,16 @@ msgstr "Aviso:"
 msgid "Get Shortlink"
 msgstr "Obtener enlace corto"
 
-#. translators: 1: name of plugin being updated, 2: number of updating plugin,
-#. 3: total number of plugins being updated
-#: wp-admin/includes/class-bulk-plugin-upgrader-skin.php:24
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Actualizando plugin %1$s (%2$d/%3$d)"
-
 #. translators: %s: Title of an update
 #: wp-admin/includes/class-bulk-upgrader-skin.php:45
 msgid "The update of %s failed."
 msgstr "La actualización de %s ha fallado."
+
+#. translators: 1: name of plugin being updated, 2: number of updating plugin,
+#. 3: total number of plugins being updated
+#: wp-admin/includes/class-bulk-plugin-upgrader-skin.php:24
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Actualizando el plugin %1$s (%2$d/%3$d)"
 
 #: wp-admin/includes/upgrade.php:89
 msgid "User already exists. Password inherited."
@@ -10060,15 +10060,15 @@ msgstr "La estructura de enlaces permanentes se ha actualizado. ¡Quita el acces
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be put in the trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
 msgstr "Cuando un comentario contiene alguna de las siguientes palabras en su contenido, nombre, URL o IP, se mandará a la papelera. Pon solo una palabra o IP por línea. También afectará las palabras contenidas dentro de otras, como «press» que está dentro de «WordPress»."
 
-#: wp-admin/options-discussion.php:189
-msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Cuando un comentario contiene alguna de estas palabras en su contenido, nombre, URL, correo electrónico o IP se mantendrá en la <a href=\"edit-comments.php?comment_status=moderated\">cola de moderación</a>. Pon una palabra o dirección IP por línea. También afectará a las palabras contenidas dentro de otras, como «press», que está dentro de «WordPress»"
-
 #. translators: %s: site link
 #. translators: first post content, %s: site link
 #: wp-admin/includes/schema.php:1255 wp-admin/includes/upgrade.php:197
 msgid "Welcome to %s. This is your first post. Edit or delete it, then start writing!"
 msgstr "Bienvenido a %s. Esta es tu primera entrada. Edítala o bórrala, ¡y comienza a escribir!"
+
+#: wp-admin/options-discussion.php:189
+msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Cuando un comentario contiene alguna de estas palabras en su contenido, nombre, URL, correo electrónico o IP se mantendrá en la <a href=\"edit-comments.php?comment_status=moderated\">cola de moderación</a>. Pon una palabra o dirección IP por línea. También afectará a las palabras contenidas dentro de otras, como «press», que está dentro de «WordPress»"
 
 #: wp-admin/includes/user.php:172
 msgid "<strong>ERROR</strong>: Passwords may not contain the character \"\\\"."

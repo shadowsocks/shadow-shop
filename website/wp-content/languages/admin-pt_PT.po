@@ -200,7 +200,7 @@ msgstr "Não é possível instalar porque o <a href=\"%1$s\">WordPress %2$s</a> 
 msgid "Learn more about updating PHP"
 msgstr "Saiba mais sobre como actualizar o PHP"
 
-#: wp-admin/includes/dashboard.php:1709
+#: wp-admin/includes/dashboard.php:1710
 msgid "Set up your homepage"
 msgstr "Configure sua página inicial"
 
@@ -3602,7 +3602,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Revision_Management\">Gestão de r
 msgid "You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. Please refer to the Codex to <a href=\"https://codex.wordpress.org/Embeds\">learn more about embeds</a>."
 msgstr "Pode também incorporar multimédia de muitos outros sites populares, incluindo Twitter, YouTube, Flickr e outros, bastando simplesmente colar o respectivo URL numa linha isolada do seu artigo ou página. Por favor consulte o Codex <a href=\"https://codex.wordpress.org/Embeds\">para ler mais sobre incorporar multimédia</a>."
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "https://codex.wordpress.org/First_Steps_With_WordPress"
 msgstr "https://codex.wordpress.org/First_Steps_With_WordPress"
 
@@ -4567,7 +4567,7 @@ msgstr "Tipo"
 msgid "https://make.wordpress.org/"
 msgstr "https://make.wordpress.org/"
 
-#: wp-admin/includes/dashboard.php:1727
+#: wp-admin/includes/dashboard.php:1728
 msgid "Manage widgets"
 msgstr "Gerir widgets"
 
@@ -4579,7 +4579,7 @@ msgstr "Editar estado"
 msgid "Edit visibility"
 msgstr "Editar visibilidade"
 
-#: wp-admin/includes/dashboard.php:1729
+#: wp-admin/includes/dashboard.php:1730
 msgid "Manage menus"
 msgstr "Gerir menus"
 
@@ -5673,7 +5673,7 @@ msgstr "A rotação de imagens não é suportada pelo seu serviço de alojamento
 msgid "If you are looking to use the link manager, please install the <a href=\"%s\">Link Manager</a> plugin."
 msgstr "Se pretende usar o gestor de ligações, por favor instale o plugin <a href=\"%s\">Link Manager</a>."
 
-#: wp-admin/includes/dashboard.php:1722
+#: wp-admin/includes/dashboard.php:1723
 msgid "Manage <a href=\"%1$s\">widgets</a> or <a href=\"%2$s\">menus</a>"
 msgstr "Gerir <a href=\"%1$s\">widgets</a> ou <a href=\"%2$s\">menus</a>"
 
@@ -5749,15 +5749,15 @@ msgstr "Pode também escolher um cor de fundo. Se souber o código hexadecimal d
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
 msgstr "Pode decidir se o seu site vai ser, ou não, indexado por <em>robots</em>, serviços de ping e <em>spiders</em>. Se pretende que esses serviços ignorem o seu site, escolha a opção &#8220;Desencorajar os motores de pesquisa de indexarem este site&#8220; e clique em Guardar alterações. Note que a sua privacidade não é total, o site continua visível na internet."
 
-#: wp-admin/includes/dashboard.php:1735
+#: wp-admin/includes/dashboard.php:1736
 msgid "Turn comments on or off"
 msgstr "Ligar ou desligar comentários"
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "Learn more about getting started"
 msgstr "Saiba mais sobre como começar"
 
-#: wp-admin/includes/dashboard.php:1715
+#: wp-admin/includes/dashboard.php:1716
 msgid "More Actions"
 msgstr "Mais acções"
 
@@ -5798,47 +5798,47 @@ msgstr "$image deve ser um objecto WP_Image_Editor"
 msgid "Search Engines Discouraged"
 msgstr "Motores de pesquisa desencorajados"
 
-#: wp-admin/includes/dashboard.php:1682
+#: wp-admin/includes/dashboard.php:1683
 msgid "Welcome to WordPress!"
 msgstr "Bem-vindo ao WordPress!"
 
-#: wp-admin/includes/dashboard.php:1683
+#: wp-admin/includes/dashboard.php:1684
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "Juntámos algumas ligações para ajudar a começar:"
 
-#: wp-admin/includes/dashboard.php:1687
+#: wp-admin/includes/dashboard.php:1688
 msgid "Get Started"
 msgstr "Comece aqui"
 
-#: wp-admin/includes/dashboard.php:1693
+#: wp-admin/includes/dashboard.php:1694
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "ou então <a href=\"%s\">mude completamente de tema</a>"
 
-#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1697
+#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1698
 msgid "Next Steps"
 msgstr "Passos seguintes"
 
-#: wp-admin/includes/dashboard.php:1700 wp-admin/includes/dashboard.php:1703
+#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
 msgid "Edit your front page"
 msgstr "Edite a sua página inicial"
 
-#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
+#: wp-admin/includes/dashboard.php:1702 wp-admin/includes/dashboard.php:1705
 msgid "Add additional pages"
 msgstr "Adicione mais páginas"
 
-#: wp-admin/includes/dashboard.php:1705
+#: wp-admin/includes/dashboard.php:1706
 msgid "Add a blog post"
 msgstr "Publique um artigo"
 
-#: wp-admin/includes/dashboard.php:1707
+#: wp-admin/includes/dashboard.php:1708
 msgid "Write your first blog post"
 msgstr "Escreva o seu primeiro artigo"
 
-#: wp-admin/includes/dashboard.php:1708
+#: wp-admin/includes/dashboard.php:1709
 msgid "Add an About page"
 msgstr "Adicione uma página sobre si"
 
-#: wp-admin/includes/dashboard.php:1711
+#: wp-admin/includes/dashboard.php:1712
 msgid "View your site"
 msgstr "Visite o seu site"
 
@@ -6943,7 +6943,7 @@ msgstr "Voltar ao painel &rarr; Actualizações"
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "O WordPress é desenvolvido por uma equipa de entusiastas."
 
-#: wp-admin/includes/dashboard.php:1688 wp-admin/includes/dashboard.php:1690
+#: wp-admin/includes/dashboard.php:1689 wp-admin/includes/dashboard.php:1691
 msgid "Customize Your Site"
 msgstr "Personalize o seu site"
 

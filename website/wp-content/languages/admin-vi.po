@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-21 02:09:00+0000\n"
+"PO-Revision-Date: 2019-03-11 03:35:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -198,7 +198,7 @@ msgstr "Bạn không thể cài đặt bởi vì <a href=\"%1$s\">WordPress %2$s
 msgid "Learn more about updating PHP"
 msgstr "Tìm hiểu cách cập nhật PHP"
 
-#: wp-admin/includes/dashboard.php:1709
+#: wp-admin/includes/dashboard.php:1710
 msgid "Set up your homepage"
 msgstr "Cài đặt trang chủ"
 
@@ -280,14 +280,6 @@ msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 msgid "<a href=\"%s\">Please update WordPress</a>."
 msgstr "<a href=\"%s\">Vui lòng nâng cấp WordPress</a>."
 
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:661
-msgid "This plugin doesn&#8217;t work with your version of WordPress. "
-msgstr "Plugin này không làm việc với phiên bản WordPress của bạn."
-
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:670
-msgid "This plugin doesn&#8217;t work with your version of PHP. "
-msgstr "Plugin này không làm việc với phiên bản PHP của bạn."
-
 #. translators: %s: "Update PHP" page URL
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:655
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:674
@@ -299,10 +291,6 @@ msgstr "<a href=\"%s\">Tìm hiểu cách nâng cấp PHP</a>."
 msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
 msgstr "<a href=\"%1$s\">Hãy cập nhật WordPress</a>, rồi sau đó <a href=\"%2$s\">tìm hiểu cách nâng cấp PHP</a>."
 
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:637
-msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP. "
-msgstr "Plugin này không làm việc với phiên bản WordPress và PHP của bạn."
-
 #: wp-admin/includes/misc.php:1674
 msgid "Copy this section to clipboard"
 msgstr "Sao chép phần này vào bộ nhớ tạm"
@@ -310,6 +298,18 @@ msgstr "Sao chép phần này vào bộ nhớ tạm"
 #: wp-admin/includes/schema.php:1242
 msgid "My Network"
 msgstr "Network của bạn"
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:637
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Plugin này không làm việc với phiên bản WordPress và PHP hiện tại của bạn."
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:670
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "Plugin này không làm việc với phiên bản PHP hiện tại của bạn."
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:661
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "Plugin này không làm việc với phiên bản WordPress hiện tại của bạn."
 
 #. translators: %s: default category
 #: wp-admin/edit-tags.php:588
@@ -3577,7 +3577,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Revision_Management\">Hướng d�
 msgid "You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. Please refer to the Codex to <a href=\"https://codex.wordpress.org/Embeds\">learn more about embeds</a>."
 msgstr "Bạn cũng có thể nhúng nội dung đa phương tiện từ những trang mạng phổ thông như Twitter, YouTube, Flickr, v.v. bằng cách dán địa chỉ liên kết tới nội dung đa phương tiện trong một dòng riêng vào bài viết / trang tĩnh của bạn. Hãy tham khảo <a href=\"https://codex.wordpress.org/Embeds\">hướng dẫn nhúng nội dung</a>."
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "https://codex.wordpress.org/First_Steps_With_WordPress"
 msgstr "https://codex.wordpress.org/First_Steps_With_WordPress"
 
@@ -4538,7 +4538,7 @@ msgstr "Cảm ơn bạn đã khởi tạo với <a href=\"%s\">WordPress</a>."
 msgid "https://make.wordpress.org/"
 msgstr "https://make.wordpress.org/"
 
-#: wp-admin/includes/dashboard.php:1727
+#: wp-admin/includes/dashboard.php:1728
 msgid "Manage widgets"
 msgstr "Quản lý widget"
 
@@ -4558,7 +4558,7 @@ msgstr "Chỉnh sửa ngày tháng và thời gian"
 msgid "Browse revisions"
 msgstr "Duyệt lịch sử phiên bản"
 
-#: wp-admin/includes/dashboard.php:1729
+#: wp-admin/includes/dashboard.php:1730
 msgid "Manage menus"
 msgstr "Quản lý Menu"
 
@@ -5627,7 +5627,7 @@ msgstr "Thao tác xoay ảnh không được máy chủ của bạn hỗ trợ."
 msgid "If you are looking to use the link manager, please install the <a href=\"%s\">Link Manager</a> plugin."
 msgstr "Nếu bạn đang muốn sử dụng trình quản lý liên kết, hãy cài đặt gói mở rộng <a href=\"%s\">Quản Lý Liên Kết</a>."
 
-#: wp-admin/includes/dashboard.php:1722
+#: wp-admin/includes/dashboard.php:1723
 msgid "Manage <a href=\"%1$s\">widgets</a> or <a href=\"%2$s\">menus</a>"
 msgstr "Quản lý <a href=\"%1$s\">widget</a> hoặc <a href=\"%2$s\">menu</a>"
 
@@ -5703,15 +5703,15 @@ msgstr "Trong phần Văn Bản Đầu Trang tại trang này, bạn có thể l
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
 msgstr "Bạn có thể cho phép các công cụ tìm kiếm nội dung đánh chỉ mục trang mạng của bạn hoặc không. Nếu bạn muốn các công cụ tìm kiếm bỏ qua trang mạng của bạn, đánh dấu vào hộp kiểm bên cạnh &#8220;Ngăn chặn các công cụ tìm kiếm đánh chỉ mục trang mạng này&#8221; rồi bấm vào nút Lưu Lại Thay Đổi ở phía dưới màn hình này. Bạn hãy nhớ sự riêng tư này không tuyệt đối; trang của bạn vẫn có thể được xem trên mạng."
 
-#: wp-admin/includes/dashboard.php:1735
+#: wp-admin/includes/dashboard.php:1736
 msgid "Turn comments on or off"
 msgstr "Cho phép gửi bình luận hoặc không"
 
-#: wp-admin/includes/dashboard.php:1715
+#: wp-admin/includes/dashboard.php:1716
 msgid "More Actions"
 msgstr "Thao tác khác"
 
-#: wp-admin/includes/dashboard.php:1737
+#: wp-admin/includes/dashboard.php:1738
 msgid "Learn more about getting started"
 msgstr "Đọc thêm về làm quen với WordPress"
 
@@ -5752,19 +5752,19 @@ msgstr "$image phải là một đối tượng của lớp WP_Image_Editor"
 msgid "Search Engines Discouraged"
 msgstr "Công Cụ Tìm Kiếm Bị Ngăn Chặn"
 
-#: wp-admin/includes/dashboard.php:1687
+#: wp-admin/includes/dashboard.php:1688
 msgid "Get Started"
 msgstr "Hãy Bắt Đầu"
 
-#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1697
+#: wp-admin/includes/user.php:1082 wp-admin/includes/dashboard.php:1698
 msgid "Next Steps"
 msgstr "Các Bước Tiếp Theo"
 
-#: wp-admin/includes/dashboard.php:1700 wp-admin/includes/dashboard.php:1703
+#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
 msgid "Edit your front page"
 msgstr "Biên tập trang chủ của bạn"
 
-#: wp-admin/includes/dashboard.php:1705
+#: wp-admin/includes/dashboard.php:1706
 msgid "Add a blog post"
 msgstr "Thêm một bài viết"
 
@@ -5823,31 +5823,31 @@ msgstr "Bạn cũng có thể xem danh sách Plugin yêu thích của người k
 msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
 msgstr "Nếu bạn biết mình đang tìm kiếm gì, thử mục tìm kiếm là tốt nhất. Giao diện tìm kiếm có tuỳ chọn để tìm trong Thư mục Plugin WordPress thông qua Từ khoá, Tác giả hay Tag. Bạn còn có thể xem các Tag phổ biến. Tag có kích thước chữ lớn tức là có nhiều Plugin được phát triển cùng với chức năng đó."
 
-#: wp-admin/includes/dashboard.php:1693
+#: wp-admin/includes/dashboard.php:1694
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "hoặc, <a href=\"%s\">tìm một giao diện khác</a>"
 
-#: wp-admin/includes/dashboard.php:1683
+#: wp-admin/includes/dashboard.php:1684
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "Hãy bắt đầu bằng các liên kết dưới đây:"
 
-#: wp-admin/includes/dashboard.php:1711
+#: wp-admin/includes/dashboard.php:1712
 msgid "View your site"
 msgstr "Xem website"
 
-#: wp-admin/includes/dashboard.php:1682
+#: wp-admin/includes/dashboard.php:1683
 msgid "Welcome to WordPress!"
 msgstr "Xin chào! Bạn đã đăng nhập vào khu vực Quản trị của WordPress!"
 
-#: wp-admin/includes/dashboard.php:1708
+#: wp-admin/includes/dashboard.php:1709
 msgid "Add an About page"
 msgstr "Thêm trang mới"
 
-#: wp-admin/includes/dashboard.php:1701 wp-admin/includes/dashboard.php:1704
+#: wp-admin/includes/dashboard.php:1702 wp-admin/includes/dashboard.php:1705
 msgid "Add additional pages"
 msgstr "Thêm trang mới"
 
-#: wp-admin/includes/dashboard.php:1707
+#: wp-admin/includes/dashboard.php:1708
 msgid "Write your first blog post"
 msgstr "Viết bài đầu tiên"
 
@@ -6894,7 +6894,7 @@ msgstr "Đến Bảng tin &rarr; Trang chủ"
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "WordPress được tạo bởi một nhóm toàn cầu của những cá nhân có cùng đam mê."
 
-#: wp-admin/includes/dashboard.php:1688 wp-admin/includes/dashboard.php:1690
+#: wp-admin/includes/dashboard.php:1689 wp-admin/includes/dashboard.php:1691
 msgid "Customize Your Site"
 msgstr "Tuỳ chỉnh website của bạn"
 
