@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-07 18:56:33+0000\n"
+"PO-Revision-Date: 2019-03-12 16:36:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -203,12 +203,6 @@ msgstr "Vielen Dank für die Erstellung eines Kontos auf %1$s. Dein Benutzername
 msgid "You’ve received the following order from %s:"
 msgstr "Du hast die folgende Bestellung von %s erhalten:"
 
-#. translators: %s: Site title
-#: templates/emails/plain/customer-completed-order.php:27
-#: templates/emails/customer-completed-order.php:30
-msgid "Your %s order has been marked complete on our side."
-msgstr "Deine %s-Bestellung wurde auf unserer Seite als abgeschlossen gekennzeichnet."
-
 #: templates/emails/plain/customer-completed-order.php:52
 #: templates/emails/customer-completed-order.php:54
 msgid "Thanks for shopping with us."
@@ -240,6 +234,12 @@ msgstr "Hallo %s,"
 #: templates/emails/admin-failed-order.php:52
 msgid "Hopefully they’ll be back. Read more about <a href=\"https://docs.woocommerce.com/document/managing-orders/\">troubleshooting failed payments</a>."
 msgstr "Hoffentlich kommen sie wieder. Erfahre mehr über die <a href=\"https://docs.woocommerce.com/document/managing-orders/\">Problembehandlung bei fehlgeschlagenen Zahlungen</a>."
+
+#. translators: %s: Site title
+#: templates/emails/plain/customer-completed-order.php:27
+#: templates/emails/customer-completed-order.php:30
+msgid "Your %s order has been marked complete on our side."
+msgstr "Deine Bestellung bei %s wurde fertiggestellt."
 
 #: templates/emails/customer-invoice.php:88
 #: templates/emails/plain/customer-invoice.php:68
