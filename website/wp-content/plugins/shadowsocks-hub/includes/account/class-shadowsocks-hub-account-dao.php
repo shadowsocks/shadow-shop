@@ -1,5 +1,5 @@
 <?php
-class Shadowsocks_Hub_Account
+class Shadowsocks_Hub_Account_Dao
 {
 
     static public function get_accounts_by_user_id($user_id)
