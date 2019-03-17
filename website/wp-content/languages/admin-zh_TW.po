@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-07 19:21:17+0000\n"
+"PO-Revision-Date: 2019-03-15 07:48:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,19 +73,19 @@ msgstr "WordPress 已偵測到這個網站執行於過舊版本的 PHP 環境。
 
 #: wp-admin/about.php:85
 msgid "When installing new plugins, WordPress&#8217;s Site Health features will check whether a plugin requires a version of PHP incompatible with your site. If so, WordPress will prevent you from installing that plugin."
-msgstr "安裝新外掛後，WordPress 的 [網站健康度] 功能會檢查外掛需要的 PHP 版本是否與網站不相容。如果外掛需要的 PHP 版本會與網站不相容，WordPress 便會停止外掛的安裝。"
+msgstr "安裝新外掛後，WordPress 的 [網站狀態] 功能會檢查外掛需要的 PHP 版本是否與網站不相容。如果外掛需要的 PHP 版本會與網站不相容，WordPress 便會停止外掛的安裝。"
 
 #: wp-admin/about.php:83
 msgid "With security and speed in mind, this release introduces WordPress&#8217;s first <a href=\"%s\">Site Health</a> features. WordPress will start showing notices to administrators of sites that run long-outdated versions of PHP, which is the programming language that powers WordPress."
-msgstr "基於安全性與速度的考量，這個版本引進 WordPress 首個 [<a href=\"%s\" target=\"_blank\">網站健康度</a>] 功能。從這個版本開始，WordPress 會開始向網站執行於過舊版本的 PHP 環境的網站管理員顯示通知（PHP 是為 WordPress 提供執行環境的程式語言）。"
-
-#: wp-admin/about.php:79
-msgid "Site Health"
-msgstr "網站健康度"
+msgstr "基於安全性與速度的考量，這個版本引進 WordPress 首個 [<a href=\"%s\" target=\"_blank\">網站狀態</a>] 功能。從這個版本開始，WordPress 會開始向網站執行於過舊版本的 PHP 環境的網站管理員顯示通知 (PHP 是為 WordPress 提供執行環境的程式語言)。"
 
 #: wp-admin/about.php:73
 msgid "You&#8217;ve successfully upgraded to WordPress 5.1! Following WordPress 5.0&#8212;a major release which introduced the new block editor&#8212;5.1 focuses on polish, in particular by improving overall performance of the editor. In addition, this release paves the way for a better, faster, and more secure WordPress with some essential tools for site administrators and developers."
 msgstr "這個網站已成功升級至 WordPress 5.1。延續引進新式區塊編輯器的主要版本 WordPress 5.0，5.1 則致力於細部修整，尤其著重於為編輯器提高整體效能。此外，這個版本為網站管理員及開發者提供了必要工具，為建立更好、更快、更安全的 WordPress 提供了更好的條件。"
+
+#: wp-admin/about.php:79
+msgid "Site Health"
+msgstr "網站狀態"
 
 #: wp-admin/about.php:66
 msgid "A Little Better Every Day"
@@ -222,10 +222,6 @@ msgstr "WordPress 已偵測到這個網站執行於不安全的 PHP 版本執行
 msgid "PHP Update Required"
 msgstr "PHP 執行環境必須更新"
 
-#: wp-admin/includes/class-language-pack-upgrader.php:122
-msgid "Could not remove the old translation."
-msgstr "無法移除舊版語言套件掛。"
-
 #: wp-admin/includes/class-language-pack-upgrader.php:121
 msgid "Removing the old version of the translation&#8230;"
 msgstr "正在移除舊版語言套件外掛&#8230;"
@@ -262,6 +258,10 @@ msgstr "<strong>錯誤:</strong> 這個外掛<strong>需要較新版本的 PHP �
 msgid "<a href=\"%s\" target=\"_parent\">Click here to update WordPress</a>."
 msgstr "<a href=\"%s\" target=\"_parent\">點擊這裡以更新 WordPress</a>。"
 
+#: wp-admin/includes/class-language-pack-upgrader.php:122
+msgid "Could not remove the old translation."
+msgstr "無法移除舊版語言套件。"
+
 #: wp-admin/includes/misc.php:1674
 msgid "Copy this section to clipboard"
 msgstr "複製這個區段至剪貼簿"
@@ -269,6 +269,10 @@ msgstr "複製這個區段至剪貼簿"
 #: wp-admin/includes/schema.php:1242
 msgid "My Network"
 msgstr "我的多站網路"
+
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:670
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "這個外掛無法執行於目前版本的 PHP 執行環境。"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:661
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
@@ -286,6 +290,10 @@ msgstr "<a href=\"%s\" target=\"_blank\">進一步瞭解更新 PHP 執行環境<
 msgid "<a href=\"%s\">Please update WordPress</a>."
 msgstr "<a href=\"%s\">請更新 WordPress</a>。"
 
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:637
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "這個外掛無法執行於目前版本的 WordPress 及 PHP 執行環境。"
+
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:532
 #: wp-admin/includes/plugin-install.php:823
 msgctxt "plugin"
@@ -297,14 +305,6 @@ msgstr "無法安裝"
 #: wp-admin/update-core.php:75 wp-admin/upgrade.php:85 wp-admin/about.php:58
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
-
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:670
-msgid "This plugin doesn&#8217;t work with your version of PHP."
-msgstr "這個外掛無法執行於目前版本的 PHP。"
-
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:637
-msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
-msgstr "這個外掛無法執行於目前版本的 WordPress 及 PHP。"
 
 #. translators: 1: "Update WordPress" screen URL, 2: "Update PHP" page URL
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:641
@@ -394,6 +394,10 @@ msgstr "採用無障礙技術的使用者請注意，如果使用區塊編輯器
 msgid "The Classic Editor plugin restores the previous WordPress editor and the Edit Post screen. It lets you keep using plugins that extend it, add old-style meta boxes, or otherwise depend on the previous editor. To install, visit your plugins page and click the &#8220;Install Now&#8221; button next to &#8220;Classic Editor&#8221;. After the plugin finishes installing, click &#8220;Activate&#8221;. That’s it!"
 msgstr "傳統編輯器外掛能還原舊版 WordPress 編輯器及編輯文章畫面，它還能讓可以擴充編輯文章畫面、新增舊式中繼資料區塊或其他必須相依於舊式編輯器的外掛繼續使用。如需安裝傳統編輯器，請前往安裝外掛頁面，點擊 Classic Editor 旁的 [立即安裝] 按鈕；安裝完畢後，請點擊 [啟用] 即可完成。"
 
+#: wp-admin/about.php:168
+msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
+msgstr "偏好使用熟悉的傳統編輯器？沒問題，WordPress 傳統編輯器 (Classic Editor) 外掛的技術支援會持續至 2021 年。"
+
 #: wp-admin/about.php:164
 msgid "Keep it Classic"
 msgstr "繼續使用傳統編輯器"
@@ -401,10 +405,6 @@ msgstr "繼續使用傳統編輯器"
 #: wp-admin/about.php:151
 msgid "Learn how to get started"
 msgstr "進一步瞭解如何開始使用區塊編輯器"
-
-#: wp-admin/about.php:168
-msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
-msgstr "偏好使用熟悉的傳統編輯器？沒問題，WordPress 傳統編輯器（Classic Editor）外掛的技術支援會持續至 2021 年。"
 
 #: wp-admin/about.php:106
 msgid "Build your first post"
@@ -683,7 +683,7 @@ msgstr "監管行業揭露需求"
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1959
 msgid "If your web site provides a service which includes automated decision making - for example, allowing customers to apply for credit, or aggregating their data into an advertising profile - you must note that this is taking place, and include information about how that information is used, what decisions are made with that aggregated data, and what rights users have over decisions made without human intervention."
-msgstr "如果這個網站提供的服務包含自動化決策（例如能讓客戶申請信用貸款或將使用者資料進行廣告資料歸戶），站方必須說明網站正在執行這些工作，並說明站方如何使用這些資訊、使用這些歸戶資訊做出哪些決策，以及使用者能在沒有人為干預的情況下做出決策的權利。"
+msgstr "如果這個網站提供的服務包含自動化決策 (例如能讓客戶申請信用貸款或將使用者資料進行廣告資料歸戶)，站方必須說明網站正在執行這些工作，並說明站方如何使用這些資訊、使用這些歸戶資訊做出哪些決策，以及使用者能在沒有人為干預的情況下做出決策的權利。"
 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1955
@@ -693,7 +693,7 @@ msgstr "這個網站對使用者個人資料進行了哪些自動化決策或分
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1951
 msgid "If your web site receives data about users from third parties, including advertisers, this information must be included within the section of your privacy policy dealing with third party data."
-msgstr "如果這個網站會從第三方（包含廣告客戶）處收到使用者相關資料，在如何處理第三方資訊的隱私權政策章節中必須說明相關資訊。"
+msgstr "如果這個網站會從第三方 (包含廣告客戶) 處收到使用者相關資料，在如何處理第三方資訊的隱私權政策章節中必須說明相關資訊。"
 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1947
@@ -773,7 +773,7 @@ msgstr "使用者對個人資料擁有哪些權利"
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1888
 msgid "For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information."
-msgstr "針對在這個網站上註冊的使用者，這個網站還會儲存他們在使用者 [個人資料] 頁面中提供的個人資訊。所有使用者都可以隨時查看、編輯或刪除自己的個人資訊（無法變更的使用者名稱除外）。請注意，網站管理員也可以查看及編輯這些個人資訊。"
+msgstr "針對在這個網站上註冊的使用者，這個網站還會儲存他們在使用者 [個人資料] 頁面中提供的個人資訊。所有使用者都可以隨時查看、編輯或刪除自己的個人資訊 (無法變更的使用者名稱除外)。請注意，網站管理員也可以查看及編輯這些個人資訊。"
 
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1886
@@ -818,7 +818,13 @@ msgstr "使用者資料分析"
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1855
 msgid "These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website."
-msgstr "這些第三方網站可能會以下列方式收集與使用者相關的資料：Cookie、嵌入第三方追蹤程式碼、監視使用者與嵌入內容的互動（無論使用者是否有網站帳號或是否登入網站。"
+msgstr ""
+"這些第三方網站可能會以下列方式收集與使用者相關的資料。<br/>\n"
+"<ul>\n"
+"<li>Cookie</li>\n"
+"<li>嵌入第三方追蹤程式碼</li>\n"
+"<li>監視使用者與嵌入內容的互動 (無論使用者是否有網站帳號或是否登入網站)</li>\n"
+"</ul>"
 
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1853
@@ -863,7 +869,7 @@ msgstr "Cookie"
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1812
 msgid "An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment."
-msgstr "這個網站會根據使用者的電子郵件地址建立匿名字串（亦稱為<strong>雜湊值</strong>），並提供給 Gravatar 個人頭像服務以查詢這位使用者是否為這項服務的使用者。如需瞭解 Gravatar 個人頭像服務的隱私權政策，請造訪 <a title=\"Automattic 的隱私權政策\" href=\"https://automattic.com/privacy/\" target=\"_blank\">https://automattic.com/privacy/</a>。網站管理員核准使用者發佈的留言後，使用者的個人資料圖片便會在留言內容中公開顯示。"
+msgstr "這個網站會根據使用者的電子郵件地址建立匿名字串  (亦稱為<strong>雜湊值</strong>)，並提供給 Gravatar 個人頭像服務以查詢這位使用者是否為這項服務的使用者。如需瞭解 Gravatar 個人頭像服務的隱私權政策，請造訪 <a title=\"Automattic 的隱私權政策\" href=\"https://automattic.com/privacy/\" target=\"_blank\">https://automattic.com/privacy/</a>。網站管理員核准使用者發佈的留言後，使用者的個人資料圖片便會在留言內容中公開顯示。"
 
 #. translators: default privacy policy text.
 #: wp-admin/includes/misc.php:1810
@@ -1365,6 +1371,16 @@ msgid "Eraser array at index %d does not include a friendly name."
 msgstr "清除程式在索引 %d 中的陣列不包含易記名稱。"
 
 #. translators: 1: eraser friendly name, 2: array index
+#: wp-admin/includes/ajax-actions.php:4743
+msgid "Did not receive array from %1$s eraser (index %2$d)."
+msgstr "無法從 %1$s 清除程式收到陣列 (索引 %2$d)。"
+
+#. translators: 1: eraser friendly name, 2: array index
+#: wp-admin/includes/ajax-actions.php:4754
+msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
+msgstr "清除程式 %1$s (索引 %2$d) 必須完成回應陣列中的 items_removed 索引鍵。"
+
+#. translators: 1: eraser friendly name, 2: array index
 #: wp-admin/includes/ajax-actions.php:4765
 msgid "Expected items_retained key in response array from %1$s eraser (index %2$d)."
 msgstr "清除程式 %1$s (索引 %2$d) 必須完成回應陣列中的 items_retained 索引鍵。"
@@ -1383,16 +1399,6 @@ msgstr "清除程式 %1$s (索引 %2$d) 必須完成回應陣列中的訊息索�
 #: wp-admin/includes/ajax-actions.php:4798
 msgid "Expected done flag in response array from %1$s eraser (index %2$d)."
 msgstr "清除程式 %1$s (索引 %2$d) 必須完成回應陣列中的旗標。"
-
-#. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4743
-msgid "Did not receive array from %1$s eraser (index %2$d)."
-msgstr "無法從 %1$s 清除程式收到陣列（索引 %2$d）。"
-
-#. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4754
-msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
-msgstr "清除程式 %1$s（索引 %2$d）必須完成回應陣列中的 items_removed 索引鍵。"
 
 #: wp-admin/includes/plugin-install.php:656
 msgid "Requires PHP Version:"
@@ -10010,7 +10016,7 @@ msgstr "歡迎使用《%s》。這是這個網站的第一篇文章。試試為�
 #. translators: %s: post title
 #: wp-admin/revision.php:93
 msgid "Compare Revisions of &#8220;%s&#8221;"
-msgstr "《%s》的內容修訂"
+msgstr "比較《%s》的內容修訂"
 
 #: wp-admin/includes/class-wp-list-table.php:466 wp-admin/edit.php:250
 msgid "Bulk Actions"
