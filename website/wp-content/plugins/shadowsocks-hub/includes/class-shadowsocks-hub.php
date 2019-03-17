@@ -132,8 +132,11 @@ class Shadowsocks_Hub {
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-shadowsocks-hub-accounts-list-table.php';
 
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-shadowsocks-hub-subscription-controller.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/subscription/class-shadowsocks-hub-subscription-controller.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/subscription/class-shadowsocks-hub-subscription-service.php';
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/subscription/class-shadowsocks-hub-subscription-dao.php';
 		$this->loader = new Shadowsocks_Hub_Loader();
 
 	}

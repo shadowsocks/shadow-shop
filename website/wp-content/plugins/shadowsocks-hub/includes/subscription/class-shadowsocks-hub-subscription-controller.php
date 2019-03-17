@@ -60,7 +60,7 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         //get parameters from request
         $params = $request->get_params();
         $id = $params['id'];
-        $item = array("id" => $id); //do a query, call another class, etc
+        $item = Shadowsocks_Hub_Subscription_Service::get_item($id);
         $data = $this->prepare_item_for_response($item, $request);
 
         //return a response or error based on some conditional
