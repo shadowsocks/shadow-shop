@@ -398,24 +398,14 @@ class Shadowsocks_Hub_Admin
 	}
 
 	/**
- * This is our callback function that embeds our phrase in a WP_REST_Response
- */
-	function get_endpoint_subscription()
-	{
-		// rest_ensure_response() wraps the data we want to return into a WP_REST_Response, and ensures it will be properly returned.
-		return rest_ensure_response('Hello World, this is the WordPress REST API');
-	}
-
-	/**
- * This function is where we register our routes for our subscription endpoint.
+ * This function is where we register our routes for subscription endpoint.
  */
 	public function register_subscription_route()
 	{
-		// register_rest_route() handles more arguments but we are going to stick to the basics for now.
-		register_rest_route('shadow-shop/v1', '/subscription', array(
-			'methods'  => 'GET',
-			'callback' => array($this, 'get_endpoint_subscription'),
-		));
+		error_log("register_subscription_route is called");
+
+		$controller = new Shadowsocks_Hub_Subscription_Controller();
+		$controller->register_routes();
 	}
 
 	/**
