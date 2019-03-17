@@ -4,8 +4,7 @@ class Shadowsocks_Hub_Subscription_Service
 
     static public function get_item($id)
     {
-        $userId = Shadowsocks_Hub_Subscription_Dao::get_user_id($id);
-        $shadowsocksAccounts = Shadowsocks_Hub_Subscription_Dao::get_shadowsocks_accounts_by_user_id($userId);
+        $shadowsocksAccounts = Shadowsocks_Hub_Subscription_Dao::get_shadowsocks_accounts($id);
         return $shadowsocksAccounts;
     }
 
@@ -51,4 +50,3 @@ class Shadowsocks_Hub_Subscription_Service
         return new WP_Error('cant-delete', __('message', 'text-domain'), array('status' => 500));
     }
 }
-
