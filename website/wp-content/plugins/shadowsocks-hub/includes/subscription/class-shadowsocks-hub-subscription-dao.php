@@ -1,6 +1,9 @@
 <?php
 class Shadowsocks_Hub_Subscription_Dao
 {
+    /**
+     * @return WP_Error|shadowsocks_account_array
+     */
     static public function get_shadowsocks_accounts($id)
     {
         // TODO: get_user_id

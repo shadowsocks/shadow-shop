@@ -64,10 +64,10 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         $data = $this->prepare_item_for_response($item, $request);
 
         //return a response or error based on some conditional
-        if (1 == 1) {
+        if (!is_wp_error($item)) {
             return new WP_REST_Response($data, 200);
         } else {
-            return new WP_Error('code', __('message', 'text-domain'));
+            return new WP_Error('500', get_error_message($item));
         }
     }
 

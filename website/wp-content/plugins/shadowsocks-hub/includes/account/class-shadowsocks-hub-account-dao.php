@@ -2,6 +2,9 @@
 class Shadowsocks_Hub_Account_Dao
 {
 
+    /**
+     * @return WP_Error|shadowsocks_account_array
+     */
     static public function get_accounts_by_user_id($user_id)
     {
         $data_array = array (
@@ -25,6 +28,8 @@ class Shadowsocks_Hub_Account_Dao
         } else {
             $error_message = "Backend system error undetected error.";
         }; 
+
+        return new WP_Error('sshub_error', $error_message);
      }
 }
 

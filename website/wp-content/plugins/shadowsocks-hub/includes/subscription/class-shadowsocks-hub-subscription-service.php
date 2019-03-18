@@ -2,6 +2,9 @@
 class Shadowsocks_Hub_Subscription_Service
 {
 
+    /**
+     * @return WP_Error|shadowsocks_account_array
+     */
     static public function get_item($id)
     {
         $shadowsocksAccounts = Shadowsocks_Hub_Subscription_Dao::get_shadowsocks_accounts($id);
