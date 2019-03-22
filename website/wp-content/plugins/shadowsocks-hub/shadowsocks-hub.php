@@ -56,13 +56,15 @@ function shadowsocks_hub_create_db()
 	global $wpdb;
 	$charset_collate = $wpdb->get_charset_collate();
 	$table_name = $wpdb->prefix . 'sshub_subscription';
+	$user_table_name = $wpdb->prefix . 'users';
 
 	$sql = "CREATE TABLE $table_name (
 		id varchar(255) NOT NULL,
 		userId bigint(20) UNSIGNED NOT NULL,
 		createdTime bigint(20) NOT NULL,
 		PRIMARY KEY id (id),
-		UNIQUE KEY userId (userId)
+		UNIQUE KEY userId (userId),
+		FOREIGN KEY  (userId) REFERENCES $user_table_name(ID)
 	) $charset_collate;";
 
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
