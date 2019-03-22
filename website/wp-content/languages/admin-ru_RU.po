@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-05 22:08:31+0000\n"
+"PO-Revision-Date: 2019-03-21 14:39:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,72 +22,72 @@ msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "3"
 
-#: wp-admin/about.php:117
+#: wp-admin/about.php:146
 msgid "Miscellaneous improvements include updates to values for the <code>WP_DEBUG_LOG</code> constant, new test config file constant in the test suite, new plugin action hooks, short-circuit filters for <code>wp_unique_post_slug()</code> and <code>WP_User_Query</code> and <code>count_users()</code>, a new <code>human_readable_duration</code> function, improved taxonomy metabox sanitization, limited <code>LIKE</code> support for meta keys when using <code>WP_Meta_Query</code>, a new “doing it wrong” notice when registering REST API endpoints, and more!"
 msgstr "Разные улучшения включают обновления значений для константы <code>WP_DEBUG_LOG</code>, новой константы файла конфигурации для набора тестов, новые хуки для действий плагинов, фильтры короткого замыкания для <code>wp_unique_post_slug()</code>, <code>WP_User_Query</code> и <code>count_users()</code>, новую функцию <code>human_readable_duration</code>, улучшенную санитизацию метабокса таксономий, ограниченную поддержку <code>LIKE</code> для мета ключей при использовании <code>WP_Meta_Query</code>, новое уведомление \"делается не так\" при регистрации конечных точек вхождения REST API, и многое ещё!"
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:144
 msgid "Other Developer Goodness"
 msgstr "Другие улучшения для разработчиков"
 
-#: wp-admin/about.php:106
+#: wp-admin/about.php:135
 msgid "WordPress 5.1 features a new JavaScript build option, following the large reorganization of code started in the 5.0 release."
 msgstr "WordPress 5.1 предоставляет новую возможность сборки JavaScript, продолжая реорганизацию кода, начатую в выпуске 5.0."
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:133
 msgid "New JS Build Processes"
 msgstr "Новые процессы сборки JS"
 
-#: wp-admin/about.php:98
+#: wp-admin/about.php:127
 msgid "The Cron API has been updated with new functions to assist with returning data and includes new filters for modifying cron storage. Other changes in behavior affect cron spawning on servers running FastCGI and PHP-FPM versions 7.0.16 and above."
 msgstr "Cron API был обновлен новыми функциями возвращающими данные на выходе, а также включает новые фильтры для изменения хранилища cron. Другие изменения меняют поведение запуска cron на серверах с FastCGI и PHP-FPM версии 7.0.16 и выше."
 
-#: wp-admin/about.php:96
+#: wp-admin/about.php:125
 msgid "Cron API"
 msgstr "Cron API"
 
-#: wp-admin/about.php:92 wp-admin/about.php:100 wp-admin/about.php:108
-#: wp-admin/about.php:119
+#: wp-admin/about.php:121 wp-admin/about.php:129 wp-admin/about.php:137
+#: wp-admin/about.php:148
 msgid "<a href=\"%s\">Read more.</a>"
 msgstr "<a href=\"%s\">Узнайте больше.</a>"
 
-#: wp-admin/about.php:88
+#: wp-admin/about.php:117
 msgid "Multisite Metadata"
 msgstr "Метаданные для сайтов сети"
 
-#: wp-admin/about.php:90
+#: wp-admin/about.php:119
 msgid "5.1 introduces a new database table to store metadata associated with sites and allows for the storage of arbitrary site data relevant in a multisite / network context."
 msgstr "В выпуске 5.1 была добавлена новая таблица базы данных для хранения метаданных о сайтах сети, она хранит данные относящиеся к сайтам в контексте мультисайтовой/сетевой установки WordPress."
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:104
 msgid "Introduced in WordPress 5.0, the new block editor continues to improve. Most significantly, WordPress 5.1 includes solid performance improvements within the editor. The editor should feel a little quicker to start, and typing should feel smoother. Nevertheless, expect more performance improvements in the next releases."
 msgstr "Предложенный в WordPress 5.0 редактор блоков продолжает улучшаться. В частности, значительно была улучшена его производительность. Редактор будет быстрее запускаться и набирать текст в нём будет более гладко. В дальнейших выпусках производительность будет и далее улучшаться."
 
-#: wp-admin/about.php:71
+#: wp-admin/about.php:100
 msgid "Editor Performance"
 msgstr "Производительность редактора"
 
-#: wp-admin/about.php:62
+#: wp-admin/about.php:91
 msgid "WordPress has detected your site is running an outdated version of PHP. You will see this notice on your dashboard with instructions for contacting your host."
 msgstr "WordPress определил, что ваш сайт использует старую версию PHP. Вы увидите это уведомление в вашей консоли с инструкцией по обращению в техническую поддержку вашего хостинга."
 
-#: wp-admin/about.php:56
+#: wp-admin/about.php:85
 msgid "When installing new plugins, WordPress&#8217;s Site Health features will check whether a plugin requires a version of PHP incompatible with your site. If so, WordPress will prevent you from installing that plugin."
 msgstr "При установке новых плагинов WordPress будет проверять совместимость плагина с версией PHP вашего сайта, и предотвратит установку при несовместимости."
 
-#: wp-admin/about.php:54
+#: wp-admin/about.php:83
 msgid "With security and speed in mind, this release introduces WordPress&#8217;s first <a href=\"%s\">Site Health</a> features. WordPress will start showing notices to administrators of sites that run long-outdated versions of PHP, which is the programming language that powers WordPress."
 msgstr "С фокусом на безопасность и скорость, этот выпуск представляет первые возможности отслеживания <a href=\"%s\">состояния здоровья сайта</a>. WordPress будет показывать уведомления администраторам сайтов, чьи сервера используют старые версии PHP (это язык программирования, на котором написан WordPress)."
 
-#: wp-admin/about.php:50
+#: wp-admin/about.php:79
 msgid "Site Health"
 msgstr "Состояние здоровья сайта"
 
-#: wp-admin/about.php:44
+#: wp-admin/about.php:73
 msgid "You&#8217;ve successfully upgraded to WordPress 5.1! Following WordPress 5.0&#8212;a major release which introduced the new block editor&#8212;5.1 focuses on polish, in particular by improving overall performance of the editor. In addition, this release paves the way for a better, faster, and more secure WordPress with some essential tools for site administrators and developers."
 msgstr "Вы успешно обновили сайт до WordPress 5.1!  Эта версия продолжает улучшения редактора блоков, представленного в WordPress 5.0, в частности была улучшена производительность. Дополнительно эта версия открывает путь лучшему, быстрому и более безопасному WordPress с необходимыми инструментами для администраторов и разработчиков."
 
-#: wp-admin/about.php:37
+#: wp-admin/about.php:66
 msgid "A Little Better Every Day"
 msgstr "Немного лучше с каждым днём"
 
@@ -202,7 +202,7 @@ msgstr "Вы не можете установить, потому что <a href
 msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site’s performance."
 msgstr "PHP &mdash; язык программирования, на котором создан WordPress. Более новые версии PHP одновременно и быстрее и безопаснее, поэтому обновление окажет положительный эффект на производительность вашего сайта."
 
-#: wp-admin/includes/dashboard.php:1640 wp-admin/about.php:65
+#: wp-admin/includes/dashboard.php:1640 wp-admin/about.php:94
 msgid "Learn more about updating PHP"
 msgstr "Узнайте больше об обновлении PHP"
 
@@ -268,7 +268,7 @@ msgstr "Требуется обновление PHP"
 
 #. translators: %s: WordPress version
 #: wp-admin/includes/update.php:267 wp-admin/install.php:243
-#: wp-admin/update-core.php:75 wp-admin/upgrade.php:85
+#: wp-admin/update-core.php:75 wp-admin/upgrade.php:85 wp-admin/about.php:58
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -390,27 +390,27 @@ msgctxt "CSS Font Family for Editor Font"
 msgid "Noto Serif"
 msgstr "Noto Serif"
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:170
 msgid "Note to users of assistive technology: if you experience usability issues with the block editor, we recommend you continue to use the Classic Editor."
 msgstr "Заметка для пользователей вспомогательных технологий:  Если у вас возникнут сложности в использовании редактора блоков, мы рекомендуем продолжать использовать классический редактор."
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:169
 msgid "The Classic Editor plugin restores the previous WordPress editor and the Edit Post screen. It lets you keep using plugins that extend it, add old-style meta boxes, or otherwise depend on the previous editor. To install, visit your plugins page and click the &#8220;Install Now&#8221; button next to &#8220;Classic Editor&#8221;. After the plugin finishes installing, click &#8220;Activate&#8221;. That’s it!"
 msgstr "Плагин Classic Editor оставляет старый вариант редактора WordPress и экрана редактирования записи. Он позволяет использовать расширяющие его плагины, добавлять поля метаданных в старом стиле или иные вещи, зависимые от старого редактора. Для его установки зайдите на страницу плагинов и нажмите на кнопку &#8220;Установить&#8221; рядом с &#8220;Classic Editor&#8221;. После установки нажмите &#8220;Активировать&#8221;. Всё!"
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:151
 msgid "Learn how to get started"
 msgstr "Узнайте как начать"
 
-#: wp-admin/about.php:135
+#: wp-admin/about.php:164
 msgid "Keep it Classic"
 msgstr "Оставить классику"
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:168
 msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
 msgstr "Предпочитаете остаться со старым, добрым классическим редактором? Без проблем! Поддержка плагина Classic Editor останется в WordPress до 2021 года включительно."
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:106
 msgid "Build your first post"
 msgstr "Создайте свою первую запись"
 
@@ -523,7 +523,7 @@ msgstr "https://ru.wordpress.org/plugins/classic-editor"
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
 
-#: wp-admin/about.php:144
+#: wp-admin/about.php:173
 msgid "Install the Classic Editor"
 msgstr "Установить Classic Editor"
 
@@ -999,67 +999,67 @@ msgid "Force Erase has failed."
 msgstr "Принудительное удаление не удалось."
 
 #. translators: %s: array index
-#: wp-admin/includes/ajax-actions.php:4536
+#: wp-admin/includes/ajax-actions.php:4538
 msgid "Exporter array at index %s does not include a friendly name."
 msgstr "Массив экспортера по индексу %s не включает пользовательского имени."
 
-#: wp-admin/includes/ajax-actions.php:4446
-#: wp-admin/includes/ajax-actions.php:4626
+#: wp-admin/includes/ajax-actions.php:4448
+#: wp-admin/includes/ajax-actions.php:4628
 msgid "Missing request ID."
 msgstr "Отсутствует ID запроса."
 
-#: wp-admin/includes/ajax-actions.php:4464
+#: wp-admin/includes/ajax-actions.php:4466
 msgid "Invalid request type."
 msgstr "Неверный тип запроса."
 
-#: wp-admin/includes/ajax-actions.php:4473
+#: wp-admin/includes/ajax-actions.php:4475
 msgid "Missing exporter index."
 msgstr "Отсутствует индекс для экспорта."
 
-#: wp-admin/includes/ajax-actions.php:4478
-#: wp-admin/includes/ajax-actions.php:4662
+#: wp-admin/includes/ajax-actions.php:4480
+#: wp-admin/includes/ajax-actions.php:4664
 msgid "Missing page index."
 msgstr "Отсутствует индекс страницы."
 
-#: wp-admin/includes/ajax-actions.php:4506
+#: wp-admin/includes/ajax-actions.php:4508
 msgid "An exporter has improperly used the registration filter."
 msgstr "Экспортер неверно использовал фильтр регистрации."
 
-#: wp-admin/includes/ajax-actions.php:4512
+#: wp-admin/includes/ajax-actions.php:4514
 msgid "Exporter index cannot be negative."
 msgstr "Индекс экспортера не может быть отрицательным."
 
-#: wp-admin/includes/ajax-actions.php:4516
+#: wp-admin/includes/ajax-actions.php:4518
 msgid "Exporter index out of range."
 msgstr "Индекс экспортера находится вне допустимых пределов."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4542
+#: wp-admin/includes/ajax-actions.php:4544
 msgid "Exporter does not include a callback: %s."
 msgstr "Экспортер не включает обратный вызов: %s."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4548
+#: wp-admin/includes/ajax-actions.php:4550
 msgid "Exporter callback is not a valid callback: %s."
 msgstr "Обратный вызов экспортера неверен: %s."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4563
+#: wp-admin/includes/ajax-actions.php:4565
 msgid "Expected response as an array from exporter: %s."
 msgstr "Ожидаемый ответ как массив из экспортера: %s."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4569
+#: wp-admin/includes/ajax-actions.php:4571
 msgid "Expected data in response array from exporter: %s."
 msgstr "Ожидаемые данные как ответный массив экспортера: %s."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4575
+#: wp-admin/includes/ajax-actions.php:4577
 msgid "Expected data array in response array from exporter: %s."
 msgstr "Ожидаемый массив данных как ответный массив экспортера: %s."
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4581
+#: wp-admin/includes/ajax-actions.php:4583
 msgid "Expected done (boolean) in response array from exporter: %s."
 msgstr "Ожидание завершения (логическое) в ответном массиве экспортера: %s."
 
@@ -1068,15 +1068,15 @@ msgid "Sorry, you are not allowed to erase data on this site."
 msgstr "Извините, вам не разрешено стирать данные на этом сайте."
 
 #. translators: %s: array index
-#: wp-admin/includes/ajax-actions.php:4530
+#: wp-admin/includes/ajax-actions.php:4532
 msgid "Expected an array describing the exporter at index %s."
 msgstr "Ожидается массив с описанием экспортера к индексу %s."
 
-#: wp-admin/includes/ajax-actions.php:4656
+#: wp-admin/includes/ajax-actions.php:4658
 msgid "Missing eraser index."
 msgstr "Отсутствует индекс для функции-стирателя."
 
-#: wp-admin/includes/ajax-actions.php:4697
+#: wp-admin/includes/ajax-actions.php:4699
 msgid "Eraser index is out of range."
 msgstr "Индекс функции-стирателя вне допустимых пределов."
 
@@ -1214,7 +1214,7 @@ msgstr "Невозможно отослать email сообщение эксп�
 msgid "Download Personal Data Again"
 msgstr "Скачать персональные данные еще раз"
 
-#: wp-admin/includes/ajax-actions.php:4469
+#: wp-admin/includes/ajax-actions.php:4471
 msgid "A valid email address must be given."
 msgstr "Требуется указать правильный адрес email."
 
@@ -1255,22 +1255,22 @@ msgstr "Экспорт персональных данных"
 msgid "Invalid request ID when sending personal data export email."
 msgstr "Неверный ID запроса при отсылке email с экспортом персональных данных."
 
-#: wp-admin/includes/ajax-actions.php:4652
+#: wp-admin/includes/ajax-actions.php:4654
 msgid "Invalid email address in request."
 msgstr "Неверный адрес email в запросе."
 
-#: wp-admin/includes/ajax-actions.php:4693
+#: wp-admin/includes/ajax-actions.php:4695
 msgid "Eraser index cannot be less than one."
 msgstr "Индекс стирателя не может быть меньше единицы."
 
-#: wp-admin/includes/ajax-actions.php:4520
-#: wp-admin/includes/ajax-actions.php:4701
+#: wp-admin/includes/ajax-actions.php:4522
+#: wp-admin/includes/ajax-actions.php:4703
 msgid "Page index cannot be less than one."
 msgstr "Индекс страницы не может быть меньше единицы."
 
-#: wp-admin/includes/ajax-actions.php:4451
-#: wp-admin/includes/ajax-actions.php:4632
-#: wp-admin/includes/ajax-actions.php:4646
+#: wp-admin/includes/ajax-actions.php:4453
+#: wp-admin/includes/ajax-actions.php:4634
+#: wp-admin/includes/ajax-actions.php:4648
 msgid "Invalid request ID."
 msgstr "Неверный ID запроса."
 
@@ -1357,52 +1357,52 @@ msgid "Confirmation request sent again successfully."
 msgstr "Запрос на подтверждение был успешно отправлен ещё раз."
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4710
+#: wp-admin/includes/ajax-actions.php:4712
 msgid "Expected an array describing the eraser at index %d."
 msgstr "Ожидается массив описания функции-стирателя по индексу %d."
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4715
+#: wp-admin/includes/ajax-actions.php:4717
 msgid "Eraser array at index %d does not include a callback."
 msgstr "Массив функции-стирателя по индексу %d не включает обратный вызов."
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4720
+#: wp-admin/includes/ajax-actions.php:4722
 msgid "Eraser callback at index %d is not a valid callback."
 msgstr "Обратный вызов функции-стирателя по индексу %d неверен."
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4725
+#: wp-admin/includes/ajax-actions.php:4727
 msgid "Eraser array at index %d does not include a friendly name."
 msgstr "Массив функции-стирателя по индексу %d не включает пользовательского имени."
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4741
+#: wp-admin/includes/ajax-actions.php:4743
 msgid "Did not receive array from %1$s eraser (index %2$d)."
 msgstr "Не получен массив от функции-стирателя %1$s (индекс %2$d)."
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4752
+#: wp-admin/includes/ajax-actions.php:4754
 msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
 msgstr "Ожидается ключ items_removed в ответном массиве от функции-стирателя %1$s (индекс %2$d)."
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4763
+#: wp-admin/includes/ajax-actions.php:4765
 msgid "Expected items_retained key in response array from %1$s eraser (index %2$d)."
 msgstr "Ожидается ключ items_retained в ответном массиве от функции-стирателя %1$s (индекс %2$d). "
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4774
+#: wp-admin/includes/ajax-actions.php:4776
 msgid "Expected messages key in response array from %1$s eraser (index %2$d)."
 msgstr "Ожидается ключ сообщений в ответном массиве от функции-стирателя %1$s (индекс %2$d). "
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4785
+#: wp-admin/includes/ajax-actions.php:4787
 msgid "Expected messages key to reference an array in response array from %1$s eraser (index %2$d)."
 msgstr "Ожидается ключ сообщений со ссылкой на массив в ответном массиве от функции-стирателя %1$s (индекс %2$d). "
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4796
+#: wp-admin/includes/ajax-actions.php:4798
 msgid "Expected done flag in response array from %1$s eraser (index %2$d)."
 msgstr "Ожидается статус исполнения в ответном массиве от функции-стирателя %1$s (индекс %2$d)."
 
@@ -1498,7 +1498,7 @@ msgstr "https://codex.wordpress.org/%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B0%D
 msgid "Enter the address here if you <a href=\"%s\">want your site home page to be different from your WordPress installation directory</a>."
 msgstr "Если вы хотите, чтобы адрес сайта <a href=\"%s\">отличался от директории установки WordPress</a>, введите адрес здесь."
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:113
 msgid "Developer Happiness"
 msgstr "Радость разработчикам"
 
@@ -1805,7 +1805,7 @@ msgstr "Активировать плагин и вернуться к Press Thi
 #. translators: %s: meetup organization documentation URL
 #: wp-admin/includes/dashboard.php:1306
 msgid "There aren&#8217;t any events scheduled near you at the moment. Would you like to <a href=\"%s\">organize one</a>?"
-msgstr "Никаких мероприятий в настоящее время рядом с вами не запланировано. Хотите <a href=\"%s\">организовать</a>?"
+msgstr "Мероприятий рядом с вами пока не запланировано. Хотите <a href=\"%s\">организовать</a>?"
 
 #. translators: %s: user's display name
 #: wp-admin/user-edit.php:34
@@ -1969,7 +1969,7 @@ msgctxt "Active plugin installations"
 msgid "Less Than 10"
 msgstr "Менее 10"
 
-#: wp-admin/includes/ajax-actions.php:2319
+#: wp-admin/includes/ajax-actions.php:2321
 msgid "Sorry, you are not allowed to attach files to this post."
 msgstr "Извините, Вам не разрешено делать вложения файлов к этой записи."
 
@@ -2139,7 +2139,7 @@ msgstr "Извините, вам не разрешено удалять поль
 msgid "Sorry, you are not allowed to update this site."
 msgstr "Извините, вам не разрешено обновлять этот сайт."
 
-#: wp-admin/includes/ajax-actions.php:3880 wp-admin/update.php:173
+#: wp-admin/includes/ajax-actions.php:3882 wp-admin/update.php:173
 #: wp-admin/update.php:194
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "Извините, вам не разрешено обновлять темы на этом сайте."
@@ -2329,22 +2329,22 @@ msgstr "Шаблон подвала объекта"
 msgid "Info"
 msgstr "Информация"
 
-#: wp-admin/includes/ajax-actions.php:4044 wp-admin/update.php:102
+#: wp-admin/includes/ajax-actions.php:4046 wp-admin/update.php:102
 #: wp-admin/update.php:144 wp-admin/plugin-install.php:19
 msgid "Sorry, you are not allowed to install plugins on this site."
 msgstr "Извините, вам не разрешено устанавливать плагины на этот сайт."
 
-#: wp-admin/includes/ajax-actions.php:4157 wp-admin/update.php:25
+#: wp-admin/includes/ajax-actions.php:4159 wp-admin/update.php:25
 #: wp-admin/update.php:53 wp-admin/update.php:75
 msgid "Sorry, you are not allowed to update plugins for this site."
 msgstr "Извините, вам не разрешено обновлять плагины на этом сайте."
 
-#: wp-admin/includes/ajax-actions.php:4262 wp-admin/plugins.php:252
+#: wp-admin/includes/ajax-actions.php:4264 wp-admin/plugins.php:252
 msgid "Sorry, you are not allowed to delete plugins for this site."
 msgstr "Извините, вам не разрешено удалять плагины на этом сайте."
 
-#: wp-admin/includes/ajax-actions.php:4333
-#: wp-admin/includes/ajax-actions.php:4385 wp-admin/plugins.php:13
+#: wp-admin/includes/ajax-actions.php:4335
+#: wp-admin/includes/ajax-actions.php:4387 wp-admin/plugins.php:13
 msgid "Sorry, you are not allowed to manage plugins for this site."
 msgstr "Извините, вам не разрешено управлять плагинами на этом сайте."
 
@@ -2353,7 +2353,7 @@ msgstr "Извините, вам не разрешено управлять пл
 msgid "Sorry, you are not allowed to edit the links for this site."
 msgstr "Извините, вам не разрешено редактировать ссылки на этом сайте."
 
-#: wp-admin/includes/ajax-actions.php:4300
+#: wp-admin/includes/ajax-actions.php:4302
 msgid "Plugin could not be deleted."
 msgstr "Не удалось удалить плагин."
 
@@ -2362,9 +2362,9 @@ msgctxt "plugin"
 msgid "Active"
 msgstr "Активен"
 
-#: wp-admin/includes/ajax-actions.php:4033
-#: wp-admin/includes/ajax-actions.php:4142
-#: wp-admin/includes/ajax-actions.php:4249
+#: wp-admin/includes/ajax-actions.php:4035
+#: wp-admin/includes/ajax-actions.php:4144
+#: wp-admin/includes/ajax-actions.php:4251
 msgid "No plugin specified."
 msgstr "Не указан плагин."
 
@@ -2376,26 +2376,26 @@ msgstr "(Личная запись)"
 msgid "Sorry, you are not allowed to manage privacy on this site."
 msgstr "Извините, вам не разрешено управлять настройками приватности на этом сайте."
 
-#: wp-admin/includes/ajax-actions.php:3756 wp-admin/update.php:222
+#: wp-admin/includes/ajax-actions.php:3758 wp-admin/update.php:222
 #: wp-admin/update.php:261 wp-admin/theme-install.php:16
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr "Извините, вам не разрешено устанавливать темы на этот сайт."
 
-#: wp-admin/includes/ajax-actions.php:3973
+#: wp-admin/includes/ajax-actions.php:3975
 msgid "Sorry, you are not allowed to delete themes on this site."
 msgstr "Извините, вам не разрешено удалять темы на этом сайте."
 
-#: wp-admin/includes/ajax-actions.php:4009
+#: wp-admin/includes/ajax-actions.php:4011
 msgid "Theme could not be deleted."
 msgstr "Не удалось удалить тему."
 
-#: wp-admin/includes/ajax-actions.php:3940
+#: wp-admin/includes/ajax-actions.php:3942
 msgid "Update failed."
 msgstr "Обновление не удалось."
 
-#: wp-admin/includes/ajax-actions.php:3743
-#: wp-admin/includes/ajax-actions.php:3866
-#: wp-admin/includes/ajax-actions.php:3961
+#: wp-admin/includes/ajax-actions.php:3745
+#: wp-admin/includes/ajax-actions.php:3868
+#: wp-admin/includes/ajax-actions.php:3963
 msgid "No theme specified."
 msgstr "Не указана тема."
 
@@ -2898,7 +2898,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Сейчас отображает меню «%s»)"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:179
+#: wp-admin/about.php:208
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "В <strong>версии %s</strong> решена проблема с безопасностью."
 
@@ -2914,15 +2914,15 @@ msgstr "Аватар можно изменить на сайте <a href=\"%s\">
 msgid "Profile Picture"
 msgstr "Аватар"
 
-#: wp-admin/about.php:176
+#: wp-admin/about.php:38 wp-admin/about.php:205
 msgid "Maintenance and Security Releases"
 msgstr "Технические обновления безопасности"
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:202
 msgid "Security Releases"
 msgstr "Обновления безопасности"
 
-#: wp-admin/about.php:170
+#: wp-admin/about.php:199
 msgid "Maintenance Releases"
 msgstr "Технические обновления"
 
@@ -3370,7 +3370,7 @@ msgid "Network Only"
 msgstr "Только для сети"
 
 #. translators: %s: the new user
-#: wp-admin/includes/ajax-actions.php:1588
+#: wp-admin/includes/ajax-actions.php:1590
 msgid "User %s added"
 msgstr "Добавлен пользователь %s"
 
@@ -3554,7 +3554,7 @@ msgstr[0] "%s комментарий"
 msgstr[1] "%s комментария"
 msgstr[2] "%s комментариев"
 
-#: wp-admin/includes/ajax-actions.php:3603
+#: wp-admin/includes/ajax-actions.php:3605
 msgid "Image could not be processed."
 msgstr "Не удалось обработать изображение."
 
@@ -4128,12 +4128,12 @@ msgstr ""
 "\n"
 "Спасибо! -- Команда WordPress"
 
-#: wp-admin/includes/ajax-actions.php:3799
-#: wp-admin/includes/ajax-actions.php:3929
-#: wp-admin/includes/ajax-actions.php:3991
-#: wp-admin/includes/ajax-actions.php:4091
-#: wp-admin/includes/ajax-actions.php:4217
-#: wp-admin/includes/ajax-actions.php:4284
+#: wp-admin/includes/ajax-actions.php:3801
+#: wp-admin/includes/ajax-actions.php:3931
+#: wp-admin/includes/ajax-actions.php:3993
+#: wp-admin/includes/ajax-actions.php:4093
+#: wp-admin/includes/ajax-actions.php:4219
+#: wp-admin/includes/ajax-actions.php:4286
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr "Не удалось подключиться к файловой системе. Перепроверьте координаты."
 
@@ -4259,20 +4259,20 @@ msgstr "<strong>Редактор записи</strong> &#8212; введите т
 msgid "You can insert media files by clicking the button above the post editor and following the directions. You can align or edit images using the inline formatting toolbar available in Visual mode."
 msgstr "Можно загружать медиафайлы, нажимая на иконки над редактором и следуя указаниям. Можно выравнивать или редактировать изображения с помощью всплывающей панели, доступной в визуальном режиме."
 
-#: wp-admin/includes/ajax-actions.php:3454
+#: wp-admin/includes/ajax-actions.php:3456
 msgid "This preview is unavailable in the editor."
 msgstr "Предпросмотр в редакторе недоступен."
 
-#: wp-admin/includes/ajax-actions.php:3566
+#: wp-admin/includes/ajax-actions.php:3568
 msgid "Could not log out user sessions. Please try again."
 msgstr "Не удалось выйти из сессий пользователя. Пожалуйста, попробуйте ещё раз."
 
-#: wp-admin/includes/ajax-actions.php:3575
+#: wp-admin/includes/ajax-actions.php:3577
 msgid "You are now logged out everywhere else."
 msgstr "Вы вышли из других сессий."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:3579
+#: wp-admin/includes/ajax-actions.php:3581
 msgid "%s has been logged out."
 msgstr "Сессии пользователя %s завершены."
 
@@ -4428,7 +4428,7 @@ msgid "Update %s now"
 msgstr "Обновить %s сейчас"
 
 #. translators: %s: URL which cannot be embedded, between code tags
-#: wp-admin/includes/ajax-actions.php:3423
+#: wp-admin/includes/ajax-actions.php:3425
 msgid "%s failed to embed."
 msgstr "Не удалось вставить %s."
 
@@ -4617,7 +4617,7 @@ msgstr "Управление меню"
 msgid "Edit visibility"
 msgstr "Изменить видимость"
 
-#: wp-admin/includes/ajax-actions.php:2052
+#: wp-admin/includes/ajax-actions.php:2054
 msgid "Type"
 msgstr "Тип"
 
@@ -4702,7 +4702,7 @@ msgstr[2] "%s страниц"
 #. translators: %s: number of comments in moderation
 #. translators: %s: number of comments moderated
 #: wp-admin/includes/ajax-actions.php:463
-#: wp-admin/includes/ajax-actions.php:1293 wp-admin/includes/dashboard.php:294
+#: wp-admin/includes/ajax-actions.php:1295 wp-admin/includes/dashboard.php:294
 msgctxt "comments"
 msgid "%s in moderation"
 msgid_plural "%s in moderation"
@@ -5646,7 +5646,7 @@ msgid "Restore the backup"
 msgstr "Восстановить из резервной копии"
 
 #. translators: 1: Post creation date, 2: Post creation time
-#: wp-admin/includes/ajax-actions.php:1469
+#: wp-admin/includes/ajax-actions.php:1471
 msgid "Draft created on %1$s at %2$s"
 msgstr "Черновик, созданный %1$s в %2$s"
 
@@ -5771,7 +5771,7 @@ msgctxt "column name"
 msgid "Uploaded to"
 msgstr "Загружен для"
 
-#: wp-admin/includes/ajax-actions.php:2345 wp-admin/custom-background.php:485
+#: wp-admin/includes/ajax-actions.php:2347 wp-admin/custom-background.php:485
 #: wp-admin/custom-header.php:886
 msgid "The uploaded file is not a valid image. Please try again."
 msgstr "Загруженный файл не является изображением. Пожалуйста, попробуйте ещё раз."
@@ -6646,7 +6646,7 @@ msgid "Show Toolbar when viewing site"
 msgstr "Показывать верхнюю панель при просмотре сайта"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:184
+#: wp-admin/about.php:213
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> исправлена %2$s ошибка."
@@ -6655,24 +6655,26 @@ msgstr[2] "В <strong>версии %1$s</strong> исправлены %2$s ош�
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:190
+#: wp-admin/about.php:219
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> решена проблема с безопасностью и исправлена %2$s ошибка."
 msgstr[1] "В <strong>версии %1$s</strong> решена проблема с безопасностью и исправлены %2$s ошибки."
 msgstr[2] "В <strong>версии %1$s</strong> решена проблема с безопасностью и исправлены %2$s ошибок."
 
+#. translators: 1: WordPress version number, 2: plural number of bugs.
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:196
+#: wp-admin/about.php:43 wp-admin/about.php:225
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлена %2$s ошибка."
 msgstr[1] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлены %2$s ошибки."
 msgstr[2] "В <strong>версии %1$s</strong> решены несколько проблем с безопасностью и исправлены %2$s ошибок."
 
+#. translators: %s: HelpHub URL
 #. translators: %s: Codex URL
-#: wp-admin/about.php:202
+#: wp-admin/about.php:55 wp-admin/about.php:231
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Дополнительную информацию можно найти в <a href=\"%s\">заметке о выпуске</a>."
 
@@ -6684,20 +6686,20 @@ msgstr "Добро пожаловать в консоль WordPress! Этот э
 msgid "What&#8217;s New"
 msgstr "Что нового"
 
-#: wp-admin/about.php:169
+#: wp-admin/about.php:198
 msgid "Maintenance Release"
 msgstr "Техническое обновление"
 
-#: wp-admin/about.php:172
+#: wp-admin/about.php:201
 msgid "Security Release"
 msgstr "Обновление безопасности"
 
-#: wp-admin/about.php:175
+#: wp-admin/about.php:204
 msgid "Maintenance and Security Release"
 msgstr "Техническое обновление безопасности"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:181
+#: wp-admin/about.php:210
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "В <strong>версии %s</strong> решены несколько проблем с безопасностью."
 
@@ -6709,7 +6711,7 @@ msgstr "На этом экране можно выбрать структуру 
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Добро пожаловать в WordPress %1$s. <a href=\"%2$s\">Узнать больше</a>."
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:185
 msgid "Return to Updates"
 msgstr "Вернуться на страницу &laquo;Обновления&raquo;"
 
@@ -6981,11 +6983,11 @@ msgstr "Поскольку это сеть сайтов, можно добавл
 msgid "Welcome to WordPress %s"
 msgstr "Добро пожаловать в WordPress %s"
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:185
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Вернуться на страницу &laquo;Консоль&raquo; &rarr; &laquo;Обновления&raquo;"
 
-#: wp-admin/about.php:159
+#: wp-admin/about.php:188
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Перейти на страницу &laquo;Консоль&raquo; &rarr; &laquo;Главная&raquo;"
 
@@ -7119,8 +7121,8 @@ msgstr "<strong>ОШИБКА:</strong> Не удалось подключить�
 msgid "ERROR: you are replying to a comment on a draft post."
 msgstr "ОШИБКА: вы отвечаете на комментарий к черновику."
 
-#: wp-admin/includes/ajax-actions.php:1224
-#: wp-admin/includes/ajax-actions.php:1322
+#: wp-admin/includes/ajax-actions.php:1226
+#: wp-admin/includes/ajax-actions.php:1324
 msgid "ERROR: please type a comment."
 msgstr "ОШИБКА: пожалуйста, введите комментарий."
 
@@ -7166,8 +7168,8 @@ msgstr "<strong>Перетаскивание</strong> &#8212; чтобы пер�
 #: wp-admin/credits.php:25
 #: wp-admin/includes/class-wp-plugins-list-table.php:802
 #: wp-admin/includes/update.php:210 wp-admin/includes/update.php:240
-#: wp-admin/includes/ajax-actions.php:4167
-#: wp-admin/includes/ajax-actions.php:4210 wp-admin/freedoms.php:35
+#: wp-admin/includes/ajax-actions.php:4169
+#: wp-admin/includes/ajax-actions.php:4212 wp-admin/freedoms.php:35
 #: wp-admin/about.php:28
 msgid "Version %s"
 msgstr "Версия %s"
@@ -7614,7 +7616,7 @@ msgstr "%1$s из %2$s"
 msgid "%s Page Template"
 msgstr "Шаблон страницы &laquo;%s&raquo;"
 
-#: wp-admin/includes/ajax-actions.php:4271 wp-admin/plugins.php:480
+#: wp-admin/includes/ajax-actions.php:4273 wp-admin/plugins.php:480
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "Нельзя удалить плагин, пока он активен на основном сайте."
 
@@ -7736,8 +7738,8 @@ msgid "Update package not available."
 msgstr "Архив обновления недоступен."
 
 #: wp-admin/includes/class-plugin-upgrader.php:54
-#: wp-admin/includes/ajax-actions.php:4201
-#: wp-admin/includes/ajax-actions.php:4228
+#: wp-admin/includes/ajax-actions.php:4203
+#: wp-admin/includes/ajax-actions.php:4230
 msgid "Plugin update failed."
 msgstr "Обновление плагина не удалось."
 
@@ -8484,7 +8486,7 @@ msgstr "Элемент меню успешно удалён."
 msgid "Try again"
 msgstr "Попробовать ещё раз"
 
-#: wp-admin/includes/ajax-actions.php:1510
+#: wp-admin/includes/ajax-actions.php:1512
 msgid "Please provide a custom field name."
 msgstr "Пожалуйста, укажите название произвольного поля."
 
@@ -8800,7 +8802,7 @@ msgstr "Вы уверены, что хотите удалить эти файл�
 msgid "Inactive:"
 msgstr "Неактивен:"
 
-#: wp-admin/about.php:159
+#: wp-admin/about.php:188
 msgid "Go to Dashboard"
 msgstr "Перейти на страницу &laquo;Консоль&raquo;"
 
@@ -9521,7 +9523,7 @@ msgstr "Нет такого файла! Перепроверьте имя и п�
 msgid "Files of this type are not editable."
 msgstr "Файлы этого типа нельзя редактировать."
 
-#: wp-admin/includes/ajax-actions.php:4432 wp-admin/theme-editor.php:186
+#: wp-admin/includes/ajax-actions.php:4434 wp-admin/theme-editor.php:186
 #: wp-admin/plugin-editor.php:183
 msgid "File edited successfully."
 msgstr "Файл успешно изменён."
@@ -10280,13 +10282,13 @@ msgstr "Отправить обратные ссылки"
 #. last edit.
 #. translators: 1: Name of most recent post author, 2: Post edited date, 3:
 #. Post edited time
-#: wp-admin/includes/ajax-actions.php:2594 wp-admin/edit-form-advanced.php:577
+#: wp-admin/includes/ajax-actions.php:2596 wp-admin/edit-form-advanced.php:577
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "Последнее изменение: %1$s; %2$s в %3$s"
 
 #. translators: 1: date of last edit, 2: time of last edit.
 #. translators: 1: Post edited date, 2: Post edited time
-#: wp-admin/includes/ajax-actions.php:2597 wp-admin/edit-form-advanced.php:580
+#: wp-admin/includes/ajax-actions.php:2599 wp-admin/edit-form-advanced.php:580
 msgid "Last edited on %1$s at %2$s"
 msgstr "Последнее изменение: %1$s в %2$s"
 
@@ -11911,8 +11913,8 @@ msgstr "Запланировано на: <b>%s</b>"
 msgid "You did not enter a category name."
 msgstr "Вы не ввели название рубрики."
 
-#: wp-admin/includes/ajax-actions.php:1484
-#: wp-admin/includes/ajax-actions.php:1490
+#: wp-admin/includes/ajax-actions.php:1486
+#: wp-admin/includes/ajax-actions.php:1492
 msgid "Please provide a custom field value."
 msgstr "Пожалуйста, укажите значение произвольного поля."
 
@@ -11921,7 +11923,7 @@ msgstr "Пожалуйста, укажите значение произволь
 msgid "g:i:s a"
 msgstr "H:i:s"
 
-#: wp-admin/includes/ajax-actions.php:1884
+#: wp-admin/includes/ajax-actions.php:1886
 msgid "Someone"
 msgstr "Кто-то"
 
@@ -11964,8 +11966,8 @@ msgid "Draft saved at %s."
 msgstr "Черновик сохранён в %s."
 
 #: wp-admin/includes/edit-tag-messages.php:18
-#: wp-admin/includes/ajax-actions.php:2004
-#: wp-admin/includes/ajax-actions.php:2010
+#: wp-admin/includes/ajax-actions.php:2006
+#: wp-admin/includes/ajax-actions.php:2012
 msgid "Item not updated."
 msgstr "Элемент не обновлён."
 
@@ -11980,16 +11982,16 @@ msgid "&raquo;"
 msgstr "&rarr;"
 
 #. translators: %s: user who is currently editing the page
-#: wp-admin/includes/ajax-actions.php:1890
+#: wp-admin/includes/ajax-actions.php:1892
 msgid "Saving is disabled: %s is currently editing this page."
 msgstr "Сохранение отключено: эту страницу сейчас редактирует %s."
 
 #. translators: %s: user who is currently editing the post
-#: wp-admin/includes/ajax-actions.php:1887
+#: wp-admin/includes/ajax-actions.php:1889
 msgid "Saving is disabled: %s is currently editing this post."
 msgstr "Сохранение отключено: эту запись сейчас редактирует %s."
 
-#: wp-admin/includes/ajax-actions.php:1220
+#: wp-admin/includes/ajax-actions.php:1222
 msgid "Sorry, you must be logged in to reply to a comment."
 msgstr "Извините, для ответа на комментарий вам необходимо авторизоваться."
 
