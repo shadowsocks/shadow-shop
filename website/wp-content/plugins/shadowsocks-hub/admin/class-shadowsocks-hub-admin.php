@@ -402,8 +402,6 @@ class Shadowsocks_Hub_Admin
  */
 	public function register_subscription_route()
 	{
-		error_log("register_subscription_route is called");
-
 		$controller = new Shadowsocks_Hub_Subscription_Controller();
 		$controller->register_routes();
 	}

@@ -14,7 +14,7 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         register_rest_route($namespace, '/' . $base, array(
             array(
                 'methods'             => WP_REST_Server::CREATABLE,
-                'callback'            => array($this, 'create_item'),
+                'callback'            => array($this, 'create_subscription'),
                 'permission_callback' => array($this, 'create_item_permissions_check'),
                 'args'                => $this->get_endpoint_args_for_item_schema(true),
             ),
@@ -77,15 +77,12 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      * @param WP_REST_Request $request Full data about the request.
      * @return WP_Error|WP_REST_Request
      */
-    public function create_item($request)
+    public function create_subscription()
     {
-        $item = $this->prepare_item_for_database($request);
+        $data = Shadowsocks_Hub_Subscription_Service::create_subscription();
 
-        if (function_exists('slug_some_function_to_create_item')) {
-            $data = slug_some_function_to_create_item($item);
-            if (is_array($data)) {
-                return new WP_REST_Response($data, 200);
-            }
+        if (is_array($data)) {
+            return new WP_REST_Response($data, 201);
         }
 
         return new WP_Error('cant-create', __('message', 'text-domain'), array('status' => 500));
@@ -150,7 +147,8 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      */
     public function create_item_permissions_check($request)
     {
-        return current_user_can('edit_something');
+        //return current_user_can('edit_something');
+        return true;
     }
 
     /**
