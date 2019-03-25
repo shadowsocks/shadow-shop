@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-14 18:16:54+0000\n"
+"PO-Revision-Date: 2019-03-18 14:31:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -707,7 +707,7 @@ msgstr "Demande de réinitialisation de mot de passe"
 
 #: includes/emails/class-wc-email-customer-reset-password.php:82
 msgid "Password reset request for {site_title}"
-msgstr "Demande de réinitialisation de mot de passe for {site_title}"
+msgstr "Demande de réinitialisation de mot de passe pour {site_title}"
 
 #: includes/emails/class-wc-email-customer-refunded-order.php:90
 msgid "Order Refunded: {order_number}"

@@ -492,7 +492,7 @@ msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Doc
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Dokumentation der Netzwerk-Einstellungen (engl.)</a>"
 
 #. translators: 1: site url, 2: server error message
-#: wp-admin/network/upgrade.php:96
+#: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Warnung! Es ist ein Problem bei der Aktualisierung von %1$s aufgetreten. Dein Server könnte Probleme damit haben, sich mit Websites zu verbinden, die darauf laufen. Fehlermeldung: %2$s"
 
@@ -619,7 +619,7 @@ msgstr "Von hier aus kannst du:"
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "Willkommen im Administrationsbereich. Hier kannst du alle Einstellungen für dein Multisite-Netzwerk vornehmen."
 
-#: wp-admin/network/upgrade.php:137
+#: wp-admin/network/upgrade.php:138
 msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 msgstr "WordPress wurde aktualisiert! Bevor du aber weitermachen kannst, müssen die einzelnen Websites in deinem Netzwerk ebenfalls noch aktualisiert werden."
 
@@ -628,7 +628,7 @@ msgid "Only use this screen once you have updated to a new version of WordPress 
 msgstr "Benutze diese Ansicht nur, wenn du auf eine neue Version von WordPress durch Aktualisierungen/Verfügbare Aktualisierungen aktualisiert hast; etwa über das Netzwerk-Administrationsmenü oder die Toolbar. Durch Klick auf den &#8222;Netzwerk aktualisieren&#8220;-Button wirst du schrittweise durch jede Website im Netzwerk geführt, immer fünf zugleich, um sicherzustellen, dass alle Datenbank-Updates angewandt wurden."
 
 #: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:42
-#: wp-admin/network/upgrade.php:141 wp-admin/network/menu.php:34
+#: wp-admin/network/upgrade.php:142 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Netzwerk aktualisieren"
 
@@ -1082,7 +1082,7 @@ msgstr "Die Werte bei &#8222;Einstellungen für neue Website&#8220; werden immer
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "Die folgenden Begriffe sind für WordPress reserviert und können deshalb nicht als Website-Name genutzt werden: %s"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "Falls dein Browser nicht automatisch zur nächsten Seite weiterleitet, klicke auf folgenden Link:"
 
@@ -1186,7 +1186,7 @@ msgstr "Der erste Beitrag einer neuen Website."
 msgid "The author of the first comment on a new site."
 msgstr "Der Autor des ersten Kommentars einer neuen Website."
 
-#: wp-admin/network/upgrade.php:72
+#: wp-admin/network/upgrade.php:73
 msgid "All done!"
 msgstr "Alles fertig!"
 
@@ -1234,7 +1234,7 @@ msgstr "Fehlende E-Mail-Adresse."
 msgid "Missing or invalid site address."
 msgstr "Fehlende oder ungültige Website-Adresse."
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "Next Sites"
 msgstr "Weitere Websites"
 
