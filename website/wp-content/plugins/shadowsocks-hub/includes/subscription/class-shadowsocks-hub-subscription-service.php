@@ -11,7 +11,7 @@ class Shadowsocks_Hub_Subscription_Service
         return $shadowsocksAccounts;
     }
 
-    static public function create_subscription()
+    static public function create_or_update_subscription()
     {
         $user_id = get_current_user_id();
         $user_id = "1";
@@ -26,7 +26,7 @@ class Shadowsocks_Hub_Subscription_Service
 
         error_log("subscription =" . implode(';', $subscription));
 
-        return Shadowsocks_Hub_Subscription_Dao::create_subscription($subscription);
+        return Shadowsocks_Hub_Subscription_Dao::create_or_update_subscription($subscription);
     }
 
     static public function generateRandomString($length = 8) {

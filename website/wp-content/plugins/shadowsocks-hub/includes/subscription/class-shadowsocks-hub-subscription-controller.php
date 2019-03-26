@@ -14,7 +14,7 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         register_rest_route($namespace, '/' . $base, array(
             array(
                 'methods'             => WP_REST_Server::CREATABLE,
-                'callback'            => array($this, 'create_subscription'),
+                'callback'            => array($this, 'create_or_update_subscription'),
                 'permission_callback' => array($this, 'create_item_permissions_check'),
                 'args'                => $this->get_endpoint_args_for_item_schema(true),
             ),
@@ -77,12 +77,12 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      * @param WP_REST_Request $request Full data about the request.
      * @return WP_Error|WP_REST_Request
      */
-    public function create_subscription()
+    public function create_or_update_subscription()
     {
-        $data = Shadowsocks_Hub_Subscription_Service::create_subscription();
+        $result = Shadowsocks_Hub_Subscription_Service::create_or_update_subscription();
 
-        if (is_array($data)) {
-            return new WP_REST_Response($data, 201);
+        if ($result == 1) {
+            return new WP_REST_Response($result, 200);
         }
 
         return new WP_Error('cant-create', __('message', 'text-domain'), array('status' => 500));
