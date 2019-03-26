@@ -19,7 +19,7 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
                 'args'                => $this->get_endpoint_args_for_item_schema(true),
             ),
         ));
-        register_rest_route($namespace, '/' . $base . '/(?P<id>[\d]+)', array(
+        register_rest_route($namespace, '/' . $base . '/(?P<id>[a-zA-Z0-9]+)', array(
             array(
                 'methods'             => WP_REST_Server::READABLE,
                 'callback'            => array($this, 'get_subscription'),
@@ -44,14 +44,14 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         //get parameters from request
         $params = $request->get_params();
         $id = $params['id'];
-        $item = Shadowsocks_Hub_Subscription_Service::get_subscription($id);
-        $data = $this->prepare_item_for_response($item, $request);
+        $shadowsocks_accounts = Shadowsocks_Hub_Subscription_Service::get_subscription($id);
+        $subscription = $this->prepare_item_for_response($shadowsocks_accounts, $request);
 
         //return a response or error based on some conditional
-        if (!is_wp_error($item)) {
-            return new WP_REST_Response($data, 200);
+        if (!is_wp_error($shadowsocks_accounts)) {
+            return new WP_REST_Response($subscription, 200);
         } else {
-            return new WP_Error('500', get_error_message($item));
+            return new WP_Error('500', get_error_message($shadowsocks_accounts));
         }
     }
 
@@ -102,8 +102,8 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      * @param WP_REST_Request $request Request object.
      * @return mixed
      */
-    public function prepare_item_for_response($item, $request)
+    public function prepare_item_for_response($shadowsocks_accounts, $request)
     {
-        return $item;
+        return $shadowsocks_accounts;
     }
 }
