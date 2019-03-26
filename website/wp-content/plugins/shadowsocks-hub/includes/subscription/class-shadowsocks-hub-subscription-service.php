@@ -5,7 +5,7 @@ class Shadowsocks_Hub_Subscription_Service
     /**
      * @return WP_Error|shadowsocks_account_array
      */
-    static public function get_item($id)
+    static public function get_subscription($id)
     {
         $shadowsocksAccounts = Shadowsocks_Hub_Subscription_Dao::get_shadowsocks_accounts($id);
         return $shadowsocksAccounts;
@@ -23,9 +23,6 @@ class Shadowsocks_Hub_Subscription_Service
             'id' => $random_string,
             'created_time' => $created_time
         );
-
-        error_log("subscription =" . implode(';', $subscription));
-
         return Shadowsocks_Hub_Subscription_Dao::create_or_update_subscription($subscription);
     }
 
@@ -37,33 +34,5 @@ class Shadowsocks_Hub_Subscription_Service
             $randomString .= $characters[rand(0, $charactersLength - 1)];
         }
         return $randomString;
-    }
-
-    public function update_item($request)
-    {
-        $item = $this->prepare_item_for_database($request);
-
-        if (function_exists('slug_some_function_to_update_item')) {
-            $data = slug_some_function_to_update_item($item);
-            if (is_array($data)) {
-                return new WP_REST_Response($data, 200);
-            }
-        }
-
-        return new WP_Error('cant-update', __('message', 'text-domain'), array('status' => 500));
-    }
-
-    public function delete_item($request)
-    {
-        $item = $this->prepare_item_for_database($request);
-
-        if (function_exists('slug_some_function_to_delete_item')) {
-            $deleted = slug_some_function_to_delete_item($item);
-            if ($deleted) {
-                return new WP_REST_Response(true, 200);
-            }
-        }
-
-        return new WP_Error('cant-delete', __('message', 'text-domain'), array('status' => 500));
     }
 }
