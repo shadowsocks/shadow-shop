@@ -51,7 +51,7 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         if (!is_wp_error($shadowsocks_accounts)) {
             return new WP_REST_Response($subscription, 200);
         } else {
-            return new WP_Error('500', get_error_message($shadowsocks_accounts));
+            return new WP_Error('500', $shadowsocks_accounts->get_error_message());
         }
     }
 
