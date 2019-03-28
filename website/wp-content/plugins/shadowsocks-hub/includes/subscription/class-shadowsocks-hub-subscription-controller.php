@@ -104,6 +104,17 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      */
     public function prepare_item_for_response($shadowsocks_accounts, $request)
     {
-        return $shadowsocks_accounts;
+        $all_urls = '';
+        foreach ($shadowsocks_accounts as $account) {
+            $host = $account['node']['server']['ipAddressOrDomainName'];
+            $port = $account['port'];
+            $password = $account['password'];
+            $method = $account['method'];
+            $url = "ss://" . base64_encode("$method:$password@$host:$port");
+            $all_urls .= $url . "\r\n";
+        }
+        
+        $encoded_urls = base64_encode($all_urls);
+        return $encoded_urls;
     }
 }
