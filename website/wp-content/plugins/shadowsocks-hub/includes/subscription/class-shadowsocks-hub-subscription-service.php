@@ -11,6 +11,16 @@ class Shadowsocks_Hub_Subscription_Service
         return $shadowsocksAccounts;
     }
 
+    /**
+     * @return null|subscription_id
+     */
+    static public function get_current_user_subscription()
+    {
+        $user_id = get_current_user_id();
+        $id = Shadowsocks_Hub_Subscription_Dao::get_subscription_id_by_user_id($user_id);
+        return $id;
+    }
+
     static public function create_or_update_subscription()
     {
         $user_id = get_current_user_id();

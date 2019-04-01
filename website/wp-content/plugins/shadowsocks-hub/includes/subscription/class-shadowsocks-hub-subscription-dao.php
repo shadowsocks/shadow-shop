@@ -16,6 +16,25 @@ class Shadowsocks_Hub_Subscription_Dao
     }
 
     /**
+     * @return null|subscription_id
+     */
+    static public function get_subscription_id_by_user_id($user_id)
+    {
+        global $wpdb;
+
+        $result = $wpdb->get_results(
+            'SELECT id FROM ' . $wpdb->prefix . 'sshub_subscription' .
+                ' WHERE userId=' . '"' . $user_id . '"'
+        );
+
+        if (sizeof($result) == 1) {
+            return $result[0]->id;
+        } else {
+            return null;
+        }
+    }
+
+    /**
      * @return NULL|userId
      */
     static public function get_user_id_by_subscription_id($id)
