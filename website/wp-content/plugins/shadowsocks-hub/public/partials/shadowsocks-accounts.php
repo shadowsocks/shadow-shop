@@ -43,7 +43,18 @@ if ( empty($accounts) ) { ?>
 
 $subscriptionId = Shadowsocks_Hub_Subscription_Service::get_current_user_subscription_id();
 
-$subscriptionUrl = get_site_url() . '/wp-json/shadow-shop/v1/subscription/' . $subscriptionId;
+if (is_null($subscriptionId)) {
+    Shadowsocks_Hub_Subscription_Service::create_or_update_subscription();
+    $subscriptionId = Shadowsocks_Hub_Subscription_Service::get_current_user_subscription_id();
+}
+
+if (is_null($subscriptionId)) {
+    error_log("Error. subscriptionId is still null");
+    $subscriptionUrl = null;
+} else {
+    $subscriptionUrl = get_site_url() . '/wp-json/shadow-shop/v1/subscription/' . $subscriptionId;
+}
+
 
 ?>
 

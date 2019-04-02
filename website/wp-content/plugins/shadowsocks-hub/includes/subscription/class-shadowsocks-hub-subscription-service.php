@@ -24,7 +24,6 @@ class Shadowsocks_Hub_Subscription_Service
     static public function create_or_update_subscription()
     {
         $user_id = get_current_user_id();
-        $user_id = "1";
         $random_string = Shadowsocks_Hub_Subscription_Service::generateRandomString();
         $created_time = (int) time();
 
