@@ -41,7 +41,10 @@ if ( empty($accounts) ) { ?>
     die();
 }
 
-$subscriptionUrl = "https://test.com";
+$subscriptionId = Shadowsocks_Hub_Subscription_Service::get_current_user_subscription_id();
+
+$subscriptionUrl = get_site_url() . '/wp-json/shadow-shop/v1/subscription/' . $subscriptionId;
+
 ?>
 
 <h3> <?php esc_html_e( 'Subscription:', 'shadowsocks-hub' ) ?></h3>
