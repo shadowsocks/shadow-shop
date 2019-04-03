@@ -63,11 +63,25 @@ if (is_null($subscriptionId)) {
 <div class="qrcode-container">
     <div class="qrcode-div">
         <span id="sshub-subscription-qr-code"></span>
+        <!--
         <div class="button-div">
-            <button class="woocommerce-button"><?php esc_html_e('Reset', 'shadowsocks-hub'); ?></button>
+            <button id="subscription-reset" class="woocommerce-button"><?php esc_html_e('Reset', 'shadowsocks-hub'); ?></button>
         </div>
+        -->
     </div>
 </div>
+
+<!--
+<script type="text/javascript">
+    var subscriptionReset = document.getElementsById("subscription-reset");
+    subscriptionReset.onclick = function() {
+            var url = jQuery( this ).attr('url');
+            jQuery( document ).ready(function() {
+                        qrcode.makeCode(url);
+                    });
+        }
+</script>
+-->
 
 <script type="text/javascript">
     var subscriptionQrcode = new QRCode(document.getElementById("sshub-subscription-qr-code"), {
