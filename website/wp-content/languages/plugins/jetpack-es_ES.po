@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-01 16:05:02+0000\n"
+"PO-Revision-Date: 2019-04-02 23:35:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -632,10 +632,6 @@ msgstr "UTC%s"
 msgid "Social Media Icons (Deprecated)"
 msgstr "Iconos de medios sociales (obsoleto)"
 
-#: modules/widgets/social-icons.php:501
-msgid "RSS Feed"
-msgstr "RSS Feed"
-
 #: modules/widgets/social-icons.php:315
 msgid "Account URL"
 msgstr "URL de la cuenta"
@@ -667,6 +663,10 @@ msgstr "Iconos sociales"
 #: modules/widgets/social-icons.php:14
 msgid "Add social-media icons to your site."
 msgstr "Añade iconos de medios sociales a tu sitio."
+
+#: modules/widgets/social-icons.php:501
+msgid "RSS Feed"
+msgstr "Feed RSS"
 
 #. translators: Message shown after a post is published
 #: modules/subscriptions.php:201
@@ -1230,14 +1230,6 @@ msgstr "Título (opcional):"
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: modules/widgets/search.php:169
-msgid "Oldest first"
-msgstr "Más antiguos primero"
-
-#: modules/widgets/search.php:168
-msgid "Newest first"
-msgstr "Más nuevos primero"
-
 #: modules/widgets/search.php:167
 msgid "Relevance"
 msgstr "Relevancia"
@@ -1259,6 +1251,14 @@ msgstr "Mes"
 msgctxt "label for filtering posts"
 msgid "Post Types"
 msgstr "Tipos de contenido"
+
+#: modules/widgets/search.php:169
+msgid "Oldest first"
+msgstr "Los más antiguos primero"
+
+#: modules/widgets/search.php:168
+msgid "Newest first"
+msgstr "Los más nuevos primero"
 
 #: modules/search/class.jetpack-search-helpers.php:195
 msgctxt "label for filtering posts"
@@ -1696,10 +1696,6 @@ msgstr "Eliminar"
 msgid "Choose an interval:"
 msgstr "Elige un intervalo:"
 
-#: modules/widgets/search.php:715
-msgid "Modified GMT"
-msgstr "GMT Modificado"
-
 #: modules/widgets/search.php:712
 msgid "Modified"
 msgstr "Modificado"
@@ -1751,6 +1747,10 @@ msgstr "%s atrás"
 #: modules/protect/blocked-login-page.php:603
 msgid "%s Get help unlocking your site"
 msgstr "%s Obtén ayuda para desbloquear su sitio"
+
+#: modules/widgets/search.php:715
+msgid "Modified GMT"
+msgstr "GMT modificado"
 
 #: modules/protect/blocked-login-page.php:264
 msgid "Oops, we were unable to send a recovery email. Try again."

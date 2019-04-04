@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-25 07:49:39+0000\n"
+"PO-Revision-Date: 2019-03-26 23:32:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8981,10 +8981,6 @@ msgstr "Lista de los principales productos vendidos."
 msgid "An alphanumeric identifier for the resource."
 msgstr "Un identificador alfanumérico para el recurso."
 
-#: includes/api/v1/class-wc-rest-reports-controller.php:163
-msgid "A human-readable description of the resource."
-msgstr "Una descripción del recurso que las personas puedan leer."
-
 #: includes/api/v1/class-wc-rest-tax-classes-controller.php:225
 #: includes/api/v1/class-wc-rest-taxes-controller.php:457
 msgid "Taxes do not support trashing."
@@ -9261,6 +9257,10 @@ msgstr "Cabeceras de la petición."
 #: includes/api/v2/class-wc-rest-webhook-deliveries-v2-controller.php:82
 msgid "A friendly summary of the response including the HTTP response code, message, and body."
 msgstr "Un resumen amigable de la respuesta, incluyendo el código HTTP de respuesta, el mensaje y el cuerpo."
+
+#: includes/api/v1/class-wc-rest-reports-controller.php:163
+msgid "A human-readable description of the resource."
+msgstr "Una descripción del recurso legible por humanos."
 
 #. translators: %s: dimension unit
 #: includes/api/v1/class-wc-rest-products-controller.php:2464
@@ -10184,12 +10184,6 @@ msgstr "La fecha en la que la variación fue modificada por última vez, en la z
 msgid "Variation image data."
 msgstr "Datos de la imagen de la variación."
 
-#: includes/api/class-wc-rest-products-controller.php:1256
-#: includes/api/v1/class-wc-rest-products-controller.php:2555
-#: includes/api/v2/class-wc-rest-products-v2-controller.php:2025
-msgid "List of grouped products ID."
-msgstr "Lista de identificadores de productos agrupados."
-
 #: includes/api/v1/class-wc-rest-products-controller.php:2589
 #: includes/api/v2/class-wc-rest-products-v2-controller.php:2084
 msgid "Limit result set to products assigned a specific status."
@@ -10597,12 +10591,6 @@ msgstr "La fecha en la que se pagó el pedido, en la zona horaria del sitio."
 msgid "True the prices included tax during checkout."
 msgstr "Muestra, durante el pago, si los precios incluyen impuestos."
 
-#: includes/api/class-wc-rest-products-controller.php:1015
-#: includes/api/v1/class-wc-rest-products-controller.php:2041
-#: includes/api/v2/class-wc-rest-products-v2-controller.php:1779
-msgid "Allow reviews."
-msgstr "Permitir reseñas."
-
 #: includes/api/v1/class-wc-rest-product-attributes-controller.php:485
 msgid "Default sort order."
 msgstr "Orden por defecto."
@@ -10649,6 +10637,18 @@ msgstr "Controla si la variación se muestra como «hay existencias» o como «a
 #: includes/api/v2/class-wc-rest-products-v2-controller.php:1968
 msgid "Define if the attribute is visible on the \"Additional information\" tab in the product's page."
 msgstr "Definir si el atributo es visible en la pestaña de «Información adicional» en la página del producto."
+
+#: includes/api/class-wc-rest-products-controller.php:1256
+#: includes/api/v1/class-wc-rest-products-controller.php:2555
+#: includes/api/v2/class-wc-rest-products-v2-controller.php:2025
+msgid "List of grouped products ID."
+msgstr "Lista de IDs de productos agrupados."
+
+#: includes/api/class-wc-rest-products-controller.php:1015
+#: includes/api/v1/class-wc-rest-products-controller.php:2041
+#: includes/api/v2/class-wc-rest-products-v2-controller.php:1779
+msgid "Allow reviews."
+msgstr "Permitir valoraciones."
 
 #: includes/admin/views/html-notice-updating.php:21
 msgid "Your database is being updated in the background."
@@ -10701,6 +10701,11 @@ msgstr "La clave de la API proporcionada no tiene permisos de lectura."
 msgid "The API key provided does not have write permissions."
 msgstr "La clave de la API proporcionada no tiene permisos de escritura."
 
+#: includes/api/v1/class-wc-rest-coupons-controller.php:415
+#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:335
+msgid "Unique identifier for the object."
+msgstr "Identificador único para el objeto."
+
 #: includes/api/v1/class-wc-rest-products-controller.php:102
 #: includes/api/v1/class-wc-rest-coupons-controller.php:108
 #: includes/api/v1/class-wc-rest-orders-controller.php:102
@@ -10714,11 +10719,6 @@ msgstr "La clave de la API proporcionada no tiene permisos de escritura."
 #: includes/api/v2/class-wc-rest-product-variations-v2-controller.php:115
 msgid "Whether to bypass trash and force deletion."
 msgstr "Si se ignora la papelera y se fuerza el borrado."
-
-#: includes/api/v1/class-wc-rest-coupons-controller.php:415
-#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:335
-msgid "Unique identifier for the object."
-msgstr "Identificador único para el objeto."
 
 #: includes/api/v1/class-wc-rest-coupons-controller.php:438
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:382
