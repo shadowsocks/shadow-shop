@@ -21,7 +21,7 @@ services:
       #    max_attempts: 20
       #    window: 60s
       environment:
-        DOMAINS: "${DOMAIN_NAME} -> http://wordpress, api.opensesame.vip -> http://sshub"
+        DOMAINS: "${DOMAIN_NAME} -> http://wordpress, api.${DOMAIN_NAME} -> http://sshub"
         STAGE: "${STAGE}"
         #STAGE: "local" or "production"
 
@@ -65,7 +65,7 @@ services:
         - ./website:/var/www/html
 
     sshub:
-      image: sshub/ssshop:1.2.0
+      image: sshub/ssshop:1.3.0
       depends_on:
         - db
       environment:
