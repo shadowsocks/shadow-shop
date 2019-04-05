@@ -48,23 +48,6 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
     }
 
     /**
-     * Create one item from the collection
-     *
-     * @param WP_REST_Request $request Full data about the request.
-     * @return WP_Error|WP_REST_Request
-     */
-    public function create_or_update_subscription()
-    {
-        $result = Shadowsocks_Hub_Subscription_Service::create_or_update_subscription();
-
-        if ($result == 1) {
-            return new WP_REST_Response($result, 200);
-        }
-
-        return new WP_Error('cant-create', __('message', 'text-domain'), array('status' => 500));
-    }
-
-    /**
      * Check if a given request has access to get a specific item
      *
      * @param WP_REST_Request $request Full data about the request.
@@ -72,18 +55,6 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
      */
     public function get_item_permissions_check($request)
     {
-        return true;
-    }
-
-    /**
-     * Check if a given request has access to create items
-     *
-     * @param WP_REST_Request $request Full data about the request.
-     * @return WP_Error|bool
-     */
-    public function create_item_permissions_check($request)
-    {
-        //return current_user_can('edit_something');
         return true;
     }
 
