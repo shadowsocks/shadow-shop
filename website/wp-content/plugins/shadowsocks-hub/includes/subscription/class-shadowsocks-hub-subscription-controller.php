@@ -11,14 +11,6 @@ class Shadowsocks_Hub_Subscription_Controller extends WP_REST_Controller
         $version = '1';
         $namespace = 'shadow-shop/v' . $version;
         $base = 'subscription';
-        register_rest_route($namespace, '/' . $base, array(
-            array(
-                'methods'             => WP_REST_Server::CREATABLE,
-                'callback'            => array($this, 'create_or_update_subscription'),
-                'permission_callback' => array($this, 'create_item_permissions_check'),
-                'args'                => $this->get_endpoint_args_for_item_schema(true),
-            ),
-        ));
         register_rest_route($namespace, '/' . $base . '/(?P<id>[a-zA-Z0-9]+)', array(
             array(
                 'methods'             => WP_REST_Server::READABLE,
