@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-08 01:03:18+0000\n"
+"PO-Revision-Date: 2019-04-04 14:02:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11022,7 +11022,7 @@ msgstr "ein,eine,einer,der,die,das,und,oder,doch,sind,ist,war,für,von,in,an,zu,
 
 #: wp-includes/post-template.php:1684
 msgid "This content is password protected. To view it please enter your password below:"
-msgstr "Dieser Inhalt ist passwortgeschützt. Um ihn anzuschauen, gib dein Passwort bitte unten ein:"
+msgstr "Dieser Inhalt ist passwortgeschützt. Um ihn anschauen zu können, bitte das Passwort eingeben:"
 
 #: wp-includes/functions.php:1384
 msgid "ERROR: This is not a valid feed template."
