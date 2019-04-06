@@ -141,6 +141,10 @@ class Shadowsocks_Hub {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/account/class-shadowsocks-hub-account-service.php';
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/account/class-shadowsocks-hub-account-dao.php';
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/node/class-shadowsocks-hub-node-service.php';
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/node/class-shadowsocks-hub-node-dao.php';
 		$this->loader = new Shadowsocks_Hub_Loader();
 
 	}

@@ -52,24 +52,9 @@ if (!empty($messages)) {
 	);
 	$allUsers = get_users($args);
 
-	$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/all", false);
-
-	$error = $return['error'];
-	$http_code = $return['http_code'];
-	$response = $return['body'];
-
-	$data = array();
-	if ($http_code === 200) {
-		$allNodes = $response;
-	} elseif ($http_code === 500) {
-		$error_message = "Backend system error (getAllNodes)";
-	} elseif ($error) {
-		$error_message = "Backend system error: " . $error;
-	} else {
-		$error_message = "Backend system error undetected error.";
-	};
-
-	if ($http_code !== 200) { ?>
+	$allNodes = Shadowsocks_Hub_Node_Service::get_all_nodes();
+	if (is_wp_error($allNodes)) { 
+		$error_message = $allNodes->get_error_message(); ?>
 		<div class="error">
 			<ul>
 				<?php
@@ -77,10 +62,7 @@ if (!empty($messages)) {
 				?>
 			</ul>
 		</div>
-	<?php
-}
-?>
-
+	<?php } ?>
 
 	<form method="post" name="addaccount" id="addaccount" class="validate" novalidate="novalidate">
 		<input name="action" type="hidden" value="addaccount" />
