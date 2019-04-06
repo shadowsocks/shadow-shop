@@ -83,7 +83,8 @@ class Shadowsocks_Hub_Node_Dao
         } elseif ($http_code === 522) {
             $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
         } elseif ($http_code === 523) {
-            $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
+            $node_state = "shadowsocks restful api invalid password";
+            return $node_state;
         } elseif ($http_code === 526) {
             $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
         } elseif ($http_code === 504) {
