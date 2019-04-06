@@ -4,7 +4,7 @@ class Shadowsocks_Hub_Node_Dao
     /**
      * @return WP_Error|shadowsocks_node
      */
-    static public function get_node_by_id($id)
+    public static function get_node_by_id($id)
     {
         $data_array = array(
             "id" => $id,
@@ -36,7 +36,7 @@ class Shadowsocks_Hub_Node_Dao
     /**
      * @return WP_Error|shadowsocks_node_array
      */
-    static public function get_all_nodes()
+    public static function get_all_nodes()
     {
         $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/all", false);
 
@@ -59,9 +59,54 @@ class Shadowsocks_Hub_Node_Dao
     }
 
     /**
+     * @return WP_Error|shadowsocks_node
+     */
+    public static function ping_node_by_id($id)
+    {
+        $data_array = array(
+            "id" => $id,
+        );
+
+        $ping_return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/ping", $data_array);
+
+        $error = $ping_return['error'];
+        $http_code = $ping_return['http_code'];
+        $response = $ping_return['body'];
+
+        if ($http_code === 200) {
+            $node_state = "ok";
+            return $node_state;
+        } elseif ($http_code === 400) {
+            $error_message = "Backend system error (pingNodeById, invalid input)";
+        } elseif ($http_code === 404) {
+            $error_message = "Backend system error (pingNodeById, id does not exist)";
+        } elseif ($http_code === 522) {
+            $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
+        } elseif ($http_code === 523) {
+            $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
+        } elseif ($http_code === 526) {
+            $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
+        } elseif ($http_code === 504) {
+            $node_state = "shadowsocks restful api offline";
+            return $node_state;
+        } elseif ($http_code === 523) {
+            $error_message = "Backend system error (pingNodeById, authentication to shadowsocks restful api failed)";
+        } elseif ($http_code === 524) {
+            $node_state = "shadowsocks-libev offline";
+            return $node_state;
+        } elseif ($http_code === 525) {
+            $node_state = "shadowsocks-libev no response";
+            return $node_state;
+        } else {
+            $error_message = "Backend system error undetected error.";
+        }
+        return new WP_Error('sshub_error', $error_message);
+    }
+
+    /**
      * @return WP_Error|true
      */
-    static public function delete_node_by_id($id)
+    public static function delete_node_by_id($id)
     {
         $data_array = array(
             "id" => $id,

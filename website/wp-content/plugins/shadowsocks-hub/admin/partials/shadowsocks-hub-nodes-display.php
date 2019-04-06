@@ -190,55 +190,14 @@ $error_messages = array();
 
             for ($i = 0; $i < $arr_length; $i++) {
 
-                $data_array = array(
-                    "id" => $response[$i]['id'],
-                );
-
-                $ping_return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/ping", $data_array);
-
-                $ping_error = $ping_return['error'];
-                $ping_http_code = $ping_return['http_code'];
-                $ping_response = $ping_return['body'];
-
-                $node_state = "";
-                if ($ping_http_code === 200) {
-                    $node_state = "ok";
-                } elseif ($ping_http_code === 400) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, invalid input)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 404) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, id does not exist)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 522) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 523) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken invalid password)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 526) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, shadowsocks restful api authToken internal error)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 504) {
-                    $node_state = "shadowsocks restful api offline";
-                } elseif ($ping_http_code === 523) {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error (pingNodeById, authentication to shadowsocks restful api failed)";
-                    $error_occurred = true;
-                } elseif ($ping_http_code === 524) {
-                    $node_state = "shadowsocks-libev offline";
-                } elseif ($ping_http_code === 525) {
-                    $node_state = "shadowsocks-libev no response";
-                } else {
-                    $node_state = "system error";
-                    $error_messages[] = "Backend system error undetected error.";
-                    $error_occurred = true;
+				$id = $response[$i]['id'];
+                $node_state = Shadowsocks_Hub_Node_Service::ping_node_by_id($id);
+                if (is_wp_error(($node_state))) {
+                    $error_message = $node_state->get_error_message();
+					$error_messages[] = $error_message;
+					$node_state = "system error";
+					$error_occurred = true;
                 }
-                ;
 
                 $data[] = array(
                     'id' => $response[$i]['id'],
@@ -274,17 +233,12 @@ $error_messages = array();
         if ($error_occurred) {?>
 		<div class="error">
 		<ul>
-			<?php
-foreach ($error_messages as $err) {
+			<?php foreach ($error_messages as $err) {
             echo "<li>$err</li>\n";
-        }
-
-            ?>
+        }?>
 		</ul>
 	</div>
-	<?php
-}
-        ?>
+	<?php }?>
 	<form id="shadowsocks-hub-nodes-list-form" method="get">
 		<input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>" />
 		<?php
