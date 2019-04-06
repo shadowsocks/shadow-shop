@@ -30,54 +30,28 @@ switch ($current_action) {
 		$error_messages = array();
 		foreach ($nodeids as $id) {
 
-			$data_array = array (
-				"id" => $id,
-			);
-		
-			$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node", $data_array);
-		
-			$error = $return['error'];
-			$http_code = $return['http_code'];
-			$response = $return['body'];
-		
-			if ($http_code === 200) {
-				$name = $response['name'];
-			} elseif ($http_code === 400) {
-				$error_messages[] = urlencode("Invalid node id");
+			$node = Shadowsocks_Hub_Node_Service::get_node_by_id($id);
+
+			if (is_wp_error($node)) {
+				$error_message = $node->get_error_message();
+				$error_messages[] = urlencode($error_message);
 				continue;
-			} elseif ($http_code === 404) {
-				$error_messages[] = urlencode("Node does not exist");
-				continue; // no need to proceed with calling delete
-			} elseif ($http_code === 500) {
-				$error_messages[] = urlencode("Backend system error (getNodeById)");
-				continue; // no need to proceed with calling delete
-			} elseif ($error) {
-				$error_messages[] = urldecode("Backend system error: ".$error);
+			}
+
+			$name = $node['name'];
+
+			$return = Shadowsocks_Hub_Node_Service::delete_node_by_id($id);
+
+			if (is_wp_error($return)) {
+				$error_message = $return->get_error_message();
+				if ($error_message == 'Node is in use') {
+					$error_message = "Node $name is in use. Delete its accounts first.";
+				}
+				$error_messages[] = urlencode($error_message);
 				continue;
-			} else {
-				$error_messages[] = urldecode("Backend system error undetected error.");
-				continue;
-			};
-		
-			$return = Shadowsocks_Hub_Helper::call_api("DELETE", "http://sshub/api/node", $data_array);
-		
-			$error = $return['error'];
-			$http_code = $return['http_code'];
-			$response = $return['body'];
-		
-			if ($http_code === 204) {
-				++$delete_count;
-			} elseif ($http_code === 400) {
-				$error_messages[] = urlencode("Validation error");
-			} elseif ($http_code === 409) {
-				$error_messages[] = urlencode("$name is in use. Delete its accounts first.");
-			} elseif ($http_code === 500) {
-				$error_messages[] = urlencode("Backend system error (deleteNode)");
-			} elseif ($error) {
-				$error_messages[] = urldecode("Backend system error: ".$error);	
-			} else {
-				$error_messages[] = urldecode("Backend system error undetected error.");
-			};
+			}
+
+			++$delete_count;
 		}
 
 		$redirect = add_query_arg( array(
