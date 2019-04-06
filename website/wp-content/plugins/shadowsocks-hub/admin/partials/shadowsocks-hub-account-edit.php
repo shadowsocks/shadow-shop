@@ -97,53 +97,29 @@ $edit_link = add_query_arg( array(
 
 echo esc_url( $edit_link ); 
 ?>" method="post" novalidate="novalidate">
-<?php wp_nonce_field('update-account_' . $account_id) ?>
-<?php
+<?php wp_nonce_field('update-account_' . $account_id);
 
-$data_array = array (
-	"ids" => array($account_id),
-);
+$account = Shadowsocks_Hub_Account_Service::get_account_by_id($account_id);
 
-$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/account/accounts", $data_array);
-
-$error = $return['error'];
-$http_code = $return['http_code'];
-$response = $return['body'];
-
-if ($http_code === 200) {
-	$userId = $response[0]['purchase']['userId'];
-	$host = $response[0]['node']['server']['ipAddressOrDomainName'];
-	$protocol = $response[0]['node']['protocol'];
-	$port = $response[0]['port'];
-	$password = $response[0]['password'];
-	$method = $response[0]['method'];
-	$orderId = $response[0]['purchase']['orderId'];
-	$lifeSpan = $response[0]['purchase']['lifeSpan'];
+if (!is_wp_error($account)) {
+	$userId = $account['purchase']['userId'];
+	$host = $account['node']['server']['ipAddressOrDomainName'];
+	$protocol = $account['node']['protocol'];
+	$port = $account['port'];
+	$password = $account['password'];
+	$method = $account['method'];
+	$orderId = $account['purchase']['orderId'];
+	$lifeSpan = $account['purchase']['lifeSpan'];
 	$user = get_user_by('id', (int) $userId);
 	$userEmail = $user->data->user_email;
-
-} elseif ($http_code === 400) {
-	$error_messages[] = urlencode("Invalid account id");
-	continue;
-} elseif ($http_code === 500) {
-	$error_messages[] = urlencode("Backend system error (getAccountsByIds)");
-	continue; // no need to proceed with calling delete
-} elseif ($error) {
-	$error_messages[] = urldecode("Backend system error: ".$error);
-	continue;
 } else {
-	$error_messages[] = urldecode("Backend system error undetected error.");
-	continue;
-};
-if ($http_code !== 200) { ?>
+	$error_message = $account->get_error_message(); ?>
 	<div class="error">
 		<ul>
 			<li><?php echo $error_message;?></li>
 		</ul>
 	</div>
-<?php
-}
-?>
+	<?php } ?>
 
 <table class="form-table">
 	<tr class="account-host-wrap">
