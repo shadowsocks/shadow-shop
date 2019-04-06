@@ -16,51 +16,28 @@ switch ($action) {
 case 'update':
 check_admin_referer('update-account_' . $account_id);
 
-
-// Update the account.
-$data_array = array (
-	"id" => $account_id,
-	"type" => "SsAccount",
-	"port" => (int) $_REQUEST['port'],
-	"password" => $_REQUEST['password'],
-	"method" => $_REQUEST['method'],
-);
-
-$return = Shadowsocks_Hub_Helper::call_api("PUT", "http://sshub/api/account", json_encode($data_array));
-
-$error = $return['error'];
-$http_code = $return['http_code'];
-$response = $return['body'];
-
 $edit_link = add_query_arg( array(
 	'page' => 'shadowsocks_hub_edit_account',
 	'account_id' => $account_id,
 ), admin_url('admin.php') );
 
-if ($http_code === 200) {
+$account = array(
+	"id" => $account_id,
+	"port" => (int) $_REQUEST['port'],
+	"password" => $_REQUEST['password'],
+	"method" => $_REQUEST['method'],
+);
+
+$return = Shadowsocks_Hub_Account_Service::update_account($account);
+
+if (!is_wp_error($return)) {
 	$redirect = add_query_arg( 'updated', true, $edit_link );
-
-	wp_redirect( $redirect );
-	die();
-} elseif ($http_code === 400) {
-	$error_msg = "Invalid input.";
-} elseif ($http_code === 404) {
-	$error_msg = "Account does not exist.";
-} elseif ($http_code === 409) {
-	$error_msg = "New port has already been used.";
-} elseif ($http_code === 410) {
-	$error_msg = "Type does not match.";
-} elseif ($http_code === 500) {
-	$error_msg = "Backend system error (updateAccount)";
-} elseif ($error) {
-	$error_msg = "Backend system error: ".$error;
 } else {
-	$error_msg = "Backend system error undetected error.";
+	$error_message = $return->get_error_message();
+	$redirect = add_query_arg( array(
+		'error' => urlencode($error_message),
+	), $edit_link );
 }
-
-$redirect = add_query_arg( array(
-	'error' => urlencode($error_msg),
-), $edit_link );
 
 wp_redirect( $redirect );
 die();

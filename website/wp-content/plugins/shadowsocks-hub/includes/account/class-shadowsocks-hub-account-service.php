@@ -11,6 +11,14 @@ class Shadowsocks_Hub_Account_Service
     }
 
     /**
+     * @return WP_Error|true
+     */
+    static public function update_account($account)
+    {
+        return Shadowsocks_Hub_Account_Dao::update_account($account);
+    }
+
+    /**
      * @return WP_Error|shadowsocks_account_array
      */
     static public function get_accounts_for_current_user()
