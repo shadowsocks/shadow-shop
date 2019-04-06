@@ -97,16 +97,16 @@ switch ($current_action) {
 $go_delete = 0;
         foreach ($nodeids as $id) {
 
-			$node = Shadowsocks_Hub_Node_Service::get_node_by_id($id);
+            $node = Shadowsocks_Hub_Node_Service::get_node_by_id($id);
 
-			if (!is_wp_error($node)) {
-				$name = $node['name'];
-				echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $name) . "</li>\n";
+            if (!is_wp_error($node)) {
+                $name = $node['name'];
+                echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $name) . "</li>\n";
                 $go_delete++;
-			} else {
-				$error_message = $node->get_error_message();
-				echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $error_message) . "</li>\n";
-			}
+            } else {
+                $error_message = $node->get_error_message();
+                echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $error_message) . "</li>\n";
+            }
         }
         ?>
 	</ul>
