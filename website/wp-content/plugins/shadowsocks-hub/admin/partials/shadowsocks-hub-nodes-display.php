@@ -97,37 +97,16 @@ switch ($current_action) {
 $go_delete = 0;
         foreach ($nodeids as $id) {
 
-            $data_array = array(
-                "id" => $id,
-            );
+			$node = Shadowsocks_Hub_Node_Service::get_node_by_id($id);
 
-            $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node", $data_array);
-
-            $error = $return['error'];
-            $http_code = $return['http_code'];
-            $response = $return['body'];
-
-            if ($http_code === 200) {
-                $name = $response['name'];
-            } elseif ($http_code === 400) {
-                $error_message = "Invalid node id";
-            } elseif ($http_code === 404) {
-                $error_message = "Node does not exist";
-            } elseif ($http_code === 500) {
-                $error_message = "Backend system error (getNodeById)";
-            } elseif ($error) {
-                $error_message = "Backend system error: " . $error;
-            } else {
-                $error_message = "Backend system error undetected error.";
-            }
-            ;
-
-            if ($http_code === 200) {
-                echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $name) . "</li>\n";
+			if (!is_wp_error($node)) {
+				$name = $node['name'];
+				echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $name) . "</li>\n";
                 $go_delete++;
-            } else {
-                echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $error_message) . "</li>\n";
-            }
+			} else {
+				$error_message = $node->get_error_message();
+				echo "<li><input type=\"hidden\" name=\"nodes[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $error_message) . "</li>\n";
+			}
         }
         ?>
 	</ul>
