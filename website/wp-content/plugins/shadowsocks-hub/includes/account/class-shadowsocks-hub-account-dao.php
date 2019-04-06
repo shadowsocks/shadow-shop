@@ -1,6 +1,44 @@
 <?php
 class Shadowsocks_Hub_Account_Dao
 {
+    /**
+     * @return WP_Error|true
+     */
+    static public function create_account($account)
+    {
+        $data_array = array(
+            "type" => "SsAccount",
+            "uiType" => "wordpress",
+            "nodeId" => $account['nodeId'],
+            "userId" => $account['userId'],
+            "orderId" => "adminApproval",
+            "lifeSpan" => $account['lifeSpan'],
+            "method" => $account['method'],
+            "traffic" => (int)$account['traffic'],
+        );
+
+        $return = Shadowsocks_Hub_Helper::call_api("POST", "http://sshub/api/account", json_encode($data_array));
+
+        $error = $return['error'];
+        $http_code = $return['http_code'];
+        $response = $return['body'];
+
+        if ($http_code === 201) {
+            return true;
+        } elseif ($http_code === 400) {
+            $error_message = "Invalid input";
+        } elseif ($http_code === 404) {
+            $error_message = "Node does not exist";
+        } elseif ($http_code === 500) {
+            $error_message = "Backend system error (addAccountByAdmin)";
+        } elseif ($error) {
+            $error_message = "Backend system error: " . $error;
+        } else {
+            $error_message = "Backend system error undetected error.";
+        }
+
+        return new WP_Error('sshub_error', $error_message);
+    }
 
     /**
      * @return WP_Error|shadowsocks_account_array
