@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-06 10:18:30+0000\n"
+"PO-Revision-Date: 2019-04-05 20:02:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5483,7 +5483,7 @@ msgid ""
 "\t\tin math blogging platforms. Use $latex your latex code here$ or [latex]your latex code here[/latex]\n"
 "\t\tto include  in your posts and comments. Enjoy all sorts of options and embrace your inner nerd."
 msgstr ""
-" — это мощный язык разметки для создания сложных математических уравнений и формул.\n"
+"%1$s — мощный язык разметки для создания сложных математических уравнений и формул.\n"
 "\t\tJetpack сочетает мощь %1$s и простоту WordPress для реализации всех возможностей платформы\n"
 "\t\tдля ведения блогов, связанных с математикой. Используйте $latex код latex$ или [latex] код latex[/latex]\n"
 "\t\tдля включения в записи и комментарии. Оцените разнообразие вариантов и раскройте свои навыки великого ученого."
@@ -5530,14 +5530,6 @@ msgstr ""
 "\t\tGoogle Карт, SlideShare, Vine, SoundCloud и других внешних источников. Достаточно ввести соответствующий шорткод непосредственно в\n"
 "\t\tредакторе и нажать кнопку «Опубликовать»."
 
-#: modules/module-info.php:39
-msgid ""
-"Enhance plain Gravatar images with information about a person (including a name,\n"
-"\t\tbio, pictures, and contact info) when they leave a comment on one of your posts."
-msgstr ""
-"Дополняйте обычное изображение граватара сведениями о пользователе (включающими имя,\n"
-"\t\tбиографию, фотографии, контактные данные), когда пользователь оставляет комментарий к одной из ваших записей."
-
 #: modules/module-info.php:21
 msgid ""
 "We keep a daily or real-time backup of your site so that when mistakes or accidents occur, restoring your\n"
@@ -5549,6 +5541,14 @@ msgstr ""
 "\t\tсайта заняло считаные минуты, где бы вы ни находились. Файлы вашего сайта регулярно проверяются на наличие несанкционированных или\n"
 "\t\tподозрительных изменений, которые могут поставить под угрозу вашу систему безопасности или данные. Во многих случаях мы можем исправить их\n"
 "\t\tавтоматически (и уведомить вас). Если мы не можем этого сделать, мы предоставляем специалиста по поддержке."
+
+#: modules/module-info.php:39
+msgid ""
+"Enhance plain Gravatar images with information about a person (including a name,\n"
+"\t\tbio, pictures, and contact info) when they leave a comment on one of your posts."
+msgstr ""
+"Дополняйте обычное изображение граватара сведениями о пользователе (включающими имя,\n"
+"\t\tбиографию, фотографии, контактные данные), когда пользователь оставляет комментарий к одной из ваших записей."
 
 #: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:141
 msgid "The requested Jetpack module was deactivated."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-15 13:23:49+0000\n"
+"PO-Revision-Date: 2019-04-06 03:32:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10543,11 +10543,6 @@ msgstr "在此處輸入客戶名稱"
 msgid "Enter the menu item's name here"
 msgstr "在此處輸入選單項目名稱"
 
-#. translators: this is about a food menu
-#: modules/custom-post-types/nova.php:209
-msgid "Food Menus"
-msgstr "食物選單"
-
 #: modules/custom-post-types/nova.php:144
 msgid "For example, spicy, favorite, etc. <br /> Separate Labels with commas"
 msgstr "例如：嗆辣、最愛的內容等等。<br />利用逗號分隔標籤"
@@ -11218,6 +11213,11 @@ msgstr ""
 #: modules/custom-css/custom-css.php:892
 msgid "Edit CSS"
 msgstr "編輯 CSS"
+
+#. translators: this is about a food menu
+#: modules/custom-post-types/nova.php:209
+msgid "Food Menus"
+msgstr "菜單"
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"
