@@ -44,6 +44,9 @@ switch ($current_action) {
                 ++$delete_count;
             } else {
                 $error_message = $return->get_error_message();
+                if ($error_message === "Server is in use") {
+                    $error_message = "Server $ip_address_or_domain_name is in use. Delete its nodes first.";
+                }
                 $error_messages[] = urlencode($error_message);
             }
         }
@@ -90,6 +93,15 @@ switch ($current_action) {
 <?php
 $go_delete = 0;
         foreach ($serverids as $id) {
+
+            $server = Shadowsocks_Hub_Server_Service::get_server_by_id($id);
+            if (!is_wp_error($server)) {
+                $ip_address_or_domain_name = $server['ipAddressOrDomainName'];
+            } else {
+                $error_message = $server->get_error_message();
+                $error_messages[] = urlencode($error_message);
+                continue;
+            }
 
             $data_array = array(
                 "id" => $id,

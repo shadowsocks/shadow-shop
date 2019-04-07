@@ -79,7 +79,7 @@ class Shadowsocks_Hub_Server_Dao
         } elseif ($http_code === 400) {
             $error_message = "Validation error";
         } elseif ($http_code === 409) {
-            $error_message = "$ip_address_or_domain_name is in use. Delete its nodes first.";
+            $error_message = "Server is in use";
         } elseif ($http_code === 500) {
             $error_message = "Backend system error (deleteServer)";
         } elseif ($error) {
