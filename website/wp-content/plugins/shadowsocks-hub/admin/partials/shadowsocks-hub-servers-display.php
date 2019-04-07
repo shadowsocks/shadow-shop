@@ -97,41 +97,10 @@ $go_delete = 0;
             $server = Shadowsocks_Hub_Server_Service::get_server_by_id($id);
             if (!is_wp_error($server)) {
                 $ip_address_or_domain_name = $server['ipAddressOrDomainName'];
-            } else {
-                $error_message = $server->get_error_message();
-                $error_messages[] = urlencode($error_message);
-                continue;
-            }
-
-            $data_array = array(
-                "id" => $id,
-            );
-
-            $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/server", $data_array);
-
-            $error = $return['error'];
-            $http_code = $return['http_code'];
-            $response = $return['body'];
-
-            if ($http_code === 200) {
-                $ip_address_or_domain_name = $response['ipAddressOrDomainName'];
-            } elseif ($http_code === 400) {
-                $error_message = "Invalid server id";
-            } elseif ($http_code === 404) {
-                $error_message = "Server does not exist";
-            } elseif ($http_code === 500) {
-                $error_message = "Backend system error (getServerById)";
-            } elseif ($error) {
-                $error_message = "Backend system error: " . $error;
-            } else {
-                $error_message = "Backend system error undetected error.";
-            }
-            ;
-
-            if ($http_code === 200) {
                 echo "<li><input type=\"hidden\" name=\"servers[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $ip_address_or_domain_name) . "</li>\n";
                 $go_delete++;
             } else {
+                $error_message = $server->get_error_message();
                 echo "<li><input type=\"hidden\" name=\"servers[]\" value=\"" . esc_attr($id) . "\" />" . sprintf(__('<strong> %1$s </strong>'), $error_message) . "</li>\n";
             }
         }
