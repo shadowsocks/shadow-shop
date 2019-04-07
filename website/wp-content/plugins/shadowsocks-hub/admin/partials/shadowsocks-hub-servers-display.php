@@ -30,56 +30,22 @@ switch ($current_action) {
         $error_messages = array();
         foreach ($serverids as $id) {
 
-            $data_array = array(
-                "id" => $id,
-            );
-
-            $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/server", $data_array);
-
-            $error = $return['error'];
-            $http_code = $return['http_code'];
-            $response = $return['body'];
-
-            if ($http_code === 200) {
-                $ip_address_or_domain_name = $response['ipAddressOrDomainName'];
-            } elseif ($http_code === 400) {
-                $error_messages[] = urlencode("Invalid server id");
-                continue;
-            } elseif ($http_code === 404) {
-                $error_messages[] = urlencode("Server does not exist");
-                continue; // no need to proceed with calling delete
-            } elseif ($http_code === 500) {
-                $error_messages[] = urlencode("Backend system error (getServerById)");
-                continue; // no need to proceed with calling delete
-            } elseif ($error) {
-                $error_messages[] = urldecode("Backend system error: " . $error);
-                continue;
+            $server = Shadowsocks_Hub_Server_Service::get_server_by_id($id);
+            if (!is_wp_error($server)) {
+                $ip_address_or_domain_name = $server['ipAddressOrDomainName'];
             } else {
-                $error_messages[] = urldecode("Backend system error undetected error.");
+                $error_message = $server->get_error_message();
+                $error_messages[] = urlencode($error_message);
                 continue;
             }
-            ;
 
-            $return = Shadowsocks_Hub_Helper::call_api("DELETE", "http://sshub/api/server", $data_array);
-
-            $error = $return['error'];
-            $http_code = $return['http_code'];
-            $response = $return['body'];
-
-            if ($http_code === 204) {
+            $return = Shadowsocks_Hub_Server_Service::delete_server_by_id($id);
+            if (!is_wp_error($return)) {
                 ++$delete_count;
-            } elseif ($http_code === 400) {
-                $error_messages[] = urlencode("Validation error");
-            } elseif ($http_code === 409) {
-                $error_messages[] = urlencode("$ip_address_or_domain_name is in use. Delete its nodes first.");
-            } elseif ($http_code === 500) {
-                $error_messages[] = urlencode("Backend system error (deleteServer)");
-            } elseif ($error) {
-                $error_messages[] = urldecode("Backend system error: " . $error);
             } else {
-                $error_messages[] = urldecode("Backend system error undetected error.");
+                $error_message = $return->get_error_message();
+                $error_messages[] = urlencode($error_message);
             }
-            ;
         }
 
         $redirect = add_query_arg(array(
