@@ -80,6 +80,8 @@ class Shadowsocks_Hub_Node_Dao
             $error_message = "Backend system error (pingNodeById, invalid input)";
         } elseif ($http_code === 404) {
             $error_message = "Backend system error (pingNodeById, id does not exist)";
+        } elseif ($http_code === 500) {
+            $error_message = "Backend system error (pingNodeById, sshub error)";
         } elseif ($http_code === 522) {
             $error_message = "Backend system error (pingNodeById, shadowsocks restful api authToken input validation error)";
         } elseif ($http_code === 526) {
