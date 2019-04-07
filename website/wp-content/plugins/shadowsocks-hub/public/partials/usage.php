@@ -2,30 +2,9 @@
         google.charts.load('current', {packages: ['corechart']});     
 </script>
 <?
-$userId = get_current_user_id();
-
-$data_array = array(
-        "uiType" => "wordpress",
-        "userId" => $userId,
-);
-
-$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/account/accounts_by_user_id", $data_array);
-
-$error = $return['error'];
-$http_code = $return['http_code'];
-$response = $return['body'];
-
-if ($http_code === 200) {
-        $accounts = $response;
-} elseif ($http_code === 500) {
-        $error_message = "Backend system error (getAccountsByUserId)";
-} elseif ($error) {
-        $error_message = "Backend system error: " . $error;
-} else {
-        $error_message = "Backend system error undetected error.";
-};
-
-if ($http_code !== 200) { ?>
+$accounts = Shadowsocks_Hub_Account_Service::get_accounts_for_current_user();
+if (is_wp_error($accounts)) {
+        $error_message = $accounts->get_error_message(); ?>
         <div class="error">
                 <ul>
                         <?php echo "<li>$error_message</li>\n"; ?>
@@ -53,6 +32,12 @@ $purchases =  array_map("get_purchase_from_account", $accounts);
 
 // remove possible duplicates
 $purchases = array_map("unserialize", array_unique(array_map("serialize", $purchases)));
+
+$user_id = get_current_user_id();
+$data_array = array(
+        "uiType" => "wordpress",
+        "userId" => $user_id,
+    );
 
 $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/traffic/user", $data_array);
 
