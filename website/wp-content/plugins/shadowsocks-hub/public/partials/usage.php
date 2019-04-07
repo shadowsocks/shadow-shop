@@ -33,29 +33,9 @@ $purchases =  array_map("get_purchase_from_account", $accounts);
 // remove possible duplicates
 $purchases = array_map("unserialize", array_unique(array_map("serialize", $purchases)));
 
-$user_id = get_current_user_id();
-$data_array = array(
-        "uiType" => "wordpress",
-        "userId" => $user_id,
-    );
-
-$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/traffic/user", $data_array);
-
-$error = $return['error'];
-$http_code = $return['http_code'];
-$response = $return['body'];
-
-if ($http_code === 200) {
-        $accountUsages = $response;
-} elseif ($http_code === 500) {
-        $error_message = "Backend system error (getLatestUsageByUserId)";
-} elseif ($error) {
-        $error_message = "Backend system error: " . $error;
-} else {
-        $error_message = "Backend system error undetected error.";
-};
-
-if ($http_code !== 200) { ?>
+$accountUsages = Shadowsocks_Hub_Traffic_Service::get_all_account_usage_for_current_user();
+if (is_wp_error($accountUsages)) {
+        $error_message = $accountUsages->get_error_message(); ?>
         <div class="error">
                 <ul>
                         <?php echo "<li>$error_message</li>\n"; ?>
@@ -63,7 +43,7 @@ if ($http_code !== 200) { ?>
         </div>
         <?php
         die();
-};
+}
 
 foreach ($purchases as $purchase) {
 
