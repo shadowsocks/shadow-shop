@@ -49,38 +49,18 @@ if (!empty($messages)) {
         echo '<div id="message" class="updated notice is-dismissible"><p>' . $msg . '</p></div>';
     }
 
-}?>
-<?php
-$return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/server/all", false);
-
-$error = $return['error'];
-$http_code = $return['http_code'];
-$response = $return['body'];
-
-$data = array();
-if ($http_code === 200) {
-    $allServers = $response;
-} elseif ($http_code === 500) {
-    $error_message = "Backend system error (getAllServers)";
-} elseif ($error) {
-    $error_message = "Backend system error: " . $error;
-} else {
-    $error_message = "Backend system error undetected error.";
 }
-;
 
-if ($http_code !== 200) {?>
-		<div class="error">
-		<ul>
-		<?php
-echo "<li>$error_message</li>\n";
+$allServers = Shadowsocks_Hub_Server_Service::get_all_servers();
+if (is_wp_error($allServers)) {
+    $error_message = $allServers->get_error_message();
     ?>
-		</ul>
-	</div>
-	<?php
-}
-?>
-
+		<div class="error">
+			<ul>
+				<?php echo "<li>$error_message</li>\n"; ?>
+			</ul>
+		</div>
+<?php }?>
 
 <form method="post" name="addnode" id="addnode" class="validate" novalidate="novalidate">
 <input name="action" type="hidden" value="addnode" />
