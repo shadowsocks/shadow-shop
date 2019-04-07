@@ -10,6 +10,14 @@ class Shadowsocks_Hub_Server_Service
     }
 
     /**
+     * @return WP_Error|true
+     */
+    public static function update_server($server)
+    {
+        return Shadowsocks_Hub_Server_Dao::update_server($server);
+    }
+
+    /**
      * @return WP_Error|shadowsocks_server
      */
     public static function get_server_by_id($id)
