@@ -10,6 +10,14 @@ class Shadowsocks_Hub_Node_Service
     }
 
     /**
+     * @return WP_Error|true
+     */
+    public static function update_node($node)
+    {
+        return Shadowsocks_Hub_Node_Dao::update_node($node);
+    }
+
+    /**
      * @return WP_Error|shadowsocks_node
      */
     public static function get_node_by_id($id)

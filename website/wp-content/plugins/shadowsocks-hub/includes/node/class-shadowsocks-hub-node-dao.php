@@ -43,6 +43,46 @@ class Shadowsocks_Hub_Node_Dao
     }
 
     /**
+     * @return WP_Error|true
+     */
+    public static function update_node($node)
+    {
+        $data_array = array(
+            "id" => $node['id'],
+            "name" => $node['name'],
+            "protocol" => "shadowsocks",
+            "password" => $node['password'],
+            "port" => (int) $node['port'],
+            "lowerBound" => (int) $node['lowerBound'],
+            "upperBound" => (int) $node['upperBound'],
+            "comment" => $node['comment'],
+        );
+        $return = Shadowsocks_Hub_Helper::call_api("PUT", "http://sshub/api/node", json_encode($data_array));
+
+        $error = $return['error'];
+        $http_code = $return['http_code'];
+        $response = $return['body'];
+
+        if ($http_code === 200) {
+            return true;
+        } elseif ($http_code === 400) {
+            $error_message = "Invalid input";
+        } elseif ($http_code === 404) {
+            $error_message = "Node does not exist.";
+        } elseif ($http_code === 409) {
+            $error_message = "Node already exists.";
+        } elseif ($http_code === 500) {
+            $error_message = "Backend system error (updateNode)";
+        } elseif ($error) {
+            $error_message = "Backend system error: " . $error;
+        } else {
+            $error_message = "Backend system error undetected error.";
+        }
+
+        return new WP_Error('sshub_error', $error_message);
+    }
+
+    /**
      * @return WP_Error|shadowsocks_node
      */
     public static function get_node_by_id($id)
