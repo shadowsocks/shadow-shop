@@ -178,62 +178,47 @@ $error_messages = $_REQUEST['errors'];
 	<?php
 $error_messages = array();
         $error_occurred = false;
-        $return = Shadowsocks_Hub_Helper::call_api("GET", "http://sshub/api/node/all", false);
-
-        $error = $return['error'];
-        $http_code = $return['http_code'];
-        $response = $return['body'];
-
         $data = array();
-        if ($http_code === 200) {
-            $arr_length = count($response);
+        $allNodes = Shadowsocks_Hub_Node_Service::get_all_nodes();
 
-            for ($i = 0; $i < $arr_length; $i++) {
+        if (!is_wp_error($allNodes)) {
 
-				$id = $response[$i]['id'];
+            foreach ($allNodes as $node) {
+
+                $id = $node['id'];
                 $node_state = Shadowsocks_Hub_Node_Service::ping_node_by_id($id);
                 if (is_wp_error(($node_state))) {
                     $error_message = $node_state->get_error_message();
-					$error_messages[] = $error_message;
-					$node_state = "system error";
-					$error_occurred = true;
+                    $error_messages[] = $error_message;
+                    $node_state = "system error";
                 }
 
                 $data[] = array(
-                    'id' => $response[$i]['id'],
-                    'name' => $response[$i]['name'],
+                    'id' => $node['id'],
+                    'name' => $node['name'],
                     'node_state' => $node_state,
-                    'host' => $response[$i]['server']['ipAddressOrDomainName'],
-                    'protocol' => $response[$i]['protocol'],
-                    'password' => $response[$i]['password'],
-                    'port' => $response[$i]['port'],
-                    'lower_bound' => $response[$i]['lowerBound'],
-                    'upper_bound' => $response[$i]['upperBound'],
-                    'comment' => $response[$i]['comment'],
-                    'created_date' => date_i18n(get_option('date_format'), $response[$i]['createdTime'] / 1000) . ' ' . date_i18n(get_option('time_format'), $response[$i]['createdTime'] / 1000),
-                    'epoch_time' => $response[$i]['createdTime'],
+                    'host' => $node['server']['ipAddressOrDomainName'],
+                    'protocol' => $node['protocol'],
+                    'password' => $node['password'],
+                    'port' => $node['port'],
+                    'lower_bound' => $node['lowerBound'],
+                    'upper_bound' => $node['upperBound'],
+                    'comment' => $node['comment'],
+                    'created_date' => date_i18n(get_option('date_format'), $node['createdTime'] / 1000) . ' ' . date_i18n(get_option('time_format'), $node['createdTime'] / 1000),
+                    'epoch_time' => $node['createdTime'],
                 );
             }
-        } elseif ($http_code === 500) {
-            $error_messages[] = "Backend system error (getAllNodes)";
-            $error_occurred = true;
-        } elseif ($error) {
-            $error_messages[] = "Backend system error: " . $error;
-            $error_occurred = true;
-        } else {
-            $error_messages[] = "Backend system error undetected error.";
-            $error_occurred = true;
-        }
-        ;
 
-        if ($http_code === 200) {
             $this->nodes_obj->set_table_data($data);
+        } else {
+            $error_message = $allNodes->get_error_message();
+            $error_messages[] = $error_message;
         }
-        ;
-        if ($error_occurred) {?>
-		<div class="error">
-		<ul>
-			<?php foreach ($error_messages as $err) {
+
+        if (!empty($error_messages)) {?>
+            <div class="error">
+            <ul>
+                <?php foreach ($error_messages as $err) {
             echo "<li>$err</li>\n";
         }?>
 		</ul>
