@@ -267,40 +267,19 @@ class Shadowsocks_Hub_Public {
 
 			for ($i = 0; $i < $product_quantity; $i++ ) {
 
-				$data_array = array (
-					"uiType" => "wordpress",
+				$purchase = array (
 					"userId" => (string) $user_id,
 					"orderId" => $order_id . "_" . $product_id . "_" . $i,
 					"lifeSpan" => $formatted_life_span,
 					"traffic" => (int) $formatted_traffic,
-					"accountParameters" => array (
-						"type" => "shadowsocks",
-						"method" => $encryption_method
-					)
+					"method" => $encryption_method
 				);
+
+				$return = Shadowsocks_Hub_Purchase_Service::create_purchase($purchase);
 	
-				$return = Shadowsocks_Hub_Helper::call_api("POST", "http://sshub/api/purchase", json_encode($data_array));
-	
-				$error = $return['error'];
-				$http_code = $return['http_code'];
-				$response = $return['body'];
-	
-				if ($http_code === 201) {
-					// do nothing
-				} elseif ($http_code === 400) {
-					$error_msg = "Invalid input";
-					error_log("http status code:" . $http_code . ". " . $error_msg);
-				} elseif ($http_code === 409) {
-					// Normal. Purchase was added before. Do nothing
-				} elseif ($http_code === 500) {
-					$error_msg = "Backend system error (addPurchase)";
-					error_log("http status code:" . $http_code . ". " . $error_msg);
-				} elseif ($error) {
-					$error_msg = "Backend system error: ".$error;
-					error_log($error_msg);
-				} else {
-					$error_message = "Backend system error undetected error.";
-					error_log($error_msg);
+				if (is_wp_error($return)) {
+					$error_message = $return->get_error_message();
+					error_log ("create_purchase error_message = ". $error_message);
 				}
 			}
 		}	
