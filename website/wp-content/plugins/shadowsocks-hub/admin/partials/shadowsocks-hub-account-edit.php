@@ -47,7 +47,7 @@ default:
 
 <?php if ( isset($_GET['updated']) ) : ?>
 <div id="message" class="updated notice is-dismissible">
-	<p><strong><?php _e('Server updated.') ?></strong></p>
+	<p><strong><?php _e('Account updated.') ?></strong></p>
 </div>
 <?php endif; ?>
 <?php if ( isset($_REQUEST['error']) ) : ?>
