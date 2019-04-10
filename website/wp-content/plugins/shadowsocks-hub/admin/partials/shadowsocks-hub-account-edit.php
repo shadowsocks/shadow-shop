@@ -47,7 +47,7 @@ default:
 
 <?php if ( isset($_GET['updated']) ) : ?>
 <div id="message" class="updated notice is-dismissible">
-	<p><strong><?php _e('Account updated.') ?></strong></p>
+	<p><strong><?php _e('Account updated.', 'shadowsocks-hub') ?></strong></p>
 </div>
 <?php endif; ?>
 <?php if ( isset($_REQUEST['error']) ) : ?>
@@ -100,35 +100,66 @@ if (!is_wp_error($account)) {
 
 <table class="form-table">
 	<tr class="account-host-wrap">
-		<th><label for="host"><?php _e('Host') ?></label></th>
+		<th><label for="host"><?php _e('Host', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="host" id="host" value="<?php echo esc_attr($host); ?>" class="regular-text" disabled="disabled" /><span class="description"><?php _e('Host cannot be changed.'); ?></span></td>
 	</tr>
 	<tr class="account-protocol-wrap">
-		<th><label for="protocol"><?php _e('Protocol') ?></label></th>
+		<th><label for="protocol"><?php _e('Protocol', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="protocol" id="protocol" value="<?php echo esc_attr($protocol); ?>" class="regular-text" disabled="disabled" /><span class="description"><?php _e('Protocol cannot be changed.'); ?></span></td>
 	</tr>
 	<tr class="account-port-wrap">
-		<th><label for="port"><?php _e('Port') ?></label></th>
+		<th><label for="port"><?php _e('Port', 'shadowsocks-hub') ?></label></th>
 		<td><input type="number" name="port" id="port" value="<?php echo esc_attr($port); ?>" class="regular-text"/></td>
 	</tr>
 	<tr class="account-password-wrap">
-		<th><label for="password"><?php _e('Password') ?></label></th>
+		<th><label for="password"><?php _e('Password', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="password" id="password" value="<?php echo esc_attr($password); ?>" class="regular-text"/></td>
 	</tr>
 	<tr class="account-method-wrap">
-		<th><label for="method"><?php _e('Encryption') ?></label></th>
-		<td><input type="text" name="method" id="method" value="<?php echo esc_attr($method); ?>" class="regular-text" /></td>
+	<th><label for="method"><?php _e('Encryption', 'shadowsocks-hub'); ?></label></th>
+				<td>
+					<select name="method" id="method">
+						<?php
+						$all_methods = array(
+							'aes-128-gcm',
+							'aes-192-gcm',
+							'aes-256-gcm',
+							'aes-128-cfb',
+							'aes-192-cfb',
+							'aes-256-cfb',
+							'aes-128-ctr',
+							'aes-192-ctr',
+							'aes-256-ctr',
+							'camellia-128-cfb',
+							'camellia-192-cfb',
+							'camellia-256-cfb',
+							'bf-cfb',
+							'chacha20-ietf-poly1305',
+							'xchacha20-ietf-poly1305',
+							'salsa20',
+							'chacha20',
+							'chacha20-ietf',
+						);
+						foreach($all_methods as $a_method) {
+							if ($method === $a_method) {
+								echo "<option value=\"$a_method\" selected=\"selected\">$a_method</option>";
+							} else {
+								echo "<option value=\"$a_method\">$a_method</option>";
+							}
+						} ?>
+					</select>
+				</td>
 	</tr>
 	<tr class="account-user-wrap">
-		<th><label for="user"><?php _e('User') ?></label></th>
+		<th><label for="user"><?php _e('User', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="user" id="user" value="<?php echo esc_attr($userEmail); ?>" class="regular-text" disabled="disabled" /><span class="description"><?php _e('User cannot be changed.'); ?></span></td>
 	</tr>
 	<tr class="account-orderId-wrap">
-		<th><label for="orderId"><?php _e('Order ID') ?></label></th>
+		<th><label for="orderId"><?php _e('Order ID', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="orderId" id="orderId" value="<?php echo esc_attr($orderId); ?>" class="regular-text" disabled="disabled" /><span class="description"><?php _e('Order ID cannot be changed.'); ?></span></td>
 	</tr>
 	<tr class="account-lifeSpan-wrap">
-		<th><label for="lifeSpan"><?php _e('Life Span') ?></label></th>
+		<th><label for="lifeSpan"><?php _e('Life Span', 'shadowsocks-hub') ?></label></th>
 		<td><input type="text" name="lifeSpan" id="lifeSpan" value="<?php echo esc_attr($lifeSpan); ?>" class="regular-text" disabled="disabled" /><span class="description"><?php _e('Life Span cannot be changed.'); ?></span></td>
 	</tr>
 </table>

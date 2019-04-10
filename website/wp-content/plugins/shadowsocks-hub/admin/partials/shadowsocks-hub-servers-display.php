@@ -168,7 +168,7 @@ $error_messages = $_REQUEST['errors'];
         ?>
 <div class="wrap">
 	<h2>
-		<?php _e('Servers');?>
+		<?php _e('Servers', 'shadowsocks-hub');?>
 		<a href="<?php echo admin_url('admin.php?page=shadowsocks_hub_add_server'); ?>" class="page-title-action"><?php echo esc_html_x('Add New', 'server'); ?></a>
 	</h2>
 	<?php $allServers = Shadowsocks_Hub_Server_Service::get_all_servers();

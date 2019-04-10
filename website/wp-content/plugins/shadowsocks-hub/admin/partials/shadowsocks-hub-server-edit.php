@@ -47,7 +47,7 @@ switch ($action) {
 
 <?php if (isset($_GET['updated'])): ?>
 <div id="message" class="updated notice is-dismissible">
-	<p><strong><?php _e('Server updated.')?></strong></p>
+	<p><strong><?php _e('Server updated.', 'shadowsocks-hub')?></strong></p>
 </div>
 <?php endif;?>
 <?php if (isset($_REQUEST['error'])): ?>

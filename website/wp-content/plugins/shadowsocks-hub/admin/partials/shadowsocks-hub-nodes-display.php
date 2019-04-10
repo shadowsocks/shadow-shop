@@ -79,7 +79,7 @@ switch ($current_action) {
 <?php wp_nonce_field('delete-nodes')?>
 
 <div class="wrap">
-<h1><?php _e('Delete Nodes');?></h1>
+<h1><?php _e('Delete Nodes', 'shadowsocks-hub');?></h1>
 <?php if (isset($_REQUEST['error'])): ?>
 	<div class="error">
 		<p><strong><?php _e('ERROR:', 'shadowsocks-hub');?></strong> <?php _e('Please select an option.', 'shadowsocks-hub');?></p>
@@ -172,7 +172,7 @@ $error_messages = $_REQUEST['errors'];
         ?>
 <div class="wrap">
 	<h2>
-		<?php _e('Nodes');?>
+		<?php _e('Nodes', 'shadowsocks-hub');?>
 		<a href="<?php echo admin_url('admin.php?page=shadowsocks_hub_add_node'); ?>" class="page-title-action"><?php echo esc_html_x('Add New', 'node'); ?></a>
 	</h2>
 	<?php
