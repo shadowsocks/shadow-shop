@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadowsocks-hub 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 21:03+0800\n"
-"PO-Revision-Date: 2019-03-01 21:04+0800\n"
+"POT-Creation-Date: 2019-04-11 22:05+0800\n"
+"PO-Revision-Date: 2019-04-11 22:05+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it_IT\n"
@@ -29,6 +29,10 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-server-edit.php:142
 #: admin/partials/shadowsocks-hub-server-new.php:70
 #: public/partials/shadowsocks-accounts.php:48
+#: admin/partials/shadowsocks-hub-account-edit.php:103
+#: admin/partials/shadowsocks-hub-server-edit.php:94
+#: admin/partials/shadowsocks-hub-server-new.php:54
+#: public/partials/shadowsocks-accounts.php:86
 msgid "Host"
 msgstr ""
 
@@ -38,12 +42,17 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-node-edit.php:170
 #: admin/partials/shadowsocks-hub-node-new.php:129
 #: public/partials/shadowsocks-accounts.php:49
+#: admin/partials/shadowsocks-hub-account-edit.php:111
+#: admin/partials/shadowsocks-hub-node-edit.php:119
+#: admin/partials/shadowsocks-hub-node-new.php:91
+#: public/partials/shadowsocks-accounts.php:87
 msgid "Port"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-accounts-list-table.php:86
 #: admin/class-shadowsocks-hub-nodes-list-table.php:87
 #: admin/partials/shadowsocks-hub-account-edit.php:154
+#: admin/partials/shadowsocks-hub-account-edit.php:107
 msgid "Protocol"
 msgstr ""
 
@@ -51,6 +60,9 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-account-edit.php:166
 #: admin/partials/shadowsocks-hub-account-new.php:146
 #: public/partials/shadowsocks-accounts.php:51
+#: admin/partials/shadowsocks-hub-account-edit.php:119
+#: admin/partials/shadowsocks-hub-account-new.php:107
+#: public/partials/shadowsocks-accounts.php:89
 msgid "Encryption"
 msgstr ""
 
@@ -60,23 +72,32 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-node-edit.php:166
 #: admin/partials/shadowsocks-hub-node-new.php:124
 #: public/partials/shadowsocks-accounts.php:50
+#: admin/partials/shadowsocks-hub-account-edit.php:115
+#: admin/partials/shadowsocks-hub-node-edit.php:115
+#: admin/partials/shadowsocks-hub-node-new.php:86
+#: public/partials/shadowsocks-accounts.php:88
 msgid "Password"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-accounts-list-table.php:89
 #: admin/partials/shadowsocks-hub-account-edit.php:170
 #: admin/partials/shadowsocks-hub-account-new.php:112
+#: admin/partials/shadowsocks-hub-account-edit.php:154
+#: admin/partials/shadowsocks-hub-account-new.php:73
 msgid "User"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-accounts-list-table.php:90
 #: admin/partials/shadowsocks-hub-account-edit.php:174
+#: admin/partials/shadowsocks-hub-account-edit.php:158
 msgid "Order ID"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-accounts-list-table.php:91
 #: admin/partials/shadowsocks-hub-account-edit.php:178
 #: admin/partials/shadowsocks-hub-account-new.php:134
+#: admin/partials/shadowsocks-hub-account-edit.php:162
+#: admin/partials/shadowsocks-hub-account-new.php:95
 msgid "Life Span"
 msgstr ""
 
@@ -110,69 +131,92 @@ msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:90
 #: admin/class-shadowsocks-hub-admin.php:91
+#: admin/class-shadowsocks-hub-admin.php:89
 msgid "Dashboard"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:101
 #: admin/class-shadowsocks-hub-admin.php:102
 #: admin/partials/shadowsocks-hub-servers-display.php:216
+#: admin/class-shadowsocks-hub-admin.php:100
+#: admin/partials/shadowsocks-hub-servers-display.php:171
 msgid "Servers"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:115
+#: admin/class-shadowsocks-hub-admin.php:114
 msgid "Servers Per Page"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:141
 #: admin/class-shadowsocks-hub-admin.php:142
 #: admin/partials/shadowsocks-hub-server-new.php:75
+#: admin/partials/shadowsocks-hub-server-new.php:59
 msgid "Add Server"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:160
 #: admin/class-shadowsocks-hub-admin.php:161
+#: admin/class-shadowsocks-hub-admin.php:159
 msgid "Edit Server"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:179
 #: admin/class-shadowsocks-hub-admin.php:180
 #: admin/partials/shadowsocks-hub-nodes-display.php:216
+#: admin/class-shadowsocks-hub-admin.php:177
+#: admin/class-shadowsocks-hub-admin.php:178
+#: admin/partials/shadowsocks-hub-nodes-display.php:175
 msgid "Nodes"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:193
+#: admin/class-shadowsocks-hub-admin.php:191
 msgid "Nodes Per Page"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:219
 #: admin/class-shadowsocks-hub-admin.php:220
 #: admin/partials/shadowsocks-hub-node-new.php:150
+#: admin/class-shadowsocks-hub-admin.php:218
+#: admin/partials/shadowsocks-hub-node-new.php:112
 msgid "Add Node"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:238
 #: admin/class-shadowsocks-hub-admin.php:239
+#: admin/class-shadowsocks-hub-admin.php:236
+#: admin/class-shadowsocks-hub-admin.php:237
 msgid "Edit Node"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:257
 #: admin/class-shadowsocks-hub-admin.php:258
 #: admin/partials/shadowsocks-hub-accounts-display.php:224
+#: admin/class-shadowsocks-hub-admin.php:254
+#: admin/class-shadowsocks-hub-admin.php:255
+#: admin/partials/shadowsocks-hub-accounts-display.php:184
 msgid "Accounts"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:271
+#: admin/class-shadowsocks-hub-admin.php:268
 msgid "Accounts Per Page"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:297
 #: admin/class-shadowsocks-hub-admin.php:298
 #: admin/partials/shadowsocks-hub-account-new.php:176
+#: admin/class-shadowsocks-hub-admin.php:295
+#: admin/class-shadowsocks-hub-admin.php:296
+#: admin/partials/shadowsocks-hub-account-new.php:137
 msgid "Add Account"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-admin.php:316
 #: admin/class-shadowsocks-hub-admin.php:317
+#: admin/class-shadowsocks-hub-admin.php:313
+#: admin/class-shadowsocks-hub-admin.php:314
 msgid "Edit Account"
 msgstr ""
 
@@ -183,6 +227,8 @@ msgstr ""
 #: admin/class-shadowsocks-hub-nodes-list-table.php:84
 #: admin/partials/shadowsocks-hub-node-edit.php:156
 #: admin/partials/shadowsocks-hub-node-new.php:109
+#: admin/partials/shadowsocks-hub-node-edit.php:105
+#: admin/partials/shadowsocks-hub-node-new.php:71
 msgid "Name"
 msgstr ""
 
@@ -193,12 +239,16 @@ msgstr ""
 #: admin/class-shadowsocks-hub-nodes-list-table.php:90
 #: admin/partials/shadowsocks-hub-node-edit.php:174
 #: admin/partials/shadowsocks-hub-node-new.php:133
+#: admin/partials/shadowsocks-hub-node-edit.php:123
+#: admin/partials/shadowsocks-hub-node-new.php:95
 msgid "Lower Bound"
 msgstr ""
 
 #: admin/class-shadowsocks-hub-nodes-list-table.php:91
 #: admin/partials/shadowsocks-hub-node-edit.php:178
 #: admin/partials/shadowsocks-hub-node-new.php:137
+#: admin/partials/shadowsocks-hub-node-edit.php:127
+#: admin/partials/shadowsocks-hub-node-new.php:99
 msgid "Upper Bound"
 msgstr ""
 
@@ -208,66 +258,85 @@ msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:73
 #: admin/partials/shadowsocks-hub-server-edit.php:78
+#: admin/partials/shadowsocks-hub-server-edit.php:50
 msgid "Server updated."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:151
+#: admin/partials/shadowsocks-hub-account-edit.php:104
 msgid "Host cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:155
+#: admin/partials/shadowsocks-hub-account-edit.php:108
 msgid "Protocol cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:171
+#: admin/partials/shadowsocks-hub-account-edit.php:155
 msgid "User cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:175
+#: admin/partials/shadowsocks-hub-account-edit.php:159
 msgid "Order ID cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-edit.php:179
+#: admin/partials/shadowsocks-hub-account-edit.php:163
 msgid "Life Span cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-new.php:52
+#: admin/partials/shadowsocks-hub-account-new.php:31
 msgid "Add New Account"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-new.php:123
+#: admin/partials/shadowsocks-hub-account-new.php:84
 msgid "Node"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-account-new.php:171
+#: admin/partials/shadowsocks-hub-account-new.php:132
 msgid "Traffic"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:113
+#: admin/partials/shadowsocks-hub-accounts-display.php:85
 msgid "Delete Accounts"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:116
 #: admin/partials/shadowsocks-hub-nodes-display.php:110
 #: admin/partials/shadowsocks-hub-servers-display.php:110
+#: admin/partials/shadowsocks-hub-accounts-display.php:88
+#: admin/partials/shadowsocks-hub-nodes-display.php:85
+#: admin/partials/shadowsocks-hub-servers-display.php:82
 msgid "ERROR:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:116
 #: admin/partials/shadowsocks-hub-nodes-display.php:110
 #: admin/partials/shadowsocks-hub-servers-display.php:110
+#: admin/partials/shadowsocks-hub-accounts-display.php:88
+#: admin/partials/shadowsocks-hub-nodes-display.php:85
+#: admin/partials/shadowsocks-hub-servers-display.php:82
 msgid "Please select an option."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:121
+#: admin/partials/shadowsocks-hub-accounts-display.php:93
 msgid "You have specified this account for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:123
+#: admin/partials/shadowsocks-hub-accounts-display.php:95
 msgid "You have specified these accounts for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:158
+#: admin/partials/shadowsocks-hub-accounts-display.php:115
 #, php-format
 msgid ""
 "Host: <strong> %1$s </strong>; Port: <strong> %2$s </strong>; User: <strong> "
@@ -279,6 +348,11 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-nodes-display.php:153
 #: admin/partials/shadowsocks-hub-servers-display.php:150
 #: admin/partials/shadowsocks-hub-servers-display.php:153
+#: admin/partials/shadowsocks-hub-accounts-display.php:107
+#: admin/partials/shadowsocks-hub-nodes-display.php:104
+#: admin/partials/shadowsocks-hub-nodes-display.php:108
+#: admin/partials/shadowsocks-hub-servers-display.php:100
+#: admin/partials/shadowsocks-hub-servers-display.php:104
 #, php-format
 msgid "<strong> %1$s </strong>"
 msgstr ""
@@ -286,18 +360,24 @@ msgstr ""
 #: admin/partials/shadowsocks-hub-accounts-display.php:169
 #: admin/partials/shadowsocks-hub-nodes-display.php:161
 #: admin/partials/shadowsocks-hub-servers-display.php:161
+#: admin/partials/shadowsocks-hub-accounts-display.php:124
+#: admin/partials/shadowsocks-hub-nodes-display.php:116
+#: admin/partials/shadowsocks-hub-servers-display.php:112
 msgid "Confirm Deletion"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:171
+#: admin/partials/shadowsocks-hub-accounts-display.php:126
 msgid "There are no valid accounts selected for deletion."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:186
+#: admin/partials/shadowsocks-hub-accounts-display.php:141
 msgid "Account deleted."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:188
+#: admin/partials/shadowsocks-hub-accounts-display.php:143
 #, php-format
 msgid "%s accounts deleted."
 msgid_plural "%s accounts deleted."
@@ -306,66 +386,85 @@ msgstr[1] ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:195
 #: admin/partials/shadowsocks-hub-accounts-display.php:199
+#: admin/partials/shadowsocks-hub-accounts-display.php:151
+#: admin/partials/shadowsocks-hub-accounts-display.php:159
 msgid "New account added."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:225
+#: admin/partials/shadowsocks-hub-accounts-display.php:185
 msgctxt "account"
 msgid "Add New"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-accounts-display.php:282
+#: admin/partials/shadowsocks-hub-accounts-display.php:232
 msgid "Search Accounts"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:85
+#: admin/partials/shadowsocks-hub-node-edit.php:55
 msgid "Node updated."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:160
 #: admin/partials/shadowsocks-hub-node-new.php:113
+#: admin/partials/shadowsocks-hub-node-edit.php:109
+#: admin/partials/shadowsocks-hub-node-new.php:75
 msgid "Server"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:162
+#: admin/partials/shadowsocks-hub-node-edit.php:111
 msgid "Server cannot be changed."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:184
 #: admin/partials/shadowsocks-hub-node-new.php:143
+#: admin/partials/shadowsocks-hub-node-edit.php:133
+#: admin/partials/shadowsocks-hub-node-new.php:105
 msgid "Comment"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-edit.php:185
 #: admin/partials/shadowsocks-hub-node-new.php:144
+#: admin/partials/shadowsocks-hub-node-edit.php:134
+#: admin/partials/shadowsocks-hub-node-new.php:106
 msgid "(optional)"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-node-new.php:54
+#: admin/partials/shadowsocks-hub-node-new.php:33
 msgid "Add New Node"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:107
+#: admin/partials/shadowsocks-hub-nodes-display.php:82
 msgid "Delete Nodes"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:115
+#: admin/partials/shadowsocks-hub-nodes-display.php:90
 msgid "You have specified this node for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:117
+#: admin/partials/shadowsocks-hub-nodes-display.php:92
 msgid "You have specified these nodes for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:163
+#: admin/partials/shadowsocks-hub-nodes-display.php:118
 msgid "There are no valid nodes selected for deletion."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:178
+#: admin/partials/shadowsocks-hub-nodes-display.php:133
 msgid "Node deleted."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:180
+#: admin/partials/shadowsocks-hub-nodes-display.php:135
 #, php-format
 msgid "%s nodes deleted."
 msgid_plural "%s nodes deleted."
@@ -374,47 +473,59 @@ msgstr[1] ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:187
 #: admin/partials/shadowsocks-hub-nodes-display.php:191
+#: admin/partials/shadowsocks-hub-nodes-display.php:142
+#: admin/partials/shadowsocks-hub-nodes-display.php:146
 msgid "New node added."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:217
+#: admin/partials/shadowsocks-hub-nodes-display.php:176
 msgctxt "node"
 msgid "Add New"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-nodes-display.php:328
+#: admin/partials/shadowsocks-hub-nodes-display.php:231
 msgid "Search Nodes"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-server-edit.php:150
+#: admin/partials/shadowsocks-hub-server-edit.php:102
 msgid "Update Server"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-server-new.php:45
+#: admin/partials/shadowsocks-hub-server-new.php:27
 msgid "Add New Server"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:107
+#: admin/partials/shadowsocks-hub-servers-display.php:79
 msgid "Delete Servers"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:115
+#: admin/partials/shadowsocks-hub-servers-display.php:87
 msgid "You have specified this server for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:117
+#: admin/partials/shadowsocks-hub-servers-display.php:89
 msgid "You have specified these servers for deletion:"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:163
+#: admin/partials/shadowsocks-hub-servers-display.php:114
 msgid "There are no valid servers selected for deletion."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:178
+#: admin/partials/shadowsocks-hub-servers-display.php:129
 msgid "Server deleted."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:180
+#: admin/partials/shadowsocks-hub-servers-display.php:131
 #, php-format
 msgid "%s servers deleted."
 msgid_plural "%s servers deleted."
@@ -423,15 +534,19 @@ msgstr[1] ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:187
 #: admin/partials/shadowsocks-hub-servers-display.php:191
+#: admin/partials/shadowsocks-hub-servers-display.php:138
+#: admin/partials/shadowsocks-hub-servers-display.php:142
 msgid "New server added."
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:217
+#: admin/partials/shadowsocks-hub-servers-display.php:172
 msgctxt "server"
 msgid "Add New"
 msgstr ""
 
 #: admin/partials/shadowsocks-hub-servers-display.php:263
+#: admin/partials/shadowsocks-hub-servers-display.php:198
 msgid "Search Servers"
 msgstr ""
 
@@ -581,13 +696,32 @@ msgid "Logout"
 msgstr ""
 
 #: public/partials/shadowsocks-accounts.php:37 public/partials/usage.php:41
+#: public/partials/shadowsocks-accounts.php:18 public/partials/usage.php:20
 msgid "Go shop"
 msgstr ""
 
 #: public/partials/shadowsocks-accounts.php:52
+#: public/partials/shadowsocks-accounts.php:90
 msgid "Actions"
 msgstr ""
 
 #: public/partials/shadowsocks-accounts.php:70
+#: public/partials/shadowsocks-accounts.php:108
 msgid "QR Code"
+msgstr ""
+
+#: admin/partials/shadowsocks-hub-account-edit.php:50
+msgid "Account updated."
+msgstr ""
+
+#: public/partials/shadowsocks-accounts.php:42
+msgid "Subscription:"
+msgstr ""
+
+#: public/partials/shadowsocks-accounts.php:49
+msgid "Reset"
+msgstr ""
+
+#: public/partials/shadowsocks-accounts.php:81
+msgid "Accounts:"
 msgstr ""
