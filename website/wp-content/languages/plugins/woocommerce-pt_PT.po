@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-21 20:52:38+0000\n"
+"PO-Revision-Date: 2019-04-08 16:07:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2057,6 +2057,23 @@ msgstr "Ligue a sua loja para activar os WooCommerce Services"
 #: includes/admin/class-wc-admin-setup-wizard.php:2050
 msgid "Thanks for using Jetpack! Your store is almost ready: to activate services like %s, just connect your store."
 msgstr "Obrigado por utilizar o Jetpack! A sua loja está quase pronta: para activar serviços como %s, ligue a sua loja."
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1917
+#: includes/admin/class-wc-admin-setup-wizard.php:1959
+msgid "Mailchimp for WooCommerce"
+msgstr "Mailchimp para WooCommerce"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1916
+msgid "Mailchimp icon"
+msgstr "Ícone do Mailchimp"
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1914
+msgid "Join the 16 million customers who use Mailchimp. Sync list and store data to send automated emails, and targeted campaigns."
+msgstr "Junte-se a 16 milhões de clientes que utilizam o Mailchimp. Sincronize a lista e dados da loja para enviar emails automatizados e campanhas segmentadas."
+
+#: includes/admin/class-wc-admin-setup-wizard.php:1913
+msgid "Mailchimp"
+msgstr "Mailchimp"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1905
 msgid "automated taxes icon"
@@ -12820,6 +12837,11 @@ msgstr "Obrigado. A sua encomenda foi recebida."
 #: templates/checkout/payment.php:44
 msgid "Update totals"
 msgstr "Actualizar"
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: templates/checkout/payment.php:42
+msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgstr "Dado que o seu navegador não suporta JavaScript ou está desactivado, por favor clique no botão %1$sActualizar totais%2$s antes de finalizar a sua encomenda. Se não o fizer, pode pagar mais do que o valor acima indicado."
 
 #: templates/checkout/payment.php:33
 msgid "Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements."
