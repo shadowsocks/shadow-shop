@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-26 23:32:19+0000\n"
+"PO-Revision-Date: 2019-04-16 11:57:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5419,10 +5419,6 @@ msgstr "Filtrar por tipo de producto"
 msgid "Filter by category"
 msgstr "Filtrar por categoría"
 
-#: includes/admin/list-tables/class-wc-admin-list-table-products.php:489
-msgid "Sorting"
-msgstr "Orden"
-
 #: includes/admin/helper/class-wc-helper.php:209
 msgid "This subscription has expired. Contact the owner to <strong>renew</strong> the subscription to receive updates and support."
 msgstr "Esta suscripción ha caducado. Contacta con el propietario para <strong>renovar</strong> la suscripción y recibir actualizaciones y soporte."
@@ -5444,6 +5440,10 @@ msgstr "Los webhooks son avisos de eventos enviados a URLs de tu elección. Pued
 #: includes/admin/class-wc-admin-webhooks.php:291
 msgid "Create a new webhook"
 msgstr "Crea un nuevo webhook"
+
+#: includes/admin/list-tables/class-wc-admin-list-table-products.php:489
+msgid "Sorting"
+msgstr "Ordenar"
 
 #: includes/admin/class-wc-admin-addons.php:382
 msgid "Show Canada Post shipping rates"
