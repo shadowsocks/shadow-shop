@@ -607,11 +607,11 @@ class WC_API_Products extends WC_API_Resource {
 			$term_id = intval( $term->term_id );
 
 			// Get category display type
-			$display_type = get_woocommerce_term_meta( $term_id, 'display_type' );
+			$display_type = get_term_meta( $term_id, 'display_type' );
 
 			// Get category image
 			$image = '';
-			if ( $image_id = get_woocommerce_term_meta( $term_id, 'thumbnail_id' ) ) {
+			if ( $image_id = get_term_meta( $term_id, 'thumbnail_id' ) ) {
 				$image = wp_get_attachment_url( $image_id );
 			}
 
@@ -1778,7 +1778,7 @@ class WC_API_Products extends WC_API_Resource {
 				// taxonomy-based attributes are prefixed with `pa_`, otherwise simply `attribute_`
 				$attributes[] = array(
 					'name'   => wc_attribute_label( str_replace( 'attribute_', '', $attribute_name ) ),
-					'slug'   => str_replace( 'attribute_', '', str_replace( 'pa_', '', $attribute_name ) ),
+					'slug'   => str_replace( 'attribute_', '', wc_attribute_taxonomy_slug( $attribute_name ) ),
 					'option' => $attribute,
 				);
 			}
@@ -1787,7 +1787,7 @@ class WC_API_Products extends WC_API_Resource {
 			foreach ( $product->get_attributes() as $attribute ) {
 				$attributes[] = array(
 					'name'      => wc_attribute_label( $attribute['name'] ),
-					'slug'      => str_replace( 'pa_', '', $attribute['name'] ),
+					'slug'      => wc_attribute_taxonomy_slug( $attribute['name'] ),
 					'position'  => (int) $attribute['position'],
 					'visible'   => (bool) $attribute['is_visible'],
 					'variation' => (bool) $attribute['is_variation'],
@@ -2023,6 +2023,7 @@ class WC_API_Products extends WC_API_Resource {
 
 			// Clear transients
 			delete_transient( 'wc_attribute_taxonomies' );
+			WC_Cache_Helper::incr_cache_prefix( 'woocommerce-attributes' );
 
 			$this->server->send_status( 201 );
 
@@ -2108,6 +2109,7 @@ class WC_API_Products extends WC_API_Resource {
 
 			// Clear transients
 			delete_transient( 'wc_attribute_taxonomies' );
+			WC_Cache_Helper::incr_cache_prefix( 'woocommerce-attributes' );
 
 			return $this->get_product_attribute( $id );
 		} catch ( WC_API_Exception $e ) {
@@ -2169,6 +2171,7 @@ class WC_API_Products extends WC_API_Resource {
 
 			// Clear transients
 			delete_transient( 'wc_attribute_taxonomies' );
+			WC_Cache_Helper::incr_cache_prefix( 'woocommerce-attributes' );
 
 			return array( 'message' => sprintf( __( 'Deleted %s', 'woocommerce' ), 'product_attribute' ) );
 		} catch ( WC_API_Exception $e ) {

@@ -24,6 +24,7 @@ jQuery( function( $ ) {
 
 			if ( $( document.body ).hasClass( 'woocommerce-order-pay' ) ) {
 				this.$order_review.on( 'click', 'input[name="payment_method"]', this.payment_method_selected );
+				this.$order_review.on( 'submit', this.submitOrder );
 				this.$order_review.attr( 'novalidate', 'novalidate' );
 			}
 
@@ -258,10 +259,10 @@ jQuery( function( $ ) {
 
 			var country			 = $( '#billing_country' ).val(),
 				state			 = $( '#billing_state' ).val(),
-				postcode		 = $( 'input#billing_postcode' ).val(),
+				postcode		 = $( ':input#billing_postcode' ).val(),
 				city			 = $( '#billing_city' ).val(),
-				address			 = $( 'input#billing_address_1' ).val(),
-				address_2		 = $( 'input#billing_address_2' ).val(),
+				address			 = $( ':input#billing_address_1' ).val(),
+				address_2		 = $( ':input#billing_address_2' ).val(),
 				s_country		 = country,
 				s_state			 = state,
 				s_postcode		 = postcode,
@@ -282,10 +283,10 @@ jQuery( function( $ ) {
 			if ( $( '#ship-to-different-address' ).find( 'input' ).is( ':checked' ) ) {
 				s_country		 = $( '#shipping_country' ).val();
 				s_state			 = $( '#shipping_state' ).val();
-				s_postcode		 = $( 'input#shipping_postcode' ).val();
+				s_postcode		 = $( ':input#shipping_postcode' ).val();
 				s_city			 = $( '#shipping_city' ).val();
-				s_address		 = $( 'input#shipping_address_1' ).val();
-				s_address_2		 = $( 'input#shipping_address_2' ).val();
+				s_address		 = $( ':input#shipping_address_1' ).val();
+				s_address_2		 = $( ':input#shipping_address_2' ).val();
 			}
 
 			var data = {
@@ -332,7 +333,7 @@ jQuery( function( $ ) {
 				success:	function( data ) {
 
 					// Reload the page if requested
-					if ( true === data.reload ) {
+					if ( data && true === data.reload ) {
 						window.location.reload();
 						return;
 					}
@@ -385,7 +386,7 @@ jQuery( function( $ ) {
 					}
 
 					// Check for error
-					if ( 'failure' === data.result ) {
+					if ( data && 'failure' === data.result ) {
 
 						var $form = $( 'form.checkout' );
 
@@ -414,6 +415,22 @@ jQuery( function( $ ) {
 
 			});
 		},
+		blockOnSubmit: function( $form ) {
+			var form_data = $form.data();
+
+			if ( 1 !== form_data['blockUI.isBlocked'] ) {
+				$form.block({
+					message: null,
+					overlayCSS: {
+						background: '#fff',
+						opacity: 0.6
+					}
+				});
+			}
+		},
+		submitOrder: function() {
+			wc_checkout_form.blockOnSubmit( $( this ) );
+		},
 		submit: function() {
 			wc_checkout_form.reset_update_checkout_timer();
 			var $form = $( this );
@@ -427,17 +444,7 @@ jQuery( function( $ ) {
 
 				$form.addClass( 'processing' );
 
-				var form_data = $form.data();
-
-				if ( 1 !== form_data['blockUI.isBlocked'] ) {
-					$form.block({
-						message: null,
-						overlayCSS: {
-							background: '#fff',
-							opacity: 0.6
-						}
-					});
-				}
+				wc_checkout_form.blockOnSubmit( $form );
 
 				// ajaxSetup is global, but we use it to ensure JSON is valid once returned.
 				$.ajaxSetup( {

@@ -191,11 +191,17 @@ class WC_Gateway_Paypal_Request {
 	protected function get_paypal_args( $order ) {
 		WC_Gateway_Paypal::log( 'Generating payment form for order ' . $order->get_order_number() . '. Notify URL: ' . $this->notify_url );
 
+		$force_one_line_item = apply_filters( 'woocommerce_paypal_force_one_line_item', false, $order );
+
+		if ( ( wc_tax_enabled() && wc_prices_include_tax() ) || ! $this->line_items_valid( $order ) ) {
+			$force_one_line_item = true;
+		}
+
 		$paypal_args = apply_filters(
 			'woocommerce_paypal_args',
 			array_merge(
 				$this->get_transaction_args( $order ),
-				$this->get_line_item_args( $order )
+				$this->get_line_item_args( $order, $force_one_line_item )
 			),
 			$order
 		);
@@ -210,8 +216,9 @@ class WC_Gateway_Paypal_Request {
 	 * @return array
 	 */
 	protected function get_phone_number_args( $order ) {
+		$phone_number = wc_sanitize_phone_number( $order->get_billing_phone() );
+
 		if ( in_array( $order->get_billing_country(), array( 'US', 'CA' ), true ) ) {
-			$phone_number = str_replace( array( '(', '-', ' ', ')', '.' ), '', $order->get_billing_phone() );
 			$phone_number = ltrim( $phone_number, '+1' );
 			$phone_args   = array(
 				'night_phone_a' => substr( $phone_number, 0, 3 ),
@@ -219,8 +226,16 @@ class WC_Gateway_Paypal_Request {
 				'night_phone_c' => substr( $phone_number, 6, 4 ),
 			);
 		} else {
+			$calling_code = WC()->countries->get_country_calling_code( $order->get_billing_country() );
+			$calling_code = is_array( $calling_code ) ? $calling_code[0] : $calling_code;
+
+			if ( $calling_code ) {
+				$phone_number = str_replace( $calling_code, '', preg_replace( '/^0/', '', $order->get_billing_phone() ) );
+			}
+
 			$phone_args = array(
-				'night_phone_b' => $order->get_billing_phone(),
+				'night_phone_a' => $calling_code,
+				'night_phone_b' => $phone_number,
 			);
 		}
 		return $phone_args;
@@ -306,11 +321,8 @@ class WC_Gateway_Paypal_Request {
 	 * @return array
 	 */
 	protected function get_line_item_args( $order, $force_one_line_item = false ) {
-		if ( wc_tax_enabled() && wc_prices_include_tax() || ! $this->line_items_valid( $order ) ) {
-			$force_one_line_item = true;
-		}
-
 		$line_item_args = array();
+
 		if ( $force_one_line_item ) {
 			/**
 			 * Send order as a single item.

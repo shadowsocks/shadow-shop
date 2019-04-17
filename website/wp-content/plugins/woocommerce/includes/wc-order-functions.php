@@ -73,7 +73,7 @@ function wc_get_orders( $args ) {
  *
  * @param  mixed $the_order Post object or post ID of the order.
  *
- * @return bool|WC_Order|WC_Refund
+ * @return bool|WC_Order|WC_Order_Refund
  */
 function wc_get_order( $the_order = false ) {
 	if ( ! did_action( 'woocommerce_after_register_post_type' ) ) {
@@ -122,6 +122,16 @@ function wc_is_order_status( $maybe_status ) {
  */
 function wc_get_is_paid_statuses() {
 	return apply_filters( 'woocommerce_order_is_paid_statuses', array( 'processing', 'completed' ) );
+}
+
+/**
+ * Get list of statuses which are consider 'pending payment'.
+ *
+ * @since  3.6.0
+ * @return array
+ */
+function wc_get_is_pending_statuses() {
+	return apply_filters( 'woocommerce_order_is_pending_statuses', array( 'pending' ) );
 }
 
 /**
@@ -304,7 +314,6 @@ function wc_register_order_type( $type, $args = array() ) {
 /**
  * Return the count of processing orders.
  *
- * @access public
  * @return int
  */
 function wc_processing_order_count() {
@@ -511,6 +520,7 @@ function wc_create_refund( $args = array() ) {
 		$refund->set_amount( $args['amount'] );
 		$refund->set_parent_id( absint( $args['order_id'] ) );
 		$refund->set_refunded_by( get_current_user_id() ? get_current_user_id() : 1 );
+		$refund->set_prices_include_tax( $order->get_prices_include_tax() );
 
 		if ( ! is_null( $args['reason'] ) ) {
 			$refund->set_reason( $args['reason'] );
@@ -762,7 +772,7 @@ function wc_order_fully_refunded( $order_id ) {
 	wc_create_refund(
 		array(
 			'amount'     => $max_refund,
-			'reason'     => __( 'Order fully refunded', 'woocommerce' ),
+			'reason'     => __( 'Order status set to refunded. To return funds to the customer you will need to issue a refund through your payment gateway.', 'woocommerce' ),
 			'order_id'   => $order_id,
 			'line_items' => array(),
 		)
@@ -911,7 +921,7 @@ add_action( 'woocommerce_cancel_unpaid_orders', 'wc_cancel_unpaid_orders' );
  * @param int $order_id Order ID.
  */
 function wc_sanitize_order_id( $order_id ) {
-	return filter_var( $order_id, FILTER_SANITIZE_NUMBER_INT );
+	return (int) filter_var( $order_id, FILTER_SANITIZE_NUMBER_INT );
 }
 add_filter( 'woocommerce_shortcode_order_tracking_order_id', 'wc_sanitize_order_id' );
 
@@ -932,13 +942,15 @@ function wc_get_order_note( $data ) {
 	}
 
 	return (object) apply_filters(
-		'woocommerce_get_order_note', array(
+		'woocommerce_get_order_note',
+		array(
 			'id'            => (int) $data->comment_ID,
 			'date_created'  => wc_string_to_datetime( $data->comment_date ),
 			'content'       => $data->comment_content,
 			'customer_note' => (bool) get_comment_meta( $data->comment_ID, 'is_customer_note', true ),
 			'added_by'      => __( 'WooCommerce', 'woocommerce' ) === $data->comment_author ? 'system' : $data->comment_author,
-		), $data
+		),
+		$data
 	);
 }
 

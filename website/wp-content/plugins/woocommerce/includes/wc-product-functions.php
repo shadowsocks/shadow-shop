@@ -92,62 +92,36 @@ function wc_product_dimensions_enabled() {
 }
 
 /**
- * Clear all transients cache for product data.
+ * Clear transient cache for product data.
  *
- * @param int $post_id (default: 0).
+ * @param int $post_id (default: 0) The product ID.
  */
 function wc_delete_product_transients( $post_id = 0 ) {
-	// Core transients.
+	// Transient data to clear with a fixed name which may be stale after product updates.
 	$transients_to_clear = array(
 		'wc_products_onsale',
 		'wc_featured_products',
 		'wc_outofstock_count',
 		'wc_low_stock_count',
-		'wc_count_comments',
 	);
 
-	// Transient names that include an ID.
-	$post_transient_names = array(
-		'wc_product_children_',
-		'wc_var_prices_',
-		'wc_related_',
-		'wc_child_has_weight_',
-		'wc_child_has_dimensions_',
-	);
-
-	if ( $post_id > 0 ) {
-		foreach ( $post_transient_names as $transient ) {
-			$transients_to_clear[] = $transient . $post_id;
-		}
-
-		// Does this product have a parent?
-		$product = wc_get_product( $post_id );
-
-		if ( $product ) {
-			if ( $product->get_parent_id() > 0 ) {
-				wc_delete_product_transients( $product->get_parent_id() );
-			}
-
-			if ( 'variable' === $product->get_type() ) {
-				wp_cache_delete(
-					WC_Cache_Helper::get_cache_prefix( 'products' ) . 'product_variation_attributes_' . $product->get_id(),
-					'products'
-				);
-			}
-
-			$attributes = $product->get_attributes();
-
-			if ( $attributes ) {
-				foreach ( $attributes as $attribute_key => $attribute ) {
-					$transients_to_clear[] = 'wc_layered_nav_counts_' . $attribute_key;
-				}
-			}
-		}
-	}
-
-	// Delete transients.
 	foreach ( $transients_to_clear as $transient ) {
 		delete_transient( $transient );
+	}
+
+	if ( $post_id > 0 ) {
+		// Transient names that include an ID - since they are dynamic they cannot be cleaned in bulk without the ID.
+		$post_transient_names = array(
+			'wc_product_children_',
+			'wc_var_prices_',
+			'wc_related_',
+			'wc_child_has_weight_',
+			'wc_child_has_dimensions_',
+		);
+
+		foreach ( $post_transient_names as $transient ) {
+			delete_transient( $transient . $post_id );
+		}
 	}
 
 	// Increments the transient version to invalidate cache.
@@ -228,13 +202,14 @@ function wc_product_post_type_link( $permalink, $post ) {
 	$terms = get_the_terms( $post->ID, 'product_cat' );
 
 	if ( ! empty( $terms ) ) {
-		if ( function_exists( 'wp_list_sort' ) ) {
-			$terms = wp_list_sort( $terms, 'term_id', 'ASC' );
-		} else {
-			usort( $terms, '_usort_terms_by_ID' );
-		}
+		$terms           = wp_list_sort(
+			$terms,
+			array(
+				'parent'  => 'DESC',
+				'term_id' => 'ASC',
+			)
+		);
 		$category_object = apply_filters( 'wc_product_post_type_link_product_cat', $terms[0], $terms, $post );
-		$category_object = get_term( $category_object, 'product_cat' );
 		$product_cat     = $category_object->slug;
 
 		if ( $category_object->parent ) {
@@ -279,11 +254,10 @@ function wc_product_post_type_link( $permalink, $post ) {
 }
 add_filter( 'post_type_link', 'wc_product_post_type_link', 10, 2 );
 
-
 /**
- * Get the placeholder image URL for products etc.
+ * Get the placeholder image URL either from media, or use the fallback image.
  *
- * @param string $size Image size.
+ * @param string $size Thumbnail size to use.
  * @return string
  */
 function wc_placeholder_img_src( $size = 'woocommerce_thumbnail' ) {
@@ -308,13 +282,31 @@ function wc_placeholder_img_src( $size = 'woocommerce_thumbnail' ) {
 /**
  * Get the placeholder image.
  *
+ * Uses wp_get_attachment_image if using an attachment ID @since 3.6.0 to handle responsiveness.
+ *
  * @param string $size Image size.
  * @return string
  */
 function wc_placeholder_img( $size = 'woocommerce_thumbnail' ) {
-	$dimensions = wc_get_image_size( $size );
+	$dimensions        = wc_get_image_size( $size );
+	$placeholder_image = get_option( 'woocommerce_placeholder_image', 0 );
 
-	return apply_filters( 'woocommerce_placeholder_img', '<img src="' . wc_placeholder_img_src( $size ) . '" alt="' . esc_attr__( 'Placeholder', 'woocommerce' ) . '" width="' . esc_attr( $dimensions['width'] ) . '" class="woocommerce-placeholder wp-post-image" height="' . esc_attr( $dimensions['height'] ) . '" />', $size, $dimensions );
+	if ( wp_attachment_is_image( $placeholder_image ) ) {
+		$image_html = wp_get_attachment_image(
+			$placeholder_image,
+			$size,
+			false,
+			array(
+				'alt'   => __( 'Placeholder', 'woocommerce' ),
+				'class' => 'woocommerce-placeholder wp-post-image',
+			)
+		);
+	} else {
+		$image      = wc_placeholder_img_src( $size );
+		$image_html = '<img src="' . esc_attr( $image ) . '" alt="' . esc_attr__( 'Placeholder', 'woocommerce' ) . '" width="' . esc_attr( $dimensions['width'] ) . '" class="woocommerce-placeholder wp-post-image" height="' . esc_attr( $dimensions['height'] ) . '" />';
+	}
+
+	return apply_filters( 'woocommerce_placeholder_img', $image_html, $size, $dimensions );
 }
 
 /**
@@ -428,6 +420,7 @@ function wc_scheduled_sales() {
 		}
 		do_action( 'wc_after_products_starting_sales', $product_ids );
 
+		WC_Cache_Helper::get_transient_version( 'product', true );
 		delete_transient( 'wc_products_onsale' );
 	}
 
@@ -786,47 +779,6 @@ function wc_get_product_visibility_options() {
 }
 
 /**
- * Get min/max price meta query args.
- *
- * @since 3.0.0
- * @param array $args Min price and max price arguments.
- * @return array
- */
-function wc_get_min_max_price_meta_query( $args ) {
-	$min = isset( $args['min_price'] ) ? floatval( $args['min_price'] ) : 0;
-	$max = isset( $args['max_price'] ) ? floatval( $args['max_price'] ) : 9999999999;
-
-	/**
-	 * Adjust if the store taxes are not displayed how they are stored.
-	 * Kicks in when prices excluding tax are displayed including tax.
-	 */
-	if ( wc_tax_enabled() && 'incl' === get_option( 'woocommerce_tax_display_shop' ) && ! wc_prices_include_tax() ) {
-		$tax_classes = array_merge( array( '' ), WC_Tax::get_tax_classes() );
-		$class_min   = $min;
-		$class_max   = $max;
-
-		foreach ( $tax_classes as $tax_class ) {
-			$tax_rates = WC_Tax::get_rates( $tax_class );
-
-			if ( $tax_rates ) {
-				$class_min = $min + WC_Tax::get_tax_total( WC_Tax::calc_exclusive_tax( $min, $tax_rates ) );
-				$class_max = $max - WC_Tax::get_tax_total( WC_Tax::calc_exclusive_tax( $max, $tax_rates ) );
-			}
-		}
-
-		$min = $class_min;
-		$max = $class_max;
-	}
-
-	return array(
-		'key'     => '_price',
-		'value'   => array( $min, $max ),
-		'compare' => 'BETWEEN',
-		'type'    => 'DECIMAL(10,' . wc_get_price_decimals() . ')',
-	);
-}
-
-/**
  * Get product tax class options.
  *
  * @since 3.0.0
@@ -852,10 +804,13 @@ function wc_get_product_tax_class_options() {
  * @return array
  */
 function wc_get_product_stock_status_options() {
-	return array(
-		'instock'     => __( 'In stock', 'woocommerce' ),
-		'outofstock'  => __( 'Out of stock', 'woocommerce' ),
-		'onbackorder' => __( 'On backorder', 'woocommerce' ),
+	return apply_filters(
+		'woocommerce_product_stock_status_options',
+		array(
+			'instock'     => __( 'In stock', 'woocommerce' ),
+			'outofstock'  => __( 'Out of stock', 'woocommerce' ),
+			'onbackorder' => __( 'On backorder', 'woocommerce' ),
+		)
 	);
 }
 
@@ -1314,3 +1269,242 @@ function wc_deferred_product_sync( $product_id ) {
 
 	$wc_deferred_product_sync[] = $product_id;
 }
+
+/**
+ * See if the lookup table is being generated already.
+ *
+ * @since 3.6.0
+ * @return bool
+ */
+function wc_update_product_lookup_tables_is_running() {
+	$table_updates_pending = WC()->queue()->search(
+		array(
+			'status'   => 'pending',
+			'group'    => 'wc_update_product_lookup_tables',
+			'per_page' => 1,
+		)
+	);
+
+	return (bool) count( $table_updates_pending );
+}
+
+/**
+ * Populate lookup table data for products.
+ *
+ * @since 3.6.0
+ */
+function wc_update_product_lookup_tables() {
+	global $wpdb;
+
+	$is_cli = defined( 'WP_CLI' ) && WP_CLI;
+
+	if ( ! $is_cli ) {
+		WC_Admin_Notices::add_notice( 'regenerating_lookup_table' );
+	}
+
+	// Make a row per product in lookup table.
+	$wpdb->query(
+		"
+		INSERT IGNORE INTO {$wpdb->wc_product_meta_lookup} (`product_id`)
+		SELECT
+			posts.ID
+		FROM {$wpdb->posts} posts
+		WHERE
+			posts.post_type IN ('product', 'product_variation')
+		"
+	);
+
+	// List of column names in the lookup table we need to populate.
+	$columns = array(
+		'min_max_price',
+		'stock_quantity',
+		'sku',
+		'stock_status',
+		'average_rating',
+		'total_sales',
+		'downloadable',
+		'virtual',
+		'onsale',
+	);
+
+	foreach ( $columns as $index => $column ) {
+		if ( $is_cli ) {
+			wc_update_product_lookup_tables_column( $column );
+		} else {
+			WC()->queue()->schedule_single(
+				time() + $index,
+				'wc_update_product_lookup_tables_column',
+				array(
+					'column' => $column,
+				),
+				'wc_update_product_lookup_tables'
+			);
+		}
+	}
+
+	// Rating counts are serialised so they have to be unserialised before populating the lookup table.
+	$rating_count_rows = $wpdb->get_results(
+		"
+		SELECT post_id, meta_value FROM {$wpdb->postmeta}
+		WHERE meta_key = '_wc_rating_count'
+		AND meta_value != ''
+		AND meta_value != 'a:0:{}'
+		",
+		ARRAY_A
+	);
+
+	if ( $rating_count_rows ) {
+		if ( $is_cli ) {
+			wc_update_product_lookup_tables_rating_count( $rating_count_rows );
+		} else {
+			$rating_count_rows = array_chunk( $rating_count_rows, 50 );
+			$index             = count( $columns ) + 1;
+
+			foreach ( $rating_count_rows as $rows ) {
+				WC()->queue()->schedule_single(
+					time() + $index,
+					'wc_update_product_lookup_tables_rating_count',
+					array(
+						'rows' => $rows,
+					),
+					'wc_update_product_lookup_tables'
+				);
+				$index ++;
+			}
+		}
+	}
+}
+
+/**
+ * Populate lookup table column data.
+ *
+ * @since 3.6.0
+ * @param string $column Column name to set.
+ */
+function wc_update_product_lookup_tables_column( $column ) {
+	if ( empty( $column ) ) {
+		return;
+	}
+	global $wpdb;
+	// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
+	switch ( $column ) {
+		case 'min_max_price':
+			$wpdb->query(
+				"
+				UPDATE
+					{$wpdb->wc_product_meta_lookup} lookup_table
+					INNER JOIN (
+						SELECT lookup_table.product_id, MIN( meta_value+0 ) as min_price, MAX( meta_value+0 ) as max_price
+						FROM {$wpdb->wc_product_meta_lookup} lookup_table
+						LEFT JOIN {$wpdb->postmeta} meta1 ON lookup_table.product_id = meta1.post_id AND meta1.meta_key = '_price'
+						WHERE
+							meta1.meta_value <> ''
+						GROUP BY lookup_table.product_id
+					) as source on source.product_id = lookup_table.product_id
+				SET
+					lookup_table.min_price = source.min_price,
+					lookup_table.max_price = source.max_price
+				"
+			);
+			break;
+		case 'stock_quantity':
+			$wpdb->query(
+				"
+				UPDATE
+					{$wpdb->wc_product_meta_lookup} lookup_table
+					LEFT JOIN {$wpdb->postmeta} meta1 ON lookup_table.product_id = meta1.post_id AND meta1.meta_key = '_manage_stock'
+					LEFT JOIN {$wpdb->postmeta} meta2 ON lookup_table.product_id = meta2.post_id AND meta2.meta_key = '_stock'
+				SET
+					lookup_table.stock_quantity = meta2.meta_value
+				WHERE
+					meta1.meta_value = 'yes'
+				"
+			);
+			break;
+		case 'sku':
+		case 'stock_status':
+		case 'average_rating':
+		case 'total_sales':
+			$meta_key = 'total_sales' === $column ? $column : '_' . $column;
+			$column   = esc_sql( $column );
+			$wpdb->query(
+				$wpdb->prepare(
+					"
+					UPDATE
+						{$wpdb->wc_product_meta_lookup} lookup_table
+						LEFT JOIN {$wpdb->postmeta} meta ON lookup_table.product_id = meta.post_id AND meta.meta_key = %s
+					SET
+						lookup_table.`{$column}` = meta.meta_value
+					",
+					$meta_key
+				)
+			);
+			break;
+		case 'downloadable':
+		case 'virtual':
+			$column = esc_sql( $column );
+
+			$wpdb->query(
+				"
+				UPDATE
+					{$wpdb->wc_product_meta_lookup} lookup_table
+					LEFT JOIN {$wpdb->postmeta} meta1 ON lookup_table.product_id = meta1.post_id AND meta1.meta_key = '_virtual'
+				SET
+					lookup_table.`{$column}` = IF ( meta1.meta_value = 'yes', 1, 0 )
+				"
+			);
+			break;
+		case 'onsale':
+			$column   = esc_sql( $column );
+			$decimals = absint( wc_get_price_decimals() );
+
+			$wpdb->query(
+				$wpdb->prepare(
+					"
+					UPDATE
+						{$wpdb->wc_product_meta_lookup} lookup_table
+						LEFT JOIN {$wpdb->postmeta} meta1 ON lookup_table.product_id = meta1.post_id AND meta1.meta_key = '_price'
+						LEFT JOIN {$wpdb->postmeta} meta2 ON lookup_table.product_id = meta2.post_id AND meta2.meta_key = '_sale_price'
+					SET
+						lookup_table.`{$column}` = IF (
+							CAST( meta1.meta_value AS DECIMAL ) >= 0
+							AND CAST( meta2.meta_value AS CHAR ) != ''
+							AND CAST( meta1.meta_value AS DECIMAL( 10, %d ) ) = CAST( meta2.meta_value AS DECIMAL( 10, %d ) )
+						, 1, 0 )
+					",
+					$decimals,
+					$decimals
+				)
+			);
+			break;
+	}
+	// phpcs:enable WordPress.DB.PreparedSQL.NotPrepared
+}
+add_action( 'wc_update_product_lookup_tables_column', 'wc_update_product_lookup_tables_column' );
+
+/**
+ * Populate rating count lookup table data for products.
+ *
+ * @since 3.6.0
+ * @param array $rows Rows of rating counts to update in lookup table.
+ */
+function wc_update_product_lookup_tables_rating_count( $rows ) {
+	if ( ! $rows || ! is_array( $rows ) ) {
+		return;
+	}
+	global $wpdb;
+
+	foreach ( $rows as $row ) {
+		$count = array_sum( (array) maybe_unserialize( $row['meta_value'] ) );
+		$wpdb->update(
+			$wpdb->wc_product_meta_lookup,
+			array(
+				'rating_count' => absint( $count ),
+			),
+			array(
+				'product_id' => absint( $row['post_id'] ),
+			)
+		);
+	}
+}
+add_action( 'wc_update_product_lookup_tables_rating_count', 'wc_update_product_lookup_tables_rating_count' );

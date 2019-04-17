@@ -169,7 +169,7 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 		$variation_attributes = array();
 		$attributes           = $product->get_attributes();
 		$child_ids            = $product->get_children();
-		$cache_key            = WC_Cache_Helper::get_cache_prefix( 'products' ) . 'product_variation_attributes_' . $product->get_id();
+		$cache_key            = WC_Cache_Helper::get_cache_prefix( 'product_' . $product->get_id() ) . 'product_variation_attributes_' . $product->get_id();
 		$cache_group          = 'products';
 		$cached_data          = wp_cache_get( $cache_key, $cache_group );
 
@@ -253,9 +253,16 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 		 *
 		 * @since 2.5.0 a single transient is used per product for all prices, rather than many transients per product.
 		 */
-		$transient_name = 'wc_var_prices_' . $product->get_id();
+		$transient_name    = 'wc_var_prices_' . $product->get_id();
+		$transient_version = WC_Cache_Helper::get_transient_version( 'product' );
+		$price_hash        = $this->get_price_hash( $product, $for_display );
 
-		$price_hash = $this->get_price_hash( $product, $for_display );
+		// Check if prices array is stale.
+		if ( ! isset( $this->prices_array['version'] ) || $this->prices_array['version'] !== $transient_version ) {
+			$this->prices_array = array(
+				'version' => $transient_version,
+			);
+		}
 
 		/**
 		 * $this->prices_array is an array of values which may have been modified from what is stored in transients - this may not match $transient_cached_prices_array.
@@ -265,16 +272,26 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 			$transient_cached_prices_array = array_filter( (array) json_decode( strval( get_transient( $transient_name ) ), true ) );
 
 			// If the product version has changed since the transient was last saved, reset the transient cache.
-			if ( empty( $transient_cached_prices_array['version'] ) || WC_Cache_Helper::get_transient_version( 'product' ) !== $transient_cached_prices_array['version'] ) {
-				$transient_cached_prices_array = array( 'version' => WC_Cache_Helper::get_transient_version( 'product' ) );
+			if ( ! isset( $transient_cached_prices_array['version'] ) || $transient_version !== $transient_cached_prices_array['version'] ) {
+				$transient_cached_prices_array = array(
+					'version' => $transient_version,
+				);
 			}
 
 			// If the prices are not stored for this hash, generate them and add to the transient.
 			if ( empty( $transient_cached_prices_array[ $price_hash ] ) ) {
-				$prices         = array();
-				$regular_prices = array();
-				$sale_prices    = array();
-				$variation_ids  = $product->get_visible_children();
+				$prices_array = array(
+					'price'         => array(),
+					'regular_price' => array(),
+					'sale_price'    => array(),
+				);
+
+				$variation_ids = $product->get_visible_children();
+
+				if ( is_callable( '_prime_post_caches' ) ) {
+					_prime_post_caches( $variation_ids );
+				}
+
 				foreach ( $variation_ids as $variation_id ) {
 					$variation = wc_get_product( $variation_id );
 
@@ -342,17 +359,18 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 							}
 						}
 
-						$prices[ $variation_id ]         = wc_format_decimal( $price, wc_get_price_decimals() );
-						$regular_prices[ $variation_id ] = wc_format_decimal( $regular_price, wc_get_price_decimals() );
-						$sale_prices[ $variation_id ]    = wc_format_decimal( $sale_price . '.00', wc_get_price_decimals() );
+						$prices_array['price'][ $variation_id ]         = wc_format_decimal( $price, wc_get_price_decimals() );
+						$prices_array['regular_price'][ $variation_id ] = wc_format_decimal( $regular_price, wc_get_price_decimals() );
+						$prices_array['sale_price'][ $variation_id ]    = wc_format_decimal( $sale_price . '.00', wc_get_price_decimals() );
+
+						$prices_array = apply_filters( 'woocommerce_variation_prices_array', $prices_array, $variation, $for_display );
 					}
 				}
 
-				$transient_cached_prices_array[ $price_hash ] = array(
-					'price'         => $prices,
-					'regular_price' => $regular_prices,
-					'sale_price'    => $sale_prices,
-				);
+				// Add all pricing data to the transient array.
+				foreach ( $prices_array as $key => $values ) {
+					$transient_cached_prices_array[ $price_hash ][ $key ] = $values;
+				}
 
 				set_transient( $transient_name, wp_json_encode( $transient_cached_prices_array ), DAY_IN_SECONDS * 30 );
 			}
@@ -392,14 +410,7 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 			}
 		}
 
-		$price_hash[] = WC_Cache_Helper::get_transient_version( 'product' );
-		$price_hash   = md5(
-			wp_json_encode(
-				apply_filters( 'woocommerce_get_variation_prices_hash', $price_hash, $product, $for_display )
-			)
-		);
-
-		return $price_hash;
+		return md5( wp_json_encode( apply_filters( 'woocommerce_get_variation_prices_hash', $price_hash, $product, $for_display ) ) );
 	}
 
 	/**
@@ -474,12 +485,19 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 			$format               = array_fill( 0, count( $children ), '%d' );
 			$query_in             = '(' . implode( ',', $format ) . ')';
 			$query_args           = array( 'stock_status' => $status ) + $children;
+			// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 			$children_with_status = $wpdb->get_var(
-				$wpdb->prepare( // wpcs: PreparedSQLPlaceholders replacement count ok.
-					"SELECT COUNT( post_id ) FROM $wpdb->postmeta WHERE meta_key = '_stock_status' AND meta_value = %s AND post_id IN {$query_in}", // @codingStandardsIgnoreLine.
+				$wpdb->prepare(
+					"
+					SELECT COUNT( product_id )
+					FROM {$wpdb->wc_product_meta_lookup}
+					WHERE stock_status = %s
+					AND product_id IN {$query_in}
+					",
 					$query_args
 				)
 			);
+			// phpcs:enable WordPress.DB.PreparedSQL.NotPrepared
 		} else {
 			$children_with_status = 0;
 		}
@@ -536,6 +554,7 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 				$managed_children = array_unique( $wpdb->get_col( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_manage_stock' AND meta_value != 'yes' AND post_id IN {$query_in}", $children ) ) ); // @codingStandardsIgnoreLine.
 				foreach ( $managed_children as $managed_child ) {
 					if ( update_post_meta( $managed_child, '_stock_status', $status ) ) {
+						$this->update_lookup_table( $managed_child, 'wc_product_meta_lookup' );
 						$changed = true;
 					}
 				}
@@ -573,7 +592,7 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 		delete_post_meta( $product->get_id(), '_regular_price' );
 
 		if ( $prices ) {
-			sort( $prices );
+			sort( $prices, SORT_NUMERIC );
 			// To allow sorting and filtering by multiple values, we have no choice but to store child prices in this manner.
 			foreach ( $prices as $price ) {
 				if ( is_null( $price ) || '' === $price ) {
@@ -582,6 +601,16 @@ class WC_Product_Variable_Data_Store_CPT extends WC_Product_Data_Store_CPT imple
 				add_post_meta( $product->get_id(), '_price', $price, false );
 			}
 		}
+
+		$this->update_lookup_table( $product->get_id(), 'wc_product_meta_lookup' );
+
+		/**
+		 * Fire an action for this direct update so it can be detected by other code.
+		 *
+		 * @since 3.6
+		 * @param int $product_id Product ID that was updated directly.
+		 */
+		do_action( 'woocommerce_updated_product_price', $product->get_id() );
 	}
 
 	/**
