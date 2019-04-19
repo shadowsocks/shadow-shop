@@ -3,7 +3,7 @@ Contributors: automattic, mikejolley, jameskoster, claudiosanches, claudiulodro,
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, downloadable, downloads, paypal, storefront, woo commerce
 Requires at least: 4.7
 Tested up to: 5.1
-Stable tag: 3.6.0
+Stable tag: 3.6.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -157,6 +157,9 @@ Yes you can! Join in on our [GitHub repository](https://github.com/woocommerce/w
 6. A product archive (grid).
 
 == Changelog ==
+
+= 3.6.1 - 2019-04-18 =
+* Fix - Remove calls to 'header_register_callback' to prevent conflicts with some hosting providers and PHP versions.
 
 = 3.6.0 - 2019-04-17 =
 * Enhancement - Merged WooCommerce Gutenberg Products Block feature plugin. Adds blocks for the new editor, including
