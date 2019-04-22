@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-18 14:56:40+0000\n"
+"PO-Revision-Date: 2019-04-21 05:23:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -6424,7 +6424,7 @@ msgstr "上傳的檔案不是有效圖片。請再試一次。"
 
 #: wp-admin/includes/ajax-actions.php:2321
 msgid "Sorry, you are not allowed to attach files to this post."
-msgstr "很抱歉，目前的登入身分沒有將檔案附加至這篇文章的權限。"
+msgstr "很抱歉，目前的登入身分沒有將檔案關聯至這篇文章的權限。"
 
 #: wp-admin/includes/ajax-actions.php:2054
 msgid "Type"

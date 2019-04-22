@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce Stripe Payment Gateway - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-18 16:45:56+0000\n"
+"PO-Revision-Date: 2019-04-22 10:30:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WooCommerce Stripe Payment Gateway - Stable (latest release)\n"
+
+#: includes/admin/class-wc-stripe-admin-notices.php:119
+msgid "WooCommerce Stripe - Support for Stripe Modal Checkout will be ending soon. This will impact the appearance of your checkout. <a href=\"%1$s\" target=\"_blank\">Click here to learn more.</a>"
+msgstr "WooCommerce Stripe - La compatibilidad con el modo de pago emergente de Stripe terminará pronto. Esto impactará en la apariencia de tu página de finalizar compra. <a href=\"%1$s\" target=\"_blank\">Haz clic aquí para aprender más.</a>"
 
 #: includes/admin/stripe-settings.php:82
 msgid "Statement descriptors are limited to 22 characters, cannot use the special characters >, <, \", \\, ', *, and must not consist solely of numbers. This will appear on your customer's statement in capital letters."

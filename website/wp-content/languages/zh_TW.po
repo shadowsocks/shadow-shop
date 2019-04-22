@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-18 15:49:04+0000\n"
+"PO-Revision-Date: 2019-04-21 18:05:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1879,7 +1879,7 @@ msgstr "內容撰寫完成後，請將該篇內容送交審閱，任何一位具
 
 #: wp-includes/js/dist/editor.js:26926
 msgid "Are you ready to submit for review?"
-msgstr "確定要將這篇內容送交審查？"
+msgstr "確定要將這篇內容送交審閱？"
 
 #: wp-includes/js/dist/editor.js:26856
 msgid "Apply the \"%1$s\" format."
@@ -9111,7 +9111,7 @@ msgstr "待確認"
 
 #: wp-includes/post.php:890 wp-includes/js/dist/editor.js:25821
 msgid "Pending Review"
-msgstr "待審閱"
+msgstr "送交審閱"
 
 #: wp-includes/post.php:889 wp-includes/post.php:910
 msgid "Draft"
