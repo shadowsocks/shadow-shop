@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-21 18:05:36+0000\n"
+"PO-Revision-Date: 2019-04-23 14:28:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11387,7 +11387,7 @@ msgstr "內容類型的標題。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:275
 msgid "Human-readable labels for the post type for various contexts."
-msgstr "可用於各種內容且一般人看得懂的內容類型標籤。"
+msgstr "適用於各種內容且人類可讀的內容類型標籤。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:269
 msgid "Whether or not the post type can be viewed."
@@ -11399,7 +11399,7 @@ msgstr "無論內容類型為何均應有子項目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:257
 msgid "A human-readable description of the post type."
-msgstr "一段一般人看得懂的內容類型的內容說明。"
+msgstr "一段人類可讀的內容類型的內容說明。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:251
 msgid "All capabilities used by the post type."
@@ -11782,7 +11782,7 @@ msgstr "分類法的標題。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:303
 msgid "Human-readable labels for the taxonomy for various contexts."
-msgstr "可用於各種內容且一般人看得懂的分類法標籤。"
+msgstr "適用於各種內容且人類可讀的分類法標籤。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:297
 msgid "Whether or not the taxonomy should have children."
@@ -11790,7 +11790,7 @@ msgstr "無論分類法為何均應有子項目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:291
 msgid "A human-readable description of the taxonomy."
-msgstr "一段一般人看得懂的分類法內容說明。"
+msgstr "一段人類可讀的分類法內容說明。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:285
 msgid "All capabilities used by the taxonomy."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-18 06:51:46+0000\n"
+"PO-Revision-Date: 2019-04-24 10:18:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -162,11 +162,11 @@ msgstr "Extensions inactives"
 
 #: includes/admin/views/html-admin-page-status-report.php:70
 msgid "Site address (URL)"
-msgstr "Adresse du site (URL)"
+msgstr "Adresse du site (URL) "
 
 #: includes/admin/views/html-admin-page-status-report.php:65
 msgid "WordPress address (URL)"
-msgstr "Adresse (URL) de WordPress"
+msgstr "Adresse (URL) de WordPress "
 
 #: includes/admin/class-wc-admin.php:261
 msgid "five star"
@@ -365,7 +365,7 @@ msgstr "Extensions inactives."
 
 #: includes/api/class-wc-rest-orders-controller.php:260
 msgid "Limit result set to orders which have specific statuses."
-msgstr "Limiter les résultats aux commandes qui ont les états sspécifiques."
+msgstr "Limiter les résultats aux commandes qui ont les états spécifiques."
 
 #: includes/api/wc-blocks/class-wc-rest-blocks-product-attributes-controller.php:180
 msgid "Number of terms in the attribute taxonomy."
@@ -2474,7 +2474,7 @@ msgstr "La base de données MaxMind GeoIP requiert au moins le protocole PHP 5.
 
 #: includes/admin/views/html-admin-page-status-report.php:413
 msgid "WooCommerce database version"
-msgstr "Version de la base de données WooCommerce"
+msgstr "Version de la base de données WooCommerce "
 
 #: includes/admin/views/html-admin-page-status-report.php:208
 msgid "We recommend using PHP version 7.2 or above for greater performance and security."
@@ -2494,15 +2494,15 @@ msgstr "Indique si WordPress utilise un cache d’objet externe."
 
 #: includes/admin/views/html-admin-page-status-report.php:168
 msgid "External object cache"
-msgstr "Cache d’objet externe"
+msgstr "Cache d’objet externe "
 
 #: includes/admin/views/html-admin-page-status-report.php:152
 msgid "WordPress cron"
-msgstr "Cron de WordPress"
+msgstr "Cron de WordPress "
 
 #: includes/admin/views/html-admin-page-status-report.php:141
 msgid "WordPress debug mode"
-msgstr "Mode de débogage de WordPress"
+msgstr "Mode de débogage de WordPress "
 
 #: includes/admin/views/html-admin-page-status-report.php:127
 msgid "WordPress memory limit"
@@ -2510,7 +2510,7 @@ msgstr "Limite de mémoire de WordPress"
 
 #: includes/admin/views/html-admin-page-status-report.php:122
 msgid "WordPress multisite"
-msgstr "WordPress multisite"
+msgstr "WordPress multisite "
 
 #. Translators: %1$s: Current version, %2$s: New version
 #: includes/admin/views/html-admin-page-status-report.php:114
@@ -2519,7 +2519,7 @@ msgstr "%1$s - Une nouvelle version de WordPress est disponible (%2$s)"
 
 #: includes/admin/views/html-admin-page-status-report.php:94
 msgid "WordPress version"
-msgstr "Version de WordPress"
+msgstr "Version de WordPress "
 
 #: includes/admin/views/html-admin-page-status-report.php:75
 msgid "WooCommerce version"
@@ -5674,7 +5674,7 @@ msgstr "Mes abonnements"
 #: includes/admin/views/html-admin-page-status-report.php:786
 #: includes/admin/helper/views/html-section-account.php:6
 msgid "Connected to WooCommerce.com"
-msgstr "Connecté à WooCommerce.com"
+msgstr "Connecté à WooCommerce.com "
 
 #: includes/admin/helper/views/html-oauth-start.php:27
 msgid "Connect"
@@ -6182,27 +6182,27 @@ msgstr "Extensions actives"
 
 #: includes/admin/views/html-admin-page-status-report.php:434
 msgid "MaxMind GeoIP database"
-msgstr "Base de données GeoIP de MaxMind"
+msgstr "Base de données GeoIP de MaxMind "
 
 #: includes/admin/views/html-admin-page-status-report.php:265
 msgid "Max upload size"
-msgstr "Taille maximale de téléversement"
+msgstr "Taille maximale de téléversement "
 
 #: includes/admin/views/html-admin-page-status-report.php:250
 msgid "MySQL version"
-msgstr "Version MySQL"
+msgstr "Version MySQL "
 
 #: includes/admin/views/html-admin-page-status-report.php:234
 msgid "cURL version"
-msgstr "Version de cURL"
+msgstr "Version de cURL "
 
 #: includes/admin/views/html-admin-page-status-report.php:193
 msgid "PHP version"
-msgstr "Version PHP"
+msgstr "Version PHP "
 
 #: includes/admin/views/html-admin-page-status-report.php:188
 msgid "Server info"
-msgstr "Info serveur"
+msgstr "Info serveur "
 
 #: includes/admin/reports/class-wc-report-customers.php:116
 msgid "Customer sales"
@@ -7678,7 +7678,7 @@ msgstr "La connexion à votre boutique est-elle sécurisée ?"
 
 #: includes/admin/views/html-admin-page-status-report.php:528
 msgid "Secure connection (HTTPS)"
-msgstr "Connexion sécurisée (HTTPS)"
+msgstr "Connexion sécurisée (HTTPS) "
 
 #: includes/admin/views/html-admin-page-status-report.php:523
 msgid "Security"
@@ -7701,27 +7701,27 @@ msgstr "%1$s - Nous vous recommandons d’utiliser un préfixe avec moins de 20 
 
 #: includes/admin/views/html-admin-page-status-report.php:418
 msgid "Database prefix"
-msgstr "Préfixe de base de données"
+msgstr "Préfixe de base de données :"
 
 #: includes/admin/views/html-admin-page-status-report.php:339
 msgid "Multibyte string"
-msgstr "Chaînes multi-octets"
+msgstr "Chaînes multi-octets "
 
 #: includes/admin/views/html-admin-page-status-report.php:325
 msgid "GZip"
-msgstr "GZip"
+msgstr "GZip "
 
 #: includes/admin/views/html-admin-page-status-report.php:311
 msgid "DOMDocument"
-msgstr "DOMDocument"
+msgstr "DOMDocument "
 
 #: includes/admin/views/html-admin-page-status-report.php:297
 msgid "SoapClient"
-msgstr "SoapClient"
+msgstr "SoapClient "
 
 #: includes/admin/views/html-admin-page-status-report.php:284
 msgid "fsockopen/cURL"
-msgstr "fsockopen/cURL"
+msgstr "fsockopen/cURL "
 
 #. Translators: %1$s: Log directory, %2$s: Log directory constant
 #: includes/admin/views/html-admin-page-status-report.php:88
@@ -15727,7 +15727,7 @@ msgstr "Ce code promo est expiré."
 #: includes/class-wc-discounts.php:604 includes/class-wc-discounts.php:635
 #: includes/class-wc-coupon.php:972
 msgid "Coupon usage limit has been reached."
-msgstr "La limite d&rsquo;utilisation du code promo a été atteinte."
+msgstr "La limite d’utilisation du code promo a été atteinte."
 
 #. translators: %s: coupon code
 #: includes/class-wc-coupon.php:969
@@ -16902,7 +16902,7 @@ msgstr "Outils"
 #: includes/admin/views/html-admin-page-status-report.php:945
 #: includes/admin/views/html-admin-page-status-report.php:974
 msgid "Overrides"
-msgstr "Remplacements"
+msgstr "Remplacements "
 
 #: includes/admin/views/html-admin-page-status-report.php:932
 msgid "This section shows any files that are overriding the default WooCommerce template pages."
@@ -16959,7 +16959,7 @@ msgstr "Affiche si oui ou non le thème actuel est un thème enfant."
 
 #: includes/admin/views/html-admin-page-status-report.php:876
 msgid "Child theme"
-msgstr "Thème enfant"
+msgstr "Thème enfant "
 
 #: includes/admin/views/html-admin-page-status-report.php:872
 msgid "The theme developers URL."
@@ -16967,7 +16967,7 @@ msgstr "URL des développeurs du thème."
 
 #: includes/admin/views/html-admin-page-status-report.php:871
 msgid "Author URL"
-msgstr "URL de l’auteur"
+msgstr "URL de l’auteur "
 
 #. translators: %s: plugin latest version
 #. translators: %s: theme latest version
@@ -17037,7 +17037,7 @@ msgstr "Est-ce que votre site a REST API activé ?"
 
 #: includes/admin/views/html-admin-page-status-report.php:725
 msgid "API enabled"
-msgstr "API activé"
+msgstr "API activée "
 
 #: includes/admin/views/html-admin-page-status-report.php:756
 msgid "The number of decimal points shown in displayed prices."
@@ -17065,7 +17065,7 @@ msgstr "Est-ce que votre site force un certificat SSL pour les transactions ?"
 
 #: includes/admin/views/html-admin-page-status-report.php:730
 msgid "Force SSL"
-msgstr "Forcer le SSL"
+msgstr "Forcer le SSL "
 
 #: includes/admin/views/html-admin-page-status-report.php:583
 #: includes/admin/views/html-admin-page-status-report.php:635
@@ -17104,7 +17104,7 @@ msgstr "Les extensions WooCommerce peuvent utiliser cette méthode de communicat
 
 #: includes/admin/views/html-admin-page-status-report.php:367
 msgid "Remote get"
-msgstr "Remote get"
+msgstr "Remote get "
 
 #. translators: %s: error message
 #: includes/wc-rest-functions.php:96
@@ -17117,7 +17117,7 @@ msgstr "PayPal utilise cette méthode de communication lors de l’envoi des inf
 
 #: includes/admin/views/html-admin-page-status-report.php:353
 msgid "Remote post"
-msgstr "Remote post"
+msgstr "Remote post "
 
 #: includes/admin/views/html-admin-page-status-report.php:326
 msgid "GZip (gzopen) is used to open the GEOIP database from MaxMind."
@@ -17155,7 +17155,7 @@ msgstr "Le fuseau horaire par défaut pour votre serveur."
 
 #: includes/admin/views/html-admin-page-status-report.php:270
 msgid "Default timezone is UTC"
-msgstr "Le fuseau horaire par défaut est UTC"
+msgstr "Le fuseau horaire par défaut est UTC "
 
 #: includes/admin/views/html-admin-page-status-report.php:266
 msgid "The largest filesize that can be uploaded to your WordPress installation."
@@ -17179,7 +17179,7 @@ msgstr "Suhosin est un système de protection avancé pour les installations PHP
 
 #: includes/admin/views/html-admin-page-status-report.php:239
 msgid "SUHOSIN installed"
-msgstr "SUHOSIN installé"
+msgstr "SUHOSIN installé "
 
 #: includes/admin/views/html-admin-page-status-report.php:230
 msgid "The maximum number of variables your server can use for a single function to avoid overloads."
@@ -17187,7 +17187,7 @@ msgstr "Le nombre maximum de variables que votre serveur peut utiliser pour une 
 
 #: includes/admin/views/html-admin-page-status-report.php:229
 msgid "PHP max input vars"
-msgstr "PHP Max Input Vars"
+msgstr "PHP Max Input Vars "
 
 #: includes/admin/views/html-admin-page-status-report.php:225
 msgid "The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)"
@@ -17195,7 +17195,7 @@ msgstr "La durée (en secondes) que votre site passera sur une seule opération 
 
 #: includes/admin/views/html-admin-page-status-report.php:224
 msgid "PHP time limit"
-msgstr "Limite d&rsquo;exécution PHP"
+msgstr "Limite d’exécution PHP "
 
 #: includes/admin/views/html-admin-page-status-report.php:220
 msgid "The largest filesize that can be contained in one post."
@@ -17203,7 +17203,7 @@ msgstr "La plus grande taille de fichier qui peut être contenue dans un article
 
 #: includes/admin/views/html-admin-page-status-report.php:219
 msgid "PHP post max size"
-msgstr "Poids Max Post PHP"
+msgstr "Poids Max Post PHP "
 
 #: includes/admin/views/html-admin-page-status-report.php:194
 msgid "The version of PHP installed on your hosting server."
@@ -19728,7 +19728,7 @@ msgstr "Combien de fois ce code peut être utilisé par un utilisateur donné&nb
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:325
 msgid "Usage limit per user"
-msgstr "Limite d&rsquo;utilisation par utilisateur"
+msgstr "Limite d’utilisation par utilisateur"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:309
 msgid "The maximum number of individual items this coupon can apply to when using product discounts. Leave blank to apply to all qualifying items in cart."
@@ -19736,7 +19736,7 @@ msgstr "Nombre maximum d&rsquo;articles individuels auquel ce coupon peut s&rsqu
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:307
 msgid "Limit usage to X items"
-msgstr "Limite d&rsquo;utilisation à X articles"
+msgstr "Limite d’utilisation à X articles"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:291
 msgid "How many times this coupon can be used before it is void."
@@ -19744,7 +19744,7 @@ msgstr "Combien de fois ce code promo peut il être utilisé avant de ne plus ê
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:289
 msgid "Usage limit per coupon"
-msgstr "Limite d&rsquo;utilisation par code"
+msgstr "Limite d’utilisation par code"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:267
 msgid "No restrictions"
