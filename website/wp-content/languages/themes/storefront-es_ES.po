@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Storefront package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-05 15:08:37+0000\n"
+"PO-Revision-Date: 2019-04-26 15:27:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -470,12 +470,12 @@ msgstr "Bajo la cabecera"
 #. translators: %s: Storefront
 #: inc/customizer/class-storefront-customizer-control-more.php:36
 msgid "Enjoying %s?"
-msgstr "¿Disfrutas de %s?"
+msgstr "¿Estás disfrutando de %s?"
 
 #. translators: %s: Automattic branding
 #: inc/admin/class-storefront-admin.php:145
 msgid "An %s project"
-msgstr "Un proyecto %s"
+msgstr "Un proyecto de %s"
 
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:590
 msgid "On Sale Now"
