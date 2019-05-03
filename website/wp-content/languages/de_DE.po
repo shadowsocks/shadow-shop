@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-14 14:49:55+0000\n"
+"PO-Revision-Date: 2019-04-28 20:52:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -681,7 +681,7 @@ msgstr "Medien bearbeiten"
 
 #: wp-includes/js/dist/block-library.js:7173
 msgid "Add an image or video with a text overlay — great for headers."
-msgstr "Ein Bild oder Video hinzufügen – ideal für Header."
+msgstr "Ein Bild oder Video mit einem Text-Overlay hinzufügen – ideal für Header."
 
 #: wp-includes/js/dist/block-library.js:7172
 #: wp-includes/js/dist/block-library.js:7424

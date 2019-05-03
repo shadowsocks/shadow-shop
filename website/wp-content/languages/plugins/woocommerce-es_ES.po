@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-24 22:12:00+0000\n"
+"PO-Revision-Date: 2019-05-02 16:06:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2088,7 +2088,7 @@ msgstr "Compartimos información con otros, que nos ayudan a ofrecer nuestros pe
 
 #: includes/class-wc-privacy.php:109
 msgid "In this section you should list who you’re sharing data with, and for what purpose. This could include, but may not be limited to, analytics, marketing, payment gateways, shipping providers, and third party embeds."
-msgstr "En esta sección deberías apuntar con quién estás compartiendo datos, y con qué objetivo. Esto podría incluir, pero no está solo limitado a ello, analítica, marketing, pasarelas de pago, proveedores de envío, e incrustados de terceros."
+msgstr "En esta sección deberías apuntar con quién estás compartiendo datos, y con qué objetivo. Esto podría incluir, pero no está solo limitado a ello, análisis, marketing, pasarelas de pago, proveedores de envío, e incrustados de terceros."
 
 #: includes/class-wc-privacy.php:107
 msgid "What we share with others"
