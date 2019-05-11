@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Storefront package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-26 15:27:53+0000\n"
+"PO-Revision-Date: 2019-05-09 12:07:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,36 +19,49 @@ msgstr "Storefront"
 msgid "Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!"
 msgstr "Storefront es el tema perfecto para tu próximo proyecto WooCommerce. Diseñado y desarrollado por los desarrolladores del núcleo de WooCommerce, cuenta con una integración profunda con nuestro plugin WooCommerce además de con muchos de las extensiones para WooCommerce. Tiene varias opciones de color y estructura para que personalices tu tienda, varias zonas de widgets, diseño responsive y mucho más. A los desarrolladores les encantará su código base limpio y extenso, que hace que personalizarlo sea una gozada. ¿Buscas un tema de WooCommerce? ¡Ya lo encontraste!"
 
-#: inc/storefront-template-functions.php:517
+#: inc/nux/class-storefront-nux-starter-content.php:1109
+msgid "You can change this text by editing the \"Welcome\" page via the \"Pages\" menu in your dashboard."
+msgstr "Puedes cambiar este texto editando la página de «Bienvenido» en el menú «Páginas» de tu escritorio."
+
+#: inc/nux/class-storefront-nux-starter-content.php:1105
+msgid "This is your homepage which is what most visitors will see when they first visit your shop."
+msgstr "Esta es tu página de inicio, que es lo primero que verán la mayoría de visitantes cuando visiten tu tienda."
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/storefront-template-functions.php:509
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/storefront-template-functions.php:547
 msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] "Etiqueta:"
 msgstr[1] "Etiquetas:"
 
-#: inc/storefront-template-functions.php:511
+#: inc/storefront-template-functions.php:541
 msgid "Category:"
 msgid_plural "Categories:"
 msgstr[0] "Categoría:"
 msgstr[1] "Categorías:"
 
 #. translators: %s: post date
-#: inc/storefront-template-functions.php:451
+#: inc/storefront-template-functions.php:455
 msgid "Posted on %s"
 msgstr "Publicado el %s"
 
-#: inc/storefront-template-functions.php:457
+#: inc/storefront-template-functions.php:461
 msgid "by"
 msgstr "por"
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:825
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:837
 msgid "Product Brands"
 msgstr "Marcas de productos"
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:810
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:822
 msgid "Shop by Brand"
 msgstr "Tienda por marca"
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:775
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:787
 msgid "You're viewing:"
 msgstr "Estás viendo:"
 
@@ -56,11 +69,11 @@ msgstr "Estás viendo:"
 msgid "More products"
 msgstr "Más productos"
 
-#: inc/storefront-template-functions.php:550
+#: inc/storefront-template-functions.php:580
 msgid "Previous post:"
 msgstr "Anterior:"
 
-#: inc/storefront-template-functions.php:549
+#: inc/storefront-template-functions.php:579
 msgid "Next post:"
 msgstr "Siguiente:"
 
@@ -84,7 +97,7 @@ msgstr "Añadir al carrito fijo"
 msgid "Product Page"
 msgstr "Página de producto"
 
-#: inc/customizer/class-storefront-customizer.php:274
+#: inc/customizer/class-storefront-customizer.php:273
 msgid "Hero text color"
 msgstr "Color del texto de la sección Hero"
 
@@ -92,11 +105,11 @@ msgstr "Color del texto de la sección Hero"
 msgid "Hero heading color"
 msgstr "Color de la cabecera de la sección Hero"
 
-#: inc/class-storefront.php:308
+#: inc/class-storefront.php:306
 msgid "Collapse child menu"
 msgstr "Contraer el menú hijo"
 
-#: inc/class-storefront.php:307
+#: inc/class-storefront.php:305
 msgid "Expand child menu"
 msgstr "Expandir el menú hijo"
 
@@ -116,7 +129,7 @@ msgstr "Organiza tus menús añadiendo páginas, categorías, etiquetas y enlace
 msgid "Customize your navigation menus"
 msgstr "Personaliza tus menús de navegación"
 
-#: inc/class-storefront.php:467
+#: inc/class-storefront.php:474
 msgid "Post Navigation"
 msgstr "Navegación de entradas"
 
@@ -136,8 +149,8 @@ msgstr "Comentarios de la entrada"
 msgid "Promoted Products"
 msgstr "Productos promocionados"
 
-#: inc/admin/class-storefront-plugin-install.php:62
 #: inc/admin/class-storefront-admin.php:174
+#: inc/admin/class-storefront-plugin-install.php:62
 msgid "Activated"
 msgstr "Activo"
 
@@ -153,69 +166,69 @@ msgstr "Productos rebajados"
 msgid "Edit this section"
 msgstr "Editar esta sección"
 
-#: inc/nux/class-storefront-nux-starter-content.php:863
+#: inc/nux/class-storefront-nux-starter-content.php:971
 msgid "Vneck Tshirt"
 msgstr "Camiseta de cuello en V"
 
-#: inc/nux/class-storefront-nux-starter-content.php:842
+#: inc/nux/class-storefront-nux-starter-content.php:950
 msgid "Tshirt"
 msgstr "Camiseta"
 
-#: inc/nux/class-storefront-nux-starter-content.php:821
+#: inc/nux/class-storefront-nux-starter-content.php:929
 msgid "Polo"
 msgstr "Polo"
 
-#: inc/nux/class-storefront-nux-starter-content.php:800
+#: inc/nux/class-storefront-nux-starter-content.php:908
 msgid "Long Sleeve Tee"
 msgstr "Camiseta de manga larga"
 
-#: inc/nux/class-storefront-nux-starter-content.php:778
+#: inc/nux/class-storefront-nux-starter-content.php:886
 msgid "Hoodie"
 msgstr "Sudadera"
 
-#: inc/nux/class-storefront-nux-starter-content.php:757
+#: inc/nux/class-storefront-nux-starter-content.php:865
 msgid "Hoodie with Zipper"
 msgstr "Sudadera con cremallera"
 
-#: inc/nux/class-storefront-nux-starter-content.php:735
+#: inc/nux/class-storefront-nux-starter-content.php:843
 msgid "Hoodie with Pocket"
 msgstr "Sudadera con bolsillo"
 
-#: inc/nux/class-storefront-nux-starter-content.php:714
+#: inc/nux/class-storefront-nux-starter-content.php:822
 msgid "Hoodie with Logo"
 msgstr "Sudadera con logotipo"
 
-#: inc/nux/class-storefront-nux-starter-content.php:693
+#: inc/nux/class-storefront-nux-starter-content.php:801
 msgid "Sunglasses"
 msgstr "Gafas de sol"
 
-#: inc/nux/class-storefront-nux-starter-content.php:671
+#: inc/nux/class-storefront-nux-starter-content.php:779
 msgid "Cap"
 msgstr "Visera"
 
-#: inc/nux/class-storefront-nux-starter-content.php:649
+#: inc/nux/class-storefront-nux-starter-content.php:757
 msgid "Belt"
 msgstr "Cinturón"
 
-#: inc/nux/class-storefront-nux-starter-content.php:627
+#: inc/nux/class-storefront-nux-starter-content.php:735
 msgid "Beanie"
 msgstr "Gorro"
 
-#: inc/nux/class-storefront-nux-starter-content.php:621
+#: inc/nux/class-storefront-nux-starter-content.php:729
 msgid "Tshirts"
 msgstr "Camisetas"
 
-#: inc/nux/class-storefront-nux-starter-content.php:618
+#: inc/nux/class-storefront-nux-starter-content.php:726
 msgid "Hoodies"
 msgstr "Sudaderas"
 
-#: inc/nux/class-storefront-nux-starter-content.php:616
-#: inc/nux/class-storefront-nux-starter-content.php:619
-#: inc/nux/class-storefront-nux-starter-content.php:622
+#: inc/nux/class-storefront-nux-starter-content.php:724
+#: inc/nux/class-storefront-nux-starter-content.php:727
+#: inc/nux/class-storefront-nux-starter-content.php:730
 msgid "A short category description"
 msgstr "Una descripción corta de la categoría"
 
-#: inc/nux/class-storefront-nux-starter-content.php:615
+#: inc/nux/class-storefront-nux-starter-content.php:723
 msgid "Accessories"
 msgstr "Accesorios"
 
@@ -236,11 +249,12 @@ msgid "About"
 msgstr "Acerca de"
 
 #. translators: %s: 'End Of Line' symbol
-#: inc/nux/class-storefront-nux-starter-content.php:65
+#: inc/nux/class-storefront-nux-starter-content.php:215
 msgid "This is your homepage which is what most visitors will see when they first visit your shop.%sYou can change this text by editing the \"Welcome\" page via the \"Pages\" menu in your dashboard."
 msgstr "Esta es tu portada, que es lo que la mayoría de los visitantes verá cuando visite por primera vez tu tienda. %sPuedes cambiar este texto editando la página de «Bienvenida» en el menú «Páginas» de tu escritorio."
 
-#: inc/nux/class-storefront-nux-starter-content.php:63
+#: inc/nux/class-storefront-nux-starter-content.php:213
+#: inc/nux/class-storefront-nux-starter-content.php:1101
 msgid "Welcome"
 msgstr "Bienvenida"
 
@@ -291,8 +305,8 @@ msgstr "Omitir este paso"
 msgid "No thanks, skip the tour"
 msgstr "No gracias, sáltate la visita"
 
-#: inc/nux/class-storefront-nux-admin.php:131
 #: inc/nux/class-storefront-nux-guided-tour.php:112
+#: inc/nux/class-storefront-nux-admin.php:131
 msgid "Let's go!"
 msgstr "¡Vamos!"
 
@@ -337,32 +351,32 @@ msgid "Thanks for installing Storefront, you rock! 🤘"
 msgstr "Gracias por instalar Storefront, ¡tú molas! 🤘"
 
 #. translators: 1: column number, 2: row number
-#: inc/class-storefront.php:231
+#: inc/class-storefront.php:232
 msgid "Widgets added here will appear in column %1$d of footer row %2$d."
 msgstr "Los widgets añadidos aquí aparecerán en la columna %1$d del pie de página en la fila %2$d."
 
 #. translators: 1: row number, 2: column number
-#: inc/class-storefront.php:228
+#: inc/class-storefront.php:229
 msgid "Footer Row %1$d - Column %2$d"
 msgstr "Pie de página, fila %1$d - Columna %2$d"
 
 #. translators: 1: column number
-#: inc/class-storefront.php:225
+#: inc/class-storefront.php:226
 msgid "Widgets added here will appear in column %1$d of the footer."
 msgstr "Los widgets añadidos aquí aparecerán en la columna %1$d del pie de página."
 
 #. translators: 1: column number
-#: inc/class-storefront.php:222
+#: inc/class-storefront.php:223
 msgid "Footer Column %1$d"
 msgstr "Pie de página, columna %1$d"
 
-#: inc/admin/class-storefront-plugin-install.php:114
 #: inc/admin/class-storefront-admin.php:205
+#: inc/admin/class-storefront-plugin-install.php:114
 msgid "Learn more"
 msgstr "Aprende más"
 
-#: inc/admin/class-storefront-plugin-install.php:94
 #: inc/admin/class-storefront-admin.php:198
+#: inc/admin/class-storefront-plugin-install.php:94
 msgid "Install now"
 msgstr "Instalar ahora"
 
@@ -427,7 +441,7 @@ msgstr "Documentación"
 msgid "Support"
 msgstr "Soporte"
 
-#: inc/class-storefront.php:209
+#: inc/class-storefront.php:210
 msgid "Widgets added to this region will appear beneath the header and above the main content."
 msgstr "Los widgets añadidos a esta sección aparecerán debajo de la cabecera y por encima del contenido principal."
 
@@ -439,22 +453,27 @@ msgstr "Mi cuenta"
 msgid "Search"
 msgstr "Buscar"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1074
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:523
 msgid "Best Sellers"
 msgstr "Los más vendidos"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1058
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:417
 msgid "Fan Favorites"
 msgstr "Favoritos de los fans"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1135
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:364
 msgid "We Recommend"
 msgstr "Recomendamos"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1048
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:311
 msgid "New In"
 msgstr "Novedades"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1040
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:259
 msgid "Shop by Category"
 msgstr "Comprar por categoría"
@@ -463,7 +482,7 @@ msgstr "Comprar por categoría"
 msgid "Menu"
 msgstr "Menú"
 
-#: inc/class-storefront.php:207
+#: inc/class-storefront.php:208
 msgid "Below Header"
 msgstr "Bajo la cabecera"
 
@@ -485,16 +504,16 @@ msgstr "Ahora en oferta"
 msgid "New In Store"
 msgstr "Nuevo en la tienda"
 
-#: inc/customizer/class-storefront-customizer.php:288
+#: inc/customizer/class-storefront-customizer.php:286
 msgid "Header background image"
 msgstr "Imagen de fondo de cabecera"
 
-#: inc/storefront-template-functions.php:535
+#: inc/storefront-template-functions.php:565
 msgctxt "Next post"
 msgid "Next"
 msgstr "Siguiente"
 
-#: inc/storefront-template-functions.php:536
+#: inc/storefront-template-functions.php:566
 msgctxt "Previous post"
 msgid "Previous"
 msgstr "Anterior"
@@ -509,6 +528,7 @@ msgid "Nothing was found at this location. Try searching, or check out the links
 msgstr "No se encontró nada en este lugar. Prueba a buscar, o echa un vistazo a los enlaces de abajo."
 
 #. Template Name of the theme
+#: inc/nux/class-storefront-nux-starter-content.php:208
 msgid "Homepage"
 msgstr "Portada"
 
@@ -547,6 +567,7 @@ msgstr "Productos destacados"
 msgid "View your shopping cart"
 msgstr "Ver tu carrito de compra"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1066
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:470
 msgid "On Sale"
 msgstr "Rebajados"
@@ -555,31 +576,31 @@ msgstr "Rebajados"
 msgid "Next"
 msgstr "Siguiente"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "% Comments"
 msgstr "% comentarios"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "Leave a comment"
 msgstr "Deja un comentario"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/storefront-template-functions.php:502
-#: inc/storefront-template-functions.php:505
+#: inc/storefront-template-functions.php:532
+#: inc/storefront-template-functions.php:535
 msgid ", "
 msgstr ", "
 
 #. translators: %s: post title
-#: inc/storefront-template-functions.php:401
+#: inc/storefront-template-functions.php:405
 msgid "Continue reading %s"
 msgstr "Sigue leyendo %s"
 
-#: inc/storefront-template-functions.php:339
-#: inc/storefront-template-functions.php:410
+#: inc/storefront-template-functions.php:343
+#: inc/storefront-template-functions.php:414
 msgid "Pages:"
 msgstr "Páginas:"
 
@@ -607,78 +628,78 @@ msgstr "Editar"
 msgid "Your comment is awaiting moderation."
 msgstr "Tu comentario está pendiente de moderación."
 
-#: inc/class-storefront.php:95
 #: inc/nux/class-storefront-nux-starter-content.php:192
+#: inc/class-storefront.php:96
 msgid "Handheld Menu"
 msgstr "Menú para móviles"
 
-#: inc/class-storefront.php:201
+#: inc/class-storefront.php:202
 msgid "Sidebar"
 msgstr "Barra lateral"
 
-#: inc/class-storefront.php:94
 #: inc/nux/class-storefront-nux-starter-content.php:182
+#: inc/class-storefront.php:95
 msgid "Secondary Menu"
 msgstr "Menú secundario"
 
-#: inc/customizer/class-storefront-customizer.php:600
+#: inc/customizer/class-storefront-customizer.php:598
 msgid "Looking for more options?"
 msgstr "¿Estás buscando más opciones?"
 
-#: inc/class-storefront.php:93
 #: inc/nux/class-storefront-nux-starter-content.php:162
+#: inc/class-storefront.php:94
 msgid "Primary Menu"
 msgstr "Menú principal"
 
-#: inc/customizer/class-storefront-customizer.php:569
+#: inc/customizer/class-storefront-customizer.php:567
 msgid "General Layout"
 msgstr "Diseño general"
 
-#: inc/customizer/class-storefront-customizer.php:585
+#: inc/customizer/class-storefront-customizer.php:583
 msgid "More"
 msgstr "Más"
 
-#: inc/customizer/class-storefront-customizer.php:364
+#: inc/customizer/class-storefront-customizer.php:362
 msgid "Customize the look & feel of your website footer."
 msgstr "Personaliza el aspecto del pie de página de tu web."
 
-#: inc/customizer/class-storefront-customizer.php:459
+#: inc/customizer/class-storefront-customizer.php:457
 msgid "Customize the look & feel of your website buttons."
 msgstr "Personaliza el aspecto de los botones de tu web."
 
-#: inc/customizer/class-storefront-customizer.php:457
+#: inc/customizer/class-storefront-customizer.php:455
 msgid "Buttons"
 msgstr "Botones"
 
-#: inc/customizer/class-storefront-customizer.php:539
+#: inc/customizer/class-storefront-customizer.php:537
 msgid "Alternate button text color"
 msgstr "Color de texto del botón al cambiar"
 
-#: inc/customizer/class-storefront-customizer.php:518
+#: inc/customizer/class-storefront-customizer.php:516
 msgid "Alternate button background color"
 msgstr "Color de fondo del botón al cambiar"
 
-#: inc/customizer/class-storefront-customizer.php:552
+#: inc/customizer/class-storefront-customizer.php:550
 msgid "Layout"
 msgstr "Diseño"
 
-#: inc/customizer/class-storefront-customizer.php:362
+#: inc/customizer/class-storefront-customizer.php:360
 msgid "Footer"
 msgstr "Pie de página"
 
-#: inc/customizer/class-storefront-customizer.php:349
-#: inc/customizer/class-storefront-customizer.php:444
+#: inc/customizer/class-storefront-customizer.php:347
+#: inc/customizer/class-storefront-customizer.php:442
 msgid "Link color"
 msgstr "Color de los enlaces"
 
-#: inc/customizer/class-storefront-customizer.php:307
-#: inc/customizer/class-storefront-customizer.php:381
-#: inc/customizer/class-storefront-customizer.php:476
+#: inc/customizer/class-storefront-customizer.php:305
+#: inc/customizer/class-storefront-customizer.php:379
+#: inc/customizer/class-storefront-customizer.php:474
 msgid "Background color"
 msgstr "Color de fondo"
 
 #: inc/customizer/class-storefront-customizer.php:189
-#: inc/customizer/class-storefront-customizer.php:402
+#: inc/customizer/class-storefront-customizer.php:400
 msgid "Heading color"
 msgstr "Color del encabezado"
 
@@ -687,9 +708,9 @@ msgid "Link / accent color"
 msgstr "Enlace / color resaltado"
 
 #: inc/customizer/class-storefront-customizer.php:210
-#: inc/customizer/class-storefront-customizer.php:328
-#: inc/customizer/class-storefront-customizer.php:423
-#: inc/customizer/class-storefront-customizer.php:497
+#: inc/customizer/class-storefront-customizer.php:326
+#: inc/customizer/class-storefront-customizer.php:421
+#: inc/customizer/class-storefront-customizer.php:495
 msgid "Text color"
 msgstr "Color de texto"
 
@@ -723,8 +744,8 @@ msgstr "Instala WooCommerce"
 msgid "Add your logo"
 msgstr "Añade tu logotipo"
 
-#: inc/admin/class-storefront-plugin-install.php:75
 #: inc/admin/class-storefront-admin.php:183
+#: inc/admin/class-storefront-plugin-install.php:75
 msgid "Activate"
 msgstr "Activar"
 

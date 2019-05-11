@@ -35,11 +35,9 @@
  */
 .tax-product_brand .woocommerce-products-header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
           flex-direction: column;
   margin: 0 0 2.2906835em;
   text-align: center; }
@@ -47,15 +45,12 @@
     margin: 0 0 1em;
     width: auto;
     max-height: 2.2906835em;
-    -webkit-align-self: center;
-            align-self: center;
+    align-self: center;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
             order: 1; }
   .tax-product_brand .woocommerce-products-header .woocommerce-products-header__title,
   .tax-product_brand .woocommerce-products-header .term-description {
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
             order: 2; }
 
 div#brands_a_z::before, div#brands_a_z::after {

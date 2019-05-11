@@ -37,6 +37,8 @@
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0); }
   .composite_form .component .component_option_thumbnails .component_option_thumbnail.selected, .composite_form .component .component_option_thumbnails .component_option_thumbnail.selected:hover {
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06); }
+  .composite_form .component .component_option_thumbnails .component_option_thumbnail.selected:not(.loading) button {
+    border-radius: 50%; }
   .composite_form .component .component_option_thumbnails .component_option_thumbnail:hover {
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03); }
   .composite_form .component .component_option_thumbnails .component_option_thumbnail.disabled, .composite_form .component .component_option_thumbnails .component_option_thumbnail.disabled:hover {

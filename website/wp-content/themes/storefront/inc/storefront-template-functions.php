@@ -312,6 +312,10 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 	 * @since 1.0.0
 	 */
 	function storefront_page_header() {
+		if ( is_front_page() && is_page_template( 'template-fullwidth.php' ) ) {
+			return;
+		}
+
 		?>
 		<header class="entry-header">
 			<?php
@@ -487,6 +491,32 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 					'class'    => array(),
 				),
 			)
+		);
+	}
+}
+
+if ( ! function_exists( 'storefront_edit_post_link' ) ) {
+	/**
+	 * Display the edit link
+	 *
+	 * @since 2.5.0
+	 */
+	function storefront_edit_post_link() {
+		edit_post_link(
+			sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'storefront' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			),
+			'<div class="edit-link">',
+			'</div>'
 		);
 	}
 }
