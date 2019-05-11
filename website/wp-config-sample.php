@@ -77,15 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true);
-define('WP_DEBUG_DISPLAY', false);
-
-/* Disable automatic updates for core, themes, plugins, and translation files. */
-define('AUTOMATIC_UPDATER_DISABLED', true);
-
-/* Setting default theme. */
-define('WP_DEFAULT_THEME', 'entrytheme');
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
