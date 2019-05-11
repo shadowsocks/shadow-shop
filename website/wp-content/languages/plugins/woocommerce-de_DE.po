@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-25 08:41:47+0000\n"
+"PO-Revision-Date: 2019-05-10 14:43:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,11 +24,6 @@ msgstr "Beim Abrufen der Aktion ist ein Fehler aufgetreten"
 msgid "&larr; Back to \"%s\" attributes"
 msgstr "&larr; Zurück zu \"%s\"-Attributen"
 
-#: includes/admin/views/html-notice-regenerating-lookup-table.php:21
-#: includes/admin/views/html-notice-updating.php:22
-msgid "Note: WP CRON has been disabled on your install which may prevent this update from completing."
-msgstr "Hinweis: WP CRON wurde in deiner Installation deaktiviert, wodurch das Update möglicherweise nicht abgeschlossen wird."
-
 #: includes/admin/views/html-notice-regenerating-lookup-table.php:18
 msgid "Product display, sorting, and reports may not be accurate until this finishes. It will take a few minutes and this notice will disappear when complete."
 msgstr "Produktanzeige, -sortierung und -berichte sind möglicherweise nicht genau, bis dies abgeschlossen ist. Es dauert einige Minuten und diese Meldung wird ausgeblendet, sobald der Vorgang abgeschlossen ist."
@@ -37,6 +32,11 @@ msgstr "Produktanzeige, -sortierung und -berichte sind möglicherweise nicht gen
 #: includes/admin/views/html-notice-updating.php:14
 msgid "You can manually run queued updates here."
 msgstr "Hier kannst du sich in der Warteschlange befindliche Aktualisierungen manuell ausführen."
+
+#: includes/admin/views/html-notice-regenerating-lookup-table.php:21
+#: includes/admin/views/html-notice-updating.php:22
+msgid "Note: WP CRON has been disabled on your install which may prevent this update from completing."
+msgstr "Hinweis: WP CRON wurde in deiner Installation deaktiviert, wodurch das Update möglicherweise nicht abgeschlossen werden kann."
 
 #: includes/libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:107
 msgid "Newest Scheduled Date"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-05 20:02:28+0000\n"
+"PO-Revision-Date: 2019-05-07 03:30:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8186,10 +8186,6 @@ msgstr "На страницах всех классификаций (рубри�
 msgid "Archive page"
 msgstr "Страница архива"
 
-#: modules/subscriptions.php:806
-msgid "Blog Subscriptions"
-msgstr "Подписки на блоги"
-
 #: modules/subscriptions.php:322
 msgid "Blog follow email text"
 msgstr "Текст сообщения электронной почты о подписке на блог"
@@ -8670,6 +8666,10 @@ msgstr "Выполнено. Вам было отправлено электро�
 #: modules/videopress/class.videopress-player.php:344
 msgid "You do not have sufficient <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">freedom levels</a> to view this video. Support free software and upgrade."
 msgstr "У вас недостаточно <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">свободное программное обеспечение</a> для просмотра этого видео. Поддержите открытое ПО и обновитесь."
+
+#: modules/subscriptions.php:806
+msgid "Blog Subscriptions"
+msgstr "Подписка на блог"
 
 #: modules/sharedaddy/sharing-sources.php:95
 msgid " (Opens in new window)"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-25 22:05:13+0000\n"
+"PO-Revision-Date: 2019-05-08 18:09:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,6 +14,10 @@ msgstr ""
 #: includes/class-wc-form-handler.php:131
 msgid "Please enter a valid Eircode."
 msgstr "Пожалуйста, введите действительный Eircode."
+
+#: includes/libraries/action-scheduler/classes/ActionScheduler_Logger.php:100
+msgid "There was a failure fetching this action"
+msgstr "Не удалось получить это действие"
 
 #. translators: %s: attribute name
 #: includes/class-wc-post-types.php:239
@@ -173,7 +177,7 @@ msgstr "Обязательные плагины"
 
 #: includes/admin/views/html-admin-page-status-report.php:666
 msgid "Dropin Plugins"
-msgstr "Плагины рекламных вставок"
+msgstr "Плагины \"вкраплений\""
 
 #: includes/admin/views/html-admin-page-status-report.php:611
 msgid "Inactive plugins"
