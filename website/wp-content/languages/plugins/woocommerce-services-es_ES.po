@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce Services - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-15 11:41:03+0000\n"
+"PO-Revision-Date: 2019-05-07 11:11:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WooCommerce Services - Stable (latest release)\n"
+
+#: classes/class-wc-connect-stripe.php:391
+msgid "Connect via WooCommerce Services"
+msgstr "Conectar a través de WooCommerce Services"
+
+#: classes/class-wc-connect-stripe.php:78
+msgid "Not using WooCommerce Services for Stripe keys. Maybe using user supplied keys."
+msgstr "No se están usando las claves de WooCommerce Services para Stripe. Puede que esté usando las claves facilitadas por el usuario"
 
 #: i18n/strings.php:118
 msgid "Customs information valid"
@@ -19,31 +27,31 @@ msgstr "Información de aduanas válida"
 msgid "Customs information incomplete"
 msgstr "Información de aduanas incompleta"
 
-#: woocommerce-services.php:1266
+#: woocommerce-services.php:1294
 msgid "Packing Log:"
 msgstr "Registro de paquetería:"
 
-#: woocommerce-services.php:1253
+#: woocommerce-services.php:1281
 msgid "Chosen Rate:"
 msgstr "Tarifa elegida:"
 
-#: woocommerce-services.php:1249
+#: woocommerce-services.php:1277
 msgid "Shipping Method ID:"
 msgstr "ID del método de envío:"
 
-#: woocommerce-services.php:1245
+#: woocommerce-services.php:1273
 msgid "Shipping Method Name:"
 msgstr "Nombre del método de envío:"
 
-#: woocommerce-services.php:1229
+#: woocommerce-services.php:1257
 msgid "Shipping Debug"
 msgstr "Depuración de envíos"
 
-#: classes/class-wc-connect-stripe.php:295
+#: classes/class-wc-connect-stripe.php:389
 msgid "Stripe Account (connected to WooCommerce Services)"
 msgstr "Cuenta de Stripe (conectada a WooCommerce Services)"
 
-#: classes/class-wc-connect-stripe.php:51
+#: classes/class-wc-connect-stripe.php:52
 msgid "Your site must be served over HTTPS in order to connect your Stripe account via WooCommerce Services"
 msgstr "Tu sitio debe servir en HTTPS para poder conectar con tu cuenta de Stripe desde WooCommerce Services"
 
@@ -51,15 +59,15 @@ msgstr "Tu sitio debe servir en HTTPS para poder conectar con tu cuenta de Strip
 msgid "<strong>\"%2$s\" is missing weight, length, width, or height.</strong><br />Shipping rates cannot be calculated. <a href=\"%1$s\">Enter dimensions and weight for %2$s</a> so your customers can purchase this item."
 msgstr "<strong>A \"%2$s\" le falta el peso, largo, ancho o la altura.</strong><br />No se pueden calcular las tarifas de envío. <a href=\"%1$s\">Introduce las dimensiones y el peso de %2$s</a> para que tus clientes puedan comprar este artículo."
 
-#: classes/class-wc-connect-api-client.php:611
+#: classes/class-wc-connect-api-client.php:612
 msgid "Unable to send request to WooCommerce Services server. The timestamp generated for the signature is too old."
 msgstr "No ha sido posible enviar la solicitud al servidor de WooCommerce Services. La marca temporal generada para la firma es demasiado antigua."
 
-#: classes/class-wc-connect-api-client.php:575
+#: classes/class-wc-connect-api-client.php:576
 msgid "Unable to send request to WooCommerce Services server. Jetpack Token is malformed."
 msgstr "No ha sido posible enviar la solicitud al servidor de WooCommerce Services. El token de JetPack está mal creado."
 
-#: classes/class-wc-connect-api-client.php:568
+#: classes/class-wc-connect-api-client.php:569
 msgid "Unable to send request to WooCommerce Services server. Jetpack Token is missing"
 msgstr "No ha sido posible enviar la solicitud al servidor de WooCommerce Services. No está disponible el token de JetPack."
 
@@ -589,15 +597,15 @@ msgstr "Opcional"
 msgid "Retry"
 msgstr "Reintentar"
 
-#: classes/class-wc-connect-stripe.php:277
+#: classes/class-wc-connect-stripe.php:370
 msgid "<strong>Ready to accept Stripe payments!</strong> Your Stripe account has been successfully connected. Additional settings can be configured on this screen."
 msgstr "<strong>¡Preparado para aceptar pagos mediante Stripe!</strong> Tu cuenta de Stripe se ha conectado con éxito. Los ajustes adicionales se pueden configurar en esta pantalla."
 
-#: classes/class-wc-connect-stripe.php:257
+#: classes/class-wc-connect-stripe.php:350
 msgid "It looks like there is an existing Stripe account at <strong>%s</strong>. To start accepting payments with Stripe, you'll need to connect it to your store."
 msgstr "Parece que ya hay una cuenta existente de Stripe en <strong>%s</strong>. Para empezar a aceptar pagos con Stripe tienes que conectarla a tu tienda."
 
-#: classes/class-wc-connect-stripe.php:255
+#: classes/class-wc-connect-stripe.php:348
 msgid "Connect your account"
 msgstr "Conecta tu cuenta"
 
@@ -756,11 +764,11 @@ msgstr "Funciona gracias a WooCommerce Services - Tus tasas de impuestos y ajust
 msgid "No labels found for this period"
 msgstr "No se han encontrado etiquetas en este periodo"
 
-#: classes/class-wc-connect-label-reports.php:202 i18n/strings.php:134
+#: i18n/strings.php:134 classes/class-wc-connect-label-reports.php:202
 msgid "Total"
 msgstr "Total"
 
-#: classes/class-wc-connect-label-reports.php:170 i18n/strings.php:175
+#: i18n/strings.php:175 classes/class-wc-connect-label-reports.php:170
 msgid "Refund"
 msgstr "Reembolso"
 
@@ -864,11 +872,11 @@ msgstr "Enlaza a una cuenta PayPal"
 msgid "Refresh"
 msgstr "Recargar"
 
-#: woocommerce-services.php:1019
+#: woocommerce-services.php:1047
 msgid "Tracking number"
 msgstr "Número de seguimiento"
 
-#: woocommerce-services.php:1018
+#: woocommerce-services.php:1046
 msgid "Provider"
 msgstr "Proveedor"
 
@@ -967,7 +975,7 @@ msgstr "configuración de pago más sencilla"
 msgid "automated tax calculation and smoother payment setup"
 msgstr "cálculo automático de impuestos y configuración de pago más sencilla"
 
-#: classes/class-wc-connect-paypal-ec.php:312 i18n/strings.php:5
+#: i18n/strings.php:5 classes/class-wc-connect-paypal-ec.php:312
 msgid "Required"
 msgstr "Requerido"
 
@@ -1268,7 +1276,7 @@ msgstr "#%d - [producto borrado]"
 msgid "#%1$d - %2$s"
 msgstr "#%1$d - %2$s"
 
-#: woocommerce-services.php:1338
+#: woocommerce-services.php:1366
 msgid "<a href=\"%s\">Support</a>"
 msgstr "<a href=\"%s\">Soporte</a>"
 
@@ -1276,8 +1284,8 @@ msgstr "<a href=\"%s\">Soporte</a>"
 msgid "There was an error installing Jetpack. Please try installing it manually."
 msgstr "Hubo un error al instalar Jetpack. Por favor, trata de instalarlo manualmente."
 
-#: i18n/strings.php:213 woocommerce-services.php:922
-#: woocommerce-services.php:925
+#: woocommerce-services.php:950 woocommerce-services.php:953
+#: i18n/strings.php:213
 msgid "Shipping Labels"
 msgstr "Etiquetas de envío"
 
@@ -1291,17 +1299,17 @@ msgid "https://woocommerce.com/"
 msgstr "https://woocommerce.com/"
 
 #. Plugin Name of the plugin
-#: classes/class-wc-connect-settings-pages.php:29
 #: classes/class-wc-connect-privacy.php:36
+#: classes/class-wc-connect-settings-pages.php:29
 msgid "WooCommerce Services"
 msgstr "WooCommerce Services"
 
-#: i18n/strings.php:37 woocommerce-services.php:1289
-#: woocommerce-services.php:1317
+#: woocommerce-services.php:1317 woocommerce-services.php:1345
+#: i18n/strings.php:37
 msgid "Phone"
 msgstr "Teléfono"
 
-#: classes/class-wc-connect-stripe.php:260 classes/class-wc-connect-nux.php:488
+#: classes/class-wc-connect-stripe.php:353 classes/class-wc-connect-nux.php:488
 #: classes/class-wc-connect-nux.php:585
 msgid "Connect"
 msgstr "Conectar"
@@ -1384,8 +1392,8 @@ msgstr "Seleccionados todos los servicios"
 msgid "Expand Services"
 msgstr "Expandir servicios"
 
-#: classes/class-wc-connect-label-reports.php:167 i18n/strings.php:11
-#: i18n/strings.php:161
+#: i18n/strings.php:11 i18n/strings.php:161
+#: classes/class-wc-connect-label-reports.php:167
 msgid "Service"
 msgstr "Servicio"
 
@@ -1397,7 +1405,7 @@ msgstr "Ajuste de precio"
 msgid "Saved Packages"
 msgstr "Paquetes guardados"
 
-#: woocommerce-services.php:1007 woocommerce-services.php:1014
+#: woocommerce-services.php:1035 woocommerce-services.php:1042
 msgid "Tracking"
 msgstr "Seguimiento"
 
@@ -1421,7 +1429,7 @@ msgstr "Empresa"
 msgid "Address"
 msgstr "Dirección"
 
-#: classes/class-wc-connect-taxjar-integration.php:1043 i18n/strings.php:40
+#: i18n/strings.php:40 classes/class-wc-connect-taxjar-integration.php:1043
 msgid "City"
 msgstr "Ciudad"
 
@@ -1576,7 +1584,7 @@ msgstr "No ha sido posible actualizar los ajustes. %s"
 msgid "Packaging"
 msgstr "Paquetería"
 
-#: woocommerce-services.php:1367
+#: woocommerce-services.php:1395
 msgid "Section not loading? Visit the <a href=\"%s\">status page</a> for troubleshooting steps."
 msgstr "¿No carga la sección? Visita la <a href=\"%s\">página de estado</a> para ver los pasos de solución de problemas."
 
@@ -1588,7 +1596,7 @@ msgstr "Nota: El modo de desarrollo de Jetpack está activo en este sitio. Este 
 msgid "Note: Jetpack is connected, but development mode is also enabled on this site. Please disable development mode."
 msgstr "Nota: Jetpack está conectado, pero también está activo el modo de desarrollo en este sitio. Por favor, desactiva el modo de desarrollo."
 
-#: woocommerce-services.php:1224
+#: woocommerce-services.php:1252
 msgid "Shipping Label"
 msgstr "Etiqueta de envío"
 
@@ -1670,8 +1678,8 @@ msgctxt "This section displays the overall health of WooCommerce Services and th
 msgid "Health"
 msgstr "Estado"
 
-#: classes/class-wc-connect-settings-pages.php:13
 #: classes/class-wc-connect-help-view.php:292
+#: classes/class-wc-connect-settings-pages.php:13
 msgctxt "The WooCommerce Services brandname"
 msgid "WooCommerce Services"
 msgstr "WooCommerce Services"
@@ -1776,7 +1784,7 @@ msgstr "Por favor, establece la ubicación base en Ajustes de WooCommerce > Gene
 msgid "WooCommerce %s or higher is required (You are running %s)"
 msgstr "Se requiere WooCommerce %s o superior (estás ejecutando la versión %s)"
 
-#: classes/class-wc-connect-error-notice.php:103
+#: woocommerce-services.php:1431 classes/class-wc-connect-error-notice.php:103
 msgid "Dismiss this notice"
 msgstr "Descartar este aviso"
 
