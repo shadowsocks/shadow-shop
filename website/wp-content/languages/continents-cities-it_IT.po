@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Continents & Cities in Italian
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Continents & Cities package.
+# Translation of WordPress - 5.2.x - Development - Continents & Cities in Italian
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2018-12-20 09:50:01+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: it\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Continents & Cities\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Continents & Cities\n"
 
 #: wp-admin/includes/continents-cities.php:478
 msgid "Saratov"

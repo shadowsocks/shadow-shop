@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Administration - Network Admin in French (France)
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in French (France)
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2019-01-26 13:44:48+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -44,10 +44,6 @@ msgstr "Installation en sous-répertoire"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:671
 msgid "Active Child Theme"
 msgstr "Thème enfant actif"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "Thème actif"
 
 #: wp-admin/network/site-info.php:192
 msgid "Attributes"
@@ -193,23 +189,23 @@ msgstr "Veuillez vous assurer que le module %s d’Apache soit installé, car il
 msgid "You cannot use port numbers such as %s."
 msgstr "Vous ne pouvez pas utiliser des numéros de port tels que %s."
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "Inscription"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "Super-admin <span class=\"count\">(%s)</span>"
 msgstr[1] "Super-admins <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "N’est pas un indésirable"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "Marquer comme indésirable"
@@ -492,7 +488,7 @@ msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Doc
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Documentation sur les réglages du réseau</a>."
 
 #. translators: 1: site url, 2: server error message
-#: wp-admin/network/upgrade.php:96
+#: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Attention ! Un problème est survenu lors de la mise à jour de %1$s. Votre serveur peut ne pas être en mesure de se connecter à certains sites qui y sont installés. Message d’erreur : %2$s."
 
@@ -619,7 +615,7 @@ msgstr "D’ici, vous pouvez :"
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "Bienvenue dans l’administration de votre réseau ! Cette partie des écrans d’administration sert à gérer tous les aspects de votre réseau multisite."
 
-#: wp-admin/network/upgrade.php:137
+#: wp-admin/network/upgrade.php:138
 msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 msgstr "WordPress a été mis à jour ! Avant de vous laisser continuer, nous devons mettre à jour chaque site de votre réseau."
 
@@ -628,7 +624,7 @@ msgid "Only use this screen once you have updated to a new version of WordPress 
 msgstr "N’utilisez cet écran que quand vous avez mis à jour cette installation de WordPress (au moyen de la fonction de mise à jour automatique ou la barre d’outils). En cliquant sur &laquo; Mettre à jour le réseau &raquo;, WordPress s’occupera de tous les sites du réseau, par groupes de cinq, et s’assurera que toutes les mises à jour de bases de données sont appliquées."
 
 #: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:42
-#: wp-admin/network/upgrade.php:141 wp-admin/network/menu.php:34
+#: wp-admin/network/upgrade.php:142 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Mettre à jour le réseau"
 
@@ -922,6 +918,10 @@ msgstr "Si vous souhaitez utiliser la fonctionnalité d’hébergement virtuel (
 msgid "You cannot install a network of sites with your server address."
 msgstr "Vous ne pouvez pas installer un réseau de sites avec votre adresse de serveur."
 
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "Note&nbsp;:"
+
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
 msgstr "Remplissez les informations ci-dessous et vous pourrez créer un réseau de sites Wordpress. Nous créerons les fichiers de configuration lors de la prochaine étape."
@@ -1078,7 +1078,7 @@ msgstr "Les réglages des nouveaux sites sont les réglages par défaut appliqu�
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "Les mots suivants sont réservés pour l’usage de fonctions WordPress et ne peuvent pas être utilisés comme nom de site : %s"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "Si votre navigateur ne lance pas automatiquement la page suivante, cliquez sur ce lien :"
 
@@ -1182,7 +1182,7 @@ msgstr "Le premier article sur tout nouveau site."
 msgid "The author of the first comment on a new site."
 msgstr "L’auteur du premier commentaire sur tout nouveau site."
 
-#: wp-admin/network/upgrade.php:72
+#: wp-admin/network/upgrade.php:73
 msgid "All done!"
 msgstr "Terminé !"
 
@@ -1230,7 +1230,7 @@ msgstr "Adresse de messagerie manquante."
 msgid "Missing or invalid site address."
 msgstr "Adresse de site manquante ou non valide."
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "Next Sites"
 msgstr "Sites suivants"
 

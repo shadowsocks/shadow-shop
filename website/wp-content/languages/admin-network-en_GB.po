@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Administration - Network Admin in English (UK)
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in English (UK)
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2019-01-26 23:31:47+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_GB\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -44,10 +44,6 @@ msgstr "Sub-directory Installation"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:671
 msgid "Active Child Theme"
 msgstr "Active Child Theme"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "Active Theme"
 
 #: wp-admin/network/site-info.php:192
 msgid "Attributes"
@@ -193,23 +189,23 @@ msgstr "Please make sure the Apache %s module is installed as it will be used at
 msgid "You cannot use port numbers such as %s."
 msgstr "You cannot use port numbers such as %s."
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "Registered"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "Super Admin <span class=\"count\">(%s)</span>"
 msgstr[1] "Super Admins <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "Not Spam"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "Mark as Spam"
@@ -492,7 +488,7 @@ msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Doc
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Documentation on Network Settings</a>"
 
 #. translators: 1: site url, 2: server error message
-#: wp-admin/network/upgrade.php:96
+#: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 
@@ -619,7 +615,7 @@ msgstr "From here you can:"
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 
-#: wp-admin/network/upgrade.php:137
+#: wp-admin/network/upgrade.php:138
 msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 msgstr "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 
@@ -628,7 +624,7 @@ msgid "Only use this screen once you have updated to a new version of WordPress 
 msgstr "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
 
 #: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:42
-#: wp-admin/network/upgrade.php:141 wp-admin/network/menu.php:34
+#: wp-admin/network/upgrade.php:142 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Upgrade Network"
 
@@ -922,6 +918,10 @@ msgstr "You will need a wildcard DNS record if you are going to use the virtual 
 msgid "You cannot install a network of sites with your server address."
 msgstr "You cannot install a network of sites with your server address."
 
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "Note:"
+
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
 msgstr "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
@@ -1078,7 +1078,7 @@ msgstr "New site settings are defaults applied when a new site is created in the
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 
@@ -1182,7 +1182,7 @@ msgstr "The first post on a new site."
 msgid "The author of the first comment on a new site."
 msgstr "The author of the first comment on a new site."
 
-#: wp-admin/network/upgrade.php:72
+#: wp-admin/network/upgrade.php:73
 msgid "All done!"
 msgstr "All done!"
 
@@ -1230,7 +1230,7 @@ msgstr "Missing e-mail address."
 msgid "Missing or invalid site address."
 msgstr "Missing or invalid site address."
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "Next Sites"
 msgstr "Next Sites"
 

@@ -1,15 +1,15 @@
-# Translation of WordPress - 5.1.x - Development - Administration - Network Admin in Italian
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in Italian
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-02 17:44:53+0000\n"
+"PO-Revision-Date: 2019-04-27 20:26:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: it\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -44,10 +44,6 @@ msgstr "Installazione con sotto directory"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:671
 msgid "Active Child Theme"
 msgstr "Tema Child attivo"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "Tema attivo"
 
 #: wp-admin/network/site-info.php:192
 msgid "Attributes"
@@ -193,23 +189,23 @@ msgstr "Assicurati che il modulo Apache %s sia installato. Verrà usato alla fin
 msgid "You cannot use port numbers such as %s."
 msgstr "Non puoi utilizzare numeri di porta come %s."
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "Registrato"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "Super amministratore <span class=\"count\">(%s)</span>"
 msgstr[1] "Super amministratori <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "Non è spam"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "Contrassegna come spam"
@@ -367,7 +363,7 @@ msgstr "Archiviato"
 
 #: wp-admin/network/user-new.php:133 wp-admin/network/site-users.php:357
 msgid "A password reset link will be sent to the user via email."
-msgstr "All'utente verrà inviato, tramite email, un link di reimpostazione della password"
+msgstr "All'utente verrà inviato, tramite email, un link di reimpostazione della password."
 
 #: wp-admin/network/settings.php:212
 msgid "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
@@ -605,7 +601,7 @@ msgstr "Aggiorna il tuo network"
 
 #: wp-admin/network/index.php:26
 msgid "Install and activate themes or plugins"
-msgstr "Installa ed attiva temi o plugin."
+msgstr "Installa ed attiva temi o plugin"
 
 #: wp-admin/network/index.php:25
 msgid "Add and manage sites or users"
@@ -722,7 +718,7 @@ msgstr "Permettere agli amministratori di aggiungere nuovi utenti al proprio sit
 
 #: wp-admin/network/sites.php:34
 msgid "Dashboard leads to the Dashboard for that site."
-msgstr "Bacheca porta alla Dacheca di quel sito."
+msgstr "Bacheca porta alla Bacheca di quel sito."
 
 #: wp-admin/network/themes.php:174
 msgid "No, return me to the theme list"
@@ -769,7 +765,7 @@ msgstr "Cancella tema"
 
 #: wp-admin/network/themes.php:129
 msgid "This theme may be active on other sites in the network."
-msgstr "Questo tema può essere attivo in un altro sito del network"
+msgstr "Questo tema può essere attivo in un altro sito del network."
 
 #: wp-admin/network/themes.php:130
 msgid "You are about to remove the following theme:"
@@ -921,6 +917,10 @@ msgstr "Avrai bisogno di un record DNS wildcard se vuoi utilizzare la funzionali
 #: wp-admin/includes/network.php:137
 msgid "You cannot install a network of sites with your server address."
 msgstr "Non puoi installare un network di siti con l'indirizzo del tuo server"
+
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "Nota:"
 
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
@@ -1188,7 +1188,7 @@ msgstr "Operazione completata!"
 
 #: wp-admin/network/settings.php:203
 msgid "Registration is disabled"
-msgstr "La registrazione è disabilitata."
+msgstr "La registrazione è disabilitata"
 
 #: wp-admin/network/settings.php:204
 msgid "User accounts may be registered"

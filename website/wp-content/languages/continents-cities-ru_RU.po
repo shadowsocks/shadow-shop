@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Continents & Cities in Russian
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Continents & Cities package.
+# Translation of WordPress - 5.2.x - Development - Continents & Cities in Russian
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2018-07-18 12:03:29+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Continents & Cities\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Continents & Cities\n"
 
 #: wp-admin/includes/continents-cities.php:478
 msgid "Saratov"

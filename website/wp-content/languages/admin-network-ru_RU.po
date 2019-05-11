@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.1.x - Development - Administration - Network Admin in Russian
-# This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in Russian
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2019-01-26 12:31:56+0000\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
-"Project-Id-Version: WordPress - 5.1.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -44,10 +44,6 @@ msgstr "Установка в подкаталог"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:671
 msgid "Active Child Theme"
 msgstr "Активная дочерняя тема"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "Активная тема"
 
 #: wp-admin/network/site-info.php:192
 msgid "Attributes"
@@ -193,24 +189,24 @@ msgstr "Убедитесь, что на вашем сервере установ
 msgid "You cannot use port numbers such as %s."
 msgstr "Нельзя использовать номера портов, такие как %s."
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "Зарегистрирован"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "Суперадминистраторы <span class=\"count\">(%s)</span>"
 msgstr[1] "Суперадминистраторы <span class=\"count\">(%s)</span>"
 msgstr[2] "Суперадминистраторы <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "Не спамер"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "Пометить как спамера"
@@ -929,6 +925,10 @@ msgstr "Если вы хотите использовать функционал
 #: wp-admin/includes/network.php:137
 msgid "You cannot install a network of sites with your server address."
 msgstr "Невозможно установить сеть с таким адресом сервера."
+
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "Примечание:"
 
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
