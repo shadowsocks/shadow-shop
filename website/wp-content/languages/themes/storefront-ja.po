@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Storefront package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-19 08:15:15+0000\n"
+"PO-Revision-Date: 2019-05-11 13:37:25+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,34 +19,47 @@ msgstr "Storefront"
 msgid "Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!"
 msgstr "Storefront は WooCommerce サイト作成にぴったりのテーマです。 WooCommerce のコア開発者がデザインし開発しています。販売されている WooCommerce プラグインと統合しやすくなっています。レイアウトや色合いなどでお店の個性をだすことが可能です。レスポンシブデザインや数多くのウィジェットが利用可能です。開発者は拡張コードベースでカスタマイズして機能拡張することができます。WooCommerce テーマを探しますか？もう探す必要はありません！"
 
-#: inc/storefront-template-functions.php:517
+#: inc/nux/class-storefront-nux-starter-content.php:1109
+msgid "You can change this text by editing the \"Welcome\" page via the \"Pages\" menu in your dashboard."
+msgstr "このテキストはダッシュボードの「固定ページ」メニューで「ようこそ」ページを編集すれば変えられます。"
+
+#: inc/nux/class-storefront-nux-starter-content.php:1105
+msgid "This is your homepage which is what most visitors will see when they first visit your shop."
+msgstr "これは初めてショップを訪れた人の大部分が見るホームページです。"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/storefront-template-functions.php:509
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/storefront-template-functions.php:547
 msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] "タグ: "
 
-#: inc/storefront-template-functions.php:511
+#: inc/storefront-template-functions.php:541
 msgid "Category:"
 msgid_plural "Categories:"
 msgstr[0] "カテゴリー: "
 
 #. translators: %s: post date
-#: inc/storefront-template-functions.php:451
+#: inc/storefront-template-functions.php:455
 msgid "Posted on %s"
 msgstr "%sに投稿"
 
-#: inc/storefront-template-functions.php:457
+#: inc/storefront-template-functions.php:461
 msgid "by"
 msgstr "投稿者 "
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:825
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:837
 msgid "Product Brands"
 msgstr "商品ブランド"
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:810
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:822
 msgid "Shop by Brand"
 msgstr "ブランドごとに表示"
 
-#: inc/woocommerce/storefront-woocommerce-template-functions.php:775
+#: inc/woocommerce/storefront-woocommerce-template-functions.php:787
 msgid "You're viewing:"
 msgstr "現在こちらを表示しています:"
 
@@ -54,11 +67,11 @@ msgstr "現在こちらを表示しています:"
 msgid "More products"
 msgstr "さらに商品を表示"
 
-#: inc/storefront-template-functions.php:550
+#: inc/storefront-template-functions.php:580
 msgid "Previous post:"
 msgstr "過去の投稿:"
 
-#: inc/storefront-template-functions.php:549
+#: inc/storefront-template-functions.php:579
 msgid "Next post:"
 msgstr "次の投稿:"
 
@@ -82,7 +95,7 @@ msgstr "カートに追加を上部固定"
 msgid "Product Page"
 msgstr "商品ページ"
 
-#: inc/customizer/class-storefront-customizer.php:274
+#: inc/customizer/class-storefront-customizer.php:273
 msgid "Hero text color"
 msgstr "ヒーローテキストの色"
 
@@ -90,11 +103,11 @@ msgstr "ヒーローテキストの色"
 msgid "Hero heading color"
 msgstr "ヒーロー見出しの色"
 
-#: inc/class-storefront.php:308
+#: inc/class-storefront.php:306
 msgid "Collapse child menu"
 msgstr "サブメニューを閉じる"
 
-#: inc/class-storefront.php:307
+#: inc/class-storefront.php:305
 msgid "Expand child menu"
 msgstr "サブメニューを展開"
 
@@ -114,7 +127,7 @@ msgstr "ページ、カテゴリー、タグ、カスタムリンクを追加し
 msgid "Customize your navigation menus"
 msgstr "ナビゲーションメニューをカスタマイズ"
 
-#: inc/class-storefront.php:467
+#: inc/class-storefront.php:474
 msgid "Post Navigation"
 msgstr "投稿ナビゲーション"
 
@@ -134,8 +147,8 @@ msgstr "投稿コメント"
 msgid "Promoted Products"
 msgstr "プロモーション商品"
 
-#: inc/admin/class-storefront-plugin-install.php:62
 #: inc/admin/class-storefront-admin.php:174
+#: inc/admin/class-storefront-plugin-install.php:62
 msgid "Activated"
 msgstr "有効化済み"
 
@@ -151,69 +164,69 @@ msgstr "セール中の商品"
 msgid "Edit this section"
 msgstr "このセクションを編集"
 
-#: inc/nux/class-storefront-nux-starter-content.php:863
+#: inc/nux/class-storefront-nux-starter-content.php:971
 msgid "Vneck Tshirt"
 msgstr "VネックTシャツ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:842
+#: inc/nux/class-storefront-nux-starter-content.php:950
 msgid "Tshirt"
 msgstr "Tシャツ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:821
+#: inc/nux/class-storefront-nux-starter-content.php:929
 msgid "Polo"
 msgstr "ポロシャツ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:800
+#: inc/nux/class-storefront-nux-starter-content.php:908
 msgid "Long Sleeve Tee"
 msgstr "長袖Tシャツ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:778
+#: inc/nux/class-storefront-nux-starter-content.php:886
 msgid "Hoodie"
 msgstr "パーカー"
 
-#: inc/nux/class-storefront-nux-starter-content.php:757
+#: inc/nux/class-storefront-nux-starter-content.php:865
 msgid "Hoodie with Zipper"
 msgstr "ジップ付きパーカー"
 
-#: inc/nux/class-storefront-nux-starter-content.php:735
+#: inc/nux/class-storefront-nux-starter-content.php:843
 msgid "Hoodie with Pocket"
 msgstr "ポケット付きパーカー"
 
-#: inc/nux/class-storefront-nux-starter-content.php:714
+#: inc/nux/class-storefront-nux-starter-content.php:822
 msgid "Hoodie with Logo"
 msgstr "ロゴ付きパーカー"
 
-#: inc/nux/class-storefront-nux-starter-content.php:693
+#: inc/nux/class-storefront-nux-starter-content.php:801
 msgid "Sunglasses"
 msgstr "サングラス"
 
-#: inc/nux/class-storefront-nux-starter-content.php:671
+#: inc/nux/class-storefront-nux-starter-content.php:779
 msgid "Cap"
 msgstr "キャップ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:649
+#: inc/nux/class-storefront-nux-starter-content.php:757
 msgid "Belt"
 msgstr "ベルト"
 
-#: inc/nux/class-storefront-nux-starter-content.php:627
+#: inc/nux/class-storefront-nux-starter-content.php:735
 msgid "Beanie"
 msgstr "ビーニー (ニット帽)"
 
-#: inc/nux/class-storefront-nux-starter-content.php:621
+#: inc/nux/class-storefront-nux-starter-content.php:729
 msgid "Tshirts"
 msgstr "Tシャツ"
 
-#: inc/nux/class-storefront-nux-starter-content.php:618
+#: inc/nux/class-storefront-nux-starter-content.php:726
 msgid "Hoodies"
 msgstr "パーカー"
 
-#: inc/nux/class-storefront-nux-starter-content.php:616
-#: inc/nux/class-storefront-nux-starter-content.php:619
-#: inc/nux/class-storefront-nux-starter-content.php:622
+#: inc/nux/class-storefront-nux-starter-content.php:724
+#: inc/nux/class-storefront-nux-starter-content.php:727
+#: inc/nux/class-storefront-nux-starter-content.php:730
 msgid "A short category description"
 msgstr "カテゴリーの短い説明"
 
-#: inc/nux/class-storefront-nux-starter-content.php:615
+#: inc/nux/class-storefront-nux-starter-content.php:723
 msgid "Accessories"
 msgstr "アクセサリー"
 
@@ -234,11 +247,12 @@ msgid "About"
 msgstr "紹介"
 
 #. translators: %s: 'End Of Line' symbol
-#: inc/nux/class-storefront-nux-starter-content.php:65
+#: inc/nux/class-storefront-nux-starter-content.php:215
 msgid "This is your homepage which is what most visitors will see when they first visit your shop.%sYou can change this text by editing the \"Welcome\" page via the \"Pages\" menu in your dashboard."
 msgstr "これは初めてショップを訪れた人の大部分が見るホームページです。%sこのテキストはダッシュボードの「固定ページ」メニューで「ようこそ」ページを編集すれば変えられます。"
 
-#: inc/nux/class-storefront-nux-starter-content.php:63
+#: inc/nux/class-storefront-nux-starter-content.php:213
+#: inc/nux/class-storefront-nux-starter-content.php:1101
 msgid "Welcome"
 msgstr "ようこそ"
 
@@ -289,8 +303,8 @@ msgstr "このステップをスキップ"
 msgid "No thanks, skip the tour"
 msgstr "結構です。ツアーをスキップします。"
 
-#: inc/nux/class-storefront-nux-admin.php:131
 #: inc/nux/class-storefront-nux-guided-tour.php:112
+#: inc/nux/class-storefront-nux-admin.php:131
 msgid "Let's go!"
 msgstr "さあ、出発！"
 
@@ -335,32 +349,32 @@ msgid "Thanks for installing Storefront, you rock! 🤘"
 msgstr "Storefront のインストールに感謝します。 とてもステキです! 🤘"
 
 #. translators: 1: column number, 2: row number
-#: inc/class-storefront.php:231
+#: inc/class-storefront.php:232
 msgid "Widgets added here will appear in column %1$d of footer row %2$d."
 msgstr "ここへ追加したウィジェットはフッター第%2$d行の第%1$d列に表示されます。"
 
 #. translators: 1: row number, 2: column number
-#: inc/class-storefront.php:228
+#: inc/class-storefront.php:229
 msgid "Footer Row %1$d - Column %2$d"
 msgstr "フッター第%1$d行 - 第%2$d列"
 
 #. translators: 1: column number
-#: inc/class-storefront.php:225
+#: inc/class-storefront.php:226
 msgid "Widgets added here will appear in column %1$d of the footer."
 msgstr "ここへ追加したウィジェットはフッターの第%1$d列に表示されます。"
 
 #. translators: 1: column number
-#: inc/class-storefront.php:222
+#: inc/class-storefront.php:223
 msgid "Footer Column %1$d"
 msgstr "フッターカラム %1$d"
 
-#: inc/admin/class-storefront-plugin-install.php:114
 #: inc/admin/class-storefront-admin.php:205
+#: inc/admin/class-storefront-plugin-install.php:114
 msgid "Learn more"
 msgstr "さらに詳しく"
 
-#: inc/admin/class-storefront-plugin-install.php:94
 #: inc/admin/class-storefront-admin.php:198
+#: inc/admin/class-storefront-plugin-install.php:94
 msgid "Install now"
 msgstr "今すぐインストール"
 
@@ -425,7 +439,7 @@ msgstr "ドキュメンテーション"
 msgid "Support"
 msgstr "サポート"
 
-#: inc/class-storefront.php:209
+#: inc/class-storefront.php:210
 msgid "Widgets added to this region will appear beneath the header and above the main content."
 msgstr "この領域に追加されたウィジェットは、ヘッダーの下と、メインコンテンツの上に表示されます。"
 
@@ -437,22 +451,27 @@ msgstr "マイアカウント"
 msgid "Search"
 msgstr "検索"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1074
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:523
 msgid "Best Sellers"
 msgstr "ベストセラー"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1058
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:417
 msgid "Fan Favorites"
 msgstr "お気に入り"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1135
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:364
 msgid "We Recommend"
 msgstr "おすすめ"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1048
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:311
 msgid "New In"
 msgstr "新規"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1040
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:259
 msgid "Shop by Category"
 msgstr "カテゴリー別ショップ"
@@ -461,7 +480,7 @@ msgstr "カテゴリー別ショップ"
 msgid "Menu"
 msgstr "メニュー"
 
-#: inc/class-storefront.php:207
+#: inc/class-storefront.php:208
 msgid "Below Header"
 msgstr "ヘッダーの下"
 
@@ -483,16 +502,16 @@ msgstr "セール中"
 msgid "New In Store"
 msgstr "新商品"
 
-#: inc/customizer/class-storefront-customizer.php:288
+#: inc/customizer/class-storefront-customizer.php:286
 msgid "Header background image"
 msgstr "ヘッダー背景画像"
 
-#: inc/storefront-template-functions.php:535
+#: inc/storefront-template-functions.php:565
 msgctxt "Next post"
 msgid "Next"
 msgstr "次ヘ"
 
-#: inc/storefront-template-functions.php:536
+#: inc/storefront-template-functions.php:566
 msgctxt "Previous post"
 msgid "Previous"
 msgstr "前へ"
@@ -507,6 +526,7 @@ msgid "Nothing was found at this location. Try searching, or check out the links
 msgstr "この場所では何も見つかりませんでした。再度検索するか、以下のリンクをチェックしてください。"
 
 #. Template Name of the theme
+#: inc/nux/class-storefront-nux-starter-content.php:208
 msgid "Homepage"
 msgstr "ホームページ"
 
@@ -544,6 +564,7 @@ msgstr "注目商品"
 msgid "View your shopping cart"
 msgstr "ショッピングカートを見る"
 
+#: inc/nux/class-storefront-nux-starter-content.php:1066
 #: inc/woocommerce/storefront-woocommerce-template-functions.php:470
 msgid "On Sale"
 msgstr "販売中"
@@ -552,31 +573,31 @@ msgstr "販売中"
 msgid "Next"
 msgstr "次へ"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "% Comments"
 msgstr "%件のコメント"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "1 Comment"
 msgstr "1件のコメント"
 
-#: inc/storefront-template-functions.php:466
+#: inc/storefront-template-functions.php:470
 msgid "Leave a comment"
 msgstr "コメントを残す"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/storefront-template-functions.php:502
-#: inc/storefront-template-functions.php:505
+#: inc/storefront-template-functions.php:532
+#: inc/storefront-template-functions.php:535
 msgid ", "
 msgstr "、"
 
 #. translators: %s: post title
-#: inc/storefront-template-functions.php:401
+#: inc/storefront-template-functions.php:405
 msgid "Continue reading %s"
 msgstr "続きを読む %s"
 
-#: inc/storefront-template-functions.php:339
-#: inc/storefront-template-functions.php:410
+#: inc/storefront-template-functions.php:343
+#: inc/storefront-template-functions.php:414
 msgid "Pages:"
 msgstr "固定ページ:"
 
@@ -604,78 +625,78 @@ msgstr "編集"
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは承認待ちです。"
 
-#: inc/class-storefront.php:95
 #: inc/nux/class-storefront-nux-starter-content.php:192
+#: inc/class-storefront.php:96
 msgid "Handheld Menu"
 msgstr "携帯用メニュー"
 
-#: inc/class-storefront.php:201
+#: inc/class-storefront.php:202
 msgid "Sidebar"
 msgstr "サイドバー"
 
-#: inc/class-storefront.php:94
 #: inc/nux/class-storefront-nux-starter-content.php:182
+#: inc/class-storefront.php:95
 msgid "Secondary Menu"
 msgstr "第2メニュー"
 
-#: inc/customizer/class-storefront-customizer.php:600
+#: inc/customizer/class-storefront-customizer.php:598
 msgid "Looking for more options?"
 msgstr "オプションを表示"
 
-#: inc/class-storefront.php:93
 #: inc/nux/class-storefront-nux-starter-content.php:162
+#: inc/class-storefront.php:94
 msgid "Primary Menu"
 msgstr "メインメニュー"
 
-#: inc/customizer/class-storefront-customizer.php:569
+#: inc/customizer/class-storefront-customizer.php:567
 msgid "General Layout"
 msgstr "一般的なレイアウト"
 
-#: inc/customizer/class-storefront-customizer.php:585
+#: inc/customizer/class-storefront-customizer.php:583
 msgid "More"
 msgstr "続き"
 
-#: inc/customizer/class-storefront-customizer.php:364
+#: inc/customizer/class-storefront-customizer.php:362
 msgid "Customize the look & feel of your website footer."
 msgstr "サイトのフッターの外観をカスタマイズする。"
 
-#: inc/customizer/class-storefront-customizer.php:459
+#: inc/customizer/class-storefront-customizer.php:457
 msgid "Customize the look & feel of your website buttons."
 msgstr "サイトのボタンの外観をカスタマイズする。"
 
-#: inc/customizer/class-storefront-customizer.php:457
+#: inc/customizer/class-storefront-customizer.php:455
 msgid "Buttons"
 msgstr "ボタン"
 
-#: inc/customizer/class-storefront-customizer.php:539
+#: inc/customizer/class-storefront-customizer.php:537
 msgid "Alternate button text color"
 msgstr "代替ボタンのテキスト色"
 
-#: inc/customizer/class-storefront-customizer.php:518
+#: inc/customizer/class-storefront-customizer.php:516
 msgid "Alternate button background color"
 msgstr "代替ボタンの背景色"
 
-#: inc/customizer/class-storefront-customizer.php:552
+#: inc/customizer/class-storefront-customizer.php:550
 msgid "Layout"
 msgstr "レイアウト"
 
-#: inc/customizer/class-storefront-customizer.php:362
+#: inc/customizer/class-storefront-customizer.php:360
 msgid "Footer"
 msgstr "フッター"
 
-#: inc/customizer/class-storefront-customizer.php:349
-#: inc/customizer/class-storefront-customizer.php:444
+#: inc/customizer/class-storefront-customizer.php:347
+#: inc/customizer/class-storefront-customizer.php:442
 msgid "Link color"
 msgstr "リンク色"
 
-#: inc/customizer/class-storefront-customizer.php:307
-#: inc/customizer/class-storefront-customizer.php:381
-#: inc/customizer/class-storefront-customizer.php:476
+#: inc/customizer/class-storefront-customizer.php:305
+#: inc/customizer/class-storefront-customizer.php:379
+#: inc/customizer/class-storefront-customizer.php:474
 msgid "Background color"
 msgstr "背景色"
 
 #: inc/customizer/class-storefront-customizer.php:189
-#: inc/customizer/class-storefront-customizer.php:402
+#: inc/customizer/class-storefront-customizer.php:400
 msgid "Heading color"
 msgstr "見出し色"
 
@@ -684,9 +705,9 @@ msgid "Link / accent color"
 msgstr "リンク / アクセントカラー"
 
 #: inc/customizer/class-storefront-customizer.php:210
-#: inc/customizer/class-storefront-customizer.php:328
-#: inc/customizer/class-storefront-customizer.php:423
-#: inc/customizer/class-storefront-customizer.php:497
+#: inc/customizer/class-storefront-customizer.php:326
+#: inc/customizer/class-storefront-customizer.php:421
+#: inc/customizer/class-storefront-customizer.php:495
 msgid "Text color"
 msgstr "テキスト色"
 
@@ -720,8 +741,8 @@ msgstr "WooCommerce をインストール"
 msgid "Add your logo"
 msgstr "ロゴの追加"
 
-#: inc/admin/class-storefront-plugin-install.php:75
 #: inc/admin/class-storefront-admin.php:183
+#: inc/admin/class-storefront-plugin-install.php:75
 msgid "Activate"
 msgstr "有効化"
 

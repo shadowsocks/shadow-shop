@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-07 01:20:16+0000\n"
+"PO-Revision-Date: 2019-05-11 20:52:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,14 +110,9 @@ msgstr "WordPress 5.2ではさらに、設定問題や致命的なエラーを�
 msgid "Keeping Your Site Safe"
 msgstr "サイトを安全に保つ"
 
-#: wp-admin/credits.php:23 wp-admin/freedoms.php:33 wp-admin/about.php:27
+#: wp-admin/credits.php:28 wp-admin/freedoms.php:42 wp-admin/about.php:27
 msgid "Congratulations on updating to WordPress 5.2! This update makes it easier than ever to fix your site if something goes wrong."
 msgstr "WordPress 5.2への更新、おめでとうございます ! この更新では、もし何かがうまく行かなかった場合にサイトを修正するのがこれまでよりも容易になりました。"
-
-#. translators: 1: The filename of the package.
-#: wp-admin/includes/file.php:1191
-msgid "The authenticity of %1$s could not be verified as signature verification is unavailable on this system."
-msgstr "このシステム上での署名認証が利用できないため、%1$s の信頼性が確認できませんでした。"
 
 #. translators: tab heading for Site Health Status page
 #: wp-admin/site-health-info.php:52
@@ -177,13 +172,14 @@ msgstr "https://ja.wordpress.org/about/requirements/"
 
 #: wp-admin/includes/class-wp-site-health.php:943
 msgid "The SQL server is a required piece of software for the database WordPress uses to store all your site&#8217;s content and settings."
-msgstr "SQL サーバーは、WordPress がサイトのコンテンツや設定を保存する際に使用するデータベースとして必要なソフトウエアです。"
+msgstr "SQL サーバーは、WordPress がサイトのコンテンツや設定を保存する際に使用するデータベースとして必要なソフトウェアです。"
 
 #: wp-admin/includes/class-wp-site-health.php:741
 msgid "PHP modules perform most of the tasks on the server that make your site run. Any changes to these must be made by your server administrator."
 msgstr "PHP モジュールはサイトの稼働に必要なほとんどのタスクをサーバー上で実行します。変更はサーバー管理者が実施する必要があります。"
 
 #: wp-admin/includes/class-wp-site-health.php:652
+#: wp-admin/includes/dashboard.php:1631
 msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site&#8217;s performance."
 msgstr "PHP は WordPress の開発や保守に使用されているプログラミング言語です。PHP の新しいバージョンはより高速で安全なため、アップグレードするとサイトのパフォーマンスに良い影響を与えます。"
 
@@ -337,7 +333,7 @@ msgid "The authenticity of %s could not be verified as no signature was found."
 msgstr "署名が見つからなかったため、%s の信頼性を確認できませんでした。"
 
 #. translators: %s: The filename of the package.
-#: wp-admin/includes/file.php:1171
+#: wp-admin/includes/file.php:1171 wp-admin/includes/file.php:1191
 msgid "The authenticity of %s could not be verified as signature verification is unavailable on this system."
 msgstr "このシステムでの署名の検証ができないため、%s の信頼性を確認できませんでした。"
 
@@ -479,7 +475,7 @@ msgstr "新しいバージョン %1$s が利用可能ですが、現在の PHP �
 msgid "This plugin failed to load properly and is paused during recovery mode."
 msgstr "このプラグインは正常なロードに失敗したため、リカバリーモード中に一時停止されました。"
 
-#: wp-admin/includes/theme.php:905
+#: wp-admin/includes/theme.php:910
 msgid "Go to the Themes screen"
 msgstr "テーマ画面へ移動"
 
@@ -494,11 +490,6 @@ msgstr "合計サイズが不明です。インストールサイズの計算中
 #: wp-admin/includes/class-wp-debug-data.php:1180
 msgid "The size cannot be calculated. The directory is not accessible. Usually caused by invalid permissions."
 msgstr "サイズは計算できません。ディレクトリにアクセスできません。おそらくパーミッションが誤っています。"
-
-#. translators: %s: number of ratings
-#: wp-admin/includes/theme.php:727
-msgid "(%s ratings) <span class=\"screen-reader-text\">link to view ratings opens in a new tab</span>"
-msgstr "(評価 %s) <span class=\"screen-reader-text\">新しくタブを開き評価を参照するリンク</span>"
 
 #: wp-admin/includes/class-wp-debug-data.php:218
 msgid "These settings alter where and how parts of WordPress are loaded."
@@ -532,9 +523,9 @@ msgstr "すべて問題なく動作中です。"
 msgid "Great job!"
 msgstr "すばらしい !"
 
-#: wp-admin/credits.php:27 wp-admin/includes/ms.php:1137
-#: wp-admin/nav-menus.php:630 wp-admin/site-health-info.php:48
-#: wp-admin/freedoms.php:37 wp-admin/about.php:36 wp-admin/site-health.php:53
+#: wp-admin/credits.php:37 wp-admin/includes/ms.php:1141
+#: wp-admin/nav-menus.php:632 wp-admin/site-health-info.php:48
+#: wp-admin/freedoms.php:51 wp-admin/about.php:36 wp-admin/site-health.php:53
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
@@ -1630,27 +1621,27 @@ msgstr "<a href=\"%1$s\">WordPress %2$s</a> は MySQL バージョン%3$s以上�
 msgid "You cannot update because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "<a href=\"%1$s\">WordPress %2$s</a> は PHP バージョン%3$s以上が必要なため、更新できません。現在の PHP バージョンは%4$sです。 "
 
-#: wp-admin/nav-menus.php:848
+#: wp-admin/nav-menus.php:852
 msgid "Add menu items"
 msgstr "メニュー項目を追加"
 
-#: wp-admin/nav-menus.php:815
+#: wp-admin/nav-menus.php:819
 msgid "or <a href=\"%s\">create a new menu</a>. Don&#8217;t forget to save your changes!"
 msgstr "または<a href=\"%s\">新しいメニューを作成しましょう</a>。変更の保存をお忘れなく。"
 
-#: wp-admin/nav-menus.php:766 wp-admin/nav-menus.php:827
+#: wp-admin/nav-menus.php:770 wp-admin/nav-menus.php:831
 msgid "Click the Save Menu button to save your changes."
 msgstr "「メニューを保存」ボタンをクリックし、変更を保存してください。"
 
-#: wp-admin/nav-menus.php:754
+#: wp-admin/nav-menus.php:758
 msgid "Edit your menu below, or <a href=\"%s\">create a new menu</a>. Don&#8217;t forget to save your changes!"
 msgstr "以下のメニューを編集するか、<a href=\"%s\">新しいメニューを作成しましょう</a>。変更の保存をお忘れなく。"
 
-#: wp-admin/nav-menus.php:748
+#: wp-admin/nav-menus.php:752
 msgid "Fill in the Menu Name and click the Create Menu button to create your first menu."
 msgstr "メニュー名を入力して「メニューを作成」ボタンをクリックし、最初のメニューを作成しましょう。"
 
-#: wp-admin/nav-menus.php:747
+#: wp-admin/nav-menus.php:751
 msgid "Create your first menu below."
 msgstr "最初のメニューを以下で作成しましょう。"
 
@@ -1674,10 +1665,6 @@ msgstr "ホームページを設定しましょう"
 #: wp-admin/includes/dashboard.php:1638
 msgid "Learn more about updating PHP"
 msgstr "PHP の更新についてさらに詳しく"
-
-#: wp-admin/includes/dashboard.php:1631
-msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site’s performance."
-msgstr "PHP は WordPress の構築およびメンテナンスに使用されるプログラミング言語です。新しいバージョンの PHP はより高速かつ安全であるため、更新することでサイトのパフォーマンスに良い影響を与えます。"
 
 #: wp-admin/includes/dashboard.php:1630
 msgid "What is PHP and how does it affect my site?"
@@ -1817,11 +1804,11 @@ msgctxt "plugin"
 msgid "Resume %s"
 msgstr "%s を再有効化"
 
-#: wp-admin/includes/theme.php:903
+#: wp-admin/includes/theme.php:908
 msgid "You can find more details and make changes on the Themes screen."
 msgstr "テーマ画面から詳細の確認と変更が可能です。"
 
-#: wp-admin/includes/theme.php:902
+#: wp-admin/includes/theme.php:907
 msgid "One or more themes failed to load properly."
 msgstr "テーマを正しく読み込めませんでした。"
 
@@ -1830,7 +1817,7 @@ msgstr "テーマを正しく読み込めませんでした。"
 msgid "Deleting a category does not delete the posts in that category. Instead, posts that were only assigned to the deleted category are set to the default category %s. The default category cannot be deleted."
 msgstr "カテゴリーを削除しても、カテゴリー内の投稿は削除されません。ただし、投稿に割り当て済みのカテゴリーが削除するカテゴリーのみの場合、デフォルトカテゴリー「%s」が割り当てられます。デフォルトカテゴリーは削除できません。"
 
-#: wp-admin/includes/theme.php:875
+#: wp-admin/includes/theme.php:880
 msgid "Could not resume the theme."
 msgstr "テーマを再有効化できませんでした。"
 
@@ -1866,35 +1853,35 @@ msgstr "このメタボックスを使用するには、<a href=\"%s\">Classic E
 msgid "This meta box isn't compatible with the block editor."
 msgstr "このメタボックスはブロックエディターに対応していません。"
 
-#: wp-admin/freedoms.php:80
+#: wp-admin/freedoms.php:109
 msgid "To distribute copies of your modified versions to others."
 msgstr "改変版の複製を他の人に頒布すること。"
 
-#: wp-admin/freedoms.php:79
+#: wp-admin/freedoms.php:108
 msgid "The 4th Freedom"
 msgstr "第四の自由"
 
-#: wp-admin/freedoms.php:75
+#: wp-admin/freedoms.php:104
 msgid "To redistribute."
 msgstr "再配布すること。"
 
-#: wp-admin/freedoms.php:74
+#: wp-admin/freedoms.php:103
 msgid "The 3rd Freedom"
 msgstr "第三の自由"
 
-#: wp-admin/freedoms.php:70
+#: wp-admin/freedoms.php:99
 msgid "To study how the program works and change it to make it do what you wish."
 msgstr "プログラムの動作を研究し、好みの仕様に変更すること。"
 
-#: wp-admin/freedoms.php:69
+#: wp-admin/freedoms.php:98
 msgid "The 2nd Freedom"
 msgstr "第ニの自由"
 
-#: wp-admin/freedoms.php:65
+#: wp-admin/freedoms.php:94
 msgid "To run the program for any purpose."
 msgstr "どんな目的に対しても、プログラムを実行すること。"
 
-#: wp-admin/freedoms.php:64
+#: wp-admin/freedoms.php:93
 msgid "The 1st Freedom"
 msgstr "第一の自由"
 
@@ -2853,7 +2840,8 @@ msgstr "必須 PHP バージョン:"
 msgid "This changeset cannot be further modified."
 msgstr "このチェンジセットはこれ以上変更できません。"
 
-#: wp-admin/freedoms.php:49
+#. translators: %s: https://wordpress.org/about/stats
+#: wp-admin/freedoms.php:66
 msgid "This data is used to provide general enhancements to WordPress, which includes helping to protect your site by finding and automatically installing new updates. It is also used to calculate statistics, such as those shown on the <a href=\"%s\">WordPress.org stats page</a>."
 msgstr "このデータは WordPress の一般的な機能強化に使用され、新しい更新を検知し、自動的にインストールすることでサイトを保護するのに役立ちます。<a href=\"%s\">WordPress.org 統計情報ページ</a>に表示されるような、統計の計算にも使用されます。"
 
@@ -2866,7 +2854,7 @@ msgstr "ここで CSS を変更する必要はありません &mdash; <a href=\"
 msgid "Did you know?"
 msgstr "ご存知ですか ?"
 
-#: wp-admin/credits.php:127
+#: wp-admin/credits.php:138
 msgid "Noteworthy Contributors"
 msgstr "注目すべき貢献者"
 
@@ -2933,11 +2921,12 @@ msgstr "<a href=\"%s\">サイトのホームページとして WordPress のイ�
 msgid "Developer Happiness"
 msgstr "開発者をハッピーに"
 
-#: wp-admin/freedoms.php:51
+#. translators: %s: https://wordpress.org/about/privacy
+#: wp-admin/freedoms.php:73
 msgid "We take privacy and transparency very seriously. To learn more about what data we collect, and how we use it, please visit <a href=\"%s\">WordPress.org/about/privacy</a>."
 msgstr "私たちは、プライバシー保護と透明性の確保に真剣に取り組んでいます。どんなデータを収集し、どのように扱っているかについて詳しくは <a href=\"%s\">wordpress.org/privacy</a> をご覧ください。"
 
-#: wp-admin/freedoms.php:47
+#: wp-admin/freedoms.php:61
 msgid "From time to time, your WordPress site may send data to WordPress.org &#8212; including, but not limited to &#8212; the version of WordPress you are using, and a list of installed plugins and themes."
 msgstr "WordPress サイトは、使用中の WordPress のバージョンや、インストールされているプラグインやテーマのリスト等を含むデータを時々 WordPress.org に送信することがあります。"
 
@@ -3143,7 +3132,7 @@ msgstr "%s がすでにこの投稿を編集中です。"
 msgid "%s is already editing this post. Do you want to take over?"
 msgstr "%s がすでにこの投稿を編集中です。引き継ぎますか ?"
 
-#: wp-admin/includes/ms.php:1171
+#: wp-admin/includes/ms.php:1175
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\">Documentation on Site Management</a>"
 msgstr "<a href=\"https://wpdocs.osdn.jp/Network_Admin_Sites_Screen\">サイト管理についてのドキュメント</a>"
 
@@ -3159,23 +3148,23 @@ msgstr "カスタムインストールスクリプト。"
 msgid "Active Installations:"
 msgstr "有効インストール数:"
 
-#: wp-admin/includes/ms.php:1158
+#: wp-admin/includes/ms.php:1162
 msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
 msgstr "<strong>設定</strong> &mdash; このページには、サイトに関連するすべての設定の一覧を表示します。WordPress がつくるものもあるし、有効化しているプラグインがつくるものもあります。グレーアウトしているフィールドもありますが、シリアル化されたデータである点に注意してください。設定がデータベースに保存されているため、これらの値を修正することはできません。"
 
-#: wp-admin/includes/ms.php:1157
+#: wp-admin/includes/ms.php:1161
 msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
 msgstr "<strong>テーマ</strong> &mdash; このエリアには、サイトネットワーク上でまだ有効になっていないテーマを表示します。このメニューでテーマを有効化すると、このサイトで利用可能になります。テーマを有効化するのではなく、サイトの外観メニューに表示されるようになります。サイトネットワーク全体に対してテーマを有効化するには、<a href=\"%s\">サイトネットワークのテーマ</a>画面を確認してください。"
 
-#: wp-admin/includes/ms.php:1156
+#: wp-admin/includes/ms.php:1160
 msgid "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
 msgstr "<strong>ユーザー</strong> &mdash; こちらには、サイトに関連するユーザーを表示します。ユーザーに対して、権限グループを変更したり、パスワードをリセットしたり、サイトから削除することもできます。サイトからユーザーを削除しても、サイトネットワークからユーザーは削除されません。"
 
-#: wp-admin/includes/ms.php:1155
+#: wp-admin/includes/ms.php:1159
 msgid "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
 msgstr "<strong>情報</strong> &mdash; サイト URL は、サイトが正しく機能しなくなる可能性があるので、ほとんど編集されることはありません。登録日と最終更新日を表示します。サイトネットワーク管理者は、サイトをアーカイブ済み、スパム、削除済み、成人向けとしてマークし、公開リストから削除したり無効にしたりすることができます。"
 
-#: wp-admin/includes/ms.php:1154
+#: wp-admin/includes/ms.php:1158
 msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
 msgstr "このメニューは、特にサイトの管理画面が利用できない場合に、サイト固有の情報を編集するためのものです。"
 
@@ -3331,7 +3320,7 @@ msgstr "コントロールを非表示"
 msgid "Expand Sidebar"
 msgstr "サイドバーを展開"
 
-#: wp-admin/nav-menus.php:951
+#: wp-admin/nav-menus.php:955
 msgid "Display location"
 msgstr "メニューの位置"
 
@@ -3374,7 +3363,7 @@ msgid "Choose either a city in the same timezone as you or a UTC timezone offset
 msgstr "タイムゾーンと一致する都市を選択するか、または UTC タイムゾーンオフセットを選択してください。"
 
 #. translators: %s: number of ratings
-#: wp-admin/theme-install.php:341
+#: wp-admin/includes/theme.php:729 wp-admin/theme-install.php:341
 msgid "(%s ratings)"
 msgstr "(%s件の評価)"
 
@@ -3410,7 +3399,7 @@ msgid "Sorry, you are not allowed to attach files to this post."
 msgstr "この投稿にファイルを添付する権限がありません。"
 
 #: wp-admin/includes/plugin-install.php:262
-#: wp-admin/includes/plugin-install.php:679 wp-admin/freedoms.php:89
+#: wp-admin/includes/plugin-install.php:679 wp-admin/freedoms.php:123
 #: wp-admin/plugins.php:444 wp-admin/plugin-install.php:86
 msgid "https://wordpress.org/plugins/"
 msgstr "https://ja.wordpress.org/plugins/"
@@ -3855,11 +3844,11 @@ msgstr "ヘッダーをカスタマイズする権限がありません。"
 msgid "Sorry, you are not allowed to import content."
 msgstr "インポートする権限がありません。"
 
-#: wp-admin/credits.php:132
+#: wp-admin/credits.php:143
 msgid "Release Deputy"
 msgstr "リリース補佐"
 
-#: wp-admin/credits.php:131
+#: wp-admin/credits.php:142
 msgid "Release Design Lead"
 msgstr "リリースデザインリード"
 
@@ -3993,7 +3982,7 @@ msgstr "新しいテーマを有効化しました。"
 msgid "Settings saved and theme activated."
 msgstr "設定を保存し、テーマを有効化しました。"
 
-#: wp-admin/freedoms.php:90 wp-admin/themes.php:114
+#: wp-admin/freedoms.php:124 wp-admin/themes.php:114
 #: wp-admin/theme-install.php:97
 msgid "https://wordpress.org/themes/"
 msgstr "https://ja.wordpress.org/themes/"
@@ -4308,7 +4297,8 @@ msgstr "新規ユーザーにアカウントに関するメールを送信"
 msgid "Send User Notification"
 msgstr "ユーザーに通知を送信"
 
-#: wp-admin/nav-menus.php:961
+#. translators: %s: menu name
+#: wp-admin/nav-menus.php:965
 msgctxt "menu location"
 msgid "(Currently set to: %s)"
 msgstr "(現在の設定: %s)"
@@ -4978,7 +4968,7 @@ msgstr "%1$s ファイルを編集する際は、必ず8つのキーをすべて
 msgid "Show more details"
 msgstr "詳細を追加表示"
 
-#: wp-admin/nav-menus.php:654
+#: wp-admin/nav-menus.php:658
 msgid "Your theme supports %s menu. Select which menu appears in each location."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "お使いのテーマは%s個のメニューに対応しています。各位置に表示するメニューを選んでください。"
@@ -5702,7 +5692,7 @@ msgstr "ようこそ"
 msgid "If you like, you may enter custom structures for your category and tag URLs here. For example, using <code>topics</code> as your category base would make your category links like <code>%s/topics/uncategorized/</code>. If you leave these blank the defaults will be used."
 msgstr "カテゴリー・タグの URL 構造をカスタマイズすることもできます。たとえば、カテゴリーベースに <code>topics</code> を使えば、カテゴリーのリンクが <code>%s/topics/uncategorized/</code> のようになります。デフォルトのままにしたければ空欄にしてください。"
 
-#: wp-admin/credits.php:130
+#: wp-admin/credits.php:141
 msgid "Release Lead"
 msgstr "リリースリード"
 
@@ -6008,11 +5998,11 @@ msgstr "メニューの管理"
 msgid "Manage widgets"
 msgstr "ウィジェットの管理"
 
-#: wp-admin/credits.php:45 wp-admin/credits.php:59
+#: wp-admin/credits.php:55 wp-admin/credits.php:69
 msgid "https://make.wordpress.org/"
 msgstr "https://make.wordpress.org/"
 
-#: wp-admin/includes/ms.php:1172
+#: wp-admin/includes/ms.php:1176
 msgid "<a href=\"https://wordpress.org/support/forum/multisite/\">Support Forums</a>"
 msgstr "<a href=\"https://ja.wordpress.org/support/forum/multisite/\" target=\"_blank\">サポートフォーラム</a>"
 
@@ -6053,7 +6043,7 @@ msgid "On this screen, you can update to the latest version of WordPress, as wel
 msgstr "この画面では、WordPress.org のレポジトリに登録されたテーマやプラグイン、翻訳を更新するだけでなく、WordPress を最新バージョンに更新することができます。"
 
 #. translators: %s: The current WordPress version number
-#: wp-admin/about.php:23
+#: wp-admin/credits.php:24 wp-admin/freedoms.php:38 wp-admin/about.php:23
 msgid "Welcome to WordPress&nbsp;%s"
 msgstr "WordPress&nbsp;%s へようこそ"
 
@@ -6099,7 +6089,7 @@ msgstr "この設定が有効になっている場合、サイトがクロール
 msgid "Accessibility Ready"
 msgstr "アクセシビリティ対応"
 
-#: wp-admin/includes/theme.php:741 wp-admin/themes.php:559
+#: wp-admin/includes/theme.php:746 wp-admin/themes.php:559
 msgid "This is a child theme of %s."
 msgstr "これは %s の子テーマです。"
 
@@ -6203,7 +6193,7 @@ msgstr "次のテーマを表示"
 msgid "Show previous theme"
 msgstr "前のテーマを表示"
 
-#: wp-admin/includes/theme.php:735 wp-admin/themes.php:552
+#: wp-admin/includes/theme.php:740 wp-admin/themes.php:552
 msgid "Update Available"
 msgstr "更新があります"
 
@@ -6779,7 +6769,7 @@ msgstr "ゴミ箱から復元しようとしている項目が存在しません
 msgid "The item you are trying to move to the Trash no longer exists."
 msgstr "ゴミ箱に移動しようとしている項目が存在しません。"
 
-#: wp-admin/nav-menus.php:900
+#: wp-admin/nav-menus.php:904
 msgid "Drag each item into the order you prefer. Click the arrow on the right of the item to reveal additional configuration options."
 msgstr "各項目をドラッグして順番を変更します。追加の設定オプションを表示するには、項目の右側にある矢印をクリックします。"
 
@@ -6823,33 +6813,33 @@ msgctxt "Followed by post revision info"
 msgid "From:"
 msgstr "旧リビジョン:"
 
-#: wp-admin/nav-menus.php:721
+#: wp-admin/nav-menus.php:725
 msgctxt "menu"
 msgid "Use new menu"
 msgstr "新規メニューを使用"
 
-#: wp-admin/nav-menus.php:702
+#: wp-admin/nav-menus.php:706
 msgctxt "menu"
 msgid "Edit"
 msgstr "編集"
 
-#: wp-admin/nav-menus.php:672
+#: wp-admin/nav-menus.php:676
 msgid "Select a Menu"
 msgstr "メニューを選択"
 
-#: wp-admin/nav-menus.php:663
+#: wp-admin/nav-menus.php:667
 msgid "Assigned Menu"
 msgstr "指定されたメニュー"
 
-#: wp-admin/nav-menus.php:662
+#: wp-admin/nav-menus.php:666
 msgid "Theme Location"
 msgstr "テーマの位置"
 
-#: wp-admin/nav-menus.php:639
+#: wp-admin/nav-menus.php:643
 msgid "Manage Locations"
 msgstr "位置の管理"
 
-#: wp-admin/nav-menus.php:631
+#: wp-admin/nav-menus.php:633
 msgid "Edit Menus"
 msgstr "メニューを編集"
 
@@ -6970,11 +6960,11 @@ msgstr "拒否されました: %s"
 msgid "Capabilities"
 msgstr "権限"
 
-#: wp-admin/nav-menus.php:927
+#: wp-admin/nav-menus.php:931
 msgid "Menu Settings"
 msgstr "メニュー設定"
 
-#: wp-admin/nav-menus.php:862
+#: wp-admin/nav-menus.php:866
 msgid "Menu structure"
 msgstr "メニュー構造"
 
@@ -7015,7 +7005,7 @@ msgstr "この項目をゴミ箱へ移動することはできません。%s は
 msgid "%s has taken over and is currently editing."
 msgstr "%s さんが引き継いで現在編集しています。"
 
-#: wp-admin/nav-menus.php:771
+#: wp-admin/nav-menus.php:775
 msgid "Select a menu to edit:"
 msgstr "編集するメニューを選択:"
 
@@ -7031,15 +7021,15 @@ msgstr "この部分のインストールは無事完了しました。WordPress
 msgid "Client version"
 msgstr "現在のバージョン"
 
-#: wp-admin/nav-menus.php:942
+#: wp-admin/nav-menus.php:946
 msgid "Auto add pages"
 msgstr "固定ページを自動追加"
 
-#: wp-admin/nav-menus.php:914
+#: wp-admin/nav-menus.php:918
 msgid "Give your menu a name, then click Create Menu."
 msgstr "メニューに名前をつけ、「メニューを作成」ボタンをクリックしてください。"
 
-#: wp-admin/nav-menus.php:900
+#: wp-admin/nav-menus.php:904
 msgid "Edit your default menu by adding or removing items. Drag each item into the order you prefer. Click Create Menu to save your changes."
 msgstr "項目を追加・削除してデフォルトのメニューを編集できます。お好きな順番に各項目をドラッグしてください。変更を保存するには「メニューを作成」ボタンをクリックします。"
 
@@ -8061,7 +8051,7 @@ msgstr "メンテナンスリリース"
 msgid "Security Release"
 msgstr "セキュリティリリース"
 
-#: wp-admin/credits.php:28 wp-admin/freedoms.php:38 wp-admin/about.php:37
+#: wp-admin/credits.php:38 wp-admin/freedoms.php:52 wp-admin/about.php:37
 msgid "What&#8217;s New"
 msgstr "新着情報"
 
@@ -8345,10 +8335,6 @@ msgstr "固定ページの管理"
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "このサイトはマルチサイトインストールのため、サイトネットワーク上にすでに存在するアカウントのユーザー名またはメールアドレスを指定し、権限グループを選択して追加することができます。パスワードを設定するといった追加オプションを使うには、「ネットワーク管理 > ユーザー一覧」ページで、サイトネットワーク管理者として既存のユーザーの名前をマウスオーバーしたときに表示される「編集」リンクを使う必要があります。"
 
-#: wp-admin/credits.php:21 wp-admin/freedoms.php:31
-msgid "Welcome to WordPress %s"
-msgstr "WordPress %s へようこそ"
-
 #: wp-admin/about.php:150
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ戻る"
@@ -8357,7 +8343,7 @@ msgstr "ダッシュボード &rarr; 更新へ戻る"
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
-#: wp-admin/credits.php:54
+#: wp-admin/credits.php:64
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "WordPress は、世界中の熱心な人々によって作られています。"
 
@@ -8387,7 +8373,7 @@ msgstr ""
 "この招待を受け取るには、以下のリンクをクリックして承認してください。\n"
 "%4$s"
 
-#: wp-admin/credits.php:133
+#: wp-admin/credits.php:144
 msgid "Core Developer"
 msgstr "コア開発者"
 
@@ -8494,7 +8480,7 @@ msgstr "エラー: 下書きとして保存された投稿へのコメントに�
 
 #: wp-admin/options-reading.php:24 wp-admin/edit-tags.php:261
 #: wp-admin/link-manager.php:53 wp-admin/options-writing.php:22
-#: wp-admin/includes/ms.php:1152 wp-admin/includes/class-wp-screen.php:816
+#: wp-admin/includes/ms.php:1156 wp-admin/includes/class-wp-screen.php:816
 #: wp-admin/my-sites.php:43 wp-admin/options-general.php:41
 #: wp-admin/comment.php:47 wp-admin/theme-editor.php:27
 #: wp-admin/plugin-editor.php:123 wp-admin/nav-menus.php:546
@@ -8539,7 +8525,7 @@ msgid "Plugins %s"
 msgstr "プラグイン %s"
 
 #. translators: %s: plugin name
-#: wp-admin/includes/theme.php:763
+#: wp-admin/includes/theme.php:768
 #: wp-admin/includes/class-wp-theme-install-list-table.php:478
 #: wp-admin/includes/deprecated.php:1381 wp-admin/theme-install.php:299
 #: wp-admin/theme-install.php:319
@@ -8554,7 +8540,7 @@ msgstr "ユーザー一覧"
 #: wp-admin/includes/class-wp-links-list-table.php:88
 #: wp-admin/includes/class-wp-links-list-table.php:323
 #: wp-admin/includes/class-wp-themes-list-table.php:200
-#: wp-admin/includes/theme.php:758
+#: wp-admin/includes/theme.php:763
 #: wp-admin/includes/class-wp-plugins-list-table.php:500
 #: wp-admin/includes/class-wp-plugins-list-table.php:654
 #: wp-admin/includes/class-wp-plugins-list-table.php:683
@@ -8578,7 +8564,7 @@ msgstr "新規追加"
 
 #: wp-admin/options-reading.php:42 wp-admin/edit-tags.php:297
 #: wp-admin/link-manager.php:70 wp-admin/options-writing.php:51
-#: wp-admin/includes/ms.php:1170 wp-admin/my-sites.php:50
+#: wp-admin/includes/ms.php:1174 wp-admin/my-sites.php:50
 #: wp-admin/options-general.php:47 wp-admin/comment.php:55
 #: wp-admin/theme-editor.php:50 wp-admin/plugin-editor.php:140
 #: wp-admin/nav-menus.php:594 wp-admin/update-core.php:648
@@ -8667,18 +8653,18 @@ msgstr "ユーザーを追加しました。"
 msgid "By %s"
 msgstr "作成者: %s"
 
+#. translators: %s: The current WordPress version number
 #. translators: %s: Plugin version number.
 #. translators: %s: Theme version number.
 #. translators: %s: plugin version number
 #. translators: %s: Plugin version
-#. translators: %s: The current WordPress version number
-#: wp-admin/credits.php:25 wp-admin/includes/class-wp-debug-data.php:789
+#: wp-admin/credits.php:33 wp-admin/includes/class-wp-debug-data.php:789
 #: wp-admin/includes/class-wp-debug-data.php:827
 #: wp-admin/includes/class-wp-debug-data.php:940
 #: wp-admin/includes/class-wp-plugins-list-table.php:825
 #: wp-admin/includes/update.php:210 wp-admin/includes/update.php:240
 #: wp-admin/includes/ajax-actions.php:4182
-#: wp-admin/includes/ajax-actions.php:4225 wp-admin/freedoms.php:35
+#: wp-admin/includes/ajax-actions.php:4225 wp-admin/freedoms.php:47
 #: wp-admin/about.php:32
 msgid "Version %s"
 msgstr "バージョン %s"
@@ -8856,7 +8842,7 @@ msgstr "アップロードしたファイルは HTML フォームで指定され
 msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
 msgstr "アップロードしたファイルは php.ini で定義された upload_max_filesize を超過しています。"
 
-#: wp-admin/credits.php:134
+#: wp-admin/credits.php:145
 msgid "External Libraries"
 msgstr "外部ライブラリ"
 
@@ -8868,30 +8854,34 @@ msgstr "サイトネットワークの設置"
 msgid "Available Tools"
 msgstr "利用可能なツール"
 
-#: wp-admin/credits.php:66
+#: wp-admin/credits.php:76
 msgctxt "Translate this to be the equivalent of English Translators in your language for the credits page Translators section"
 msgid "Translators"
 msgstr "翻訳者"
 
-#: wp-admin/freedoms.php:92
+#. translators: %s: https://wordpress.org/about/license
+#: wp-admin/freedoms.php:126
 msgid "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress license, we don&#8217;t recommend them."
 msgstr "WordPress.org のディレクトリで提供されるすべてのプラグインとテーマは 100%% GPL であるか、あるいは同様のフリーで互換性のあるライセンスとなっているので、そこで安心して<a href=\"%1$s\">プラグイン</a>と<a href=\"%2$s\">テーマ</a>を探すことができます。別のところからプラグインやテーマを手に入れるなら、まず <a href=\"%3$s\">GPL であるかどうかを</a>確認してください。もしそうしたプラグインやテーマが WordPress のライセンスを尊重していないものであるなら、お勧めしません。"
 
-#: wp-admin/freedoms.php:85
+#. translators: %s: https://wordpressfoundation.org/trademark-policy
+#: wp-admin/freedoms.php:117
 msgid "WordPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around WordPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href=\"%s\">check out our trademark guidelines</a> first."
 msgstr ""
 "WordPress はあなたのような人たちが友人に WordPress のことを語るにつれて成長します\n"
 "。WordPress 上やその周りで構築されている何千という事業やサービスがそのユーザとともにその事実を共有します。誰かが WordPress という言葉を広げるたびに私たちはうれしく思います。まずはじめに必ず<a href=\"%s\">商標のガイドラインをよく確認</a>してください。"
 
-#: wp-admin/freedoms.php:58
+#. translators: %s: https://wordpress.org/about/license
+#: wp-admin/freedoms.php:85
 msgid "WordPress is Free and open source software, built by a distributed community of mostly volunteer developers from around the world. WordPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">license</a>, the GPL."
 msgstr "WordPress はフリーかつオープンソースのソフトウェアで、世界中のボランティアの開発者たちの分散型コミュニティによってつくられています。WordPress はその<a href=\"%s\">ライセンス</a>、つまり GPL のおかげですばらしい、世界観が変わるような権利を備えています。"
 
-#: wp-admin/credits.php:125
+#: wp-admin/credits.php:135
 msgid "Project Leaders"
 msgstr "プロジェクトリーダー"
 
-#: wp-admin/credits.php:43
+#. translators: 1: https://wordpress.org/about/, 2: https://make.wordpress.org
+#: wp-admin/credits.php:53
 msgid "WordPress is created by a <a href=\"%1$s\">worldwide team</a> of passionate individuals. <a href=\"%2$s\">Get involved in WordPress</a>."
 msgstr "WordPress は情熱ある個人による<a href=\"%1$s\">世界各地のチーム</a>によって作られています。<a href=\"%2$s\">WordPress に参加しましょう</a>。"
 
@@ -8899,11 +8889,12 @@ msgstr "WordPress は情熱ある個人による<a href=\"%1$s\">世界各地の
 msgid "All Comments"
 msgstr "コメント一覧"
 
-#: wp-admin/credits.php:126
+#. translators: %s: The current WordPress version number
+#: wp-admin/credits.php:137
 msgid "Core Contributors to WordPress %s"
 msgstr "WordPress %s コア貢献者"
 
-#: wp-admin/credits.php:128
+#: wp-admin/credits.php:139
 msgid "Cofounder, Project Lead"
 msgstr "共同創始者、プロジェクトリード"
 
@@ -8912,26 +8903,26 @@ msgctxt "removing-widget"
 msgid "Deactivate"
 msgstr "無効化"
 
-#: wp-admin/credits.php:13 wp-admin/credits.php:29 wp-admin/freedoms.php:39
+#: wp-admin/credits.php:13 wp-admin/credits.php:39 wp-admin/freedoms.php:53
 #: wp-admin/about.php:38
 msgid "Credits"
 msgstr "クレジット"
 
 #. translators: %s: https://make.wordpress.org
-#: wp-admin/credits.php:58
+#: wp-admin/credits.php:68
 msgid "Want to see your name in lights on this page? <a href=\"%s\">Get involved in WordPress</a>."
 msgstr "このページに掲載されてみませんか ? <a href=\"%s\">WordPress に参加しましょう</a>。"
 
-#: wp-admin/credits.php:129
+#: wp-admin/credits.php:140
 msgid "Lead Developer"
 msgstr "リード開発者"
 
-#: wp-admin/credits.php:30 wp-admin/freedoms.php:12 wp-admin/freedoms.php:40
-#: wp-admin/freedoms.php:57 wp-admin/about.php:39
+#: wp-admin/credits.php:40 wp-admin/freedoms.php:12 wp-admin/freedoms.php:54
+#: wp-admin/freedoms.php:81 wp-admin/about.php:39
 msgid "Freedoms"
 msgstr "自由について"
 
-#: wp-admin/freedoms.php:96
+#: wp-admin/freedoms.php:130
 msgid "Don&#8217;t you wish all software came with these freedoms? So do we! For more information, check out the <a href=\"https://www.fsf.org/\">Free Software Foundation</a>."
 msgstr "すべてのソフトウェアにこのような自由があれば、と思いませんか ? 私たちもそう思います ! より詳しい情報については、<a href=\"https://www.fsf.org/\">フリーソフトウェア財団</a>でご確認ください。"
 
@@ -9723,7 +9714,7 @@ msgstr "特定のカテゴリーのみ、特定の月のみの投稿を表示す
 msgid "Search Installed Plugins"
 msgstr "インストールされているプラグインを検索"
 
-#: wp-admin/nav-menus.php:652
+#: wp-admin/nav-menus.php:656
 msgid "Your theme supports one menu. Select which menu you would like to use."
 msgstr "ご利用中のテーマは1個のメニューに対応しています。各位置に表示されるメニューを選んでください。"
 
@@ -10052,7 +10043,7 @@ msgstr "サイトの公開状態"
 msgid "In a few words, explain what this site is about."
 msgstr "このサイトの簡単な説明。"
 
-#: wp-admin/nav-menus.php:888 wp-admin/nav-menus.php:999
+#: wp-admin/nav-menus.php:892 wp-admin/nav-menus.php:1003
 msgid "Save Menu"
 msgstr "メニューを保存"
 
@@ -10596,7 +10587,7 @@ msgstr "編集するテーマを選択:"
 msgid "Edit Themes"
 msgstr "テーマの編集"
 
-#: wp-admin/includes/theme.php:747 wp-admin/themes.php:563
+#: wp-admin/includes/theme.php:752 wp-admin/themes.php:563
 msgid "Tags:"
 msgstr "タグ:"
 
@@ -11181,7 +11172,7 @@ msgstr "マルチサイトのサポートが有効ではありません。"
 msgid "Permalinks"
 msgstr "パーマリンク設定"
 
-#: wp-admin/credits.php:31 wp-admin/freedoms.php:41 wp-admin/about.php:40
+#: wp-admin/credits.php:41 wp-admin/freedoms.php:55 wp-admin/about.php:40
 #: wp-admin/menu.php:281
 msgid "Privacy"
 msgstr "プライバシー"
@@ -13193,7 +13184,7 @@ msgstr "ヘッダーを更新しました。<a href=\"%s\">サイトを表示</a
 msgid "Custom Header"
 msgstr "カスタムヘッダー"
 
-#: wp-admin/includes/template.php:2289 wp-admin/nav-menus.php:730
+#: wp-admin/includes/template.php:2289 wp-admin/nav-menus.php:734
 #: wp-admin/options.php:364
 msgid "Save Changes"
 msgstr "変更を保存"

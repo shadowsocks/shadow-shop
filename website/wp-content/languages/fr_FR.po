@@ -51,6 +51,30 @@ msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
 
+#. translators: closing curly single quote
+#: wp-includes/formatting.php:113
+msgctxt "closing curly single quote"
+msgid "&#8217;"
+msgstr "&rsquo;"
+
+#. translators: opening curly single quote
+#: wp-includes/formatting.php:111
+msgctxt "opening curly single quote"
+msgid "&#8216;"
+msgstr "&lsquo;"
+
+#. translators: closing curly double quote
+#: wp-includes/formatting.php:100
+msgctxt "closing curly double quote"
+msgid "&#8221;"
+msgstr " »"
+
+#. translators: opening curly double quote
+#: wp-includes/formatting.php:98 wp-includes/formatting.php:5237
+msgctxt "opening curly double quote"
+msgid "&#8220;"
+msgstr "« "
+
 #. translators: $thousands_sep argument for
 #. https://secure.php.net/number_format, default is ,
 #: wp-includes/class-wp-locale.php:200
@@ -12578,18 +12602,6 @@ msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#. translators: closing curly single quote
-#: wp-includes/formatting.php:113
-msgctxt "closing curly single quote"
-msgid "&#8217;"
-msgstr "&rsquo;"
-
-#. translators: opening curly single quote
-#: wp-includes/formatting.php:111
-msgctxt "opening curly single quote"
-msgid "&#8216;"
-msgstr "&lsquo;"
-
 #. translators: double prime, for example in 9" (nine inches)
 #: wp-includes/formatting.php:108
 msgctxt "double prime"
@@ -12607,18 +12619,6 @@ msgstr "&prime;"
 msgctxt "apostrophe"
 msgid "&#8217;"
 msgstr "&rsquo;"
-
-#. translators: closing curly double quote
-#: wp-includes/formatting.php:100
-msgctxt "closing curly double quote"
-msgid "&#8221;"
-msgstr " »"
-
-#. translators: opening curly double quote
-#: wp-includes/formatting.php:98 wp-includes/formatting.php:5237
-msgctxt "opening curly double quote"
-msgid "&#8220;"
-msgstr "« "
 
 #: wp-signup.php:198
 msgid "Allow search engines to index this site."

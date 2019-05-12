@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-08 16:29:54+0000\n"
+"PO-Revision-Date: 2019-05-11 13:27:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +36,7 @@ msgstr " <a href=\"%1$s\">Vérifiez l’état de votre site</a>, et <a href=\"%2
 #. translators: 1: link to the WordPress 5.1 release post
 #: wp-admin/about.php:60
 msgid "Building on <a href=\"%1$s\">the Site Health features introduced in 5.1</a>, this release adds two new pages to help debug common configuration issues. It also adds space where developers can include debugging information for site maintainers."
-msgstr "Construites à partir de <a href=\"%1$s\">les fonctionnalités de santé du site introduites par la version 5.1</a>, cette version ajoute deux nouveaux écrans pour vous aider à résoudre les problèmes de configuration courants. Elle ajoute également un espace où les développeuses et les développeurs peuvent inclure des informations de débogage pour les personnes qui assurent la maintenance du site."
+msgstr "Construite à partir <a href=\"%1$s\">des fonctionnalités de santé du site introduites par la version 5.1</a>, cette version ajoute deux nouveaux écrans pour vous aider à résoudre les problèmes de configuration courants. Elle ajoute également un espace où les développeuses et les développeurs peuvent inclure des informations de débogage pour les personnes qui assurent la maintenance du site."
 
 #: wp-admin/about.php:141
 msgid "With the addition of webpack and Babel configurations in the @wordpress/scripts package, developers won&#8217;t have to worry about setting up complex build tools to write modern JavaScript."
@@ -177,7 +177,7 @@ msgstr "Le serveur SQL est un élément obligatoire de l’architecture utilisé
 
 #: wp-admin/includes/class-wp-site-health.php:741
 msgid "PHP modules perform most of the tasks on the server that make your site run. Any changes to these must be made by your server administrator."
-msgstr "Les modules PHP réalisent la plupart des tâches sur le serveur qui fait fonctionner votre site. Toute modification les concernant doit être réalisé par la personne chargée de l’administration de votre serveur."
+msgstr "Les modules PHP réalisent la plupart des tâches sur le serveur qui fait fonctionner votre site. Toute modification les concernant doit être réalisée par la personne chargée de l’administration de votre serveur."
 
 #: wp-admin/includes/class-wp-site-health.php:652
 #: wp-admin/includes/dashboard.php:1631

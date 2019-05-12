@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-10 13:57:23+0000\n"
+"PO-Revision-Date: 2019-05-11 20:44:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -241,6 +241,10 @@ msgstr "Показывать контекст (рубрики или метки)
 #: extensions/blocks/related-posts/edit.js:217
 msgid "Number of posts"
 msgstr "Число записей"
+
+#: _inc/blocks/editor-beta.js:24
+msgid "Read more about memberships and related fees."
+msgstr "Узнайте больше о членстве и относящихся взносах."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/markdown/index.js:55
@@ -559,6 +563,46 @@ msgid "Use regular characters and punctuation to style text, links, and lists."
 msgstr "Используйте обычные символы и пунктуацию для стилизации текста, ссылок и списков."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/slideshow/index.js:83
+msgid "Add an interactive slideshow."
+msgstr "Добавить интерактивное слайдшоу."
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/business-hours/index.js:33
+msgctxt "block search term"
+msgid "opening hours"
+msgstr "часы открытия"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/business-hours/index.js:34
+msgctxt "block search term"
+msgid "closing time"
+msgstr "время закрытия"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/business-hours/index.js:35
+msgctxt "block search term"
+msgid "schedule"
+msgstr "график работы"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/repeat-visitor/index.js:43
+msgid "Repeat Visitor"
+msgstr "Вернувшийся посетитель"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Visit count threshold"
+msgstr "Пороговое значение количества посетителей"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Show before threshold"
+msgstr "Показывать перед пороговым значением"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Show after threshold"
+msgstr "Показывать после порогового значения"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/simple-payments/index.js:50
 #: extensions/blocks/membership-button/index.js:30
 msgctxt "block search term"
@@ -614,6 +658,14 @@ msgid "Support reference"
 msgstr "Ссылки поддержки"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Enter the email address associated with your PayPal account. Don’t have an account?"
+msgstr "Введите адрес email ассоциированый с учетной записью PayPal. Нет учетной записи?"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Create one on PayPal"
+msgstr "Создайте её на PayPal"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "Please add a brief title so that people know what they’re paying for."
 msgstr "Введите короткий заголовок, чтобы люди знали за что платят."
 
@@ -634,6 +686,10 @@ msgid "Allow people to buy more than one item at a time"
 msgstr "Разрешить покупать больше одного предмета за раз"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "Describe your item in a few words"
+msgstr "Опишите ваш товар в паре слов"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "If you’re selling something, you need a price tag. Add yours here."
 msgstr "Если вы продаете что-либо, вам нужен тег цены. Добавьте его тут."
 
@@ -643,6 +699,10 @@ msgid_plural "The price cannot have more than %d decimal places."
 msgstr[0] "Цена не может содержать более %d десятичной позиции"
 msgstr[1] "Цена не может содержать более %d десятичных позиций"
 msgstr[2] "Цена не может содержать более %d десятичных позиций"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+msgid "We know every penny counts, but prices in this currency can’t contain decimal values."
+msgstr "Копейка рубль бережет, но цены в этой валюте не могут содержать нецелые значения."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "Your price is negative — enter a positive number so people can pay the right amount."
@@ -1010,6 +1070,16 @@ msgid "%s are not a valid email address."
 msgstr "%s это не верный адрес эл.почты."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-form/components/jetpack-field-multiple.js:103
+msgid "Add option"
+msgstr "Добавить вариант"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-form/components/jetpack-field-multiple.js:100
+msgid "Insert option"
+msgstr "Вставить вариант"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/tiled-gallery/index.js:140
 msgctxt "block search term"
 msgid "photos"
@@ -1315,6 +1385,66 @@ msgid_plural "%d characters remaining"
 msgstr[0] "Остался %d символ"
 msgstr[1] "Осталось %d символа"
 msgstr[2] "Осталось %d символов"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-info/index.js:37
+msgctxt "block search term"
+msgid "phone"
+msgstr "телефон"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-info/index.js:38
+msgctxt "block search term"
+msgid "address"
+msgstr "адрес"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/tiled-gallery/filter-toolbar.js:76
+msgid "Pick an image filter"
+msgstr "Выберите фильтр изображений"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/tiled-gallery/filter-toolbar.js:16
+msgctxt "image style"
+msgid "Original"
+msgstr "Оригинальный"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/tiled-gallery/filter-toolbar.js:27
+msgctxt "image style"
+msgid "Black and White"
+msgstr "Черный и белый"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/tiled-gallery/filter-toolbar.js:60
+msgctxt "image style"
+msgid "Clarendon"
+msgstr "Clarendon"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/tiled-gallery/filter-toolbar.js:71
+msgctxt "image style"
+msgid "Gingham"
+msgstr "Gingham"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-info/address/index.js:58
+msgctxt "block search term"
+msgid "place"
+msgstr "место"
+
+#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/map/settings.js:30
+#: extensions/blocks/contact-info/address/index.js:56
+msgctxt "block search term"
+msgid "location"
+msgstr "расположение"
+
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: extensions/blocks/contact-info/address/index.js:54
+msgid "Lets you add a physical address with Schema markup."
+msgstr "Позволяет добавить почтовый адрес с синтаксической разметкой."
 
 #: jetpack.php:86
 msgid "Jetpack requires a more recent version of WordPress and has been paused. Please update WordPress to continue enjoying Jetpack."
@@ -1633,6 +1763,14 @@ msgstr "<a href=\"%s\">Обратитесь к нашей команде сча�
 #: _inc/lib/debugger/class-jetpack-debugger.php:301
 msgid "Advanced Debug Results"
 msgstr "Расширенные результаты отладки"
+
+#: _inc/lib/debugger/class-jetpack-debug-data.php:376
+msgid "No master user set."
+msgstr "Владелец Jetpack не задан."
+
+#: _inc/lib/debugger/class-jetpack-debug-data.php:382
+msgid "Master user no longer exists. Please disconnect and reconnect Jetpack."
+msgstr "Пользователь владелец Jetpack более не существует. Вам следует отключить и переподключить Jetpack."
 
 #: _inc/lib/debugger/class-jetpack-cxn-test-base.php:395
 msgid "There was another problem:"
@@ -2102,6 +2240,10 @@ msgstr "Свойство \"%s\" должно быть переопределен
 #: _inc/lib/class.core-rest-api-endpoints.php:586
 msgid "Site is under construction and cannot be verified"
 msgstr "Этот сайт в разработке и не может быть проверен"
+
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:106
+msgid "Creating product has failed."
+msgstr "Создание товара не удалось."
 
 #: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:177
 #: _inc/lib/core-api/wpcom-endpoints/publicize-services.php:150

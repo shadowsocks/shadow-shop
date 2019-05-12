@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-07 09:47:04+0000\n"
+"PO-Revision-Date: 2019-05-11 20:51:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,6 +50,30 @@ msgstr "on"
 msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
+
+#. translators: closing curly single quote
+#: wp-includes/formatting.php:113
+msgctxt "closing curly single quote"
+msgid "&#8217;"
+msgstr "&#8217;"
+
+#. translators: opening curly single quote
+#: wp-includes/formatting.php:111
+msgctxt "opening curly single quote"
+msgid "&#8216;"
+msgstr "&#8216;"
+
+#. translators: closing curly double quote
+#: wp-includes/formatting.php:100
+msgctxt "closing curly double quote"
+msgid "&#8221;"
+msgstr "&#8221;"
+
+#. translators: opening curly double quote
+#: wp-includes/formatting.php:98 wp-includes/formatting.php:5237
+msgctxt "opening curly double quote"
+msgid "&#8220;"
+msgstr "&#8220;"
 
 #. translators: $thousands_sep argument for
 #. https://secure.php.net/number_format, default is ,
@@ -498,7 +522,7 @@ msgstr "エラー詳細"
 msgid "A recovery link was already sent %1$s ago. Please wait another %2$s before requesting a new email."
 msgstr "リカバリーリンクは %1$s に送信されました。新しいメール送信のリクエスを送る前に %2$s お待ちください。"
 
-#: wp-includes/class-wp-recovery-mode-email-service.php:65
+#: wp-login.php:429 wp-includes/class-wp-recovery-mode-email-service.php:65
 msgid "The email could not be sent. Possible reason: your host may have disabled the mail() function."
 msgstr "メールを送ることができませんでした。ホスティングサービス上で mail() 関数が無効になっている可能性があります。"
 
@@ -11614,10 +11638,6 @@ msgstr "お使いのデバイス上のブラウザーからはファイルをア
 msgid "<strong>ERROR</strong>: Couldn&#8217;t register you&hellip; please contact the <a href=\"mailto:%s\">webmaster</a> !"
 msgstr "<strong>エラー</strong>: 登録できませんでした。<a href=\"mailto:%s\">管理者にご連絡</a>ください。"
 
-#: wp-login.php:429
-msgid "Possible reason: your host may have disabled the mail() function."
-msgstr "ホスティングサービス上で mail() 関数が無効になっている可能性があります。"
-
 #: wp-includes/post-template.php:298
 msgid "(more&hellip;)"
 msgstr "(さらに&hellip;)"
@@ -12546,18 +12566,6 @@ msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y年"
 
-#. translators: closing curly single quote
-#: wp-includes/formatting.php:113
-msgctxt "closing curly single quote"
-msgid "&#8217;"
-msgstr "&#8217;"
-
-#. translators: opening curly single quote
-#: wp-includes/formatting.php:111
-msgctxt "opening curly single quote"
-msgid "&#8216;"
-msgstr "&#8216;"
-
 #. translators: double prime, for example in 9" (nine inches)
 #: wp-includes/formatting.php:108
 msgctxt "double prime"
@@ -12575,18 +12583,6 @@ msgstr "&#8242;"
 msgctxt "apostrophe"
 msgid "&#8217;"
 msgstr "&#8217;"
-
-#. translators: closing curly double quote
-#: wp-includes/formatting.php:100
-msgctxt "closing curly double quote"
-msgid "&#8221;"
-msgstr "&#8221;"
-
-#. translators: opening curly double quote
-#: wp-includes/formatting.php:98 wp-includes/formatting.php:5237
-msgctxt "opening curly double quote"
-msgid "&#8220;"
-msgstr "&#8220;"
 
 #: wp-signup.php:198
 msgid "Allow search engines to index this site."
@@ -12954,7 +12950,7 @@ msgstr "uninstall フックでは静的なクラスメソッドまたは関数�
 
 #: wp-includes/post.php:3289
 msgid "Passing an integer number of posts is deprecated. Pass an array of arguments instead."
-msgstr "投稿の整数値を渡す方法は非推奨になっています。代わりに引数の配列を渡してください。"
+msgstr "投稿の数を整数値で渡す方法は非推奨になっています。代わりに引数には配列を渡してください。"
 
 #: wp-includes/post-formats.php:105
 msgctxt "Post format"
@@ -14067,10 +14063,6 @@ msgstr "<strong>エラー</strong>: メールアドレスを入力してくだ�
 #: wp-includes/user.php:3621
 msgid "Invalid key."
 msgstr "無効なキーです。"
-
-#: wp-login.php:429
-msgid "The email could not be sent."
-msgstr "メールを送信できませんでした。"
 
 #. translators: Password reset notification email subject. %s: Site title
 #: wp-login.php:399
