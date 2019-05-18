@@ -128,6 +128,7 @@ else
     if [ "$COMPOSE_VERSION_OK" = "no" ]
     then
         /bin/echo -e "${RED}Your docker-compose version is too low. Please install or update to the latest version.${NC}"
+        exit 8
     fi
 fi
 
