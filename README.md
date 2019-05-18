@@ -113,14 +113,17 @@ The `Encryption Method` attribute of a product specifies the default encryption 
 Management of shadowsocks related resources can be done from the `Shadow Shop` menu of the admin panel. 
 
 1. Servers
+
     A `server` is a remote machine acting as a shadowsocks exit point. A `server` may have more than one `node` (see below). Admin has to provide its IP address or domain name when adding a `server`. Admin may add, edit, and delete a `server`. Note that a `server` cannot be deleted if a `node` has been created using this `server`. Admin has to delete all its `nodes` before successfully deleting the `server`.
 
 2. Nodes
+
     A `node` is a virtual shadowsocks exit point. The difference between `server` and `node` is that a `server` is an indpendent machine where a `node` is a logical machine that relies on `server`. There can be multiple `nodes` residing on a single `server`. From users' perspective, `nodes` using the same `server` are different shadowsocks exit points. Before adding a `node`, the underlying `server` has to be added into the system first. When adding a new `node`, the admin has to select a server, give it a descriptive name, and provide its managing port, managing password, and a range of port numbers to be used in a form of lower and upper bound of port numbers. Admin may also edit and delete a `node`. Note that a `node` cannot be deleted if an `account` has been created using this `node`. Admin has to delete all its `accounts` before successfully deleting the `node`.
 
     Shadow Shop uses [shadowsocks-restful-api](https://github.com/shadowsocks/shadowsocks-restful-api) to manage nodes. Install it on every server acting as a node. The managing port number and managing password chosen for [shadowsocks-restful-api](https://github.com/shadowsocks/shadowsocks-restful-api) for a node have to be consistent with the managing port number and managing password fields for the node in Shadow Shop, so that Shadow Shop will be able to control the node. Otherwise, Shadow Shop will not be able to manage the node. 
 
 3. Accounts
+
     An `account` is a shadowsocks account. The admin may manually add a new `account` by selecting a user, a node, the life span of this account, the ecryption method to be used by this account, and inputing the maximum traffic to be allocated to this account.
 
 ## Orders
