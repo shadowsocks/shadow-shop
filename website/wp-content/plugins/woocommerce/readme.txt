@@ -2,8 +2,8 @@
 Contributors: automattic, mikejolley, jameskoster, claudiosanches, claudiulodro, kloon, rodrigosprimo, jshreve, coderkevin
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, downloadable, downloads, payments, paypal, storefront, stripe, woo commerce, woo
 Requires at least: 4.7
-Tested up to: 5.1
-Stable tag: 3.6.2
+Tested up to: 5.2
+Stable tag: 3.6.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,7 +70,7 @@ There are also extensions available to add [delivery and shipping options](https
 
 = Design your store with themes and blocks =
 
-WooCommerce store design starts with a theme of your choice. There are hundreds of free and paid themes available, including [Storefront](https://woocommerce.com/storefront/?utm_source=wp%20org%20repo%20listing&utm_content=3.6) by Automattic -- it's free to all stores and you can choose to have it installed for you during the hguided setup.
+WooCommerce store design starts with a theme of your choice. There are hundreds of free and paid themes available, including [Storefront](https://woocommerce.com/storefront/?utm_source=wp%20org%20repo%20listing&utm_content=3.6) by Automattic -- it's free to all stores and you can choose to have it installed for you during the guided setup. 
 
 Storefront offers deep WooCommerce integration and prioritizes speed and uptime. You can add your brand and define your style by customizing Storefront yourself or adding one of several industry-themed [Storefront child themes](https://woocommerce.com/product-category/themes/storefront-child-theme-themes/?utm_source=wp%20org%20repo%20listing&utm_content=3.6).
 
@@ -114,7 +114,7 @@ There are 80+ [WooCommerce Meetups](https://woocommerce.com/woocommerce/meetups/
 
 If you’re interested in contributing to WooCommerce we’ve got more than 350 contributors, and there’s always room for more. Head to the [WooCommerce GitHub Repository](https://github.com/woocommerce/woocommerce?utm_source=wp%20org%20repo%20listing&utm_content=3.6) to find out how you can pitch in.
 
-WooCommerce is currently 100% translated into 24 languages, including Danish, Ukranian, and Persian. If you’re interested in helping to localize WooCommerce by adding your local language, visit [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/woocommerce?utm_source=wp%20org%20repo%20listing&utm_content=3.6).
+WooCommerce is currently 100% translated into 24 languages, including Danish, Ukrainian, and Persian. If you’re interested in helping to localize WooCommerce by adding your local language, visit [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/woocommerce?utm_source=wp%20org%20repo%20listing&utm_content=3.6).
 
 == Frequently Asked Questions ==
 
@@ -163,8 +163,8 @@ Visit the [WooCommerce server requirements documentation](https://docs.woocommer
 = Automatic installation =
 
 Automatic installation is the easiest option -- WordPress will handles the file transfer, and you won’t need to leave your web browser. To do an automatic install of WooCommerce, log in to your WordPress dashboard, navigate to the Plugins menu, and click “Add New.”
-
-In the search field type “WooCommerce,” then click “Search Plugins.” Once you’ve found us,  you can view details about it such as the point release, rating, and description. Most importantly of course, you can install it by! Clicki “Install Now,” and WordPress will take it from there.
+ 
+In the search field type “WooCommerce,” then click “Search Plugins.” Once you’ve found us,  you can view details about it such as the point release, rating, and description. Most importantly of course, you can install it by! Click “Install Now,” and WordPress will take it from there.
 
 = Manual installation =
 
@@ -187,6 +187,40 @@ INTERESTED IN DEVELOPMENT?
 [Browse the code](https://plugins.trac.wordpress.org/browser/woocommerce/), check out the [SVN repository](https://plugins.svn.wordpress.org/woocommerce/), or subscribe to the [development log](https://plugins.trac.wordpress.org/log/woocommerce/) by [RSS](https://plugins.trac.wordpress.org/log/woocommerce/?limit=100&mode=stop_on_copy&format=rss).
 
 == Changelog ==
+
+= 3.6.3 - 2019-05-16 =
+* Fix - State not required for Serbia. #23430
+* Fix - # symbol in product category name broke product export. #23454
+* Fix - XML export caused fatal errors due to Action Scheduler adding invalid characters. #23456
+* Fix - Invalid password messages when password contains backslashes. #23499
+* Fix - Dismiss button in WC admin notices "legacy_shipping" and "no_shipping_methods" were not clickable. #23517
+* Fix - WC $wpdb->tables not defined early enough. #23529
+* Fix - Tracks JS not printed on last page of OBW. #23519
+* Fix - Error in the logic used to build fields for external products when the query string contained full-stops, pluses or spaces in the values of the parameters. #23535
+* Fix - UI page width issue on OBW. #23526
+* Fix - Customer address not auto populated on checkout after registering and filling in address prior. #23528
+* Fix - Available WooCommerce extension updates not showing in System Status report. #23601
+* Fix - wc_change_get_terms_defaults throwing undefined index notices. #23611
+* Fix - System Status report alway showing checkmark next to Connected to WooCommerce.com. #23617
+* Fix - State field never populated when loading customer address on order via wp-admin. #23615
+* Fix - Order sorting not working in wp-admin when Yoast SEO active. #23590
+* Fix - Attribute ordering not working in product edit screen. #23625
+* Fix - Tracks reporting incorrect order totals due to refunds being excluded in calculation. #23671
+* Fix - Reload state options when creating a new order in WP-Admin and changing country. #23602
+* Fix - New webhooks not showing in the webhook admin list page when you have object caching enabled. #23713
+* Fix - Missing coupon expiry dates, restore coupons expiry_date backward compatibility. #23714
+* Fix - Bulk stock update could result in all products set to out of stock, change ensures consistency between db and Product instance in memory. #23534
+* Fix - Dashboard stats widget including unpublished products in out of stock and low in stock counts. #23734
+* Fix - PayPal payment not captured when you transition an order from a custom order status to completed or processing. #23634
+* Tweak - Confirm before saving empty list of countries to sell to in settings. #23597
+* Tweak - Change default WC API version used when creating webhooks to the latest WC API version. #23515
+* Tweak - Report a bug button now points to the new issue template in GitHub. #23580
+* Tweak - Do not display taxes in totals columns when taxes not enabled. #23579
+* Tweak - WC WP-CLI upgrade routine mimics wp-admin upgrade when no updates found by setting DB version to current version. #23666
+* Tweak - Template caching now cache based on WC_VERSION to avoid issues with symlinked plugin folders. #23546
+* Tweak - OBW payment gateway selection defaults. #23690
+* Localization - Add Serbia locale defaults. #23428
+* Localization - Add address format for Serbia. #23429
 
 = 3.6.2 - 2019-04-24 =
 * Fix - [3.6.x] Fix CSS classname conflict with themes due to missing product object global. #23377

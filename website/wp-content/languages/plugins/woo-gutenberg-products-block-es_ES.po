@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce Blocks - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-18 15:36:29+0000\n"
+"PO-Revision-Date: 2019-05-14 19:14:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WooCommerce Blocks - Stable (latest release)\n"
+
+#: assets/js/blocks/featured-product/block.js:166
+msgid "Focal Point Picker"
+msgstr "Selector de punto focal"
 
 #: assets/js/components/grid-content-control/index.js:40
 msgid "Product rating is visible."
@@ -96,11 +100,11 @@ msgstr "Productos por atributo"
 msgid "Showing Products by Attribute block preview."
 msgstr "Viendo la vista previa del bloque de productos por atributo."
 
-#: assets/js/blocks/featured-product/block.js:136
+#: assets/js/blocks/featured-product/block.js:141
 msgid "Show price"
 msgstr "Mostrar precio"
 
-#: assets/js/blocks/featured-product/block.js:131
+#: assets/js/blocks/featured-product/block.js:136
 msgid "Show description"
 msgstr "Mostrar descipción"
 
@@ -165,37 +169,37 @@ msgstr "Productos recientes"
 msgid "Visually highlight a product and encourage prompt action."
 msgstr "Destaca visualmente un producto y anima a llevar a cabo una acción."
 
-#: assets/js/blocks/featured-product/block.js:327
+#: assets/js/blocks/featured-product/block.js:349
 msgid "No product is selected."
 msgstr "No se ha seleccionado ningún producto."
 
-#: assets/js/blocks/featured-product/block.js:257
+#: assets/js/blocks/featured-product/block.js:275
 msgid "Edit media"
 msgstr "Editar medios"
 
-#: assets/js/blocks/featured-product/block.js:182
+#: assets/js/blocks/featured-product/block.js:195
 msgid "Visually highlight a product and encourage prompt action"
 msgstr "Destaca visualmente un producto y anima a llevar a cabo una acción"
 
-#: assets/js/blocks/featured-product/block.js:179
-#: assets/js/blocks/featured-product/block.js:322
+#: assets/js/blocks/featured-product/block.js:192
+#: assets/js/blocks/featured-product/block.js:344
 #: assets/js/blocks/featured-product/index.js:19
 msgid "Featured Product"
 msgstr "Producto destacado"
 
-#: assets/js/blocks/featured-product/block.js:169
+#: assets/js/blocks/featured-product/block.js:182
 msgid "Showing Featured Product block preview."
 msgstr "Mostrando la vista previa del bloque de producto destacado."
 
-#: assets/js/blocks/featured-product/block.js:152
+#: assets/js/blocks/featured-product/block.js:157
 msgid "Background Opacity"
 msgstr "Opacidad del fondo"
 
-#: assets/js/blocks/featured-product/block.js:147
+#: assets/js/blocks/featured-product/block.js:152
 msgid "Overlay Color"
 msgstr "Color de superposición"
 
-#: assets/js/blocks/featured-product/block.js:142
+#: assets/js/blocks/featured-product/block.js:147
 msgid "Overlay"
 msgstr "Superposición"
 
@@ -203,10 +207,10 @@ msgstr "Superposición"
 #: assets/js/blocks/product-top-rated/block.js:94
 #: assets/js/blocks/handpicked-products/block.js:98
 #: assets/js/blocks/product-category/block.js:119
-#: assets/js/blocks/product-best-sellers/block.js:92
-#: assets/js/blocks/featured-product/block.js:129
-#: assets/js/blocks/product-on-sale/block.js:97
+#: assets/js/blocks/featured-product/block.js:134
 #: assets/js/blocks/product-new/block.js:94
+#: assets/js/blocks/product-on-sale/block.js:97
+#: assets/js/blocks/product-best-sellers/block.js:92
 msgid "Content"
 msgstr "Contenido"
 
@@ -216,9 +220,9 @@ msgstr "Muestra una cuadrícula de tus productos más vendidos de todos los tiem
 
 #: assets/js/blocks/products-by-attribute/block.js:251
 #: assets/js/blocks/product-top-rated/block.js:156
-#: assets/js/blocks/product-best-sellers/block.js:157
-#: assets/js/blocks/product-on-sale/block.js:168
 #: assets/js/blocks/product-new/block.js:156
+#: assets/js/blocks/product-on-sale/block.js:168
+#: assets/js/blocks/product-best-sellers/block.js:157
 msgid "No products found."
 msgstr "No se han encontrado productos."
 
@@ -228,9 +232,9 @@ msgid "Best Selling Products"
 msgstr "Productos más vendidos"
 
 #: assets/js/blocks/product-top-rated/block.js:103
-#: assets/js/blocks/product-best-sellers/block.js:101
-#: assets/js/blocks/product-on-sale/block.js:115
 #: assets/js/blocks/product-new/block.js:103
+#: assets/js/blocks/product-on-sale/block.js:115
+#: assets/js/blocks/product-best-sellers/block.js:101
 msgid "Filter by Product Category"
 msgstr "Filtrar por categoría de producto"
 
@@ -260,7 +264,7 @@ msgstr "Atributos de producto"
 msgid "Clear all product attributes"
 msgstr "Vaciar todos los atributos de producto"
 
-#: assets/js/components/product-control/index.js:46
+#: assets/js/components/product-control/index.js:58
 msgid "Search for a product to display"
 msgstr "Buscar un producto a mostrar"
 
@@ -281,34 +285,34 @@ msgstr "Elige al menos dos categorías para usar este ajuste."
 msgid "Display products matching"
 msgstr "Muestra productos coincidentes"
 
-#: assets/js/components/products-control/index.js:62
-#: assets/js/components/product-control/index.js:50
+#: assets/js/components/products-control/index.js:74
+#: assets/js/components/product-control/index.js:62
 msgid "Product search results updated."
 msgstr "Actualización de los resultados de la búsqueda de productos."
 
-#: assets/js/components/products-control/index.js:54
+#: assets/js/components/products-control/index.js:66
 msgid "%d product selected"
 msgid_plural "%d products selected"
 msgstr[0] "%d producto seleccionado"
 msgstr[1] "%d productos seleccionados"
 
-#: assets/js/components/products-control/index.js:44
-#: assets/js/components/product-control/index.js:42
+#: assets/js/components/products-control/index.js:56
+#: assets/js/components/product-control/index.js:54
 msgid "Your store doesn't have any products."
 msgstr "Tu tienda no tiene ningún producto,"
 
-#: assets/js/components/products-control/index.js:42
+#: assets/js/components/products-control/index.js:54
 msgid "Clear all products"
 msgstr "Vaciar todos los productos"
 
 #. Translators: %1$s is the install command, %2$s is the build command, %3$s is
 #. the watch command.
-#: woocommerce-gutenberg-products-block.php:48
+#: woocommerce-gutenberg-products-block.php:50
 msgid "WooCommerce Blocks development mode requires files to be built. From the plugin directory, run %1$s to install dependencies, %2$s to build the files or %3$s to build the files and watch for changes."
 msgstr "El modo de desarrollo de WooCommerce Blocks necesita que se creen archivos. Desde el directorio de plugins, ejecuta %1$s para instalar dependencias, %2$s para crear los archivos o %3$s para crear los archivos y estar atento a los cambios."
 
-#: assets/js/blocks/featured-product/block.js:307
-#: assets/js/blocks/featured-product/index.js:98
+#: assets/js/blocks/featured-product/block.js:326
+#: assets/js/blocks/featured-product/index.js:105
 msgid "Shop now"
 msgstr "Comprar ahora"
 
@@ -320,15 +324,15 @@ msgstr "Categoría de productos"
 msgid "Display a grid of products from your selected categories."
 msgstr "Muestra una cuadrícula de productos de la categorías que elijas."
 
-#: assets/php/class-wgpb-block-library.php:228
+#: assets/php/class-wgpb-block-library.php:238
 #: assets/js/blocks/products-by-attribute/index.js:21
 #: assets/js/blocks/product-top-rated/index.js:22
 #: assets/js/blocks/handpicked-products/index.js:21
 #: assets/js/blocks/product-category/index.js:25
-#: assets/js/blocks/product-best-sellers/index.js:22
 #: assets/js/blocks/featured-product/index.js:22
-#: assets/js/blocks/product-on-sale/index.js:22
 #: assets/js/blocks/product-new/index.js:22
+#: assets/js/blocks/product-on-sale/index.js:22
+#: assets/js/blocks/product-best-sellers/index.js:22
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
@@ -363,13 +367,13 @@ msgstr "Ordenar productos por"
 msgid "Order By"
 msgstr "Ordernar por"
 
-#: assets/js/components/products-control/index.js:48
+#: assets/js/components/products-control/index.js:60
 msgid "Search for products to display"
 msgstr "Busca productos a mostrar"
 
-#: assets/js/components/products-control/index.js:43
-#: assets/js/components/product-control/index.js:41
 #: assets/js/blocks/handpicked-products/block.js:116
+#: assets/js/components/products-control/index.js:55
+#: assets/js/components/product-control/index.js:53
 msgid "Products"
 msgstr "Productos"
 
@@ -383,9 +387,9 @@ msgstr "Editar"
 #: assets/js/blocks/product-top-rated/block.js:84
 #: assets/js/blocks/handpicked-products/block.js:86
 #: assets/js/blocks/product-category/block.js:109
-#: assets/js/blocks/product-best-sellers/block.js:82
-#: assets/js/blocks/product-on-sale/block.js:87
 #: assets/js/blocks/product-new/block.js:84
+#: assets/js/blocks/product-on-sale/block.js:87
+#: assets/js/blocks/product-best-sellers/block.js:82
 msgid "Layout"
 msgstr "Diseño"
 
@@ -417,15 +421,15 @@ msgstr "Precio - de menor a mayor"
 msgid "Newness - newest first"
 msgstr "Novedad - primero los más novedosos"
 
-#: assets/js/components/grid-layout-control/index.js:17
 #: assets/js/blocks/handpicked-products/block.js:90
+#: assets/js/components/grid-layout-control/index.js:17
 msgid "Columns"
 msgstr "Columnas"
 
 #: assets/js/blocks/products-by-attribute/block.js:194
 #: assets/js/blocks/handpicked-products/block.js:162
 #: assets/js/blocks/product-category/block.js:175
-#: assets/js/blocks/featured-product/block.js:195
+#: assets/js/blocks/featured-product/block.js:208
 msgid "Done"
 msgstr "Hecho"
 

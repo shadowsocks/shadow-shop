@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-09 15:59:05+0000\n"
+"PO-Revision-Date: 2019-05-15 08:54:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -227,6 +227,14 @@ msgstr "목록 보기"
 #: extensions/blocks/related-posts/edit.js:150
 msgid "Grid View"
 msgstr "그리드 보기"
+
+#: _inc/blocks/editor-beta.js:24
+msgid "Read more about memberships and related fees."
+msgstr "멤버십 및 관련 수수료에 대해 자세히 알아보세요."
+
+#: _inc/blocks/editor-beta.js:24
+msgid "Connect to Stripe or set up an account"
+msgstr "Stripe에 연결하거나 계정을 설정하세요."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/markdown/index.js:55
@@ -555,8 +563,8 @@ msgid "Are you sure you wish to leave this page?"
 msgstr "이 페이지에서 나가시겠습니까?"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/simple-payments/index.js:50
 #: extensions/blocks/membership-button/index.js:30
+#: extensions/blocks/simple-payments/index.js:50
 msgctxt "block search term"
 msgid "sell"
 msgstr "팔기"
@@ -904,10 +912,10 @@ msgid "Write option…"
 msgstr "옵션 쓰기…"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/components/jetpack-field-checkbox.js:50
+#: extensions/blocks/contact-form/components/jetpack-field.js:52
 #: extensions/blocks/contact-form/components/jetpack-field-textarea.js:49
 #: extensions/blocks/contact-form/components/jetpack-field-multiple.js:111
-#: extensions/blocks/contact-form/components/jetpack-field.js:52
+#: extensions/blocks/contact-form/components/jetpack-field-checkbox.js:50
 msgid "ID"
 msgstr "ID"
 
@@ -917,8 +925,8 @@ msgid "You can enter multiple email addresses separated by commas."
 msgstr "여러 개의 이메일 주소를 쉼표로 구분하여 입력할 수 있습니다."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/components/jetpack-field-textarea.js:44
 #: extensions/blocks/contact-form/components/jetpack-field.js:47
+#: extensions/blocks/contact-form/components/jetpack-field-textarea.js:44
 msgid "Default Value"
 msgstr "기본값"
 
@@ -928,16 +936,16 @@ msgid "Required"
 msgstr "필수 항목"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/components/jetpack-field-checkbox.js:43
+#: extensions/blocks/contact-form/components/jetpack-field.js:45
 #: extensions/blocks/contact-form/components/jetpack-field-textarea.js:42
 #: extensions/blocks/contact-form/components/jetpack-field-multiple.js:109
-#: extensions/blocks/contact-form/components/jetpack-field.js:45
+#: extensions/blocks/contact-form/components/jetpack-field-checkbox.js:43
 msgid "Field Settings"
 msgstr "필드 설정"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/components/jetpack-field-textarea.js:38
 #: extensions/blocks/contact-form/components/jetpack-field.js:41
+#: extensions/blocks/contact-form/components/jetpack-field-textarea.js:38
 msgid "Set the placeholder text"
 msgstr "플레이스홀더 텍스트 설정"
 
@@ -992,8 +1000,8 @@ msgid "name@example.com"
 msgstr "name@example.com"
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/index.js:24
 #: extensions/blocks/contact-form/components/jetpack-contact-form.js:215
+#: extensions/blocks/contact-form/index.js:24
 msgid "Form"
 msgstr "양식"
 
@@ -1018,7 +1026,7 @@ msgctxt "block search term"
 msgid "photos"
 msgstr "사진"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:29
 msgctxt "block search term"
 msgid "map"
@@ -1028,7 +1036,7 @@ msgstr "지도"
 msgid "Likes and Sharing"
 msgstr "좋아요 및 공유"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:31
 msgctxt "block search term"
 msgid "navigation"
@@ -1108,42 +1116,42 @@ msgstr "계정 연결"
 msgid "Connect and select the accounts where you'd like to share your post."
 msgstr "연결하고 글을 공유하고 싶은 계정을 선택하세요."
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:84
 msgid "Terrain"
 msgstr "지형"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:80
 msgid "Satellite"
 msgstr "위성"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:76
 msgid "Black and white"
 msgstr "흑백"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:72
 msgid "Basic"
 msgstr "기본"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12 extensions/blocks/map/settings.js:33
 msgid "Add an interactive map showing one or more locations."
 msgstr "하나 이상의 위치를 보여주는 대화형 지도를 추가하세요."
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:20
+#: _inc/blocks/editor-beta.js:20 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12
 msgid "Delete Marker"
 msgstr "마커 삭제"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:20
+#: _inc/blocks/editor-beta.js:20 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12
 msgid "Marker Caption"
 msgstr "마커 캡션"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:20
+#: _inc/blocks/editor-beta.js:20 _inc/blocks/map/view.js:1
 #: _inc/blocks/editor.js:12
 msgid "Marker Title"
 msgstr "마커 제목"
@@ -1183,8 +1191,8 @@ msgctxt "block search term"
 msgid "direction"
 msgstr "검색어 차단"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
-#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/editor-beta.js:24
+#: _inc/blocks/map/view.js:1 _inc/blocks/editor.js:12
 #: extensions/blocks/map/settings.js:30
 #: extensions/blocks/contact-info/address/index.js:56
 msgctxt "block search term"
@@ -1356,8 +1364,8 @@ msgctxt "from business opening hour to closing hour"
 msgid "From %1$s to %2$s"
 msgstr "%1$s에서 %2$s까지"
 
-#: _inc/blocks/map/view.js:1 _inc/blocks/editor-beta.js:12
-#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
+#: _inc/blocks/editor-beta.js:12 _inc/blocks/editor-beta.js:24
+#: _inc/blocks/map/view.js:1 _inc/blocks/editor.js:12
 #: extensions/blocks/map/settings.js:11
 msgid "Map"
 msgstr "지도"
@@ -1581,10 +1589,6 @@ msgstr "젯팩 테스트"
 msgid "This test successfully passed!"
 msgstr "이 테스트에 성공적으로 통과되었습니다!"
 
-#: _inc/lib/debugger/debug-functions-for-php53.php:45
-msgid "Successful test!"
-msgstr "테스트 성공!"
-
 #: _inc/lib/debugger/debug-functions-for-php53.php:35
 msgid "Jetpack: "
 msgstr "젯팩: "
@@ -1634,12 +1638,20 @@ msgstr "도움을 요청하세요!"
 msgid "Still having trouble?"
 msgstr "여전히 문제가 있나요?"
 
+#: _inc/lib/debugger/class-jetpack-debug-data.php:382
+msgid "Master user no longer exists. Please disconnect and reconnect Jetpack."
+msgstr "마스터 사용자가 더 이상 존재하지 않습니다. 젯팩을 분리했다가 다시 연결하세요."
+
+#: _inc/lib/debugger/class-jetpack-debug-data.php:376
+msgid "No master user set."
+msgstr "마스터 사용자가 설정되지 않았습니다."
+
 #: _inc/lib/debugger/class-jetpack-cxn-test-base.php:395
 msgid "There was another problem:"
 msgstr "또 다른 문제가 있었습니다."
 
-#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:387
 #: _inc/lib/debugger/debug-functions-for-php53.php:74
+#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:387
 msgid "Resolve"
 msgstr "해결"
 
@@ -1672,9 +1684,9 @@ msgid "add_test arguments changed in 7.3.0. Please reference inline documentatio
 msgstr "add_test 인수가 7.3.0에서 변경되었습니다. 인라인 문서를 참조하세요."
 
 #. translators: accessibility text
-#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:389
 #: _inc/lib/debugger/debug-functions-for-php53.php:76
 #: _inc/lib/debugger/class-jetpack-debug-data.php:102
+#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:389
 msgid "(opens in a new tab)"
 msgstr "(새 탭에 열림)"
 
@@ -2093,9 +2105,13 @@ msgstr "'%s' 속성을 재정의해야 합니다."
 msgid "Site is under construction and cannot be verified"
 msgstr "사이트를 구축 중이므로 확인할 수 없습니다."
 
+#: _inc/lib/core-api/wpcom-endpoints/memberships.php:106
+msgid "Creating product has failed."
+msgstr "제품 생성에 실패했습니다."
+
+#: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:121
 #: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:177
 #: _inc/lib/core-api/wpcom-endpoints/publicize-services.php:150
-#: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:121
 msgid "Sorry, Publicize is not available on your site right now."
 msgstr "죄송합니다. 현재 회원님의 사이트에서 배포 기능을 사용할 수 없습니다."
 
@@ -2120,19 +2136,19 @@ msgstr "죄송합니다. 이 사이트에서 배포 기능 데이터에 액세�
 msgid "Is this connection available to all users?"
 msgstr "모든 사용자가 이 연결을 사용할 수 있나요?"
 
-#: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:70
 #: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:85
+#: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:70
 msgid "Username of the connected account"
 msgstr "연결된 계정의 사용자명"
 
+#: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:79
 #: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:66
 #: _inc/lib/core-api/wpcom-endpoints/publicize-services.php:61
-#: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:79
 msgid "Alphanumeric identifier for the Publicize Service"
 msgstr "배포 기능 서비스의 영숫자 식별자"
 
-#: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:62
 #: _inc/lib/core-api/wpcom-fields/post-fields-publicize-connections.php:73
+#: _inc/lib/core-api/wpcom-endpoints/publicize-connections.php:62
 msgid "Unique identifier for the Publicize Connection"
 msgstr "배포 기능 연결을 위한 고유 식별자"
 
@@ -2435,163 +2451,163 @@ msgstr "기본 워드프레스 검색 기능은 콘텐츠가 많지 않은 사�
 msgid "Jetpack Search supports many customizations."
 msgstr "젯팩 검색은 다양한 사용자 정의를 지원합니다."
 
-#: _inc/jetpack-strings.php:220
+#: _inc/jetpack-strings.php:218
 msgid "Jetpack Business Plan"
 msgstr "젯팩 비즈니스 요금제"
 
-#: _inc/jetpack-strings.php:217
+#: _inc/jetpack-strings.php:215
 msgid "Jetpack Premium Plan"
 msgstr "젯팩 프리미엄 요금제"
 
-#: _inc/jetpack-strings.php:213
+#: _inc/jetpack-strings.php:211
 msgid "Jetpack Personal Plan"
 msgstr "젯팩 개인 요금제"
 
-#: _inc/jetpack-strings.php:212
+#: _inc/jetpack-strings.php:210
 msgid "Get started with hassle-free design, stats, and performance tools."
 msgstr "번거롭지 않은 디자인, 통계 및 성능 도구를 시작하세요."
 
-#: _inc/jetpack-strings.php:216
+#: _inc/jetpack-strings.php:214
 msgid "Spam filtering and priority support."
 msgstr "스팸 필터링 및 우선 지원."
 
-#: _inc/jetpack-strings.php:211
+#: _inc/jetpack-strings.php:209
 msgid "Welcome to Jetpack Free"
 msgstr "무료 젯팩에 오신 것을 환영합니다."
 
-#: _inc/jetpack-strings.php:210
+#: _inc/jetpack-strings.php:208
 msgid "Jetpack Free Plan"
 msgstr "젯팩 무료 요금제"
 
-#: _inc/jetpack-strings.php:209
+#: _inc/jetpack-strings.php:207
 msgid "Explore Jetpack plans"
 msgstr "젯팩 요금제 알아보기"
 
-#: _inc/jetpack-strings.php:208
+#: _inc/jetpack-strings.php:206
 msgid "Get peace of mind of automated backups and priority support, reach a wider audience by using advanced SEO tools, monetize your site by running ads, and customize your site with any of our 200+ premium themes."
 msgstr "자동화된 백업 및 우선 지원에 안심하고 고급 SEO 도구를 사용하여 폭넓은 대상에 다가가고, 광고를 표시하여 사이트로 수익을 창출하고, 200개 이상의 프리미엄 테마로 사이트를 사용자 정의하세요."
 
-#: _inc/jetpack-strings.php:207
+#: _inc/jetpack-strings.php:205
 msgid "Jetpack offers so much more"
 msgstr "젯팩은 훨씬 많은 것을 제공합니다."
 
-#: _inc/jetpack-strings.php:206
+#: _inc/jetpack-strings.php:204
 msgid "Need help? Search our support site to find out about your site, your account, and how to make the most of WordPress."
 msgstr "도움이 필요하세요? 지원 사이트를 검색하여 회원님의 사이트, 계정 및 워드프레스를 최대한 활용하는 방법에 대해 알아보세요."
 
-#: _inc/jetpack-strings.php:205
+#: _inc/jetpack-strings.php:203
 msgid "Support documentation"
 msgstr "지원 설명서"
 
-#: _inc/jetpack-strings.php:204
+#: _inc/jetpack-strings.php:202
 msgid "Chat bubbles representing getting in touch with support"
 msgstr "지원팀에 문의를 나타내는 채팅 버블"
 
-#: _inc/jetpack-strings.php:203
+#: _inc/jetpack-strings.php:201
 msgid "Site Activity"
 msgstr "사이트 활동"
 
-#: _inc/jetpack-strings.php:202
+#: _inc/jetpack-strings.php:200
 msgid "Start publicizing now"
 msgstr "지금 홍보 시작"
 
-#: _inc/jetpack-strings.php:201
+#: _inc/jetpack-strings.php:199
 msgid "Reach a wider audience by automatically sharing your posts on social media."
 msgstr "소셜 미디어에 글을 자동으로 공유하여 폭넓은 대상에 다가가세요."
 
-#: _inc/jetpack-strings.php:200
+#: _inc/jetpack-strings.php:198
 msgid "Increase traffic to your site"
 msgstr "사이트 트래픽 늘리기"
 
-#: _inc/jetpack-strings.php:199
+#: _inc/jetpack-strings.php:197
 msgid "Explore free themes"
 msgstr "무료 테마 둘러보기"
 
-#: _inc/jetpack-strings.php:198
+#: _inc/jetpack-strings.php:196
 msgid "Get unlimited access to hundreds of professional themes, and customize your site exactly how you like it."
 msgstr "수백 가지 전문 테마에 무제한으로 액세스하고 원하는 방식으로 사이트를 사용자 정의하세요."
 
-#: _inc/jetpack-strings.php:196
+#: _inc/jetpack-strings.php:194
 msgid "A wide variety of themes and tools to customize a site"
 msgstr "사이트를 사용자 정의할 다양한 테마 및 도구"
 
-#: _inc/jetpack-strings.php:195
+#: _inc/jetpack-strings.php:193
 msgid "Set up your site security"
 msgstr "사이트 보안 설정"
 
-#: _inc/jetpack-strings.php:194
+#: _inc/jetpack-strings.php:192
 msgid "Prevent login attacks, and get instant notifications when there’s an issue with your site."
 msgstr "로그인 공격을 방지하고, 사이트에 문제가 있는 경우 즉시 알림을 받습니다."
 
-#: _inc/jetpack-strings.php:190
+#: _inc/jetpack-strings.php:188
 msgid "Schedule unlimited tweets, Facebook posts, and other social posts in advance."
 msgstr "무제한 트윗, 페이스북 글 및 기타 소셜 글을 미리 예약하세요."
 
-#: _inc/jetpack-strings.php:183
+#: _inc/jetpack-strings.php:181
 msgid "Complement WordPress.com’s stats with Google’s in-depth look at your visitors and traffic patterns."
 msgstr "방문자 및 트래픽 패턴에 대한 Google의 상세 분석으로 워드프레스닷컴의 통계를 보완하세요."
 
-#: _inc/jetpack-strings.php:189
+#: _inc/jetpack-strings.php:187
 msgid "Marketing Automation"
 msgstr "마케팅 자동화"
 
-#: _inc/jetpack-strings.php:188
+#: _inc/jetpack-strings.php:186
 msgid "Browse premium themes"
 msgstr "프리미엄 테마 찾아보기"
 
-#: _inc/jetpack-strings.php:187
+#: _inc/jetpack-strings.php:185
 msgid "Access hundreds of beautifully designed premium themes at no extra cost."
 msgstr "아름답게 디자인된 수백 개의 프리미엄 테마를 추가 비용 없이 이용하세요."
 
-#: _inc/jetpack-strings.php:186
+#: _inc/jetpack-strings.php:184
 msgid "Try a premium theme"
 msgstr "프리미엄 테마 체험"
 
-#: _inc/jetpack-strings.php:177
+#: _inc/jetpack-strings.php:175
 msgid "Site stats showing an evolution in traffic and engagement"
 msgstr "트래픽 및 참여의 발전을 보여주는 사이트 통계"
 
-#: _inc/jetpack-strings.php:173
+#: _inc/jetpack-strings.php:171
 msgid "A hand holding a loupe"
 msgstr "루페를 잡고 있는 손"
 
-#: _inc/jetpack-strings.php:168
+#: _inc/jetpack-strings.php:166
 msgid "A chart showing an healthy increase in earnings"
 msgstr "수입 증가를 보여주는 차트"
 
-#: _inc/jetpack-strings.php:165
+#: _inc/jetpack-strings.php:163
 msgid "Interface showing a chronological list of changes and updates in a site"
 msgstr "사이트의 변경 사항 및 업데이트 목록을 시간 순서대로 보여주는 인터페이스"
 
-#: _inc/jetpack-strings.php:160
+#: _inc/jetpack-strings.php:158
 msgid "A cloud with multiple types of content floating around it"
 msgstr "주위에 여러 유형의 콘텐츠가 있는 클라우드"
 
-#: _inc/jetpack-strings.php:162
+#: _inc/jetpack-strings.php:160
 msgid "High-speed, high-definition video hosting with no third-party ads."
 msgstr "타사 광고가 없는 고속, 고화질 비디오를 호스팅하세요."
 
-#: _inc/jetpack-strings.php:176
+#: _inc/jetpack-strings.php:174
 msgid "Activate Jetpack Search"
 msgstr "젯팩 검색 활성화"
 
-#: _inc/jetpack-strings.php:174
+#: _inc/jetpack-strings.php:172
 msgid "Replace the default WordPress search with better results and filtering powered by Elasticsearch."
 msgstr "기본 워드프레스 검색을 Elasticsearch로 운영되는 향상된 검색 및 필터링으로 교체하세요."
 
-#: _inc/jetpack-strings.php:172
+#: _inc/jetpack-strings.php:170
 msgid "Start earning"
 msgstr "수익 발생 시작"
 
-#: _inc/jetpack-strings.php:170
+#: _inc/jetpack-strings.php:168
 msgid "WordAds lets you earn money by displaying promotional content. Start earning today."
 msgstr "WordAds를 사용해 광고 콘텐츠를 게시하여 수익을 얻을 수 있습니다. 오늘부터 수익을 얻으세요."
 
-#: _inc/jetpack-strings.php:167
+#: _inc/jetpack-strings.php:165
 msgid "View your site activity"
 msgstr "사이트 활동 보기"
 
-#: _inc/jetpack-strings.php:166
+#: _inc/jetpack-strings.php:164
 msgid "View a chronological list of all the changes and updates to your site in an organized, readable way."
 msgstr "사이트의 모든 변경 사항과 업데이트를 읽기 편하게 구성한 연대순 목록으로 볼 수 있습니다."
 
@@ -2603,35 +2619,35 @@ msgstr "토론"
 msgid "We are configuring your site protection."
 msgstr "회원님의 사이트 보호를 구성하고 있습니다."
 
-#: _inc/jetpack-strings.php:156
+#: _inc/jetpack-strings.php:154
 msgid "A folder holding real comments"
 msgstr "실제 댓글이 있는 폴더"
 
-#: _inc/jetpack-strings.php:155
+#: _inc/jetpack-strings.php:153
 msgid "Make your site faster"
 msgstr "사이트 속도 빠르게 하기"
 
-#: _inc/jetpack-strings.php:154
+#: _inc/jetpack-strings.php:152
 msgid "Load pages faster by serving your images from our global network of servers."
 msgstr "당사의 글로벌 서버 네트워크를 통해 이미지를 제공하여 페이지를 빠르게 로드하세요."
 
-#: _inc/jetpack-strings.php:152
+#: _inc/jetpack-strings.php:150
 msgid "A fast and performant website"
 msgstr "빠르고 효과적인 웹사이트"
 
-#: _inc/jetpack-strings.php:144
+#: _inc/jetpack-strings.php:142
 msgid "A secure site, locked and protected by Jetpack"
 msgstr "젯팩에서 차단하고 보호하는 안전한 사이트"
 
-#: _inc/jetpack-strings.php:158
+#: _inc/jetpack-strings.php:156
 msgid "Spam is automatically blocked from your comments."
 msgstr "스팸은 댓글에서 자동으로 차단됩니다."
 
-#: _inc/jetpack-strings.php:157
+#: _inc/jetpack-strings.php:155
 msgid "Spam Filtering"
 msgstr "스팸 필터링"
 
-#: _inc/jetpack-strings.php:151
+#: _inc/jetpack-strings.php:149
 msgid "View settings"
 msgstr "보기 설정"
 
@@ -2697,7 +2713,7 @@ msgstr "내 요금제"
 msgid "There was an error testing Jetpack. Error: %(error)s"
 msgstr "젯팩을 테스트하는 동안 오류가 발생했습니다. 오류: %(error)s"
 
-#: _inc/jetpack-strings.php:43
+#: _inc/jetpack-strings.php:46
 msgid "Site is verified"
 msgstr "사이트가 확인되었습니다."
 
@@ -2709,7 +2725,7 @@ msgstr "젯팩을 설정하여 필수 워드프레스 보안 및 성능 도구 �
 msgid "Activate site accelerator tools and watch your page load times and hosting costs drop – we’ll optimize your images and serve them from our own powerful global network of servers, and speed up your mobile site to reduce bandwidth usage."
 msgstr "사이트 가속기 도구를 활성화하고 페이지 로드 시간과 호스팅 비용이 줄어드는 것을 보세요. 회원님의 이미지를 최적화하고 서버의 강력한 글로벌 네트워크에서 회원님의 이미지를 제공하고 모바일 사이트 속도를 높여 대역폭 사용을 줄입니다."
 
-#: class.jetpack-connection-banner.php:294 _inc/jetpack-strings.php:153
+#: class.jetpack-connection-banner.php:294 _inc/jetpack-strings.php:151
 msgid "Built-in Performance"
 msgstr "내장 성능"
 
@@ -2739,26 +2755,21 @@ msgstr "<strong>젯팩 설정</strong> 버튼을 클릭하면 <a href=\"%1$s\" t
 msgid "Site connection failed!"
 msgstr "사이트 연결 실패!"
 
-#: class.jetpack-admin.php:262 _inc/lib/debugger/class-jetpack-debugger.php:98
+#: _inc/lib/debugger/class-jetpack-debugger.php:98 class.jetpack-admin.php:262
 msgid "Debugging Center"
 msgstr "디버깅 센터"
 
-#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:230
+#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:283
 msgid "Underline"
 msgstr "밑줄"
 
-#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:229
+#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:282
 msgid "Justify"
 msgstr "전체 정렬"
 
-#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:225
+#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:278
 msgid "Switch to Classic Editor"
 msgstr "구 버전 편집기로 전환"
-
-#. translators: %s: Login URL
-#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:71
-msgid "Please <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">log into</a> your Jetpack-connected site to use the block editor on WordPress.com."
-msgstr "워드프레스닷컴에서 블록 편집기를 사용하려면 Jetpack과 연결된 사이트에 <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">로그인</a>하세요."
 
 #: modules/likes.php:627
 msgid "Are Likes enabled?"
@@ -2857,7 +2868,7 @@ msgstr "여러 항목을 고르세요."
 msgid "Phone"
 msgstr "전화"
 
-#: modules/plugin-search.php:214 class.jetpack-jitm.php:189
+#: class.jetpack-jitm.php:189 modules/plugin-search.php:214
 msgid "Activating"
 msgstr "활성화 중"
 
@@ -3253,7 +3264,7 @@ msgid "Instagram Photo"
 msgstr "Instagram 사진"
 
 #. translators: Placeholder is a Jetpack logo.
-#: class.jetpack.php:6690
+#: class.jetpack.php:6689
 msgid "Stats <span>by %s</span>"
 msgstr "<span>%s별</span> 통계"
 
@@ -3286,8 +3297,8 @@ msgstr "사이트 URL에 점이 없음(예: http://localhost)."
 msgid "Invalid parameters."
 msgstr "유효하지 않은 파라미터입니다."
 
-#: modules/widgets/simple-payments/admin-warning.php:9
 #: modules/simple-payments/simple-payments.php:196
+#: modules/widgets/simple-payments/admin-warning.php:9
 msgid "Your plan doesn't include Simple Payments. <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">Learn more and upgrade</a>."
 msgstr "요금제에 간편한 결제가 포함되지 않습니다. <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">자세히 알아보고 업그레이드</a>하세요."
 
@@ -3334,9 +3345,9 @@ msgstr "사람들이 어디에 돈을 지불하고 있는지 알려야 합니다
 msgid "Are you sure you want to delete this item? It will be disabled and removed from all locations where it currently appears."
 msgstr "이 항목을 삭제하시겠습니까? 현재 표시된 모든 위치에서 비활성화되고 제거됩니다."
 
+#: modules/simple-payments/simple-payments.php:201
 #: modules/widgets/twitter-timeline.php:92
 #: modules/widgets/twitter-timeline.php:112
-#: modules/simple-payments/simple-payments.php:201
 msgid "(Only administrators will see this message.)"
 msgstr "관리자만 이 메시지를 볼 수 있습니다."
 
@@ -3673,8 +3684,8 @@ msgstr "사이트맵은 Google 또는 Bing과 같은 검색 엔진에서 웹사�
 msgid "Configure related posts in the Customizer"
 msgstr "사용자 정의 기능에서 관련 글 구성"
 
-#: modules/related-posts/jetpack-related-posts.php:573
 #: _inc/jetpack-strings.php:365 _inc/lib/class.core-rest-api-endpoints.php:2040
+#: modules/related-posts/jetpack-related-posts.php:573
 msgid "Highlight related content with a heading"
 msgstr "헤딩으로 관련 콘텐츠 강조 표시"
 
@@ -3682,8 +3693,8 @@ msgstr "헤딩으로 관련 콘텐츠 강조 표시"
 msgid "View security scan details"
 msgstr "보안 검사 세부정보 보기"
 
-#: modules/related-posts/jetpack-related-posts.php:575
 #: _inc/jetpack-strings.php:366 _inc/lib/class.core-rest-api-endpoints.php:2047
+#: modules/related-posts/jetpack-related-posts.php:575
 msgid "Show a thumbnail image where available"
 msgstr "가능한 경우 썸네일 이미지를 표시합니다."
 
@@ -3865,7 +3876,7 @@ msgstr "%1$s(%2$s)"
 msgid "View project"
 msgstr "프로젝트 보기"
 
-#: modules/publicize/publicize.php:1065 modules/subscriptions.php:186
+#: modules/subscriptions.php:186 modules/publicize/publicize.php:1065
 msgid "View post"
 msgstr "글 보기"
 
@@ -4168,15 +4179,15 @@ msgstr "독자가 글이나 댓글을 구독하여 이메일을 통해 새 콘�
 msgid "Replaces the standard WordPress comment form with a new comment system that includes social media login options."
 msgstr "표준 워드프레스 댓글 양식을 소셜 미디어 로그인 옵션을 포함하는 새로운 댓글 시스템으로 바꿉니다."
 
-#: _inc/jetpack-strings.php:46
+#: _inc/jetpack-strings.php:45
 msgid "Error updating privacy settings. %(error)s"
 msgstr "개인정보 설정을 업데이트하는 동안 오류가 발생했습니다. %(error)s"
 
-#: _inc/jetpack-strings.php:45
+#: _inc/jetpack-strings.php:44
 msgid "Updated privacy settings."
 msgstr "개인정보 설정을 업데이트했습니다."
 
-#: _inc/jetpack-strings.php:44
+#: _inc/jetpack-strings.php:43
 msgid "Updating privacy settings…"
 msgstr "개인정보 설정을 업데이트하는 중..."
 
@@ -4200,15 +4211,15 @@ msgstr "안전 모드에 있는 동안에는 요금제를 취소할 수 없습�
 msgid "Add Jetpack Search Widget"
 msgstr "젯팩 검색 위젯 추가"
 
-#: _inc/jetpack-strings.php:222
+#: _inc/jetpack-strings.php:220
 msgid "Full security suite, marketing and revenue automation tools, unlimited video hosting, unlimited themes, enhanced search, and priority support."
 msgstr "전체 보안 제품군, 마케팅 및 수익 자동화 도구, 무제한 비디오 호스팅, 무제한 테마, 향상된 검색 및 우선 지원."
 
-#: _inc/jetpack-strings.php:219
+#: _inc/jetpack-strings.php:217
 msgid "Full security suite, marketing and revenue automation tools, unlimited video hosting, and priority support."
 msgstr "전체 보안 제품군, 마케팅 및 수익 자동화 도구, 무제한 비디오 호스팅 및 우선 지원."
 
-#: _inc/jetpack-strings.php:215
+#: _inc/jetpack-strings.php:213
 msgid "Daily backups, spam filtering, and priority support."
 msgstr "일일 백업, 스팸 필터링 및 우선 지원."
 
@@ -4216,7 +4227,7 @@ msgstr "일일 백업, 스팸 필터링 및 우선 지원."
 msgid "Add the Jetpack Search widget to your sidebar to configure sorting and filters."
 msgstr "정렬 및 필터를 구성하려면 젯팩 검색 위젯을 사이드바에 추가하세요."
 
-#: _inc/jetpack-strings.php:193
+#: _inc/jetpack-strings.php:191
 msgid "Always-on Security"
 msgstr "상설 보안"
 
@@ -4475,17 +4486,17 @@ msgstr "\"%s\" 글의 새 트랙백"
 msgid "Primary language for the site."
 msgstr "사이트의 기본 언어를 선택하세요."
 
-#: _inc/jetpack-strings.php:197
+#: _inc/jetpack-strings.php:195
 msgid "Design the perfect website"
 msgstr "완벽한 웹 사이트 디자인"
 
+#: views/admin/must-connect-main-blog.php:10
 #: class.jetpack-connection-banner.php:235
 #: class.jetpack-connection-banner.php:315 _inc/jetpack-strings.php:478
-#: views/admin/must-connect-main-blog.php:10
 msgid "Set up Jetpack"
 msgstr "젯팩 설정"
 
-#: _inc/jetpack-strings.php:146
+#: _inc/jetpack-strings.php:144
 msgid "Real-time backup of all your site data with unlimited space, one-click restores, and automated security scanning."
 msgstr "무제한 공간, 원클릭 복원, 자동화된 보안 검사로 모든 사이트 데이터를 실시간 백업합니다."
 
@@ -4508,8 +4519,8 @@ msgstr "없음"
 msgid "Last query information:"
 msgstr "마지막 쿼리 정보:"
 
-#: _inc/jetpack-strings.php:117
 #: 3rd-party/debug-bar/class.jetpack-search-debug-bar.php:26
+#: _inc/jetpack-strings.php:117
 msgid "Jetpack Search"
 msgstr "젯팩 검색"
 
@@ -4611,27 +4622,27 @@ msgstr "젯팩 버전 %(version)s"
 msgid "Your site is being backed up in real time and regularly scanned for security threats."
 msgstr "보안 위협을 위해 고객님의 사이트를 실시간으로 백업하고 정기적으로 스캔합니다."
 
-#: _inc/jetpack-strings.php:141
+#: _inc/jetpack-strings.php:139
 msgid "Daily backup of all your site data with unlimited space and one-click restores"
 msgstr "무제한 공간 및 원클릭 복원으로 모든 사이트 데이터의 일일 백업 제공"
 
-#: _inc/jetpack-strings.php:143
+#: _inc/jetpack-strings.php:141
 msgid "Real-time backup of all your site data with unlimited space, one-click restores, automated security scanning, and priority support"
 msgstr "무제한 공간, 원클릭 복원, 자동화된 보안 검사 및 우선 지원으로 모든 사이트 데이터를 실시간으로 백업하세요."
 
-#: _inc/jetpack-strings.php:147
+#: _inc/jetpack-strings.php:145
 msgid "View your security activity"
 msgstr "보안 활동 보기"
 
-#: _inc/jetpack-strings.php:149
+#: _inc/jetpack-strings.php:147
 msgid " (powered by VaultPress)."
 msgstr " (VaultPress에서 제공)"
 
-#: _inc/jetpack-strings.php:175
+#: _inc/jetpack-strings.php:173
 msgid "Customize Search Widget"
 msgstr "검색 위젯 사용자 정의"
 
-#: _inc/jetpack-strings.php:139
+#: _inc/jetpack-strings.php:221
 msgid "Please correct the issue below and try again."
 msgid_plural "Please correct the issues listed below and try again."
 msgstr[0] "아래 나열된 문제를 수정하고 다시 시도해 주세요."
@@ -4910,7 +4921,7 @@ msgstr "내부 처리 실패: %s"
 msgid "Not valid onboarding data."
 msgstr "유효한 내부 데이터가 아닙니다."
 
-#: _inc/jetpack-strings.php:169
+#: _inc/jetpack-strings.php:167
 msgid "Monetize your site with ads"
 msgstr "광고로 사이트 수익 창출"
 
@@ -5234,15 +5245,15 @@ msgstr "글 아래에 다른 광고"
 msgid "Archives"
 msgstr "아카이브"
 
-#: _inc/jetpack-strings.php:214
+#: _inc/jetpack-strings.php:212
 msgid "Welcome to Jetpack Personal"
 msgstr "젯팩 개인에 오신 것을 환영합니다"
 
-#: _inc/jetpack-strings.php:218
+#: _inc/jetpack-strings.php:216
 msgid "Welcome to Jetpack Premium"
 msgstr "젯팩 프리미엄에 오신 것을 환영합니다"
 
-#: _inc/jetpack-strings.php:221
+#: _inc/jetpack-strings.php:219
 msgid "Welcome to Jetpack Professional"
 msgstr "젯팩 전문가에 오신 것을 환영합니다"
 
@@ -5250,7 +5261,7 @@ msgstr "젯팩 전문가에 오신 것을 환영합니다"
 msgid "Your site is backed up."
 msgstr "사이트가 백업되었습니다."
 
-#: _inc/jetpack-strings.php:192
+#: _inc/jetpack-strings.php:190
 msgid "Activate Publicize"
 msgstr "배포 기능 활성화"
 
@@ -5538,26 +5549,26 @@ msgstr "페이지"
 msgid "Plan"
 msgstr "요금제"
 
-#: modules/masterbar/masterbar.php:353
+#: modules/masterbar/masterbar.php:356
 msgid "My Site"
 msgid_plural "My Sites"
 msgstr[0] "내 사이트"
 
-#: modules/masterbar/masterbar.php:460
+#: modules/masterbar/masterbar.php:463
 msgid "Write"
 msgstr "쓰기"
 
-#: modules/masterbar/masterbar.php:425
+#: modules/masterbar/masterbar.php:428
 msgid "Me"
 msgstr "내 계정"
 
-#: modules/masterbar/masterbar.php:372
+#: modules/masterbar/masterbar.php:375
 msgid "Reader"
 msgstr "리더"
 
 #: _inc/jetpack-strings.php:484
-#: _inc/lib/admin-pages/class.jetpack-admin-page.php:341
 #: _inc/lib/debugger/class-jetpack-debugger.php:292
+#: _inc/lib/admin-pages/class.jetpack-admin-page.php:341
 msgid "Access the full list of Jetpack modules available on your site."
 msgstr "사이트에서 사용할 수 있는 전체 젯팩 모듈 목록에 액세스합니다."
 
@@ -5578,12 +5589,12 @@ msgstr "워드프레스닷컴 연결 문제입니다."
 msgid "Your paid plan gives you access to prioritized Jetpack support."
 msgstr "유료 요금제를 통해 우선순위가 높은 젯팩 지원을 받으실 수 있습니다."
 
-#. translators: %1$s: Service Name (Facebook, Twitter, ...), %2$s: Username on
-#. Service (@jetpack, ...)
 #. Translators: the first variable is a module option or slug, or setting. The
 #. second is the error message .
-#: modules/publicize/ui.php:422
+#. translators: %1$s: Service Name (Facebook, Twitter, ...), %2$s: Username on
+#. Service (@jetpack, ...)
 #: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:935
+#: modules/publicize/ui.php:422
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
@@ -6091,8 +6102,8 @@ msgstr "설정"
 msgid "View your Email Followers"
 msgstr "이메일 팔로워 보기"
 
-#: modules/widgets/eu-cookie-law/form.php:210 _inc/jetpack-strings.php:128
-#: _inc/lib/class.core-rest-api-endpoints.php:1724
+#: _inc/jetpack-strings.php:128 _inc/lib/class.core-rest-api-endpoints.php:1724
+#: modules/widgets/eu-cookie-law/form.php:210
 msgid "Color scheme"
 msgstr "색상표"
 
@@ -6326,7 +6337,7 @@ msgstr "표시된 트윗 수(1~20개):"
 msgid "Google Analytics is a free service that complements our {{a}}built-in stats{{/a}} with different insights into your traffic. WordPress.com stats and Google Analytics use different methods to identify and track activity on your site, so they will normally show slightly different totals for your visits, views, etc."
 msgstr "구글 애널리틱스는 트래픽을 또 다른 관점에서 파악하여 워드프레스의 {{a}}내장된 통계{{/a}}를 보완하는 무료 서비스입니다. 워드프레스닷컴 통계와 구글 애널리틱스는 각자 다른 방법을 사용해 사이트의 활동을 식별하고 추적하므로 방문, 조회 등에 대한 합계가 조금 다르게 표시됩니다."
 
-#: modules/wordads/php/widgets.php:36 modules/wordads/wordads.php:541
+#: modules/wordads/wordads.php:541 modules/wordads/php/widgets.php:36
 msgid "Advertisements"
 msgstr "광고"
 
@@ -6338,11 +6349,11 @@ msgstr "우커머스 서비스를 설치하는 중 오류가 발생했습니다.
 msgid "Download the free apps"
 msgstr "무료 앱 다운로드"
 
-#: _inc/jetpack-strings.php:185
+#: _inc/jetpack-strings.php:183
 msgid "Activate Google Analytics"
 msgstr "Google 웹로그 분석 활성화"
 
-#: _inc/jetpack-strings.php:184
+#: _inc/jetpack-strings.php:182
 msgid "Configure Google Analytics"
 msgstr "Google 웹로그 분석 구성"
 
@@ -6350,7 +6361,7 @@ msgstr "Google 웹로그 분석 구성"
 msgid "Track website statistics with Google Analytics for a deeper understanding of your website visitors and customers."
 msgstr "웹사이트 방문자와 고객에 대해 더 깊이 이해하기 위해 Google 웹로그 분석을 통해 웹사이트 통계를 추적합니다."
 
-#: _inc/jetpack-strings.php:182 _inc/lib/class.core-rest-api-endpoints.php:2143
+#: _inc/jetpack-strings.php:180 _inc/lib/class.core-rest-api-endpoints.php:2143
 msgid "Google Analytics"
 msgstr "Google 웹로그 분석"
 
@@ -6626,10 +6637,10 @@ msgstr "이제 결혼식은 웨딩용 비디오프레스로 이목을 끕니다.
 msgid "Writing is new again in Android with the new WordPress app."
 msgstr "쓰기는 Android에서 새 워드프레스 앱으로 다시 새로워졌습니다."
 
+#: _inc/jetpack-strings.php:370
 #: modules/related-posts/jetpack-related-posts.php:1038
 #: modules/related-posts/jetpack-related-posts.php:1058
 #: modules/related-posts/jetpack-related-posts.php:1078
-#: _inc/jetpack-strings.php:370
 msgid "In \"Mobile\""
 msgstr "\"모바일\"에서"
 
@@ -6653,8 +6664,8 @@ msgstr "항목 날짜 표시"
 msgid "Upgrade Focus, VideoPress for weddings"
 msgstr "업그레이드 핵심: 웨딩용 비디오프레스"
 
-#: modules/shortcodes/upcoming-events.php:29
 #: modules/widgets/upcoming-events.php:90
+#: modules/shortcodes/upcoming-events.php:29
 msgid "No upcoming events"
 msgstr "예정 이벤트 없음"
 
@@ -6853,7 +6864,7 @@ msgstr "서버가 잘못 구성되었습니다. 즉, Jetpack Protect에서 사�
 msgid "{{link}}Configure your Monitor notification settings on WordPress.com{{/link}}"
 msgstr "{{link}}워드프레스닷컴에서 모니터 알림 설정 구성{{/link}}"
 
-#: modules/module-info.php:778 _inc/jetpack-strings.php:569
+#: _inc/jetpack-strings.php:569 modules/module-info.php:778
 msgid "By default ads are shown at the end of every page, post, or the first article on your front page. You can also add them to the top of your site and to any widget area to increase your earnings!"
 msgstr "기본적으로 광고는 모든 페이지, 글 또는 첫 페이지의 첫 번째 문서에 표시됩니다. 수입을 늘리기 위해 광고를 사이트 상단 및 위젯 영역에 추가할 수도 있습니다."
 
@@ -6861,11 +6872,11 @@ msgstr "기본적으로 광고는 모든 페이지, 글 또는 첫 페이지의 
 msgid "Display an ad unit at the top of your site."
 msgstr "사이트 상단에 광고 유닛을 표시합니다."
 
-#: _inc/jetpack-strings.php:161
+#: _inc/jetpack-strings.php:159
 msgid "Video Hosting"
 msgstr "비디오 호스팅"
 
-#: _inc/jetpack-strings.php:171
+#: _inc/jetpack-strings.php:169
 msgid "View your earnings"
 msgstr "수입 보기"
 
@@ -7145,11 +7156,11 @@ msgstr "잘못된 SEO 제목 형식입니다."
 msgid "Invalid SEO meta description value."
 msgstr "잘못된 SEO 메타 설명 값입니다."
 
+#: json-endpoints/class.wpcom-json-api-update-post-v1-1-endpoint.php:789
+#: json-endpoints/class.wpcom-json-api-update-post-v1-2-endpoint.php:760
+#: json-endpoints/class.wpcom-json-api-update-post-endpoint.php:710
 #: json-endpoints/class.wpcom-json-api-site-settings-endpoint.php:734
 #: json-endpoints/class.wpcom-json-api-site-settings-endpoint.php:750
-#: json-endpoints/class.wpcom-json-api-update-post-v1-2-endpoint.php:760
-#: json-endpoints/class.wpcom-json-api-update-post-v1-1-endpoint.php:789
-#: json-endpoints/class.wpcom-json-api-update-post-endpoint.php:710
 msgid "SEO tools are not enabled for this site."
 msgstr "이 사이트에 대해 SEO 도구가 활성화되지 않았습니다."
 
@@ -7256,7 +7267,7 @@ msgstr "회원님의 URL이 `%1$s`(으)로 설정되었지만 워드프레스닷
 msgid "Jetpack has been placed into <a href=\"%1$s\">Safe mode</a> because we noticed this is an exact copy of <a href=\"%2$s\">%3$s</a>."
 msgstr "<a href=\"%1$s\">%3$s</a>의 정확한 복사본으로 확인되어 젯팩이 <a href=\"%2$s\">안전 모드</a>로 전환되었습니다."
 
-#: _inc/jetpack-strings.php:148
+#: _inc/jetpack-strings.php:146
 msgid "Site Security"
 msgstr "사이트 보안"
 
@@ -7303,15 +7314,15 @@ msgstr "스테이징 서버에서 젯팩을 실행하고 있습니다."
 msgid "More Info"
 msgstr "자세한 정보"
 
-#: _inc/jetpack-strings.php:142
+#: _inc/jetpack-strings.php:140
 msgid "Daily backup of all your site data with unlimited space, one-click restores, automated security scanning, and priority support"
 msgstr "무제한 공간, 원클릭 복원, 자동 보안 검사, 원클릭 위협 해결로 모든 사이트 데이터를 실시간 백업합니다."
 
-#: _inc/jetpack-strings.php:178
+#: _inc/jetpack-strings.php:176
 msgid "SEO Tools"
 msgstr "SEO 도구"
 
-#: _inc/jetpack-strings.php:179
+#: _inc/jetpack-strings.php:177
 msgid "Advanced SEO tools to help your site get found when people search for relevant content."
 msgstr "사람들이 관련 콘텐츠를 검색할 때 사이트가 검색되도록 하는 고급 SEO 도구입니다."
 
@@ -7804,8 +7815,8 @@ msgstr "모든 플러그인이 최신 상태입니다. 계속하세요!"
 msgid "%1$s must be %2$s."
 msgstr "%1$s은(는) %2$s이어야 합니다."
 
-#: modules/plugin-search.php:126
 #: _inc/lib/class.core-rest-api-endpoints.php:2451
+#: modules/plugin-search.php:126
 msgid "%s must be an alphanumeric string."
 msgstr "%s은(는) 영숫자 문자열이어야 합니다."
 
@@ -7995,8 +8006,8 @@ msgstr "누락된 파라미터 \"알림\"입니다."
 msgid "Invalid parameter \"notice\"."
 msgstr "유효하지 않은 파라미터 \"알림\"입니다."
 
-#: _inc/lib/core-api/wpcom-endpoints/service-api-keys.php:60
 #: _inc/lib/class.core-rest-api-endpoints.php:56
+#: _inc/lib/core-api/wpcom-endpoints/service-api-keys.php:60
 msgid ""
 "You do not have the correct user permissions to perform this action.\n"
 "\t\t\tPlease contact your site admin if you think this is a mistake."
@@ -8012,10 +8023,9 @@ msgstr "젯팩의 잠재력을 발휘하려면 자바스크립트를 켜세요!"
 msgid "You have JavaScript disabled"
 msgstr "자바스크립트를 비활성화했습니다."
 
-#: _inc/jetpack-strings.php:554
+#: class.jetpack-network-sites-list-table.php:59 _inc/jetpack-strings.php:554
 #: _inc/lib/admin-pages/class.jetpack-admin-page.php:293
 #: _inc/lib/admin-pages/class.jetpack-react-page.php:57
-#: class.jetpack-network-sites-list-table.php:59
 msgid "Dashboard"
 msgstr "알림판"
 
@@ -8046,13 +8056,13 @@ msgstr "업그레이드 핵심: 웨딩용 비디오프레스"
 msgid "Subscriber"
 msgstr "구독자"
 
-#: modules/related-posts/jetpack-related-posts.php:1033
 #: _inc/jetpack-strings.php:369
+#: modules/related-posts/jetpack-related-posts.php:1033
 msgid "Big iPhone/iPad Update Now Available"
 msgstr "iPhone/iPad 업데이트 지금 이용 가능"
 
-#: modules/related-posts/jetpack-related-posts.php:1053
 #: _inc/jetpack-strings.php:371
+#: modules/related-posts/jetpack-related-posts.php:1053
 msgid "The WordPress for Android App Gets a Big Facelift"
 msgstr "대대적으로 업데이트된 Android 앱용 워드프레스"
 
@@ -8282,11 +8292,11 @@ msgstr "월"
 msgid "Weeks"
 msgstr "주"
 
-#: _inc/jetpack-strings.php:159
+#: _inc/jetpack-strings.php:157
 msgid "View your spam stats"
 msgstr "스팸 통계 보기"
 
-#: _inc/jetpack-strings.php:150
+#: _inc/jetpack-strings.php:148
 msgid "View your security dashboard"
 msgstr "보안 알림판 보기"
 
@@ -8708,7 +8718,7 @@ msgstr "추천 글 아카이브 콘텐츠"
 msgid "Testimonial Archive Title"
 msgstr "추천 글 아카이브 제목"
 
-#: class.jetpack.php:6831
+#: class.jetpack.php:6830
 msgid "This user is linked and ready to fly with Jetpack."
 msgstr "이 사용자가 연결되어 젯팩을 사용할 준비가 되었습니다."
 
@@ -8762,8 +8772,8 @@ msgctxt "recipe"
 msgid "Ingredients"
 msgstr "재료"
 
-#: modules/calypsoify/class.jetpack-calypsoify.php:232
 #: class.jetpack-network-sites-list-table.php:85
+#: modules/calypsoify/class.jetpack-calypsoify.php:232
 msgid "Manage Plugins"
 msgstr "플러그인 관리"
 
@@ -8824,8 +8834,8 @@ msgstr "비디오프레스 쇼트코드"
 msgid "Invalid Video GUID!"
 msgstr "유효하지 않은 비디오 GUID입니다."
 
-#: modules/videopress/editor-media-view.php:40
 #: modules/widgets/eu-cookie-law/form.php:173
+#: modules/videopress/editor-media-view.php:40
 msgid "seconds"
 msgstr "초"
 
@@ -9113,7 +9123,7 @@ msgstr "아이템이 여러 개 있는 체크박스"
 msgid "Site successfully connected."
 msgstr "사이트가 성공적으로 연결되었습니다."
 
-#: modules/plugin-search.php:213 class.jetpack-jitm.php:188
+#: class.jetpack-jitm.php:188 modules/plugin-search.php:213
 msgid "Activated"
 msgstr "활성화됨"
 
@@ -9149,7 +9159,7 @@ msgstr "젯팩 네트워크 설정이 업데이트 됐습니다!"
 msgid "Jetpack is network activated and notices can not be dismissed."
 msgstr "젯팩이 네트워크 활성화됐고 알림은 무시할 수 없습니다."
 
-#: modules/plugin-search.php:532 _inc/jetpack-strings.php:129
+#: _inc/jetpack-strings.php:129 modules/plugin-search.php:532
 msgid "Learn more"
 msgstr "더 알아보기"
 
@@ -9544,8 +9554,8 @@ msgstr "전화:"
 msgid "Pink"
 msgstr "분홍색"
 
-#: modules/widgets/rsslinks-widget.php:101
-#: modules/widgets/rsslinks-widget.php:177 _inc/jetpack-strings.php:347
+#: _inc/jetpack-strings.php:347 modules/widgets/rsslinks-widget.php:101
+#: modules/widgets/rsslinks-widget.php:177
 msgid "Posts"
 msgstr "글"
 
@@ -9686,17 +9696,17 @@ msgstr "타일"
 msgid "Timeline Theme:"
 msgstr "타임라인 테마:"
 
-#: modules/widgets/wordpress-post-widget/class.jetpack-display-posts-widget-base.php:224
-#: modules/widgets/flickr/form.php:3
-#: modules/widgets/gallery/templates/form.php:2
-#: modules/widgets/google-translate.php:170
-#: modules/widgets/contact-info.php:258 modules/widgets/my-community.php:85
-#: modules/widgets/goodreads.php:137 modules/widgets/blog-stats.php:93
-#: modules/widgets/social-icons.php:225 modules/widgets/search.php:782
-#: modules/widgets/social-media-icons.php:246 modules/widgets/top-posts.php:92
-#: modules/widgets/rsslinks-widget.php:96
-#: modules/widgets/twitter-timeline.php:338 modules/widgets/authors.php:210
+#: modules/widgets/twitter-timeline.php:338
+#: modules/widgets/social-media-icons.php:246
 #: modules/widgets/upcoming-events.php:42
+#: modules/widgets/gallery/templates/form.php:2
+#: modules/widgets/flickr/form.php:3
+#: modules/widgets/wordpress-post-widget/class.jetpack-display-posts-widget-base.php:224
+#: modules/widgets/my-community.php:85 modules/widgets/authors.php:210
+#: modules/widgets/top-posts.php:92 modules/widgets/contact-info.php:258
+#: modules/widgets/blog-stats.php:93 modules/widgets/goodreads.php:137
+#: modules/widgets/social-icons.php:225 modules/widgets/rsslinks-widget.php:96
+#: modules/widgets/search.php:782 modules/widgets/google-translate.php:170
 msgid "Title:"
 msgstr "제목:"
 
@@ -9901,8 +9911,8 @@ msgstr "날짜별 글 보관함"
 msgid "Display Header Text"
 msgstr "헤더 글자 표시"
 
-#: modules/tiled-gallery/tiled-gallery.php:291
 #: _inc/lib/class.core-rest-api-endpoints.php:1773
+#: modules/tiled-gallery/tiled-gallery.php:291
 msgid "Display all your gallery pictures in a cool mosaic."
 msgstr "모든 갤러리 사진을 참신한 모자이크 형식으로 표현하기."
 
@@ -9918,7 +9928,7 @@ msgstr "구독자에게 보내지 않음"
 msgid "Easily feature all posts with the <a href=\"%1$s\">\"featured\" tag</a> or a tag of your choice. Your theme supports up to %2$s posts in its featured content area."
 msgstr "모든 글을 <a href=\"%1$s\">\"특성\" 태그</a> 또는 선택한 태그로 쉽게 특성화 합니다. 테마가 특성 콘텐츠 영역에서 %2$s 글까지 지원합니다."
 
-#: modules/widgets/contact-info.php:295 modules/subscriptions/views.php:345
+#: modules/subscriptions/views.php:345 modules/widgets/contact-info.php:295
 msgid "Email Address:"
 msgstr "이메일 주소:"
 
@@ -9943,8 +9953,8 @@ msgstr "댓글 팔로우"
 msgid "Follower Settings"
 msgstr "팔로워 설정"
 
-#: modules/widget-visibility/widget-conditions.php:108
 #: _inc/jetpack-strings.php:346
+#: modules/widget-visibility/widget-conditions.php:108
 msgid "Front page"
 msgstr "전면 페이지"
 
@@ -10096,13 +10106,13 @@ msgstr "통계 보고서를 볼 수 있는 역할을 선택하세요."
 msgid "Set as logo"
 msgstr "로고로 설정"
 
-#: modules/subscriptions.php:353
 #: _inc/lib/class.core-rest-api-endpoints.php:2024
+#: modules/subscriptions.php:353
 msgid "Show a <em>'follow blog'</em> option in the comment form"
 msgstr "댓글 양식에 <em>'블로그 팔로우'</em> 옵션 표시"
 
-#: modules/subscriptions.php:368
 #: _inc/lib/class.core-rest-api-endpoints.php:2031
+#: modules/subscriptions.php:368
 msgid "Show a <em>'follow comments'</em> option in the comment form"
 msgstr "댓글 폼에 <em>'댓글 팔로우'</em>옵션을 보여줍니다."
 
@@ -10139,9 +10149,9 @@ msgstr "정적인 페이지:"
 msgid "Stats"
 msgstr "통계"
 
-#: modules/stats.php:1111 modules/videopress/class.videopress-player.php:305
-#: modules/contact-form/grunion-editor-view.php:90
+#: modules/stats.php:1111 modules/contact-form/grunion-editor-view.php:90
 #: modules/contact-form/grunion-contact-form.php:1842
+#: modules/videopress/class.videopress-player.php:305
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/contact-form/index.js:50
 #: extensions/blocks/contact-form/index.js:67
@@ -10236,7 +10246,7 @@ msgstr "현재 통계를 가져올 수 없습니다. 이 페이지를 새로 고
 msgid "Website Verification Services"
 msgstr "웹사이트 인증 서비스"
 
-#: modules/widgets/image-widget.php:226 modules/subscriptions/views.php:628
+#: modules/subscriptions/views.php:628 modules/widgets/image-widget.php:226
 msgid "Widget title:"
 msgstr "위젯 제목:"
 
@@ -10324,7 +10334,7 @@ msgstr "새 서비스 추가"
 msgid "Add sharing buttons to your blog and allow your visitors to share posts with their friends."
 msgstr "블로그에 공유 버튼을 추가하고 방문자들이 친구들과 글을 공유하도록 허용하세요."
 
-#: modules/sharedaddy/sharedaddy.php:249
+#: modules/sharedaddy/sharedaddy.php:248
 msgid "Advanced.  If this option is checked, you must include these files in your theme manually for the sharing links to work."
 msgstr "고급. 이 옵션에 체크되면 공유 링크가 작동하기 위해서 테마에 이들 파일을 수동으로 추가해야합니다. "
 
@@ -10400,8 +10410,8 @@ msgstr "닫기"
 msgid "Create Share Button"
 msgstr "공유 버튼 생성"
 
-#: modules/sharedaddy/sharedaddy.php:247
 #: _inc/lib/class.core-rest-api-endpoints.php:1980
+#: modules/sharedaddy/sharedaddy.php:246
 msgid "Disable CSS and JS"
 msgstr "CSS와 자바스크립트 비활성화"
 
@@ -10437,8 +10447,8 @@ msgstr "Google"
 msgid "Icon"
 msgstr "아이콘"
 
-#: modules/sharedaddy/sharing.php:385
 #: _inc/lib/class.core-rest-api-endpoints.php:1945
+#: modules/sharedaddy/sharing.php:385
 msgid "Icon + text"
 msgstr "아이콘 + 텍스트"
 
@@ -10446,8 +10456,8 @@ msgstr "아이콘 + 텍스트"
 msgid "Icon URL"
 msgstr "아이콘 URL"
 
-#: modules/sharedaddy/sharing.php:386
 #: _inc/lib/class.core-rest-api-endpoints.php:1946
+#: modules/sharedaddy/sharing.php:386
 msgid "Icon only"
 msgstr "아이콘만"
 
@@ -10471,21 +10481,21 @@ msgstr "실시간 미리보기"
 msgid "Log in with WordPress.com"
 msgstr "워드프레스닷컴으로 로그인"
 
-#: modules/sso.php:277 _inc/lib/class.core-rest-api-endpoints.php:2015
+#: _inc/lib/class.core-rest-api-endpoints.php:2015 modules/sso.php:277
 msgid "Match by Email"
 msgstr "이메일 일치"
 
-#: modules/sharedaddy/sharing.php:325 modules/sharedaddy/sharing.php:361
 #: modules/sharedaddy/sharing-service.php:832
+#: modules/sharedaddy/sharing.php:325 modules/sharedaddy/sharing.php:361
 msgid "More"
 msgstr "더"
 
-#: modules/sharedaddy/sharing.php:388
 #: _inc/lib/class.core-rest-api-endpoints.php:1948
+#: modules/sharedaddy/sharing.php:388
 msgid "Official buttons"
 msgstr "공식 버튼"
 
-#: modules/sharedaddy/sharing-sources.php:1458 _inc/jetpack-strings.php:401
+#: _inc/jetpack-strings.php:401 modules/sharedaddy/sharing-sources.php:1458
 msgid "Pinterest"
 msgstr "Pinterest"
 
@@ -10518,7 +10528,7 @@ msgstr "Reddit"
 msgid "Remove Service"
 msgstr "서비스 제거"
 
-#: modules/sso.php:247 _inc/lib/class.core-rest-api-endpoints.php:2008
+#: _inc/lib/class.core-rest-api-endpoints.php:2008 modules/sso.php:247
 msgid "Require Two-Step Authentication"
 msgstr "두 단계 인증 필요"
 
@@ -10550,7 +10560,7 @@ msgstr "공유"
 msgid "Share on Tumblr"
 msgstr "Tumblr에서 공유"
 
-#: modules/sharedaddy/sharing.php:221 modules/sharedaddy/sharing-service.php:12
+#: modules/sharedaddy/sharing-service.php:12 modules/sharedaddy/sharing.php:221
 msgid "Share this:"
 msgstr "이 글 공유하기:"
 
@@ -10570,8 +10580,8 @@ msgstr "공유 기능이 꺼졌습니다. 기능을 켜려면 위의 서비스�
 msgid "Sharing label"
 msgstr "공유 레이블"
 
-#: modules/related-posts/jetpack-related-posts.php:609
 #: _inc/jetpack-strings.php:364
+#: modules/related-posts/jetpack-related-posts.php:609
 msgid "Show related content after posts"
 msgstr "글 다음에 관련 콘텐츠 보이기"
 
@@ -10579,7 +10589,7 @@ msgstr "글 다음에 관련 콘텐츠 보이기"
 msgid "Similar post"
 msgstr "유사한 글"
 
-#: modules/shortcodes/slideshow.php:63 modules/widgets/gallery.php:371
+#: modules/widgets/gallery.php:371 modules/shortcodes/slideshow.php:63
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/slideshow/index.js:76
 msgid "Slideshow"
@@ -10593,8 +10603,8 @@ msgstr "죄송합니다. 귀하의 블로그에서 이메일로 글을 공유할
 msgid "Take Our Survey"
 msgstr "설문조사 참여하기"
 
-#: modules/sharedaddy/sharing.php:387
 #: _inc/lib/class.core-rest-api-endpoints.php:1947
+#: modules/sharedaddy/sharing.php:387
 msgid "Text only"
 msgstr "텍스트만"
 
@@ -10642,8 +10652,8 @@ msgstr "@%s의 트윗"
 msgid "Twitter"
 msgstr "트위터"
 
-#: modules/sitemaps/sitemap-stylist.php:68
 #: modules/sharedaddy/sharing-sources.php:1288
+#: modules/sitemaps/sitemap-stylist.php:68
 msgid "URL"
 msgstr "URL"
 
@@ -10774,9 +10784,9 @@ msgstr "글을 확실히 홍보할 수 있도록 공개하기를 클릭하기 �
 msgid "Cannot use global flag on non-multisites"
 msgstr "멀티사이트가 아닌 사이트에서 글로벌 플래그를 사용할 수 없음"
 
-#: modules/theme-tools/social-links.php:125
 #: class.jetpack-network-sites-list-table.php:108
 #: class.jetpack-network-sites-list-table.php:113
+#: modules/theme-tools/social-links.php:125
 msgid "Connect"
 msgstr "연결하기"
 
@@ -10813,8 +10823,8 @@ msgstr "연결 끊기"
 msgid "Dismiss this notice."
 msgstr "이 알림 무시하기"
 
-#: modules/post-by-email.php:83 modules/subscriptions/views.php:526
 #: _inc/jetpack-strings.php:424 _inc/lib/class.core-rest-api-endpoints.php:1887
+#: modules/post-by-email.php:83 modules/subscriptions/views.php:526
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/subscriptions/index.js:40
 #: extensions/blocks/contact-info/email/index.js:24
@@ -10864,8 +10874,8 @@ msgstr "Jetpack에서 차단한 로그인"
 msgid "Media"
 msgstr "미디어"
 
-#: modules/videopress/class.videopress-player.php:308
 #: modules/post-by-email.php:102
+#: modules/videopress/class.videopress-player.php:308
 msgid "More information"
 msgstr "추가 정보"
 
@@ -10889,7 +10899,7 @@ msgstr "리퀘스트에 사용자 정보가 포함되지 않았습니다. 사용
 msgid "Not Connected"
 msgstr "연결되지 않음"
 
-#: modules/protect/shared-functions.php:143 views/admin/network-settings.php:8
+#: views/admin/network-settings.php:8 modules/protect/shared-functions.php:143
 msgid "One of your IP addresses was not valid."
 msgstr "IP 주소 중 하나가 올바르지 않습니다."
 
@@ -10934,11 +10944,11 @@ msgstr "%s 연결 새로고침"
 msgid "Regenerate Address"
 msgstr "주소 재생성하기"
 
-#: modules/related-posts/class.related-posts-customize.php:176
+#: _inc/jetpack-strings.php:368
 #: modules/related-posts/jetpack-related-posts.php:466
 #: modules/related-posts/jetpack-related-posts.php:526
 #: modules/related-posts/jetpack-related-posts.php:635
-#: _inc/jetpack-strings.php:368
+#: modules/related-posts/class.related-posts-customize.php:176
 msgid "Related"
 msgstr "관련"
 
@@ -10952,8 +10962,8 @@ msgstr "관련 글"
 msgid "Related posts"
 msgstr "관련 글"
 
+#: _inc/jetpack-strings.php:611 modules/sharedaddy/sharing-sources.php:1300
 #: modules/widgets/simple-payments/form.php:181
-#: modules/sharedaddy/sharing-sources.php:1300 _inc/jetpack-strings.php:611
 msgid "Save"
 msgstr "저장하기"
 
@@ -10989,9 +10999,9 @@ msgstr "이 연결은 정상적으로 작동합니다."
 msgid "Tiled Galleries"
 msgstr "타일 갤러리"
 
-#: modules/widgets/milestone/milestone.php:594
 #: modules/widgets/facebook-likebox.php:154
 #: modules/widgets/gravatar-profile.php:277
+#: modules/widgets/milestone/milestone.php:594
 #: modules/sitemaps/sitemap-stylist.php:307
 #: modules/sitemaps/sitemap-stylist.php:447
 #: modules/sitemaps/sitemap-stylist.php:588
@@ -11269,7 +11279,7 @@ msgctxt "Module Tag"
 msgid "Writing"
 msgstr "쓰기"
 
-#: modules/masterbar/masterbar.php:324 modules/masterbar/masterbar.php:330
+#: modules/masterbar/masterbar.php:327 modules/masterbar/masterbar.php:333
 #: modules/notes.php:174 _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "Notifications"
 msgstr "알림"
@@ -11278,8 +11288,8 @@ msgstr "알림"
 msgid "Publicize"
 msgstr "공개"
 
-#: modules/stats.php:436 modules/stats.php:579 modules/stats.php:991
-#: _inc/jetpack-strings.php:471
+#: _inc/jetpack-strings.php:471 modules/stats.php:436 modules/stats.php:579
+#: modules/stats.php:991
 msgid "Site Stats"
 msgstr "사이트 통계"
 
@@ -11326,10 +11336,10 @@ msgctxt "Module Name"
 msgid "Secure Sign On"
 msgstr "보안 로그인"
 
-#. translators: 1: date, 2: time
 #. translators: Date and time
-#: modules/minileven/theme/pub/minileven/inc/template-tags.php:61
+#. translators: 1: date, 2: time
 #: _inc/lib/icalendar-reader.php:839
+#: modules/minileven/theme/pub/minileven/inc/template-tags.php:61
 msgid "%1$s at %2$s"
 msgstr "%1$s (%2$s)"
 
@@ -11338,8 +11348,8 @@ msgstr "%1$s (%2$s)"
 msgid "%1$s on %2$s"
 msgstr "%2$s의 %1$s"
 
-#: modules/minileven/theme/pub/minileven/content.php:58
 #: modules/minileven/theme/pub/minileven/image.php:98
+#: modules/minileven/theme/pub/minileven/content.php:58
 msgid "&laquo; Previous"
 msgstr "&laquo; 이전"
 
@@ -11348,14 +11358,14 @@ msgid "&larr; Older Comments"
 msgstr "&larr; 예전 댓글"
 
 #: modules/minileven/theme/pub/minileven/content-gallery.php:76
-#: modules/minileven/theme/pub/minileven/content.php:49
 #: modules/minileven/theme/pub/minileven/image.php:90
+#: modules/minileven/theme/pub/minileven/content.php:49
 msgid "<b>%</b> Replies"
 msgstr "<b>%</b>개의 댓글"
 
 #: modules/minileven/theme/pub/minileven/content-gallery.php:76
-#: modules/minileven/theme/pub/minileven/content.php:49
 #: modules/minileven/theme/pub/minileven/image.php:90
+#: modules/minileven/theme/pub/minileven/content.php:49
 msgid "<b>1</b> Reply"
 msgstr "<b>1</b>개의 댓글"
 
@@ -11384,7 +11394,7 @@ msgstr "죄송합니다, 하지만 요청하신 보관물을 찾을 수 없습�
 msgid "Blog Archives"
 msgstr "블로그 보관물"
 
-#: modules/likes/jetpack-likes-settings.php:533
+#: modules/likes/jetpack-likes-settings.php:532
 msgid "Comment Likes are"
 msgstr "좋아요 댓글은"
 
@@ -11393,8 +11403,8 @@ msgid "Comment navigation"
 msgstr "댓글 네비게이션"
 
 #: modules/minileven/theme/pub/minileven/content-gallery.php:26
-#: modules/minileven/theme/pub/minileven/content.php:39
 #: modules/minileven/theme/pub/minileven/inc/tweaks.php:30
+#: modules/minileven/theme/pub/minileven/content.php:39
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "계속 읽기 <span class=\"meta-nav\">&rarr;</span>"
 
@@ -11406,7 +11416,7 @@ msgstr "사용자 정의하기"
 msgid "Daily Archives: %s"
 msgstr "일간 보관물: %s"
 
-#: modules/likes/jetpack-likes-settings.php:524
+#: modules/likes/jetpack-likes-settings.php:523
 msgid "Don't show the Reblog button on posts"
 msgstr "글에 리블로그 버튼 보이지 않기"
 
@@ -11422,18 +11432,18 @@ msgstr "요약"
 msgid "Featured"
 msgstr "추천"
 
-#: modules/theme-tools/content-options/customizer.php:291
 #: _inc/lib/class.core-rest-api-endpoints.php:1862
+#: modules/theme-tools/content-options/customizer.php:291
 msgid "Featured Images"
 msgstr "특성 이미지"
 
+#: modules/likes/jetpack-likes-settings.php:677
 #: modules/sharedaddy/sharing.php:416
-#: modules/likes/jetpack-likes-settings.php:678
 msgid "Front Page, Archive Pages, and Search Results"
 msgstr "프론트 페이지, 보관물 페이지 및 검색 결과"
 
-#: modules/minileven/theme/pub/minileven/content-gallery.php:20
 #: modules/widgets/gallery.php:29
+#: modules/minileven/theme/pub/minileven/content-gallery.php:20
 msgid "Gallery"
 msgstr "갤러리"
 
@@ -11450,8 +11460,8 @@ msgstr "이 CSS를 모바일 테마에 포함하기"
 msgid "Learn more about Markdown."
 msgstr "마크다운 더 알아보기."
 
-#: modules/minileven/theme/pub/minileven/content.php:49
 #: modules/minileven/theme/pub/minileven/image.php:90
+#: modules/minileven/theme/pub/minileven/content.php:49
 msgid "Leave a reply"
 msgstr "댓글 남기기"
 
@@ -11463,8 +11473,8 @@ msgstr "좋아하기"
 msgid "Like this:"
 msgstr "이것이 좋아요:"
 
-#: modules/widgets/top-posts.php:105
-#: modules/likes/jetpack-likes-settings.php:44 modules/likes.php:429
+#: modules/likes/jetpack-likes-settings.php:44
+#: modules/widgets/top-posts.php:105 modules/likes.php:429
 msgid "Likes"
 msgstr "좋아요"
 
@@ -11539,12 +11549,12 @@ msgstr "찾지 못함"
 msgid "Older posts"
 msgstr "이전 글"
 
-#: modules/likes/jetpack-likes-settings.php:539
+#: modules/likes/jetpack-likes-settings.php:538
 msgid "On for all comments"
 msgstr "모든 댓글에 적용됩니다"
 
-#: modules/likes/jetpack-likes-settings.php:498
 #: _inc/lib/class.core-rest-api-endpoints.php:1823
+#: modules/likes/jetpack-likes-settings.php:497
 msgid "On for all posts"
 msgstr "모든 글에 표시하기"
 
@@ -11566,9 +11576,9 @@ msgid "Page %s"
 msgstr "페이지 %s"
 
 #: modules/minileven/theme/pub/minileven/content-gallery.php:70
+#: modules/minileven/theme/pub/minileven/image.php:74
 #: modules/minileven/theme/pub/minileven/content.php:41
 #: modules/minileven/theme/pub/minileven/page.php:32
-#: modules/minileven/theme/pub/minileven/image.php:74
 msgid "Pages:"
 msgstr "페이지:"
 
@@ -11583,8 +11593,8 @@ msgstr "%s 의 고유링크"
 msgid "Pingback:"
 msgstr "핑백:"
 
-#: modules/minileven/theme/pub/minileven/content.php:57
 #: modules/minileven/theme/pub/minileven/inc/template-tags.php:19
+#: modules/minileven/theme/pub/minileven/content.php:57
 msgid "Post navigation"
 msgstr "글 네비게이션"
 
@@ -11620,8 +11630,8 @@ msgstr "Gravatar에 마우스를 올려 프로필을 확인하세요."
 msgid "Reply"
 msgstr "응답"
 
+#: modules/likes/jetpack-likes-settings.php:225
 #: modules/sharedaddy/sharing.php:460
-#: modules/likes/jetpack-likes-settings.php:226
 msgid "Save Changes"
 msgstr "변경 사항 저장"
 
@@ -11637,26 +11647,26 @@ msgstr "검색 결과: %s"
 msgid "Semantic Personal Publishing Platform"
 msgstr "시맨틱 개인 출판 플랫폼"
 
+#: modules/likes/jetpack-likes-settings.php:205
 #: modules/sharedaddy/sharing.php:217
-#: modules/likes/jetpack-likes-settings.php:206
 msgid "Settings have been saved"
 msgstr "설정이 저장되었습니다"
 
-#: modules/publicize/ui.php:56 modules/sharedaddy/sharing.php:96
-#: modules/sharedaddy/sharedaddy.php:143
-#: modules/likes/jetpack-likes-settings.php:180 _inc/jetpack-strings.php:324
+#: _inc/jetpack-strings.php:324 modules/likes/jetpack-likes-settings.php:179
+#: modules/sharedaddy/sharing.php:96 modules/sharedaddy/sharedaddy.php:143
+#: modules/publicize/ui.php:56
 msgid "Sharing"
 msgstr "공유"
 
+#: modules/likes/jetpack-likes-settings.php:213
 #: modules/sharedaddy/sharing.php:243
-#: modules/likes/jetpack-likes-settings.php:214
 msgid "Sharing Buttons"
 msgstr "공유 버튼"
 
-#: modules/publicize/ui.php:55 modules/publicize/ui.php:73
+#: modules/likes/jetpack-likes-settings.php:179
+#: modules/likes/jetpack-likes-settings.php:191
 #: modules/sharedaddy/sharing.php:95 modules/sharedaddy/sharing.php:227
-#: modules/likes/jetpack-likes-settings.php:180
-#: modules/likes/jetpack-likes-settings.php:192
+#: modules/publicize/ui.php:55 modules/publicize/ui.php:73
 msgid "Sharing Settings"
 msgstr "공유 설정"
 
@@ -11664,23 +11674,23 @@ msgstr "공유 설정"
 msgid "Show a promo for the WordPress mobile apps in the footer of the mobile theme."
 msgstr "모바일 테마의 푸터에 워드프레스 모바일 앱 광고 보이기"
 
+#: modules/likes/jetpack-likes-settings.php:668
 #: modules/sharedaddy/sharing.php:410
-#: modules/likes/jetpack-likes-settings.php:669
 msgid "Show buttons on"
 msgstr "다음에 버튼 표시:"
 
-#: modules/likes/jetpack-likes-settings.php:79 _inc/blocks/editor-beta.js:24
+#: modules/likes/jetpack-likes-settings.php:78 _inc/blocks/editor-beta.js:24
 #: _inc/blocks/editor.js:12 extensions/blocks/likes/likes-checkbox.js:19
 msgid "Show likes."
 msgstr "좋아요 보여주기."
 
-#: modules/sharedaddy/sharedaddy.php:170
-#: modules/likes/jetpack-likes-settings.php:169 _inc/blocks/editor-beta.js:24
+#: modules/likes/jetpack-likes-settings.php:168
+#: modules/sharedaddy/sharedaddy.php:169 _inc/blocks/editor-beta.js:24
 #: _inc/blocks/editor.js:12 extensions/blocks/sharing/sharing-checkbox.js:19
 msgid "Show sharing buttons."
 msgstr "공유 버튼 보이기"
 
-#: modules/likes/jetpack-likes-settings.php:518
+#: modules/likes/jetpack-likes-settings.php:517
 msgid "Show the Reblog button on posts"
 msgstr "글에 리블로그 버튼 보이기"
 
@@ -11714,18 +11724,18 @@ msgstr "이 글은 비밀글입니다. 댓글을 보기 위해 비밀번호를 �
 msgid "To infinity and beyond"
 msgstr "무한"
 
-#: modules/likes/jetpack-likes-settings.php:504
 #: _inc/lib/class.core-rest-api-endpoints.php:1824
+#: modules/likes/jetpack-likes-settings.php:503
 msgid "Turned on per post"
 msgstr "글별로 켜놓기"
 
-#: modules/infinite-scroll.php:76
 #: _inc/lib/class.core-rest-api-endpoints.php:1806
+#: modules/infinite-scroll.php:76
 msgid "Use Google Analytics with Infinite Scroll"
 msgstr "무한 스크롤에서 구글 애널리틱스 사용하기"
 
-#: modules/markdown/easy-markdown.php:290
 #: _inc/lib/class.core-rest-api-endpoints.php:1839
+#: modules/markdown/easy-markdown.php:290
 msgid "Use Markdown for comments."
 msgstr "댓글에 마크다운을 사용하세요."
 
@@ -11741,8 +11751,8 @@ msgstr "전체 사이트 보기"
 msgid "View Mobile Site"
 msgstr "모바일 사이트 보기"
 
-#: modules/gravatar-hovercards.php:60
 #: _inc/lib/class.core-rest-api-endpoints.php:1781
+#: modules/gravatar-hovercards.php:60
 msgid "View people's profiles when you mouse over their Gravatars"
 msgstr "Gravatar에 마우스를 올렸을 때 사용자의 프로필 보기"
 
@@ -11750,12 +11760,12 @@ msgstr "Gravatar에 마우스를 올렸을 때 사용자의 프로필 보기"
 msgid "We&rsquo;ve changed this option to a click-to-scroll version for you since you have footer widgets in Appearance &rarr; Widgets, or your theme uses click-to-scroll as the default behavior."
 msgstr "이 옵션을 클릭 스크롤 버전으로 변경했습니다. 외모 &rarr; 위젯에 푸터 위젯이 있거나 테마가 기본으로 클릭 스크롤을 사용하고 있기 때문입니다."
 
-#: modules/likes/jetpack-likes-settings.php:492
 #: _inc/lib/class.core-rest-api-endpoints.php:1815
+#: modules/likes/jetpack-likes-settings.php:491
 msgid "WordPress.com Likes are"
 msgstr "워드프레스닷컴 좋아요는"
 
-#: modules/likes/jetpack-likes-settings.php:512
+#: modules/likes/jetpack-likes-settings.php:511
 msgid "WordPress.com Reblog Button"
 msgstr "워드프레스닷컴 리블로그 버튼"
 
@@ -11811,9 +11821,9 @@ msgid "Add Menu Item"
 msgstr "메뉴 아이템 추가"
 
 #: modules/widgets/simple-payments/form.php:46
+#: modules/custom-post-types/comics.php:224
 #: modules/custom-post-types/portfolios.php:269
 #: modules/custom-post-types/testimonial.php:299
-#: modules/custom-post-types/comics.php:224
 msgid "Add New"
 msgstr "새로 추가"
 
@@ -11906,11 +11916,11 @@ msgstr "모든 프로젝트"
 msgid "All Testimonials"
 msgstr "모든 추천 글"
 
-#: modules/custom-css/custom-css.php:905
 #: modules/custom-css/custom-css-4.7.php:130
 #: modules/custom-css/custom-css-4.7.php:133
 #: modules/custom-css/custom-css-4.7.php:173
 #: modules/custom-css/custom-css-4.7.php:271
+#: modules/custom-css/custom-css.php:905
 msgid "CSS"
 msgstr "CSS"
 
@@ -11922,13 +11932,13 @@ msgstr "CSS 개정"
 msgid "CSS Stylesheet Editor"
 msgstr "CSS 스타일시트 편집기"
 
-#: modules/minileven/minileven.php:285 modules/custom-css/custom-css.php:1087
+#: _inc/jetpack-strings.php:612 modules/sharedaddy/sharing-sources.php:606
+#: modules/custom-css/custom-css.php:1087
 #: modules/custom-css/custom-css.php:1178
 #: modules/custom-css/custom-css.php:1219
 #: modules/widgets/simple-payments/form.php:182
 #: modules/contact-form/grunion-editor-view.php:288
-#: modules/sharedaddy/sharing-sources.php:606 _inc/jetpack-strings.php:612
-#: _inc/blocks/editor-beta.js:24
+#: modules/minileven/minileven.php:285 _inc/blocks/editor-beta.js:24
 msgid "Cancel"
 msgstr "취소"
 
@@ -11996,17 +12006,17 @@ msgstr "글로 변환하기"
 msgid "Custom CSS Stylesheet"
 msgstr "사용자 정의 CSS 스타일시트"
 
+#: modules/custom-post-types/nova.php:268
+#: modules/custom-post-types/comics.php:306
 #: modules/custom-post-types/portfolios.php:378
 #: modules/custom-post-types/testimonial.php:347
-#: modules/custom-post-types/comics.php:306
-#: modules/custom-post-types/nova.php:268
 msgid "Custom field deleted."
 msgstr "사용자 정의 필드가 삭제되었습니다."
 
+#: modules/custom-post-types/nova.php:267
+#: modules/custom-post-types/comics.php:305
 #: modules/custom-post-types/portfolios.php:377
 #: modules/custom-post-types/testimonial.php:346
-#: modules/custom-post-types/comics.php:305
-#: modules/custom-post-types/nova.php:267
 msgid "Custom field updated."
 msgstr "사용자 정의 필드가 업데이트 되었습니다."
 
@@ -12033,10 +12043,11 @@ msgstr "아래로"
 msgid "Default"
 msgstr "기본"
 
+#: _inc/lib/icalendar-reader.php:790
 #: modules/widgets/simple-payments/form.php:103
 #: modules/widgets/milestone/milestone.php:599
 #: modules/custom-post-types/nova.php:954
-#: modules/sitemaps/sitemap-stylist.php:449 _inc/lib/icalendar-reader.php:790
+#: modules/sitemaps/sitemap-stylist.php:449
 msgid "Description"
 msgstr "설명"
 
@@ -12044,9 +12055,9 @@ msgstr "설명"
 msgid "Drop images to upload"
 msgstr "업로드 하려면 이미지를 올려놓으세요"
 
-#: modules/custom-css/custom-css.php:892
 #: modules/custom-css/custom-css-4.7.php:130
 #: modules/custom-css/custom-css-4.7.php:133
+#: modules/custom-css/custom-css.php:892
 msgid "Edit CSS"
 msgstr "CSS 편집"
 
@@ -12128,10 +12139,10 @@ msgid "Labels: <small>spicy, favorite, etc. <em>Separate Labels with commas</em>
 msgstr "레이블: <small>맛있는, 즐겨찾기, 등. <em>레이블을 콤마로 분리하세요</em></small>"
 
 #. translators: Publish box date format, see http://php.net/date
+#: modules/custom-post-types/nova.php:282
+#: modules/custom-post-types/comics.php:315
 #: modules/custom-post-types/portfolios.php:387
 #: modules/custom-post-types/testimonial.php:356
-#: modules/custom-post-types/comics.php:315
-#: modules/custom-post-types/nova.php:282
 msgid "M j, Y @ G:i"
 msgstr "Y-m-d g:i a"
 
@@ -12312,11 +12323,10 @@ msgstr "휴지통에서 추천 글을 찾을 수 없습니다"
 msgid "No tags found."
 msgstr "태그를 찾을 수 없습니다."
 
-#: modules/custom-css/custom-css.php:1161
-#: modules/custom-css/custom-css.php:1166
 #: modules/custom-css/custom-css-4.7.php:749
-#: modules/widgets/image-widget.php:243 _inc/blocks/editor-beta.js:24
-#: _inc/blocks/editor.js:12
+#: modules/custom-css/custom-css.php:1161
+#: modules/custom-css/custom-css.php:1166 modules/widgets/image-widget.php:243
+#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "None"
 msgstr "없음"
 
@@ -12330,12 +12340,12 @@ msgctxt "Nova label separator"
 msgid ", "
 msgstr ", "
 
-#: modules/minileven/minileven.php:284 modules/custom-css/custom-css.php:1086
+#: modules/custom-css/custom-css.php:1086
 #: modules/custom-css/custom-css.php:1177
-#: modules/custom-css/custom-css.php:1218
-#: modules/publicize/publicize-jetpack.php:531
-#: modules/publicize/publicize-jetpack.php:634 modules/publicize/ui.php:625
-#: modules/publicize/ui.php:653
+#: modules/custom-css/custom-css.php:1218 modules/publicize/ui.php:625
+#: modules/publicize/ui.php:653 modules/publicize/publicize-jetpack.php:531
+#: modules/publicize/publicize-jetpack.php:634
+#: modules/minileven/minileven.php:284
 msgid "OK"
 msgstr "OK"
 
@@ -12604,11 +12614,11 @@ msgstr "추천 글 업데이트됨. "
 msgid "Testimonial updated. <a href=\"%s\">View testimonial</a>"
 msgstr "추천 글 업데이트됨. <a href=\"%s\">추천 글 보기</a>"
 
-#: modules/custom-post-types/testimonial.php:120
+#: _inc/jetpack-strings.php:410 modules/custom-post-types/testimonial.php:120
 #: modules/custom-post-types/testimonial.php:295
 #: modules/custom-post-types/testimonial.php:297
 #: modules/custom-post-types/testimonial.php:461
-#: modules/custom-post-types/testimonial.php:467 _inc/jetpack-strings.php:410
+#: modules/custom-post-types/testimonial.php:467
 msgid "Testimonials"
 msgstr "추천 글"
 
@@ -12858,14 +12868,14 @@ msgstr "조리개"
 msgid "Are you sure you want to exit the form editor without saving?  Any changes you have made will be lost."
 msgstr "정말로 저장하지 않고 폼 편집기를 나가시겠습니까? 변경 사항은 저장되지 않습니다."
 
-#: modules/shortcodes/slideshow.php:71
 #: modules/carousel/jetpack-carousel.php:730
+#: modules/shortcodes/slideshow.php:71
 msgid "Background color"
 msgstr "배경 색상"
 
-#: modules/shortcodes/slideshow.php:78
-#: modules/carousel/jetpack-carousel.php:813
 #: _inc/lib/class.core-rest-api-endpoints.php:1701
+#: modules/carousel/jetpack-carousel.php:813
+#: modules/shortcodes/slideshow.php:78
 msgid "Black"
 msgstr "검정"
 
@@ -12921,9 +12931,8 @@ msgstr "댓글"
 msgid "Commenting as %s"
 msgstr "%s로 댓글"
 
-#: modules/widgets/rsslinks-widget.php:102
+#: _inc/jetpack-strings.php:124 modules/widgets/rsslinks-widget.php:102
 #: modules/widgets/rsslinks-widget.php:180 modules/comments/admin.php:72
-#: _inc/jetpack-strings.php:124
 msgid "Comments"
 msgstr "댓글"
 
@@ -12941,9 +12950,9 @@ msgstr "연락 폼"
 msgid "Contact Form URL:"
 msgstr "연락 양식 URL:"
 
+#: _inc/lib/class.core-rest-api-endpoints.php:1734
 #: modules/widgets/twitter-timeline.php:497
 #: modules/widgets/eu-cookie-law/form.php:232 modules/comments/admin.php:55
-#: _inc/lib/class.core-rest-api-endpoints.php:1734
 msgid "Dark"
 msgstr "검정"
 
@@ -13003,6 +13012,7 @@ msgstr "드랍다운"
 msgid "Edit this new field"
 msgstr "이 새 필드를 편집하기"
 
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: modules/carousel/jetpack-carousel.php:293
 #: modules/widgets/simple-payments/form.php:147
 #: modules/widgets/social-icons.php:553
@@ -13011,10 +13021,9 @@ msgstr "이 새 필드를 편집하기"
 #: modules/contact-form/grunion-editor-view.php:218
 #: modules/contact-form/grunion-contact-form.php:1857
 #: modules/contact-form/grunion-contact-form.php:2292
-#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/index.js:282
 #: extensions/blocks/contact-info/email/edit.js:10
+#: extensions/blocks/contact-form/index.js:282
 msgid "Email"
 msgstr "이메일"
 
@@ -13092,8 +13101,8 @@ msgstr "폼 생성기"
 msgid "From"
 msgstr "발신:"
 
-#: modules/comments/admin.php:81
 #: _inc/lib/class.core-rest-api-endpoints.php:1717
+#: modules/comments/admin.php:81
 msgid "Greeting Text"
 msgstr "인사 글"
 
@@ -13125,9 +13134,9 @@ msgstr "유효하지 않은 보안 토큰"
 msgid "Jetpack's Carousel has been disabled, because another plugin or your theme is overriding the [gallery] shortcode."
 msgstr "다른 플러그인 또는 사용자 테마가 [gallery] 쇼트코드를 무시하기 때문에 젯팩의 캐러셀이 해제되었습니다."
 
+#: modules/sharedaddy/sharing-sources.php:1283
 #: modules/contact-form/grunion-form-view.php:204
 #: modules/contact-form/grunion-editor-view.php:211
-#: modules/sharedaddy/sharing-sources.php:1283
 msgid "Label"
 msgstr "라벨"
 
@@ -13161,9 +13170,9 @@ msgctxt "Label to drag HTML form fields around to change their order in contact 
 msgid "move"
 msgstr "이동하기"
 
-#: modules/minileven/theme/pub/minileven/content-gallery.php:76
-#: modules/comments/admin.php:50 modules/comments/comments.php:246
 #: _inc/lib/class.core-rest-api-endpoints.php:1719
+#: modules/comments/comments.php:246 modules/comments/admin.php:50
+#: modules/minileven/theme/pub/minileven/content-gallery.php:76
 msgid "Leave a Reply"
 msgstr "댓글 남기기"
 
@@ -13171,9 +13180,9 @@ msgstr "댓글 남기기"
 msgid "Leave a Reply to %s"
 msgstr "%s 에 응답 남기기"
 
+#: _inc/lib/class.core-rest-api-endpoints.php:1733
 #: modules/widgets/twitter-timeline.php:494
 #: modules/widgets/eu-cookie-law/form.php:221 modules/comments/admin.php:54
-#: _inc/lib/class.core-rest-api-endpoints.php:1733
 msgid "Light"
 msgstr "밝음"
 
@@ -13198,11 +13207,11 @@ msgstr "이 메시지를 스팸 아님으로 표시"
 msgid "Mark this message as spam"
 msgstr "이 메시지를 스팸으로 표시"
 
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: modules/contact-form/admin.php:268
 #: modules/contact-form/grunion-editor-view.php:88
 #: modules/contact-form/grunion-contact-form.php:1866
 #: modules/contact-form/grunion-contact-form.php:2300
-#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/contact-form/index.js:343
 msgid "Message"
@@ -13392,8 +13401,8 @@ msgstr "(필수)"
 msgid "Time:"
 msgstr "시간:"
 
-#: modules/comments/admin.php:56
 #: _inc/lib/class.core-rest-api-endpoints.php:1735
+#: modules/comments/admin.php:56
 msgid "Transparent"
 msgstr "투명"
 
@@ -13406,21 +13415,21 @@ msgstr "휴지통"
 msgid "View full size <span class=\"photo-size\">%1$s<span class=\"photo-size-times\">&times;</span>%2$s</span>"
 msgstr "전체 크기 <span class=\"photo-size\">%1$s<span class=\"photo-size-times\">&times;</span>%2$s</span> 보기"
 
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: modules/carousel/jetpack-carousel.php:297
 #: modules/contact-form/grunion-form-view.php:217
 #: modules/contact-form/grunion-editor-view.php:87
 #: modules/contact-form/grunion-editor-view.php:219
 #: modules/contact-form/grunion-contact-form.php:1858
 #: modules/contact-form/grunion-contact-form.php:2294
-#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/contact-form/index.js:296
 msgid "Website"
 msgstr "웹사이트"
 
-#: modules/shortcodes/slideshow.php:79
-#: modules/carousel/jetpack-carousel.php:814
 #: _inc/lib/class.core-rest-api-endpoints.php:1702
+#: modules/carousel/jetpack-carousel.php:814
+#: modules/shortcodes/slideshow.php:79
 msgid "White"
 msgstr "흰색"
 
@@ -13432,9 +13441,9 @@ msgstr "댓글 달기..."
 msgid "Yep. You can enter multiple email addresses in the Email address field, and separate them with commas. A notification email will then be sent to each email address."
 msgstr "네. 이메일 주소란에 여러 개의 이메일 주소를 입력할 수 있으며 콤마로 분리하세요. 알림 이메일이 각 이메일 주소로 보내집니다."
 
-#: modules/minileven/minileven.php:275
 #: modules/contact-form/grunion-editor-view.php:154
 #: modules/contact-form/grunion-contact-form.php:3326
+#: modules/minileven/minileven.php:275
 msgid "Yes"
 msgstr "예"
 
@@ -13525,15 +13534,15 @@ msgstr "(제목 없음)"
 msgid "<strong>Jetpack is activated!</strong> Each site on your network must be connected individually by an admin on that site."
 msgstr "<strong>젯팩이 활성화됐습니다!</strong> 네트워크의 각 사이트는 해당 사이트의 관리자에 의해 개별적으로 연결돼 있어야합니다."
 
-#: class.jetpack.php:6777
+#: class.jetpack.php:6776
 msgid "Activate Akismet"
 msgstr "아키스밋 활성화"
 
-#: class.jetpack.php:6764
+#: class.jetpack.php:6763
 msgid "Activate Protect"
 msgstr "보호 활성화"
 
-#: class.jetpack.php:6780
+#: class.jetpack.php:6779
 msgid "Akismet can help to keep your blog safe from spam!"
 msgstr "Akismet으로 블로그를 스팸으로부터 보호할 수 있습니다!"
 
@@ -13546,8 +13555,8 @@ msgid "An active access token must be used to retrieve post counts."
 msgstr "글 개수를 가져오려면 활성 액세스 토큰을 사용해야 합니다."
 
 #: _inc/lib/plugins.php:83
-#: json-endpoints/jetpack/class.jetpack-json-api-themes-new-endpoint.php:61
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-new-endpoint.php:114
+#: json-endpoints/jetpack/class.jetpack-json-api-themes-new-endpoint.php:61
 #: json-endpoints/jetpack/class.jetpack-json-api-themes-install-endpoint.php:59
 msgid "An unknown error occurred during installation"
 msgstr "설치 시 알 수 없는 에러가 발생했습니다"
@@ -13646,8 +13655,8 @@ msgstr "관리 기능이 활성화되었습니다!"
 msgid "Module not found: `%s`."
 msgstr "모듈을 찾을 수 없습니다: '%s'."
 
-#: json-endpoints/jetpack/class.jetpack-json-api-plugins-install-endpoint.php:82
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-endpoint.php:106
+#: json-endpoints/jetpack/class.jetpack-json-api-plugins-install-endpoint.php:82
 msgid "No plugins found."
 msgstr "플러그인을 찾을 수 없습니다."
 
@@ -13655,9 +13664,9 @@ msgstr "플러그인을 찾을 수 없습니다."
 msgid "No themes found."
 msgstr "테마를 찾을 수 없습니다."
 
-#: json-endpoints/jetpack/class.jetpack-json-api-themes-modify-endpoint.php:101
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-modify-endpoint.php:323
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-modify-endpoint.php:384
+#: json-endpoints/jetpack/class.jetpack-json-api-themes-modify-endpoint.php:101
 msgid "No update needed"
 msgstr "업데이트 필요 없음"
 
@@ -13689,11 +13698,11 @@ msgstr "플러그인 비활성화 됨."
 msgid "Post by %s."
 msgstr "%s님의 글입니다."
 
-#: class.jetpack.php:6763
+#: class.jetpack.php:6762
 msgid "Protect helps to keep you secure from brute-force login attacks."
 msgstr "프로텍트를 활성화하면 무차별 대입 로그인 공격을 방어하는 데 도움이 됩니다."
 
-#: class.jetpack.php:6767
+#: class.jetpack.php:6766
 msgid "Protect is inactive."
 msgstr "프로텍트가 비활성 상태입니다."
 
@@ -13725,8 +13734,8 @@ msgstr "플러그인이 이미 활성화 됐습니다."
 msgid "The Plugin is already deactivated."
 msgstr "플러그인이 이미 비활성화 됐습니다."
 
-#: class.jetpack-twitter-cards.php:249
 #: _inc/lib/class.core-rest-api-endpoints.php:1972
+#: class.jetpack-twitter-cards.php:249
 msgid "The Twitter username of the owner of this site's domain."
 msgstr "이 사이트 도메인 소유자의 트위터 사용자명"
 
@@ -13897,12 +13906,12 @@ msgstr "이 기능을 사용하려면 워드프레스닷컴에 젯팩 플러그�
 msgid "You must specify a valid action"
 msgstr "유효한 작업을 특정해야 합니다"
 
-#: class.jetpack.php:6761
+#: class.jetpack.php:6760
 msgctxt "{#} Blocked malicious login attempts -- number is on a prior line, text is a caption."
 msgid "Blocked malicious login attempts"
 msgstr "차단된 악의적인 로그인 시도"
 
-#: class.jetpack.php:6774
+#: class.jetpack.php:6773
 msgctxt "{#} Spam comments blocked by Akismet -- number is on a prior line, text is a caption."
 msgid "Spam comments blocked by Akismet."
 msgstr "Akismet가 차단한 스팸 댓글."
@@ -13998,17 +14007,17 @@ msgstr "테마 충돌."
 msgid "Action cancelled. Have a question?"
 msgstr "작업이 취소되었습니다. 문의 사항이 있으십니까?"
 
-#: class.jetpack-modules-list-table.php:109
-#: class.jetpack-modules-list-table.php:206
-#: class.jetpack-modules-list-table.php:271 _inc/jetpack-strings.php:276
+#: _inc/jetpack-strings.php:276
 #: _inc/lib/admin-pages/class-jetpack-about-page.php:373
-#: class.jetpack-jitm.php:187
+#: class.jetpack-jitm.php:187 class.jetpack-modules-list-table.php:109
+#: class.jetpack-modules-list-table.php:206
+#: class.jetpack-modules-list-table.php:271
 msgid "Activate"
 msgstr "활성화"
 
-#: modules/vaultpress.php:27 _inc/jetpack-strings.php:296
+#: _inc/jetpack-strings.php:296
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:92
-#: class.jetpack-cli.php:390
+#: modules/vaultpress.php:27 class.jetpack-cli.php:390
 msgid "Active"
 msgstr "활성"
 
@@ -14016,9 +14025,9 @@ msgstr "활성"
 msgid "Additional data: "
 msgstr "추가 데이터: "
 
+#: _inc/lib/admin-pages/class.jetpack-settings-page.php:91
 #: modules/widgets/upcoming-events.php:60
 #: class.jetpack-modules-list-table.php:136
-#: _inc/lib/admin-pages/class.jetpack-settings-page.php:91
 msgid "All"
 msgstr "모두"
 
@@ -14046,12 +14055,12 @@ msgstr "호환불가 플러그인."
 msgid "Cleared all whitelisted IPs"
 msgstr "화이트리스트에 추가된 모든 IP 삭제"
 
-#: modules/stats.php:588 modules/stats.php:1114 modules/plugin-search.php:210
-#: modules/plugin-search.php:512 class.jetpack-admin.php:172
+#: modules/plugin-search.php:210 modules/plugin-search.php:512
+#: modules/stats.php:588 modules/stats.php:1114 class.jetpack-admin.php:172
 msgid "Configure"
 msgstr "설정"
 
-#: _inc/jetpack-strings.php:265 class.jetpack-network-sites-list-table.php:16
+#: class.jetpack-network-sites-list-table.php:16 _inc/jetpack-strings.php:265
 msgid "Connected"
 msgstr "연결됨"
 
@@ -14089,16 +14098,15 @@ msgstr "`%1$s` 도메인은 금지된 어레이에 있기 때문에 is_usable_do
 msgid "Domain `%1$s` just failed is_usable_domain check as it uses an invalid top level domain."
 msgstr "`%1$s` 도메인은 잘못된 최상위 도메인을 사용하기 때문에 is_usable_domain 검사에 실패했습니다."
 
-#: modules/minileven/minileven.php:276
-#: modules/minileven/theme/pub/minileven/content-gallery.php:79
-#: modules/minileven/theme/pub/minileven/content.php:51
-#: modules/minileven/theme/pub/minileven/page.php:36
-#: modules/minileven/theme/pub/minileven/image.php:92
+#: class.jetpack-network-sites-list-table.php:58 _inc/jetpack-strings.php:614
 #: modules/custom-css/custom-css.php:1049
 #: modules/custom-css/custom-css.php:1162
 #: modules/custom-css/custom-css.php:1192 modules/publicize/ui.php:517
-#: modules/publicize/ui.php:525 _inc/jetpack-strings.php:614
-#: class.jetpack-network-sites-list-table.php:58
+#: modules/publicize/ui.php:525 modules/minileven/minileven.php:276
+#: modules/minileven/theme/pub/minileven/content-gallery.php:79
+#: modules/minileven/theme/pub/minileven/image.php:92
+#: modules/minileven/theme/pub/minileven/content.php:51
+#: modules/minileven/theme/pub/minileven/page.php:36
 msgid "Edit"
 msgstr "편집"
 
@@ -14146,9 +14154,9 @@ msgstr "IP 범위 {low_range}-{high_range}을(를) 저장할 수 있습니다. �
 msgid "It may be caused by one of these issues, which you can diagnose yourself:"
 msgstr "다음 문제가 원인일 수 있으며 직접 진단할 수 있습니다:"
 
-#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:357
 #: _inc/lib/debugger/debug-functions-for-php53.php:50
 #: _inc/lib/debugger/class-jetpack-debug-data.php:94
+#: _inc/lib/debugger/class-jetpack-cxn-test-base.php:357
 msgid "Jetpack"
 msgstr "젯팩"
 
@@ -14174,9 +14182,9 @@ msgstr "젯팩이 현재 워드프레스닷컴에 연결돼 있습니다."
 msgid "Jetpack is not currently connected to WordPress.com"
 msgstr "젯팩이 현재 워드프레스닷컴에 연결되지 않았습니다."
 
-#: modules/custom-post-types/portfolios.php:140
+#: _inc/jetpack-strings.php:528 modules/custom-post-types/portfolios.php:140
 #: modules/custom-post-types/testimonial.php:155 modules/sso.php:1120
-#: modules/custom-content-types.php:42 _inc/jetpack-strings.php:528
+#: modules/custom-content-types.php:42
 msgid "Learn More"
 msgstr "더 알아보기"
 
@@ -14190,6 +14198,7 @@ msgstr "<a href=\"%s\">XMLRPC 파일</a> 을 로드하세요. \"XML-RPC 서버�
 msgid "Modules reset to default."
 msgstr "모듈이 기본값으로 재설정됩니다."
 
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
 #: modules/carousel/jetpack-carousel.php:295
 #: modules/custom-post-types/nova.php:951
 #: modules/contact-form/grunion-form-view.php:213
@@ -14197,10 +14206,8 @@ msgstr "모듈이 기본값으로 재설정됩니다."
 #: modules/contact-form/grunion-editor-view.php:217
 #: modules/contact-form/grunion-contact-form.php:1856
 #: modules/contact-form/grunion-contact-form.php:2290
-#: class.jetpack-modules-list-table.php:199
-#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1062
-#: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
-#: extensions/blocks/contact-form/index.js:267
+#: class.jetpack-modules-list-table.php:199 _inc/blocks/editor-beta.js:24
+#: _inc/blocks/editor.js:12 extensions/blocks/contact-form/index.js:267
 msgid "Name"
 msgstr "이름"
 
@@ -14267,11 +14274,12 @@ msgstr "기본 모듈 재설정...\n"
 msgid "Resetting the jetpack options stored in wp_options...\n"
 msgstr "wp_options에 저장된 젯팩 옵션 재설정...\n"
 
+#: _inc/jetpack-strings.php:120
+#: _inc/lib/admin-pages/class.jetpack-settings-page.php:88
+#: modules/widgets/search.php:62
 #: modules/minileven/theme/pub/minileven/searchform.php:9
 #: modules/minileven/theme/pub/minileven/searchform.php:10
 #: modules/minileven/theme/pub/minileven/searchform.php:11
-#: modules/widgets/search.php:62 _inc/jetpack-strings.php:120
-#: _inc/lib/admin-pages/class.jetpack-settings-page.php:88
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 msgid "Search"
 msgstr "검색"
@@ -14280,12 +14288,12 @@ msgstr "검색"
 msgid "Search Modules…"
 msgstr "모듈 검색..."
 
-#: class.jetpack.php:3803 class.jetpack.php:3878 modules/publicize/ui.php:517
-#: modules/sharedaddy/sharedaddy.php:218 modules/sharedaddy/sharedaddy.php:225
-#: class.jetpack-network.php:272 _inc/jetpack-strings.php:555
+#: class.jetpack.php:3803 class.jetpack.php:3878 _inc/jetpack-strings.php:555
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:18
 #: _inc/lib/admin-pages/class.jetpack-admin-page.php:297
 #: _inc/lib/admin-pages/class.jetpack-react-page.php:70
+#: class.jetpack-network.php:272 modules/sharedaddy/sharedaddy.php:217
+#: modules/sharedaddy/sharedaddy.php:224 modules/publicize/ui.php:517
 msgid "Settings"
 msgstr "설정"
 
@@ -14309,7 +14317,7 @@ msgstr "죄송합니다. 지금은 어레이 업데이트를 할 수 없습니�
 msgid "Sort by:"
 msgstr "정렬 :"
 
-#: class.jetpack.php:3879 modules/sharedaddy/sharedaddy.php:226
+#: class.jetpack.php:3879 modules/sharedaddy/sharedaddy.php:225
 msgid "Support"
 msgstr "지원"
 
@@ -14358,8 +14366,8 @@ msgid "View:"
 msgstr "보기:"
 
 #. translators: %s is the post author
-#: class.jetpack-twitter-cards.php:137 class.jetpack-twitter-cards.php:144
-#: functions.opengraph.php:129
+#: functions.opengraph.php:129 class.jetpack-twitter-cards.php:137
+#: class.jetpack-twitter-cards.php:144
 msgid "Visit the post for more."
 msgstr "더 알아보려면 글을 방문하세요."
 
