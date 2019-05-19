@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-02 16:06:07+0000\n"
+"PO-Revision-Date: 2019-05-13 16:52:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18312,12 +18312,6 @@ msgstr "Eliminar imagen"
 msgid "Add to gallery"
 msgstr "Añadir a la galería"
 
-#: includes/admin/meta-boxes/views/html-order-download-permission.php:19
-msgid "Downloaded %s time"
-msgid_plural "Downloaded %s times"
-msgstr[0] "Downloaded %s time"
-msgstr[1] "Descargas %s tiempos"
-
 #: includes/admin/meta-boxes/views/html-order-item-meta.php:60
 msgid "Add&nbsp;meta"
 msgstr "Añadir&nbsp;meta"
@@ -19315,6 +19309,12 @@ msgstr "No se han encontrado impuestos en este período"
 #: includes/admin/reports/class-wc-report-coupon-usage.php:227
 msgid "No used coupons found"
 msgstr "No se han encontrado cupones usados"
+
+#: includes/admin/meta-boxes/views/html-order-download-permission.php:19
+msgid "Downloaded %s time"
+msgid_plural "Downloaded %s times"
+msgstr[0] "Descargado %s vez"
+msgstr[1] "Descargado %s veces"
 
 #: includes/wc-product-functions.php:827
 msgid "Allow"

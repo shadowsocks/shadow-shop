@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-26 23:31:47+0000\n"
+"PO-Revision-Date: 2019-05-14 22:39:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,12 +26,12 @@ msgstr "User could not be added to this site."
 
 #: wp-admin/network/site-new.php:284
 msgid "The username and a link to set the password will be mailed to this email address."
-msgstr "The username and a link to set the password will be mailed to this e-mail address."
+msgstr "The username and a link to set the password will be mailed to this email address."
 
 #. translators: %s: new network admin email
 #: wp-admin/network/settings.php:175
 msgid "There is a pending change of the network admin email to %s."
-msgstr "There is a pending change of the network admin e-mail to %s."
+msgstr "There is a pending change of the network admin email to %s."
 
 #: wp-admin/includes/network.php:326
 msgid "Sub-domain Installation"
@@ -92,11 +92,11 @@ msgstr "Sorry, you are not allowed to edit this site."
 
 #: wp-admin/network/settings.php:346
 msgid "The email address of the first comment author on a new site."
-msgstr "The e-mail address of the first comment author on a new site."
+msgstr "The email address of the first comment author on a new site."
 
 #: wp-admin/network/settings.php:342
 msgid "First Comment Email"
-msgstr "First Comment e-mail"
+msgstr "First Comment Email"
 
 #: wp-admin/includes/network.php:478
 msgid "That&#8217;s all, stop editing! Happy publishing."
@@ -363,7 +363,7 @@ msgstr "Archived"
 
 #: wp-admin/network/user-new.php:133 wp-admin/network/site-users.php:357
 msgid "A password reset link will be sent to the user via email."
-msgstr "A password reset link will be sent to the user via e-mail."
+msgstr "A password reset link will be sent to the user via email."
 
 #: wp-admin/network/settings.php:212
 msgid "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
@@ -569,7 +569,7 @@ msgstr "To search for a site, <strong>enter the path or domain</strong>."
 
 #: wp-admin/network/index.php:42
 msgid "To search for a user, <strong>enter an email address or username</strong>. Use a wildcard to search for a partial username, such as user&#42;."
-msgstr "To search for a user, <strong>enter an e-mail address or username</strong>. Use a wildcard to search for a partial username, such as user&#42;."
+msgstr "To search for a user, <strong>enter an email address or username</strong>. Use a wildcard to search for a partial username, such as user&#42;."
 
 #: wp-admin/network/index.php:40
 msgid "To add a new site, <strong>click Create a New Site</strong>."
@@ -749,7 +749,7 @@ msgstr "Theme disabled."
 
 #: wp-admin/network/user-new.php:22
 msgid "Add User will set up a new user account on the network and send that person an email with username and password."
-msgstr "Add User will set up a new user account on the network and send that person an e-mail with username and password."
+msgstr "Add User will set up a new user account on the network and send that person an email with username and password."
 
 #: wp-admin/network/site-themes.php:210
 msgid "Network enabled themes are not shown on this screen."
@@ -825,7 +825,7 @@ msgstr "Select a user to change role."
 
 #: wp-admin/network/site-users.php:266
 msgid "Enter the username and email."
-msgstr "Enter the username and e-mail."
+msgstr "Enter the username and email."
 
 #: wp-admin/network.php:63
 msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
@@ -948,7 +948,7 @@ msgstr "The original configuration steps are shown here for reference."
 
 #: wp-admin/includes/network.php:363
 msgid "Your email address."
-msgstr "Your e-mail address."
+msgstr "Your email address."
 
 #: wp-admin/includes/network.php:354
 msgid "What would you like to call your network?"
@@ -1000,11 +1000,11 @@ msgstr "Deactivate, Archive, and Spam which lead to confirmation screens. These 
 
 #: wp-admin/network/site-new.php:26
 msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
-msgstr "If the admin e-mail for the new site does not exist in the database, a new user will also be created."
+msgstr "If the admin email for the new site does not exist in the database, a new user will also be created."
 
 #: wp-admin/network/settings.php:51
 msgid "Operational settings has fields for the network&#8217;s name and admin email."
-msgstr "Operational settings has fields for the network&#8217;s name and admin e-mail."
+msgstr "Operational settings has fields for the network&#8217;s name and admin email."
 
 #: wp-admin/network/settings.php:54
 msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
@@ -1012,7 +1012,7 @@ msgstr "Upload settings control the size of the uploaded files and the amount of
 
 #: wp-admin/network/users.php:204
 msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
-msgstr "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same e-mail addresses."
+msgstr "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
 
 #: wp-admin/network/users.php:202
 msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
@@ -1072,7 +1072,7 @@ msgstr "This screen enables and disables the inclusion of themes available to ch
 
 #: wp-admin/network/settings.php:53
 msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
-msgstr "New site settings are defaults applied when a new site is created in the network. These include welcome e-mail for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
 
 #: wp-admin/network/site-new.php:57
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
@@ -1224,7 +1224,7 @@ msgstr "Enable administration menus"
 
 #: wp-admin/network/site-new.php:89
 msgid "Missing email address."
-msgstr "Missing e-mail address."
+msgstr "Missing email address."
 
 #: wp-admin/network/site-new.php:85
 msgid "Missing or invalid site address."
@@ -1240,7 +1240,7 @@ msgstr "Users are not allowed to register these sites. Separate names by spaces.
 
 #: wp-admin/network/settings.php:231
 msgid "Send the network admin an email notification every time someone registers a site or user account"
-msgstr "Send the network admin an e-mail notification every time someone registers a site or user account"
+msgstr "Send the network admin an email notification every time someone registers a site or user account"
 
 #: wp-admin/network/settings.php:363
 msgid "Site upload space"
@@ -1248,7 +1248,7 @@ msgstr "Site upload space"
 
 #: wp-admin/network/settings.php:288
 msgid "The welcome email sent to new site owners."
-msgstr "The welcome e-mail sent to new site owners."
+msgstr "The welcome email sent to new site owners."
 
 #. translators: %s: network name
 #: wp-admin/network/site-new.php:149
@@ -1257,15 +1257,15 @@ msgstr "[%s] New Site Created"
 
 #: wp-admin/includes/network.php:359 wp-admin/network/settings.php:160
 msgid "Network Admin Email"
-msgstr "Network Admin e-mail"
+msgstr "Network Admin Email"
 
 #: wp-admin/network/site-new.php:284
 msgid "A new user will be created if the above email address is not in the database."
-msgstr "A new user will be created if the above e-mail address is not in the database."
+msgstr "A new user will be created if the above email address is not in the database."
 
 #: wp-admin/network/site-new.php:280
 msgid "Admin Email"
-msgstr "Admin e-mail"
+msgstr "Admin Email"
 
 #: wp-admin/network/site-new.php:296
 msgid "Add Site"
@@ -1297,23 +1297,23 @@ msgstr "First Page"
 
 #: wp-admin/network/settings.php:298
 msgid "The welcome email sent to new users."
-msgstr "The welcome e-mail sent to new users."
+msgstr "The welcome email sent to new users."
 
 #: wp-admin/network/settings.php:293
 msgid "Welcome User Email"
-msgstr "Welcome User e-mail"
+msgstr "Welcome User Email"
 
 #: wp-admin/network/settings.php:283
 msgid "Welcome Email"
-msgstr "Welcome e-mail"
+msgstr "Welcome Email"
 
 #: wp-admin/network/settings.php:268
 msgid "Banned Email Domains"
-msgstr "Banned e-mail Domains"
+msgstr "Banned Email Domains"
 
 #: wp-admin/network/settings.php:253
 msgid "Limited Email Registrations"
-msgstr "Limited e-mail registrations"
+msgstr "Limited Email Registrations"
 
 #: wp-admin/network/settings.php:243
 msgid "Banned Names"
@@ -1333,7 +1333,7 @@ msgstr "Allow new registrations"
 
 #: wp-admin/network/site-users.php:269
 msgid "Duplicated username or email address."
-msgstr "Duplicated username or e-mail address."
+msgstr "Duplicated username or email address."
 
 #: wp-admin/network/user-new.php:41
 msgid "Cannot create an empty user."

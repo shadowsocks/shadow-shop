@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce PayPal Checkout Payment Gateway - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-10 08:14:41+0000\n"
+"PO-Revision-Date: 2019-05-17 13:45:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - WooCommerce PayPal Checkout Payment Gateway - Stable (latest release)\n"
+
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:62
+msgid "Maybe"
+msgstr "Peut-être"
+
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:61
+msgid "You must enable the \"Require billing address\" option to support this gateway's features for virtual subscriptions."
+msgstr "Vous devez activer l’option « Adresse de facturation obligatoire » pour prendre en charge les fonctionnalités d’abonnement virtuel de cette passerelle."
 
 #: includes/class-wc-gateway-ppec-admin-handler.php:340
 msgid "PayPal Payout:"
@@ -47,8 +55,8 @@ msgstr "Personnaliser l’apparence de « PayPal Checkout » côté PayPal."
 msgid "PayPal Checkout Order Data Erased."
 msgstr "Données de commande PayPal effacées."
 
-#: includes/abstracts/abstract-wc-gateway-ppec.php:18
 #: includes/class-wc-gateway-ppec-privacy.php:12
+#: includes/abstracts/abstract-wc-gateway-ppec.php:18
 msgid "PayPal Checkout"
 msgstr "PayPal Checkout"
 
@@ -192,7 +200,7 @@ msgstr "PayPal"
 msgid "This option is disabled. Currently PayPal Credit only available for U.S. merchants using USD currency."
 msgstr "Cette option est désactivée. À l'heure actuelle, PayPal Credit est uniquement disponible pour les marchands aux États-Unis en monnaie USD."
 
-#: includes/class-wc-gateway-ppec-plugin.php:240
+#: includes/class-wc-gateway-ppec-plugin.php:238
 msgid "<p>PayPal&nbsp;Checkout with new <strong>Smart&nbsp;Payment&nbsp;Buttons™</strong> gives your customers the power to pay the way they want without leaving your site.</p><p>The <strong>existing buttons will be deprecated and removed</strong> in future releases. Upgrade to Smart&nbsp;Payment&nbsp;Buttons in the <a href=\"%s\">PayPal&nbsp;Checkout settings</a>.</p>"
 msgstr "<p>PayPal&nbsp;Checkout avec les nouveaux <strong>Smart&nbsp;Payment&nbsp;Buttons™</strong> donne aux clients la puissance de payer de la façon qu'ils souhaitent sans quitter votre site.</p><p>Les <strong>boutons existants seront rendus obsolètes et supprimés</strong> dans les prochaines versions. Mettre à niveau vers Smart&nbsp;Payment&nbsp;Buttons dans les <a href=\"%s\">réglages PayPal&nbsp;Checkout</a>.</p>"
 
@@ -298,8 +306,8 @@ msgid "Checkout on cart page"
 msgstr "« Checkout » sur la page panier"
 
 #: includes/class-wc-gateway-ppec-cart-handler.php:65
-#: includes/class-wc-gateway-ppec-cart-handler.php:116
-#: includes/class-wc-gateway-ppec-cart-handler.php:137
+#: includes/class-wc-gateway-ppec-cart-handler.php:117
+#: includes/class-wc-gateway-ppec-cart-handler.php:138
 msgid "Cheatin&#8217; huh?"
 msgstr "On triche, hein ?"
 
@@ -400,32 +408,32 @@ msgstr "Erreur PayPal (%1$s) : %2$s"
 msgid "An error occurred while calling the PayPal API."
 msgstr "Une erreur s’est produite en appelant l’API PayPal."
 
-#: includes/class-wc-gateway-ppec-with-paypal-addons.php:180
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:247
 msgid "PayPal payment declined"
 msgstr "Paiement PayPal refusé"
 
-#: includes/class-wc-gateway-ppec-with-paypal-addons.php:176
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:243
 msgid "PayPal payment approved (ID: %s)"
 msgstr "Paiement PayPal approuvé (ID : %s)"
 
 #. translators: placeholder is pending reason from PayPal API.
-#: includes/class-wc-gateway-ppec-with-paypal-addons.php:165
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:232
 msgid "PayPal transaction held: %s"
 msgstr "Transaction PayPal en attente : %s"
 
-#: includes/class-wc-gateway-ppec-with-paypal-addons.php:157
+#: includes/class-wc-gateway-ppec-with-paypal-addons.php:224
 msgid "PayPal API error"
 msgstr "Erreur d’API PayPal"
 
-#: includes/class-wc-gateway-ppec-plugin.php:456
+#: includes/class-wc-gateway-ppec-plugin.php:454
 msgid "Docs"
 msgstr "Documentation"
 
-#: includes/class-wc-gateway-ppec-plugin.php:453
+#: includes/class-wc-gateway-ppec-plugin.php:451
 msgid "Settings"
 msgstr "Réglages"
 
-#: includes/class-wc-gateway-ppec-plugin.php:331
+#: includes/class-wc-gateway-ppec-plugin.php:329
 msgid "PayPal Checkout is almost ready. To get started, <a href=\"%s\">connect your PayPal account</a>."
 msgstr "PayPal Checkout est presque prêt. Pour commencer, <a href=\"%s\">connectez votre compte PayPal</a>."
 
@@ -439,7 +447,7 @@ msgstr "Commandes avec %s"
 msgid "Create an account by entering the information below. If you are a returning customer please login at the top of the page."
 msgstr "Crée un compte en saisissant les informations ci-dessous. Si vous êtes déjà client, veuillez vous connecter."
 
-#: includes/class-wc-gateway-ppec-cart-handler.php:331
+#: includes/class-wc-gateway-ppec-cart-handler.php:332
 msgid "Pay with PayPal Credit"
 msgstr "Payer avec PayPal Credit"
 
@@ -703,19 +711,19 @@ msgstr "Configurer ou lier un compte PayPal existant"
 msgid "PayPal Credit"
 msgstr "PayPal Credit"
 
-#: includes/class-wc-gateway-ppec-plugin.php:304
+#: includes/class-wc-gateway-ppec-plugin.php:302
 msgid "WooCommerce Gateway PayPal Checkout requires OpenSSL >= 1.0.1 to be installed on your server"
 msgstr "WooCommerce Gateway PayPal Checkout requiert l’installation de OpenSSL >= 1.0.1 sur votre serveur"
 
-#: includes/class-wc-gateway-ppec-plugin.php:301
+#: includes/class-wc-gateway-ppec-plugin.php:299
 msgid "WooCommerce Gateway PayPal Checkout requires cURL to be installed on your server"
 msgstr "WooCommerce Gateway PayPal Checkout requiert l’installation de cURL sur votre serveur"
 
-#: includes/class-wc-gateway-ppec-plugin.php:297
+#: includes/class-wc-gateway-ppec-plugin.php:295
 msgid "WooCommerce Gateway PayPal Checkout requires WooCommerce version 2.5 or greater"
 msgstr "WooCommerce Gateway PayPal Checkout requiert l’installation de WooCommerce >= 2.5"
 
-#: includes/class-wc-gateway-ppec-plugin.php:293
+#: includes/class-wc-gateway-ppec-plugin.php:291
 msgid "WooCommerce Gateway PayPal Checkout requires WooCommerce to be activated"
 msgstr "WooCommerce Gateway PayPal Checkout requiert l’activation de WooCommerce"
 
@@ -839,21 +847,21 @@ msgstr "Impossible d’accepter le mot de passe de certificat durant la configur
 msgid "Unable to accept certificate during cURL configuration"
 msgstr "Impossible d’accepter le certificat durant la configuration cURL"
 
-#: includes/class-wc-gateway-ppec-checkout-handler.php:949
+#: includes/class-wc-gateway-ppec-checkout-handler.php:951
 #: includes/class-wc-gateway-ppec-ipn-handler.php:192
 msgid "Payment pending (%s)."
 msgstr "Paiement en attente (%s)."
 
-#: includes/class-wc-gateway-ppec-checkout-handler.php:947
+#: includes/class-wc-gateway-ppec-checkout-handler.php:949
 #: includes/class-wc-gateway-ppec-ipn-handler.php:190
 msgid "Payment authorized. Change payment status to processing or complete to capture funds."
 msgstr "Paiement autorisé. Changez l’état de paiement vers « En cours » ou « Terminée » pour capturer les fonds."
 
-#: includes/class-wc-gateway-ppec-checkout-handler.php:588
+#: includes/class-wc-gateway-ppec-checkout-handler.php:590
 msgid "You have cancelled Checkout with PayPal. Please try to process your order again."
 msgstr "Vous avez annulé la commande avec PayPal. Veuillez commander à nouveau."
 
-#: includes/class-wc-gateway-ppec-checkout-handler.php:574
+#: includes/class-wc-gateway-ppec-checkout-handler.php:576
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -890,13 +898,13 @@ msgstr "Informations de facturation"
 msgid "Confirm your PayPal order"
 msgstr "Confirmez votre commande PayPal"
 
-#: includes/class-wc-gateway-ppec-cart-handler.php:289
-#: includes/class-wc-gateway-ppec-cart-handler.php:326
-#: includes/class-wc-gateway-ppec-cart-handler.php:361
+#: includes/class-wc-gateway-ppec-cart-handler.php:290
+#: includes/class-wc-gateway-ppec-cart-handler.php:327
+#: includes/class-wc-gateway-ppec-cart-handler.php:362
 msgid "Check out with PayPal"
 msgstr "Payer avec PayPal"
 
-#: includes/class-wc-gateway-ppec-cart-handler.php:316
+#: includes/class-wc-gateway-ppec-cart-handler.php:317
 msgid "&mdash; or &mdash;"
 msgstr "&mdash; ou &mdash;"
 

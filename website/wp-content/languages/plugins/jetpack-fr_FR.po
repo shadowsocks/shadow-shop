@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-09 15:57:49+0000\n"
+"PO-Revision-Date: 2019-05-14 10:54:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -182,6 +182,10 @@ msgstr "Vue en liste"
 #: extensions/blocks/related-posts/edit.js:150
 msgid "Grid View"
 msgstr "Vue en grille"
+
+#: _inc/blocks/editor-beta.js:24
+msgid "Read more about memberships and related fees."
+msgstr "En lire plus sur les adhésions et les frais similaires."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/markdown/index.js:55
@@ -1498,6 +1502,14 @@ msgstr "Demandez-nous de l'aide !"
 #: _inc/lib/debugger/class-jetpack-debugger.php:213
 msgid "Still having trouble?"
 msgstr "Vous rencontrez encore des problèmes ?"
+
+#: _inc/lib/debugger/class-jetpack-debug-data.php:382
+msgid "Master user no longer exists. Please disconnect and reconnect Jetpack."
+msgstr "L'utilisateur principal n'existe plus. Veuillez déconnecter et reconnecter Jetpack."
+
+#: _inc/lib/debugger/class-jetpack-debug-data.php:376
+msgid "No master user set."
+msgstr "Aucun utilisateur principal configuré."
 
 #: _inc/lib/debugger/class-jetpack-cxn-test-base.php:362
 msgid "Jetpack's async local testing suite passed all tests!"
