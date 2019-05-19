@@ -187,14 +187,8 @@ then
     GETENT_RESULT=$(getent hosts "$DOMAIN_NAME" | wc --lines)
     if [ "$GETENT_RESULT" -eq 0 ]
     then
-        /bin/echo -e "${RED}The domain name you provided seems wrong${NC}"
-        /bin/echo -e "${RED}Are you sure to continue? (y/n)${NC}"
-        read IF_CONTINUE
-        if [ "$IF_CONTINUE" != "y" ] && [ "$IF_CONTINUE" != "Y" ]
-        then
-            /bin/echo -e "${RED}Abort.${NC}"
-            exit 7
-        fi
+        /bin/echo -e "${RED}Abort. The domain name seems wrong. Contact the author if the domain name is correct. ${NC}"
+        exit 7
     fi
 fi
 
