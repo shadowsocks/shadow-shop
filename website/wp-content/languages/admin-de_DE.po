@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-18 09:19:15+0000\n"
+"PO-Revision-Date: 2019-05-19 11:23:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -972,7 +972,7 @@ msgstr "Deine Themes sind auf dem neuesten Stand"
 msgid "Your site has %d active plugin, and it is up to date."
 msgid_plural "Your site has %d active plugins, and they are all up to date."
 msgstr[0] "Deine Website hat %d aktives Plugin, und es ist auf dem neuesten Stand."
-msgstr[1] "Deine Seite hat %d aktive Plugins, und sie sind alle auf dem neuesten Stand."
+msgstr[1] "Deine Website hat %d aktive Plugins, und sie sind alle auf dem neuesten Stand."
 
 #. translators: %d: The number of outdated plugins.
 #: wp-admin/includes/class-wp-site-health.php:332
