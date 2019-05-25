@@ -1,152 +1,15 @@
-# Translation of WordPress - 5.1.x - Administration - Network Admin in Chinese (Taiwan)
-# This file is distributed under the same license as the WordPress - 5.1.x - Administration - Network Admin package.
+# Translation of WordPress - 5.2.x - Development - Administration - Network Admin in Chinese (Taiwan)
+# This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-17 15:40:33+0000\n"
+"PO-Revision-Date: 2019-04-18 18:27:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: zh_TW\n"
-"Project-Id-Version: WordPress - 5.1.x - Administration - Network Admin\n"
-
-#: wp-admin/network/sites.php:112 wp-admin/network/sites.php:192
-msgid "Confirm"
-msgstr "確認"
-
-#: wp-admin/network/settings.php:190
-msgid "Registration Settings"
-msgstr "註冊設定"
-
-#: wp-admin/network/settings.php:224
-msgid "Registration notification"
-msgstr "註冊通知"
-
-#: wp-admin/network/settings.php:360
-msgid "Upload Settings"
-msgstr "上傳設定"
-
-#: wp-admin/network/settings.php:436
-msgid "Enable administration menus"
-msgstr "啟用管理選單"
-
-#: wp-admin/includes/network.php:228
-msgid "Sub-domains"
-msgstr "子網域"
-
-#: wp-admin/includes/network.php:240
-msgid "Sub-directories"
-msgstr "子目錄"
-
-#: wp-admin/includes/network.php:263 wp-admin/includes/network.php:277
-#: wp-admin/includes/network.php:337
-msgid "Server Address"
-msgstr "伺服器位址"
-
-#: wp-admin/network/user-new.php:54
-msgid "Cannot add user."
-msgstr "無法新增使用者。"
-
-#: wp-admin/network/user-new.php:145 wp-admin/network/site-users.php:320
-msgid "Add User"
-msgstr "新增使用者"
-
-#: wp-admin/network/themes.php:128
-msgid "Delete Theme"
-msgstr "刪除佈景主題"
-
-#: wp-admin/network/menu.php:48
-msgid "Themes %s"
-msgstr "佈景主題 %s"
-
-#: wp-admin/network/menu.php:29
-msgid "Updates"
-msgstr "更新"
-
-#: wp-admin/network/index.php:48
-msgid "Quick Tasks"
-msgstr "快速任務"
-
-#: wp-admin/network/index.php:26
-msgid "Install and activate themes or plugins"
-msgstr "安裝並啟用佈景主題或外掛"
-
-#: wp-admin/network/settings.php:458
-msgid "Enable menus"
-msgstr "啟用選單"
-
-#: wp-admin/network/site-info.php:195
-msgid "Set site attributes"
-msgstr "設定網站屬性"
-
-#: wp-admin/network/themes.php:166
-msgid "Yes, delete these themes"
-msgstr "是，刪除這些佈景主題"
-
-#: wp-admin/network/themes.php:132
-msgid "Delete Themes"
-msgstr "刪除佈景主題"
-
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:41
-#: wp-admin/network/site-info.php:187
-msgid "Deleted"
-msgstr "已刪除"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:347
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:444
-msgid "Enable"
-msgstr "啟用"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:302
-msgctxt "themes"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "全部 <span class=\"count\">(%s)</span>"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:586
-msgid "Visit Theme Site"
-msgstr "造訪佈景主題網站"
-
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:350
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:470
-msgid "Disable"
-msgstr "停用"
-
-#: wp-admin/network/site-new.php:166
-msgctxt "email \"From\" field"
-msgid "Site Admin"
-msgstr "網站管理員"
-
-#. translators: 1: site name, 2: site tagline.
-#: wp-admin/includes/class-wp-ms-sites-list-table.php:345
-msgid "%1$s &#8211; %2$s"
-msgstr "%1$s &#8211; %2$s"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:434
-msgid "Enable %s"
-msgstr "啟用 %s"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:460
-msgid "Disable %s"
-msgstr "停用 %s"
-
-#. translators: %s: theme name
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:487
-msgctxt "theme"
-msgid "Delete %s"
-msgstr "刪除 %s"
-
-#. translators: %s: File size in kilobytes
-#: wp-admin/network/settings.php:388
-msgid "%s KB"
-msgstr "%s KB"
-
-#: wp-admin/network/site-info.php:192
-msgid "Attributes"
-msgstr "屬性"
+"Project-Id-Version: WordPress - 5.2.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: DO_NOT_UPGRADE_GLOBAL_TABLES
 #: wp-admin/includes/network.php:113
@@ -182,14 +45,25 @@ msgstr "安裝於子目錄"
 msgid "Active Child Theme"
 msgstr "已啟用的子佈景主題"
 
-#: wp-admin/includes/class-wp-ms-themes-list-table.php:666
-msgid "Active Theme"
-msgstr "目前使用的佈景主題"
+#: wp-admin/network/site-info.php:192
+msgid "Attributes"
+msgstr "屬性"
+
+#. translators: %s: File size in kilobytes
+#: wp-admin/network/settings.php:388
+msgid "%s KB"
+msgstr "%s KB"
 
 #. translators: %s: Default network name
 #: wp-admin/includes/network.php:167
 msgid "%s Sites"
 msgstr "多站網路《%s》的網站"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:487
+msgctxt "theme"
+msgid "Delete %s"
+msgstr "刪除 %s"
 
 #: wp-admin/network/themes.php:93
 msgid "Sorry, you are not allowed to delete themes for this site."
@@ -224,6 +98,10 @@ msgstr "新網站第一則留言的留言者電子郵件地址。"
 msgid "First Comment Email"
 msgstr "第一則留言的留言者電子郵件地址"
 
+#: wp-admin/includes/network.php:478
+msgid "That&#8217;s all, stop editing! Happy publishing."
+msgstr "That&#8217;s all, stop editing! Happy publishing."
+
 #. translators: 1: wp-config.php, 2: location of wp-config file, 3: translated
 #. version of "That's all, stop editing! Happy publishing."
 #: wp-admin/includes/network.php:470
@@ -244,6 +122,11 @@ msgstr "使用者已新增。<a href=\"%s\">編輯使用者</a>"
 #: wp-admin/network/site-new.php:240
 msgid "Only lowercase letters (a-z), numbers, and hyphens are allowed."
 msgstr "只能使用小寫英文字母 (a-z)、數字及連字號 <code>-</code>。"
+
+#: wp-admin/network/site-new.php:166
+msgctxt "email \"From\" field"
+msgid "Site Admin"
+msgstr "網站管理員"
 
 #. translators: %s: wp-config.php
 #: wp-admin/includes/network.php:533
@@ -306,25 +189,29 @@ msgstr "請確認 Apache 的 %s 模組已安裝，以便在安裝完成後可以
 msgid "You cannot use port numbers such as %s."
 msgstr "不能使用特定的連接埠號碼，例如 %s。"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:173
+#: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
 msgstr "註冊時間"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:144
+#: wp-admin/includes/class-wp-ms-users-list-table.php:142
 msgid "Super Admin <span class=\"count\">(%s)</span>"
 msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
 msgstr[0] "多站網路管理員 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+#: wp-admin/includes/class-wp-ms-users-list-table.php:116
 msgctxt "user"
 msgid "Not Spam"
 msgstr "標示為非濫用使用者"
 
-#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+#: wp-admin/includes/class-wp-ms-users-list-table.php:115
 msgctxt "user"
 msgid "Mark as Spam"
 msgstr "標示為濫用使用者"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:586
+msgid "Visit Theme Site"
+msgstr "造訪佈景主題網站"
 
 #. translators: %s: theme name
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:580
@@ -341,14 +228,34 @@ msgid "Network Disable %s"
 msgstr "於多站網路中停用 %s"
 
 #. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:460
+msgid "Disable %s"
+msgstr "停用 %s"
+
+#. translators: %s: theme name
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:437
 msgid "Network Enable %s"
 msgstr "於多站網路中啟用 %s"
+
+#. translators: %s: theme name
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:434
+msgid "Enable %s"
+msgstr "啟用 %s"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:350
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:470
 msgid "Network Disable"
 msgstr "於多站網路中停用"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:350
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:470
+msgid "Disable"
+msgstr "停用"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:347
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:444
+msgid "Enable"
+msgstr "啟用"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:314
 msgid "Broken <span class=\"count\">(%s)</span>"
@@ -364,6 +271,12 @@ msgstr[0] "已停用 <span class=\"count\">(%s)</span>"
 msgid "Enabled <span class=\"count\">(%s)</span>"
 msgid_plural "Enabled <span class=\"count\">(%s)</span>"
 msgstr[0] "已啟用 <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:302
+msgctxt "themes"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部 <span class=\"count\">(%s)</span>"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:261
 msgid "Theme"
@@ -389,6 +302,11 @@ msgstr "取消封存"
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:372
 msgid "Never"
 msgstr "尚無更新"
+
+#. translators: 1: site name, 2: site tagline.
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:345
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:239
 #: wp-admin/network/site-info.php:175
@@ -420,6 +338,11 @@ msgstr "找不到符合條件的網站。"
 #: wp-admin/network/site-info.php:189
 msgid "Mature"
 msgstr "成人內容"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:41
+#: wp-admin/network/site-info.php:187
+msgid "Deleted"
+msgstr "已刪除"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:40
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:554
@@ -531,6 +454,34 @@ msgstr "這項操作會啟用網站 %s。"
 msgid "The requested site does not exist."
 msgstr "要求的網站不存在。"
 
+#: wp-admin/network/upgrade.php:31
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\">Documentation on Upgrade Network</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">升級多站網路</a>〉線上說明"
+
+#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:211
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\">Documentation on Network Users</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">多站網路使用者</a>〉線上說明"
+
+#: wp-admin/network.php:67 wp-admin/network.php:80
+msgid "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\">Documentation on the Network Screen</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">多站網路畫面</a>〉線上說明"
+
+#: wp-admin/network/index.php:55
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin\">Documentation on the Network Admin</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">多站網路管理中心</a>〉線上說明"
+
+#: wp-admin/network.php:66 wp-admin/network.php:79
+msgid "<a href=\"https://codex.wordpress.org/Create_A_Network\">Documentation on Creating a Network</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">建立多站網路</a>〉線上說明"
+
+#: wp-admin/network/themes.php:246
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\">Documentation on Network Themes</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">多站網路佈景主題</a>〉線上說明"
+
+#: wp-admin/network/settings.php:63
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Documentation on Network Settings</a>"
+msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\" target=\"_blank\">多站網路設定</a>〉線上說明"
+
 #. translators: 1: site url, 2: server error message
 #: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
@@ -563,6 +514,14 @@ msgid "%s theme deleted."
 msgid_plural "%s themes deleted."
 msgstr[0] "%s 個佈景主題已刪除。"
 
+#: wp-admin/network/themes.php:166
+msgid "Yes, delete these themes"
+msgstr "是，刪除這些佈景主題"
+
+#: wp-admin/network/themes.php:132
+msgid "Delete Themes"
+msgstr "刪除佈景主題"
+
 #: wp-admin/network/settings.php:202
 msgid "New registrations settings"
 msgstr "註冊設定"
@@ -574,6 +533,14 @@ msgstr "檔案大小以 KB 為單位"
 #: wp-admin/network/settings.php:377
 msgid "Allowed file types. Separate types by spaces."
 msgstr "開放上傳的檔案類型。請使用空格分隔檔案副檔名。"
+
+#: wp-admin/network/site-info.php:195
+msgid "Set site attributes"
+msgstr "設定網站屬性"
+
+#: wp-admin/network/settings.php:458
+msgid "Enable menus"
+msgstr "啟用選單"
 
 #. translators: 1: a filename like .htaccess, 2: a file path
 #: wp-admin/includes/network.php:602 wp-admin/includes/network.php:644
@@ -604,6 +571,10 @@ msgstr "如需新增網站，請點擊 <strong>[新增網站]</strong>。"
 msgid "To add a new user, <strong>click Create a New User</strong>."
 msgstr "如需新增使用者，請點擊 <strong>[新增使用者]</strong>。"
 
+#: wp-admin/network/index.php:48
+msgid "Quick Tasks"
+msgstr "快速任務"
+
 #: wp-admin/network/index.php:41
 msgid "To search for a user or site, use the search boxes."
 msgstr "如需搜尋使用者或網站，請使用搜尋框。"
@@ -619,6 +590,10 @@ msgstr "修改多站網路全域設定"
 #: wp-admin/network/index.php:27
 msgid "Update your network"
 msgstr "為這個多站網路進行更新"
+
+#: wp-admin/network/index.php:26
+msgid "Install and activate themes or plugins"
+msgstr "安裝並啟用佈景主題或外掛"
 
 #: wp-admin/network/index.php:25
 msgid "Add and manage sites or users"
@@ -671,6 +646,10 @@ msgstr "請將專屬程式碼加入 wp-config.php 檔案 (就在 <code>/*...stop
 msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
 msgstr "這個畫面不提供新增多站網路管理員的功能，必須在 [多站網路管理中心] 的 [使用者] 頁面中點擊使用者清單的使用者名稱或名稱下方的 [編輯] 操作連結，進入 [編輯使用者] 頁面啟用 [授予這個使用者多站網路管理員的權限]，便能將指定使用者提升至多站網路管理員權限。"
 
+#: wp-admin/network/menu.php:29
+msgid "Updates"
+msgstr "更新"
+
 #: wp-admin/network/site-new.php:25
 msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
 msgstr "這個畫面提供多站網路管理員新增網站至多站網路的功能，這項功能不受註冊設定影響。"
@@ -708,6 +687,10 @@ msgstr "網站已新增。<a href=\"%1$s\">造訪 [控制台]</a> 或<a href=\"%
 #: wp-admin/network/menu.php:40
 msgid "All Sites"
 msgstr "全部網站"
+
+#: wp-admin/network/menu.php:48
+msgid "Themes %s"
+msgstr "佈景主題 %s"
 
 #: wp-admin/network/menu.php:52
 msgid "Installed Themes"
@@ -768,6 +751,10 @@ msgstr "已在多站網路管理中心上啟用的佈景主題不會顯示在這
 msgid "Network Settings"
 msgstr "多站網路設定"
 
+#: wp-admin/network/themes.php:128
+msgid "Delete Theme"
+msgstr "刪除佈景主題"
+
 #: wp-admin/network/themes.php:129
 msgid "This theme may be active on other sites in the network."
 msgstr "這個佈景主題或許目前正由多站網路中的其他網站使用。"
@@ -808,6 +795,14 @@ msgstr "使用者已是這個網站的成員。"
 msgid "Sorry, you are not allowed to delete the site %s."
 msgstr "很抱歉，目前的登入身分沒有刪除網址為 %s 的網站的權限。"
 
+#: wp-admin/network/user-new.php:54
+msgid "Cannot add user."
+msgstr "無法新增使用者。"
+
+#: wp-admin/network/user-new.php:145 wp-admin/network/site-users.php:320
+msgid "Add User"
+msgstr "新增使用者"
+
 #: wp-admin/network/site-users.php:263
 msgid "User created."
 msgstr "使用者已新增。"
@@ -824,9 +819,17 @@ msgstr "選取使用者以變更使用者角色。"
 msgid "Enter the username and email."
 msgstr "輸入使用者名稱及電子郵件地址。"
 
+#: wp-admin/network.php:63
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
+msgstr "加入專屬程式碼並在瀏覽器中重新整理頁面後，多站網路便會完成啟用；這個畫面會成為 [多站網路管理中心] 導覽選單的一部份，會保留專屬程式碼以供後續參考取用。多站網站管理員可以點擊工具列中的 [多站網路管理中心] 或 [我的網站] 下拉式選單中的網站名稱，藉以在 [多站網路管理中心] 及 [網站管理中心] 兩者間切換。"
+
 #: wp-admin/includes/network.php:155
 msgid "ERROR: The network could not be created."
 msgstr "錯誤: 無法建立多站網路。"
+
+#: wp-admin/includes/network.php:240
+msgid "Sub-directories"
+msgstr "子目錄"
 
 #: wp-admin/network.php:72
 msgid "Network"
@@ -858,10 +861,6 @@ msgstr "建立 WordPress 網站的多站網路"
 msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
 msgstr "這個畫面能設定多站網路要採用子網域 (<code>site1.example.com</code>) 或子目錄 (<code>example.com/site1</code>) 方式建立新網站。如果採用子網域建立網站，多站網路管理員必須在 Apache 及 DNS 記錄中啟用萬用字元子網域；如果無法啟用萬用字元子網域，請聯絡網站主機服務提供商。"
 
-#: wp-admin/network.php:63
-msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
-msgstr "加入專屬程式碼並在瀏覽器中重新整理頁面後，多站網路便會完成啟用；這個畫面會成為 [多站網路管理中心] 導覽選單的一部份，會保留專屬程式碼以供後續參考取用。多站網站管理員可以點擊工具列中的 [多站網路管理中心] 或 [我的網站] 下拉式選單中的網站名稱，藉以在 [多站網路管理中心] 及 [網站管理中心] 兩者間切換。"
-
 #. translators: %s: Plugins screen URL
 #: wp-admin/includes/network.php:125
 msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
@@ -891,9 +890,17 @@ msgstr "完成這些步驟後，多站網路便完成啟用及組態。多站網
 msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
 msgstr "[多站網路組態] 的下一個畫面會提供這個多站網路專屬的程式碼，且必須將這些程式碼加入 wp-config.php 及 .htaccess 檔案中。請確定 FTP 客戶端程式能顯示檔案名稱以點 <code>.</code> 開頭的檔案，這樣才能夠找到 .htaccess；如果這個檔案不存在，務必建立一個新的 .htaccess 檔案。變更這兩個檔案前，請為這兩個檔案進行備份。"
 
+#: wp-admin/network.php:60
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your installation. Fill out the network details, and click Install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "多站網路的網站可選擇要以子網域或子目錄方式建立，除非重新安裝多站網路，否則無法變更這項設定。填寫多站網路的詳細資料，然後點擊 [安裝]。如果多站網路無法運作，多站網路管理員便會需要新增一筆萬用字元 DNS 記錄 (用於使用子網域建立網站)，或是變更永久連結 (使用子目錄建立網站)。"
+
 #: wp-admin/includes/network.php:538
 msgid "To make your installation more secure, you should also add:"
 msgstr "為了使 WordPress 網站更加安全，請加入以下程式碼:"
+
+#: wp-admin/includes/network.php:228
+msgid "Sub-domains"
+msgstr "子網域"
 
 #: wp-admin/includes/network.php:224
 msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
@@ -902,6 +909,10 @@ msgstr "如果要在虛擬主機上使用子網域方式建立網站，必須建
 #: wp-admin/includes/network.php:137
 msgid "You cannot install a network of sites with your server address."
 msgstr "不能使用這個伺服器位址安裝多站網路。"
+
+#: wp-admin/includes/network.php:189
+msgid "Note:"
+msgstr "注意:"
 
 #: wp-admin/includes/network.php:177
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
@@ -951,6 +962,11 @@ msgstr "由於這個多站網路安裝於子目錄中，因此這個 WordPress �
 #: wp-admin/includes/network.php:330
 msgid "The main site in a sub-directory installation will need to use a modified permalink structure, potentially breaking existing links."
 msgstr "安裝於子目錄的主要網站需要使用修改過的永久連結結構，有可能影響現有的連結。"
+
+#: wp-admin/includes/network.php:263 wp-admin/includes/network.php:277
+#: wp-admin/includes/network.php:337
+msgid "Server Address"
+msgstr "伺服器位址"
 
 #. translators: 1: hostname
 #: wp-admin/includes/network.php:245
@@ -1178,13 +1194,25 @@ msgstr "開放註冊新使用者帳號及新網站"
 msgid "Logged in users may register new sites"
 msgstr "開放已登入的使用者註冊新網站"
 
+#: wp-admin/network/settings.php:190
+msgid "Registration Settings"
+msgstr "註冊設定"
+
 #: wp-admin/network/settings.php:279
 msgid "New Site Settings"
 msgstr "新增網站設定"
 
+#: wp-admin/network/settings.php:360
+msgid "Upload Settings"
+msgstr "上傳設定"
+
 #: wp-admin/network/settings.php:150
 msgid "Operational Settings"
 msgstr "一般運作設定"
+
+#: wp-admin/network/settings.php:436
+msgid "Enable administration menus"
+msgstr "啟用管理選單"
 
 #: wp-admin/network/site-new.php:89
 msgid "Missing email address."
@@ -1213,6 +1241,11 @@ msgstr "網站上傳空間"
 #: wp-admin/network/settings.php:288
 msgid "The welcome email sent to new site owners."
 msgstr "傳送給新網站擁有者的歡迎電子郵件內容。"
+
+#. translators: %s: network name
+#: wp-admin/network/site-new.php:149
+msgid "[%s] New Site Created"
+msgstr "《%s》通知：新網站已建立"
 
 #: wp-admin/includes/network.php:359 wp-admin/network/settings.php:160
 msgid "Network Admin Email"
@@ -1282,6 +1315,10 @@ msgstr "禁用的網站名稱"
 msgid "Add New Users"
 msgstr "新增使用者"
 
+#: wp-admin/network/settings.php:224
+msgid "Registration notification"
+msgstr "註冊通知"
+
 #: wp-admin/network/settings.php:193
 msgid "Allow new registrations"
 msgstr "註冊開放範圍"
@@ -1294,43 +1331,6 @@ msgstr "重複的使用者名稱或電子郵件地址。"
 msgid "Cannot create an empty user."
 msgstr "無法新增沒有資料內容的使用者。"
 
-#: wp-admin/includes/network.php:478
-msgid "That&#8217;s all, stop editing! Happy publishing."
-msgstr "That&#8217;s all, stop editing! Happy publishing."
-
-#: wp-admin/network/settings.php:63
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Documentation on Network Settings</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\" target=\"_blank\">多站網路設定</a>〉線上說明"
-
-#. translators: %s: network name
-#: wp-admin/network/site-new.php:149
-msgid "[%s] New Site Created"
-msgstr "《%s》通知：新網站已建立"
-
-#: wp-admin/network/upgrade.php:31
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\">Documentation on Upgrade Network</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">升級多站網路</a>〉線上說明"
-
-#: wp-admin/network/themes.php:246
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\">Documentation on Network Themes</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">多站網路佈景主題</a>〉線上說明"
-
-#: wp-admin/network/index.php:55
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin\">Documentation on the Network Admin</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">多站網路管理中心</a>〉線上說明"
-
-#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:211
-msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\">Documentation on Network Users</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">多站網路使用者</a>〉線上說明"
-
-#: wp-admin/network.php:67 wp-admin/network.php:80
-msgid "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\">Documentation on the Network Screen</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">多站網路畫面</a>〉線上說明"
-
-#: wp-admin/network.php:66 wp-admin/network.php:79
-msgid "<a href=\"https://codex.wordpress.org/Create_A_Network\">Documentation on Creating a Network</a>"
-msgstr "〈<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">建立多站網路</a>〉線上說明"
-
-#: wp-admin/network.php:60
-msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your installation. Fill out the network details, and click Install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
-msgstr "多站網路的網站可選擇要以子網域或子目錄方式建立，除非重新安裝多站網路，否則無法變更這項設定。填寫多站網路的詳細資料，然後點擊 [安裝]。如果多站網路無法運作，多站網路管理員便會需要新增一筆萬用字元 DNS 記錄 (用於使用子網域建立網站)，或是變更永久連結 (使用子目錄建立網站)。"
+#: wp-admin/network/sites.php:112 wp-admin/network/sites.php:192
+msgid "Confirm"
+msgstr "確認"

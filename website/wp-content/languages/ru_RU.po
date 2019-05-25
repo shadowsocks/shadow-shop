@@ -87,10 +87,6 @@ msgstr " "
 msgid "number_format_decimal_point"
 msgstr ","
 
-#: wp-includes/taxonomy.php:2281
-msgid "Could not insert term taxonomy into the database."
-msgstr "Не удалось вставить элемент таксономии в базу данных."
-
 #: wp-includes/load.php:152
 msgid "Insufficient Requirements"
 msgstr "Несоответствие требованиям"
@@ -536,7 +532,7 @@ msgstr "Подробности ошибки"
 msgid "A recovery link was already sent %1$s ago. Please wait another %2$s before requesting a new email."
 msgstr "Ссылка восстановления уже отослана %1$s назад. Пожалуйста, подождите еще %2$s перед тем, как запрашивать новую."
 
-#: wp-login.php:429 wp-includes/class-wp-recovery-mode-email-service.php:65
+#: wp-includes/class-wp-recovery-mode-email-service.php:65
 msgid "The email could not be sent. Possible reason: your host may have disabled the mail() function."
 msgstr "Сообщение email не может быть отослано. Возможная причина: ваш хостинг отключил функцию mail()."
 
@@ -640,13 +636,13 @@ msgstr "Нет элементов для показа."
 
 #. translators: %s: the amount of additional, not visible images in the gallery
 #. widget preview.
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:218
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:217
 msgid "Additional images added to this gallery: %s"
 msgstr "Дополнительные изображения добавлены к этой галерее: %s"
 
 #. translators: %s: the image file name.
-#: wp-includes/widgets/class-wp-widget-media-image.php:359
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:204
+#: wp-includes/widgets/class-wp-widget-media-image.php:358
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:203
 msgid "The current image has no alternative text. The file name is: %s"
 msgstr "Текущее изображение не имеет альтернативного текста. Имя файла: %s"
 
@@ -975,7 +971,7 @@ msgstr "(выбранный блок)"
 msgid "Block tools"
 msgstr "Инструменты блоков"
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:163
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:162
 msgid "Sorry, you are not allowed to view autosaves of this post."
 msgstr "Извините, вам не разрешен просмотр автоматических сохранений этой записи."
 
@@ -3653,15 +3649,15 @@ msgstr "Версия формата блоков содержимого испо
 msgid "Slug automatically generated from the object title."
 msgstr "Ярлык автоматически создан из заголовка объекта."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:353
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:352
 msgid "There is nothing to save. The autosave and the post content are the same."
 msgstr "Нечего сохранить. Содержимое записи не отличается от автоматически сохраненной версии."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:302
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:301
 msgid "Preview link for the post."
 msgstr "Ссылка для предварительного просмотра записи."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:253
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:252
 msgid "There is no autosave revision for this post."
 msgstr "Для этой записи нет автоматически сохраненных редакций."
 
@@ -3669,11 +3665,11 @@ msgstr "Для этой записи нет автоматически сохр�
 msgid "Permalink template for the object."
 msgstr "Шаблон постоянных ссылок для объекта."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:247
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:246
 msgid "Invalid parent post ID."
 msgstr "Неверный ID родительской записи."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:117
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:116
 msgid "The ID for the object."
 msgstr "ID для объекта."
 
@@ -4259,7 +4255,7 @@ msgid "Click &#8220;Next&#8221; to start adding links to your new menu."
 msgstr "Нажмите &#8220;Далее&#8221;, чтобы начать добавлять ссылки в ваше новое меню."
 
 #. translators: %s: a list of valid video file extensions
-#: wp-includes/widgets/class-wp-widget-media-video.php:51
+#: wp-includes/widgets/class-wp-widget-media-video.php:50
 msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
 msgstr "К сожалению, не получилось загрузить видео по указанному URL. Убедитесь, что URL указывает на поддерживаемый видео файл (%s) или поток (например YouTube или Vimeo)."
 
@@ -4427,19 +4423,19 @@ msgstr "Неподдерживаемый тип значения (%s)."
 msgid "Widgets need to be registered using %s, before they can be displayed."
 msgstr "Виджеты должны быть зарегистрированы с помощью %s, перед тем как они будут отображаться."
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:337
+#: wp-includes/widgets/class-wp-widget-media-image.php:336
 msgid "Link to:"
 msgstr "Ссылка на:"
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:38
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:37
 msgid "No images selected"
 msgstr "Изображения не выбраны"
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:30
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:29
 msgid "Displays an image gallery."
 msgstr "Показывает галерею изображений."
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:28
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:27
 #: wp-includes/js/dist/editor.js:8815
 #: wp-includes/js/dist/block-library.js:13262
 #: wp-includes/js/dist/block-library.js:13421
@@ -5351,17 +5347,17 @@ msgctxt "label for button in the media widget"
 msgid "Add Media"
 msgstr "Добавить медиафайл"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:39
+#: wp-includes/widgets/class-wp-widget-media-video.php:38
 msgctxt "label for button in the video widget"
 msgid "Add Video"
 msgstr "Добавить видео"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:39
+#: wp-includes/widgets/class-wp-widget-media-image.php:38
 msgctxt "label for button in the image widget"
 msgid "Add Image"
 msgstr "Добавить изображение"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:39
+#: wp-includes/widgets/class-wp-widget-media-audio.php:38
 msgctxt "label for button in the audio widget"
 msgid "Add Audio"
 msgstr "Добавить аудиозапись"
@@ -5423,7 +5419,7 @@ msgstr "Регистрация сайтов и пользователей в с�
 msgid "Greetings Network Administrator!"
 msgstr "Приветствуем Администратора Сети!"
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:62
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:61
 #: wp-includes/widgets/class-wp-widget-media.php:151
 msgid "Title for the widget"
 msgstr "Название виджета"
@@ -5480,16 +5476,16 @@ msgid "A media item."
 msgstr "Медиа элемент."
 
 #. translators: %s: video extension
-#: wp-includes/widgets/class-wp-widget-media-video.php:97
+#: wp-includes/widgets/class-wp-widget-media-video.php:96
 msgid "URL to the %s video source file"
 msgstr "URL для источника %s видео"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:49
+#: wp-includes/widgets/class-wp-widget-media-video.php:48
 msgid "Video Widget"
 msgstr "Видео"
 
 #. translators: %d: widget count
-#: wp-includes/widgets/class-wp-widget-media-video.php:48
+#: wp-includes/widgets/class-wp-widget-media-video.php:47
 msgid "Video Widget (%d)"
 msgid_plural "Video Widget (%d)"
 msgstr[0] "Видео виджет (%d)"
@@ -5497,35 +5493,35 @@ msgstr[1] "Видео виджеты (%d)"
 msgstr[2] "Видео виджеты (%d)"
 
 #. translators: %s: URL to media library
-#: wp-includes/widgets/class-wp-widget-media-video.php:44
+#: wp-includes/widgets/class-wp-widget-media-video.php:43
 msgid "We can&#8217;t find that video. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Мы не можем найти это видео. Проверьте вашу <a href=\"%s\">медиатеку</a> и убедитесь что оно не было удалено."
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:41
+#: wp-includes/widgets/class-wp-widget-media-video.php:40
 msgctxt "label for button in the video widget; should preferably not be longer than ~13 characters long"
 msgid "Edit Video"
 msgstr "Редактировать"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:40
+#: wp-includes/widgets/class-wp-widget-media-video.php:39
 msgctxt "label for button in the video widget; should preferably not be longer than ~13 characters long"
 msgid "Replace Video"
 msgstr "Заменить"
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:39
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:38
 msgctxt "label for button in the gallery widget; should not be longer than ~13 characters long"
 msgid "Add Images"
 msgstr "Добавить"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:30
+#: wp-includes/widgets/class-wp-widget-media-video.php:29
 msgid "Displays a video from the media library or from YouTube, Vimeo, or another provider."
 msgstr "Показывает видео из медиабиблиотеки или с YouTube, Vimeo или иного провайдера."
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:49
+#: wp-includes/widgets/class-wp-widget-media-image.php:48
 msgid "Image Widget"
 msgstr "Изображение"
 
 #. translators: %d: widget count
-#: wp-includes/widgets/class-wp-widget-media-image.php:48
+#: wp-includes/widgets/class-wp-widget-media-image.php:47
 msgid "Image Widget (%d)"
 msgid_plural "Image Widget (%d)"
 msgstr[0] "Виджет изображений (%d)"
@@ -5533,50 +5529,50 @@ msgstr[1] "Виджеты изображений (%d)"
 msgstr[2] "Виджеты изображений (%d)"
 
 #. translators: %s: URL to media library
-#: wp-includes/widgets/class-wp-widget-media-image.php:44
+#: wp-includes/widgets/class-wp-widget-media-image.php:43
 msgid "We can&#8217;t find that image. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Мы не можем найти это изображение. Проверьте вашу <a href=\"%s\">медиатеку</a> и убедитесь что оно не было удалено."
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:41
+#: wp-includes/widgets/class-wp-widget-media-image.php:40
 msgctxt "label for button in the image widget; should preferably not be longer than ~13 characters long"
 msgid "Edit Image"
 msgstr "Редактировать"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:40
+#: wp-includes/widgets/class-wp-widget-media-image.php:39
 msgctxt "label for button in the image widget; should preferably not be longer than ~13 characters long"
 msgid "Replace Image"
 msgstr "Заменить"
 
-#: wp-includes/widgets/class-wp-widget-media-gallery.php:41
+#: wp-includes/widgets/class-wp-widget-media-gallery.php:40
 msgctxt "label for button in the gallery widget; should not be longer than ~13 characters long"
 msgid "Edit Gallery"
 msgstr "Редактировать"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:30
+#: wp-includes/widgets/class-wp-widget-media-image.php:29
 msgid "Displays an image."
 msgstr "Показывает изображение."
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:349
-#: wp-includes/widgets/class-wp-widget-media-audio.php:197
-#: wp-includes/widgets/class-wp-widget-media-video.php:241
+#: wp-includes/widgets/class-wp-widget-media-image.php:348
+#: wp-includes/widgets/class-wp-widget-media-audio.php:196
+#: wp-includes/widgets/class-wp-widget-media-video.php:240
 msgid "Unable to preview media due to an unknown error."
 msgstr "Просмотр файла невозможен из-за неизвестной ошибки."
 
 #. translators: %s: audio extension
-#: wp-includes/widgets/class-wp-widget-media-audio.php:86
+#: wp-includes/widgets/class-wp-widget-media-audio.php:85
 msgid "URL to the %s audio source file"
 msgstr "URL источника %s аудиофайла."
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:50
+#: wp-includes/widgets/class-wp-widget-media-audio.php:49
 msgid "Looks like this isn&#8217;t the correct kind of file. Please link to an audio file instead."
 msgstr "Выглядит как некорректный тип файла. Пожалуйста, создайте ссылку на аудиофайл. "
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:49
+#: wp-includes/widgets/class-wp-widget-media-audio.php:48
 msgid "Audio Widget"
 msgstr "Аудио"
 
 #. translators: %d: widget count
-#: wp-includes/widgets/class-wp-widget-media-audio.php:48
+#: wp-includes/widgets/class-wp-widget-media-audio.php:47
 msgid "Audio Widget (%d)"
 msgid_plural "Audio Widget (%d)"
 msgstr[0] "Аудио виджет (%d)"
@@ -5584,26 +5580,26 @@ msgstr[1] "Аудио виджеты (%d)"
 msgstr[2] "Аудио виджеты (%d)"
 
 #. translators: %s: URL to media library
-#: wp-includes/widgets/class-wp-widget-media-audio.php:44
+#: wp-includes/widgets/class-wp-widget-media-audio.php:43
 msgid "We can&#8217;t find that audio file. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Мы не можем найти этот аудиофайл. Проверьте вашу <a href=\"%s\">медиатеку</a> и убедитесь что он не был удален."
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:41
+#: wp-includes/widgets/class-wp-widget-media-audio.php:40
 msgctxt "label for button in the audio widget; should preferably not be longer than ~13 characters long"
 msgid "Edit Audio"
 msgstr "Редактировать"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:40
+#: wp-includes/widgets/class-wp-widget-media-audio.php:39
 msgctxt "label for button in the audio widget; should preferably not be longer than ~13 characters long"
 msgid "Replace Audio"
 msgstr "Заменить"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:38
+#: wp-includes/widgets/class-wp-widget-media-audio.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:233
 msgid "No audio selected"
 msgstr "Аудиофайл не выбран"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:30
+#: wp-includes/widgets/class-wp-widget-media-audio.php:29
 msgid "Displays an audio player."
 msgstr "Показывает аудио проигрыватель."
 
@@ -6332,7 +6328,7 @@ msgstr "Выбрать видео"
 msgid "Change video"
 msgstr "Изменить видео"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:38
+#: wp-includes/widgets/class-wp-widget-media-video.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:223
 msgid "No video selected"
 msgstr "Видео не выбрано"
@@ -7174,8 +7170,8 @@ msgstr "ID ассоциированного объекта записи."
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:94
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:655
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1979
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:87
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:113
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:86
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:112
 msgid "The ID for the parent of the object."
 msgstr "ID родителя объекта."
 
@@ -7867,7 +7863,7 @@ msgstr "Пауза"
 msgid "Play"
 msgstr "Воспроизвести"
 
-#: wp-includes/taxonomy.php:2124 wp-includes/taxonomy.php:2842
+#: wp-includes/taxonomy.php:2124 wp-includes/taxonomy.php:2838
 msgid "A name is required for this term."
 msgstr "Требуется название этого элемента."
 
@@ -9735,7 +9731,7 @@ msgstr "Классы CSS"
 msgid "Title Attribute"
 msgstr "Атрибут title"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:143
+#: wp-includes/widgets/class-wp-widget-media-image.php:142
 #: wp-includes/media-template.php:1082
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:106
 #: wp-includes/class-wp-editor.php:1741
@@ -9865,7 +9861,7 @@ msgstr "Установка успешно завершена."
 msgid "Taxonomy names must be between 1 and 32 characters in length."
 msgstr "Имена таксономий должны быть от 1 до 20 символов."
 
-#: wp-includes/taxonomy.php:3804
+#: wp-includes/taxonomy.php:3800
 msgid "Could not split shared term."
 msgstr "Не удалось разделить связанные элементы."
 
@@ -10308,7 +10304,7 @@ msgstr "Выберите файл"
 msgid "Select image"
 msgstr "Выбрать изображение"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:38
+#: wp-includes/widgets/class-wp-widget-media-image.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:244
 msgid "No image selected"
 msgstr "Изображение не выбрано"
@@ -10387,7 +10383,7 @@ msgstr "Множественный выбор"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4317
+#: wp-includes/taxonomy.php:4313
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -10617,12 +10613,12 @@ msgstr "Альбом"
 msgid "Artist"
 msgstr "Исполнитель"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:120
+#: wp-includes/widgets/class-wp-widget-media-image.php:119
 #: wp-includes/media-template.php:1076
 msgid "Image CSS Class"
 msgstr "CSS-класс изображения"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:151
+#: wp-includes/widgets/class-wp-widget-media-image.php:150
 #: wp-includes/media-template.php:1072
 msgid "Image Title Attribute"
 msgstr "Атрибут title"
@@ -10664,7 +10660,7 @@ msgstr "Настройки отображения"
 msgid "Show Video List"
 msgstr "Показывать список видеофайлов"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:129
+#: wp-includes/widgets/class-wp-widget-media-image.php:128
 #: wp-includes/media-template.php:1089
 #: wp-includes/js/dist/block-library.js:10388
 msgid "Link CSS Class"
@@ -10701,7 +10697,7 @@ msgctxt "auto preload"
 msgid "Auto"
 msgstr "Авто"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:86
+#: wp-includes/widgets/class-wp-widget-media-video.php:85
 #: wp-includes/media-template.php:1273 wp-includes/media-template.php:1278
 msgid "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
 msgstr "Треки (субтитры, подписи, описания, главы или метаданные)"
@@ -11714,6 +11710,10 @@ msgstr "Браузер на вашем устройстве не поддерж�
 msgid "<strong>ERROR</strong>: Couldn&#8217;t register you&hellip; please contact the <a href=\"mailto:%s\">webmaster</a> !"
 msgstr "<strong>ОШИБКА</strong>: Регистрация не удалась. Пожалуйста, свяжитесь с <a href=\"mailto:%s\">администратором</a>!"
 
+#: wp-login.php:429
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr "Возможная причина: на сервере отключена функция mail()."
+
 #: wp-includes/post-template.php:298
 msgid "(more&hellip;)"
 msgstr "(далее&hellip;)"
@@ -11873,7 +11873,7 @@ msgstr[2] "Видеофайлы <span class=\"count\">(%s)</span>"
 msgid "Manage Video"
 msgstr "Управление видеофайлами"
 
-#: wp-includes/widgets/class-wp-widget-media-video.php:28
+#: wp-includes/widgets/class-wp-widget-media-video.php:27
 #: wp-includes/post.php:2630 wp-includes/js/dist/editor.js:8833
 #: wp-includes/js/dist/block-editor.js:16114
 #: wp-includes/js/dist/block-library.js:15794
@@ -11910,7 +11910,7 @@ msgstr "Загруженные для этой страницы"
 msgid "Insert into page"
 msgstr "Вставить в страницу"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:28
+#: wp-includes/widgets/class-wp-widget-media-audio.php:27
 #: wp-includes/post.php:2629 wp-includes/js/dist/editor.js:8836
 #: wp-includes/js/dist/block-editor.js:16110
 #: wp-includes/js/dist/block-library.js:14521
@@ -12068,7 +12068,7 @@ msgstr "Медиафайл"
 msgid "Attachment Page"
 msgstr "Страница вложения"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:104
+#: wp-includes/widgets/class-wp-widget-media-image.php:103
 #: wp-includes/media-template.php:698 wp-includes/media-template.php:780
 #: wp-includes/media-template.php:934 wp-includes/media-template.php:1044
 #: wp-includes/js/dist/block-library.js:10373
@@ -12150,7 +12150,7 @@ msgctxt "Display name based on first name and last name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: wp-includes/taxonomy.php:2540
+#: wp-includes/taxonomy.php:2536
 msgid "Could not insert term relationship into the database."
 msgstr "Не удалось вставить связь элемента в базу данных"
 
@@ -12196,7 +12196,7 @@ msgctxt "Uploader: Drop files here - or - Select Files"
 msgid "or"
 msgstr "или"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:97
+#: wp-includes/widgets/class-wp-widget-media-image.php:96
 #: wp-includes/media-template.php:422 wp-includes/media-template.php:900
 #: wp-includes/media-template.php:967
 msgid "Alternative Text"
@@ -12434,7 +12434,7 @@ msgstr "Извините, вам не разрешено редактирова�
 #: wp-includes/class-wp-xmlrpc-server.php:2161
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:414
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:537
-#: wp-includes/taxonomy.php:2135 wp-includes/taxonomy.php:2846
+#: wp-includes/taxonomy.php:2135 wp-includes/taxonomy.php:2842
 msgid "Parent term does not exist."
 msgstr "Родительского элемента не существует."
 
@@ -12459,8 +12459,8 @@ msgstr "Извините, вам не разрешено создавать эл
 #: wp-includes/taxonomy.php:721 wp-includes/taxonomy.php:821
 #: wp-includes/taxonomy.php:1003 wp-includes/taxonomy.php:1169
 #: wp-includes/taxonomy.php:1968 wp-includes/taxonomy.php:2106
-#: wp-includes/taxonomy.php:2421 wp-includes/taxonomy.php:2596
-#: wp-includes/taxonomy.php:2800
+#: wp-includes/taxonomy.php:2417 wp-includes/taxonomy.php:2592
+#: wp-includes/taxonomy.php:2796
 msgid "Invalid taxonomy."
 msgstr "Неверная таксономия."
 
@@ -12929,8 +12929,8 @@ msgstr "Верхняя панель"
 msgid "Very dark gray"
 msgstr "Тёмно-серый"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:71
-#: wp-includes/widgets/class-wp-widget-media-video.php:73
+#: wp-includes/widgets/class-wp-widget-media-audio.php:70
+#: wp-includes/widgets/class-wp-widget-media-video.php:72
 #: wp-includes/media-template.php:1157 wp-includes/media-template.php:1248
 #: wp-includes/js/dist/block-library.js:14458
 #: wp-includes/js/dist/block-library.js:15711
@@ -14156,6 +14156,10 @@ msgstr "<strong>ОШИБКА</strong>: Пожалуйста, введите ва
 msgid "Invalid key."
 msgstr "Неверный ключ."
 
+#: wp-login.php:429
+msgid "The email could not be sent."
+msgstr "Не удалось отправить письмо."
+
 #. translators: Password reset notification email subject. %s: Site title
 #: wp-login.php:399
 msgid "[%s] Password Reset"
@@ -14207,12 +14211,12 @@ msgstr "Таблица стилей не найдена."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "Отсутствует родительская тема. Пожалуйста, установите родительскую тему &laquo;%s&raquo;"
 
-#: wp-includes/taxonomy.php:4389
+#: wp-includes/taxonomy.php:4385
 msgid "Invalid object ID."
 msgstr "Неверный ID объекта"
 
 #. translators: %s: taxonomy term slug
-#: wp-includes/taxonomy.php:2908
+#: wp-includes/taxonomy.php:2904
 msgid "The slug &#8220;%s&#8221; is already in use by another term."
 msgstr "Ярлык &#8220;%s&#8221; уже используется другим элементом"
 
@@ -14220,12 +14224,12 @@ msgstr "Ярлык &#8220;%s&#8221; уже используется другим
 msgid "Could not insert term into the database."
 msgstr "Не удалось вставить элемент в базу данных"
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:183
+#: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:182
 msgid "Invalid item ID."
 msgstr "Неверный ID элемента"
 
-#: wp-includes/taxonomy.php:817 wp-includes/taxonomy.php:2813
-#: wp-includes/taxonomy.php:4171
+#: wp-includes/taxonomy.php:817 wp-includes/taxonomy.php:2809
+#: wp-includes/taxonomy.php:4167
 msgid "Empty Term."
 msgstr "Пустой элемент"
 
@@ -14339,7 +14343,7 @@ msgid "of"
 msgstr "из"
 
 #: wp-includes/script-loader.php:1102
-#: wp-includes/widgets/class-wp-widget-media-image.php:28
+#: wp-includes/widgets/class-wp-widget-media-image.php:27
 #: wp-includes/class-wp-editor.php:1110 wp-includes/js/dist/editor.js:8821
 #: wp-includes/js/dist/block-editor.js:16112
 #: wp-includes/js/dist/block-library.js:10702
@@ -14715,7 +14719,7 @@ msgstr "Действие"
 msgid "Letter"
 msgstr "Буква"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:136
+#: wp-includes/widgets/class-wp-widget-media-image.php:135
 #: wp-includes/media-template.php:1085
 #: wp-includes/js/dist/block-library.js:10392
 msgid "Link Rel"
@@ -14761,8 +14765,8 @@ msgstr "Фон"
 msgid "Align"
 msgstr "Расположение"
 
-#: wp-includes/widgets/class-wp-widget-media-audio.php:76
-#: wp-includes/widgets/class-wp-widget-media-video.php:79
+#: wp-includes/widgets/class-wp-widget-media-audio.php:75
+#: wp-includes/widgets/class-wp-widget-media-video.php:78
 #: wp-includes/media-template.php:1172 wp-includes/media-template.php:1263
 #: wp-includes/js/dist/block-library.js:14454
 #: wp-includes/js/dist/block-library.js:15699
@@ -15845,7 +15849,7 @@ msgstr "Плагин:"
 msgid "Default"
 msgstr "По умолчанию"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:83
+#: wp-includes/widgets/class-wp-widget-media-image.php:82
 #: wp-includes/media-template.php:1039 wp-includes/class-wp-editor.php:1222
 #: wp-includes/js/dist/block-library.js:10348
 msgid "Height"
@@ -15937,7 +15941,7 @@ msgstr "<strong>ОШИБКА</strong>: Этот e-mail уже зарегистр
 msgid "<strong>ERROR</strong>: Please enter a username."
 msgstr "<strong>ОШИБКА</strong>: Пожалуйста, введите имя пользователя."
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:77
+#: wp-includes/widgets/class-wp-widget-media-image.php:76
 #: wp-includes/media-template.php:1039 wp-includes/class-wp-editor.php:1223
 #: wp-includes/js/dist/block-library.js:10341
 #: wp-includes/js/dist/format-library.js:706
@@ -16144,7 +16148,7 @@ msgstr "Редактировать"
 msgid "Link URL"
 msgstr "Ссылка"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:90
+#: wp-includes/widgets/class-wp-widget-media-image.php:89
 #: wp-includes/media-template.php:447 wp-includes/media-template.php:639
 #: wp-includes/media-template.php:910 wp-includes/media-template.php:977
 #: wp-includes/class-wp-editor.php:1224
@@ -16155,7 +16159,7 @@ msgstr "Подпись"
 msgid "Alignment"
 msgstr "Выравнивание"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:71
+#: wp-includes/widgets/class-wp-widget-media-image.php:70
 #: wp-includes/media-template.php:743 wp-includes/media-template.php:821
 #: wp-includes/media-template.php:1004
 msgid "Size"
@@ -16483,7 +16487,7 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "Комментарий"
 
-#: wp-includes/widgets/class-wp-widget-media-image.php:112
+#: wp-includes/widgets/class-wp-widget-media-image.php:111
 #: wp-includes/media-template.php:1123 wp-includes/media-template.php:1207
 #: wp-includes/media.php:3635 wp-includes/media.php:4164
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:92

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-19 02:49:41+0000\n"
+"PO-Revision-Date: 2019-05-22 06:24:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1764,7 +1764,7 @@ msgstr "このプラグインは現在使用中の WordPress のバージョン�
 #. translators: %s: Update PHP page URL
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:663
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:682
-#: wp-admin/includes/update-core.php:950 wp-admin/install.php:247
+#: wp-admin/includes/update-core.php:952 wp-admin/install.php:247
 #: wp-admin/update-core.php:80 wp-admin/update-core.php:313
 #: wp-admin/upgrade.php:89
 msgid "<a href=\"%s\">Learn more about updating PHP</a>."
@@ -5768,7 +5768,7 @@ msgstr "一括操作を選択"
 
 #: wp-admin/user-new.php:413 wp-admin/user-new.php:554
 msgid "Add the user without sending an email that requires their confirmation."
-msgstr "確認を必要とするメールを送信せずにユーザを追加する。"
+msgstr "確認を必要とするメールを送信せずにユーザーを追加する。"
 
 #. translators: %s: list view URL
 #: wp-admin/upload.php:102
@@ -6318,8 +6318,8 @@ msgstr "%1$s のサイトは、WordPress をバージョン %2$s に更新する
 msgid "WordPress %s is also now available."
 msgstr "WordPress %s も利用できます。"
 
-#: wp-admin/includes/update-core.php:927 wp-admin/includes/update-core.php:1022
-#: wp-admin/includes/update-core.php:1047
+#: wp-admin/includes/update-core.php:927 wp-admin/includes/update-core.php:1027
+#: wp-admin/includes/update-core.php:1052
 #: wp-admin/includes/class-core-upgrader.php:159
 #: wp-admin/includes/class-wp-upgrader.php:165
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
@@ -6446,7 +6446,7 @@ msgstr "翻訳を更新"
 msgid "Background updates"
 msgstr "バックグラウンド更新"
 
-#: wp-admin/includes/update-core.php:1088
+#: wp-admin/includes/update-core.php:1093
 msgid "There is not enough free disk space to complete the update."
 msgstr "更新を完了するのに十分な空きディスク領域がありません。"
 
@@ -6527,11 +6527,11 @@ msgstr "ユーザー名に無効な文字が含まれています。"
 msgid "Please provide a valid username."
 msgstr "有効なユーザー名を入力してください。"
 
-#: wp-admin/includes/update-core.php:1036
+#: wp-admin/includes/update-core.php:1041
 msgid "Copying the required files&#8230;"
 msgstr "必要なファイルをコピーしています&#8230;"
 
-#: wp-admin/includes/update-core.php:966
+#: wp-admin/includes/update-core.php:971
 msgid "Preparing to install the latest version&#8230;"
 msgstr "最新版をインストールする準備をしています&#8230;"
 
@@ -7240,7 +7240,7 @@ msgstr "検索エンジンでの表示"
 msgid "You can also control the display of your content in RSS feeds, including the maximum number of posts to display and whether to show full text or a summary."
 msgstr "表示する最大投稿数、全文か概要かなど、RSS フィード内のコンテンツ表示をコントロールすることもできます。"
 
-#: wp-admin/includes/update-core.php:1351 wp-admin/update-core.php:577
+#: wp-admin/includes/update-core.php:1356 wp-admin/update-core.php:577
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "WordPress %1$s へようこそ。「WordPress について」の画面に自動的に移動します。画面が切り替わらない場合は、<a href=\"%2$s\">ここ</a>をクリックしてください。"
 
@@ -8068,7 +8068,7 @@ msgstr "メンテナンスとセキュリティのリリース"
 msgid "This screen allows you to choose your permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "この画面ではパーマリンク構造を選択できます。共通設定から選ぶか、独自の URL 構造を作成できます。"
 
-#: wp-admin/includes/update-core.php:1352 wp-admin/update-core.php:578
+#: wp-admin/includes/update-core.php:1357 wp-admin/update-core.php:578
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "WordPress %1$s へようこそ。<a href=\"%2$s\">詳細を読む</a>。"
 
@@ -8874,7 +8874,7 @@ msgstr "WordPress.org のディレクトリで提供されるすべてのプラ�
 msgid "WordPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around WordPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href=\"%s\">check out our trademark guidelines</a> first."
 msgstr ""
 "WordPress はあなたのような人たちが友人に WordPress のことを語るにつれて成長します\n"
-"。WordPress 上やその周りで構築されている何千という事業やサービスがそのユーザとともにその事実を共有します。誰かが WordPress という言葉を広げるたびに私たちはうれしく思います。まずはじめに必ず<a href=\"%s\">商標のガイドラインをよく確認</a>してください。"
+"。WordPress 上やその周りで構築されている何千という事業やサービスがそのユーザーとともにその事実を共有します。誰かが WordPress という言葉を広げるたびに私たちはうれしく思います。まずはじめに必ず<a href=\"%s\">商標のガイドラインをよく確認</a>してください。"
 
 #. translators: %s: https://wordpress.org/about/license
 #: wp-admin/freedoms.php:93
@@ -10135,7 +10135,7 @@ msgstr "プラグインを更新"
 msgid "Update WordPress"
 msgstr "WordPress を更新"
 
-#: wp-admin/includes/update-core.php:1348
+#: wp-admin/includes/update-core.php:1353
 #: wp-admin/includes/class-wp-automatic-updater.php:379
 #: wp-admin/update-core.php:576
 msgid "WordPress updated successfully"
@@ -11389,7 +11389,7 @@ msgstr "%s に更新"
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "お使いの WordPress は開発版 (%1$s) です。すばらしい ! どうぞ<a href=\"%2$s\">最新版を使い続けてください</a>。"
 
-#: wp-admin/includes/update-core.php:1212
+#: wp-admin/includes/update-core.php:1217
 msgid "Upgrading database&#8230;"
 msgstr "データベースをアップグレードしています…"
 
@@ -11401,15 +11401,15 @@ msgstr "更新用ファイルを展開できませんでした"
 msgid "Verifying the unpacked files&#8230;"
 msgstr "展開したファイルをチェックしています…"
 
-#: wp-admin/includes/update-core.php:962
+#: wp-admin/includes/update-core.php:967
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "WordPress %1$s は MySQL %2$s 以降を必要とするため、更新をインストールできません。現在稼働しているバージョンは %3$s です。"
 
-#: wp-admin/includes/update-core.php:960
+#: wp-admin/includes/update-core.php:965
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "WordPress %1$s は PHP %2$s 以降を必要とするため、更新をインストールできません。現在稼働しているバージョンは %3$s です。"
 
-#: wp-admin/includes/update-core.php:958
+#: wp-admin/includes/update-core.php:963
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "WordPress %1$s は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、更新をインストールできません。現在稼働している PHP のバージョンは %4$s、 MySQL のバージョンは %5$s です。"
 
@@ -12365,8 +12365,8 @@ msgstr "FTP"
 msgid "Empty archive."
 msgstr "空のアーカイブ"
 
-#: wp-admin/includes/update-core.php:1163
-#: wp-admin/includes/update-core.php:1285 wp-admin/includes/file.php:1522
+#: wp-admin/includes/update-core.php:1168
+#: wp-admin/includes/update-core.php:1290 wp-admin/includes/file.php:1522
 #: wp-admin/includes/file.php:1639 wp-admin/includes/file.php:1678
 msgid "Could not copy file."
 msgstr "ファイルをコピーできませんでした。"
@@ -12712,12 +12712,12 @@ msgstr "更新を展開しています…"
 msgid "The plugin is at the latest version."
 msgstr "プラグインは最新のバージョンです。"
 
-#: wp-admin/includes/update-core.php:1123
+#: wp-admin/includes/update-core.php:1128
 #: wp-admin/includes/class-wp-upgrader.php:168
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "メンテナンスモードを無効にします…"
 
-#: wp-admin/includes/update-core.php:1028
+#: wp-admin/includes/update-core.php:1033
 #: wp-admin/includes/class-wp-upgrader.php:167
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "メンテナンスモードを有効にします…"
@@ -12726,7 +12726,7 @@ msgstr "メンテナンスモードを有効にします…"
 msgid "Incompatible Archive."
 msgstr "互換性のないアーカイブ。"
 
-#: wp-admin/includes/update-core.php:1291
+#: wp-admin/includes/update-core.php:1296
 #: wp-admin/includes/class-wp-upgrader.php:163 wp-admin/includes/file.php:1493
 #: wp-admin/includes/file.php:1618 wp-admin/includes/file.php:1684
 msgid "Could not create directory."

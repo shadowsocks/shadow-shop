@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-17 16:37:50+0000\n"
+"PO-Revision-Date: 2019-05-23 14:20:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,89 +24,89 @@ msgstr "Europe/Madrid"
 
 #. translators: 1: link to /wp-admin/site-health.php 2: link to
 #. /wp-admin/site-health.php?tab=debug
-#: wp-admin/about.php:75
+#: wp-admin/about.php:104
 msgid " <a href=\"%1$s\">Check your site status</a>, and <a href=\"%2$s\">learn how to debug issues</a>."
 msgstr "<a href=\"%1$s\">Comprueba el estado de tu sitio</a> y <a href=\"%2$s\">aprende a depurar problemas</a>."
 
 #. translators: 1: link to the WordPress 5.1 release post
-#: wp-admin/about.php:68
+#: wp-admin/about.php:97
 msgid "Building on <a href=\"%1$s\">the Site Health features introduced in 5.1</a>, this release adds two new pages to help debug common configuration issues. It also adds space where developers can include debugging information for site maintainers."
 msgstr "Basada en <a href=\"%1$s\">las características de salud del sitio introducidas en la versión 5.1</a>, esta versión añade dos nuevas páginas para ayudar a depurar problemas de configuración comunes. También añade un espacio donde los desarrolladores pueden incluir información de depuración para los mantenedores del sitio."
 
 #. translators: 1: wp_body_open 2: <body>
-#: wp-admin/about.php:140
+#: wp-admin/about.php:169
 msgid "5.2 introduces a %1$s hook, which lets themes support injecting code right at the beginning of the %2$s element."
 msgstr "La versión 5.2 introduce un gancho %1$s, que permite que los temas sean compatibles con la inyección de código justo al principio del elemento %2$s."
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:178
 msgid "With the addition of webpack and Babel configurations in the @wordpress/scripts package, developers won&#8217;t have to worry about setting up complex build tools to write modern JavaScript."
 msgstr "Con la incorporación de las configuraciones webpack y Babel en el paquete @wordpress/scripts, los desarrolladores no tendrán que preocuparse de configurar herramientas de compilación complejas para escribir JavaScript moderno."
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:177
 msgid "Building JavaScript"
 msgstr "Compilación de JavaScript"
 
-#: wp-admin/about.php:135
+#: wp-admin/about.php:164
 msgid "New Body Tag Hook"
 msgstr "Nuevo gancho en la etiqueta «body»"
 
-#: wp-admin/about.php:130
+#: wp-admin/about.php:159
 msgid "A new theme page template, a conditional function, and two CSS classes make designing and customizing the Privacy Policy page easier."
 msgstr "Una nueva plantilla de página para los temas, una función condicional y dos clases CSS facilitan el diseño y la personalización de la página de política de privacidad."
 
-#: wp-admin/about.php:129
+#: wp-admin/about.php:158
 msgid "Privacy Updates"
 msgstr "Actualizaciones en la privacidad"
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:155
 msgid "The minimum supported PHP version is now 5.6.20. As of WordPress 5.2, themes and plugins can safely take advantage of namespaces, anonymous functions, and more!"
 msgstr "La versión mínima compatible con PHP es ahora la 5.6.20. ¡A partir de WordPress 5.2, los temas y plugins pueden aprovechar con seguridad los «namespace», funciones anónimas y mucho más!"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:154
 msgid "PHP Version Bump"
 msgstr "Evolución de versión de PHP"
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:144
 msgid "Thirteen new icons include Instagram, a suite of icons for BuddyPress, and rotated Earth icons for global inclusion. Find them in the Dashboard and have some fun!"
 msgstr "Trece nuevos iconos, incluido el de Instagram, un paquete de iconos para BuddyPress, e iconos de la tierra en rotación para una inclusión global. ¡Descúbrelos en el escritorio y diviértete!"
 
-#: wp-admin/about.php:114
+#: wp-admin/about.php:143
 msgid "New Dashboard Icons"
 msgstr "Nuevos iconos de escritorio"
 
-#: wp-admin/about.php:111
+#: wp-admin/about.php:140
 msgid "A number of changes work together to improve contextual awareness and keyboard navigation flow for those using screen readers and other assistive technologies."
 msgstr "Una serie de cambios combinados para mejorar el conocimiento contextual y el flujo de navegación por el teclado para aquellos que utilizan lectores de pantalla y otras tecnologías de asistencia."
 
-#: wp-admin/about.php:110
+#: wp-admin/about.php:139
 msgid "Accessibility Updates"
 msgstr "Actualizaciones de accesibilidad"
 
-#: wp-admin/about.php:106
+#: wp-admin/about.php:135
 msgid "Improvements for Everyone"
 msgstr "Mejoras para todos"
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:129
 msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring developer time. It features better handling of the so-called “white screen of death,” and a way to enter recovery mode,  which pauses error-causing plugins or themes."
 msgstr "Esta actualización centrada en el administrador te permitirá corregir o gestionar errores fatales de forma segura sin que necesites tiempo del desarrollador. Ofrece una mejor gestión de la llamada «pantalla blanca de la muerte» y una forma de entrar en el modo de recuperación, que pone en pausa los plugins o temas que causen errores."
 
-#: wp-admin/about.php:99
+#: wp-admin/about.php:128
 msgid "PHP Error Protection"
 msgstr "Protección de errores PHP"
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:98
 msgid "https://wordpress.org/news/2019/02/betty/"
 msgstr "https://es.wordpress.org/2019/02/22/wordpress-5-1-betty/"
 
-#: wp-admin/about.php:63
+#: wp-admin/about.php:92
 msgid "Site Health Check"
 msgstr "Comprobación de salud del sitio"
 
-#: wp-admin/about.php:53
+#: wp-admin/about.php:82
 msgid "WordPress 5.2 gives you even more robust tools for identifying and fixing configuration issues and fatal errors. Whether you are a developer helping clients or you manage your site solo, these tools can help get you the right information when you need it."
 msgstr "WordPress 5.2 te ofrece herramientas aún más robustas para identificar y corregir problemas de configuración y errores fatales. Tanto si eres un desarrollador que ayuda a clientes como si gestionas tu sitio en solitario, estas herramientas pueden ayudarte a obtener la información correcta cuando la necesites."
 
-#: wp-admin/about.php:52
+#: wp-admin/about.php:81
 msgid "Keeping Your Site Safe"
 msgstr "Manteniendo tu sitio seguro"
 
@@ -116,7 +116,7 @@ msgid "Congratulations on updating to WordPress %s! This update makes it easier 
 msgstr "¡Enhorabuena por actualizar a WordPress %s! Esta actualización hace que sea más fácil que nunca arreglar tu sitio si algo sale mal."
 
 #. translators: 1: The filename of the package.
-#: wp-admin/includes/file.php:1222
+#: wp-admin/includes/file.php:1191 wp-admin/includes/file.php:1222
 msgid "The authenticity of %1$s could not be verified as signature verification is unavailable on this system."
 msgstr "No se ha podido verificar la autenticidad de %1$s  porque la verificación de firmas no está disponible en este sistema."
 
@@ -195,7 +195,6 @@ msgid "Get help resolving this issue."
 msgstr "Obtener ayuda para resolver este problema."
 
 #: wp-admin/includes/class-wp-site-health.php:652
-#: wp-admin/includes/dashboard.php:1631
 msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site&#8217;s performance."
 msgstr "PHP es el lenguaje de programación que usamos para crear y mantener WordPress. Las versiones más nuevas de PHP son más rápidas y más seguras, así que actualizarlo tendrá un efecto positivo en el rendimiento de tu sitio."
 
@@ -360,7 +359,7 @@ msgid "HTTP requests have been blocked by the %1$s constant, with some hosts whi
 msgstr "Las peticiones HTTP han sido bloqueadas por la constante %1$s, con algunos hosts en lista blanca: %2$s."
 
 #. translators: %s: The filename of the package.
-#: wp-admin/includes/file.php:1171 wp-admin/includes/file.php:1191
+#: wp-admin/includes/file.php:1171
 msgid "The authenticity of %s could not be verified as signature verification is unavailable on this system."
 msgstr "No se ha podido verificar la identidad de %s porque la verificación de firma no está disponible en este sistema."
 
@@ -488,6 +487,11 @@ msgstr "No se puede actualizar"
 msgid "There is a new version of %1$s available, but it doesn&#8217;t work with your version of PHP. <a href=\"%2$s\" %3$s>View version %4$s details</a> or <a href=\"%5$s\">learn more about updating PHP</a>."
 msgstr "Hay disponible una nueva versión de %1$s, pero no funciona con tu versión de PHP. <a href=\"%2$s\" %3$s>Mira los detalles de la versión %4$s</a> o <a href=\"%5$s\"> aprende más sobre cómo actualizar PHP</a>."
 
+#. translators: %s: number of ratings
+#: wp-admin/includes/theme.php:727
+msgid "(%s ratings) <span class=\"screen-reader-text\">link to view ratings opens in a new tab</span>"
+msgstr "(%s calificaciones) <span class=\"screen-reader-text\">el enlace para ver las calificaciones se abre en una nueva pestaña.</span>"
+
 #: wp-admin/includes/class-wp-debug-data.php:218
 msgid "These settings alter where and how parts of WordPress are loaded."
 msgstr "Estos ajustes alteran dónde y cómo se cargan partes de WordPress."
@@ -508,7 +512,7 @@ msgstr "El tamaño total no está disponible. Se han encontrado algunos errores 
 msgid "The directory size calculation has timed out. Usually caused by a very large number of sub-directories and files."
 msgstr "El cálculo del tamaño del directorio se ha pasado de tiempo. Normalmente se debe a la existencia de un gran número de subdirectorios y archivos."
 
-#: wp-admin/includes/theme.php:910
+#: wp-admin/includes/theme.php:905
 msgid "Go to the Themes screen"
 msgstr "Ve a la pantalla de temas"
 
@@ -929,7 +933,7 @@ msgstr "Los módulos necesarios y recomendados están instalados"
 #. theme. 3: The active theme's parent theme.
 #: wp-admin/includes/class-wp-site-health.php:566
 msgid "To enhance your site&#8217;s security, we recommend you remove any themes you&#8217;re not using. You should keep %1$s, the default WordPress theme, %2$s, your current theme, and %3$s, its parent theme."
-msgstr "Para mejorar la seguridad de tu sitio, recomendamos que desinstales cualquier tema que no estés usando. Debes quedarte con %1$s, el tema por defecto de WordPress, %2$s, tu tema actual, y %3$s, su tema hijo."
+msgstr "Para mejorar la seguridad de tu sitio, recomendamos que desinstales cualquier tema que no estés usando. Debes quedarte con %1$s, el tema por defecto de WordPress, %2$s, tu tema actual, y %3$s, su tema padre."
 
 #. translators: 1: The currently active theme. 2: The active theme's parent
 #. theme.
@@ -1571,10 +1575,6 @@ msgstr "Tema anterior"
 msgid "Next theme"
 msgstr "Siguiente tema"
 
-#: wp-admin/options-discussion.php:91
-msgid "Show comments cookies opt-in checkbox, allowing comment author cookies to be set."
-msgstr "Mostrar la casilla de verificación de cookies en los comentarios, permitiendo que se creen las cookies de autor de comentarios."
-
 #: wp-admin/user-edit.php:493
 msgid "If you change this we will send you an email at your new address to confirm it. <strong>The new address will not become active until confirmed.</strong>"
 msgstr "Si cambias esto te enviaremos un correo electrónico a la nueva dirección para confirmarlo. <strong>La nueva dirección no se convertirá en la activa hasta que no se confirme.</strong>"
@@ -1586,6 +1586,10 @@ msgstr "Editor de temas"
 #: wp-admin/menu.php:231
 msgid "Plugin Editor"
 msgstr "Editor de plugins"
+
+#: wp-admin/options-discussion.php:91
+msgid "Show comments cookies opt-in checkbox, allowing comment author cookies to be set."
+msgstr "Mostrar la casilla de verificación de cookies en los comentarios, permitiendo que se creen las cookies de autor de comentarios."
 
 #: wp-admin/themes.php:220
 msgid "Theme resumed."
@@ -1680,6 +1684,10 @@ msgstr "Establecer tu página de inicio"
 #: wp-admin/includes/dashboard.php:1638
 msgid "Learn more about updating PHP"
 msgstr "Aprende más sobre actualizar PHP"
+
+#: wp-admin/includes/dashboard.php:1631
+msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site’s performance."
+msgstr "PHP es el idioma de programación usado para construir y mantener WordPress. Las versiones más recientes de PHP son más rápidas y más seguras, actualizar tendrá un efecto positivo en el rendimiento del sitio."
 
 #: wp-admin/includes/dashboard.php:1630
 msgid "What is PHP and how does it affect my site?"
@@ -1794,7 +1802,7 @@ msgstr "No se puede instalar"
 
 #. translators: %s: WordPress version
 #: wp-admin/includes/update.php:267 wp-admin/install.php:242
-#: wp-admin/update-core.php:75 wp-admin/upgrade.php:84
+#: wp-admin/update-core.php:75 wp-admin/upgrade.php:84 wp-admin/about.php:72
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -1810,7 +1818,7 @@ msgstr "Este plugin no funciona con tus versiones de WordPress y PHP."
 msgid "This plugin doesn&#8217;t work with your version of PHP."
 msgstr "Este plugin no funciona con tu versión de PHP."
 
-#: wp-admin/includes/theme.php:908
+#: wp-admin/includes/theme.php:903
 msgid "You can find more details and make changes on the Themes screen."
 msgstr "Puedes encontrar más detalles y hacer cambios en la pantalla de temas."
 
@@ -1826,11 +1834,11 @@ msgctxt "plugin"
 msgid "Resume %s"
 msgstr "Reactivar %s"
 
-#: wp-admin/includes/theme.php:880
+#: wp-admin/includes/theme.php:875
 msgid "Could not resume the theme."
 msgstr "No se pudo reactivar el tema."
 
-#: wp-admin/includes/theme.php:907
+#: wp-admin/includes/theme.php:902
 msgid "One or more themes failed to load properly."
 msgstr "Uno o más temas no se han cargado correctamente."
 
@@ -2939,7 +2947,7 @@ msgstr "https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory"
 msgid "Enter the address here if you <a href=\"%s\">want your site home page to be different from your WordPress installation directory</a>."
 msgstr "Introduce aquí la dirección si <a href=\"%s\">quieres que la página de inicio sea distinta a la del directorio de tu instalación de WordPress.</a>."
 
-#: wp-admin/about.php:121
+#: wp-admin/about.php:150
 msgid "Developer Happiness"
 msgstr "Felicidad para el desarrollador"
 
@@ -3401,7 +3409,7 @@ msgid "Current Header Image"
 msgstr "Imagen de cabecera actual"
 
 #. translators: %s: number of ratings
-#: wp-admin/includes/theme.php:729 wp-admin/theme-install.php:341
+#: wp-admin/theme-install.php:341
 msgid "(%s ratings)"
 msgstr "(%s valoraciones)"
 
@@ -4332,7 +4340,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Actualmente como: %s) "
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:181
+#: wp-admin/about.php:210
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versión %s</strong> mostr&oacute; un problema de seguridad."
 
@@ -4348,15 +4356,15 @@ msgstr "Puedes cambiar tu foto de perfil en <a href=\"%s\">Gravatar</a>."
 msgid "Profile Picture"
 msgstr "Imagen de perfil"
 
-#: wp-admin/about.php:172
+#: wp-admin/about.php:201
 msgid "Maintenance Releases"
 msgstr "Versiones de mantenimiento"
 
-#: wp-admin/about.php:175
+#: wp-admin/about.php:204
 msgid "Security Releases"
 msgstr "Versiones de seguridad"
 
-#: wp-admin/about.php:178
+#: wp-admin/about.php:52 wp-admin/about.php:207
 msgid "Maintenance and Security Releases"
 msgstr "Versiones de mantenimiento y seguridad"
 
@@ -6137,7 +6145,7 @@ msgstr "Cuando este ajuste está activo se muestra un recordatorio en la caja De
 msgid "Accessibility Ready"
 msgstr "Listo para accesibilidad"
 
-#: wp-admin/includes/theme.php:746 wp-admin/themes.php:559
+#: wp-admin/includes/theme.php:741 wp-admin/themes.php:559
 msgid "This is a child theme of %s."
 msgstr "Este es un tema hijo de %s."
 
@@ -6239,7 +6247,7 @@ msgctxt "Add new theme"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: wp-admin/includes/theme.php:740 wp-admin/themes.php:552
+#: wp-admin/includes/theme.php:735 wp-admin/themes.php:552
 msgid "Update Available"
 msgstr "Actualización disponible"
 
@@ -7337,10 +7345,6 @@ msgstr "Hemos recopilado algunos enlaces para que puedas comenzar:"
 msgid "You can also control the display of your content in RSS feeds, including the maximum number of posts to display and whether to show full text or a summary."
 msgstr "También puedes controlar qué mostrar en el contenido de tu feed RSS, incluyendo el número máximo de entradas a mostrar o si mostrar todo el texto o solo un resumen."
 
-#: wp-admin/setup-config.php:412
-msgid "After you&#8217;ve done that, click &#8220;Run the installation.&#8221;"
-msgstr "Después de hacer esto haz clic en «Ejecutar la instalación»"
-
 #: wp-admin/includes/update-core.php:1356 wp-admin/update-core.php:577
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Bienvenido a WordPress %1$s. Serás redirigido a la pantalla «Acerca de WordPress». Si no es así, haz clic <a href=\"%2$s\">aquí</a>."
@@ -7356,6 +7360,10 @@ msgstr "Si sabes lo que estás buscando «Buscar» es tu mejor apuesta. La panta
 #: wp-admin/includes/dashboard.php:1707
 msgid "Add an About page"
 msgstr "Añade una página «Acerca de»"
+
+#: wp-admin/setup-config.php:412
+msgid "After you&#8217;ve done that, click &#8220;Run the installation.&#8221;"
+msgstr "Después de hacer esto haz clic en «Ejecutar la instalación»"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:110
 msgctxt "Plugin Installer"
@@ -8066,14 +8074,15 @@ msgstr "La imagen no se puede procesar. Por favor, vuelve atrás y prueba de nue
 msgid "Show Toolbar when viewing site"
 msgstr "Mostrar la barra de herramientas al ver el sitio"
 
+#. translators: %s: HelpHub URL
 #. translators: %s: Codex URL
-#: wp-admin/about.php:204
+#: wp-admin/about.php:69 wp-admin/about.php:233
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Para más información, lee <a href=\"%s\">las notas de la versión</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:198
+#: wp-admin/about.php:227
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "La <strong>versión %1$s</strong> soluciona algunos problemas de seguridad y soluciona %2$s fallo."
@@ -8081,14 +8090,14 @@ msgstr[1] "La <strong>versión %1$s</strong> soluciona algunos problemas de segu
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:192
+#: wp-admin/about.php:221
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "La <strong>versión %1$s</strong> soluciona un problema de seguridad y soluciona %2$s fallo."
 msgstr[1] "La <strong>versión %1$s</strong> soluciona un problema de seguridad y soluciona %2$s fallos."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:186
+#: wp-admin/about.php:57 wp-admin/about.php:215
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "La <strong>versión %1$s</strong> soluciona %2$s fallo."
@@ -8099,7 +8108,7 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "¡Bienvenido a tu escritorio de WordPress! Esta es la pantalla que verás cuando inicies sesión en tu sitio, que te da acceso a todas las funciones de gestión del sitio de WordPress. Puedes obtener ayuda para cualquier pantalla haciendo clic en la pestaña «Ayuda» en la esquina superior."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:183
+#: wp-admin/about.php:212
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>La versión %s</strong> soluciona algunos problemas de seguridad."
 
@@ -8107,15 +8116,15 @@ msgstr "<strong>La versión %s</strong> soluciona algunos problemas de seguridad
 msgid "What&#8217;s New"
 msgstr "Novedades"
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:200
 msgid "Maintenance Release"
 msgstr "Versión de mantenimiento"
 
-#: wp-admin/about.php:174
+#: wp-admin/about.php:203
 msgid "Security Release"
 msgstr "Versión de seguridad"
 
-#: wp-admin/about.php:177
+#: wp-admin/about.php:206
 msgid "Maintenance and Security Release"
 msgstr "Versión de mantenimiento y seguridad"
 
@@ -8127,7 +8136,7 @@ msgstr "Esta pantalla te permite elegir la estructura de tus enlaces permanentes
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Bienvenido a WordPress %1$s. <a href=\"%2$s\">Aprende más</a>."
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:187
 msgid "Return to Updates"
 msgstr "Volver a las actualizaciones"
 
@@ -8397,11 +8406,11 @@ msgstr "<strong>Previsualizacón</strong> mostrará cómo se verá tu borrador s
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "En una instalación multisitio puedes añadir cuentas que ya existen en la Red especificando el nombre de usuario o la contraseña con la que están registrados en la misma, y definiendo un rol. Para más opciones, como especificar una contraseña, debes ser Administrador de la Red y utilizar el enlace que aparece al pasar sobre los nombres de usuario. Puedes encontrar esta opción bajo Administración de Red > Todos los Usuarios."
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:190
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Ve a Escritorio &rarr; Inicio"
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:187
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Vuelve a Escritorio &rarr; Actualizaciones"
 
@@ -8713,7 +8722,7 @@ msgid "All Users"
 msgstr "Todos los usuarios"
 
 #. translators: %s: plugin name
-#: wp-admin/includes/theme.php:768
+#: wp-admin/includes/theme.php:763
 #: wp-admin/includes/class-wp-theme-install-list-table.php:478
 #: wp-admin/includes/deprecated.php:1381 wp-admin/theme-install.php:299
 #: wp-admin/theme-install.php:319
@@ -8733,7 +8742,7 @@ msgstr "Borrar sitio"
 #: wp-admin/includes/class-wp-links-list-table.php:88
 #: wp-admin/includes/class-wp-links-list-table.php:323
 #: wp-admin/includes/class-wp-themes-list-table.php:200
-#: wp-admin/includes/theme.php:763
+#: wp-admin/includes/theme.php:758
 #: wp-admin/includes/class-wp-plugins-list-table.php:500
 #: wp-admin/includes/class-wp-plugins-list-table.php:654
 #: wp-admin/includes/class-wp-plugins-list-table.php:683
@@ -10267,7 +10276,7 @@ msgstr "Eliminar Plugin"
 msgid "You are about to remove the following plugin:"
 msgstr "Estás a punto de eliminar el siguiente plugin:"
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:190
 msgid "Go to Dashboard"
 msgstr "Ir al escritorio"
 
@@ -10537,7 +10546,7 @@ msgstr "Actualizar archivo"
 msgid "Clear List"
 msgstr "Limpiar lista"
 
-#: wp-admin/includes/theme.php:752 wp-admin/themes.php:563
+#: wp-admin/includes/theme.php:747 wp-admin/themes.php:563
 msgid "Tags:"
 msgstr "Etiquetas:"
 
