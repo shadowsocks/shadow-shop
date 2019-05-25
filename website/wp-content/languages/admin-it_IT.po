@@ -1777,7 +1777,7 @@ msgstr "Impossibile installare"
 #. translators: %s: Update PHP page URL
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:663
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:682
-#: wp-admin/includes/update-core.php:950 wp-admin/install.php:247
+#: wp-admin/includes/update-core.php:952 wp-admin/install.php:247
 #: wp-admin/update-core.php:80 wp-admin/update-core.php:313
 #: wp-admin/upgrade.php:89
 msgid "<a href=\"%s\">Learn more about updating PHP</a>."
@@ -6345,8 +6345,8 @@ msgstr "ATTENZIONE: l'aggiornamento alla versione %s di WordPress non è andato 
 msgid "SUCCESS: WordPress was successfully updated to %s"
 msgstr "SUCCESSO: WordPress è stato correttamente aggiornato alla versione %s"
 
-#: wp-admin/includes/update-core.php:927 wp-admin/includes/update-core.php:1022
-#: wp-admin/includes/update-core.php:1047
+#: wp-admin/includes/update-core.php:927 wp-admin/includes/update-core.php:1027
+#: wp-admin/includes/update-core.php:1052
 #: wp-admin/includes/class-core-upgrader.php:159
 #: wp-admin/includes/class-wp-upgrader.php:165
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
@@ -6500,7 +6500,7 @@ msgstr "Aggiornamento della traduzione non riuscito."
 msgid "The translations are up to date."
 msgstr "Le traduzioni sono aggiornate."
 
-#: wp-admin/includes/update-core.php:1088
+#: wp-admin/includes/update-core.php:1093
 msgid "There is not enough free disk space to complete the update."
 msgstr "Non c'è abbastanza spazio disco per completare l'aggiornamento."
 
@@ -6582,11 +6582,11 @@ msgstr "Le tue password non corrispondono. Riprova."
 msgid "<strong>Clicking the arrow to the right of any menu item</strong> in the editor will reveal a standard group of settings. Additional settings such as link target, CSS classes, link relationships, and link descriptions can be enabled and disabled via the Screen Options tab."
 msgstr "<strong>Facendo clic sulla freccia a destra di qualsiasi elemento di un menu</strong> all'interno dell'editor apparirà un gruppo di impostazioni standard. Ulteriori impostazioni quali ad esempio la destinazione del link, le classi CSS, la relazione fra i link e la descrizione del link possono venir abilitate o disabilitate tramite la linguetta Opzioni schermo."
 
-#: wp-admin/includes/update-core.php:1036
+#: wp-admin/includes/update-core.php:1041
 msgid "Copying the required files&#8230;"
 msgstr "Copia dei file necessari in corso&#8230;"
 
-#: wp-admin/includes/update-core.php:966
+#: wp-admin/includes/update-core.php:971
 msgid "Preparing to install the latest version&#8230;"
 msgstr "Preparazione all&#8217;installazione dell'ultima versione in corso&#8230;"
 
@@ -7303,7 +7303,7 @@ msgstr "Abbiamo raggruppato alcuni link per aiutarti ad iniziare:"
 msgid "Below you should enter your database connection details. If you&#8217;re not sure about these, contact your host."
 msgstr "Di seguito puoi inserire i dettagli di connessione al database. Se non sei sicuro dei dati da inserire contatta il tuo fornitore di hosting."
 
-#: wp-admin/includes/update-core.php:1351 wp-admin/update-core.php:577
+#: wp-admin/includes/update-core.php:1356 wp-admin/update-core.php:577
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Benvenuto in WordPress %1$s. Verrai reindirizzato alla schermata Informazioni su WordPress. Se ciò non accade, fai clic <a href=\"%2$s\">qui</a>."
 
@@ -8121,7 +8121,7 @@ msgstr "<strong>La versione %s</strong> corregge alcuni problemi di sicurezza."
 msgid "This screen allows you to choose your permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "Questa schermata permette di scegliere la propria struttura di permalink predefinita. È possibile scegliere tra le impostazioni predefinite o creare strutture di URL personalizzate."
 
-#: wp-admin/includes/update-core.php:1352 wp-admin/update-core.php:578
+#: wp-admin/includes/update-core.php:1357 wp-admin/update-core.php:578
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Benvenuto in WordPress%1$s. <a href=\"%2$s\"> Ulteriori informazioni</a>."
 
@@ -10177,7 +10177,7 @@ msgstr "Utente già esistente. La password è stata ereditata."
 msgid "The password you chose during installation."
 msgstr "La password che hai scelto durante l'installazione."
 
-#: wp-admin/includes/update-core.php:1348
+#: wp-admin/includes/update-core.php:1353
 #: wp-admin/includes/class-wp-automatic-updater.php:379
 #: wp-admin/update-core.php:576
 msgid "WordPress updated successfully"
@@ -10421,7 +10421,7 @@ msgstr "Versione: %s"
 msgid "Unable to locate WordPress theme directory."
 msgstr "Impossibile trovare la directory dei temi di WordPress."
 
-#: wp-admin/includes/update-core.php:958
+#: wp-admin/includes/update-core.php:963
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "L'aggiornamento non può essere installato perchè WordPress %1$s richiede una versione di PHP %2$s o superiore e MySQL versione %3$s o superiore. Si sta utilizzando PHP versione %4$s e MySQL versione %5$s."
 
@@ -11204,7 +11204,7 @@ msgstr ""
 msgid "You can&#8217;t delete the current user."
 msgstr "Non puoi eliminare questo utente."
 
-#: wp-admin/includes/update-core.php:1212
+#: wp-admin/includes/update-core.php:1217
 msgid "Upgrading database&#8230;"
 msgstr "Aggiornamento del database in corso&#8230;"
 
@@ -11221,11 +11221,11 @@ msgstr "Generali"
 msgid "Screen Options"
 msgstr "Impostazioni schermata"
 
-#: wp-admin/includes/update-core.php:960
+#: wp-admin/includes/update-core.php:965
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "L'aggiornamento non può essere installato perchè WordPress %1$s richiede una versione di PHP %2$s o superiore. Stai utilizzando la versione %3$s."
 
-#: wp-admin/includes/update-core.php:962
+#: wp-admin/includes/update-core.php:967
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "L'aggiornamento non può essere installato perchè WordPress %1$s richiede una versione di MySQL %2$s o superiore. Stai utilizzando la versione %3$s."
 
@@ -11813,7 +11813,7 @@ msgstr "Impossibile eseguire il comando: %s"
 msgid "Unable to locate needed folder (%s)."
 msgstr "Impossibile trovare la directory necessaria (%s)."
 
-#: wp-admin/includes/update-core.php:1291
+#: wp-admin/includes/update-core.php:1296
 #: wp-admin/includes/class-wp-upgrader.php:163 wp-admin/includes/file.php:1493
 #: wp-admin/includes/file.php:1618 wp-admin/includes/file.php:1684
 msgid "Could not create directory."
@@ -12533,8 +12533,8 @@ msgstr "Archivio non compatibile."
 msgid "Invalid URL Provided."
 msgstr "URL indicata non valida."
 
-#: wp-admin/includes/update-core.php:1163
-#: wp-admin/includes/update-core.php:1285 wp-admin/includes/file.php:1522
+#: wp-admin/includes/update-core.php:1168
+#: wp-admin/includes/update-core.php:1290 wp-admin/includes/file.php:1522
 #: wp-admin/includes/file.php:1639 wp-admin/includes/file.php:1678
 msgid "Could not copy file."
 msgstr "Impossibile copiare il file."
@@ -12846,7 +12846,7 @@ msgstr "amico/a"
 msgid "physical"
 msgstr "attrazione fisica"
 
-#: wp-admin/includes/update-core.php:1028
+#: wp-admin/includes/update-core.php:1033
 #: wp-admin/includes/class-wp-upgrader.php:167
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Attivazione modalità di manutenzione in corso&#8230;"
@@ -12922,7 +12922,7 @@ msgstr "Impossibile connettersi al server FTP %s"
 msgid "Failed to connect to SSH2 Server %s"
 msgstr "Impossibile connettersi al server SSH2 %s"
 
-#: wp-admin/includes/update-core.php:1123
+#: wp-admin/includes/update-core.php:1128
 #: wp-admin/includes/class-wp-upgrader.php:168
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "Disattivazione modalità di manutenzione in corso&#8230;"

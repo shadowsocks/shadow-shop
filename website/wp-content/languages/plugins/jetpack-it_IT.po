@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-15 13:54:09+0000\n"
+"PO-Revision-Date: 2019-05-24 20:16:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: it\n"
 "Project-Id-Version: Plugins - Jetpack by WordPress.com - Stable (latest release)\n"
+
+#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:144
+msgid "Logging In..."
+msgstr "Accesso in corso..."
+
+#: modules/wpcom-block-editor/class-jetpack-wpcom-block-editor.php:129
+msgid "Before we continue, please log in to your Jetpack site."
+msgstr "Prima di continuare, accedi al tuo sito Jetpack."
 
 #: _inc/blocks/editor-beta.js:24 _inc/blocks/editor.js:12
 #: extensions/blocks/related-posts/index.js:31
@@ -11929,10 +11937,6 @@ msgstr "Aggiungi o rimuovi tag"
 msgid "Add to section:"
 msgstr "Aggiungi alla sezione:"
 
-#: modules/custom-css/custom-css.php:1191
-msgid "Add-on"
-msgstr "Componente aggiuntivo"
-
 #: modules/custom-css/custom-css.php:1198
 msgid "Add-on CSS <b>(Recommended)</b>"
 msgstr "Componente aggiuntivo CSS <b>(Raccomandato)</b>"
@@ -12834,6 +12838,10 @@ msgstr ""
 #: modules/custom-post-types/testimonial.php:303
 msgid "View Testimonial"
 msgstr "Visualizza la Testimonianza"
+
+#: modules/custom-css/custom-css.php:1191
+msgid "Add-on"
+msgstr "Add-on"
 
 #: modules/contact-form/grunion-form-view.php:178
 msgctxt "%1$s = \"Click here\" in an HTML link"

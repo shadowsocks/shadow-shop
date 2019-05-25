@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-05-17 12:40:20+0000\n"
+"PO-Revision-Date: 2019-05-24 19:41:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -746,12 +746,6 @@ msgstr "Grazie per aver creato un account su %1$s. Il tuo nome utente è %2$s. P
 msgid "Thanks for shopping with us."
 msgstr "Grazie per averci scelto."
 
-#. translators: %s: Customer billing full name
-#: templates/emails/admin-new-order.php:28
-#: templates/emails/plain/admin-new-order.php:25
-msgid "You’ve received the following order from %s:"
-msgstr "Hai ricevuto il seguente ordine da %s:"
-
 #. translators: %s: Customer first name
 #. translators: %s Customer first name
 #. translators: %s Customer username
@@ -773,6 +767,12 @@ msgstr "Hai ricevuto il seguente ordine da %s:"
 #: templates/emails/customer-refunded-order.php:28
 msgid "Hi %s,"
 msgstr "Ciao %s,"
+
+#. translators: %s: Customer billing full name
+#: templates/emails/admin-new-order.php:28
+#: templates/emails/plain/admin-new-order.php:25
+msgid "You’ve received the following order from %s:"
+msgstr "Hai ricevuto il seguente ordine da %s:"
 
 #: templates/emails/customer-note.php:57
 #: templates/emails/plain/customer-note.php:60
@@ -2063,11 +2063,6 @@ msgstr "Accettiamo pagamenti tramite PayPal. Durante l'elaborazione dei pagament
 msgid "Please see the <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal Privacy Policy</a> for more details."
 msgstr "Per ulteriori dettagli, consulta la <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\"> privacy policy di PayPal </a>."
 
-#. translators: %s: URL
-#: includes/gateways/paypal/includes/settings-paypal.php:58
-msgid "Log PayPal events, such as IPN requests, inside %s Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
-msgstr "Registra eventi PayPal come le richieste di IPN in %s Nota: potrebbe registrare informazioni personali. Ne consigliamo l’uso per scopi di debug e per eliminare i log al termine."
-
 #. translators: %s terms and conditions page name and link
 #: includes/wc-template-functions.php:793
 #: includes/customizer/class-wc-shop-customizer.php:724
@@ -2081,6 +2076,11 @@ msgstr "Accetta pagamenti tramite assegno. Questo metodo di pagamento offline pu
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:40
 msgid "Take payments in person via BACS. More commonly known as direct bank/wire transfer"
 msgstr "Accetta pagamenti tramite bonifico bancario."
+
+#. translators: %s: URL
+#: includes/gateways/paypal/includes/settings-paypal.php:58
+msgid "Log PayPal events, such as IPN requests, inside %s Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr "Registra eventi PayPal come le richieste di IPN in %s Nota: potrebbe registrare informazioni personali. Consigliamo di utilizzare questa opzione esclusivamente a scopo di debug e di eliminare i log al termine."
 
 #: includes/class-wc-privacy.php:114
 msgid "In this subsection you should list which third party payment processors you’re using to take payments on your store since these may handle customer data. We’ve included PayPal as an example, but you should remove this if you’re not using PayPal."
@@ -7428,14 +7428,6 @@ msgstr "Ordine metodo di pagamento."
 msgid "Payment gateway enabled status."
 msgstr "Stato di abilitazione del metodo di pagamento."
 
-#: includes/api/v2/class-wc-rest-setting-options-v2-controller.php:543
-#: includes/api/v2/class-wc-rest-payment-gateways-v2-controller.php:436
-#: includes/api/v2/class-wc-rest-shipping-zone-methods-v2-controller.php:523
-#: includes/api/class-wc-rest-payment-gateways-controller.php:208
-#: includes/api/class-wc-rest-setting-options-controller.php:212
-msgid "Additional help text shown to the user about the setting."
-msgstr "TEsto di aiuto aggiuntivo mostrato all'utente riguardo l'impostazione."
-
 #: includes/api/v2/class-wc-rest-setting-options-v2-controller.php:552
 #: includes/api/v2/class-wc-rest-payment-gateways-v2-controller.php:442
 #: includes/api/v2/class-wc-rest-shipping-zone-methods-v2-controller.php:529
@@ -7466,21 +7458,13 @@ msgstr "Descrizione del metodo di pagamento al momento del completamento dell'or
 msgid "Start date of sale price, in the site's timezone."
 msgstr "Data di inizio del prezzo scontato, nel fuso orario del sito."
 
-#: includes/api/v2/class-wc-rest-customer-downloads-v2-controller.php:135
-msgid "The date when download access expires, as GMT."
-msgstr "La data in cui scade l'accesso al download, come GMT."
-
-#: includes/api/v2/class-wc-rest-customers-v2-controller.php:136
-#: includes/api/v2/class-wc-rest-orders-v2-controller.php:899
-#: includes/api/v1/class-wc-rest-orders-controller.php:968
-msgid "The date the order was created, as GMT."
-msgstr "La data in cui l'ordine è stato creato, come GMT."
-
-#: includes/api/v2/class-wc-rest-customers-v2-controller.php:148
-#: includes/api/v1/class-wc-rest-customers-controller.php:644
-#: includes/api/class-wc-rest-customers-controller.php:103
-msgid "The date the customer was last modified, as GMT."
-msgstr "La data in cui il cliente è stato modificato l'ultima volta, come GMT."
+#: includes/api/v2/class-wc-rest-setting-options-v2-controller.php:543
+#: includes/api/v2/class-wc-rest-payment-gateways-v2-controller.php:436
+#: includes/api/v2/class-wc-rest-shipping-zone-methods-v2-controller.php:523
+#: includes/api/class-wc-rest-payment-gateways-controller.php:208
+#: includes/api/class-wc-rest-setting-options-controller.php:212
+msgid "Additional help text shown to the user about the setting."
+msgstr "Testo di aiuto aggiuntivo mostrato all'utente riguardo l'impostazione."
 
 #: includes/api/class-wc-rest-products-controller.php:1272
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:495
@@ -7500,6 +7484,36 @@ msgstr "La data in cui il cliente è stato modificato l'ultima volta, come GMT."
 msgid "Meta data."
 msgstr "Meta dati"
 
+#: includes/api/v2/class-wc-rest-customer-downloads-v2-controller.php:135
+msgid "The date when download access expires, as GMT."
+msgstr "La data in cui scade l'accesso al download, come GMT."
+
+#: includes/api/v2/class-wc-rest-customers-v2-controller.php:136
+#: includes/api/v2/class-wc-rest-orders-v2-controller.php:899
+#: includes/api/v1/class-wc-rest-orders-controller.php:968
+msgid "The date the order was created, as GMT."
+msgstr "La data in cui l'ordine è stato creato, come GMT."
+
+#: includes/api/v2/class-wc-rest-customers-v2-controller.php:148
+#: includes/api/v1/class-wc-rest-customers-controller.php:644
+#: includes/api/class-wc-rest-customers-controller.php:103
+msgid "The date the customer was last modified, as GMT."
+msgstr "La data in cui il cliente è stato modificato l'ultima volta, come GMT."
+
+#: includes/api/v2/class-wc-rest-customers-v2-controller.php:310
+#: includes/api/class-wc-rest-customers-controller.php:265
+msgid "Is the customer a paying customer?"
+msgstr "È il cliente un cliente pagante?"
+
+#: includes/api/v2/class-wc-rest-order-notes-v2-controller.php:141
+#: includes/api/class-wc-rest-order-notes-controller.php:140
+msgid "The date the order note was created, as GMT."
+msgstr "La data in cui l'ordine è stato creato, come GMT."
+
+#: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:383
+msgid "User ID of user who created the refund."
+msgstr "ID utente dell'utente che ha creato il rimborso."
+
 #: includes/api/class-wc-rest-products-controller.php:1279
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:502
 #: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:401
@@ -7517,20 +7531,6 @@ msgstr "Meta dati"
 #: includes/api/class-wc-rest-product-variations-controller.php:727
 msgid "Meta ID."
 msgstr "ID Meta."
-
-#: includes/api/v2/class-wc-rest-customers-v2-controller.php:310
-#: includes/api/class-wc-rest-customers-controller.php:265
-msgid "Is the customer a paying customer?"
-msgstr "È il cliente un cliente pagante?"
-
-#: includes/api/v2/class-wc-rest-order-notes-v2-controller.php:141
-#: includes/api/class-wc-rest-order-notes-controller.php:140
-msgid "The date the order note was created, as GMT."
-msgstr "La data in cui l'ordine è stato creato, come GMT."
-
-#: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:383
-msgid "User ID of user who created the refund."
-msgstr "ID utente dell'utente che ha creato il rimborso."
 
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:911
 #: includes/api/v1/class-wc-rest-orders-controller.php:974
@@ -10390,6 +10390,13 @@ msgstr "Impossibile aggiornare il metodo di spedizione, riprova."
 msgid "Reviews average rating."
 msgstr "Valutazione media delle recensioni."
 
+#: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:452
+#: includes/api/v2/class-wc-rest-orders-v2-controller.php:1205
+#: includes/api/v1/class-wc-rest-orders-controller.php:1243
+#: includes/api/v1/class-wc-rest-order-refunds-controller.php:404
+msgid "Quantity ordered."
+msgstr "Quantità ordinata."
+
 #: includes/api/class-wc-rest-products-controller.php:1290
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:513
 #: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:412
@@ -10409,13 +10416,6 @@ msgstr "Valutazione media delle recensioni."
 #: includes/api/class-wc-rest-product-variations-controller.php:738
 msgid "Meta value."
 msgstr "Valore meta."
-
-#: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:452
-#: includes/api/v2/class-wc-rest-orders-v2-controller.php:1205
-#: includes/api/v1/class-wc-rest-orders-controller.php:1243
-#: includes/api/v1/class-wc-rest-order-refunds-controller.php:404
-msgid "Quantity ordered."
-msgstr "Quantità ordinata."
 
 #: includes/api/v2/class-wc-rest-product-reviews-v2-controller.php:164
 #: includes/api/v1/class-wc-rest-product-reviews-controller.php:537
@@ -11638,20 +11638,6 @@ msgstr "Identificatore univoco per la risorsa."
 msgid "Invalid order ID."
 msgstr "ID ordine non valido."
 
-#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:102
-#: includes/api/v2/class-wc-rest-shipping-zone-methods-v2-controller.php:87
-#: includes/api/v2/class-wc-rest-product-variations-v2-controller.php:115
-#: includes/api/v2/class-wc-rest-products-v2-controller.php:115
-#: includes/api/v2/class-wc-rest-orders-v2-controller.php:112
-#: includes/api/v2/class-wc-rest-shipping-zones-v2-controller.php:77
-#: includes/api/v1/class-wc-rest-products-controller.php:102
-#: includes/api/v1/class-wc-rest-orders-controller.php:102
-#: includes/api/v1/class-wc-rest-product-reviews-controller.php:118
-#: includes/api/v1/class-wc-rest-coupons-controller.php:108
-#: includes/api/class-wc-rest-product-reviews-controller.php:110
-msgid "Whether to bypass trash and force deletion."
-msgstr "Indica se saltare il cestino e forzare la cancellazione o meno."
-
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:335
 #: includes/api/v1/class-wc-rest-coupons-controller.php:415
 msgid "Unique identifier for the object."
@@ -11670,6 +11656,20 @@ msgstr "DateTime UTC della scadenza del codice promozionale."
 #: includes/api/v1/class-wc-rest-coupons-controller.php:531
 msgid "Minimum order amount that needs to be in the cart before coupon applies."
 msgstr "Il valore minimo dell'ordine che deve essere nel carrello prima di applicare il codice promozionale."
+
+#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:102
+#: includes/api/v2/class-wc-rest-shipping-zone-methods-v2-controller.php:87
+#: includes/api/v2/class-wc-rest-product-variations-v2-controller.php:115
+#: includes/api/v2/class-wc-rest-products-v2-controller.php:115
+#: includes/api/v2/class-wc-rest-orders-v2-controller.php:112
+#: includes/api/v2/class-wc-rest-shipping-zones-v2-controller.php:77
+#: includes/api/v1/class-wc-rest-products-controller.php:102
+#: includes/api/v1/class-wc-rest-orders-controller.php:102
+#: includes/api/v1/class-wc-rest-product-reviews-controller.php:118
+#: includes/api/v1/class-wc-rest-coupons-controller.php:108
+#: includes/api/class-wc-rest-product-reviews-controller.php:110
+msgid "Whether to bypass trash and force deletion."
+msgstr "Indica se saltare il cestino e forzare la cancellazione o meno."
 
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:175
 msgid "Download ID (MD5)."
@@ -11691,11 +11691,6 @@ msgstr "La data di creazione del rimborso dell'ordine, nel fuso orario del sito.
 msgid "Refund amount."
 msgstr "Valore del rimborso."
 
-#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:473
-#: includes/api/v1/class-wc-rest-coupons-controller.php:536
-msgid "Maximum order amount allowed when using the coupon."
-msgstr "Il valore massimo dell'ordine permesso utilizzando il codice promozionale."
-
 #: includes/api/v2/class-wc-rest-order-refunds-v2-controller.php:428
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1184
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1312
@@ -11710,6 +11705,11 @@ msgstr "Il valore massimo dell'ordine permesso utilizzando il codice promozional
 #: includes/api/v1/class-wc-rest-order-refunds-controller.php:374
 msgid "Item ID."
 msgstr "ID elemento."
+
+#: includes/api/v2/class-wc-rest-coupons-v2-controller.php:473
+#: includes/api/v1/class-wc-rest-coupons-controller.php:536
+msgid "Maximum order amount allowed when using the coupon."
+msgstr "Il valore massimo dell'ordine permesso utilizzando il codice promozionale."
 
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:534
 #: includes/api/v1/class-wc-rest-coupons-controller.php:572
@@ -12361,22 +12361,6 @@ msgstr "Impossibile creare %s. Esiste già."
 msgid "Limit response to resources published after a given ISO8601 compliant date."
 msgstr "Limita la risposta alle risorse pubblicate dopo una data in formato ISO8601."
 
-#: includes/abstracts/abstract-wc-rest-crud-controller.php:556
-#: includes/abstracts/abstract-wc-rest-terms-controller.php:713
-#: includes/abstracts/abstract-wc-rest-posts-controller.php:645
-#: includes/api/v1/class-wc-rest-webhooks-controller.php:720
-msgid "Limit result set to specific ids."
-msgstr "Limita i risultati ad ID specifici."
-
-#: includes/abstracts/abstract-wc-rest-crud-controller.php:578
-#: includes/abstracts/abstract-wc-rest-posts-controller.php:667
-#: includes/api/v1/class-wc-rest-customers-controller.php:898
-#: includes/api/v1/class-wc-rest-taxes-controller.php:690
-#: includes/api/v1/class-wc-rest-webhooks-controller.php:742
-#: includes/api/class-wc-rest-product-reviews-controller.php:968
-msgid "Sort collection by object attribute."
-msgstr "Ordina la collezione per attributo dell'oggetto."
-
 #: includes/abstracts/abstract-wc-rest-shipping-zones-controller.php:65
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:133
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:57
@@ -12403,6 +12387,22 @@ msgstr "Ordina la collezione per attributo dell'oggetto."
 #: includes/api/class-wc-rest-data-controller.php:61
 msgid "Sorry, you cannot list resources."
 msgstr "Non puoi creare una lista delle risorse."
+
+#: includes/abstracts/abstract-wc-rest-crud-controller.php:556
+#: includes/abstracts/abstract-wc-rest-terms-controller.php:713
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:645
+#: includes/api/v1/class-wc-rest-webhooks-controller.php:720
+msgid "Limit result set to specific ids."
+msgstr "Limita i risultati ad ID specifici."
+
+#: includes/abstracts/abstract-wc-rest-crud-controller.php:578
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:667
+#: includes/api/v1/class-wc-rest-customers-controller.php:898
+#: includes/api/v1/class-wc-rest-taxes-controller.php:690
+#: includes/api/v1/class-wc-rest-webhooks-controller.php:742
+#: includes/api/class-wc-rest-product-reviews-controller.php:968
+msgid "Sort collection by object attribute."
+msgstr "Ordina la collezione per attributo dell'oggetto."
 
 #: includes/abstracts/abstract-wc-rest-crud-controller.php:593
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:684
@@ -12481,10 +12481,6 @@ msgstr "Limita i risultati a tutti i prodotti eccetto quelli con uno specifico I
 msgid "Unable to accept more than %s items for this request."
 msgstr "Non è possibile accettare più di %s prodotti per questa richiesta."
 
-#: includes/abstracts/abstract-wc-payment-gateway.php:525
-msgid "Save to account"
-msgstr "Salva nel tuo conto"
-
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:228
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:134
 #: includes/api/v2/class-wc-rest-product-reviews-v2-controller.php:68
@@ -12559,6 +12555,10 @@ msgstr "Non puoi eliminare la risorsa."
 #: includes/admin/class-wc-admin-assets.php:346
 msgid "Are you sure you wish to delete this note? This action cannot be undone."
 msgstr "Desideri eliminare questa nota? Questa azione è irreversibile."
+
+#: includes/abstracts/abstract-wc-payment-gateway.php:525
+msgid "Save to account"
+msgstr "Salva nel tuo account"
 
 #: i18n/locale-info.php:96 i18n/locale-info.php:106 i18n/locale-info.php:116
 msgctxt "Canadian Tax Rates"
@@ -14477,6 +14477,15 @@ msgstr "Istruzioni che verranno aggiunte alla pagina dei ringraziamenti ed alle 
 msgid "Bank name"
 msgstr "Nome banca"
 
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:143
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:324
+msgid "IBAN"
+msgstr "IBAN"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:144
+msgid "BIC / Swift"
+msgstr "BIC / Swift"
+
 #: includes/shipping/flat-rate/includes/settings-flat-rate.php:16
 #: includes/shipping/local-pickup/class-wc-shipping-local-pickup.php:82
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:104
@@ -14489,15 +14498,6 @@ msgstr "Nome banca"
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:90
 msgid "This controls the title which the user sees during checkout."
 msgstr "Quest'opzione controlla il titolo che gli utenti vedono durante il pagamento."
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:143
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:324
-msgid "IBAN"
-msgstr "IBAN"
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:144
-msgid "BIC / Swift"
-msgstr "BIC / Swift"
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:346
 msgid "Our bank details"
@@ -14818,10 +14818,6 @@ msgstr "Descrizione del metodo di pagamento che il cliente vedrà sul tuo sito."
 msgid "Have your customers pay with cash (or by other means) upon delivery."
 msgstr "Permetti ai tuoi clienti di pagarti in contrassegno al momento della consegna."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
-msgid "Remove selected account(s)"
-msgstr "Rimuovi i conti selezionati"
-
 #: includes/gateways/cheque/class-wc-gateway-cheque.php:73
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:97
 #: includes/gateways/cod/class-wc-gateway-cod.php:117
@@ -14890,10 +14886,6 @@ msgstr "Paga con PayPal; puoi pagare con la tua carta di credito se non hai un a
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:42
 msgid "Proceed to PayPal"
 msgstr "Continua su PayPal"
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
-msgid "+ Add account"
-msgstr "+ Aggiungi account"
 
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:280
 msgid "Gateway disabled"
@@ -15019,10 +15011,6 @@ msgstr "Tariffa unica"
 msgid "Order #%1$s has been marked on-hold due to a reversal - PayPal reason code: %2$s"
 msgstr "L'ordine #%1$s è stato sospeso per procedura di reso in corso - Codice motivazione PayPal: %2$s"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:139
-msgid "Account name"
-msgstr "Nome account"
-
 #. translators: 1: Refund amount, 2: Refund ID
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:388
 msgid "Refunded %1$s - Refund ID: %2$s"
@@ -15036,12 +15024,6 @@ msgstr "Token identificativo Paypal"
 #: includes/gateways/paypal/includes/settings-paypal.php:136
 msgid "Enter your PayPal API credentials to process refunds via PayPal. Learn how to access your <a href=\"%s\">PayPal API Credentials</a>."
 msgstr "Inserisci le tue credenziali API PayPal per processare i rimborsi tramite PayPal. Scopri come accedere alle tue <a href=\"%s\">Credenziali API PayPal</a>."
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:140
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:316
-#: includes/gateways/class-wc-payment-gateway-echeck.php:51
-msgid "Account number"
-msgstr "Numero account"
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:430
 msgid "Branch code"
@@ -15137,6 +15119,24 @@ msgstr "Desideri eliminare questo file di template?"
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:12
 msgid "Supports the following placeholders: <code>[qty]</code> = number of items, <code>[cost]</code> = cost of items, <code>[fee percent=\"10\" min_fee=\"20\"]</code> = Percentage based fee."
 msgstr "Supporta i seguenti placeholder: <code>[qty]</code> = numero di articoli, <code>[cost]</code> = costo degli articoli, <code>[fee percent=\"10\" min_fee=\"20\"]</code> = Tassa percentuale."
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
+msgid "Remove selected account(s)"
+msgstr "Rimuovi i conti correnti selezionati"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
+msgid "+ Add account"
+msgstr "+ Aggiungi conto corrente"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:140
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:316
+#: includes/gateways/class-wc-payment-gateway-echeck.php:51
+msgid "Account number"
+msgstr "Numero conto corrente"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:139
+msgid "Account name"
+msgstr "Intestatario conto corrente"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:2199
 msgid "Invalid product SKU"
@@ -15427,13 +15427,6 @@ msgstr "Spiacenti, il download è scaduto."
 #: includes/class-wc-download-handler.php:164
 msgid "You must be logged in to download files."
 msgstr "Devi accedere all\\'area riservata per scaricare i file."
-
-#: includes/class-wc-download-handler.php:164
-#: includes/admin/settings/class-wc-settings-accounts.php:55
-#: templates/myaccount/form-login.php:32 templates/global/form-login.php:51
-#: templates/auth/form-login.php:49
-msgid "Login"
-msgstr "Accedi"
 
 #: includes/class-wc-download-handler.php:164
 msgid "Log in to Download Files"
@@ -16178,6 +16171,13 @@ msgstr "Il tuo ordine è stato annullato."
 #: includes/class-wc-form-handler.php:707
 msgid "Your order can no longer be cancelled. Please contact us if you need assistance."
 msgstr "Il tuo ordine non può essere più annullato. Contattaci se hai bisogno di assistenza."
+
+#: includes/class-wc-download-handler.php:164
+#: includes/admin/settings/class-wc-settings-accounts.php:55
+#: templates/myaccount/form-login.php:32 templates/global/form-login.php:51
+#: templates/auth/form-login.php:49
+msgid "Login"
+msgstr "Accesso"
 
 #: includes/admin/views/html-admin-page-status-report.php:66
 msgid "The root URL of your site."

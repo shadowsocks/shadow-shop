@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-08 09:37:30+0000\n"
+"PO-Revision-Date: 2019-05-21 14:59:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1422,15 +1422,15 @@ msgstr "O WordPress detectou que o seu site está a usar uma versão obsoleta do
 
 #: wp-admin/about.php:85
 msgid "When installing new plugins, WordPress&#8217;s Site Health features will check whether a plugin requires a version of PHP incompatible with your site. If so, WordPress will prevent you from installing that plugin."
-msgstr "Ao instalar novos plugins, a funcionalidade de Saúde do site WordPress irá verificar se o plugin requer uma versão de PHP incompatível com o seu site. Nesse caso, o WordPress irá impedir a instalação do plugin."
+msgstr "Ao instalar novos plugins, a funcionalidade de Diagnóstico do site WordPress irá verificar se o plugin requer uma versão de PHP incompatível com o seu site. Nesse caso, o WordPress irá impedir a instalação do plugin."
 
 #: wp-admin/about.php:83
 msgid "With security and speed in mind, this release introduces WordPress&#8217;s first <a href=\"%s\">Site Health</a> features. WordPress will start showing notices to administrators of sites that run long-outdated versions of PHP, which is the programming language that powers WordPress."
-msgstr "A pensar na segurança e na velocidade, esta versão introduz as primeiras funcionalidades de <a href=\"%s\">Saúde do site</a> WordPress. O WordPress irá mostrar notificações aos administradores de sites que usem versões obsoletas de PHP, que é a linguagem de programação principal do WordPress."
+msgstr "A pensar na segurança e na velocidade, esta versão introduz as primeiras funcionalidades de <a href=\"%s\">Diagnóstico do site</a> WordPress. O WordPress irá mostrar notificações aos administradores de sites que usem versões obsoletas de PHP, que é a linguagem de programação principal do WordPress."
 
 #: wp-admin/about.php:79
 msgid "Site Health"
-msgstr "Saúde do site"
+msgstr "Diagnóstico do site"
 
 #: wp-admin/about.php:73
 msgid "You&#8217;ve successfully upgraded to WordPress 5.1! Following WordPress 5.0&#8212;a major release which introduced the new block editor&#8212;5.1 focuses on polish, in particular by improving overall performance of the editor. In addition, this release paves the way for a better, faster, and more secure WordPress with some essential tools for site administrators and developers."
@@ -9625,7 +9625,7 @@ msgstr "Além de listar que dados pessoais são recolhidos, deverá indicar a ra
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1792
 msgid "You should also note any collection and retention of sensitive personal data, such as data concerning health."
-msgstr "Deverá indicar qualquer recolha e conservação de dados pessoais sensíveis, como os dados relativos à saúde."
+msgstr "Deverá indicar qualquer recolha e conservação de dados pessoais sensíveis, como os dados relativos ao diagnóstico."
 
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1790
