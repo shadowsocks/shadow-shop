@@ -168,7 +168,7 @@ default:
 				<?php
 				$error_messages = $_REQUEST['errors'];
 				foreach ($error_messages as $err)
-					echo "<li>$err</li>\n";
+					echo "<li>" . esc_html($err) . "</li>\n";
 				?>
 			</ul>
 		</div>

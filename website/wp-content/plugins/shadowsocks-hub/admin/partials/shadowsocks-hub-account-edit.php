@@ -55,7 +55,7 @@ default:
 		<ul>
 		<?php
 			$err = urldecode($_REQUEST['error']);
-			echo "<li>$err</li>\n";
+			echo "<li>" . esc_html($err) . "</li>\n";
 		?>
 		</ul>
 	</div>
